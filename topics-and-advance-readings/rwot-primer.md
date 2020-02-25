@@ -1,4 +1,4 @@
-# The Rebooting the Web of Trust Primer (v1.0.1: RWOT10)
+# The Rebooting the Web of Trust Primer (v1.0.2: RWOT11)
 
 ## Or: How Does it Work!?
 
@@ -23,6 +23,8 @@ The best topic papers include some of the following:
 * A specific topic whose discussion will help advance understanding of identity or trust systems; or
 * A specific solution using decentralized identity or a web of trust; or
 * Specific questions not addressed by current solutions.
+
+We're also happy to see topic papers drawn from previous web-of-trust workshops. If you have a topic paper that wasn't picked up for a full paper at a previous workshop, or if you have a full white paper that wasn't completed after the workshop, you can use that as the foundation of a new topic paper: but please do update it, and consider why it might not have been selected or completed, and see if you can adjust or abridge the topic to make it more successful at the new workshop.
 
 Please be sure to write your paper in a timely fashion, meeting the deadlines for submission, as that will help ensure that it's available for everyone else to read in advance of the workshop.
 
