@@ -38,7 +38,7 @@ If you're taking a plane or a train trip to the workshop, that's a great time to
 
 Rebooting the Web of Trust starts on the evening prior to the beginning of our four full days of work. The goal of that first evening is to review papers, giving everyone a chance to learn more about many of our topics. This will occur through Lightning Talks (where people will present their topics to the group, in brief) and a Poster Session (where we'll select around six papers to be presented as posters).
 
-This first-night topic preview is occurring for the first time at RWOT10, so we're still in process of figuring out how to maximize its effect, and how to help participants to prepare for the evening.
+This first-night topic preview is occurring for the first time at RWOT11, so we're still in process of figuring out how to maximize its effect, and how to help participants to prepare for the evening.
 
 Please be sure that you arrive at our host city early enough to participate in this evening event, as it will give you a head start on the whole workshop.
 
