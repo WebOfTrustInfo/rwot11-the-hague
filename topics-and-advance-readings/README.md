@@ -15,6 +15,15 @@ Please also enter your paper _twice_ in this README file, once in the topical li
 
 If you don't know how to submit a pull request, please instead submit an issue.
 
+## RWOT10 Papers
+
+This directory includes papers from RWOT10, which was never held due to COVID. If you have a paper in here and it's outdated, please feel free to:
+
+* Upload a new version; please use the exact same file name so that the old one is replaced; or
+* Issue a PR to delete an old paper.
+
+However, we generally think there were lots of great topics that we didn't get to discuss in early 2020, and that they continue to touch upon questions of identity and decentralization today.
+
 ## Primer Listing
 
 These primers overview major topics which are likely to be discussed
