@@ -1,6 +1,10 @@
-# A Glossary of Terms for Rebooting the Web of Trust (v1.0.2: RWOT10)
+# A Glossary of Terms for Rebooting the Web of Trust (v1.0.3: RWOT11)
 
 ### by Shannon Appelcline
+
+_Though this glossary does its best to define terms that you might encounter at the workshop, there's much disagreement within the community about terms, especially about fundational terms. Beyond that, this does its best to be simple and brief. So, take all the following definitions with a grain of salt: they're intended not to be definitive, but to create a foundationf or discussion._
+
+----
 
 __ACL:__ _Access Control List._ An authorization methodology where permissions are attached to an object as a list of who can access that object and in what way.
 
@@ -129,6 +133,8 @@ __Web of Trust:__ A method for assessing trust based on peer-to-peer processes. 
 __XRP:__ Currently, the second-most valuable cryptocurrency, owned by Ripple. Created as a high-speed bridge currency that eliminates exchange fees.
 
 __Zero-knowledge Proof:__ A cryptographic method where someone can prove that they know some information without revealing the information.
+
+----
 
 _Some inspirations for terms and for the words used to describe them drawn from [Verifiable Claims Terminology](https://w3c.github.io/vc-data-model/#dfn-verifiable-presentations)._
 
