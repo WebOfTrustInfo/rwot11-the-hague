@@ -5,7 +5,7 @@ In advance of the design workshop, all participants produced a one-or-two page t
 * A specific problem that they wanted to solve with a web-of-trust solution, and why current solutions (PGP or CA-based PKI) can't address the problem?
 * A specific solution related to the web-of-trust that you'd like others to use or contribute to?
 
-If you will be attending Rebooting the Web of Trust Spring 2020 in Buenos Aires, Argentina, please upload your topic papers and advanced readings to this directory with a pull request.
+If you will be attending Rebooting the Web of Trust Fall 2022 in The Hague, Netherlands, please upload your topic papers and advanced readings to this directory with a pull request.
 
 ## Pull Request Submission
 
