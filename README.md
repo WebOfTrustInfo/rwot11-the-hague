@@ -1,6 +1,6 @@
-# Rebooting the Web of Trust XI: Netherlands (September 2020)
+# Rebooting the Web of Trust XI: Netherlands (September 2022)
 
-This repository contains documents related to RWOT11, the eleventh Rebooting the Web of Trust design workshop, which will be held in the Hague, Netherlands, September, 2020
+This repository contains documents related to RWOT11, the eleventh Rebooting the Web of Trust design workshop, which will be held in the Hague, Netherlands, September, 2022
 
 The goal of the workshop is to generate five technical white papers and/or proposals on topics decided by the group that would have the  greatest impact on the future.
 
@@ -15,12 +15,13 @@ In advance of the design workshop, all participants are invited to contribute a 
    * A specific problem that they wanted to solve with a web-of-trust solution, and why current solutions (PGP or CA-based PKI) can't address the problem?
    * A specific solution related to the web-of-trust that you'd like others to use or contribute to?
 
-Please see the [Topics & Advance Readings directory](topics-and-advance-readings) for all the current papers (and how to upload yours).
+Please see the [Topics & Advance Readings directory](topics-and-advance-readings) for all the current papers (and how to upload yours). Topic papers from RWOT10 (cancelled due to COVID) are also included.
 
 ## Complete Rebooting the Web of Trust Listing
 
 A different repository is available for each of the Rebooting the Web of Trust design workshops:
 
+* [Rebooting the Web of Trust XI: Netherlands (March 2022)](https://github.com/WebOfTrustInfo/rwot11-netherlands)
 * [Rebooting the Web of Trust X: Buenos Aires (March 2020)](https://github.com/WebOfTrustInfo/rwot10-buenosaires)
 * [Rebooting the Web of Trust IX: Prague (September 2019)](https://github.com/WebOfTrustInfo/rwot9-prague)
 * [Rebooting the Web of Trust VIII: Barcelona (March 2019)](https://github.com/WebOfTrustInfo/rwot8-barcelona)
