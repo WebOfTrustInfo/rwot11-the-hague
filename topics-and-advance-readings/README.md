@@ -1,11 +1,11 @@
-#  Topics & Advance Readings
+Advance Readings
 
-In advance of the design workshop, all participants produced a one-or-two page topic paper to be shared with the other attendees on either:
+In advance of the design workshop, all participants produced a one-or-two page advance reading to be shared with the other attendees on either:
 
 * A specific problem that they wanted to solve with a web-of-trust solution, and why current solutions (PGP or CA-based PKI) can't address the problem?
 * A specific solution related to the web-of-trust that you'd like others to use or contribute to?
 
-If you will be attending Rebooting the Web of Trust Fall 2022 in The Hague, Netherlands, please upload your topic papers and advanced readings to this directory with a pull request.
+If you will be attending Rebooting the Web of Trust Fall 2022 in The Hague, Netherlands, please upload your advance readings to this directory with a pull request.
 
 ## Pull Request Submission
 
@@ -30,6 +30,7 @@ These primers overview major topics which are likely to be discussed
 at the design workshop. If you read nothing else, read these. (But
 really, read as much as you can!)
 
+* [Advance Reading Primer](./advance-reading-primer.md) — About the advance reading papers
 * [RWOT Primer](./rwot-primer.md) — How the design workshop works
 * [DID Primer](./did-primer.md) — Decentralized Identifiers ([extended version](./did-primer-extended.md) also available)
 * [Functional Identity Primer](./functional-identity-primer.md) — A different way to look at identity
