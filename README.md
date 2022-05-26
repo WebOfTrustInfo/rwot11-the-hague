@@ -6,14 +6,14 @@ The goal of the workshop is to generate five technical white papers and/or propo
 
 _There will be a link here for tickets at EventBrite when they become available._
 
-## Topics & Advance Readings
+## Advance Readings
 
 In advance of the design workshop, all participants are invited to contribute a one-or-two page topic paper to be shared with the other attendees on either:
 
    * A specific problem that they wanted to solve with a web-of-trust solution, and why current solutions (PGP or CA-based PKI) can't address the problem?
    * A specific solution related to the web-of-trust that you'd like others to use or contribute to?
 
-Please see the [Topics & Advance Readings directory](topics-and-advance-readings) for all the current papers (and how to upload yours). Topic papers from RWOT10 (cancelled due to COVID) are also included.
+Please see the [Advance Readings directory](topics-and-advance-readings) for all the current papers (and how to upload yours). Advance readings from RWOT10 (cancelled due to COVID) are also included.
 
 ## Complete Rebooting the Web of Trust Listing
 
