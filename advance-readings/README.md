@@ -41,7 +41,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   
 ## Alphabetical Listing
 
-_Please also enter your paper alphabetically in the form:
+_Please also enter your paper alphabetically in the form:_
 
 ```
 * [Paper Name](link)
