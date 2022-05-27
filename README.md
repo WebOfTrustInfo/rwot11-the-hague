@@ -1,4 +1,4 @@
-# Rebooting the Web of Trust XI: Netherlands (September 2022)
+# Rebooting the Web of Trust XI: The Hague (September 2022)
 
 This repository contains documents related to RWOT11, the eleventh Rebooting the Web of Trust design workshop, which will be held in the Hague, Netherlands, September, 2022
 
