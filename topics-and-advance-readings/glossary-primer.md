@@ -2,7 +2,7 @@
 
 ### by Shannon Appelcline
 
-_Though this glossary does its best to define terms that you might encounter at the workshop, there's much disagreement within the community about terms, especially about fundational terms. Beyond that, this does its best to be simple and brief. So, take all the following definitions with a grain of salt: they're intended not to be definitive, but to create a foundationf or discussion._
+_Though this glossary does its best to define terms that you might encounter at the workshop, there's much disagreement within the community about terms, especially about fundational terms. Beyond that, this does its best to be simple and brief. So, take all the following definitions with a grain of salt: they're intended not to be definitive, but to create a foundation for discussion._
 
 ----
 
