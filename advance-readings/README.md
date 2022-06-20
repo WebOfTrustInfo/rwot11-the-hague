@@ -38,6 +38,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * One to two sentence synopsis or quote
    * #hashtags for topics
 ```
+### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+   * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
+   * Overview of the eSSIF-Lab SSI ecosystem
+   * #eSSIF-Lab #SSI-ecosystem #Europe
+
+### ... more ...
   
 ## Alphabetical Listing
 
@@ -46,6 +52,9 @@ _Please also enter your paper alphabetically in the form:_
 ```
 * [Paper Name](link)
 ```
+
+* [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* ... more ...
 
 ## RWOT10 Papers
 
