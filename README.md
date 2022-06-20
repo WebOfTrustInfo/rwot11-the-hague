@@ -4,7 +4,7 @@ This repository contains documents related to RWOT11, the eleventh Rebooting the
 
 The goal of the workshop is to generate five technical white papers and/or proposals on topics decided by the group that would have the  greatest impact on the future.
 
-Links to the EventBrite page to order tickets to RWOT2022: https://www.eventbrite.com/e/rebooting-the-web-of-trust-xi-2022-the-hague-tickets-347605426187
+Links to the EventBrite page to order tickets to RWOT2022: https://rwot11.eventbrite.com
 
 ## Advance Readings
 
