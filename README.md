@@ -4,7 +4,7 @@ This repository contains documents related to RWOT11, the eleventh Rebooting the
 
 The goal of the workshop is to generate five technical white papers and/or proposals on topics decided by the group that would have the  greatest impact on the future.
 
-_There will be a link here for tickets at EventBrite when they become available._
+Links to the EventBrite page to order tickets to RWOT2022: https://rwot11.eventbrite.com
 
 ## Advance Readings
 
