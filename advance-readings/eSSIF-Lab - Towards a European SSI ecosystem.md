@@ -6,15 +6,13 @@
 
 
 
-This is a submission to [RWOT 2022](https://rwot11.eventbrite.com/), Den Haag, Netherlands, 26-30 September. Advance reading: see [here](https://github.com/WebOfTrustInfo/rwot11-the-hague/tree/master/advance-readings).
+This is a proposed collaborative paper to be completed at [RWOT 2022](https://rwot11.eventbrite.com/), Den Haag, Netherlands, 26-30 September. Advance reading: see [here](https://github.com/WebOfTrustInfo/rwot11-the-hague/tree/master/advance-readings).
 
 
 
 # eSSIF-Lab: Towards a European SSI ecosystem
 
 Oskar van Deventer (TNO), eSSIF-Lab subgrantees (to be invited)
-
-(Paper to be completed during RWOT 2022, Den Haag, 26-30 September 2022)
 
 ## Summary
 
@@ -38,15 +36,9 @@ Relation with EBSI-ESSIF [10]
 
 ### 2.1 eSSIF-Lab subgrantee project AAA
 
-Lorem ipsum
-
 ### 2.2 eSSIF-Lab subgrantee project BBB
 
-Lorem ipsum
-
 ### 2.3 eSSIF-Lab subgrantee project CCC
-
-Lorem ipsum
 
 ## 3. SSI standardisation and interop testing
 
@@ -54,19 +46,11 @@ Lorem ipsum
 
 ### 3.1 Standard/interop XXX
 
-Lorem ipsum
-
 ### 3.2 Standard/interop YYY
-
-Lorem ipsum
 
 ### 3.3 Standard/interop ZZZ
 
-Lorem ipsum
-
 ## 4. Conclusions
-
-Lorem Ipsum
 
 ## 5. References
 
@@ -89,18 +73,3 @@ Lorem Ipsum
 [9] [essif booklet 22 (essif-lab.eu)](https://essif-lab.eu/wp-content/uploads/2022/03/essif-booklet-22-1.pdf)
 
 [10] [High-level scope (ESSIF) - EBSI Documentation - (europa.eu)](https://ec.europa.eu/digital-building-blocks/wikis/pages/viewpage.action?pageId=379913698)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
