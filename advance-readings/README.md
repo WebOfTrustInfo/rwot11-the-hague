@@ -48,7 +48,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ```
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
-   * Overview of the eSSIF-Lab SSI ecosystem
+   * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
 
 ### ... more ...
