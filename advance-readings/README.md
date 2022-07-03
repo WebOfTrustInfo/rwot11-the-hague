@@ -46,6 +46,13 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * One to two sentence synopsis or quote
    * #hashtags for topics
 ```
+
+
+### [Blockchainbird.org: CESR adapter for sophisticated multisig](https://hackmd.io/GbQO3p6QTge-8eQMGuMaeQ)
+   * by [Henk van Cann](mailto:h.vancann@blockchainbird.org)
+   * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
+   * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
+
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
@@ -60,7 +67,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 * [Paper Name](link)
 ```
-
+*  [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * ... more ...
 
