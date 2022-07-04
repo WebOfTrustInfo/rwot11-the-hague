@@ -19,7 +19,7 @@ If you don't know how to submit a pull request, please instead submit an issue.
 
 To those who have submitted an Advance Readings paper, RWOT11 offers a steep discount on the ticket price for participation to the event. Please obtain your discount code as follows.
 * Copy the link to your Pull Request (see previous section)
-* Email to [Will Abramson](will.abramson@napier.ac.uk), paste the link to the Pull Request and ask for the discount code
+* Email to [Will Abramson](mailto:will.abramson@napier.ac.uk), paste the link to the Pull Request and ask for the discount code
 
 Please make sure to make your Pull Request Submission BEFORE you buy the tickets for RWOT11, in order to apply your discount code.
 
@@ -49,7 +49,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 
 
 ### [Blockchainbird.org: CESR adapter for sophisticated multisig](https://hackmd.io/GbQO3p6QTge-8eQMGuMaeQ)
-   * by [Henk van Cann](mailto:h.vancann@blockchainbird.org)
+   * by [Henk van Cann](mailto:h.vancann@blockchainbird.org), Blockchainbird.org, The Netherlands
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
 
