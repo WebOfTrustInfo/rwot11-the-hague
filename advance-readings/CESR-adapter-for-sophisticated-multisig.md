@@ -1,20 +1,23 @@
 # CESR-adapter-for-sophisticated-multisig.md
-Study CESR adapter for aggregated Schnorr, musig and/or frost
-By: Henk van Cann
-Date: July 2nd 2022
+
+[![hackmd-github-sync-badge](https://hackmd.io/GbQO3p6QTge-8eQMGuMaeQ/badge)](https://hackmd.io/GbQO3p6QTge-8eQMGuMaeQ)
+
+Study CESR adapter for aggregated Schnorr, musig and/or frost\
+By: Henk van Cann\
+Date: July 2nd 2022\
 Version: 0.8
 
-Mary Blockchain Commons (BCC) projects and KERI ToIP-projects. That's it.
+**Mary Blockchain Commons (BCC) projects and KERI ToIP-projects. That's it.**
 
 Because I am a supporter of both organizations and I'd like to level the playing field for more exchange on content.
 
 ## Advanced-Reading Paper; not OR but AND.
 
-A specific problem related to identity or trust; AND
-A specific critique of existing identity or trust systems; AND
-A specific topic whose discussion will help advance understanding of identity or trust systems; AND
-A specific solution using decentralized identity or a web of trust; AND
-A specific questions not addressed by current solutions.
+- [x] A specific problem related to identity or trust; AND
+- [x] A specific critique of existing identity or trust systems; AND
+- [x] A specific topic whose discussion will help advance understanding of identity or trust systems; AND
+- [x] A specific solution using decentralized identity or a web of trust; AND
+- [x] A specific questions not addressed by current solutions.
 
 As a preparation for the RWOT in september 2022, 
 I'd like to deep dive to fullfill a long-standing wish: 
@@ -34,30 +37,28 @@ https://medium.com/happy-blockchains\
 See github for activities in SSI projects:\
 https://github.com/henkvancann\
 See my LinkedIN profile:\
-linkedin.com/in/henkvancann\
+https://linkedin.com/in/henkvancann\
 My donation-vehicle and open source contribution organisation:\
 https://www.blockchainbird.org
 
-
 ## Why trying to bridge?
 
-Christopher Allen (May 20 2022): "I’m still concerned with lack of support for aggregated Schnorr, musig & frost in KERI."
+Christopher Allen (BCC founder - May 20 2022): "I’m still concerned with lack of support for aggregated Schnorr, musig & frost in KERI."
 
 Samuel Smith (KERI founder):
 "The point is to be used, not to use the latest, coolest technique that is also very difficult to implement properly.\
 That's the principle of KERI: solve a problem in the real world with the minimum techniques needed."
 
-> Smith:
+> Smith:\
 > "The dumber the technology, but still sufficient to solve the problem, the better. 'Dumb technology' is freely available, understandable to everyone and easy to implement. In our case: just hashes and digital signatures."
 
 ## It takes two to tango?
 No, I don't care who likes to dance. I'll start to put on the music. It comes from two sides. Feel free to tap into them:
-1. https://github.com/WebOfTrust/keri Focus on KERI and CESR.
+1. https://github.com/WebOfTrust/keri Focus on KERI, CESR and KEEP.
 2. https://github.com/blockchaincommons/ Focus on SeedTool.
 
-If you listen carefully, you might be able to hear the beautiful harmonics in the distance:
+If you listen carefully, you might be able to hear the harmonics in the distance:
 1. BCC keeping secrets secret for Keep wallet of KERI / ACDC.
 2. CESR adapter for aggregated Schnorr, musig and/or frost
 
-More details: https://hackmd.io/a4oU3TmSSveRJYIQjuSgOQ
-
+More details in draft: https://hackmd.io/a4oU3TmSSveRJYIQjuSgOQ
