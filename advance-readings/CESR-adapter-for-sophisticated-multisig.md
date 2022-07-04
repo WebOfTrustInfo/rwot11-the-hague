@@ -33,11 +33,14 @@ Open Public Blockchain tech, Bitcoin purist, Self Sov IDs, #BlockchainCommons, #
 My hands-on work is documentation: Q&As and articles explaining hard-to-understand autonomic identifier system concepts in more accessible stuff.
 
 See my Medium publications for results:\
-https://medium.com/happy-blockchains\
+https://medium.com/happy-blockchains
+
 See github for activities in SSI projects:\
-https://github.com/henkvancann\
+https://github.com/henkvancann
+
 See my LinkedIN profile:\
-https://linkedin.com/in/henkvancann\
+https://linkedin.com/in/henkvancann
+
 My donation-vehicle and open source contribution organisation:\
 https://www.blockchainbird.org
 
