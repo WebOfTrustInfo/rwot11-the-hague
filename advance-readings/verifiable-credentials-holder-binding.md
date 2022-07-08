@@ -74,11 +74,11 @@ Each Holder Binding method MUST define how Holder Binding for an input VP and on
       },
       {
          "type": "SomeAgreementBasedHolderBinding2022",
-         "agaiHolderBindingProperties": "..."
+         "moreHolderBindingProperties": "..."
       },
       {
          "type": "SomeBiometricsBasedHolderBinding2022",
-         "moreHolderBindingProperties": "..."
+         "evenMoreHolderBindingProperties": "..."
       }
    ],  
    ...
