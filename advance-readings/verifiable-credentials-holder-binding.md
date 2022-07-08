@@ -74,7 +74,11 @@ Each Holder Binding method MUST define how Holder Binding for an input VP and on
       },
       {
          "type": "SomeAgreementBasedHolderBinding2022",
-         "againSomeOtherHolderBindingProperties": "..."
+         "agaiHolderBindingProperties": "..."
+      },
+      {
+         "type": "SomeBiometricsBasedHolderBinding2022",
+         "moreHolderBindingProperties": "..."
       }
    ],  
    ...
@@ -85,6 +89,8 @@ Each Holder Binding method MUST define how Holder Binding for an input VP and on
    }
 }
 ```
+
+TBD: add more examples for VCs and VPs during RWOT.
 
 ### Registry
 
