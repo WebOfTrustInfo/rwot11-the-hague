@@ -19,7 +19,7 @@ If you don't know how to submit a pull request, please instead submit an issue.
 
 To those who have submitted an Advance Readings paper, RWOT11 offers a steep discount on the ticket price for participation to the event. Please obtain your discount code as follows.
 * Copy the link to your Pull Request (see previous section)
-* Email to [Will Abramson](mailto:will.abramson@napier.ac.uk), paste the link to the Pull Request and ask for the discount code
+* Email to [questions@weboftrust.info](mailto:questions@weboftrust.info), paste the link to the Pull Request and ask for the discount code
 
 Please make sure to make your Pull Request Submission BEFORE you buy the tickets for RWOT11, in order to apply your discount code.
 
