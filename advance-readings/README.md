@@ -58,6 +58,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
 
+### [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
+   * by [Oliver Terbu](mailto:oliver.terbu@spruceid.com), Spruce Systems, Inc., Berlin/New York
+   * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
+   * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
+
 ### ... more ...
   
 ## Alphabetical Listing
@@ -69,6 +74,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 *  [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * ... more ...
 
 ## RWOT10 Papers
