@@ -74,6 +74,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 *  [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * ... more ...
 
 ## RWOT10 Papers
