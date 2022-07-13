@@ -3,7 +3,7 @@
 
 I propose using RWOT the Hague to crowd source a international, location based, spendability of currency report. Largely, I mean cash although if people have insights into the spendability of other currencies e.g. BTC, ETH, etc then that might also be interesting.
 
-I bring this us, due to a recent experience I have had in London where despite trying every establishment I visited I have found it incredibly difficult to spend the cash in my wallet. 
+I bring this up, due to a recent experience I have had in London where despite trying every establishment I visited I have found it incredibly difficult to spend the cash in my wallet. 
 
 This transition away from phyiscal, untraceable, currency towards electronically mediated and correlatable transactions has undoubtably been accelerated by the COVID pandemic. And certainly it brings a lot of benefits, e.g. ease of use, security of transactions and reduced risk to retailers. However, it is my feeling we should be cautious about the trend towards the exclusion of cash as a viable means of exchange. 
 
