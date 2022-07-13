@@ -57,6 +57,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
+   
+### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+   * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
+   * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
+   * #Reputation #Webs-of-trust #Trust-networks
 
 ### [Validation - The Missing Link](./validation-the-missing-link.md)
   * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
@@ -69,7 +74,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
 ### ... more ...
-  
+
 ## Alphabetical Listing
 
 _Please also enter your paper alphabetically in the form:_
@@ -77,8 +82,10 @@ _Please also enter your paper alphabetically in the form:_
 ```
 * [Paper Name](link)
 ```
+
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * ... more ...
