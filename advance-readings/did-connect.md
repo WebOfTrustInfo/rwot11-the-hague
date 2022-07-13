@@ -12,7 +12,7 @@ DID Connect is a suite of RESTful APIs, UX components and SDK that provide a fra
 
 DID Connect allows for clients of all types including browser-based, mobile, and javascript clients, to request and receive information about identities and the presentation of Verifiable Credentials.  DID Connect focuses on the end users experience and applications, it’s independent to specific DID method implementations. 
 
-
+![application model for DID Connect](./media/did-application-model.jpg)
 
 ## Inspiration and previous works
 
