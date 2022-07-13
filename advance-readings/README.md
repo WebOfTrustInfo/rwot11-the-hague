@@ -58,6 +58,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
 
+### [Validation - The Missing Link](./validation-the-missing-link.md)
+  * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
+  * In order to adopt VCs (or SSI technology), we need to explore what individual parties need *apart* from what's already part of VCs (e.g.: proofs), and how such needs can (also) be accommodated.
+  * #validation #verification #sovereignty
+
 ### [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
    * by [Oliver Terbu](mailto:oliver.terbu@spruceid.com), Spruce Systems, Inc., Berlin/New York
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
@@ -72,8 +77,9 @@ _Please also enter your paper alphabetically in the form:_
 ```
 * [Paper Name](link)
 ```
-*  [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * ... more ...
 
