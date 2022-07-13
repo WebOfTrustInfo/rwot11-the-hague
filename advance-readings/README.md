@@ -58,6 +58,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
 
+### [Spendability of Currency: Citizen Report](./spendability-of-currency.md)
+   * by [Will Abramson](mailto:wip.abramson@gmail.com), Legendary Requirements, UK
+   * How easy is it to spend cash around the world these days? Let's find out, by actively attempting to and recording the results.
+
 ### ... more ...
   
 ## Alphabetical Listing
@@ -69,7 +73,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 *  [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
-* ... more ...
+* [Spenability of Currency](./spendability-of-currency.md)
 
 ## RWOT10 Papers
 
