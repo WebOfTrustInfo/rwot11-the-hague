@@ -34,7 +34,13 @@ Relation with EBSI-ESSIF [10]
 
 **<u>*< ... To be discussed whether a further structuring is useful, e.g. one subsection for library projects, another for SSI wallets, etcetera ... >*</u>**
 
-### 2.1 eSSIF-Lab subgrantee project AAA
+### 2.1 Automated data agreements by iGrant.io (Sweden)
+
+The ADA project [11] builds a fully auditable digital infrastructure that enables sustainable use, reuse and exchange of personal data to enable advanced digitalisation enforced via Data Agreements. A Data Agreement records the conditions for an organisation to process personal data following privacy regulations (e.g. GDPR) captured as a signed receipt given to an individual and to organisations wishing to record their personal data processing. The receipt acts as evidence, demonstrates a higher level of accountability, and is based on standard schemas. The accountability is further enhanced by directly integrating the Data Agreement with the input from a risk assessment, e.g. Data Protection Impact Assessment.
+
+Once created, the Data Agreement is integrated into SSI-based workflows, resulting in an easy-to-adopt and automated solution for data exchange, making every transaction trustworthy, auditable and immutable.
+
+The Data Agreement specification is openly available [12] and implemented over DIDComm protocol, integrated into Aries and EBSI (European Blockchain Service Infrastructure) presentation exchanges. 
 
 ### 2.2 eSSIF-Lab subgrantee project BBB
 
@@ -44,7 +50,9 @@ Relation with EBSI-ESSIF [10]
 
 < ... Further structuring to be discussed ... >
 
-### 3.1 Standard/interop XXX
+### 3.1 Data Agreement standards and Interop
+
+The Data Agreement schema is standardised as part of ISO 27560 and driven via DIF (Decentralized Identity Foundation) Data Agreement WG [13]. The DIF workgroup will further investigate standardising the DID:mydata introduced as part of the Automated Data Agreement project by iGrant.io (Sweden).
 
 ### 3.2 Standard/interop YYY
 
@@ -73,3 +81,9 @@ Relation with EBSI-ESSIF [10]
 [9] [essif booklet 22 (essif-lab.eu)](https://essif-lab.eu/wp-content/uploads/2022/03/essif-booklet-22-1.pdf)
 
 [10] [High-level scope (ESSIF) - EBSI Documentation - (europa.eu)](https://ec.europa.eu/digital-building-blocks/wikis/pages/viewpage.action?pageId=379913698)
+
+[11] Automated Data Agreement by iGrant.io, avaialble at: https://essif-lab.eu/automated-data-agreements-to-simplify-ssi-work-flows-by-igrant-io/
+
+[12] Automated Data Agreement specification, available at: https://github.com/decentralised-dataexchange/automated-data-agreements/blob/main/docs/data-agreement-specification.md
+
+[13] DID Data Agreement WG: https://github.com/decentralized-identity/data-agreement
