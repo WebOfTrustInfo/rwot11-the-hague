@@ -52,6 +52,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Henk van Cann](mailto:h.vancann@blockchainbird.org), Blockchainbird.org, The Netherlands
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
+   
+### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
+  * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
+  * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
+  * #connect #application #framework #VerifiableCredentials #UX
 
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
@@ -84,6 +89,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
