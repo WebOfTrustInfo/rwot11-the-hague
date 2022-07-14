@@ -42,9 +42,16 @@ Once created, the Data Agreement is integrated into SSI-based workflows, resulti
 
 The Data Agreement specification is openly available [12] and implemented over DIDComm protocol, integrated into Aries and EBSI (European Blockchain Service Infrastructure) presentation exchanges. 
 
-### 2.2 eSSIF-Lab subgrantee project BBB
+### 2.2 eSSIF-Lab subgrantee project SSI-NFC Bridge
+  With self-sovereign identity - DIDs and VCs - we finally are able to add the identity and authentication layer that had been missing since the inception of the internet. At Gimly we are bridging the digital and physical worlds, leveraging SSI in combination with NFC capabilities of smartcards and mobile devices to bring trust and transparency back into our digital as well as physical interactions. 
 
-### 2.3 eSSIF-Lab subgrantee project CCC
+Our aim is to enable self-sovereign identity for both online and offline identification, authorization, and access management, with a decreased dependency on the use of personal smartphones. Example use cases may include private health records, eID cards with eIDAS compliant signatures, eMobility, or enterprise employee authorisations, access management, and transactions.
+
+The bridge is designed blockchain and did-method agnostic to allow for easy integration of SSI smartcards in any SSI solution. The smartcards hold an NFC microchip with an EAL6+ grade secure element for authentication and signing with their embedded DID and can be used for sovereign storage and selective disclosure of verifiable credentials. The first smartcards to be supported are Tangem made-for-blockchain NFC cards, and we are collaborating with Tangem on the release of a fully open sourced NFC chip preventing any vendor lock-in in future. In addition, the SSI-NFC firmware will also be available for licensing to be implemented in client's own existing smartcard provider.
+
+### 2.3 eSSIF-Lab subgrantee project BBB
+
+### 2.4 eSSIF-Lab subgrantee project CCC
 
 ## 3. SSI standardisation and interop testing
 
