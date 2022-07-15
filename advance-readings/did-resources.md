@@ -31,7 +31,7 @@ The id for a schema could be defined like:
     "type": "object", 
     "properties": {                
       "greeting": {
-        "type": "string„
+        "type": "string
        }, 
     }
   }  
