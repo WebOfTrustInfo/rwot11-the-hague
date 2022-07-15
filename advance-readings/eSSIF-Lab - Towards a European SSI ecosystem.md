@@ -54,7 +54,11 @@ The bridge is designed blockchain and did-method agnostic to allow for easy inte
   Our work provides an extension to the Verifiable Credentials Data Model (VC). This extension is interoperable with existing processors of VCs in such a way that it doesn't deviate or break existing implementations, but allows systems that can understand Trust Registry types to interpret the data using this model.
   The architectural approach taken is microservice based, which means it's designed to be compatible with any SSI codebase that wants to encorporate governance. The repository is complete with quickstart tutorials, APIs, and other developer-friendly tooling to encourage adoption. 
 
-### 2.4 eSSIF-Lab subgrantee project CCC
+### 2.4 eSSIF-Lab subgrantee project TRAIN (TRust mAnagement INfrastructure) by Fraunhofer IAO, Germany.
+  TRAIN provides an open-source Trust Management Infrastructure that allows to verify the trustworthiness of involved parties in the SSI Ecosystem. e.g. is the issuer trustworthy (is it a real bank or just a fake bank).
+TRAIN aims to add a Trust-Component to the ESSIF-Framework, which enables the discovery and verification of credential issuers, as well as the definition, consideration, and verification of eIDAS compliance (including LoAs) of involved parties. TRAIN provides a decentralized framework for the publication and querying of trust information. It makes use of the Internet Domain Name System (DNS) with its existing global infrastructure, organization, governance and security standards to achieve the trust discovery process. The trust list used by TRAIN also follows the ETSI standard by which interoperability across different trust infrastructures can be achieved.
+An illustrative interoperability use case for the European Health Insurance Card (EHIC) has been realized and demonstrated with SICPA SA and Validated ID. The latest draft of OpenID Connect for Verifiable Presentations (OIDC4VC) contains informative implementation guidelines describing how issuers, holders and verifiers can utilise the TRAIN trust scheme approach. 
+
 
 ## 3. SSI standardisation and interop testing
 
