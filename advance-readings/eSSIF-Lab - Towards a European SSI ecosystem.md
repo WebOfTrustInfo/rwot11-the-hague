@@ -49,7 +49,10 @@ Our aim is to enable self-sovereign identity for both online and offline identif
 
 The bridge is designed blockchain and did-method agnostic to allow for easy integration of SSI smartcards in any SSI solution. The smartcards hold an NFC microchip with an EAL6+ grade secure element for authentication and signing with their embedded DID and can be used for sovereign storage and selective disclosure of verifiable credentials. The first smartcards to be supported are Tangem made-for-blockchain NFC cards, and we are collaborating with Tangem on the release of a fully open sourced NFC chip preventing any vendor lock-in in future. In addition, the SSI-NFC firmware will also be available for licensing to be implemented in client's own existing smartcard provider.
 
-### 2.3 eSSIF-Lab subgrantee project BBB
+### 2.3 eSSIF-Lab subgrantee project Trust-over-IP Trust Registry by Trinsic Europe Ltd. (England)
+  The Trust Registry project provides an open-source, Trust-over-IP spec-compliant governance model to enable the easier bootstrapping of SSI ecosystems. The primary use case for a Trust Registry is to enable a governance authority to permission the rules of a given ecosystem--specifically, which issuers are authoritative for which kinds of credentials.
+  Our work provides an extension to the Verifiable Credentials Data Model (VC). This extension is interoperable with existing processors of VCs in such a way that it doesn't deviate or break existing implementations, but allows systems that can understand Trust Registry types to interpret the data using this model.
+  The architectural approach taken is microservice based, which means it's designed to be compatible with any SSI codebase that wants to encorporate governance. The repository is complete with quickstart tutorials, APIs, and other developer-friendly tooling to encourage adoption. 
 
 ### 2.4 eSSIF-Lab subgrantee project CCC
 
