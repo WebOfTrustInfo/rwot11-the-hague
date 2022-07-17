@@ -102,6 +102,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+* [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * ... more ...
