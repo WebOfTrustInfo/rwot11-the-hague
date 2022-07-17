@@ -1,7 +1,7 @@
 Rendering Verifiable Credentials
 ================================
 
-By Manu Sporny &lt;<msporny@digitalbazaar.com>&gt;
+By Manu Sporny &lt;msporny@digitalbazaar.com&gt;
 
 The Verifiable Credentials ecosystem is experiencing increasing adoption in a
 variety of markets such as education, supply chain, retail, banking and finance,
