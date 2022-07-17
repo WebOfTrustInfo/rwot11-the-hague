@@ -52,7 +52,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Henk van Cann](mailto:h.vancann@blockchainbird.org), Blockchainbird.org, The Netherlands
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
-   
+
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
@@ -66,11 +66,16 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
-   
+
 ### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
    * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
    * #Reputation #Webs-of-trust #Trust-networks
+
+### [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
+  * by [Manu Sporny](mailto:msporny@digitalbazaar.com), Digital Bazaar, USA
+  * A Verifiable Credential extension to support rendering using graphics, audio, or braille.
+  * #VerifiableCredentials #w3c #a11y
 
 ### [Validation - The Missing Link](./validation-the-missing-link.md)
   * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
