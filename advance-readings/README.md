@@ -88,7 +88,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
 ### [DID Traits](./did-traits.md)
-   * by [Charles Cunningham](mailto:charles.cunningham@spruceid.com), Spruce Systems, Inc., Berlin
+   * by [Charles Cunningham](mailto:charles.cunningham@spruceid.com) and [Wayne Chang](mailto:wayne.chang@spruceid.com), Spruce Systems, Inc., Berlin/New York
    * A proposal for characterising and categorising DID methods by supported feature sets to evaluate technical suitability for different use cases, applications and environments.
    * #dids #didmethods #identitymanagement #applications #devx
 

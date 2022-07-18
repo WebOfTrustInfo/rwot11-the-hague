@@ -1,6 +1,6 @@
 # DID Traits
 
-Proposed collaborative paper initially authored by [Charles Cunningham](https://github.com/chunningham) to be completed as part of the RWOT 2022 in The Hague, Netherlands 26-30 September.
+Proposed collaborative paper initially co-authored by [Charles Cunningham](mailto:charles.cunningham@spruceid.com) and [Wayne Chang](mailto:wayne.chang@spruceid.com) to be completed as part of the RWOT 2022 in The Hague, Netherlands 26-30 September.
 
 ## Abstract
 
@@ -15,115 +15,72 @@ DID Traits are feature sets for DID methods which require the method to have cer
 ## Prior Art
 
 
-
 ### [DID Method Rubric v1.0](https://www.w3.org/TR/did-rubric/)
 
 Evaluates the level of decentralisation for a DID Method in several categories. The Security and Privacy sections are particularly relavent to this document and represent a good starting point.
-
-
 
 ### [A Taxonomic Approach to Understanding Emerging Blockchain Identity Management Systems](https://csrc.nist.gov/publications/detail/white-paper/2020/01/14/a-taxonomic-approach-to-understanding-emerging-blockchain-idms/final)
 
 NIST 2020, classifies various SSI and Blockchain IDMSs taxonomically based on architecture and other properties.
 
-
-
 ## Goals
 
 The Goal of this document is to categorise different kinds of DID methods based on their behaviour along various axis, in order to enable reasoning about which DID methods are technologically suitable for a given use case or set of requirements. For example, use cases involving 
-
-
 
 ## Characteristics
 
 ![img](./did-traits-lesavre-f6.png "Figure 6 from Lesavre et al, showing the relationship between trust architecture and Identifier creation in Identity Management Systems")
 Figure 6 from Lesavre et al, showing the relationship between trust architecture and Identifier creation in Identity Management Systems.
 
-
+TBD at RWOT: enumerate more characteristics
 
 ### Mutability
 
 One characteristic which strongly divides methods into two categories is mutability. Immutable DID Methods are those where the resolution result is constant for a given DID, while mutable methods are those whose result can change over time. For most of this document, we will consider mutable DIDs.
 
-
-
 #### Immutable DIDs
 
 Immutable DID Methods typically derive their identifiers cryptographically from a constant keypair in such a way that the DID can be used to generate the entire DID Document. This behaviour prevents them from natively supporting features such as key rotation, however it does make them suitable for a wide range of use cases which benefit.
 
-
-
 ## Traits
 
+TBD at RWOT: precisely define DID Traits and how they are derived from characteristics
 
+TBD at RWOT: enumerate more traits
 
 ### Registration Requirements
 
-
-
 #### Pre and Post conditions
-
-
 
 ### Inception and Update
 
-
-
 #### Controller Updates
-
-
 
 ### Key and Verification Method Type support
 
-
-
 #### JWK and JWS
-
-
 
 #### Linked Data Proofs
 
-
-
 #### Selective Disclosure
-
-
 
 #### Other
 
-
-
 ### Historical State Inspection
-
-
 
 #### Timestamps
 
-
-
 ### State Proofs
-
-
 
 ### Extended Semantics Support
 
-
-
 #### Same As
-
-
 
 #### Controller
 
-
-
 ### Service Endpoint support
 
-
-
 ### Resolver consistancy and provenance guarentees
-
-
 
 #### Cachability
 
