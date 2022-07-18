@@ -90,7 +90,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ### [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
 
 - by [Berend Sliedrecht](mailto:berend@animo.id), Animo, The Netherlands
-- A proporal on working with zkSNARKs within the verifiable credential space
+- A proposal on working with zkSNARKs within the verifiable credential space
 - #VerifiableCredentials #ZKP #zksnark
 
 ### ... more ...
