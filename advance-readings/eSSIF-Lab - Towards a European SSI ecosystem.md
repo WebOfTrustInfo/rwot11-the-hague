@@ -61,6 +61,18 @@ TRAIN aims to add a Trust-Component to the ESSIF-Framework, which enables the di
   
 An illustrative interoperability use case for the European Health Insurance Card (EHIC) has been realized and demonstrated with SICPA SA and Validated ID. The latest draft of OpenID Connect for Verifiable Presentations (OIDC4VC) contains informative implementation guidelines describing how issuers, holders and verifiers can utilise the TRAIN trust scheme approach. 
 
+### 2.5 eSSIF-Lab subgrantee project ZeroTrustVC (Enabling Zero Trust architectures using OAuth2.0 and Verifiable Credentials) by AUEB, Greece
+The project Enabling Zero Trust Architectures using OAuth2.0 and Verifiable Credentials (ZeroTrustVC) aims at providing tools for implementing Authentication and Authorization for HTTP-based resources. The project considers HTTP-based resources accessed through a web browser and its goal is to enable continuous user authentication and authorization, as required by the Zero Trust security principle. To this end, it leverages Verifiable Credentials to encode user capabilities and it specifies VC issuance and usage flows based on standard OAuth 2.0.
+
+From a high-level perspective, ZeroTrustVC is an access control solution that relies on widely used standards, composed of a VC issuer, a VC verifier, and a Client module.
+
+The VC issuer is an OAuth 2.0 authorization server extended with VC issuing capabilities. Issued VCs are encoded as JWT and signed using JWS, improving compatibility and integration with existing tools. ZeroTrustVC consider VCs that describe the capabilities of a client over a protected resource. Additionally, ZeroTrustVC VC issuer maintains a VC revocation list.
+
+The VC verifier is an HTTPS proxy that intercepts the communication between a client and an HTTP(S)-based protected resource. The VC verifiers is able to verify the validity, the status, and the ownership of a VC. Additionally, the VC verifier acts as a policy enforcement point by validating whether or not a VC can be used for executing a particular request over a protected resource.
+
+The client module is a VC wallet implemented as a browser extension, executed by a real world user that interacts with the VC issuer standard OAuth 2.0 flows. Additionally, the client module can transparently inject VCs and the appropriate proofs of possessions into HTTP requests towards protected resources.  
+
+Open source tools for managing the lifecycle of VCs are available at the [project homepage](https://mm.aueb.gr/projects/zerotrustvc) [14]. 
 
 ## 3. SSI standardisation and interop testing
 
@@ -103,3 +115,5 @@ The Data Agreement schema is standardised as part of ISO 27560 and driven via DI
 [12] Automated Data Agreement specification, available at: https://github.com/decentralised-dataexchange/automated-data-agreements/blob/main/docs/data-agreement-specification.md
 
 [13] DID Data Agreement WG: https://github.com/decentralized-identity/data-agreement
+
+[14] ZeroTrustVC project homepage, available at https://mm.aueb.gr/projects/zerotrustvc
