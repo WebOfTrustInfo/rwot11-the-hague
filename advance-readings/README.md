@@ -48,6 +48,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ```
 
 
+### [Caching in DID Resolution](./caching-in-did-resolution.md)
+* by [Markus Sabadello](mailto:markus@danubetech.com), Danube Tech, Austria
+* Some thoughts on how to add and control caching in DID Resolution processes.
+* #did #did-resolution
+
 ### [CESR adapter for sophisticated multisig](https://hackmd.io/GbQO3p6QTge-8eQMGuMaeQ)
    * by [Henk van Cann](mailto:h.vancann@blockchainbird.org), Blockchainbird.org, The Netherlands
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
@@ -97,6 +102,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Paper Name](link)
 ```
 
+* [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
