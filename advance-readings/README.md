@@ -87,6 +87,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
+### [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
+
+- by [Berend Sliedrecht](mailto:berend@animo.id), Animo, The Netherlands
+- A proporal on working with zkSNARKs within the verifiable credential space
+- #VerifiableCredentials #ZKP #zksnark
+
 ### ... more ...
 
 ## Alphabetical Listing
