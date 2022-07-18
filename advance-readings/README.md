@@ -47,6 +47,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * #hashtags for topics
 ```
 
+### [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
+   * by [Adrian Gropper, MD](mailto:agropper@healthurl.com), Patient Privacy Rights, Austin, Texas
+   * A novel approach to digital identity protocols is presented that gives market power to the human subject of identity-based interactions through their ability to choose a delegate.
+   * #Delegation  #HumanRights #DID #VerifiableCredentials #w3c #GNAP
 
 ### [CESR adapter for sophisticated multisig](https://hackmd.io/GbQO3p6QTge-8eQMGuMaeQ)
    * by [Henk van Cann](mailto:h.vancann@blockchainbird.org), Blockchainbird.org, The Netherlands
@@ -97,6 +101,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Paper Name](link)
 ```
 
+* [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
