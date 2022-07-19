@@ -77,6 +77,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * A Verifiable Credential extension to support rendering using graphics, audio, or braille.
   * #VerifiableCredentials #w3c #a11y
 
+### [Social Wallet Recovery](./social-wallet-recovery.md)
+  * by [Timo Glastra](mailto:timo@animo.id), Animo Solutions, The Netherlands
+  * Social recovery of wallet data and keys by leveraging sharding.
+  * #recovery #wallet #sharding
+
 ### [Validation - The Missing Link](./validation-the-missing-link.md)
   * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
   * In order to adopt VCs (or SSI technology), we need to explore what individual parties need *apart* from what's already part of VCs (e.g.: proofs), and how such needs can (also) be accommodated.
@@ -103,6 +108,7 @@ _Please also enter your paper alphabetically in the form:_
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
+* [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * ... more ...
