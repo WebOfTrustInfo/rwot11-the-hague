@@ -164,9 +164,9 @@ _Please also enter your paper alphabetically in the form:_
 * [Paper Name](link)
 ```
 
-* [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
-* [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
+* [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
+* [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
