@@ -72,6 +72,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oliver Terbu](mailto:oliver.terbu@spruceid.com), Spruce Systems, Inc., Berlin/New York
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
+   
+### [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
+   * by [Brent Zundel](mailto:brent.zundel@avast.com), Avast s.r.o.
+   * A proposal for a conversation about whether reducing correlation is necessary during credential exchange. 
+   * #VerifiableCredentials #HolderBinding #Zero-knowledge-proofs #ZKP
 
 ### ... more ...
 
@@ -86,6 +91,7 @@ _Please also enter your paper alphabetically in the form:_
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+* [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * ... more ...
