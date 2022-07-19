@@ -87,6 +87,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
+### [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
+   * by [Charles E. Lehner](mailto:charles.lehner@spruceid.com), Spruce Systems, Inc., New York
+   * A proposal for generalizing the Secure Scuttlebutt system for DIDs and Data Integrity.
+   * #VerifiableCredentials #SecureScuttlebutt
+
 ### ... more ...
 
 ## Alphabetical Listing
@@ -105,6 +110,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
+* [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
 * ... more ...
 
 ## RWOT10 Papers
