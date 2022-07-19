@@ -82,6 +82,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
 
+### [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
+   * by [Fabio Tagliaferro](mailto:fabio.tagliaferro@univr.it), Commercio.Network & University of Verona, Italy
+   * Leverage the power of national European identities to obtain SSI credentials, starting from the Italian SPID ecosystem.
+   * #VerifiableCredentials #Europe #SPID #Italy #SSI 
+
 ### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
    * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
@@ -132,6 +137,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [DID Traits](./did-traits.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [SSI data generator](./data-generator.md)
