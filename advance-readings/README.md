@@ -118,8 +118,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
 
-### [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
+### [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+   * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
+   * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
+   * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
 
+### [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
 - by [Berend Sliedrecht](mailto:berend@animo.id), Animo, The Netherlands
 - A proposal on working with zkSNARKs within the verifiable credential space
 - #VerifiableCredentials #ZKP #zksnark
@@ -146,6 +150,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
+* [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
 * [SSI data generator](./data-generator.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
