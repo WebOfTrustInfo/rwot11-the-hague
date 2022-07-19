@@ -53,6 +53,16 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A novel approach to digital identity protocols is presented that gives market power to the human subject of identity-based interactions through their ability to choose a delegate.
    * #Delegation  #HumanRights #DID #VerifiableCredentials #w3c #GNAP
 
+### [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
+  * by [Karim Stekelenburg](mailto:karim@animo.id), Animo Solutions, The Netherlands
+  * Leveraging DIDComm to create a modern chat protocol that can compete with commonly used chat applications like WhatsApp and Telegram.
+  * #DIDComm #protocol #messaging #chat
+  
+### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
+   * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
+   * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
+   * #ai #metaverse #trust #ethics  
+  
 ### [Caching in DID Resolution](./caching-in-did-resolution.md)
 * by [Markus Sabadello](mailto:markus@danubetech.com), Danube Tech, Austria
 * Some thoughts on how to add and control caching in DID Resolution processes.
@@ -72,10 +82,6 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
   * #connect #application #framework #VerifiableCredentials #UX
-### [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
-  * by [Karim Stekelenburg](mailto:karim@animo.id), Animo Solutions, The Netherlands
-  * Leveraging DIDComm to create a modern chat protocol that can compete with commonly used chat applications like WhatsApp and Telegram.
-  * #DIDComm #protocol #messaging #chat
 
 ### [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
    * by [Mirko Mollik](mailto:mollik@trustcerts.de)
@@ -91,6 +97,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
+   
+### [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
+   * by [Charles E. Lehner](mailto:charles.lehner@spruceid.com), Spruce Systems, Inc., New York
+   * A proposal for generalizing the Secure Scuttlebutt system for DIDs and Data Integrity.
+   * #VerifiableCredentials #SecureScuttlebutt
 
 ### [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
    * by [Fabio Tagliaferro](mailto:fabio.tagliaferro@univr.it), Commercio.Network & University of Verona, Italy
@@ -106,6 +117,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * by [Manu Sporny](mailto:msporny@digitalbazaar.com), Digital Bazaar, USA
   * A Verifiable Credential extension to support rendering using graphics, audio, or braille.
   * #VerifiableCredentials #w3c #a11y
+  
+### [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+   * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
+   * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
+   * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
   
 ### [SSI data Generator](./data-generator.md)
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
@@ -127,26 +143,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
-### [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
-   * by [Charles E. Lehner](mailto:charles.lehner@spruceid.com), Spruce Systems, Inc., New York
-   * A proposal for generalizing the Secure Scuttlebutt system for DIDs and Data Integrity.
-   * #VerifiableCredentials #SecureScuttlebutt
-
 ### [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
    * by [Ana Goessens](mailto:ana@animo.id)
    * Continuing the conversation on the topics surrounding SSI, using methods from commercial branding to semantic philosophy.
    * #Terminology #Semantics
-
-### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
-   * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
-   * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
-   * #ai #metaverse #trust #ethics  
-
-
-### [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
-   * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
-   * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
-   * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
 
 ### [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
 - by [Berend Sliedrecht](mailto:berend@animo.id), Animo, The Netherlands
@@ -164,25 +164,25 @@ _Please also enter your paper alphabetically in the form:_
 * [Paper Name](link)
 ```
 
+* [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
+* [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
-* [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
-* [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [DID Traits](./did-traits.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
-* [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+* [Social Wallet Recovery](./social-wallet-recovery.md)
 * [SSI data generator](./data-generator.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
-* [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
 * [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
 * [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
 * ... more ...
