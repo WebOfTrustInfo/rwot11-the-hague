@@ -46,6 +46,8 @@ From a user perspective, logging in with SPID to a service provider looks someth
 - check the list of attributes that should be revealed to the service provider, continue if everything sounds right;
 - all done, the service provider could recognize the user and authorize access to the services.
 
+### Other identities similar to SPID
+
 ## References
 
 [1] [The Path to Self-Sovereign Identity](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html)
