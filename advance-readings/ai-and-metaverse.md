@@ -1,4 +1,4 @@
-# Trust Related Issues in AI and Metaverse
+# AI & Metaverse - How to trust our digital twin?
 
 Zaïda Rivai, zaida.rivai@danubetech.com
  
