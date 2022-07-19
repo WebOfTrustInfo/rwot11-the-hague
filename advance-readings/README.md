@@ -53,6 +53,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
 
+### [Comparing Credential Formats](./Comparing_Credential_Formats.md)
+   * by [Dr. Andre Kudra](mailto:a.kudra@esatus.com), esatus AG, Germany
+   * Credential Formats analyzed and compared by an international expert group
+   * #Credentials #Formats #Signature #Revocation #Key-Management
+
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
@@ -98,6 +103,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
