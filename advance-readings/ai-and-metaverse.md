@@ -20,15 +20,15 @@ Technological developments in AI resulted in great progress in the automatic ope
 
 * *Bullying or sexual harassment* [6]
 
-A women’s avatar was sexually harassed on one of Meta’s virtual-reality (VR) platforms, Horizon Worlds. With the current problems of cyberbullying, how do we also solve bullying and harassment in the metaverse?
+	A women’s avatar was sexually harassed on one of Meta’s virtual-reality (VR) platforms, Horizon Worlds. With the current problems of cyberbullying, how do we also solve bullying and harassment in the metaverse?
 
 * *The Metaverse of Intellectual property (IP)*
 
-In the ultimate vision, the metaverse seamlessly integrates interoperable and decentralised worlds and merging the virtual world with the reality. However, currently the reality is that these worlds are centralised controlled by single entities, raising many IP issues. In order for IP owners to not lose their brand, clear IP licensing arrangements should be established. As with any IP licence, typical terms such as term, territory, and royalty rates are important. What is the scope of these licenses?
+	In the ultimate vision, the metaverse seamlessly integrates interoperable and decentralised worlds and merging the virtual world with the reality. However, currently the reality is that these worlds are centralised controlled by single entities, raising many IP issues. In order for IP owners to not lose their brand, clear IP licensing arrangements should be established. As with any IP licence, typical terms such as term, territory, and royalty rates are important. What is the scope of these licenses?
 
 * *Bias in the AI algorithms*
 
-Flaws in the algorithms are a direct result of the data that is fed into the AI systems. As real world data has a biased nature, AI systems build their algorithms incorporating this bias. How can we make sure algorithms are built transparent, explainable, bias-free and accountable? 
+	Flaws in the algorithms are a direct result of the data that is fed into the AI systems. As real world data has a biased nature, AI systems build their algorithms incorporating this bias. How can we make sure algorithms are built transparent, explainable, bias-free and accountable? 
 
 The intersection between trust and AI are of great importance and relevance to AI ethics and harm prevention. It is possible, however, that the combination of metaverse and AI will fundamentally alter the boundaries between the real world and the digital world or even dissolve them. An individual’s face will remain its identity which, with the current technologies, anyone could theoretically (re)-create without having the owner’s permission or knowledge. Once it is in a system it has a life of its own.
 
