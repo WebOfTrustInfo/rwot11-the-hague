@@ -93,6 +93,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
+### [DID Traits](./did-traits.md)
+   * by [Charles Cunningham](mailto:charles.cunningham@spruceid.com) and [Wayne Chang](mailto:wayne@spruceid.com), Spruce Systems, Inc., Berlin/New York
+   * A proposal for characterising and categorising DID methods by supported feature sets to evaluate technical suitability for different use cases, applications and environments.
+   * #dids #didmethods #identitymanagement #applications #devx
+
 ### ... more ...
 
 ## Alphabetical Listing
@@ -106,6 +111,7 @@ _Please also enter your paper alphabetically in the form:_
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
+* [DID Traits](./did-traits.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
