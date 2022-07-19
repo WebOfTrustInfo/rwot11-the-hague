@@ -1,6 +1,6 @@
 # DID Traits
 
-Proposed collaborative paper initially co-authored by [Charles Cunningham](mailto:charles.cunningham@spruceid.com) and [Wayne Chang](mailto:wayne.chang@spruceid.com) to be completed as part of the RWOT 2022 in The Hague, Netherlands 26-30 September.
+Proposed collaborative paper initially co-authored by [Charles Cunningham](mailto:charles.cunningham@spruceid.com) and [Wayne Chang](mailto:wayne@spruceid.com) to be completed as part of the RWOT 2022 in The Hague, Netherlands 26-30 September.
 
 ## Abstract
 
