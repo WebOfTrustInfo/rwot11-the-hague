@@ -70,6 +70,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ### [Spendability of Currency: Citizen Report](./spendability-of-currency.md)
    * by [Will Abramson](mailto:wip.abramson@gmail.com), Legendary Requirements, UK
    * How easy is it to spend cash around the world these days? Let's find out, by actively attempting to and recording the results.
+
 ### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
    * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
@@ -89,7 +90,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oliver Terbu](mailto:oliver.terbu@spruceid.com), Spruce Systems, Inc., Berlin/New York
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
->>>>>>> upstream/master
+
+### [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
+   * by [Will Abramson](mailto:will@legreq.com), Legendary Requirements, work funded by Digital Contract Design
+   * Let's make BIP 322 smart signatures a usable verification method for Verifiable Credential use cases.
 
 ### ... more ...
 
@@ -102,6 +106,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
@@ -110,6 +115,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
+
 * ... more ...
 
 ## RWOT10 Papers
