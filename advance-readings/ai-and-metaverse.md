@@ -1,4 +1,4 @@
-# Trust related issues in AI and Metaverse
+# Trust Related Issues in AI and Metaverse
 
 Zaïda Rivai, zaida.rivai@danubetech.com
  
