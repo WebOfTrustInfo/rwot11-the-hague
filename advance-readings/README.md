@@ -19,7 +19,7 @@ If you don't know how to submit a pull request, please instead submit an issue.
 
 To those who have submitted an Advance Readings paper, RWOT11 offers a steep discount on the ticket price for participation to the event. Please obtain your discount code as follows.
 * Copy the link to your Pull Request (see previous section)
-* Email to [Will Abramson](mailto:will.abramson@napier.ac.uk), paste the link to the Pull Request and ask for the discount code
+* Email to [questions@weboftrust.info](mailto:questions@weboftrust.info), paste the link to the Pull Request and ask for the discount code
 
 Please make sure to make your Pull Request Submission BEFORE you buy the tickets for RWOT11, in order to apply your discount code.
 
@@ -53,6 +53,15 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
 
+### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
+  * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
+  * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
+  * #connect #application #framework #VerifiableCredentials #UX
+
+### [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
+   * by [Mirko Mollik](mailto:mollik@trustcerts.de)
+   * DIDs allow us today to request the public keys to validate signature from a distributed verifiable data registry. Why not addressing all required resources like that, but independent from one specific vdr?
+   * #did #vdr #resources
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
@@ -61,9 +70,29 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ### [Spendability of Currency: Citizen Report](./spendability-of-currency.md)
    * by [Will Abramson](mailto:wip.abramson@gmail.com), Legendary Requirements, UK
    * How easy is it to spend cash around the world these days? Let's find out, by actively attempting to and recording the results.
+### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+   * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
+   * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
+   * #Reputation #Webs-of-trust #Trust-networks
+
+### [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
+  * by [Manu Sporny](mailto:msporny@digitalbazaar.com), Digital Bazaar, USA
+  * A Verifiable Credential extension to support rendering using graphics, audio, or braille.
+  * #VerifiableCredentials #w3c #a11y
+
+### [Validation - The Missing Link](./validation-the-missing-link.md)
+  * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
+  * In order to adopt VCs (or SSI technology), we need to explore what individual parties need *apart* from what's already part of VCs (e.g.: proofs), and how such needs can (also) be accommodated.
+  * #validation #verification #sovereignty
+
+### [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
+   * by [Oliver Terbu](mailto:oliver.terbu@spruceid.com), Spruce Systems, Inc., Berlin/New York
+   * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
+   * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
+>>>>>>> upstream/master
 
 ### ... more ...
-  
+
 ## Alphabetical Listing
 
 _Please also enter your paper alphabetically in the form:_
@@ -71,9 +100,17 @@ _Please also enter your paper alphabetically in the form:_
 ```
 * [Paper Name](link)
 ```
-*  [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+
+* [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
+* [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Spenability of Currency](./spendability-of-currency.md)
+* [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+* [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
+* [Validation - The Missing Link](./validation-the-missing-link.md)
+* [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
+* ... more ...
 
 ## RWOT10 Papers
 
