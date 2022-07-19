@@ -8,7 +8,7 @@ The next generation successor Artificial Intelligence (AI) & Metaverse has recen
 
 ### 1.1 AI and Metaverse
 
-Since the breakthrough of AI in fields such as computer vision, decision-making and natural language processing, developers have been motivated to realise AI in metaverse [1]. Machine learning-based methods allow to exceed the level of human’s learning by providing technical support for all systems in metaverse, thereby, effecting the operational efficiency and intelligence. As an example, one could use AI for building intelligent voice services that could provide technical support such as voice recognition and communication for metaverse users. In the digital age, virtual reality allows us to experience digital worlds first hand by while distributed ledger technology and blockchain redefine trust and transparency in digital asset ownership and transactions.
+Since the breakthrough of AI in fields such as computer vision, decision-making and natural language processing, developers have been motivated to realise AI in metaverse [1]. Machine learning-based methods allow to exceed the level of human’s learning by providing technical support for all systems in metaverse, thereby, effecting the operational efficiency and intelligence. As an example, one could use AI for building intelligent voice services that could provide technical support such as voice recognition and communication for metaverse users.
 
 ### 1.2 Digital Twins
 
