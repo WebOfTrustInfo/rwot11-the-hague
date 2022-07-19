@@ -112,6 +112,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
 
+### [Social Wallet Recovery](./social-wallet-recovery.md)
+  * by [Timo Glastra](mailto:timo@animo.id), Animo Solutions, The Netherlands
+  * Social recovery of wallet data and keys by leveraging sharding.
+  * #recovery #wallet #sharding
+
 ### [Validation - The Missing Link](./validation-the-missing-link.md)
   * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
   * In order to adopt VCs (or SSI technology), we need to explore what individual parties need *apart* from what's already part of VCs (e.g.: proofs), and how such needs can (also) be accommodated.
@@ -156,6 +161,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
+* [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
 * [SSI data generator](./data-generator.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
