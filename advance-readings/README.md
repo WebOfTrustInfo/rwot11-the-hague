@@ -111,7 +111,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ### [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
    * by [Fabio Tagliaferro](mailto:fabio.tagliaferro@univr.it), Commercio.Network & University of Verona, Italy
    * Leverage the power of national European identities to obtain SSI credentials, starting from the Italian SPID ecosystem.
-   * #VerifiableCredentials #Europe #SPID #Italy #SSI 
+   * #VerifiableCredentials #Europe #SPID #Italy #SSI
 
 ### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
@@ -127,7 +127,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
    * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
    * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
-  
+
 ### [SSI data Generator](./data-generator.md)
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
@@ -137,6 +137,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * by [Timo Glastra](mailto:timo@animo.id), Animo Solutions, The Netherlands
   * Social recovery of wallet data and keys by leveraging sharding.
   * #recovery #wallet #sharding
+  
+### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
+* by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
+* A proposal for a Verifiable Endorsements mechanism for VCs.
 
 ### [Validation - The Missing Link](./validation-the-missing-link.md)
   * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
@@ -187,6 +191,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
 * [Social Wallet Recovery](./social-wallet-recovery.md)
 * [SSI data generator](./data-generator.md)
+* [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
@@ -196,5 +201,3 @@ _Please also enter your paper alphabetically in the form:_
 ## RWOT10 Papers
 
 You may also want to consult the papers from [RWOT10](https://github.com/WebOfTrustInfo/rwot10-buenosaires/blob/master/topics-and-advance-readings/README.md), as that design workshop was cancelled due to COVID.
-
-
