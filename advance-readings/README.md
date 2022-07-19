@@ -117,6 +117,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
    * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
    * #Reputation #Webs-of-trust #Trust-networks
+   
+### [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
+   * by [Brent Zundel](mailto:brent.zundel@avast.com), Avast s.r.o.
+   * A proposal for a conversation about whether reducing correlation is necessary during credential exchange. 
+   * #VerifiableCredentials #HolderBinding #Zero-knowledge-proofs #ZKP
 
 ### [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
   * by [Manu Sporny](mailto:msporny@digitalbazaar.com), Digital Bazaar, USA
@@ -187,6 +192,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+* [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
 * [Social Wallet Recovery](./social-wallet-recovery.md)
