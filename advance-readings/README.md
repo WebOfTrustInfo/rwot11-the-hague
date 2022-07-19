@@ -62,6 +62,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
   * #connect #application #framework #VerifiableCredentials #UX
+### [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
+  * by [Karim Stekelenburg](mailto:karim@animo.id), Animo Solutions, The Netherlands
+  * Leveraging DIDComm to create a modern chat protocol that can compete with commonly used chat applications like WhatsApp and Telegram.
+  * #DIDComm #protocol #messaging #chat
 
 ### [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
    * by [Mirko Mollik](mailto:mollik@trustcerts.de)
@@ -124,6 +128,7 @@ _Please also enter your paper alphabetically in the form:_
 * [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
+* [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [DID Traits](./did-traits.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
