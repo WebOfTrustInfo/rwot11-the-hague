@@ -1,4 +1,4 @@
-[Comparing Credential Formats]
+**Comparing Credential Formats**
 
    * by [Dr. Andre Kudra](mailto:a.kudra@esatus.com), esatus AG, Germany
    * Credential Formats analyzed and compared by an international expert group
@@ -28,19 +28,19 @@ RWOT in September 2022 will be used to drive the work forward and work on both m
 
 ## 3. Constituting components
 
-Common credential types are a combination - Combo - of credential format, signing algorithm, revocation algorithm and key management. **<u>*<Detailed here.>*</u>**
+Common credential types are a combination - Combo - of credential format, signing algorithm, revocation algorithm and key management. *[Detailed here.]*
 
 ## 4. Combos - Common credential types
 
-Particular Combos - e.g. AnonCreds, JSON-LD VCs with BBS+, ISO mDL, ICAO DTC - are often referred to. This section presents rationales why those are common ones. **<u>*<Detailed here.>*</u>**
+Particular Combos - e.g. AnonCreds, JSON-LD VCs with BBS+, ISO mDL, ICAO DTC - are often referred to. This section presents rationales why those are common ones. *[Detailed here.]*
 
 ## 5. Discussion of selected Combos
 
-Due to their diversity in traits, the common Combos have varying application scenarios and intensity of market acceptance i.e. production deployments and practical use. **<u>*<Detailed here. Structure to be discussed.>*</u>**
+Due to their diversity in traits, the common Combos have varying application scenarios and intensity of market acceptance i.e. production deployments and practical use. *[Detailed here. Structure to be discussed.]*
 
 ## 6. Conclusions
 
-**<u>*<Summary and conclusions here. Structure to be discussed.>*</u>**
+*[Summary and conclusions here. Structure to be discussed.]*
 
 ## 7. References
 
