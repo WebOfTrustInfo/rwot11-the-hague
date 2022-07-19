@@ -89,7 +89,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 
 ### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
    * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
-   * A proposal of the critical ethical issues in the emerging technologies AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
+   * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
    * #ai #metaverse #trust #ethics  
 
 ### ... more ...
@@ -102,6 +102,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Paper Name](link)
 ```
 
+* [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
