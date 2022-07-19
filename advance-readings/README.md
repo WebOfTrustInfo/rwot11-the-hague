@@ -87,9 +87,9 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
-### [Trust related issues in AI and Metaverse](./ai-and-metaverse.md)
+### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
    * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
-   * A proposal of the issues in the emerging technologies of AI and metaverse 
+   * A proposal of the critical ethical issues in the emerging technologies AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
    * #ai #metaverse #trust #ethics  
 
 ### ... more ...
