@@ -127,6 +127,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
+### [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
+   * by [Ana Goessens](mailto:ana@animo.id)
+   * Continuing the conversation on the topics surrounding SSI, using methods from commercial branding to semantic philosophy.
+   * #Terminology #Semantics
 
 ### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
    * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
@@ -173,6 +177,7 @@ _Please also enter your paper alphabetically in the form:_
 * [SSI data generator](./data-generator.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
+* [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
 * [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
 * ... more ...
 
