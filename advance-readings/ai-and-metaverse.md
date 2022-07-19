@@ -50,27 +50,15 @@ In times where visiting a concert, collaboration with your colleagues or having 
 
 ## References
 
-[1] Qinglin Yang, Yetong Zhao, Huawei Huang, Zehui Xiong, Jiawen Kang, and Zibin Zheng. Fusing
-
-blockchain and ai with metaverse: A survey. IEEE Open Journal of the Computer Society, 2022.
+[1] Qinglin Yang, Yetong Zhao, Huawei Huang, Zehui Xiong, Jiawen Kang, and Zibin Zheng. Fusing blockchain and ai with metaverse: A survey. IEEE Open Journal of the Computer Society, 2022.
 
 [2] Pragya Soni. 6 use cases of ai in metaverse, 2022.
 
-[3] Yuhei Ando, Ruck Thawonmas, and Frank Rinaldo. Level of interest in observed exhibits in
+[3] Yuhei Ando, Ruck Thawonmas, and Frank Rinaldo. Level of interest in observed exhibits in metaverse museums. Proceedings of the innovations in information and communication science and technology IICST, pages 62–66, 2012.
 
-metaverse museums. Proceedings of the innovations in information and communication science
+[4] Jacob Hochhalter, William P Leser, John A Newman, Vipul K Gupta, Vesselin Yamakov, Stephen R Cornell, Scott A Willard, and Gerd Heber. Coupling damage-sensing particles to the digitial twin concept. Technical report, 2014.
 
-and technology IICST, pages 62–66, 2012.
-
-[4] Jacob Hochhalter, William P Leser, John A Newman, Vipul K Gupta, Vesselin Yamakov,
-
-Stephen R Cornell, Scott A Willard, and Gerd Heber. Coupling damage-sensing particles to
-
-the digitial twin concept. Technical report, 2014.
-
-[5] Qinglin Qi and Fei Tao. Digital twin and big data towards smart manufacturing and industry
-
-4.0: 360 degree comparison. Ieee Access, 6:3585–3593, 2018.
+[5] Qinglin Qi and Fei Tao. Digital twin and big data towards smart manufacturing and industry 4.0: 360 degree comparison. Ieee Access, 6:3585–3593, 2018.
 
 [6] BBC. Female avatar sexually assaulted in meta vr platform, campaigners say, 2022.
 
