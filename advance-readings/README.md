@@ -77,6 +77,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * by [Manu Sporny](mailto:msporny@digitalbazaar.com), Digital Bazaar, USA
   * A Verifiable Credential extension to support rendering using graphics, audio, or braille.
   * #VerifiableCredentials #w3c #a11y
+  
+### [SSI data Generator](./data-generator.md)
+   * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
+   * A data generator for SSI interactions and mocking
+   * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
 
 ### [Validation - The Missing Link](./validation-the-missing-link.md)
   * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
@@ -87,12 +92,6 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oliver Terbu](mailto:oliver.terbu@spruceid.com), Spruce Systems, Inc., Berlin/New York
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
-
-### [SSI data Generator](./data-generator.md)
-
-   * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
-   * A data generator for SSI interactions and mocking
-   * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
 
 ### ... more ...
 
