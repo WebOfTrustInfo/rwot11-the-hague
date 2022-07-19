@@ -48,6 +48,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * #hashtags for topics
 ```
 
+### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
+* by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
+* A proposal for a Verifiable Endorsements mechanism for VCs.
+
 ### [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
    * by [Adrian Gropper, MD](mailto:agropper@healthurl.com), Patient Privacy Rights, Austin, Texas
    * A novel approach to digital identity protocols is presented that gives market power to the human subject of identity-based interactions through their ability to choose a delegate.
@@ -95,7 +99,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ### [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
    * by [Fabio Tagliaferro](mailto:fabio.tagliaferro@univr.it), Commercio.Network & University of Verona, Italy
    * Leverage the power of national European identities to obtain SSI credentials, starting from the Italian SPID ecosystem.
-   * #VerifiableCredentials #Europe #SPID #Italy #SSI 
+   * #VerifiableCredentials #Europe #SPID #Italy #SSI
 
 ### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
@@ -106,7 +110,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * by [Manu Sporny](mailto:msporny@digitalbazaar.com), Digital Bazaar, USA
   * A Verifiable Credential extension to support rendering using graphics, audio, or braille.
   * #VerifiableCredentials #w3c #a11y
-  
+
 ### [SSI data Generator](./data-generator.md)
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
@@ -139,7 +143,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 
 ### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
    * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
-   * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
+   * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse?
    * #ai #metaverse #trust #ethics  
 
 
@@ -190,5 +194,3 @@ _Please also enter your paper alphabetically in the form:_
 ## RWOT10 Papers
 
 You may also want to consult the papers from [RWOT10](https://github.com/WebOfTrustInfo/rwot10-buenosaires/blob/master/topics-and-advance-readings/README.md), as that design workshop was cancelled due to COVID.
-
-
