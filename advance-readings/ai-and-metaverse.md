@@ -24,11 +24,11 @@ Technological developments in AI resulted in great progress in the automatic ope
 
 * *The Metaverse of Intellectual property (IP)*
 
-	In the ultimate vision, the metaverse seamlessly integrates interoperable and decentralised worlds and merging the virtual world with the reality. However, currently the reality is that these worlds are centralised controlled by single entities, raising many IP issues. In order for IP owners to not lose their brand, clear IP licensing arrangements should be established. As with any IP licence, typical terms such as term, territory, and royalty rates are important. What is the scope of these licenses?
+	In the ultimate vision, the metaverse seamlessly integrates interoperable and decentralised worlds and merges the virtual world with the reality. However, currently the reality is that these worlds are centralised controlled by single entities, raising many IP issues. In order for IP owners to not lose their brand, clear IP licensing arrangements should be established. As with any IP licence, typical terms such as territory, and royalty rates are important. With these IP issues, we should ask ourselves what the scope of these licenses are.
 
 * *Bias in the AI algorithms*
 
-	Flaws in the algorithms are a direct result of the data that is fed into the AI systems. As real world data has a biased nature, AI systems build their algorithms incorporating this bias. How can we make sure algorithms are built transparent, explainable, bias-free and accountable? 
+	Flaws in the algorithms are a direct result of the data that is fed into the AI systems. As real world data is likely to be biased in certain or maybe all fields, AI systems build their algorithms incorporating this bias. How can we make sure algorithms are built transparent, explainable, bias-free and accountable? 
 
 The intersection between trust and AI are of great importance and relevance to AI ethics and harm prevention. It is possible, however, that the combination of metaverse and AI will fundamentally alter the boundaries between the real world and the digital world or even dissolve them. An individual’s face will remain its identity which, with the current technologies, anyone could theoretically (re)-create without having the owner’s permission or knowledge. Once it is in a system it has a life of its own.
 
@@ -44,9 +44,9 @@ To elaborate on this topic, it is essential to discuss and identify the most imp
 
 ## Conclusion
 
-With the advancing technologies in AI and metaverse, critical ethical issues raise. The scope of these issues is huge. Not only should we consider the current problems of AI and internet like cyberbullying or algorithms based on biased data, but many other problems regarding identity, trust, AI and metaverse can be found. Identifying these problems before they develop or emerge is crucial and therefore discussing this topic with experts is necessary.
+With the advancing technologies in AI and metaverse, critical ethical issues raise. We might not even be aware of the scope of these problems yet. Not only should we consider the current problems of AI and internet like cyberbullying or algorithms based on biased data, but many other problems regarding identity, trust, AI and metaverse should be discussed. Identifying these problems before they develop or emerge is crucial and therefore discussing this topic with experts is necessary.
 
-In times where visiting a concert, collaboration with your colleagues or having lunch with your family might soon all happen in the metaverse, rather than digitalising the human world for machine, machines should learn to live in the human world.
+In times where visiting a concert, collaboration with your colleagues or having lunch with your family might soon all happen in the metaverse, it is important that we should focus on *rather than digitalising the human world for machine, machines should learn to live in the human world.*
 
 ## References
 
