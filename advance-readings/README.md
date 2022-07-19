@@ -35,6 +35,7 @@ really, read as much as you can!)
 * [Functional Identity Primer](./functional-identity-primer.md) — A different way to look at identity
 * [Verifiable Credentials Primer](./verifiable-credentials-primer.md) — the project formerly known as Verifiable Claims
 * [Glossary of Terms](./glossary-primer.md) — a brief dictionary of technical terms used at RWOT
+* [Data Generator](./data-generator.md) — a data-generator for SSI
 
 ## Topical Listing
 
@@ -47,25 +48,54 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * #hashtags for topics
 ```
 
+### [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
+   * by [Adrian Gropper, MD](mailto:agropper@healthurl.com), Patient Privacy Rights, Austin, Texas
+   * A novel approach to digital identity protocols is presented that gives market power to the human subject of identity-based interactions through their ability to choose a delegate.
+   * #Delegation  #HumanRights #DID #VerifiableCredentials #w3c #GNAP
+
+### [Caching in DID Resolution](./caching-in-did-resolution.md)
+* by [Markus Sabadello](mailto:markus@danubetech.com), Danube Tech, Austria
+* Some thoughts on how to add and control caching in DID Resolution processes.
+* #did #did-resolution
 
 ### [CESR adapter for sophisticated multisig](https://hackmd.io/GbQO3p6QTge-8eQMGuMaeQ)
    * by [Henk van Cann](mailto:h.vancann@blockchainbird.org), Blockchainbird.org, The Netherlands
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
 
+### [Comparing Credential Formats](./Comparing_Credential_Formats.md)
+   * by [Dr. Andre Kudra](mailto:a.kudra@esatus.com), esatus AG, Germany
+   * Credential Formats analyzed and compared by an international expert group
+   * #Credentials #Formats #Signature #Revocation #Key-Management
+
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
   * #connect #application #framework #VerifiableCredentials #UX
+### [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
+  * by [Karim Stekelenburg](mailto:karim@animo.id), Animo Solutions, The Netherlands
+  * Leveraging DIDComm to create a modern chat protocol that can compete with commonly used chat applications like WhatsApp and Telegram.
+  * #DIDComm #protocol #messaging #chat
 
 ### [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
    * by [Mirko Mollik](mailto:mollik@trustcerts.de)
    * DIDs allow us today to request the public keys to validate signature from a distributed verifiable data registry. Why not addressing all required resources like that, but independent from one specific vdr?
    * #did #vdr #resources
+
+### [DID Traits](./did-traits.md)
+   * by [Charles Cunningham](mailto:charles.cunningham@spruceid.com) and [Wayne Chang](mailto:wayne@spruceid.com), Spruce Systems, Inc., Berlin/New York
+   * A proposal for characterising and categorising DID methods by supported feature sets to evaluate technical suitability for different use cases, applications and environments.
+   * #dids #didmethods #identitymanagement #applications #devx
+
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
    * #eSSIF-Lab #SSI-ecosystem #Europe
+
+### [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
+   * by [Fabio Tagliaferro](mailto:fabio.tagliaferro@univr.it), Commercio.Network & University of Verona, Italy
+   * Leverage the power of national European identities to obtain SSI credentials, starting from the Italian SPID ecosystem.
+   * #VerifiableCredentials #Europe #SPID #Italy #SSI 
 
 ### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
@@ -76,6 +106,16 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * by [Manu Sporny](mailto:msporny@digitalbazaar.com), Digital Bazaar, USA
   * A Verifiable Credential extension to support rendering using graphics, audio, or braille.
   * #VerifiableCredentials #w3c #a11y
+  
+### [SSI data Generator](./data-generator.md)
+   * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
+   * A data generator for SSI interactions and mocking
+   * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
+
+### [Social Wallet Recovery](./social-wallet-recovery.md)
+  * by [Timo Glastra](mailto:timo@animo.id), Animo Solutions, The Netherlands
+  * Social recovery of wallet data and keys by leveraging sharding.
+  * #recovery #wallet #sharding
 
 ### [Validation - The Missing Link](./validation-the-missing-link.md)
   * by [Rieks Joosten](mailto:rieks.joosten@tno.nl), TNO, Netherlands
@@ -92,6 +132,23 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Continuing the conversation on the topics surrounding SSI, using methods from commercial branding to semantic philosophy.
    * #Terminology #Semantics
 
+### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
+   * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
+   * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
+   * #ai #metaverse #trust #ethics  
+
+
+### [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+   * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
+   * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
+   * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
+
+### [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
+- by [Berend Sliedrecht](mailto:berend@animo.id), Animo, The Netherlands
+- A proposal on working with zkSNARKs within the verifiable credential space
+- #VerifiableCredentials #ZKP #zksnark
+
+
 ### ... more ...
 
 ## Alphabetical Listing
@@ -102,15 +159,26 @@ _Please also enter your paper alphabetically in the form:_
 * [Paper Name](link)
 ```
 
+* [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
+* [Caching in DID Resolution](./caching-in-did-resolution.md)
+* [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
+* [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
+* [DID Traits](./did-traits.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
+* [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
+* [Social Wallet Recovery](./social-wallet-recovery.md)
+* [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+* [SSI data generator](./data-generator.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
 * [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
+* [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
 * ... more ...
 
 ## RWOT10 Papers
