@@ -93,6 +93,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal for characterising and categorising DID methods by supported feature sets to evaluate technical suitability for different use cases, applications and environments.
    * #dids #didmethods #identitymanagement #applications #devx
 
+### [Discovery Handshake](./discovery-handshake.md)
+   * by [Snorre Lothar von Gohren Edwin](mailto:snorre@diwala.io), Diwala, Uganda/Oslo
+   * A proposal to reason about bringing your own wallet to the table.
+   * #discover #protocols #wallet
+
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
@@ -173,6 +178,7 @@ _Please also enter your paper alphabetically in the form:_
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [DID Traits](./did-traits.md)
+* [Discovery Handshake](./discovery-handshake.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
