@@ -128,6 +128,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
 
+### [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
+   * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
+   * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
+   * #ai #metaverse #trust #ethics  
+
+
 ### [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
    * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
    * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
@@ -149,6 +155,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Paper Name](link)
 ```
 
+* [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
