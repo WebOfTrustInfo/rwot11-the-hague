@@ -84,6 +84,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Credential Formats analyzed and compared by an international expert group
    * #Credentials #Formats #Signature #Revocation #Key-Management
 
+### [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
+   * by [Carsten Stöcker](mailto:carsten.stoecker@spherity.com), Spherity GmbH 
+   * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
+   * ZTA is an important design philosophy to establish security mechanisms at the API layer of each individual IT resource for increasing API Endpoint Security. This paper discussed how credentials can enable ZTA mechanism aming ERP systems for supply chain use cases.
+   * #ABAC, #API-Endpoint-Security, #Authorisation, #Credentials, #SupplyChain, #Wallets, #ZTA
+
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
@@ -206,6 +212,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
+* [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [DID Fluidity](./did-fluidity.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
