@@ -83,6 +83,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
   * #connect #application #framework #VerifiableCredentials #UX
 
+### [DID Fluidity](./did-fluidity.md)
+  * by [Juan Caballero](mailto:jcaballero@centre.io), Centre.io, Berlin/United States
+  * It would be great if a group of researchers and/or coordinators across DID methods could write lightweight micro-implementation guide covering cross-DID-method capabilities, anchored in properties defined in the DID data model and/or traits (see other paper below). This could be folded in as a section of the official W3C implementation guide at a later date if appropriate.
+  * #documentation #crosschain #crossmethod #portability #metawallet #DIDextensions
+
 ### [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
    * by [Mirko Mollik](mailto:mollik@trustcerts.de)
    * DIDs allow us today to request the public keys to validate signature from a distributed verifiable data registry. Why not addressing all required resources like that, but independent from one specific vdr?
@@ -185,6 +190,7 @@ _Please also enter your paper alphabetically in the form:_
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
+* [DID Fluidity](./did-fluidity.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [DID Traits](./did-traits.md)
 * [Discovery Handshake](./discovery-handshake.md)
