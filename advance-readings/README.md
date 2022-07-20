@@ -62,6 +62,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Zaïda Rivai](mailto:zaida.rivai@danubetech.com), Danube Tech Gmbh, Vienna
    * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
    * #ai #metaverse #trust #ethics  
+
+##  [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
+   * by [Carsten Stöcker](mailto:carsten.stoecker@spherity.com), Spherity GmbH 
+   * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
+   * The EU Commission&#39;s proposal for review of the eIDAS Regulation from 2021 has opened strong expectations for a deep change in traditional identity models.  The EU might endorse a hybird solution consisting of x509 certificates and decentralized PKI using DID/VC. This  paper provides various options to address different implementation alternatives in combining x509 and DID/VC approaches.
+   * #did, #eIDAS, #x509, #hybrid-wallets
   
 ### [Caching in DID Resolution](./caching-in-did-resolution.md)
 * by [Markus Sabadello](mailto:markus@danubetech.com), Danube Tech, Austria
@@ -196,6 +202,7 @@ _Please also enter your paper alphabetically in the form:_
 * [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
 * [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
+* [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
