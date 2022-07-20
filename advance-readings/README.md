@@ -88,6 +88,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * DIDs allow us today to request the public keys to validate signature from a distributed verifiable data registry. Why not addressing all required resources like that, but independent from one specific vdr?
    * #did #vdr #resources
 
+### [DID Torrent](./did_torrent.md)
+   * by [Vinay Vasanji](mailto:vinay.vasanji@pm.me)
+   * A proposal to specify a p2p DID Method using the BitTorrent DHT, and a consumer use-case to drive its large scale adoption.
+   * #DIDs #DIDmethods #p2p #peertopeer #applications #wallet
+
 ### [DID Traits](./did-traits.md)
    * by [Charles Cunningham](mailto:charles.cunningham@spruceid.com) and [Wayne Chang](mailto:wayne@spruceid.com), Spruce Systems, Inc., Berlin/New York
    * A proposal for characterising and categorising DID methods by supported feature sets to evaluate technical suitability for different use cases, applications and environments.
@@ -186,6 +191,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
+* [DID Torrent](./did_torrent.md)
 * [DID Traits](./did-traits.md)
 * [Discovery Handshake](./discovery-handshake.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
