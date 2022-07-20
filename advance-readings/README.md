@@ -161,6 +161,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Oliver Terbu](mailto:oliver.terbu@spruceid.com), Spruce Systems, Inc., Berlin/New York
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
+   
+### [Verifier Universal Interface](./vui-primer.md)
+   * by [Daniel Moledo ](mailto:daniel@gataca.io)
+   * VUI (Verifier Universal Interface) specification proposal to achieve interoperability for the verification process: that is, to eliminate a possible vendor lock-in between any wallet and any verifier tool.
+   * #VerifiableCredentials #Verifier 
 
 ### [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
    * by [Ana Goessens](mailto:ana@animo.id)
@@ -206,6 +211,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
+* [Verifier Universal Interface](./vui-primer.md)
 * [Words Matter: A Rethink of Current SSI Terminology](./words-matter-a-rethink-of-current-terminology.md)
 * [ZKPs with zkSNARKs in a DIDComm ecosystem](./zkp-with-zksnarks-in-a-didcomm-ecosystem.md)
 * ... more ...
