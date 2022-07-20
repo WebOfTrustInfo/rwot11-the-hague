@@ -155,6 +155,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
    * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
 
+### [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
+   * by [Eric Schuh](mailto:eric@legreq.com), Legendary Requirements, USA
+   * A software framework to enable the choice of how to self custody digital assets
+   * #recovery #wallet #threat-model
+
 ### [SSI data Generator](./data-generator.md)
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
@@ -226,6 +231,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+* [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
 * [Social Wallet Recovery](./social-wallet-recovery.md)
 * [SSI data generator](./data-generator.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
