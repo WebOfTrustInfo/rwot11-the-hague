@@ -3,6 +3,8 @@
 
 **Email:** eric@legreq.com
 
+**Github:** @eric-schuh
+
 ## Introduction
 As the world moves more and more towards digital lives being a norm, the need to securely and reliably store digital assets in a privacy respecting way becomes
 paramount for the people of the world to trust the digital systems that are being put in place. Moreover there is a need for the technical implementers of 
