@@ -74,6 +74,21 @@ The client module is a VC wallet implemented as a browser extension, executed by
 
 Open source tools for managing the lifecycle of VCs are available at the [project homepage](https://mm.aueb.gr/projects/zerotrustvc) [14]. 
 
+# 2.6 eSSIF-Lab subgrantee project "Adding SSI to internet communications" by Bloqzone
+One of the things people enjoy the most about the internet, is that it enables them to talk to others remotely almost without limit.
+Unfortunately, remotely often means that parties are not sure who they are communicating with. 
+
+Adding SSI to internet communications (SSIComms for short), resulting in seamless identified communications, is the solution to this problem. 
+
+SSIComms makes use of two protocols: DIDComm, central to SSI, and SIP, equally central to internet comunications and an SSIComms session between Alice and Bob involves 4 major steps:
+
+1. First, Alice and Bob start a SIP session, for instance by Alice calling Bob using the SIP protocol.
+2. Then, after Bob answers, he and Alice establish a DIDComm connection by Bob sending Alice an out-of band-message. As a means of transport, Bob chooses the active SIP session between him and Alice, and sends Alice the message as an encrypted SIP message.
+3. With the DIDComm connection in place, they can now use DIDComm to exchange credentials.
+4. The credentials proven to be satisfactory, Bob and Alice continue their SIP session and exchange voice, video or text messages.
+
+SSIComms differs from existing SSI/DIDComm based applications in that it focuses on internet communications sessions with both participants behind a firewall. Under these circumstances, DIDComm by itself does not suffice to add an identity layer.
+
 ## 3. SSI standardisation and interop testing
 
 < ... Further structuring to be discussed ... >
