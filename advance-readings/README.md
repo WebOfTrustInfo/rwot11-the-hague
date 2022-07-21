@@ -79,6 +79,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
 
+### [Collaborative Seed Recovery: A New Methodology for Smart Custody](csr.md)
+   * by Christopher Allen, Shannon Appelcline & Wolf McNally, Blockchain Commons
+   * Personally held digital assets are very vulnerable to accidental loss. This reading outlines solutions to date and looks at plans for a collaborative seed recovery architecture.
+   * #recovery #seed
+   
 ### [Comparing Credential Formats](./Comparing_Credential_Formats.md)
    * by [Dr. Andre Kudra](mailto:a.kudra@esatus.com), esatus AG, Germany
    * Credential Formats analyzed and compared by an international expert group
@@ -223,6 +228,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
 * [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
