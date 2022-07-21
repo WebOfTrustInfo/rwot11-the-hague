@@ -63,10 +63,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse? 
    * #ai #metaverse #trust #ethics  
 
-##  [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
+###  [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
    * by [Carsten Stöcker](mailto:carsten.stoecker@spherity.com), Spherity GmbH 
    * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
-   * The EU Commission&#39;s proposal for review of the eIDAS Regulation from 2021 has opened strong expectations for a deep change in traditional identity models.  The EU might endorse a hybird solution consisting of x509 certificates and decentralized PKI using DID/VC. This  paper provides various options to address different implementation alternatives in combining x509 and DID/VC approaches.
+   * The EU Commission&#39;s proposal for review of the eIDAS Regulation from 2021 has opened strong expectations for a deep change in traditional identity models.  The EU might endorse a hybrid solution consisting of x509 certificates and decentralized PKI using DID/VC. This paper provides various options to address different implementation alternatives in combining x509 and DID/VC approaches.
    * #did, #eIDAS, #x509, #hybrid-wallets
   
 ### [Caching in DID Resolution](./caching-in-did-resolution.md)
@@ -87,7 +87,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ### [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
    * by [Carsten Stöcker](mailto:carsten.stoecker@spherity.com), Spherity GmbH 
    * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
-   * ZTA is an important design philosophy to establish security mechanisms at the API layer of each individual IT resource for increasing API Endpoint Security. This paper discussed how credentials can enable ZTA mechanism aming ERP systems for supply chain use cases.
+   * ZTA is an important design philosophy to establish security mechanisms at the API layer of each individual IT resource for increasing API Endpoint Security. This paper discusses how credentials can enable ZTA mechanisms to secure ERP systems for supply chain use cases.
    * #ABAC, #API-Endpoint-Security, #Authorisation, #Credentials, #SupplyChain, #Wallets, #ZTA
    
 ### [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
