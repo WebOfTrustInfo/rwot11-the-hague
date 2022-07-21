@@ -89,6 +89,10 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
    * ZTA is an important design philosophy to establish security mechanisms at the API layer of each individual IT resource for increasing API Endpoint Security. This paper discussed how credentials can enable ZTA mechanism aming ERP systems for supply chain use cases.
    * #ABAC, #API-Endpoint-Security, #Authorisation, #Credentials, #SupplyChain, #Wallets, #ZTA
+   
+### [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
+   * by [Will Abramson](mailto:will@legreq.com), Legendary Requirements, work funded by Digital Contract Design
+   * Let's make BIP 322 smart signatures a usable verification method for Verifiable Credential use cases.
 
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
@@ -159,16 +163,20 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Eric Schuh](mailto:eric@legreq.com), Legendary Requirements, USA
    * A software framework to enable the choice of how to self custody digital assets
    * #recovery #wallet #threat-model
+   
+### [Social Wallet Recovery](./social-wallet-recovery.md)
+  * by [Timo Glastra](mailto:timo@animo.id), Animo Solutions, The Netherlands
+  * Social recovery of wallet data and keys by leveraging sharding.
+  * #recovery #wallet #sharding
+   
+### [Spendability of Currency: Citizen Report](./spendability-of-currency.md)
+   * by [Will Abramson](mailto:wip.abramson@gmail.com), Legendary Requirements, UK
+   * How easy is it to spend cash around the world these days? Let's find out, by actively attempting to and recording the results.
 
 ### [SSI data Generator](./data-generator.md)
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
-
-### [Social Wallet Recovery](./social-wallet-recovery.md)
-  * by [Timo Glastra](mailto:timo@animo.id), Animo Solutions, The Netherlands
-  * Social recovery of wallet data and keys by leveraging sharding.
-  * #recovery #wallet #sharding
   
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
@@ -199,7 +207,6 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 - A proposal on working with zkSNARKs within the verifiable credential space
 - #VerifiableCredentials #ZKP #zksnark
 
-
 ### ... more ...
 
 ## Alphabetical Listing
@@ -218,6 +225,7 @@ _Please also enter your paper alphabetically in the form:_
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
+* [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [DID Fluidity](./did-fluidity.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
@@ -233,6 +241,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
 * [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
 * [Social Wallet Recovery](./social-wallet-recovery.md)
+* [Spendability of Currency](./spendability-of-currency.md)
 * [SSI data generator](./data-generator.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
