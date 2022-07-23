@@ -89,6 +89,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Credential Formats analyzed and compared by an international expert group
    * #Credentials #Formats #Signature #Revocation #Key-Management
 
+### [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
+   * by [Nikos Fotiou](mailto:fotiou@aueb.gr), Athens University of Economics and Business
+   * Verifiable Credentials for expressing user capabilities, issued using OAuth 2.0, and used for accessing HTTP-based resources that abide by the Zero-Trust principle.  
+   * #IAA, #VerifiableCredentials, #ZTA
+
 ### [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
    * by [Carsten Stöcker](mailto:carsten.stoecker@spherity.com), Spherity GmbH 
    * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
@@ -230,6 +235,7 @@ _Please also enter your paper alphabetically in the form:_
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
+* [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
 * [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
