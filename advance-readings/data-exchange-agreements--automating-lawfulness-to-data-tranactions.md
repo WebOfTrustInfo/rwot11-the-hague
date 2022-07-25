@@ -11,13 +11,13 @@ This is a proposed collaborative paper to be completed at [RWOT 2022](https://rw
 # Data Exchange Agreements - Making data transactions trustworthy, auditable and immutable
 
 - Mr. Lal Chandran (iGrant.io, Sweden)
+- Mr. Jan Linquist (Linaltec, Sweden)
 - Ms. Lotta Lundin (iGrant.io, Sweden)
 
 The paper could potentially include additonal authors working with privacy and data exchange ecosystems
 
 - Paul Knowles (Human collassus Foundation, Switzerland)
 - Dr. Philippe Page (Human collassus Foundation, Switzerland)
-- Mr. Jan Linquist (Linaltec, Sweden)
 - Mr. George Padayatti (iGrant.io, Sweden) 
 - Dr. David Goodman (iGrant.io, Sweden)
 - Mr. Fredrik Linden (MyData, Sweden)
