@@ -48,6 +48,10 @@ With the advancing technologies in AI and metaverse, critical ethical issues rai
 
 In times where visiting a concert, collaboration with your colleagues or having lunch with your family might soon all happen in the metaverse, it is important that we should focus on *rather than digitalising the human world for machine, machines should learn to live in the human world.*
 
+## Acknowledgements
+
+Part of Danube Tech's work on DIDs, SSI, etc. has been supported by [eSSIF-Lab](https://essif-lab.eu/).
+
 ## References
 
 [1] Qinglin Yang, Yetong Zhao, Huawei Huang, Zehui Xiong, Jiawen Kang, and Zibin Zheng. Fusing blockchain and ai with metaverse: A survey. IEEE Open Journal of the Computer Society, 2022.
