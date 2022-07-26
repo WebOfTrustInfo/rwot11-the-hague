@@ -143,6 +143,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Charles E. Lehner](mailto:charles.lehner@spruceid.com), Spruce Systems, Inc., New York
    * A proposal for generalizing the Secure Scuttlebutt system for DIDs and Data Integrity.
    * #VerifiableCredentials #SecureScuttlebutt
+   
+### [Identified communications - SSI and internet communications or internet communications and SSI](./SSI%20and%20internet%20communications%20or%20internet%20communications%20and%20SSI.md)
+  * by [Alex Blom](alexander.blom@bloqzone.com), Bloqzone, Netherlands
+  * Examining different solutions to the problem of identified communications
+  * #SIP #DIDComm #chat #communications
 
 ### [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
    * by [Fabio Tagliaferro](mailto:fabio.tagliaferro@univr.it), Commercio.Network & University of Verona, Italy
@@ -246,6 +251,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Discovery Handshake](./discovery-handshake.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
+* [Identified communications - SSI and internet communications or internet communications and SSI](./SSI%20and%20internet%20communications%20or%20internet%20communications%20and%20SSI.md)
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
