@@ -99,12 +99,6 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
    * ZTA is an important design philosophy to establish security mechanisms at the API layer of each individual IT resource for increasing API Endpoint Security. This paper discusses how credentials can enable ZTA mechanisms to secure ERP systems for supply chain use cases.
    * #ABAC, #API-Endpoint-Security, #Authorisation, #Credentials, #SupplyChain, #Wallets, #ZTA
-
-### [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
-
-   * by [Lal Chandran](mailto:lal@igrant.io), iGrant.io, Sweden
-   * A novel approach to building lawful, human-centric and scalable data spaces, making data transactions trustworthy, auditable and immutable via data exchange agreements. It provides a suite of tools that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to be transparent and legitimate in their data usage while leveraging their data assets. Automated agreement handling is required for a scalable and regulatory-compliant data marketplace (data space). It also provides individuals control over how their data is used and exchanged.
-   * #eSSIF-Lab #SSI-ecosystem #dataagreeents #rightdata #dataexchangeagreements #gdpr #privacybydesign
    
 ### [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
    * by [Will Abramson](mailto:will@legreq.com), Legendary Requirements, work funded by Digital Contract Design
@@ -198,6 +192,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
+
+### [Standardization Overview](./standardization-overview.md)
+   * by [Maaike van Leuken](mailto:maaike.vanleuken@tno.nl), TNO, Eindhoven, The Netherlands
+   * An overview of SSI standardization
+   * #eSSIF-Lab #Standardization
   
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
@@ -248,7 +247,6 @@ _Please also enter your paper alphabetically in the form:_
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
-* [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
 * [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [DID Fluidity](./did-fluidity.md)
