@@ -1,13 +1,3 @@
-[Data Exchange Agreements - Making data transactions trustworthy, auditable and immutable](./dexa-automating-lawfulness-to-data-tranactions.md)
-
-   * by [Lal Chandran](mailto:lal@igrant.io), iGrant.io, Sweden
-   * Data Exchange Agreements - Making data transactions trustworthy, auditable and immutable
-   * #eSSIF-Lab #SSI-ecosystem #DataAgreeents #RightData #DataExchangeAgreements
-
-
-This is a proposed collaborative paper to be completed at [RWOT 2022](https://rwot11.eventbrite.com/), Den Haag, Netherlands, 26-30 September. Advance reading: see [here](https://github.com/WebOfTrustInfo/rwot11-the-hague/tree/master/advance-readings).
-
-
 # Data Exchange Agreements - Making data transactions trustworthy, auditable and immutable
 
 - Mr. Lal Chandran (iGrant.io, Sweden)
@@ -24,7 +14,7 @@ The paper could potentially include additonal authors working with privacy and d
 
 ## Abstract
 
-The Data Exchange Agreemeent provides a suit of agreements that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite for a scalable and regulatory-compliant data marketplace.. It also provides individuals control over how their data is used and exchanged.
+The Data Exchange Agreemeent provides a suite of agreements that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite for a scalable and regulatory-compliant data marketplace.. It also provides individuals control over how their data is used and exchanged.
 
 This RWOT paper provides information on how any organisation can leverage data using SSI and non-SSI protocols while being lawful, scalable and trustworthy.
 
@@ -47,8 +37,7 @@ Data exchange agreement suit aim to enhance data governance to ​increase trans
 
 ## Proposal
 
-The paper will provide details on a data exchange landscape and how to achieve auditable, immutable and trustworthy data exhcange that is lawful. 
-
+This paper proposes a framework starting with a data exchange landscape and how to achieve lawful, auditable, immutable and trustworthy data exchange. 
 
 ## Standardisation
 

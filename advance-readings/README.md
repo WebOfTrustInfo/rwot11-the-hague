@@ -104,6 +104,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Will Abramson](mailto:will@legreq.com), Legendary Requirements, work funded by Digital Contract Design
    * Let's make BIP 322 smart signatures a usable verification method for Verifiable Credential use cases.
 
+### [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
+
+   * by [Lal Chandran](mailto:lal@igrant.io), iGrant.io, Sweden
+   * A novel approach to building lawful, human-centric and scalable data spaces, making data transactions trustworthy, auditable and immutable via data exchange agreements. It provides a suite of agreements that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite for a scalable and regulatory-compliant data marketplace.. It also provides individuals control over how their data is used and exchanged.
+   * #eSSIF-Lab #SSI-ecosystem #dataagreeents #rightdata #dataexchangeagreements #gdpr #privacybydesign
+
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
@@ -242,6 +248,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
+* [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
 * [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [DID Fluidity](./did-fluidity.md)
