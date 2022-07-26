@@ -98,6 +98,7 @@ Example Self-issued OBv3 Credential:
 
 Example VerifiableEndorsement of the above VC:
 
+```js
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
@@ -170,7 +171,8 @@ Example VerifiableEndorsement of the above VC:
     // Signature goes here
   }
 }
-
+``` 
+    
 ### Example Workflow / Protocol
 
 TBA: Add a description + swimlane diagram for how Alice would request the endorser for the endorsement.
