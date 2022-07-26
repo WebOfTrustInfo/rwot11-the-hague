@@ -14,7 +14,7 @@ The paper could potentially include additonal authors working with privacy and d
 
 ## Abstract
 
-The Data Exchange Agreemeent provides a suite of agreements that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite for a scalable and regulatory-compliant data marketplace.. It also provides individuals control over how their data is used and exchanged.
+The Data Exchange Agreemeent provides a suite of tools that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to be transparent and legitimate in their data usage while leveraging their data assets. Automated agreement handling is required for a scalable and regulatory-compliant data marketplace (data space). It also provides individuals control over how their data is used and exchanged.
 
 This RWOT paper provides information on how any organisation can leverage data using SSI and non-SSI protocols while being lawful, scalable and trustworthy.
 
