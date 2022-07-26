@@ -88,3 +88,7 @@ Potential additional DID resolver configuration setting:
 
 This contains a list of DIDs that are pro-actively resolved and cached on a regular basis, via
 some kind of background thread, and before actual client resolution requests come in.
+
+## Acknowledgements
+
+Part of Danube Tech's work on DIDs, SSI, etc. has been supported by [eSSIF-Lab](https://essif-lab.eu/).

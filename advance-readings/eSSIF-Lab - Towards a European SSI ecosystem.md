@@ -74,7 +74,7 @@ The client module is a VC wallet implemented as a browser extension, executed by
 
 Open source tools for managing the lifecycle of VCs are available at the [project homepage](https://mm.aueb.gr/projects/zerotrustvc) [14]. 
 
-# 2.6 eSSIF-Lab subgrantee project "Adding SSI to internet communications" by Bloqzone
+### 2.6 eSSIF-Lab subgrantee project "Adding SSI to internet communications" by Bloqzone
 One of the things people enjoy the most about the internet, is that it enables them to talk to others remotely almost without limit.
 Unfortunately, remotely often means that parties are not sure who they are communicating with. 
 
@@ -88,6 +88,23 @@ SSIComms makes use of two protocols: DIDComm, central to SSI, and SIP, equally c
 4. The credentials proven to be satisfactory, Bob and Alice continue their SIP session and exchange voice, video or text messages.
 
 SSIComms differs from existing SSI/DIDComm based applications in that it focuses on internet communications sessions with both participants behind a firewall. Under these circumstances, DIDComm by itself does not suffice to add an identity layer.
+
+### 2.7 eSSIF-Lab subgrantee project "SSI Java Libraries" by Danube Tech
+Danube Tech has been working on open-source Java implementations of various decentralized identity
+build blocks for several years.
+
+This includes the following libraries:
+[jsonld-common-java](https://github.com/decentralized-identity/jsonld-common-java),
+[did-common-java](https://github.com/decentralized-identity/did-common-java),
+[key-formats-java](https://github.com/danubetech/key-formats-java/),
+[ld-signatures-java](https://github.com/weboftrustinfo/ld-signatures-java),
+[verifiable-credentials-java](https://github.com/danubetech/verifiable-credentials-java),
+[cborld-java](https://github.com/danubetech/cborld-java).
+
+These libraries are being used by various SSI solution providers and
+in DID/VC-based projects across the EU and beyond. For example, see the
+[EBSI4Austria](https://medium.com/@markus.sabadello/report-from-ebsi4austria-b79c0ed8ab8d)
+and [Transatlantic SSI Interop](https://medium.com/@markus.sabadello/transatlantic-ssi-interop-52bac6be8dfe) projects.
 
 ## 3. SSI standardisation and interop testing
 
