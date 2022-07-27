@@ -147,7 +147,7 @@ We expect the standard reconstruction workflow to be as follows:
 4.  CSR app retrieves sufficient shares from other share servers, asking user to authenticate as required.
 5.  Seed is reconstructed.
 
-More information is available from our [*in-process article*](https://hackmd.io/D1caESQTRFi0FRtW1kNwMg) describing CSR[^16].
+More information is available from our [*article*](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/CSR.md) describing CSR[^16].
 
 We believe this approach meets the needs of usability that are currently
 absent from other solutions and that careful design of seed servers can
@@ -238,4 +238,4 @@ as RWOT11 advance readings:
 
 [^16]: Blockchain Commons. 2022. “Collaborative Seed Recovery (CSR)”.
     *HackMD*.
-    [*https://hackmd.io/D1caESQTRFi0FRtW1kNwMg*](https://hackmd.io/D1caESQTRFi0FRtW1kNwMg).
+    [*https://github.com/BlockchainCommons/Gordian/blob/master/Docs/CSR.md*).
