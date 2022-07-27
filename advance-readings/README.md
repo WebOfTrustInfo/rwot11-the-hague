@@ -266,6 +266,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Spendability of Currency](./spendability-of-currency.md)
 * [SSI data generator](./data-generator.md)
+* [Standardization Overview](./standardization-overview.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
