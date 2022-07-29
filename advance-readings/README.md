@@ -198,6 +198,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
+
+### [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
+
+   * by [Isaac Henderson Johnson Jeyakumar](mailto:isaac-henderson.johnson-jeyakumar@iat.uni-stuttgart.de), University of Stuttgart, Germany & [Michael Kubach](mailto:michael.kubach@iao.fraunhofer.de), Fraunhofer IAO, Germany.
+   * A proposal for a Trust Registry concept to enhance interoperability and prevent Phishing/MITM attacks in different components of the SSI Ecosystem.
+   * #TrustRegistry #TRAIN #trustworthiness #SSI #eSSIF-Lab
   
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
@@ -268,6 +274,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Spendability of Currency](./spendability-of-currency.md)
 * [SSI data generator](./data-generator.md)
+* [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
