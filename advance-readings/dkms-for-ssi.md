@@ -85,10 +85,8 @@ b) Addressing a key internal risk of decentralised authentication, impersonation
 * [12] IETF https://www.ietf.org/archive/id/draft-ssmith-said-02.html
 
 **Guardianship**
-* [13] Sovrin Foundation https://sovrin.org/wp-content/uploads/Guardianship-Whitepaper2.pdf
-* [14] Knowles,Paul; Mitwicki,Robert; Page,Philippe ADD Links
-* [15] Page,Philippe; Knowles,Paul; Mitwicki,Robert "Distributed Governance" ADD Links
 
+* [13] Sovrin Foundation https://sovrin.org/wp-content/uploads/Guardianship-Whitepaper2.pdf
 
 
 
