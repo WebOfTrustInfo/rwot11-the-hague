@@ -1,8 +1,9 @@
 # DKMS for SSI
 Essif-lab IoC#3 subgrantee:
-Robert Mitwicki robert.mitwicki@humancolossus.org
-Michal Pietrus michal.pietrus@argonauths.eu
-Philippe Page philippe.page@humancolossus.org
+
+- Robert Mitwicki robert.mitwicki@humancolossus.org
+- Michal Pietrus michal.pietrus@argonauths.eu
+- Philippe Page philippe.page@humancolossus.org
 
 ## 01 Introduction
 Decentralised authentication provides a powerful mechanism for any peer-to-peer interaction, whether human-to-human or human-to-service. One party, the authenticator, authenticates the other party, the authenticatee, by conducting the verification process upon the cryptographic material the authenticatee provides to prove her capabilities. The method relies on verifying cryptographic material through an object we call a provenance log. This log is all that authenticatee needs to provide. 
@@ -66,11 +67,13 @@ b) Addressing a key internal risk of decentralised authentication, impersonation
 
 
 # References
+
 * [1] DKMS-4SSI EU Grant No.
 * [2] Smith,Samuel "Key Event Receipt Iinfrastructure (KERI) design" v2.60 2021/05/07; https://arxiv.org/abs/1907.02143
 * [3] Smith, Samuel "The Universal Identifier Theory"
 
 **Discovery Protocoles**
+
 * [4]: https://crates.io/crates/kademlia-dht
 * [5]: https://crates.io/crates/kad
 * [6]: https://www.scs.stanford.edu/~dm/home/papers/kpos.pdf
