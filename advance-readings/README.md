@@ -110,6 +110,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Will Abramson](mailto:will@legreq.com), Legendary Requirements, work funded by Digital Contract Design
    * Let's make BIP 322 smart signatures a usable verification method for Verifiable Credential use cases.
 
+### [DKMS for SSI](./dkms-for-ssi.md)
+   * by [Philippe Page](mailto:philippe.page@humancolossus.org)
+   * DKMS-4-SSI is driven by the need of security for a Dynamic Data Economy. By design DDE transactions take place in a Zero-Trust environement and relies on assymetric cryptography (public/private keys) to create/use/verify self-addressing idenitfiers (SAID).
+   * #eSSIF-Lab #SSI-ecosystem #key-management
+
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
@@ -261,6 +266,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
 * [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
 * [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
+* [DKMS for SSI](./dkms-for-ssi.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [DID Fluidity](./did-fluidity.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
