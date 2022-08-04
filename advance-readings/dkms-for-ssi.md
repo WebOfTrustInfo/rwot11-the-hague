@@ -74,20 +74,20 @@ b) Addressing a key internal risk of decentralised authentication, impersonation
 
 **Discovery Protocoles**
 
-* [4]: https://crates.io/crates/kademlia-dht
-* [5]: https://crates.io/crates/kad
-* [6]: https://www.scs.stanford.edu/~dm/home/papers/kpos.pdf
-* [7]: https://joearms.github.io/published/2015-06-19-Mutable-Value_Chains.html
-* [8]: RWOT 11 https://weboftrust.github.io/ietf-oobi/
-* [9]: IETF https://www.ietf.org/archive/id/draft-ssmith-cesr-02.html
-* [10]:IETF  https://www.ietf.org/archive/id/draft-pfeairheller-cesr-proof-00.html
-* [11]: IETF https://www.ietf.org/archive/id/draft-ssmith-oobi-00.html
-* [12]: IETF https://www.ietf.org/archive/id/draft-ssmith-said-02.html
+* [4] https://crates.io/crates/kademlia-dht
+* [5] https://crates.io/crates/kad
+* [6] https://www.scs.stanford.edu/~dm/home/papers/kpos.pdf
+* [7] https://joearms.github.io/published/2015-06-19-Mutable-Value_Chains.html
+* [8] RWOT 11 https://weboftrust.github.io/ietf-oobi/
+* [9] IETF https://www.ietf.org/archive/id/draft-ssmith-cesr-02.html
+* [10] IETF  https://www.ietf.org/archive/id/draft-pfeairheller-cesr-proof-00.html
+* [11] IETF https://www.ietf.org/archive/id/draft-ssmith-oobi-00.html
+* [12] IETF https://www.ietf.org/archive/id/draft-ssmith-said-02.html
 
 **Guardianship**
-* [13]: Sovrin Foundation https://sovrin.org/wp-content/uploads/Guardianship-Whitepaper2.pdf
-* [14]: Knowles,Paul; Mitwicki,Robert; Page,Philippe ADD Links
-* [15]: Page,Philippe; Knowles,Paul; Mitwicki,Robert "Distributed Governance" ADD Links
+* [13] Sovrin Foundation https://sovrin.org/wp-content/uploads/Guardianship-Whitepaper2.pdf
+* [14] Knowles,Paul; Mitwicki,Robert; Page,Philippe ADD Links
+* [15] Page,Philippe; Knowles,Paul; Mitwicki,Robert "Distributed Governance" ADD Links
 
 
 
