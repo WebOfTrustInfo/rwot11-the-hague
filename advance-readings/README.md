@@ -113,7 +113,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 ### [DKMS for SSI](./dkms-for-ssi.md)
    * by [Philippe Page](mailto:philippe.page@humancolossus.org)
    * DKMS-4-SSI is driven by the need of security for a Dynamic Data Economy. By design DDE transactions take place in a Zero-Trust environement and relies on assymetric cryptography (public/private keys) to create/use/verify self-addressing idenitfiers (SAID).
-   * #eSSIF-Lab #SSI-ecosystem #key-management
+   * #eSSIF-Lab #SSI-ecosystem #key-management #keri #cesr
 
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
