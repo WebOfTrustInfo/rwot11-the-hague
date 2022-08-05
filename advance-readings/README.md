@@ -110,11 +110,6 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Will Abramson](mailto:will@legreq.com), Legendary Requirements, work funded by Digital Contract Design
    * Let's make BIP 322 smart signatures a usable verification method for Verifiable Credential use cases.
 
-### [DKMS for SSI](./dkms-for-ssi.md)
-   * by [Philippe Page](mailto:philippe.page@humancolossus.org)
-   * DKMS-4-SSI is driven by the need of security for a Dynamic Data Economy. By design DDE transactions take place in a Zero-Trust environement and relies on assymetric cryptography (public/private keys) to create/use/verify self-addressing idenitfiers (SAID).
-   * #eSSIF-Lab #SSI-ecosystem #key-management #keri #cesr
-
 ### [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
   * by [Robert Mao](mailto:rob@arcblock.io), ArcBlock, United States
   * DID Connect is a suite of RESTful APIs, UX components and SDK that provide a framework for DID interactions, connecting people, devices and applications via DID and Verifiable Credentials.
@@ -144,6 +139,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Snorre Lothar von Gohren Edwin](mailto:snorre@diwala.io), Diwala, Uganda/Oslo
    * A proposal to reason about bringing your own wallet to the table.
    * #discover #protocols #wallet
+
+### [DKMS for SSI](./dkms-for-ssi.md)
+   * by [Philippe Page](mailto:philippe.page@humancolossus.org)
+   * DKMS-4-SSI is driven by the need of security for a Dynamic Data Economy. By design DDE transactions take place in a Zero-Trust environement and relies on assymetric cryptography (public/private keys) to create/use/verify self-addressing idenitfiers (SAID).
+   * #eSSIF-Lab #SSI-ecosystem #key-management #keri #cesr
 
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
@@ -266,13 +266,13 @@ _Please also enter your paper alphabetically in the form:_
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
 * [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
 * [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
-* [DKMS for SSI](./dkms-for-ssi.md)
 * [DID Connect, connecting people, devices and applications via DID and Verifiable Credentials](./did-connect.md)
 * [DID Fluidity](./did-fluidity.md)
 * [Did Resources for SSI - address ALL requirements via DIDs](./did-resources.md)
 * [DID Torrent](./DID_torrent.md)
 * [DID Traits](./did-traits.md)
 * [Discovery Handshake](./discovery-handshake.md)
+* [DKMS for SSI](./dkms-for-ssi.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
 * [Identified communications - SSI and internet communications or internet communications and SSI](./SSI%20and%20internet%20communications%20or%20internet%20communications%20and%20SSI.md)
