@@ -82,7 +82,7 @@ According to Mehta, Dawande and Mookerjee, [^19] a data cooperative is an organi
 
 There are opportunities to inform the development and growth of the ecosystem through privacy-respecting transparency of the ecosystem data for participants, following open data principles [^22].   A value flow matrix could be shared among participants.  Informative visualisations could be plotted as a chord diagram for our target ecosystem to highlight the potential for network effects and cross-selling:  
 
-![Ecosystem Value Exchanges](./media/coops_ecosystem_value_exchanges)
+![Ecosystem Value Exchanges](./media/coops_ecosystem_value_exchanges.png)
 
 The outer arcs in the chord diagram show the relative economic proportions of sectors in a  consumer addressable market, while the inner chords show the value flows between the sectors.  Although only a synthetic / sample dataset, the chart shows how coops may benefit from access to the consumer bases of other coops and how consumers can find value from common membership.  Many other visualisations of similar graph data are possible.  
 
@@ -111,9 +111,9 @@ Overall, respondents aligned strongly with the problem areas we identified. Conc
 13. ## **Example Story / Scenario: A Cross-Selling Event in Independent Music Tourism**
 As one example of a co-operative interaction we put forward an early hypothesis for a hybrid digital / local physical event scenario called ‘Stay Fair / Play Fair”.  Here is a visualisation:  
 
-![Example:_Music_Tourism](./media/coops_music_tourism)
+![Example:_Music_Tourism](./media/coops_music_tourism.png)
 
-![Example:_Value_Flow_Model](./media/coops_value_flow)
+![Example:_Value_Flow_Model](./media/coops_value_flow.png)
 
 
 14. ## **Next Steps: Structuring Requirements for Delivery**
