@@ -140,6 +140,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A proposal to reason about bringing your own wallet to the table.
    * #discover #protocols #wallet
 
+### [DKMS for SSI](./dkms-for-ssi.md)
+   * by [Philippe Page](mailto:philippe.page@humancolossus.org)
+   * DKMS-4-SSI is driven by the need of security for a Dynamic Data Economy. By design DDE transactions take place in a Zero-Trust environement and relies on assymetric cryptography (public/private keys) to create/use/verify self-addressing idenitfiers (SAID).
+   * #eSSIF-Lab #SSI-ecosystem #key-management #keri #cesr
+
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
    * by [Oskar van Deventer](mailto:oskar.vandeventer@tno.nl), TNO, Netherlands
    * Overview of the eSSIF-Lab SSI ecosystem. "eSSIF-Lab is a 7 M€, three-year (2019-2022), European-Commission-funded program that has been sponsoring start-ups, SMEs and innovators to develop open-source SSI components, SSI products and SSI services."
@@ -267,6 +272,7 @@ _Please also enter your paper alphabetically in the form:_
 * [DID Torrent](./DID_torrent.md)
 * [DID Traits](./did-traits.md)
 * [Discovery Handshake](./discovery-handshake.md)
+* [DKMS for SSI](./dkms-for-ssi.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
 * [Identified communications - SSI and internet communications or internet communications and SSI](./SSI%20and%20internet%20communications%20or%20internet%20communications%20and%20SSI.md)
