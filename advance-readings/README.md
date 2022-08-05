@@ -160,7 +160,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * Examining different solutions to the problem of identified communications
   * #SIP #DIDComm #chat #communications
   
-### [Identity and Trust in a Co-operative Ecosystem](./Identity_and_Trust_for_Co-ops.md)
+### [Identity and Trust in a Co-operative Ecosystem](./Identity%20and%20Trust%20in%20a%20Co-operative%20Ecosystem.md)
    * by [Nick Meyne](nick.meyne@smtngood.eu) from [Co-op Credentials](https://coopcreds.com/)
    * Systemic approaches to the design of a digital identity and trust network for a co-operative ecosystem
    * #identity, #trust, #community, #platform_co-operatives, #ecosystems, #systemic_design
