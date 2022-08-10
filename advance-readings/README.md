@@ -170,6 +170,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Leverage the power of national European identities to obtain SSI credentials, starting from the Italian SPID ecosystem.
    * #VerifiableCredentials #Europe #SPID #Italy #SSI
 
+### [Identity Net: Building an identity net through self-authenticated data graphs](./identity-net.md)
+   * by [Christopher Chung](chris@violet.co)
+   * An emergent identity mesh built from authenticated data points
+   * #webs-of-trust #data #authentication #community #network
+
 ### [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
    * by [Oliver Klingefjord](mailto:hello@replabs.xyz), Replabs, Berlin.
    * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
@@ -278,6 +283,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Identified communications - SSI and internet communications or internet communications and SSI](./SSI%20and%20internet%20communications%20or%20internet%20communications%20and%20SSI.md)
 * [Identity and Trust in a Co-operative Ecosystem](./Identity_and_Trust_for_Coops.md)
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
+* [Identity Net: Building an identity net through self-authenticated data graphs](./identity-net.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 * [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
