@@ -69,6 +69,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * The EU Commission&#39;s proposal for review of the eIDAS Regulation from 2021 has opened strong expectations for a deep change in traditional identity models.  The EU might endorse a hybrid solution consisting of x509 certificates and decentralized PKI using DID/VC. This paper provides various options to address different implementation alternatives in combining x509 and DID/VC approaches.
    * #did, #eIDAS, #x509, #hybrid-wallets
   
+### [Audited DIDComm connections](./audited-didcomm.md)
+  * by [Fabrice Rochette](mailto:f@2060.io), 2060.io
+  * A discussion of how to make audited and intermediated DIDComm connections
+  * #DIDComm #protocol #messaging #chat
+
 ### [Caching in DID Resolution](./caching-in-did-resolution.md)
 * by [Markus Sabadello](mailto:markus@danubetech.com), Danube Tech, Austria
 * Some thoughts on how to add and control caching in DID Resolution processes.
@@ -263,6 +268,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
+* [Audited DIDComm](./audited-didcomm.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
