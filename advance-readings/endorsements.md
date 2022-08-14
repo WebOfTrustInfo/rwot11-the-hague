@@ -54,7 +54,7 @@ Each OBv3 VC has three components relevant to this paper:
 2. A top-level optional VC.evidence property ("A description of the work that the recipient did to earn the achievement. This can be a page that links out to other pages if linking directly to the work is infeasible.")
 3. One or more VC.credentialSubject.achievement objects (of type "Achievement").
 ##### OBv3 `endorsement` objects
-In addition to the top-level VC.endorsement property (which "[a]llows endorsers to make specific claims about the credential, and the achievement and profiles in the credential."), each achievement can have an optional endorsement property itself, 
+In addition to the top-level VC.endorsement property (which "[allows endorsers to make specific claims about the credential, and the achievement and profiles in the credential."), each achievement can have an optional endorsement property itself, 
 
 The endorsement property (either the top-level belonging to the VC, or belonging to a particular achievement) contains one or more full [`EndorsementCredential`](https://imsglobal.github.io/openbadges-specification/ob_v3p0.html#endorsementcredential) VCs (they are embedded in the overall OpenBadgeCredential VC).
 
@@ -91,7 +91,6 @@ In addition to being a more general-purpose standalone mechanism (unrelated to a
 In contrast, Verifiable Endorsements allow for obtaining endorsements after the issuance of the source material. That is, first a VC (describing an achievement, or any other domain) is issued or a PDF is created, and then the subject can go around asking relevant third parties to endorse it (or any components within it). We are aiming to model generic human trust relationships (such as when an individual calls on a third party to support or recommend their skills or abilities -- see, for example, the References section in a resume), in addition to the more traditional trust in issuing institutions.
 
 One of the side-effects (and in fact, the initial motivation for) the proposed model is that it enables self-issued claims and assertions to flourish as an ecosystem (supported by endorsements).
-
 ### Verifiable Endorsement Semantics
 
 Verifiable Endorsements are intended to be a general purpose endorsement mechanism for the VC ecosystem. They are standalone Verifiable Credentials that can use the 'digestMultibase' anchor mechanism to endorse any other VC, claim, or non-VC artifact. In addition, Verifiable Endorsements have several supporting metadata sections that enhance the endorsement process, such as the `endorser.relevance` (providing the bona fides of the endorsing party), and a focus on the `endorsement.evidence` section (providing specific evidence artifacts that relate to the endorsement).
@@ -122,11 +121,11 @@ Example Self-issued OBv3 Credential:
     // Note that the subject of the VC is the issuer, hence self-issued
     "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
     "achievement": {
-      "id": "urn:uuid:e8096060-ce7c-47b3-a682-57098685d48d",
-      "type": "Achievement",
-      "name": "UAV Control System for Drone Navigation",
-      "description": "<description goes here>",
-      "criteria": {
+    "id": "urn:uuid:e8096060-ce7c-47b3-a682-57098685d48d",
+     "type": "Achievement",
+     "name": "UAV Control System for Drone Navigation",
+     "description": "<description goes here>",
+     "criteria": {
         "type": "Criteria",
         "narrative": "<narrative>"
       }
@@ -140,7 +139,7 @@ Example Self-issued OBv3 Credential:
 
 Example VerifiableEndorsement of the above VC (or rather, of the achievement within it):
 
-```
+```js
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
@@ -158,10 +157,12 @@ Example VerifiableEndorsement of the above VC (or rather, of the achievement wit
   "issuanceDate": "2010-01-01T00:00:00Z",
   "expirationDate": "2020-01-01T00:00:00Z",
   "credentialSubject": {
-    // Note that the credentialSubject.id is the id of the Achievement in the target VC
+    // Note that the credentialSubject.id is the id of an individual Achievement in the target VC
+    // It could just as readily be the id of the VC, but the authors wanted to highlight that a section of the VC could be targeted
     "id": "urn:uuid:e8096060-ce7c-47b3-a682-57098685d48d",
+    "digestMultibase": "zb1B1M6Bve5JEaNqeJSmuE",
     "endorsement": {
-      "statement": "Alice has an exceptional skill set as an UAV guidance control engineer. See also the attached evidence.",
+       "statement": "This is an endorsement regarding Alice's 'UAV Control System for Drone Navigation' achievement. Alice has an exceptional skill set as an UAV guidance control engineer. See also the attached evidence.",
       "endorser": {
         "id": "did:web:endorser.example.com",
         // the endorsing entity's bona fides, tailored to the specific endorsement area or claims on a per-use basis
@@ -222,14 +223,34 @@ Example VerifiableEndorsement of the above VC (or rather, of the achievement wit
   }
 }
 ```
-
 ### Example Workflow / Protocol
 
 TBA: Add a description + swimlane diagram for how Alice would request the endorser for the endorsement.
+
+Q: If Alice issues a self-issued VC, and later gathers endorsements (from Bob), and later applies for a job, how does the verifier (HR software) collate / put together the original VC and its endorsements?
+
+A: Several options, depending on the workflow:
+
+Workflow 1. Bob sends his VerifiableEndorsement VCs directly to Alice. This way, Alice can submit a VerifiablePresentation as a bundle that contains _both_ the self-issued VC and Bob's endorsement. Then, the HR/verification software verifies both credentials.
+
+Workflow 2. Bob uploads his VerifiableEndorsement to his Google Drive, and just sends Alice a link to the uploaded endorsement.
+In this case, Alice has several options: a) she can just download the endorsement, and present it in the VerifiablePresentation just like in step 1. Or, b) she can include the link to the endorsement in the 'anchoredResource' section of the VerifiablePresentation that she presents to the verifier.
+
+Workflow 3. Same as 2, but Bob sends the link to the endorsement directly to the verifier.
+In this case, the receiving HR person would add the link to their verification software, which would proceed as in variants 1 and 2.
 ### Notes on Tooling
 
-We expect that adding endorsements to VCs will be another feature offered by various wallets. A marketplace of authoring services we hope to see develop that offers options for endorsement credential authoring and connects to wallets via the Issuer API.
-    
+We expect that adding endorsements to VCs will be another feature offered by various wallets. A marketplace of authoring services we hope to see develop that offers options	 for endorsement credential authoring and connects to wallets via the Issuer API.
+
+#### Standalone Verification Software vs Integrated Verifiers
+
+<discuss the difference between verification built in directly into existing HR suites etc, vs HR person using an external standalone app (website or mobile).>
+
+#### Notes on Wallets
+
+<discuss what features need to be added to the wallets to support workflows 1 and 2 above. (for example, an extra textbox where Alice can add links to endorsements when making the Verifiable Presentation)>
+
+<also discuss the usage of wallets as standalone verifier apps>
 ### Summary
 
 This example of endorsement is intended to convey one of several potential use cases for the evidence-based corroboration of statements made in one credential by an endorser authoring a VC that allows the granular affirmation of elements within the endorsee’s issued credential using a proofing method that links the two credentials together, based on the affirmation of the endorser’s selection about which they are knowledgeable. It provides context for the endorser’s relevance or background to make those judgements and encourages the inclusion of evidence from the endorser’s own direct experience and artifacts relevant to the endorsee’’s claim. 
