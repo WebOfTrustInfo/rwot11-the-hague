@@ -83,6 +83,27 @@ that they no longer want to recognize DiplomaMill as a authorized issuer. Broni
 configures their software with an exception to reject DiplomaMill Verifiable
 Credentials that were issued after the current year.
 
+John is reviewing suppliers for a food product they are bringing to market. 
+The food company John works for desires to ensure that their suppliers not
+only meet organic certification for their country of origin, but also that
+they produce food in a manner that is free from forced labor.  John checks
+the list of organic certifiers against a regulatory list of country of 
+origin approved suppliers, filters his supplier list to only those that
+have VCs showing organic certification issued by a certifier that meets the
+regulatory requirements.  He further checks that list against a list of
+company approved trusted issuers that certify labor practices.
+
+Jan is a customs agent who needs to set policy regarding the import of
+goods into his country.  He reviews various entities that issue Verifiable
+Credentials related to the identity of business and their subsidiaries.
+If their company review practices meet the rigor required by his state
+legislation, he adds the issuer to an approved list of issues related to
+company identity for importer of record status.  He performs a similar
+review of product identification issuers, and adds those issuers to 
+a product identification issuer list, provided that that issuer performs
+the significant inspection as required for certain products on a list
+maintaintained by his department to prevent tariff fraud.
+
 Authorized Issuer List Requirements
 ===================================
 
