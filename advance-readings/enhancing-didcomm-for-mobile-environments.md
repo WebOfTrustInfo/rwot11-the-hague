@@ -30,7 +30,7 @@ This concern not only apply to DIDComm messaging but also VDR access, as usually
 
 ## References
 
-- [^1]: [Routing Protocol 2.0](https://identity.foundation/didcomm-messaging/spec/#routing-protocol-20)
-- [^2]: [Mediation Coordination Protocol](https://github.com/hyperledger/aries-rfcs/tree/main/features/0211-route-coordination)
-- [^3]: [Message Pickup Protocol](https://github.com/hyperledger/aries-rfcs/tree/main/features/0685-pickup-v2)
-- [^4]: [Push Notifications APN Protocol](https://github.com/hyperledger/aries-rfcs/tree/main/features/0699-push-notifications-apns), [Push Notifications FCM Protocol PR](https://github.com/hyperledger/aries-rfcs/pull/736) and [Push Notifications Expo Protocol PR](https://github.com/hyperledger/aries-rfcs/pull/745)
+[^1]: [Routing Protocol 2.0](https://identity.foundation/didcomm-messaging/spec/#routing-protocol-20)
+[^2]: [Mediation Coordination Protocol](https://github.com/hyperledger/aries-rfcs/tree/main/features/0211-route-coordination)
+[^3]: [Message Pickup Protocol](https://github.com/hyperledger/aries-rfcs/tree/main/features/0685-pickup-v2)
+[^4]: [Push Notifications APN Protocol](https://github.com/hyperledger/aries-rfcs/tree/main/features/0699-push-notifications-apns), [Push Notifications FCM Protocol PR](https://github.com/hyperledger/aries-rfcs/pull/736) and [Push Notifications Expo Protocol PR](https://github.com/hyperledger/aries-rfcs/pull/745)

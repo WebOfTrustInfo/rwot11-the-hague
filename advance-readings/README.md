@@ -145,7 +145,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * DKMS-4-SSI is driven by the need of security for a Dynamic Data Economy. By design DDE transactions take place in a Zero-Trust environement and relies on assymetric cryptography (public/private keys) to create/use/verify self-addressing idenitfiers (SAID).
    * #eSSIF-Lab #SSI-ecosystem #key-management #keri #cesr
 
-# [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
+### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
    * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments 
    * #DIDComm #protocol #messaging #Mobile #communications
