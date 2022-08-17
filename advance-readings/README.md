@@ -244,6 +244,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
+   
+### [Standardization Overview](./standardization-overview.md)
+   * by [Maaike van Leuken](mailto:maaike.vanleuken@tno.nl), TNO, Eindhoven, The Netherlands
+   * An overview of SSI standardization
+   * #eSSIF-Lab #Standardization
 
 ### [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
 
@@ -327,6 +332,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Spendability of Currency](./spendability-of-currency.md)
 * [SSI data generator](./data-generator.md)
+* [Standardization Overview](./standardization-overview.md)
 * [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
