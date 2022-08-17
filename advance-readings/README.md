@@ -111,6 +111,14 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Nikos Fotiou](mailto:fotiou@aueb.gr), Athens University of Economics and Business
    * Verifiable Credentials for expressing user capabilities, issued using OAuth 2.0, and used for accessing HTTP-based resources that abide by the Zero-Trust principle.
    * #IAA, #VerifiableCredentials, #ZTA
+   
+### [Creative Brief RWOT Animation Project.](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
+   * by [Erica Connell](mailto:erica@legreq.com), Legendary Requirements
+   * Let's produce a ~1-minute animation that tells the story of DIDs and
+   RWOT. Working with collaborators from RWOT11, we will develop creative
+   ideas and set the framework for the realization of a brief, stop-motion
+   animated short.
+   * #RWOTAnimation #DIDs #changetheworld #attendRWOT
 
 ### [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
    * by [Carsten Stöcker](mailto:carsten.stoecker@spherity.com), Spherity GmbH
@@ -293,6 +301,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
+* [Creative Brief RWOT Animation Project](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
 * [Credentialing-enabled Zero Trust Architecture for supply chains](./credentialing_enabled_ZTA_for_supply_chains.md)
 * [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
 * [Defining a BIP 322 Signature Suite](./bip322-signature-suite.md)
