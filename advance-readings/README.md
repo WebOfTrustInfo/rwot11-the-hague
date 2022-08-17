@@ -69,6 +69,14 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * The EU Commission&#39;s proposal for review of the eIDAS Regulation from 2021 has opened strong expectations for a deep change in traditional identity models.  The EU might endorse a hybrid solution consisting of x509 certificates and decentralized PKI using DID/VC. This paper provides various options to address different implementation alternatives in combining x509 and DID/VC approaches.
    * #did, #eIDAS, #x509, #hybrid-wallets
 
+###  [AnonCreds: ~~Ledger~~ VDR Agnostic Authentic Data Specification and Roadmap](./anoncreds-ledger-agnostic-spec.md)
+   * by [Stephen Curran](mailto:swcurran@cloudcompass.ca), Cloud Compass Computing Inc., Canada
+   * Adding details to the roadmap of the AnonCreds Specification Working Group
+     about the use of AnonCreds with even more ledgers/VDRs, and the next
+     version of the AnonCreds specification (and open source implementations),
+     likely to be based on BBS+ Signatures.
+   * #DIDComm, #credentials, #privacy, #zkp, #DIDs, #DIDMethods
+
 ### [Audited DIDComm connections](./audited-didcomm.md)
   * by [Fabrice Rochette](mailto:f@2060.io), 2060.io
   * A discussion of how to make audited and intermediated DIDComm connections
@@ -278,6 +286,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
+* [AnonCreds: ~~Ledger~~ VDR Agnostic Authentic Data Specification and Roadmap](./anoncreds-ledger-agnostic-spec.md)
 * [Audited DIDComm](./audited-didcomm.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
