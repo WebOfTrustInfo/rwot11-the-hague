@@ -3,11 +3,12 @@
 Nikos Fotiou, fotiou@aueb.gr
 
 ## Introduction
-This documents mentions a few ideas stemmed from the project [Enabling Zero Trust Architectures using OAuth2.0 and Verifiable Credentials (ZeroTrustVC)](https://mm.aueb.gr/projects/zerotrustvc)
-where we implemented a solution for achieving continuous authorization
-of HTTP requests exploiting Verifiable Credentials and OAuth 2.0 and we used it
-for transparently protecting HTTP-based resources. In this project, which was motivated
-by the the Zero principle that requires
+This document presents a few ideas stemmed from the project [Enabling Zero Trust Architectures using OAuth2.0 and Verifiable Credentials (ZeroTrustVC)](https://mm.aueb.gr/projects/zerotrustvc), which was
+supported by [eSSIF-lab](https://essif-lab.eu/).
+ZeroTrustVC implemented a solution for achieving continuous authorization
+of HTTP requests exploiting Verifiable Credentials and OAuth 2.0 capable of
+transparently protecting HTTP-based resources. In this project, which was motivated
+by the the Zero Trust principle that requires
 authentication and authorization of every request, we experimented with existing 
 standards and active drafts for managing the lifecycle of VCs. Given the vivid activity
 in this area, we want to discuss our key insights from this project and propose 
@@ -53,3 +54,7 @@ by validating whether or not a VC can be used for executing a particular request
 validates VCs based on rules expressed using [JSON Path](https://goessner.net/articles/JsonPath/), which is 
 a query language for JSON. Tools like JSON Path not only enable the configuration
 of VC verifiers but they can act as a building block for implementing VC/VP exchange protocols. 
+
+## Acknowledgements
+
+The work reported in this document has been supported in part by European Union’s Horizon 2020 research and innovation programme through subgrant [Enabling Zero Trust Architectures using OAuth2.0 and Verifiable Credentials (ZeroTrustVC)](https://mm.aueb.gr/projects/zerotrustvc) of project [eSSIF-lab](https://essif-lab.eu/), and by the Research Center of the Athens University of Economics and Business.
