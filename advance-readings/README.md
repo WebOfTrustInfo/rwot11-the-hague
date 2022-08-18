@@ -236,6 +236,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
   * Social recovery of wallet data and keys by leveraging sharding.
   * #recovery #wallet #sharding
 
+### [Societal impacts of SSI technologies](./societal-impacts.md)
+  * by [Amy Guy](mailto:rwot@rhiaro.co.uk)
+  * How can we make it easier to ask the hard questions about the work we do?
+  * #ethics #SSI-ecosystem #community
+
 ### [Spendability of Currency: Citizen Report](./spendability-of-currency.md)
    * by [Will Abramson](mailto:wip.abramson@gmail.com), Legendary Requirements, UK
    * How easy is it to spend cash around the world these days? Let's find out, by actively attempting to and recording the results.
@@ -330,6 +335,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
 * [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
 * [Social Wallet Recovery](./social-wallet-recovery.md)
+* [Societal impacts of SSI technologies](./societal-impacts.md)
 * [Spendability of Currency](./spendability-of-currency.md)
 * [SSI data generator](./data-generator.md)
 * [Standardization Overview](./standardization-overview.md)
