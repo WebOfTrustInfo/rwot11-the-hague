@@ -15,9 +15,9 @@ VC uses the “credentialStatus” field to present and verify the revocation st
 The revocation method, such as revocation list 2020 and ethr status registry 2019, uses the value issued by the issuer during the presentation. The values related to revocation proofs are user-specific because these values denote the revocation status in a registry. A static value for revocation can lead to privacy violations such as linkability and identifiability.
 
 
-## Approch towards solution
+## Approach towards the solution.
 
-A solution to overcome the privacy issue caused by the revocation status values is dynamic values during the presentation. Therefore, the dynamic value is hard to correlate or identify to the same holder.
+A solution to overcome the privacy issue caused by the revocation status values is dynamic values during the presentation. Therefore, the dynamic value is hard to correlate or identify with the same holder.
 
 
 The revocation methods, such as Indy Revocation, and Non-Revocation Token, provide the dynamic presentation of revocation status. However, with the VC data model, it is hard to derive a dynamic value for "credentialStatus". 
