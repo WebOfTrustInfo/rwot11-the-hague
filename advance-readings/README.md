@@ -102,6 +102,11 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * Personally held digital assets are very vulnerable to accidental loss. This reading outlines solutions to date and looks at plans for a collaborative seed recovery architecture.
    * #recovery #seed
 
+### [Combining eIDAS High device binding with unlinkability](./combining-eIDAS-High-with-unlinkability.md)
+   * by [Sietse Ringers](mailto:mail@sietseringers.net)
+   * Strong device binding using ECDSA in order to achieve eIDAS High may be combined with unlinkability in SSI systems at the cost of introducing a TTP which deals with the linkability introduced by ECDSA.
+   * #ssi #eidas #credentials #privacy #zkp
+
 ### [Comparing Credential Formats](./Comparing_Credential_Formats.md)
    * by [Dr. Andre Kudra](mailto:a.kudra@esatus.com), esatus AG, Germany
    * Credential Formats analyzed and compared by an international expert group
