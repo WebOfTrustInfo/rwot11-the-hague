@@ -108,6 +108,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * Personally held digital assets are very vulnerable to accidental loss. This reading outlines solutions to date and looks at plans for a collaborative seed recovery architecture.
    * #recovery #seed
 
+### [Combining eIDAS High device binding with unlinkability](./combining-eIDAS-High-with-unlinkability.md)
+   * by [Sietse Ringers](mailto:mail@sietseringers.net)
+   * Strong device binding using ECDSA in order to achieve eIDAS High may be combined with unlinkability in SSI systems at the cost of introducing a TTP which deals with the linkability introduced by ECDSA.
+   * #ssi #eidas #credentials #privacy #zkp
+
 ### [Comparing Credential Formats](./Comparing_Credential_Formats.md)
    * by [Dr. Andre Kudra](mailto:a.kudra@esatus.com), esatus AG, Germany
    * Credential Formats analyzed and compared by an international expert group
@@ -316,6 +321,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
+* [Combining eIDAS High device binding with unlinkability](./combining-eIDAS-High-with-unlinkability.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
 * [Creative Brief RWOT Animation Project](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
