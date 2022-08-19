@@ -320,6 +320,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
+* [Combining eIDAS High device binding with unlinkability](./combining-eIDAS-High-with-unlinkability.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
 * [Creative Brief RWOT Animation Project](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
