@@ -111,7 +111,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Nikos Fotiou](mailto:fotiou@aueb.gr), Athens University of Economics and Business
    * Verifiable Credentials for expressing user capabilities, issued using OAuth 2.0, and used for accessing HTTP-based resources that abide by the Zero-Trust principle.
    * #IAA, #VerifiableCredentials, #ZTA
-   
+
 ### [Creative Brief RWOT Animation Project.](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
    * by [Erica Connell](mailto:erica@legreq.com), Legendary Requirements
    * Let's produce a ~1-minute animation that tells the story of DIDs and
@@ -173,7 +173,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 
 ### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
-   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments 
+   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments
    * #DIDComm #protocol #messaging #Mobile #communications
 
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
@@ -249,7 +249,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
-   
+
 ### [Standardization Overview](./standardization-overview.md)
    * by [Maaike van Leuken](mailto:maaike.vanleuken@tno.nl), TNO, Eindhoven, The Netherlands
    * An overview of SSI standardization
@@ -260,6 +260,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Isaac Henderson Johnson Jeyakumar](mailto:isaac-henderson.johnson-jeyakumar@iat.uni-stuttgart.de), University of Stuttgart, Germany & [Michael Kubach](mailto:michael.kubach@iao.fraunhofer.de), Fraunhofer IAO, Germany.
    * A proposal for a Trust Registry concept to enhance interoperability and prevent Phishing/MITM attacks in different components of the SSI Ecosystem.
    * #TrustRegistry #TRAIN #trustworthiness #SSI #eSSIF-Lab
+
+### [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
+
+* By: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](elena@nymlab.it), [Egidio Casati](mailto:egidio.casati@nymlab.it)
+* A proposal for a decentralised trust framework powering regulated crypto assets
+* #crypto-asset #ssi #regulated-deFi #kYC #smart-contract-wallet #on-chain-verifier
 
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
@@ -340,6 +346,7 @@ _Please also enter your paper alphabetically in the form:_
 * [SSI data generator](./data-generator.md)
 * [Standardization Overview](./standardization-overview.md)
 * [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
+* [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
