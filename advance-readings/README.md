@@ -53,6 +53,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * A novel approach to digital identity protocols is presented that gives market power to the human subject of identity-based interactions through their ability to choose a delegate.
    * #Delegation  #HumanRights #DID #VerifiableCredentials #w3c #GNAP
 
+### [A Minimal Approach to Linked Trust with Uncertainty](./a-minimal-approach-to-linked-trust-with-uncertainty.md)
+   * by [Golda Velez](mailto:gvelez17@gmail.com), Cooperation.org, Tucson, Arizona
+   * A pragmatic approach to enabling any observer to add to the linked trust ecosystem through observed claims. In particular applications to human rights and accountability, and the importance of broad adoption in heterogeneous
+domains in order to resist bad actors and provide aggregate privacy.
+   * #Adoption #HumanRights #AI #risk #trust #hybrid #VerifiableCredentials
+
 ### [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
   * by [Karim Stekelenburg](mailto:karim@animo.id), Animo Solutions, The Netherlands
   * Leveraging DIDComm to create a modern chat protocol that can compete with commonly used chat applications like WhatsApp and Telegram.
@@ -111,7 +117,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Nikos Fotiou](mailto:fotiou@aueb.gr), Athens University of Economics and Business
    * Verifiable Credentials for expressing user capabilities, issued using OAuth 2.0, and used for accessing HTTP-based resources that abide by the Zero-Trust principle.
    * #IAA, #VerifiableCredentials, #ZTA
-
+   
 ### [Creative Brief RWOT Animation Project.](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
    * by [Erica Connell](mailto:erica@legreq.com), Legendary Requirements
    * Let's produce a ~1-minute animation that tells the story of DIDs and
@@ -173,7 +179,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 
 ### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
-   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments
+   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments 
    * #DIDComm #protocol #messaging #Mobile #communications
 
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
@@ -249,7 +255,7 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
-
+   
 ### [Standardization Overview](./standardization-overview.md)
    * by [Maaike van Leuken](mailto:maaike.vanleuken@tno.nl), TNO, Eindhoven, The Netherlands
    * An overview of SSI standardization
@@ -260,12 +266,6 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
    * by [Isaac Henderson Johnson Jeyakumar](mailto:isaac-henderson.johnson-jeyakumar@iat.uni-stuttgart.de), University of Stuttgart, Germany & [Michael Kubach](mailto:michael.kubach@iao.fraunhofer.de), Fraunhofer IAO, Germany.
    * A proposal for a Trust Registry concept to enhance interoperability and prevent Phishing/MITM attacks in different components of the SSI Ecosystem.
    * #TrustRegistry #TRAIN #trustworthiness #SSI #eSSIF-Lab
-
-### [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
-
-* By: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](elena@nymlab.it), [Egidio Casati](mailto:egidio.casati@nymlab.it)
-* A proposal for a decentralised trust framework powering regulated crypto assets
-* #crypto-asset #ssi #regulated-deFi #kYC #smart-contract-wallet #on-chain-verifier
 
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
@@ -307,6 +307,7 @@ _Please also enter your paper alphabetically in the form:_
 ```
 
 * [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
+* [A Minimal Approach to Linked Trust with Uncertainty](./a-minimal-approach-to-linked-trust-with-uncertainty.md)
 * [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
@@ -346,7 +347,6 @@ _Please also enter your paper alphabetically in the form:_
 * [SSI data generator](./data-generator.md)
 * [Standardization Overview](./standardization-overview.md)
 * [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
-* [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
