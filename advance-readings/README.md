@@ -93,6 +93,12 @@ domains in order to resist bad actors and provide aggregate privacy.
   * A way of publishing a list of authorized issuers to enable Verifiers to bootstrap into trusted ecosystems.
   * #VerifiableCredentials #w3c #trust #registries
 
+### [BTCR From First Principles](./btcr-from-first-principles.md)
+   * by [Kate Sills](mailto:katelynsills@gmail.com), Digital Contract Design
+   * This paper compares did:btcr v0.1 to a naive, off-chain version in terms of
+     vulnerabilities to a few identified attacks.
+   * #did:btcr #did #registry
+
 ### [Caching in DID Resolution](./caching-in-did-resolution.md)
 * by [Markus Sabadello](mailto:markus@danubetech.com), Danube Tech, Austria
 * Some thoughts on how to add and control caching in DID Resolution processes.
@@ -318,6 +324,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
 * [AnonCreds: ~~Ledger~~ VDR Agnostic Authentic Data Specification and Roadmap](./anoncreds-ledger-agnostic-spec.md)
 * [Audited DIDComm](./audited-didcomm.md)
+* [BTCR From First Principles](./btcr-from-first-principles.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
 * [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
