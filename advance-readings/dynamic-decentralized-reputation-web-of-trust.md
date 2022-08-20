@@ -1,4 +1,4 @@
-# Web of Trust, The Sequel: What We Can Learn from the World of Sports, Tinder, and Netflix to Build Dynamic & Decentralized Reputation
+# Dynamic & Decentralized Reputation for the Web of Trust: What We Can Learn from the World of Sports, Tinder, and Netflix
 
 ## Collaborators
 

@@ -182,6 +182,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * DKMS-4-SSI is driven by the need of security for a Dynamic Data Economy. By design DDE transactions take place in a Zero-Trust environement and relies on assymetric cryptography (public/private keys) to create/use/verify self-addressing idenitfiers (SAID).
    * #eSSIF-Lab #SSI-ecosystem #key-management #keri #cesr
 
+### [Dynamic & Decentralized Reputation for the Web of Trust: What We Can Learn from the World of Sports, Tinder, and Netflix](dynamic-decentralized-reputation-web-of-trust.md)
+   * by [Ankur Banerjee](https://twitter.com/ankurb)
+   * A discussion on the potential drawbacks of proof-of-authority and soul-bound tokens (SBTs), with an alternative system that could be constructed using Elo rating systems used in the world of sports and web services.
+   * #reputation #trust #scoring
+
 ### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
    * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments 
@@ -335,6 +340,7 @@ _Please also enter your paper alphabetically in the form:_
 * [DID Traits](./did-traits.md)
 * [Discovery Handshake](./discovery-handshake.md)
 * [DKMS for SSI](./dkms-for-ssi.md)
+* [Dynamic & Decentralized Reputation for the Web of Trust: What We Can Learn from the World of Sports, Tinder, and Netflix](dynamic-decentralized-reputation-web-of-trust.md)
 * [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
