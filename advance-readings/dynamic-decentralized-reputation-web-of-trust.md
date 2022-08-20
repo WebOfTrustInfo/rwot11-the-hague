@@ -73,31 +73,41 @@ It is worth acknowledging that sometimes such Elo rating systems can be gamed, a
 
 Another example of this is how [Netflix moved from stars to a thumbs-up/thumbs-down rating system](https://about.netflix.com/en/news/goodbye-stars-hello-thumbs) (sometimes called a "Nero rating system", after the Roman emperor), essentially turning their rating signals to a zero-sum game between *their estimate* of how much they think a viewer will enjoy a title *versus* how what the viewer rated it as.
 
-The key insight there was that [given a 5-point rating system, people gravitate either towards 1 or 5](https://ux.stackexchange.com/questions/4200/rate-vs-like-dislike): the rating scales in the middle see much fewer choices being made. This is not an isolated example: [YouTube came to the same conclusion and switched to Nero ratings](https://techcrunch.com/2009/09/22/youtube-comes-to-a-5-star-realization-its-ratings-are-useless/). [Uber driver ratings below 4 are basically a strong enough signal to kick a driver off the platform](https://www.businessinsider.com/leaked-charts-show-how-ubers-driver-rating-system-works-2015-2), since 
+![Uber driver ratings distribution](media/uber-rating.png)
+*Uber driver ratings distribution (source: [Business Insider](https://www.businessinsider.com/leaked-charts-show-how-ubers-driver-rating-system-works-2015-2))*
+
+The key insight there was that [given a 5-point rating system, people gravitate either towards 1 or 5](https://ux.stackexchange.com/questions/4200/rate-vs-like-dislike): the rating scales in the middle see much fewer choices being made. This is not an isolated example: [YouTube came to the same conclusion](https://techcrunch.com/2009/09/22/youtube-comes-to-a-5-star-realization-its-ratings-are-useless/) switched away from stars. [Uber driver ratings below 4 are basically a strong enough signal to kick a driver off the platform](https://www.businessinsider.com/leaked-charts-show-how-ubers-driver-rating-system-works-2015-2), since 2s and 3s hardly get used. This also [mirrors Uber passenger ratings distribution scale](https://theatlas.com/charts/4y8zfUM9).
+
+### Other examples of zero-sum games to "rank" things
+
+1. [AlphaGo and other AI systems](https://www.wired.com/2016/05/google-alpha-go-ai/) use [adversarial machine learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning) to rank game strategies.
+2. [reCAPTCHA](https://en.wikipedia.org/wiki/ReCAPTCHA) uses zero-sum game elements for *known* inputs while training for *unknown* inputs at the same time.
 
 ### Applying Elo ratings to decentralized reputation
 
-A decentralized reputation system could similarly bootstrap ***reputation scores per topic or attribute*** much faster than trying to accumulate "stamps" over time. The benefits this offers are:
+A decentralized reputation system could similarly bootstrap ***reputation scores per topic or attribute*** much faster than trying to accumulate "stamps" over time.
 
-1. Reputation scores could go *up* as well as *down*.
-2. Elo ratings naturally decay over time due to inactivity, just like how sportspeople who drop out of a sport drop out of league tables. Applied to reputation, this provided a sliding time window over which reputation could decay.
-3. Crucially, even "new", low-ranked actors in a certain domain could trigger a reputation event that states *This higher-ranked actor is no longer nice*. On their own, a *single* lower-ranked actor couldn't significantly impact a higher-ranked one - which prevents [Sybil attack](https://en.wikipedia.org/wiki/Sybil_attack) scenarios. But, given *enough* actors stating positive/negative experiences, scores will change over time.
-4. This does *not* mean an actor has a single reputation score - or a single score on how trustworthy their key/handle/identifier is. They could *dynamically* maintain *different* reputation scores on different topics. E.g., a company could have a high "buy" rating for their stock on financial metrics, but a low reputation on ESG. These can tied to Decentralized Identifiers (DIDs), for example, and assessed by the beholder differently.
-5. Doesn't *necessarily* need to be on-chain. It could be off-chain/off-ledger and shared on a case-by-case basis: the same way Verifiable Credentials are.
-6. **Finally** a potential alternative to the question *How do I know this issuer/DID is trustworthy?* instead of sharing lists of trusted DIDs manually or [`.well-known` DID configuration](https://identity.foundation/specs/did-configuration/) which is *basically* back to relying on centralised PKI / domain name reputation.
-7. Extending that same idea, it could also apply to *trust frameworks*, *governance frameworks*, *schemas* etc. When a verifier is presented a credential from an isssuer/framework/schema they have never seen before, they can dynamically query the Elo rating based reputation score of each of those *on that particular topic/domain* and assess whether to trust the credential.
+Some thoughts on potential benefits could be:
+
+1. Reputation scores could go *up* as well as *down*. Elo ratings naturally decay over time due to inactivity, just like how sportspeople who drop out of a sport drop out of league tables. Applied to reputation, this provided a sliding time window over which reputation could decay.
+2. Crucially, even "new", low-ranked actors in a certain domain could trigger a reputation event that states *This higher-ranked actor is no longer nice*. On their own, a *single* lower-ranked actor couldn't significantly impact a higher-ranked one - which prevents [Sybil attack](https://en.wikipedia.org/wiki/Sybil_attack) scenarios. But, given *enough* actors stating positive/negative experiences, scores will change over time.
+3. This does *not* mean an actor has a single reputation score - or a single score on how trustworthy their key/handle/identifier is. They could *dynamically* maintain *different* reputation scores on different topics. E.g., a company could have a high "buy" rating for their stock on financial metrics, but a low reputation on ESG. These can tied to Decentralized Identifiers (DIDs), for example, and assessed by the beholder differently.
+4. Doesn't *necessarily* need to be on-chain. It could be off-chain/off-ledger and shared on a case-by-case basis: the same way Verifiable Credentials are.
+5. **Finally** a potential alternative to the question *How do I know this issuer/DID is trustworthy?* instead of sharing lists of trusted DIDs manually or [`.well-known` DID configuration](https://identity.foundation/specs/did-configuration/) which is *basically* back to relying on centralised PKI / domain name reputation.
+6. Extending that same idea, it could also apply to *trust frameworks*, *governance frameworks*, *schemas* etc. When a verifier is presented a credential from an isssuer/framework/schema they have never seen before, they can dynamically query the Elo rating based reputation score of each of those *on that particular topic/domain* and assess whether to trust the credential.
 
 ## Closing comments
 
 Obviously, there are *lot* of things to map out on how to make this work in technical implementation, threat-modelling scenarios such as Sybil resistance, and ensuring there are safeguards to prevent unethical behaviour. I would love to collaborate at RWOT to map out other pros/cons not listed here.
 
-However, this model could provide a *radically* different reputation model than centralised PKI, WOT-based decentralised PKI, or soul-bound tokens / SBTs (which offers no consent-led mechanisms to *reject* malicious reputation statements).
+However, this Elo ratings could provide a *radically* different reputation model than centralised PKI, WOT-based decentralised PKI, or soul-bound tokens / SBTs (which offers no consent-led mechanisms to *reject* malicious reputation statements). Instead of having to invent something entirely novel, Elo ratings are a well-researched and rigorously-modelled mathematical field.
 
 ## References
 
 ### Worth reading
 
-1. 
+1. [Soul-Bound Tokens (SBTs)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763): Probably the most prominent *recent* idea around decentralized reputation outside of the SSI community.
+2. [Elo hell](https://en.wikipedia.org/wiki/Elo_hell): A trap video game players sometimes fall into, where they find it hard to dig themselves out of a rut/bad streak.
 
 ### Related submissions for RWOT11 The Hague
 
