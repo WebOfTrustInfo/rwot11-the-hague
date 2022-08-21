@@ -52,7 +52,7 @@ We aim to offer an *infrastructure* of identity and trust for common co-operativ
 
 The infrastructure also benefits co-ops, allowing them to collaborate to reach and cross-sell to the new consumers and members - a 'market commons' of digital and authentic consumer membership.  This must respect the privacy of members, sharing by consent only what is necessary to transact - *ethical* cross-selling.  
 
-Identity systems and ecosystems are in themselves complex: “Identity is a “Wicked” problem”[^8].  There are many possible interactions between the different co-operatives and their members and there are many potential risks and pitfalls in digital identity.  This project takes a sociocentric view of identity, something that is essentially human and rooted in the relationships between humans, not an individualistic, internalised identity, mapped crudely to a 'digital self'. [^11].  It also acknowledges the importance of dialogue and 'storytelling' as an anchor of identity [^12]. Reductionist attempts to create a 'digital identity' can even be dangerous, with risk of serious individual harm in some socio-political contexts. [^13]  
+Identity systems and ecosystems are in themselves complex: “Identity is a “Wicked” problem”[^8].  There are many possible interactions between the different co-operatives and their members and there are many potential risks and pitfalls in digital identity.  This project takes a sociocentric view of identity, something that is essentially human and rooted in the relationships between humans, not an individualistic, internalised identity, mapped crudely to a 'digital self'. [^11]  "Digital identity today isn’t really human at all." [^25].  It also acknowledges the importance of dialogue and 'storytelling' as an anchor of identity [^12]. Reductionist attempts to create a 'digital identity' can even be dangerous, with risk of serious individual harm in some socio-political contexts. [^13]"Put starkly, many millions of people have been excluded, persecuted, and murdered with the assistance of prior identity architectures, and no other facet of information technology smashes into the human condition in quite the same way as digital identity" [^25]
 
 6. ## **Today’s Identity Solutions and Systems**
 Some platform cooperatives simply build trust-based communities in silos, which often require users and members to crudely share personal documents and credentials in order to collaborate across co-operative entities.  Too much information is shared and scattered across the ecosystem.  Many fall back on mainstream solutions (“sign in with..” Apple, Google, Facebook etc) from big tech companies that are easier to use, implement and support, but which may use ‘federated’ identity and sign-on to aggregate and systematically exploit user data.  
@@ -71,8 +71,8 @@ We do not know if initial use-case hypotheses floated in the Coop Creds communit
 We have kept the question as open as possible so that in discussion we can empathise better and uncover more of the hidden, implicit opportunities for valuable interaction between co-operatives, their members and stakeholders.  We believe co-ownership and community participation is essential to the co-design process.  
 
 8. ## **Identity Ecosystem Governance**
-The typology and taxonomy of identity systems has been refined through the efforts of many in the field to elevate the importance of a governance 'dimension', and to elaborate it as part of a technical 'stack' (eg within the ToIP stack)  
-Co-operative governance mechanisms typically involve participative and collective democratic decisions made by member-stakeholders.  We propose that co-operative business models and mechanisms may be useful and relevant in the governance of an identity ecosystem.  
+The typology and taxonomy of identity systems has been refined through the efforts of many in the field to elevate the importance of a governance 'dimension', and to elaborate it as part of a technical 'stack' (eg within the ToIP stack).  The ToIP Ecosystem Foundry Working Group [^27] is a valuable community of (emerging) practice.
+Co-operative governance mechanisms typically involve participative and collective democratic decisions made by member-stakeholders. Rieks Joosten et al observe that "...trust and assurance work best in a community of parties that have some common objectives, and because of that, find it more beneficial to work together in some areas than having to do all the work themselves. They do not seek to provide rules/standards that should be followed world-wide, but rather they consent to a set of rules that they can all work with, for the particular purposes that they share and the concerns they collectively want to address. They will often allow others to join if they find that beneficial." [^28]  The corollary of this is the proposition that co-operative business models and mechanisms may be useful and relevant in the governance of an identity ecosystem.
 
 
 9. ## **Data Commons**
@@ -87,18 +87,31 @@ There are opportunities to inform the development and growth of the ecosystem th
 The outer arcs in the chord diagram show the relative economic proportions of sectors in a  consumer addressable market, while the inner chords show the value flows between the sectors.  Although only a synthetic / sample dataset, the chart shows how coops may benefit from access to the consumer bases of other coops and how consumers can find value from common membership.  Many other visualisations of similar graph data are possible.  
 
 10. ## **Methodology – Design Thinking and Co-design**
-We will use an iterative, adaptive and collaborative design process to discover the social and economic interactions of greatest overall value to the ecosystem and try to focus the design on features that propagate and sustain these and other, related interactions.  The first iteration of design of the trust and identity system infrastructure will support a common feature set.  
+We will use an iterative, adaptive and collaborative design process to discover the social and economic interactions of greatest overall value to the ecosystem and try to focus the design on features that propagate and sustain these and other, related interactions. 
 
-We expect the work of Bateson (Aphanipoiesis and Warm Data Labs) (Bateson, N. 2021)[^0] to be informative in our research and the design of our co-operative ecosystem.  In particular, we hope our requirements dialogue will provide space to consider coalescence and the merging, mixing and fusing of context across diverse co-operatives from a variety of industrial and economic sectors.  We hope that taking the time for dialogue and iteration will lead to a more inclusive and empathetic approach to community needs.  
+We refer to N Bateson's term "aphanipoiesis" - "the way in which life coalesces toward vitality in unseen ways" and "coalescence" - the merging, mixing and fusing of context (Bateson, N. 2021)[^0] in our research and in the design of our co-operative ecosystem alongside the more overt economics of a design for value exchange.  In particular, we hope our requirements dialogue will provide space to consider this coalescence and the merging, mixing and fusing of context across diverse co-operatives from a variety of industrial and economic sectors.  We also hope that taking the time for dialogue and iteration will lead to a more inclusive and empathetic approach to community needs. P. Sheldrake has been highly critical of a lack of "discussion of autopoiesis and cognition amongst the identity digerati" [^25] and I. Beeson [^26] has pointed to similar deficiencies in the entire discipline and practice in information systems when faced with complex, community systems. Beeson helpfully suggests we "shift focus from abstraction, representation and design toward cooperation and use" and "develop a much richer approach to the design of IS..."  "..to build systems that support, reflect and project their users' inward assimilation of their lived experiences".
 
-We have scheduled Co-Design Workshops to co-create and co-design the future of what an initial ‘cooperative credential’ could be within the ecosystem.  Briefly, representatives from different cooperatives will break out into pairs and in a dialogue attempt to understand and design improvements in co-operation between co-ops and the co-operative experience from each others’ perspective, in turn.  
+We have scheduled Co-Design Workshops to co-create and co-design the future of what an initial ‘cooperative credential’ could be within the ecosystem.  Briefly, representatives from different cooperatives will break out into pairs and in a dialogue attempt to understand and design improvements in co-operation between co-ops and the co-operative experience from each others’ perspective, in turn.  They are asked to consider the question from three different aspects, or "spheres of life": work, legal and play [^17].  For example:
+* work - how can we benefit together from this?
+* legal - how can we reduce our mutual risk / meet our obligations in this?
+* play - how can we have fun / enjoy doing this together?
 
-From this contextual work we will draw what is needed to scope and structure the design of community and identity credentials and roles, patterns and potential software components, following established agile software architecture and design and open source principles.  
+From this contextual work we will draw what is needed to scope and structure the design of community and identity credentials and roles, patterns and potential software components, following established agile software architecture and design and open source principles.
+
+The trust and identity system infrastructure is only a supporting component of the ecosystem, offering some potentially common features, for example:
+* a common, community ID – for members / holders with across multiple coops, with exchange and verification of credentials;
+* streamlined new member onboarding – for co-ops to quickly onboard new members/users by accepting 'identities' verified by other coops, eliminating username, password, and sign-up forms;
+* strong, passwordless authentication / single sign on tools for higher risk transactions;
+* reusable verification / KYC across the ecosystem.
+
+The first iteration will be experimental, exploring which features are necessary and used, how they are perceived and found useful, if at all. All depends on the context.
 
 11. ## **Which Co-operatives are involved?**
 This is changing and dynamic, but active participants in our recent ‘Show and Tell’ session introduced themselves at this event:  
 
-[https://community.coopcreds.com/t/co-op-credential-community-call-3-co-op-show-and-tell/291/9](https://community.coopcreds.com/t/co-op-credential-community-call-3-co-op-show-and-tell/291/9)  
+[https://community.coopcreds.com/t/co-op-credential-community-call-3-co-op-show-and-tell/291/9](https://community.coopcreds.com/t/co-op-credential-community-call-3-co-op-show-and-tell/291/9)
+
+We are also in separate discussion with co-ops working at national level looking for a common, cross-border approach to co-operative identity.
 
 
 12. ## **What we have found to date**
@@ -109,7 +122,7 @@ We began with a combination of digital surveys and interviews with these co-oper
 Overall, respondents aligned strongly with the problem areas we identified. Concerns about privacy were a given - all respondents identified with the issue. Co-operation among cooperatives was the topic that generated most engagement and comment about the potential to do more. KYC featured strongly as an issue for larger, more established co-operatives and those starting up in strongly-regulated sectors like housing.  
 
 13. ## **Example Story / Scenario: A Cross-Selling Event in Independent Music Tourism**
-As one example of a co-operative interaction we put forward an early hypothesis for a hybrid digital / local physical event scenario called ‘Stay Fair / Play Fair”.  Here is a visualisation:  
+As one example of a co-operative interaction we put forward an early hypothesis for a hybrid digital / local physical event scenario in independent music festivals/touring called ‘Stay Fair / Play Fair”.  Here is a visualisation:  
 
 ![Example:_Music_Tourism](./media/coops_music_tourism.png)
 
@@ -121,10 +134,11 @@ There are multiple and varied potential collaborative use-case examples such as 
 
 We can learn from and use the work of TOIP as an identity reference architecture framework. [^14] and also borrow more widely from the structure and terminology of enterprise architecture frameworks such as TOGAF [^15] and IAF [^16].  
 
-For the economic modelling of the ecosystems we propose to use elements of the ValueFlows methodology and syntax.  Valueflows (VF) is a set of common vocabularies to describe flows of economic resources of all kinds within distributed economic ecosystems.  This common vocabulary also underpins the common data approach for the ecosystem, helping to provide clarity in the governance of public persistent identifiers.  
+For the economic modelling of the ecosystems we propose to use elements of the ValueFlows methodology and syntax.  Valueflows (VF) is a set of common vocabularies to describe flows of economic resources of all kinds within distributed economic ecosystems.  This common vocabulary also underpins the common data approach for the ecosystem, helping to provide clarity in the governance of public persistent identifiers.
 
-The work of N. Hickman [^17] is particularly helpful in considering the types of identity and appropriate levels of identity assurance in more sociocentric ecosystems, also typical of cooperatives:  "In the realm of digital identity, much focus has been placed on the challenge of legal identification and national identity systems as an important route to accessing public services and engaging with the state. Yet in our digital lives, we spend more time either working or playing, where legal identification is not necessary. In fact, in many types of interaction, exposing our legal identity undermines other human rights such as the right to privacy. For this reason, it is useful in designing an identity system to consider three different spheres of life"….  legal, work and play, and to experiment/prototype accordingly.  The design process will also address the well-known trade-offs between access, privacy and security.  
+The work of N. Hickman [^17] is particularly helpful in considering the types of identity and appropriate levels of identity assurance in more sociocentric ecosystems, also typical of cooperatives:  "In the realm of digital identity, much focus has been placed on the challenge of legal identification and national identity systems as an important route to accessing public services and engaging with the state. Yet in our digital lives, we spend more time either working or playing, where legal identification is not necessary. In fact, in many types of interaction, exposing our legal identity undermines other human rights such as the right to privacy. For this reason, it is useful in designing an identity system to consider three different spheres of life"….  legal, work and play, and to experiment/prototype accordingly.  The design process will also address the well-known trade-offs between access, privacy and security.
 
+Finally, we will look to the work of the Ecosystem Foundry Working Group for patterns and emerging thinking on operating model tools for an "assurance community".  For example, a 'yellow pages service’ to help find the various credentials or catalogues of credentials of interest to participant co-ops; accreditation schemes for processes and organisation units (authorised issuer lists) and re-usable complex rules / decision trees.  [^28]
 
 
 Contact:  Nick Meyne
@@ -142,7 +156,7 @@ nick.meyne@smtngood.eu
 [^6]: International Cooperative Alliance
 [^7]: ICA Statement of Cooperative Identity  https://www.ica.coop/en/cooperatives/cooperative-identity#:~:text=6.,national%2C%20regional%20and%20international%20structures.
 [^8]: W3C https://www.w3.org/2011/identity-ws/slides/Pranke-wicked.pdf
-[^9]: Self-Sovereign Identity is a loosely-used term that lacks a normative definition since originally being coined to by Christopher Allen to summarise a set of principles (http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html ) The headline we use for SSI is "agency of individual subjects over the holding and disclosure of information about them".  In the digital realm, cryptographic technologies are used, but in the physical human context, a person’s wallet or purse containing paper certificates or cards as ’proofs’ from trusted issuers could be said to be an example of SSI.  Note that information property rights are not directly required or implied.
+[^9]: Self-Sovereign Identity is a loosely-used term that lacks a normative definition since originally being coined to by Christopher Allen to summarise a set of principles (http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html ) The headline we use for SSI is "agency of individual subjects over the holding and disclosure of information about them".  In the digital realm, cryptographic technologies are used, but in the physical human context, a person’s wallet or purse containing paper certificates or cards as ’proofs’ from trusted issuers could be said to be an example of SSI.  Note that information property rights are not directly required or implied, and nor are the use of additional identifiers.
 [^10]: A Hirel:   https://medium.com/@ahirel/hacking-metcalfes-law-1127a687bcd2
 [^11]: K Smith: From dividual and individual selves to porous subjects  https://doi.org/10.1111/j.1757-6547.2012.00167.x
 [^12]: MacIntyre, A. 1984. After Virtue, 2nd edn. Notre Dame: University of Notre Dame Press.
@@ -150,7 +164,7 @@ nick.meyne@smtngood.eu
 [^14]: Linux Foundation, (May 2020.) Introducing the Trust over IP Foundation Whitepaper, https://trustoverip.org/wpcontent/uploads/sites/98/2020/05/toip_introduction_050520.pdf
 [^15]: The Open Group Architectural Framework: https://www.opengroup.org/togaf
 [^16]: Capgemini Integrated Architecture Framework: http://architectureportal.org/capgemini-integrated-architecture-framework-iaf
-[^17]:  N. Hickman: A use case for decentralized identity at work. An investigation of potential digital solutions for supply chains in the Indian apparel sector to increase supply chain resilience and reduce worker vulnerability https://www.turing.ac.uk/sites/default/files/2021-11/a_use_case_for_decentralized_identity_at_work_v1.2_final_1.pdf  a paper created as part of The Alan Turing Institute’s Trustworthy Digital Infrastructure for Identity Systems project.
+[^17]:  Hickman, Nicky. (2021). A Use Case for Decentralized Identity at Work.  An investigation of potential digital solutions for supply chains in the Indian apparel sector to increase supply chain resilience and reduce worker vulnerability https://www.researchgate.net/publication/362432444_A_Use_Case_for_Decentralized_Identity_at_Work  a paper created as part of The Alan Turing Institute’s Trustworthy Digital Infrastructure for Identity Systems project.
 [^18]: N. v.Doorn 2017  Analysis: Platform cooperativism and the problem of the outside
  https://culturedigitally.org/2017/02/platform-cooperativism-and-the-problem-of-the-outside/
 [^19]: Mehta, Dawande and Mookerjee, 2021, Can data cooperatives sustain themselves? https://blogs.lse.ac.uk/businessreview/2021/08/02/can-data-cooperatives-sustain-themselves/
@@ -159,4 +173,8 @@ nick.meyne@smtngood.eu
 [^22]: Open Knowledge Foundation https://okfn.org/
 [^23]: Sangeet Choudary, Platform Power, 2013: http://platformed.info
 [^24]: David Evans and Richard Schmalensee, 2016:  Matchmakers: the new economics of multisided platforms
-
+[^25]: Philip Sheldrake, 2022: Digitalizing human identity, Blog: https://akasha.org/blog/2022/07/14/digitalizing-human-identity  https://generative-identity.org/human-identity-the-number-one-challenge-in-computer-science/
+[^26]: Ian Beeson: Implications of the therory of autopoeisis for the discipline and practice of information systems" in Realigning Research and Practice in Information Systems Development, 2001, Volume 66  https://ifipwg82.org/sites/ifipwg82.org/files/beeson.pdf
+[^27]: Ecosystem Foundry Working Group https://wiki.trustoverip.org/display/HOME/Ecosystem+Foundry+Working+Group
+[^28]: Joosten, Rieks & den Breeijen, Sterre & Reed, Drummond. (2021). Decentralized SSI Governance, the missing link in automating business decisions. 10.13140/RG.2.2.35491.68640. https://www.researchgate.net/publication/348325716_Decentralized_SSI_Governance_the_missing_link_in_automating_business_decisions
+[^29] Manu Sporny: RWoT11 Authorized Issuer Lists  https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/authorized-issuer-lists.md
