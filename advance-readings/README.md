@@ -247,6 +247,10 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
    * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
    * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
+### [Revocation and VC](./revocation-and-vc.md)
+   * by [Ahamed Azeem](mailto:azeem.ahamed@danubetech.com), Danube Tech, Austria.
+   * A discussion about revocation methods used in SSI and VC and describes a suitable approach for privacy-preserving revocation.
+   * #Revocation #VC #RevocationLists2020 #IndyRevocationn
 
 ### [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
    * by [Eric Schuh](mailto:eric@legreq.com), Legendary Requirements, USA
@@ -359,6 +363,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+* [Revocation and VC](./revocation-and-vc.md)
 * [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
 * [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Societal impacts of SSI technologies](./societal-impacts.md)
