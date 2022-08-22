@@ -3,15 +3,12 @@
 - Mr. Lal Chandran (iGrant.io, Sweden)
 - Mr. Jan Linquist (Linaltec, Sweden)
 - Ms. Lotta Lundin (iGrant.io, Sweden)
-
-The paper could potentially include additonal authors working with privacy and data exchange ecosystems
-
-- Paul Knowles (Human collassus Foundation, Switzerland)
-- Dr. Philippe Page (Human collassus Foundation, Switzerland)
+- Mr. Max Carlson (Govstack Initiative)
+- Paul Knowles (Human Collassus Foundation, Switzerland)
+- Dr. Philippe Page (Human Collassus Foundation, Switzerland)
 - Mr. George Padayatti (iGrant.io, Sweden) 
 - Dr. David Goodman (iGrant.io, Sweden)
 - Mr. Fredrik Linden (MyData, Sweden)
-
 ## Abstract
 
 The Data Exchange Agreemeent provides a suite of tools that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to be transparent and legitimate in their data usage while leveraging their data assets. Automated agreement handling is required for a scalable and regulatory-compliant data marketplace (data space). It also provides individuals control over how their data is used and exchanged.
@@ -43,6 +40,14 @@ This paper proposes a framework starting with a data exchange landscape and how 
 
 The Data Agreement schema is standardised as part of ISO 27560 and driven via DIF (Decentralized Identity Foundation) Data Agreement WG [13]. The DIF workgroup will further investigate standardising the DID:mydata introduced as part of the Automated Data Agreement project by iGrant.io (Sweden).
 
+## Near-term use cases
+
+Following near term use cases are identified to validate and roll our the DEXA protocols:
+
+1) Govstack Inititiative (Consent building block)
+2) NGI-Trust ONTOCHAIN and eSSIF-Lab data exchange with decentralised digital wallets
+3) Healthcare data sharing, system demonstrator projects (Swedish innovation agency, Vinnova)
+4) Data4Diabetes usecase from iGrant.io, MyData (Sweden)
 ## References
 
 [1] Automated Data Agreement by iGrant.io, avaialble at: https://essif-lab.eu/automated-data-agreements-to-simplify-ssi-work-flows-by-igrant-io/
