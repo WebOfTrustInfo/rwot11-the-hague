@@ -286,6 +286,12 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Isaac Henderson Johnson Jeyakumar](mailto:isaac-henderson.johnson-jeyakumar@iat.uni-stuttgart.de), University of Stuttgart, Germany & [Michael Kubach](mailto:michael.kubach@iao.fraunhofer.de), Fraunhofer IAO, Germany.
    * A proposal for a Trust Registry concept to enhance interoperability and prevent Phishing/MITM attacks in different components of the SSI Ecosystem.
    * #TrustRegistry #TRAIN #trustworthiness #SSI #eSSIF-Lab
+   
+### [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
+
+* by: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](elena@nymlab.it), [Egidio Casati](mailto:egidio.casati@nymlab.it)
+* A proposal for a decentralised trust framework powering regulated crypto assets
+* #crypto-asset #ssi #regulated-deFi #kYC #smart-contract-wallet #on-chain-verifier
 
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
@@ -371,6 +377,7 @@ _Please also enter your paper alphabetically in the form:_
 * [SSI data generator](./data-generator.md)
 * [Standardization Overview](./standardization-overview.md)
 * [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
+* [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
