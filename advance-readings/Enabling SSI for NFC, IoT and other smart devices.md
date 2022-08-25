@@ -1,5 +1,5 @@
 # Enabling SSI for NFC, IoT and other smart devices
-By: [Caspar Roelofs](mailto:caspar@gimly.io), [Gimly](https://www.gimly.io)
+By: [Caspar Roelofs](mailto:caspar@gimly.io) and Carlos Fontana, [Gimly](https://www.gimly.io)
 
 Date: 24th of August 2022
 ## Summary
