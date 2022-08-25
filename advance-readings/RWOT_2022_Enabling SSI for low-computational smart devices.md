@@ -1,5 +1,5 @@
 # Enabling SSI for low-computational smart devices
-By: Caspar Roelofs, [Gimly](https://github.com/Gimly-Blockchain)
+By: Caspar Roelofs, [Gimly](https://www.gimly.io)
 
 Date: 24th of August 2022
 
