@@ -128,7 +128,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Nikos Fotiou](mailto:fotiou@aueb.gr), Athens University of Economics and Business
    * Verifiable Credentials for expressing user capabilities, issued using OAuth 2.0, and used for accessing HTTP-based resources that abide by the Zero-Trust principle.
    * #IAA, #VerifiableCredentials, #ZTA
-   
+
 ### [Creative Brief RWOT Animation Project.](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
    * by [Erica Connell](mailto:erica@legreq.com), Legendary Requirements
    * Let's produce a ~1-minute animation that tells the story of DIDs and
@@ -193,9 +193,14 @@ domains in order to resist bad actors and provide aggregate privacy.
    * A discussion on the potential drawbacks of proof-of-authority and soul-bound tokens (SBTs), with an alternative system that could be constructed using Elo rating systems used in the world of sports and web services.
    * #reputation #trust #scoring
 
+### [Elision, Redaction, and Noncorrelation in Smart Documents](elision-redaction-correlation-smart-documents.md)
+   * by Wolf McNally, Christopher Allen, Shannon Applecline, Blockchain Commons
+   * An introduction to the `Envelope` data structure and its novel approach to facilitating the construction and transformation of “smart documents”, including native facilities for encryption, signing, elision (redaction), sharding, and noncorrelation.
+   * #VerifiableCredentials #identity #sharding #signing
+
 ### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
-   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments 
+   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments
    * #DIDComm #protocol #messaging #Mobile #communications
 
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
@@ -275,7 +280,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
-   
+
 ### [Standardization Overview](./standardization-overview.md)
    * by [Maaike van Leuken](mailto:maaike.vanleuken@tno.nl), TNO, Eindhoven, The Netherlands
    * An overview of SSI standardization
@@ -286,7 +291,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Isaac Henderson Johnson Jeyakumar](mailto:isaac-henderson.johnson-jeyakumar@iat.uni-stuttgart.de), University of Stuttgart, Germany & [Michael Kubach](mailto:michael.kubach@iao.fraunhofer.de), Fraunhofer IAO, Germany.
    * A proposal for a Trust Registry concept to enhance interoperability and prevent Phishing/MITM attacks in different components of the SSI Ecosystem.
    * #TrustRegistry #TRAIN #trustworthiness #SSI #eSSIF-Lab
-   
+
 ### [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
 
 * by: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](elena@nymlab.it), [Egidio Casati](mailto:egidio.casati@nymlab.it)
@@ -358,6 +363,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Discovery Handshake](./discovery-handshake.md)
 * [DKMS for SSI](./dkms-for-ssi.md)
 * [Dynamic & Decentralized Reputation for the Web of Trust: What We Can Learn from the World of Sports, Tinder, and Netflix](dynamic-decentralized-reputation-web-of-trust.md)
+* [Elision, Redaction, and Noncorrelation in Smart Documents](elision-redaction-correlation-smart-documents.md)
 * [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
