@@ -1,9 +1,9 @@
-# Enabling SSI for low-computational smart devices
-By: Caspar Roelofs, [Gimly](https://github.com/Gimly-Blockchain)
+# Enabling SSI for NFC, IoT and other smart devices
+By: [Caspar Roelofs](mailto:caspar@gimly.io), [Gimly](https://www.gimly.io)
 
 Date: 24th of August 2022
 ## Summary
-*SSI in general and verifiable credentials (VCs) and decentralized identifiers (DIDs) specifically present major privacy and security benefits in managing, sharing and verifying data in the future cyber-physical world that merges digital and physical realities. However, a large part of current SSI effords are geared towards personal consumer identities and personal information that are contingent on the use of personal smartphones and internet. Meanwhile, the potential of implementing DIDs and VCs for physical objects, smart devices and IoT data which remains largely untapped. [^1] This paper aims to address what the major hurdles and potential solutions are to implementing SSI in a cyber-physical system that includes low computational devices and restricted data transmissions such as NFC smartcards and IoT devices (BLE trackers and sensors, LoRaWan sensors).*
+*SSI in general and verifiable credentials (VCs) and decentralized identifiers (DIDs) specifically present major privacy and security benefits in managing, sharing and verifying data in our cyber-physical world that merges digital and physical realities. However, a large part of current SSI effords are geared towards personal consumer identities and personal information that are contingent on the use of personal smartphones and internet. Meanwhile, the potential of implementing DIDs and VCs for physical objects, smart devices and IoT data remains largely untapped. [^1] This paper aims to address what the major hurdles and potential solutions are to implementing SSI in a cyber-physical system that includes low computational devices and restricted data transmissions such as NFC smartcards, IoT devices, NFC, BLE and LoRaWAN communication.*
 
 ## Background and literature
 A major issue here is that many SSI protocols, such as DIDComm and DID resultions, are too computational and data heavy for the limited computational power of the devices such as NFC smartcards, BLE trackers or other IoT sensors and transmitters) and the low bandwith of the data transmission protocols (NFC, BLE, LoRa). Fedrechski et al. have proposed a low-overhead approach for self-sovereign identity in IoT, with an adapted did method and DIDcomm protocol for IoT devices (DIoTComm). [^2]
