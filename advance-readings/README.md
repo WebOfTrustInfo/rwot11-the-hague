@@ -298,6 +298,11 @@ domains in order to resist bad actors and provide aggregate privacy.
 * A proposal for a decentralised trust framework powering regulated crypto assets
 * #crypto-asset #ssi #regulated-deFi #kYC #smart-contract-wallet #on-chain-verifier
 
+### [Unravelling Web of Trust](./UnravellingTrust.md)
+  * by [Ian Grigg](mailto:iang@iang.org)
+  * By way of anecdotes, an exploration as to why WoT didn't work, and why Trust is harder. A request for more anecdotes to shed light on the way forward.
+  * #WOT #web-of-trust #trust #community
+
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
 * A proposal for a Verifiable Endorsements mechanism for VCs.
@@ -384,6 +389,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Standardization Overview](./standardization-overview.md)
 * [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
 * [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
+* [Unravelling Web of Trust](./UnravellingTrust.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
