@@ -1,4 +1,4 @@
-# Enabling SSI for low-computational smart devices
+# Enabling SSI for NFC, IoT and other smart devices
 By: Caspar Roelofs, [Gimly](https://www.gimly.io)
 
 Date: 24th of August 2022
