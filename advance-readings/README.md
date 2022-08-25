@@ -194,7 +194,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * #reputation #trust #scoring
 
 ### [Enabling SSI for NFC, IoT and other smart devices](./Enabling%20SSI%20for%20NFC%2C%20IoT%20and%20other%20smart%20devices.md)
-   * By [Caspar Roelofs](mailto:caspar@gimly.io), Gimly, the Netherlands
+   * By [Caspar Roelofs](mailto:caspar@gimly.io) and Carlos Fontana, Gimly, the Netherlands
    * An exploration of technical requirements, limitations and solutions to implement SSI with low-computational smart devices and low bandwith data-transmission such as NFC smartcards, IoT devices, NFC, BLE communication.
    * #NFC #IoT #BLE #DIDComm #Inclusion 
 
