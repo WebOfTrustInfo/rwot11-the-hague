@@ -238,6 +238,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
    * #Reputation #Webs-of-trust #Trust-networks
 
+### [On-Chain DIDs](./on-chain-dids.md)
+   * by [Martin Riedel](mailto:martin@identity.org), Identity.com
+   * Evaluating DID (Document) State on-chain and the challenges around nomenclatures and spec-compliance.
+   * #dids #didmethods #identitymanagement #applications
+
 ### [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
    * by [Brent Zundel](mailto:brent.zundel@avast.com), Avast s.r.o.
    * A proposal for a conversation about whether reducing correlation is necessary during credential exchange.
@@ -377,6 +382,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Identity Net: Building an identity net through self-authenticated data graphs](./identity-net.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+* [On-Chain DIDs](./on-chain-dids.md)
 * [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
