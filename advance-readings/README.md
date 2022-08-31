@@ -197,6 +197,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by Wolf McNally, Christopher Allen, Shannon Applecline, Blockchain Commons
    * An introduction to the `Envelope` data structure and its novel approach to facilitating the construction and transformation of “smart documents”, including native facilities for encryption, signing, elision (redaction), sharding, and noncorrelation.
    * #VerifiableCredentials #identity #sharding #signing
+   
+### [Enabling SSI for NFC, IoT and other smart devices](./Enabling%20SSI%20for%20NFC%2C%20IoT%20and%20other%20smart%20devices.md)
+   * By [Caspar Roelofs](mailto:caspar@gimly.io) and Carlos Fontana, Gimly, the Netherlands
+   * An exploration of technical requirements, limitations and solutions to implement SSI with low-computational smart devices and low bandwith data-transmission such as NFC smartcards, IoT devices, NFC, BLE communication.
+   * #NFC #IoT #BLE #DIDComm #Inclusion 
 
 ### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
@@ -374,6 +379,7 @@ _Please also enter your paper alphabetically in the form:_
 * [DKMS for SSI](./dkms-for-ssi.md)
 * [Dynamic & Decentralized Reputation for the Web of Trust: What We Can Learn from the World of Sports, Tinder, and Netflix](dynamic-decentralized-reputation-web-of-trust.md)
 * [Elision, Redaction, and Noncorrelation in Smart Documents](elision-redaction-correlation-smart-documents.md)
+* [Enabling SSI for NFC, IoT and other smart devices](./Enabling%20SSI%20for%20NFC%2C%20IoT%20and%20other%20smart%20devices.md)
 * [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
