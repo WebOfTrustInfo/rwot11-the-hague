@@ -109,7 +109,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
 
-### [Collaborative Seed Recovery: A New Methodology for Smart Custody](csr.md)
+### [Collaborative Seed Recovery: A New Methodology for Smart Custody](collaborative-seed-recovery-csr.md)
    * by Christopher Allen, Shannon Appelcline & Wolf McNally, Blockchain Commons
    * Personally held digital assets are very vulnerable to accidental loss. This reading outlines solutions to date and looks at plans for a collaborative seed recovery architecture.
    * #recovery #seed
@@ -362,7 +362,7 @@ _Please also enter your paper alphabetically in the form:_
 * [BTCR From First Principles](./btcr-from-first-principles.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
-* [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
+* [Collaborative Seed Recovery: A New Methodology for Smart Custody](./collaborative-seed-recovery-csr.md)
 * [Combining eIDAS High device binding with unlinkability](./combining-eIDAS-High-with-unlinkability.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
