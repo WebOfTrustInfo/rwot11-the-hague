@@ -64,4 +64,11 @@ If you listen carefully, you might be able to hear the harmonics in the distance
 1. BCC keeping secrets secret for Keep wallet of KERI / ACDC.
 2. CESR adapter for aggregated Schnorr, musig and/or frost
 
+## Preparatory work
+Resources I studied to prepare for the design:
+- https://suredbits.com/schnorr-applications-frost/
+
+Articles I wrote about CESR:
+- [CESR Proof Signatures are the “Segwit” of Authentic Data in KERI.](https://medium.com/happy-blockchains/cesr-proof-signatures-are-the-segwit-of-authentic-data-in-keri-e891c83e070a)
+- [CESR, one of Sam Smith’s inventions, is as controversial as it is genius.](https://medium.com/happy-blockchains/cesr-one-of-sam-smiths-inventions-is-as-controversial-as-genius-d757f36b88f8)
 More details in draft: https://hackmd.io/a4oU3TmSSveRJYIQjuSgOQ
