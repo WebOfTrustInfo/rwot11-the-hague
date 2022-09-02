@@ -109,7 +109,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
 
-### [Collaborative Seed Recovery: A New Methodology for Smart Custody](csr.md)
+### [Collaborative Seed Recovery: A New Methodology for Smart Custody](collaborative-seed-recovery-csr.md)
    * by Christopher Allen, Shannon Appelcline & Wolf McNally, Blockchain Commons
    * Personally held digital assets are very vulnerable to accidental loss. This reading outlines solutions to date and looks at plans for a collaborative seed recovery architecture.
    * #recovery #seed
@@ -128,7 +128,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Nikos Fotiou](mailto:fotiou@aueb.gr), Athens University of Economics and Business
    * Verifiable Credentials for expressing user capabilities, issued using OAuth 2.0, and used for accessing HTTP-based resources that abide by the Zero-Trust principle.
    * #IAA, #VerifiableCredentials, #ZTA
-   
+
 ### [Creative Brief RWOT Animation Project.](./Creative%20Brief%20RWOT%20Animation%20Project.pdf)
    * by [Erica Connell](mailto:erica@legreq.com), Legendary Requirements
    * Let's produce a ~1-minute animation that tells the story of DIDs and
@@ -193,9 +193,19 @@ domains in order to resist bad actors and provide aggregate privacy.
    * A discussion on the potential drawbacks of proof-of-authority and soul-bound tokens (SBTs), with an alternative system that could be constructed using Elo rating systems used in the world of sports and web services.
    * #reputation #trust #scoring
 
+### [Elision, Redaction, and Noncorrelation in Smart Documents](elision-redaction-correlation-smart-documents.md)
+   * by Wolf McNally, Christopher Allen, Shannon Applecline, Blockchain Commons
+   * An introduction to the `Envelope` data structure and its novel approach to facilitating the construction and transformation of “smart documents”, including native facilities for encryption, signing, elision (redaction), sharding, and noncorrelation.
+   * #VerifiableCredentials #identity #sharding #signing
+   
+### [Enabling SSI for NFC, IoT and other smart devices](./Enabling%20SSI%20for%20NFC%2C%20IoT%20and%20other%20smart%20devices.md)
+   * By [Caspar Roelofs](mailto:caspar@gimly.io) and Carlos Fontana, Gimly, the Netherlands
+   * An exploration of technical requirements, limitations and solutions to implement SSI with low-computational smart devices and low bandwith data-transmission such as NFC smartcards, IoT devices, NFC, BLE communication.
+   * #NFC #IoT #BLE #DIDComm #Inclusion 
+
 ### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
-   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments 
+   * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments
    * #DIDComm #protocol #messaging #Mobile #communications
 
 ### [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
@@ -233,6 +243,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * A proposal for a novel multi-dimensional reputation system framework for social media using language models and webs of trust.
    * #Reputation #Webs-of-trust #Trust-networks
 
+### [On-Chain DIDs](./on-chain-dids.md)
+   * by [Martin Riedel](mailto:martin@identity.org), Identity.com
+   * Evaluating DID (Document) State on-chain and the challenges around nomenclatures and spec-compliance.
+   * #dids #didmethods #identitymanagement #applications
+
 ### [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
    * by [Brent Zundel](mailto:brent.zundel@avast.com), Avast s.r.o.
    * A proposal for a conversation about whether reducing correlation is necessary during credential exchange.
@@ -247,6 +262,10 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Shigeya Suzuki](mailto:shigeya@wide.ad.jp), Ph.D, Project Professor, Graduate School of Media and Governance, Keio University, Japan
    * Using DNS as root of trust with help of ICANN's virtualized decentralized governance mechanism
    * #RootOfTrust #DNS #DNSSEC #ICANN #VirtualizedDecentralization #MultistakeholderGovernance
+### [Revocation and VC](./revocation-and-vc.md)
+   * by [Ahamed Azeem](mailto:azeem.ahamed@danubetech.com), Danube Tech, Austria.
+   * A discussion about revocation methods used in SSI and VC and describes a suitable approach for privacy-preserving revocation.
+   * #Revocation #VC #RevocationLists2020 #IndyRevocationn
 
 ### [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
    * by [Eric Schuh](mailto:eric@legreq.com), Legendary Requirements, USA
@@ -271,7 +290,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Moritz Schlichting](mailto:moritz@animo.id), Animo Solutions, Utrecht, The Netherlands
    * A data generator for SSI interactions and mocking
    * #eSSIF-Lab #SSI-ecosystem #Europe #Data #Generator #tools
-   
+
 ### [Standardization Overview](./standardization-overview.md)
    * by [Maaike van Leuken](mailto:maaike.vanleuken@tno.nl), TNO, Eindhoven, The Netherlands
    * An overview of SSI standardization
@@ -282,6 +301,17 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Isaac Henderson Johnson Jeyakumar](mailto:isaac-henderson.johnson-jeyakumar@iat.uni-stuttgart.de), University of Stuttgart, Germany & [Michael Kubach](mailto:michael.kubach@iao.fraunhofer.de), Fraunhofer IAO, Germany.
    * A proposal for a Trust Registry concept to enhance interoperability and prevent Phishing/MITM attacks in different components of the SSI Ecosystem.
    * #TrustRegistry #TRAIN #trustworthiness #SSI #eSSIF-Lab
+
+### [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
+
+* by: [Belsy Yuen](mailto:belsy@nymlab.it), [Elena Chachkarova](elena@nymlab.it), [Egidio Casati](mailto:egidio.casati@nymlab.it)
+* A proposal for a decentralised trust framework powering regulated crypto assets
+* #crypto-asset #ssi #regulated-deFi #kYC #smart-contract-wallet #on-chain-verifier
+
+### [Unravelling Web of Trust](./UnravellingTrust.md)
+  * by [Ian Grigg](mailto:iang@iang.org)
+  * By way of anecdotes, an exploration as to why WoT didn't work, and why Trust is harder. A request for more anecdotes to shed light on the way forward.
+  * #WOT #web-of-trust #trust #community
 
 ### [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * by Phillip D. Long, Dmitri Zagidulin, Kerri Lemoie
@@ -329,10 +359,11 @@ _Please also enter your paper alphabetically in the form:_
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
 * [AnonCreds: ~~Ledger~~ VDR Agnostic Authentic Data Specification and Roadmap](./anoncreds-ledger-agnostic-spec.md)
 * [Audited DIDComm](./audited-didcomm.md)
+* [Authorized Issuer Lists](./authorized-issuer-lists.md)
 * [BTCR From First Principles](./btcr-from-first-principles.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
-* [Collaborative Seed Recovery: A New Methodology for Smart Custody](./csr.md)
+* [Collaborative Seed Recovery: A New Methodology for Smart Custody](./collaborative-seed-recovery-csr.md)
 * [Combining eIDAS High device binding with unlinkability](./combining-eIDAS-High-with-unlinkability.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
 * [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
@@ -348,6 +379,8 @@ _Please also enter your paper alphabetically in the form:_
 * [Discovery Handshake](./discovery-handshake.md)
 * [DKMS for SSI](./dkms-for-ssi.md)
 * [Dynamic & Decentralized Reputation for the Web of Trust: What We Can Learn from the World of Sports, Tinder, and Netflix](dynamic-decentralized-reputation-web-of-trust.md)
+* [Elision, Redaction, and Noncorrelation in Smart Documents](elision-redaction-correlation-smart-documents.md)
+* [Enabling SSI for NFC, IoT and other smart devices](./Enabling%20SSI%20for%20NFC%2C%20IoT%20and%20other%20smart%20devices.md)
 * [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
@@ -356,9 +389,11 @@ _Please also enter your paper alphabetically in the form:_
 * [Identity Bridge: Verifiable Credentials from European Digital IDs](./identity-bridge.md)
 * [Identity Net: Building an identity net through self-authenticated data graphs](./identity-net.md)
 * [Multi-dimensional reputation systems using Webs of Trust](./Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
+* [On-Chain DIDs](./on-chain-dids.md)
 * [Reducing Correlation: To What Degree is it Necessary?](./reducing-correlation.md)
 * [Rendering Verifiable Credentials](./rendering-verifiable-credentials.md)
 * [Revisiting Usefulness of Centralized System for Establishing Trust](./revisiting-usefulness-of-centrailzed-system.md)
+* [Revocation and VC](./revocation-and-vc.md)
 * [Self Custody Risk Analysis](./self-custody-risk-analysis.md)
 * [Social Wallet Recovery](./social-wallet-recovery.md)
 * [Societal impacts of SSI technologies](./societal-impacts.md)
@@ -366,6 +401,8 @@ _Please also enter your paper alphabetically in the form:_
 * [SSI data generator](./data-generator.md)
 * [Standardization Overview](./standardization-overview.md)
 * [Trust Registries – Enhancing Interoperability and preventing Phishing/MITM Attacks](./Trust-Registries.md)
+* [Trusted Crypto Asset Framework](./trusted-crypto-asset.md)
+* [Unravelling Web of Trust](./UnravellingTrust.md)
 * [Using MultiBase Anchors within a Personally-Issued Endorsement Credential to Corroborate Attributes in an Existing Issued Credential](./endorsements.md)
 * [Validation - The Missing Link](./validation-the-missing-link.md)
 * [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
