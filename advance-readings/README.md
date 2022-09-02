@@ -359,6 +359,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
 * [AnonCreds: ~~Ledger~~ VDR Agnostic Authentic Data Specification and Roadmap](./anoncreds-ledger-agnostic-spec.md)
 * [Audited DIDComm](./audited-didcomm.md)
+* [Authorized Issuer Lists](./authorized-issuer-lists.md)
 * [BTCR From First Principles](./btcr-from-first-principles.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
