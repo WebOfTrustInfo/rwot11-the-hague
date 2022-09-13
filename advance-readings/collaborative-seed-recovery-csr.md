@@ -58,7 +58,7 @@ is beyond what most users are willing to do. Beyond this, current
 identity standards don’t offer any support for multisigs, so the
 immediate future will only see identities protected by singular keys.
 
-***Secret Sharing.*** The other option is to back up a secret with a
+***Secret Sharing.*** The other current option is to back up a secret with a
 secret-sharing scheme, where a single key is used to control the secret,
 but a backup of the key is sharded, such that the key can be
 reconstructed from some of those shares, but not necessarily all of
@@ -122,7 +122,7 @@ questions.
 The key features are:
 
 -   Use of Shamir’s Secret Sharing to shard secrets.
--   New capabilities to protect larger amounts of data than Shamir can natively, thanks to use of “crypto-envelopes”, which encrypt any amount of data through a symmetric key, which is what is actually sharded.
+-   New capabilities to protect larger amounts of data than Shamir can natively, thanks to use of “Envelopes”, which encrypt any amount of data through a symmetric key, which is what is actually sharded.
 -   Use of platform cloud backup system as a storage locale for the first share as well as to hold metadata about where other shares are.
 -   Design of share-servers, which hold shares as part of an ecosystem of secret sharing.
 -   Automation so that the user doesn’t initially have to worry about the secret-sharing methodology at all.
@@ -135,7 +135,7 @@ We expect the standard storage workflow to be as follows:
 2.  Data is encrypted with a symmetric key.
 3.  Symmetric key is sharded.
 4.  Envelopes are constructed, each containing encrypted data and one share.
-5.  First data is stored in cloud backup associated with app’s platform.
+5.  First share is stored in cloud backup associated with app’s platform.
 6.  Other shares are stored with random seed servers.
 7.  Information on share locations is stored with first share.
 
