@@ -385,6 +385,6 @@ ELIDED [
 
 ## For More Information
 
-See our [Crypto Envelope Presentation](https://www.youtube.com/watch?v=FVzTRsqcyMU) for more on the fundamentals of envelopes.
+See our [Crypto Envelope Presentation](https://www.youtube.com/watch?v=FVzTRsqcyMU) for more on the fundamentals of envelopes; and our [Envelope Privacy Requirements Presentation](https://www.youtube.com/watch?v=ubqKJAizayU) for more on elision and non-correlation. Also see our [Envelope docs](https://github.com/BlockchainCommons/BCSwiftSecureComponents/tree/master/Docs), especially the sections on [Noncorrelation](https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/07-NONCORRELATION.md) and [Elision and redaction](https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/08-ELISION-REDACTION.md).
 
 We are currently holding regular biweekly meetings on the development of the `Envelope` specification. If you are interested in using `Envelope` for the escrow or recovery of cryptographic secrets and metadata, please [contact us](mailto:team@blockchaincommons.com).
