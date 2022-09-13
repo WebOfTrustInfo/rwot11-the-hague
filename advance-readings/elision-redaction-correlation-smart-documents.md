@@ -1,6 +1,6 @@
 # Elision, Redaction, and Noncorrelation in Smart Documents
 
-**Authors:** Wolf McNally, Christopher Allen, Shannon Applecline, Blockchain Commons</br>**Revised:** Aug 23, 2022</br>**Status:** DRAFT
+**Authors:** Wolf McNally, Christopher Allen, Shannon Appelcline, Blockchain Commons</br>**Revised:** Aug 23, 2022</br>**Status:** DRAFT
 
 # Introduction
 
