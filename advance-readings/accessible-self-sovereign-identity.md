@@ -16,12 +16,11 @@ We intend to look at:
 
 Interactions using existing verifiable credential wallets tend to rely on visually-centric models, such as the use of QR codes, to create connections, issue or verify credentials. 
 
-Alternative patterns such as deep linking
+QR code technology presents some accessibility issues for persons with disability. Workflows involving QR code scanning to get or verify credentials could cause accessibility challenges. 
 
-Through our work with accessibility advisors...
-One Time Passcodes (OTP)
-
-...
+This paper would like to explore alternative patterns such as : 
+* Deep linking when a fully mobile experience is possible 
+* Provide other accessibility-friendly transports instated of optical transfer (ie QR codes) to transfer the payload to the wallet, such as SMS, magic links, or One Time passwords.
 
 ## Verifiable Data Representations
 
