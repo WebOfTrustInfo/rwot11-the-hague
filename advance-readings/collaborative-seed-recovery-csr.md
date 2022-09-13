@@ -147,7 +147,7 @@ We expect the standard reconstruction workflow to be as follows:
 4.  CSR app retrieves sufficient shares from other share servers, asking user to authenticate as required.
 5.  Seed is reconstructed.
 
-More information is available from our [*article*](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/CSR.md) describing CSR[^16] as well as our [videos on crypto-envelope](https://www.youtube.com/channel/UCPQ9LtDWZAkfItMF4B5tztw/videos), the foundation of CSR.
+More information is available from our [*article*](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/CSR.md) describing CSR[^16] as well as our [videos on crypto-envelope](https://www.youtube.com/channel/UCPQ9LtDWZAkfItMF4B5tztw/videos), the foundation of CSR (the "crypto-envelope" presentation from July 15 is the first).
 
 We believe this approach meets the needs of usability that are currently
 absent from other solutions and that careful design of seed servers can
