@@ -194,7 +194,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * #reputation #trust #scoring
 
 ### [Elision, Redaction, and Noncorrelation in Smart Documents](elision-redaction-correlation-smart-documents.md)
-   * by Wolf McNally, Christopher Allen, Shannon Applecline, Blockchain Commons
+   * by Wolf McNally, Christopher Allen, Shannon Appelcline, Blockchain Commons
    * An introduction to the `Envelope` data structure and its novel approach to facilitating the construction and transformation of “smart documents”, including native facilities for encryption, signing, elision (redaction), sharding, and noncorrelation.
    * #VerifiableCredentials #identity #sharding #signing
    
