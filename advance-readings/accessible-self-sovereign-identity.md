@@ -1,6 +1,8 @@
 # Accessible self-sovereign identity
 
-Andrew Slack and Victor Martinez (SICPA)
+   * Andrew Slack andrew.slack@sicpa.com
+   * Victor Martinez victor.martinez@sicpa.com
+
 
 Digital identity is a foundational building block in the infrastructure of modern society, for it to function as a public good it must be available and accessible to all. As such inclusive design of self-sovereign identity systems is needed to ensure safe and consistent use.
 
