@@ -22,6 +22,7 @@ This paper would like to explore alternative patterns such as :
 * Deep linking when a fully mobile experience is possible 
 * Provide other accessibility-friendly transports instated of optical transfer (ie QR codes) to transfer the payload to the wallet, such as SMS, magic links, or One Time passwords.
 
+
 ## Verifiable Data Representations
 
 Unlike with physical credentials or cash, issuers of verifiable data (e.g digital identity credentials or digital currency) rely on software or hardware wallets to interpret and convey information to users in a meaningful way by defining the appearance and user experience in key moments, such as credential list views or verification flows.
@@ -35,6 +36,26 @@ We intend to explore mechanisms by which verifiable data containers could inform
 Securely referenced representations of verifiable data, available in a variety of sensory formats, will also help to meet requirements for accessible technology (e.g. European Standard for Digital Accessibility EN301549, June 23, 2021). Opportunities to inform recognisable user experiences could be visual (e.g. issuer logos, credential background images, credential text formatting), auditory or haptic - particularly relevant when attempting to bridge a wide range of form factors (e.g. low-tech cards, screen-readers, high-end mobile devices or emerging AR/VR experiences). We will also explore how we can incorporate existing web accessibility standards to develop inclusive representations (e.g. [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), [A11y](https://www.a11yproject.com), [ARIA](https://developer.mozilla.org/enUS/docs/Web/Accessibility/ARIA)).
 
 One topic the paper may need to address is the prominent use of ‘cards’ as the primary system image presented to users in the majority of available verifiable credential wallets. While offering benefits (e.g. fit with existing user mental models, reduces cognitive load), this approach comes with challenges (e.g. limited scalability, difficult application in combinatorial or non-document centric use cases). The focus of the paper should not be on redesigning wallets around new interaction models, but we should anticipate and cater for their evolution beyond card-centric approaches.
+
+## Overlay Capture Architecture (OCA) and accesability
+
+Overlays Capture Architecture (OCA) offers a solution to harmonization between data models and data representation formats. In other words, a way to define the semantics of a data model. 
+
+OCA represents a schema as a multi-dimensional object consisting of a stable schema base and linked overlays, data objects that provide additional extensions, coloration, and functionality to the base object. Overlays are cryptographically-linked objects that provide layers of task-oriented contextual information to a Capture Base. 
+
+OCA classifies four types of overlays : Semantic overlays, Inputs overlays, transformation, and presentations overlays. 
+
+This paper would like to explore how OCA overlays can be used  (in particular presentation overlays)  or extend the specification to include data representations accessible to all.
+
+
+## Work behond RWoT11 - Improving Annoncreds accesability
+
+AnonCreds specification provides privacy-preserving features that enable verifiable credentials to comply with data privacy law being one of the key reasons governments, in particular, choose to build verifiable credential solutions using AnonCreds . 
+
+On top of orivacy-preserving features, governments are tasked with giving every citizen equal access to digital services. Inclusivity is one of the main drivers to achieving a better digital identity by acknowledging the need for equal, convenient, secure, and compatible access for everyone, regardless of individual economic or social circumstances.
+
+We seek contributors interested in incorporating OCA spec into AnonCreds, taking the accessibility angle.
+
 
 ## Related Topics
 
@@ -53,3 +74,11 @@ By Manu Sporny
   - Leverages the work organization has put into deploying [DMARC](https://support.google.com/a/answer/2466580?hl=en) protection.
 
 - [User Interaction Design for Secure Systems](http://zesty.ca/pubs/csd-02-1184.pdf) — Ka-Ping Yee
+
+- [An AnonCreds OCA Architecture](https://docs.google.com/presentation/d/1Ps7OPrcQBSem6ygSLSYoYq3HfpNevNYYy5e2ziGjsqU/edit#slide=id.p)
+
+- [ACA-Py / Aries Framework
+OCA for AnonCreds](https://docs.google.com/presentation/d/1oRgc0PCfWPlMOtkyAHHedNezws9FghTR6bhCJozH4Fw/view#slide=id.g1420d9ceec7_0_0)
+
+
+
