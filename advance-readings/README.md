@@ -108,6 +108,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * by [Henk van Cann](mailto:h.vancann@blockchainbird.org), Blockchainbird.org, The Netherlands
    * Bridge Keep wallet of KERI / ACDC and the more sophisticated solutions at BCC for keeping secrets secret. At the same time: study and work towards KERI, CESR and ACDC supporting sophisticated multisignature schemes.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
+   
+### [Classy DIDs](./classy-dids.md)
+  * by [Shaun Conway](mailto:shaun@ixo.foundation), [ixo](https://iso.world)
+  * Differentiating classes of DIDs for different applications, based on property sets and how these influence behaviours relating to the identified subject
+  * #JSON-LD #DIDs
 
 ### [Collaborative Seed Recovery: A New Methodology for Smart Custody](collaborative-seed-recovery-csr.md)
    * by Christopher Allen, Shannon Appelcline & Wolf McNally, Blockchain Commons
@@ -368,6 +373,7 @@ _Please also enter your paper alphabetically in the form:_
 * [BTCR From First Principles](./btcr-from-first-principles.md)
 * [Caching in DID Resolution](./caching-in-did-resolution.md)
 * [CESR adapter for sophisticated multisig](./CESR-adapter-for-sophisticated-multisig.md)
+* [Classy DIDs](./classy-dids.md)
 * [Collaborative Seed Recovery: A New Methodology for Smart Custody](./collaborative-seed-recovery-csr.md)
 * [Combining eIDAS High device binding with unlinkability](./combining-eIDAS-High-with-unlinkability.md)
 * [Comparing Credential Formats](./Comparing_Credential_Formats.md)
