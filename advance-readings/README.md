@@ -327,6 +327,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * A proposal how to define a flexible and deterministic approach to verify the binding between the holder and the credential subject of the verifiable credential which is a blindspot of the W3C Verifiable Credentials Data Model 1.0 standard today.
    * #VerifiableCredentials #HolderBinding #2FA #Biometrics #Delegation
 
+### [Verifiable Identifiers ](./verifiable-identifers.md)
+   * by [Joe Andrieu](mailto:joe@legreq.com), Legendary Requirements, Ventura, CA, USA
+   * *A Best Practice for Decentralized Identifiers* Verifiable Identifiers (VIDs) are a DID best practice for platform-independent, privacy-agile, cryptographic verification of actions taken on behalf of that identifier.
+   * #DID #VID #IID #best-practice
+
 ### [Verifier Universal Interface](./vui-primer.md)
    * by [Daniel Moledo ](mailto:daniel@gataca.io)
    * VUI (Verifier Universal Interface) specification proposal to achieve interoperability for the verification process: that is, to eliminate a possible vendor lock-in between any wallet and any verifier tool.
