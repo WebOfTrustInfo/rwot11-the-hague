@@ -1,5 +1,6 @@
 # Verifiable Identifiers
 *A Best Practice for Decentralized Identifiers (DIDs)*
+Joe Andrieu mailto:joe@legreq.com
 
 Verifiable Identifiers (VID), are a way to use Decentralized Identifiers (DIDs)[1] to provide platform-independent cryptographic verification of actions taken on behalf of that identifier in a flexible, privacy respecting way.
 
