@@ -1,6 +1,8 @@
 # Verifiable Identifiers
 *A Best Practice for Decentralized Identifiers (DIDs)*
 
+Joe Andrieu joe@legreq.com
+
 Verifiable Identifiers (VID), are a way to use Decentralized Identifiers (DIDs)[1] to provide platform-independent cryptographic verification of actions taken on behalf of that identifier in a flexible, privacy respecting way.
 
 Originally developed as **Interchain Identifiers** (IIDs)[2] to help the Interchain Foundation integrate DIDs with NFTs on the Cosmos platform, VIDs are a particular approach of using DIDs that can be applied with just about any DID method that supports verification relationships and methods. With just a few deisgn choices, any DID method can be used as a VID to get improved semantic rigor, better privacy, and greater interoperability across a range of use cases.
