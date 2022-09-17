@@ -7,4 +7,6 @@ Please match the filename of your advance reading, but add a `-poster` suffix. F
 * CMYK color
 * A3 size (that's 297 x 420 mm or 11.7 x 16.5 in)
 
+You can create posters by hand in programs like Photoshop or Illustrator, or you can output a slideshow as a PDF, then reread the PDF into a program such as Preview on the Mac that will output X-up prints, and print a 9-up version of your PDF as a new PDF. (The [CSR poster](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/posters/collaborative-seed-recovery-csr-poster.pdf) was created in Illustrator and the [Elision Poster](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/posters/elision-redaction-correlation-smart-documents-poster.pdf) was created as a 9-slide slideshow, printed 9-up, as examples.
+
 Your poster will be printed out for you by the people at the venue!
