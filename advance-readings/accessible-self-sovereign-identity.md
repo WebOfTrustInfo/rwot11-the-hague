@@ -50,7 +50,7 @@ OCA classifies four types of overlays : Semantic overlays, Inputs overlays, tran
 This paper would like to explore how OCA overlays can be used  (in particular presentation overlays)  or extend the specification to include data representations accessible to all.
 
 
-## Work behond RWoT11 - Improving Annoncreds accesability
+## Work behond RWTO11 - Improving Annoncreds accesability
 
 AnonCreds specification provides privacy-preserving features that enable verifiable credentials to comply with data privacy law being one of the key reasons governments, in particular, choose to build verifiable credential solutions using AnonCreds . 
 
