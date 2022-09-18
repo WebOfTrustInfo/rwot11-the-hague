@@ -59,6 +59,12 @@ _Please add a level three header (`###`) for your paper's topic if it's not ther
 domains in order to resist bad actors and provide aggregate privacy.
    * #Adoption #HumanRights #AI #risk #trust #hybrid #VerifiableCredentials
 
+### [Accessible self sovereign identity](./accessible-self-sovereign-identity.md)
+   * by [Andrew Slack](mailto:andrew.slack@sicpa.com), SICPA, Switzerland
+   * and [Victor Martinez](mailto:victor.martinezk@sicpa.com), SICPA, Switzerland
+   * The experience and security of any system operated by people depends on the information conveyed through user interfaces, the response of the users, and the interpretation of their actions. Existing interaction patterns in verifiable credential wallets tend towards visual-centric models and rely on inconsistent representations of data. This paper explores design patterns to manage and exchange verifiable data in more accessible ways.
+   * #Accesability #VerifiableCredentials
+
 ### [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
   * by [Karim Stekelenburg](mailto:karim@animo.id), Animo Solutions, The Netherlands
   * Leveraging DIDComm to create a modern chat protocol that can compete with commonly used chat applications like WhatsApp and Telegram.
@@ -359,6 +365,7 @@ _Please also enter your paper alphabetically in the form:_
 
 * [A Human Rights Approach to Digital Identity Protocols](./A%20Human%20Rights%20Approach%20to%20Digital%20Identity%20Protocols.md)
 * [A Minimal Approach to Linked Trust with Uncertainty](./a-minimal-approach-to-linked-trust-with-uncertainty.md)
+* [Accessible self sovereign identity](./accessible-self-sovereign-identity.md)
 * [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
