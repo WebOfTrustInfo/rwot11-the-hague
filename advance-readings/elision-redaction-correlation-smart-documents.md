@@ -385,10 +385,10 @@ ELIDED [
 
 ## For More Information
 
-See our [Envelope Presentation](https://youtu.be/tQ9SPek0mnI) for more on the fundamentals of Envelopes; and our [Envelope Privacy Requirements Presentation](https://www.youtube.com/watch?v=ubqKJAizayU) for more on elision and non-correlation. There is also YouTube playlist of all of our [Envelope related videos](https://www.youtube.com/watch?v=JowheoEIGmE&list=PLCkrqxOY1FbooYwJ7ZhpJ_QQk8Az1aCnG).
+You may also want to look at our [RWOT poster](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/posters/elision-redaction-correlation-smart-documents-poster.pdf), which overviews the topics of this talk.
+
+See our [Introduction to Envelopes](https://youtu.be/tQ9SPek0mnI) presentation for a high-level view of what are Envelopes; and our [Envelope Privacy Requirements Presentation](https://www.youtube.com/watch?v=ubqKJAizayU) for more on elision and non-correlation. There is also YouTube playlist of all of our [Envelope related videos](https://www.youtube.com/watch?v=JowheoEIGmE&list=PLCkrqxOY1FbooYwJ7ZhpJ_QQk8Az1aCnG).
 
 Also see our [Envelope docs](https://github.com/BlockchainCommons/BCSwiftSecureComponents/tree/master/Docs), especially the sections on [Noncorrelation](https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/07-NONCORRELATION.md) and [Elision and redaction](https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/08-ELISION-REDACTION.md).
-
-You may also want to look at our [poster](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/posters/elision-redaction-correlation-smart-documents-poster.pdf), which overviews the topics of this talk.
 
 We are currently holding regular biweekly meetings on the development of the `Envelope` specification. If you are interested in using `Envelope` for the escrow or recovery of cryptographic secrets and metadata, please [contact us](mailto:team@blockchaincommons.com).
