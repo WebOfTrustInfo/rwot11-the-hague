@@ -385,7 +385,7 @@ ELIDED [
 
 ## For More Information
 
-See our [Crypto Envelope Presentation](https://youtu.be/tQ9SPek0mnI) for more on the fundamentals of envelopes; and our [Envelope Privacy Requirements Presentation](https://www.youtube.com/watch?v=ubqKJAizayU) for more on elision and non-correlation. There is also YouTube playlist of all of our [Envelope related videos](https://www.youtube.com/watch?v=JowheoEIGmE&list=PLCkrqxOY1FbooYwJ7ZhpJ_QQk8Az1aCnG).
+See our [Envelope Presentation](https://youtu.be/tQ9SPek0mnI) for more on the fundamentals of Envelopes; and our [Envelope Privacy Requirements Presentation](https://www.youtube.com/watch?v=ubqKJAizayU) for more on elision and non-correlation. There is also YouTube playlist of all of our [Envelope related videos](https://www.youtube.com/watch?v=JowheoEIGmE&list=PLCkrqxOY1FbooYwJ7ZhpJ_QQk8Az1aCnG).
 
 Also see our [Envelope docs](https://github.com/BlockchainCommons/BCSwiftSecureComponents/tree/master/Docs), especially the sections on [Noncorrelation](https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/07-NONCORRELATION.md) and [Elision and redaction](https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/08-ELISION-REDACTION.md).
 
