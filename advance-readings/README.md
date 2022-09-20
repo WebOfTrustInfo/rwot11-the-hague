@@ -110,7 +110,7 @@ domains in order to resist bad actors and provide aggregate privacy.
    * #SeedTool #KERI #CESR #ACDC #KEEP #ToIP #BCC
    
 ### [Classy DIDs](./classy-dids.md)
-  * by [Shaun Conway](mailto:shaun@ixo.foundation), [ixo](https://iso.world)
+  * by [Shaun Conway](mailto:shaun@ixo.foundation), [ixo](https://ixo.world)
   * Differentiating classes of DIDs for different applications, based on property sets and how these influence behaviours relating to the identified subject
   * #JSON-LD #DIDs
 
