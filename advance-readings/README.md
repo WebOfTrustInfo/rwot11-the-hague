@@ -156,9 +156,9 @@ domains in order to resist bad actors and provide aggregate privacy.
 
 ### [Data exchange agreements - Making data transactions trustworthy, auditable and immutable](./data-exchange-agreements--automating-lawfulness-to-data-tranactions.md)
 
-   * by [Lal Chandran](mailto:lal@igrant.io), iGrant.io, Sweden
-   * A novel approach to building lawful, human-centric and scalable data spaces, making data transactions trustworthy, auditable and immutable via data exchange agreements. It provides a suite of tools that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to be transparent and legitimate in their data usage while leveraging their data assets. Automated agreement handling is required for a scalable and regulatory-compliant data marketplace (data space). It also provides individuals control over how their data is used and exchanged.
-   * #eSSIF-Lab #SSI-ecosystem #dataagreeents #rightdata #dataexchangeagreements #gdpr #privacybydesign
+   * by [Lal Chandran](mailto:lal@igrant.io) (iGrant.io, Sweden) and Fredrik Linden (MyData, Sweden)
+   * A novel approach to building lawful, human-centric and scalable data spaces, making data transactions trustworthy, auditable and immutable via data exchange agreements. It provides a suite of tools that enable automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). The proposed approach brings in the requisite trust and governance to establish a ubiquitous data exchange marketplace while empowering individuals to be in control of their data. Automated agreement handling is required for a scalable and regulatory-compliant data marketplace (data space). All organisations need to ensure that they are on the right side of the law (e.g. the GDPR) when consuming personal data (risk management) and to establish the digital trust needed for individuals to say yes to sharing their data.
+   * #eSSIF-Lab #SSI-ecosystem #dataagreeents #rightdata #dataexchangeagreements #gdpr #privacybydesign #wallet #dataspace #datamarketplace
 
 ### [Decentralized revocation of Verifiable Credentials](./Decentralized-revocation-of-Verifiable-Credentials.md)
    * by [Andrea Scorza, LTO Network](mailto:andrea@ltonetwork.com), [Arnold Daniels, LTO Network](mailto:arnold@ltonetwork.com)
