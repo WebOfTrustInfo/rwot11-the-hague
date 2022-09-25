@@ -135,6 +135,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * Credential Formats analyzed and compared by an international expert group
    * #Credentials #Formats #Signature #Revocation #Key-Management
 
+### [Comparison Of Wallet Security Architectures](./comparing-wallet-security-architectures.md)
+   * by [Paul Bastian](mailto:paul.bastian@bdr.de), Bundsedruckerei GmbH, Germany
+   * Categorizing and analyzing potential Wallet Security Architectures
+   * #ssi #Wallet #Credentials #Key-Management #Holder-Authentication #revocation #recovery #privacy
+
 ### [Continuous Authentication and Authorization using Verifiable Credentials](./authentication-and-authorization-using-verifiable-credentials.md)
    * by [Nikos Fotiou](mailto:fotiou@aueb.gr), Athens University of Economics and Business
    * Verifiable Credentials for expressing user capabilities, issued using OAuth 2.0, and used for accessing HTTP-based resources that abide by the Zero-Trust principle.
