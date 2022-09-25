@@ -2,7 +2,7 @@
 
    * by [Paul Bastian](mailto:paul.bastian@bdr.de), Bundsedruckerei GmbH, Germany
    * Categorizing and analyzing potential Wallet Security Architectures
-   * #Credentials #Wallet #Hardware #Revocation #Key-Management
+   * #ssi #Wallet #Credentials #Key-Management #Holder-Authentication #revocation #recovery #privacy
 
 
 This is a proposed collaborative paper to be worked on at [RWOT 2022](https://rebootthehague.com), Den Haag, Netherlands, 26-30 September.
