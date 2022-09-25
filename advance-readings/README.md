@@ -75,6 +75,11 @@ domains in order to resist bad actors and provide aggregate privacy.
    * A proposal of critical ethical issues in the emerging technology AI & metaverse. What are the most important (ethical) issues regarding trust, AI and metaverse? How could we solve them? How could we fight bias fed in AI algorithms used for the metaverse or how to solve the intellectual property problem in the metaverse?
    * #ai #metaverse #trust #ethics
 
+### [An exploration into Verifiable Group Credentials](./group-credentials.md)
+   * by [Lohan Spies](mailto:lohan.spies@iohk.io), IOHK/DIDx, Hong Kong/South Africa
+   * A proposal to explore the concept of verifiable group credentials.
+   * #VerifiableCredentials #GroupCredentials
+
 ###  [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
    * by [Carsten Stöcker](mailto:carsten.stoecker@spherity.com), Spherity GmbH
    * and [Christiane Wirrig](mailto:christiane.wirrig@spherity.com), Spherity GmbH
@@ -383,6 +388,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Accessible self sovereign identity](./accessible-self-sovereign-identity.md)
 * [Advanced DIDComm Messaging - A modern DIDComm based chat protocol](./advanced-didcomm-messaging.md)
 * [AI & Metaverse - How to trust our digital twin?](./ai-and-metaverse.md)
+* [An exploration into Verifiable Group Credentials](./group-credentials.md)
 * [Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs](./hybrid_wallet_solutions_x509_DIDs_VCs.md)
 * [AnonCreds: ~~Ledger~~ VDR Agnostic Authentic Data Specification and Roadmap](./anoncreds-ledger-agnostic-spec.md)
 * [Audited DIDComm](./audited-didcomm.md)
