@@ -218,6 +218,12 @@ domains in order to resist bad actors and provide aggregate privacy.
    * An exploration of technical requirements, limitations and solutions to implement SSI with low-computational smart devices and low bandwith data-transmission such as NFC smartcards, IoT devices, NFC, BLE communication.
    * #NFC #IoT #BLE #DIDComm #Inclusion 
 
+### [Enhancing DID Privacy through shared Credentials using Merkle trees of DIDs and Claims with multiple presentation proofs](./Enhancing_DID_Privacy_through_shared_Credentials.md)
+   * by [Frédéric Martin](mailto:frederic.martin@mydid.com), myDID SA
+   * by [Imad El Aouny](mailto:imad.elaouny@mydid.com), myDID SA
+   * A proposal to enhance DID privacy and reduce possible correlations 
+   * #Privacy #DID #VerifiableCredentials #Wallet #Communication
+
 ### [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
    * by [Ariel Gentile](mailto:a@2060.io)
    * An exploration on different needs to make DIDComm-based mobile wallets interoperable and aware of the constraints given by mobile environments
@@ -404,6 +410,7 @@ _Please also enter your paper alphabetically in the form:_
 * [Dynamic & Decentralized Reputation for the Web of Trust: What We Can Learn from the World of Sports, Tinder, and Netflix](dynamic-decentralized-reputation-web-of-trust.md)
 * [Elision, Redaction, and Noncorrelation in Smart Documents](elision-redaction-correlation-smart-documents.md)
 * [Enabling SSI for NFC, IoT and other smart devices](./Enabling%20SSI%20for%20NFC%2C%20IoT%20and%20other%20smart%20devices.md)
+* [Enhancing DID Privacy through shared Credentials using Merkle trees of DIDs and Claims with multiple presentation proofs](./Enhancing_DID_Privacy_through_shared_Credentials.md)
 * [Enhancing DIDComm messaging for mobile environments](./enhancing-didcomm-for-mobile-environments.md)
 * [eSSIF-Lab: Towards a European SSI ecosystem](./eSSIF-Lab%20-%20Towards%20a%20European%20SSI%20ecosystem.md)
 * [Generalizing Secure Scuttlebutt for Data Integrity](./ssb-di.md)
