@@ -228,6 +228,16 @@ Related Work
 [LinkedTrust](http://cooperation.org/linked_trust/) LinkedTrust at cooperation.org
 
 
+Repo / Initial Implementation
+=============================
+
+(in progress - working, but will be refactored into open source libraries)
+
+https://github.com/Whats-Cookin/trust_claim_backend
+
+https://github.com/Whats-Cookin/trust_claim
+
+
 
 Collaboration at and Beyond RWoT 11
 ===================================
