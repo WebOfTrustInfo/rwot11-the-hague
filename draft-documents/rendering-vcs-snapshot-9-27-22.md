@@ -10,6 +10,8 @@
 
 In the Verifiable Credentials ecosystem, wallets and verifiers have expressed a strong preference for a consistent rendering mechanism because they will simplify the implementation of applications that are safe and easy to use. Several specifications have proposed credential rendering methods for a specific set of use-cases, but no interoperable scheme has emerged across use-cases. In this paper, the authors survey existing methods and propose a unified data model for rendering hints, renderer descriptions, and security considerations to keep in mind when using them.  
 
+![](https://i.imgur.com/h5OdKoq.png)
+
 ## Ideas  
 
 *   propose a registry (or meta-type) of renderers as a work item in ccg  
