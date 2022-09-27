@@ -1,0 +1,3 @@
+# LM-based reputation systems
+
+The SSI ecosystem has produced DIDs and VCs as building blocks for creating new structures around trust and identity. One application area of these is reputation systems. However, little work has been done around using the VC and DID primitives to create reputation systems that avoid pitfalls such as collapsing context. In this paper, a methodology for rolling up verifiable credentials into reputation hierarchies is proposed that relies on PageRank and language models. Such a system could be used by job platforms, news organizations, buyer-seller platforms and review systems.
