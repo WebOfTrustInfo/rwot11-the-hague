@@ -16,11 +16,13 @@ These layers now have many [standards around them](https://whimsical.com/decentr
 
 To be able to get to that level of interoperability, there have been discussions on profiles such as [WACI-didcom](https://identity.foundation/waci-didcomm/). But how can one know what type of tech the other end is talking. Can we have some discovery mechanisms?
 
+This type of exchange mechanism has also been mentioned in emails circumventing the ecosystem these days. See email from Anil, last Friday, 2:53AM - https://share.streak.com/iOqp68goUoEMZz96yCKlWM
+
 ## Inspiration and previous works
 
 During [IIW #34](https://internetidentityworkshop.com/past-workshops/?mc_cid=ad27bbe93c&mc_eid=268fa922fc), see PDF proceeding #34 and page 185, there was a discussion on if its possible to solve the bring your own wallet problem. During this session there were talks about a discover handshake mechanism to explore the capabilities of the webpage you are talking to. Meaning wallets would most likely be supporting multiple profiles and webpages have a bit easier world.
 
-There we also other companies having explored the same issues during their work, and had a self implemented protocol to do this discovery. Right now I dont have that persons name or contact information, but he was part of the session at IIW, and came from Europe, UK potentially.
+There were also other companies having explored the same issues during their work, and had a self implemented protocol to do this discovery. Right now I dont have that persons name or contact information, but he was part of the session at IIW, and came from Europe, UK potentially.
 
 The wish is to continue this discussion and see where it brings us, find the rabbit holes or reasons for why this is not working! Even better, find out why this makes sense to have!
 
