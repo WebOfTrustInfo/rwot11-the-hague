@@ -3,8 +3,9 @@
 ## Authors
 
 *   Charles Lehner @cel
-*   Dmitry Zagadulin @dmitrizagidulin      
+*   Dmitri Zagidulin @dmitrizagidulin      
 *   Ben Goering @bengo
+*   Manu Sporny @msporny
 
 ## Abstract  
 
