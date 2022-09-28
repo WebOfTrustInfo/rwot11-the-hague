@@ -60,8 +60,8 @@ Use cases: we'd like to have a progressive set of use cases to demonstrated priv
 
 Educational / Professional Use Case:
 
-1) DREW WANTS A PROFESSIONAL SKILL: Drew, a member of a minority, desires comprehensive training in a high-paid building construction specialty — plasma welding. He applies to Acme Professional School, and is accepted. Students of Acme Professional School are qualified to receive government-backed students loans from Burton Bank — Drew applies, and receives a loan, and payments are deferred. Drew offers the school a DID, and adds details to allow for others to authenticate Drew (such as a photo) in a Student ID.
-    * TRANSACTIONS: Drew becomes a student of Acme Professional School. Drew applies for student lown and pays for schooling. Drew receives Student ID.
+1) DREW WANTS A PROFESSIONAL SKILL: Drew, a member of a minority, desires comprehensive training in a high-paid building construction specialty — plasma welding. He applies to Acme Professional School and is accepted. Students of Acme Professional School are qualified to receive government-backed students loans from Burton Bank — Drew applies, and receives a loan, and payments are deferred. Drew offers the school a DID, and adds details to allow for others to authenticate Drew (such as a photo) in a Student ID.
+    * TRANSACTIONS: Drew becomes a student of Acme Professional School. Drew applies for student loan and pays for schooling. Drew receives Student ID.
     * CORRELATION: Drew desires to be correlated as a student to attend classes and events, get a loan to pay for classes, and misc. services such as get student discounts.
     * THREAT: ?
     
@@ -80,7 +80,7 @@ Educational / Professional Use Case:
     * DESIRABLE CORRELATION: This same credential that the job was offered to is presented again, with less elision, to satisify workplace require.
     * CORRELATION THREAT: 
 
-4) EXAMPLE OF ELISION BY A HOLDER: Erickson's Construction (holder≠subject) needs to prove to Three Towers Corporation (verifier) that they have sufficient number of qualified employees for the contract. They provide Drew's (subject) educational credential (already partially elided) to Three Towers. Three Towers can verify that the the school (Acme Professional School but elided by Drew) is accredited, but in addtions Erickson Construction further elides the names of the employees (to prevent pouching by other firms). 
+4) EXAMPLE OF ELISION BY A HOLDER: Erickson's Construction (holder≠subject) needs to prove to Three Towers Corporation (verifier) that they have sufficient number of qualified employees for the contract. They provide Drew's (subject) educational credential (already partially elided by the subject) to Three Towers. Three Towers can verify that the the school (Acme Professional School but elided by Drew) is accredited, but in addtions Erickson Construction further elides the names of the employees (to prevent pouching by other firms). 
     * TRANSACTIONS: Erickson Constructions (holder) presents Three Towers (verifier) multiple elided employee educational credentials.
     * DESIRABLE CORRELATION: Erickson Construction proves sufficent and properly trained staffing, from accredited schools.
     * CORRELATION THREAT:  * CORRELATION THREAT: Erickson Construction may not wish to be digital known as hiring minorities. Erikson Construction does not employees be 
@@ -201,12 +201,14 @@ TODO
 
 It is important to recognize that 
 
+> *“In simpler terms, any notion of identity is not particularly useful without the existence of a person or entity performing identification.”* <br/>
+> …<br/>
 > *“We argue that, when discussing identity systems, “correlation” enables a more concise discussion and clearer understanding of how identity is created and used[8]. It’s not that “identity” is incorrect, it’s that the mechanisms of identity are inherently mechanisms of correlation and, therefore, we can be clearer by focusing the discussion how correlation is managed.<br/>*
 > …<br/>
-> *“Using “correlation” to describe identity systems provides a simpler, more coherent view of mechanisms, capabilities, and risks. The term doesn’t change the nature of the system. It is simply more concise and more accurate. It results in discussions that are more rigorous and easier to understand.*
+> *“Using “correlation” to describe identity systems provides a simpler, more coherent view of mechanisms, capabilities, and risks. The term doesn’t change the nature of the system. It is simply more concise and more accurate. It results in discussions that are more rigorous and easier to understand.*<br/>
 > …<br/>
-> *“When you find yourself in a project where the definition of “identity” seems to be a repeating source of challenging conversations, try describing the role of identity in terms of correlation.* 
-> …<br/><br/>
+> *“When you find yourself in a project where the definition of “identity” seems to be a repeating source of challenging conversations, try describing the role of identity in terms of correlation.* <br/>
+> …<br/>
 > *“We believe that every identity system can be fully characterized by how it manages correlation across contexts."* <br/><br/>
 > — **from "Identity Crisis: Clearer Identity through Correlation" from @RWOT2-ID2020, by Joe Andrieu, et al.**
 
