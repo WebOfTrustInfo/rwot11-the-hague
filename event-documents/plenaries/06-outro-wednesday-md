@@ -1,0 +1,29 @@
+# Wednesdey Night Finale
+
+## Announcements
+
+Demo night begins at 7.45pm.
+
+At end of right-hand side of building
+Past Foozball Table
+
+We start tomorrow at 1.15 after Mandatory Fun
+
+Get Schiphol Airport App
+
+## Progress & Insights
+
+A discussion of today's progression & insights:
+
+* **Self-sovereign correlation.** Pulled in past work, outlined, got people working in correlation.
+* **On Trust.** Good progress, outline, front matter. Bayesian model of trust.
+* **Verifiable Credentials Binding.** Have worked through much of goals & technology, graph theory, other topics. 
+* **Trust Registry: Non-Authority.** Group discussions, progress, reviewed existing infrastructures. Split up tasks.
+* **Identity Attack.** Reviewed DID methods for potential attacks & solved attacks. Outline, 5 attacks. Memorable names.
+* **On-Chain Identity Verification.** Mapped out space. Defined 3 categories: public, pseudo-anonymous, fully anonymous.
+* **did:merkle.** Want to create spec & write white paper to explain why it's important. 
+* **comparison credential profile.** Reviewing, finding open questions, things that are very objective.
+* **data exchange.** Putting together puzzle pieces, fleshing out info.
+* **Is Your DID Method Well Standardized?** Went through rubric, condensed stuff into more understandable forms.
+* **Verifiable Credential Render.** Made demos.
+* **Endorsements.** Making progress.
