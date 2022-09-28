@@ -1,4 +1,4 @@
-# Accessible, publicly scalable and auditable data exchange ecosystem
+# Data exchange agreements over OCA for an accessible, scalable and auditable data exchange ecosystem
 
 [![hackmd-github-sync-badge](https://hackmd.io/1wxXNi2vSIeEv2-Ua6f1vA/badge)](https://hackmd.io/1wxXNi2vSIeEv2-Ua6f1vA)
 
@@ -6,6 +6,8 @@
 * Lal Chandran (iGrant.io, Sweden)
 * Fredrik Linden (MyData.org, Sweden)
 * Philippe Page (Human Colossus Foundation, Switzerland)
+* Víctor Martínez Jurado (SICPA, Switzerland)
+* Andrew Slack (SICPA, Switzerland)
 
 <Please add>
 
@@ -22,24 +24,72 @@
 
 ## Abstract
 
-This paper is a collaborative project at the 11th Rebooting of Web of Trust (RWOT) workshop in The Hague in September 2022. We present the Data Exchange Agreement (DEXA) protocol suite that enables human-centric automated agreement handling for data exchange between a Data Source (DS) and a Data Using Service (DUS). It helps organisations to be transparent and legitimate in their data usage while leveraging data in a scalable manner as part of a data ecosystem. Furthermore, the DEXA protocol brings in the requisite trust and governance to establish a ubiquitous data exchange data space while empowering individuals to be in control of their data. All organisations need to ensure that they are on the right side of the law (e.g. the GDPR) when consuming personal data (risk management) and to establish the digital trust needed for individuals to say yes to sharing their data.
+This paper is a collaborative project at the 11th Rebooting of Web of Trust (RWOT) workshop in The Hague in September 2022. We present the Data Exchange Agreement (DEXA) protocol suite that enables human-centric automated agreement handling for data exchange between a Data Source (DS) and a Data Using Service (DUS). It helps organisations to be transparent and legitimate in their data usage while leveraging data in a scalable manner as part of a data ecosystem. Furthermore, the DEXA protocol brings in the requisite trust and governance to establish a ubiquitous data exchange space while empowering individuals to be in control of their data. All organisations need to ensure that they are on the right side of the law (e.g. the GDPR) when consuming personal data (risk management) and to establish the digital trust needed for individuals to say yes to sharing their data.
 
 Using OCA (Overlay Capture Architecture) in DEXA ensures cross-border data exchange across multiple jurisdictions while addressing accessibility concerns.
 
 In our scenario, a healthcare provider in Sweden could leverage the protocol to publish the availability of their prescriptions, in Swedish, in a cross-border healthcare data space. A Pharmacy in Zurich could sign up to read the prescription in German and issue a generic medicine to Fredrik. The use of OCA enables language localisation and ensures Fredrik, who is visually impaired, can understand the Data Agreement presented by the Pharmacy during the transaction. All transactions are auditable, and Fredrik is issued a receipt with a warning in Swedish for the possible adverse effects of taking the medicine. 
 
+**Table of Contents** 
+> [TOC]
+
 ## Introduction
 
-A typical data exchange ecosystem is as illustrated below:
+### Data Exchange Landscape
 
-<data exchange landscape>
+In a data exchange ecosystem, there are a number of agreements that are required to legally validate data exchanges. The various data exchange agreements contextualise the relationships that exist between organisations and individuals, depending on their roles in different usage scenarios involving personal data. The various agreements involved can be classified into four broad categories as shown in figure below. These are agreements between:
 
-## Benefits
+* An individual and an organisation (data agreement)
+* Two organisations (a data source and a data using service (data disclosure agreement)
+* An organisation and its supplier (data processing agreement)
+* Two individuals (delegation agreement)
+
+<data exchange landscape picture>
+    
+### Data Exchange Agreements 
+
+#### Data Agreement
+
+A data agreement, also referred to as a personal data agreement, exists between an organisation and an individual regarding the use and processing of personal data. A data agreement can have
+any legal basis as outlined by the relevant data protection regulation. The agreement can be with a data source (issuer) or a data using service (verifier) and can also be used for personal data exchange with third parties.
+
+Today, a data agreement is implemented via a W3C-specified decentralised identifier (DID). It records the conditions for an organisation to process personal data in accordance with the relevant data protection regulations which could be data laws or norms such as the MyData principles.
+    
+#### Data Disclosure Agreements
+
+A Data Disclosure Agreement (DDA) enables automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite for a scalable and regulatory-compliant data space. It also provides individuals control over how their data is used and exchanged.
+
+### Overlays Capture Architecture OCA
+*See reference [7,8]*
+    
+Overlays Capture Architecture (OCA) is an explicit representation of task-specific objects that have deterministic relationships with other objects. These “Overlays” define individual semantic tasks, which, when combined, provide additional context to the object. An OCA bundle consists of a “Capture Base” and “Overlays”. The sum of its parts represents a contextually-rich schema.
+
+The segregation of overlays by task enables interoperability in the construction process of any digital object without compromising the integrity of the semantic structure, modular components, or the relationship between those objects.
+    
+OCA is ontology-agnostic, offering a harmonisation solution between data models and data representation formats while providing a roadmap to resolve privacy-compliant data sharing between servers, networks, and across sectoral or jurisdictional boundaries.
+
+The deterministic interplay between overlays combined with the unicity of the composite bundle is proving to be an exciting field of research.
+
+### The Benefits of OCA
+The list of OCA benefits is maintained on the official OCA wwbsite.
+    In this work, the following OCA fatures are relevant for DEXA:
+    ...
+    ...
+In this work, the following OCA fatures are relevant for accessibility features:
+    ...
+    ...
+    
+    
+## Benefits of DEXA with OCA
 
 1. Verified and trusted issuers
+
 2. Trusted verifiers
+
 3. Auditable and transparent data exchange
+
 4. Lawful and linked to DPIA (Data Protection Impact Assessment)
+
 5. Cross border, multi-lingual data exchange agreement
     
 ## Use cases
@@ -93,7 +143,7 @@ Wallet generates QR code containing identifiers and instructions on how to fetch
    If dispensation can be performed, its details will be stored in the pharmacy system. Steps under 6A Default option will need to be
 performed once connectivity is restored.		
 
-7. The pharmacist system reads the electronic Product Information and (ePI) correlates it to the patients IPS (International Patient Summary) and since the pharmacy does not have the Brand Medicine prescribed but they do have two different other brands available the system notifies (the Pharmacist (visually) and the Patient (verbally due to the patients having enabled accessibility features in their phone)that one of the two two drugs have a different chemical substance added to it that the patient is allergic/sensitive to so they need to agree on which medicine to dispense.
+7. The pharmacist system reads the electronic Product Information and (ePI) correlates it to the patients IPS https://international-patient-summary.net/ and since the pharmacy does not have the Brand Medicine prescribed but they do have two different other brands available the system notifies (the Pharmacist (visually) and the Patient (verbally due to the patients having enabled accessibility features in their phone)that one of the two two drugs have a different chemical substance added to it that the patient is allergic/sensitive to so they need to agree on which medicine to dispense.
 
 8.	The dispenser provides the medicine to the patient.
 
@@ -107,32 +157,27 @@ performed once connectivity is restored.
 to patient data from Country A is possible.		
 
 ### Health domain regulations
-The European Health Data Spaces has a requirement on conformity testing. 
-    
-    
-OCA has a bridge functionality to make a FHIR object an OCA resource/object?.
+
+Being a higly regulated domain we choose not to reference all these, but rather state that to act in the European Health Data Spaces you have a requirement on conformity testing which references several important bodies of standards. This drives the need for compliance and provenance of data. OCA has a bridge functionality to make a FHIR-profile an OCA resource.
 
 ## OCA key functions
 
-- Credentials (including data agreements) need to be accessible across multi-modal endpoints
-- Accessibility concerns include common disability concerns but also incidental and environmental barriers to users that are context specific (technology access, lanuage..).
-- To ensure inclusivity and support public wide adoption credentials need to be rendered as contextually relevant presentations with specific metadata available to support comprehension by assistive devices and tooling. e.g. this will be different across iOS, HTML, other
-    
-- Reference relevant technical standards e.g. [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) for HTML and javascript content.
-- European digital accessibility standard for public sector organisations (EN 301 549), US Section 508 requirements for Federal Agencies
+* Credentials (including data agreements) need to be accessible across multi-modal endpoints
+* Accessibility concerns include common disability concerns but also incidental and environmental barriers to users that are context specific (technology access, lanuage..).
+* To ensure inclusivity and support public wide adoption credentials need to be rendered as contextually relevant presentations with specific metadata available to support comprehension by assistive devices and tooling. e.g. this will be different across iOS, HTML, other
     
     
 - Overlay Capture Architecture (OCA):
 
+## Usecases using DEXA with OCA
     
 ### Example uses within the scenario
     
 #### Representing a credential in a web-wallet
-    
+
+
 #### Representing a credential in a native wallet
-    
-#### Representing
-    
+
 
 ## References
 
@@ -143,7 +188,16 @@ OCA has a bridge functionality to make a FHIR object an OCA resource/object?.
 [3] DID Data Agreement WG: https://github.com/decentralized-identity/data-agreement
 
 [4] Data Exchange Agreements:     
+    
+[5] Reference relevant technical standards e.g. [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) for HTML and javascript content.
 
+[6] European digital accessibility standard for public sector organisations (EN 301 549), US Section 508 requirements for Federal Agencies
+    
+[7] Overlays Capture Architectures (OCA) specifications, https://oca.colossi.network/v1.1.0-rc.html
+
+[8] OCA transformation layer (add link:Philippe)
+
+[9] Accessibility Specification
   
 ## SCRAP PAD
     
@@ -151,7 +205,7 @@ OCA has a bridge functionality to make a FHIR object an OCA resource/object?.
 
     
     Organisations wanting a cross border exchange of data in a scalable, data regulatory compliant manner.
-    e.g. e-health network
+    e.g. EU e-health network and US-HIE:s (Health Information Exchanges)
     
 **What change in their behavior do you want to induce? (Call to Action)**
     
@@ -160,6 +214,10 @@ OCA has a bridge functionality to make a FHIR object an OCA resource/object?.
     
 **What are the key points you're going to include?**
 
-    * Data Exchange Landscape
-    * OCA capabilities
+    * Introduction
+      * Data Exchange Landscape
+      * Introduce Data Exchange Agreements 
+      * Introduce OCA and its capabilities
+      * Combine DEXA with OCA
+    * Benefits
     * Usecase scenario
