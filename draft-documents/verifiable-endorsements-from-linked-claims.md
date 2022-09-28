@@ -4,6 +4,11 @@
 
 ## Co-Authors
 
+* Dmitri Zagidulin - @dmitrizagidulin
+* Golda Velez - @gvelez17
+* Philip D. Long - @longpd
+* Oliver Klingefjord - @Klingefjord
+
 ## Abstract
 
 The Verifiable Credential ecosystem has encountered several use cases that require a third-party assertion, or an endorsement of an existing object (another VC, a PDF, a webpage, etc). Whether it is product reviews, endorsements of self-created credentials, academic paper reviews, or some other general purpose third party assertion, these use cases have several requirements in common.  Each use case may also require a domain-specific set of fields.
@@ -76,6 +81,8 @@ https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials
 
 ---
 Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/verifiable-endorsements-from-linked-claims.md
+
+Original draft at https://docs.google.com/document/d/1mgIKC3U3OaYtq2koht9aQwAgJIrAEFCHq3XJvUOie5o/edit#
 
 Contact @BRiIYS-0T9GKZAz7VgyEQg / @gvelez17 if you want to push a change from HackMD
 
