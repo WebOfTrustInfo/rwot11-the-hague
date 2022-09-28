@@ -37,16 +37,16 @@ Nice to haves include:
 explain, add picture -- the VC model in general, and the hash linking mechanism, enables a set of claims to be expressed either as standalone credentials, or as a single composed credential.
 
 ## Use Cases
-Endorsements of self-asserted skill credentials
-A review of a paper submitted to an academic conference
-An ecommerce product review (5-star type)
-Assertion that an image/video was taken by a particular camera at a particular datetime (for https://proofmode.org/ )
-A person was harmed by an entity (may be known or unknown)
-Task completed and reviewed in a task tracking system (adds signal to worker reputation)
-An endorsement that attests to authenticity of an article posted in a published news service
-Reputation systems for social media platforms
-Social impact - philanthropic grant helped attesting individual (or witnessed)
-Academic class completed or exam score achieved
+ * Endorsements of self-asserted skill credentials
+ * A review of a paper submitted to an academic conference
+ * An ecommerce product review (5-star type)
+ * Assertion that an image/video was taken by a particular camera at a particular datetime (for https://proofmode.org/ )
+ * A person was harmed by an entity (may be known or unknown)
+ * Task completed and reviewed in a task tracking system (adds signal to worker reputation)
+ * An endorsement that attests to authenticity of an article posted in a published news service
+ * Reputation systems for social media platforms
+ * Social impact - philanthropic grant helped attesting individual (or witnessed)
+ * Academic class completed or exam score achieved
 
 ## Formats
 
