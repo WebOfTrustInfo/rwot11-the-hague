@@ -1,0 +1,83 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/endorsement/v1",
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "VerifiableEndorsement"
+  ],
+  "issuer": {
+    "id": "did:web:bob.com",
+    "name": "Bob"
+  },
+  "issuanceDate": "2010-01-01T00:00:00Z",
+  "expirationDate": "2020-01-01T00:00:00Z",
+  "credentialSubject": {
+    // Note that the credentialSubject.id is the id of an individual Achievement in the target VC
+    // It could just as readily be the id of the VC, but the authors wanted to highlight that a section of the VC could be targeted
+    "id": "urn:uuid:e8096060-ce7c-47b3-a682-57098685d48d",
+    "digestMultibase": "zb1B1M6Bve5JEaNqeJSmuE",
+    "linkedClaim": {
+       "type": "endorsement",
+       "statement": "This is an endorsement regarding Alice's 'UAV Control System for Drone Navigation' achievement. Alice has an exceptional skill set as an UAV guidance control engineer. See also the attached evidence.",
+      "endorser": {
+        "id": "did:web:bob.com",  // MUST be same as issuer
+        // the endorsing entity's bona fides, tailored to the specific endorsement area or claims on a per-use basis
+        "relevance": [
+           // Generic expertise claims (such as CV / resume / degrees)
+           {
+             "id": "https://SmartResume.com",
+             "type": "SmartResumeProfile"
+           },
+           {
+             "id": "https://linkedin.com/Bob",
+             "type": "LinkedInProfile"
+           },
+           { 
+             // link to a credential I received saying I have a degree to this subject
+             "id": "https://example.edu/degrees/class-of-2021/bob",
+             "name": "University Degree Credential"
+           },
+           {
+             "id": "https://sigspatial.acm.org/members/12345",
+             "description": 
+                      "https://www.acm.org/special-interest-groups/sigs/sigspatial",
+             "name": "SigSpatial Membership Credential"
+           },
+           // Specific expertise item tailored to the endorsement
+           {
+             "id": "https://example-journal.com/my-article.pdf",
+              // optional hashlink (note that 'multibase' is a part of the in-progress 
+              // IETF spec https://datatracker.ietf.org/doc/html/draft-multiformats-multibase
+             "digestMultibase":"zQmdfTbBqBPQ7VNxZEYEj14VmRuZBkqFbiwReogJgS1zR1n",
+             "name": "Control Systems in Unmanned Flight",
+             "citation": "...",
+             "description": "I have published an article in a peer-reviewed journal." 
+           },
+           // TODO: Add a CID / Ceramic link as an example.
+         ]
+      }
+    }
+  },
+  "evidence": [
+    {
+      "id": "https://github.com/example-org/control-test-suite",
+      "type": ["EndorsementEvidence"],
+      "name": "Control System Test Suite",
+      "description": "The code used to control a UAV delivering packages to an address.",
+      "digestMultibase": "..."
+    },
+    {
+       "id": "https://control-systems-journal.example.com/12345.pdf",
+       "digestMultibase": "zQmdfRKkx7Uf8Rpr079Uh",
+        "name": "Geopositioning in Control Systems",
+        "citation": "...",
+        "description": "A particularly insightful implementation of geopositioning with precision; I was very impressed with Alice's approach."
+    }
+  ],
+  "proof": {
+    // Signature goes here
+  }
+}
