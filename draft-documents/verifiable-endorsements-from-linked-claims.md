@@ -48,23 +48,32 @@ Nice to haves include:
 ## Use Cases
 
 ### Endorsements of self-asserted skill credentials
-  Alice has worked in warehouse distrubtion centers since she dropped out of high school to earn money to support her mother, and siblings, after her mother was forced to rcuperwte frominjuries incurred in a vehicle accident.
-Alice started as a custodian but over time and through observation and converation with her co-workers she learned she could get trained to drive a warehouse forklift and significantly increase her earning potential. She enrolled in class 4 OSHA certified forklift driver traing course while continuing her night custodian job. After receiving her certification she applied for a forklift driver opening at the company where she was employeed but sought corroboration of her skills both from her instructors at ISETA (Bootcamp 1.0) and the forklift specialzation course, along with an endorsement from her current supervisor attesting to her reliability, teamwork, and attention to detail she has expressed in her current job.
+  Alice has worked in warehouse distribution centers since she dropped out of high school to earn money to support her mother, and siblings, after her mother was forced to recuperate from injuries incurred in a vehicle accident.
+Alice started as a custodian but over time and through observation and conversation with her co-workers she learned she could get trained to drive a warehouse forklift and significantly increase her earning potential. She enrolled in class 4 OSHA certified forklift driver training course while continuing her night custodian job. After receiving her certification she applied for a forklift driver opening at the company where she was employed but sought corroboration of her skills both from her instructors at ISETA (Bootcamp 1.0) and the forklift specialization course, along with an endorsement from her current supervisor attesting to her reliability, teamwork, and attention to detail she has expressed in her current job.
   
-  Alice sends the self-asserted credntial describing her skills relevant to the forklift driver position to Bob, her instructor ay ISETA of the OSHA forklift training course by email and points out the attributes she thinks he can attest to amongst her skill claims. 
+  Alice sends the self-asserted credential describing her skills relevant to the forklift driver position to Bob, her instructor ay ISETA of the OSHA forklift training course by email and points out the attributes she thinks he can attest to amongst her skill claims. 
   
-  Alice does the same thing sending her self-assertion credential to Juanita,her current supervisor,mpointing out those attribute she suggests Juanita has direct knowledge about her performance.
+  Alice does the same thing sending her self-assertion credential to Juanita,her current supervisor, pointing out those attribute she suggests Juanita has direct knowledge about her performance.
   
-  Both Bob and Juanita construct a linked-claims Verifiable Credential endosring Alice fir those attributes they have expertise in and can address with professional credibility based on their own bona fides included in their relevan ce arrestations describing their own traing and background.
+  Both Bob and Juanita construct a linked-claims Verifiable Credential endorsing Alice for those attributes they have expertise in and can address with professional credibility based on their own bona fides included in their relevance arrestations describing their own training and background.
   
-  Juanita and Bob send their self-asserted skill endorsements to Alice after binding their attributions to those skills and competencies based on their knowledgeof Alice's capabilities. Alice selects these credentials for inclusion in the set she prepares as a verifiable presentation to submit to the job application site.
-  
+  Juanita and Bob send their self-asserted skill endorsements to Alice after binding their attributions to those skills and competencies based on their knowledge of Alice's capabilities. Alice selects these credentials for inclusion in the set she prepares as a verifiable presentation to submit to the job application site.
+
+### An endorsemet of an institution/busniess/gov issued credential to an individual by a third party.
+
+
 ### A review of a paper submitted to an academic conference
-  Layla Soliman attended her disciplinary conference in molecular genetics.  
+  Layla Soliman registered to attend her disciplinary conference in molecular genetics. The conference organizers asked her to review a paper submitted for presentation at the meeting to which she agreed. The organizers send Layla a link to the paper in a Google docs directory.
+  
+  Layla follows the link to the paper, reads the reviewer guidelines and sets out reading and taking notes and preparing her review comments.On completion of the reading the submitted paper manuscript she prepares her final comments and creates a self-assertion credential of type equals "review". Essentially this is a narrative credential that is cryptographically signed and linked to hashlinked to the Google doc location of the manuscript.
+  
+  Layla creates a simple Verifiable Presentation to send her review to the conference organizer's digital wallet where reviews are collated. The linked data endorsement is of type: review and contains the narrative of her review comments
+
 
 ### An ecommerce product review (5-star type)
 
-### Assertion that an image/video was taken by a particular camera at a particular datetime (for https://proofmode.org/)
+### Assertion that an image/video was taken by a camera crew is not been altered from the time the images were captured.  (for https://proofmode.org/)
+Follow up with Joe Andrieu re: the issues of image capture and using multiBase hashlink signature methods.
 
 ### A person was harmed by an entity (may be known or unknown)
 
@@ -73,7 +82,7 @@ Alice started as a custodian but over time and through observation and converati
 ### An endorsement that attests to authenticity of an article posted in a published news service
 
 ### Reputation systems for social media platforms
-
+.l
 ### Social impact - philanthropic grant helped attesting individual (or witnessed)
 
 ### Academic class completed or exam score achieved
@@ -104,12 +113,17 @@ Format in development see [composable claims examples](https://github.com/WebOfT
 
 ## Mental Model
 
+### Firsthand Observation
+
+```
 English: I witnessed an accident.
 Subject: The accident
 Claim: happened
-Object: <something about the accident. For example, when & where it happened> <- this is a set of claims
+Object: <something about the accident. For example, when & where it happened> -- this is a set of claims
 Evidence: <I witnessed it firsthand>
-    
+```
+
+```javascript
 {
   issuer: "Me", // person who witnessed the accident
   credentialSubject: {
@@ -122,35 +136,54 @@ Evidence: <I witnessed it firsthand>
     "source": "firsthand witness"  
   }]
 }
+```
 
+### Secondhand Observation
 
+```
+English: I heard Charles say that he witnessed the accident
+Subject: The Accident
+Claim: happened
+Object: "(same as previous example - the accident happened)"
+Evidence: <I heard Charles said that he witnessed accident>
+```
+
+```javascript
+{
+  issuer: "Golda", // person who heard Charles say he witnessed the accident
+  credentialSubject: {
+    "id": "https://accidents.example.com/reports/accident-1",
+    "statement": "Some stuff happened at Elm St on Sunday.",
+    "dateObserved": "Sunday",
+    "location": "corner of Elm St"
+  },
+  evidence: [
+    {
+      "type": "secondhand",  // evidence type
+      "witness": {
+        "id": "<charless homepage>"
+        "name": "Charles"
+      },
+      "statement": "I heard Charles say this"
+    },
+    {
+      "type": "firsthand"
+      "witness": "Golda",
+      "statement": "I heard a noise at such & such time."
+    }
+  ]
+}
+```
 
 ## Examples
 
 ### Standalone Claim - Review
+
 Example of a linked claim representing a product review.
 
 - References an external product (no hashlink)
 - No claimant expertise
 - No evidence section
-
-"I;m claiming that THIS is the account to donate to the Ukrainian army. Why: I saw it on the official UA Armed Forces Twitter Account."
-
-{
-  credentialSubject: {
-    "id": "<bank account>",
-    "statement": "This is the right account to donate to"
-  },
-  evidence: {
-    myLevelOfBeliefInThis: 0.8,
-    {
-      "id": "<link to the twitter post>"
-    }
-  }
-}
-
-"The spider (issuer) saw that Bob left a product review of a mug on this page"
-
 
 ```javascript
 {
@@ -277,10 +310,10 @@ This example is composed of two components -- an initial standalone VC, and then
     // It could just as readily be the id of the VC, but the authors wanted to highlight that a section of the VC could be targeted
     "id": "urn:uuid:e8096060-ce7c-47b3-a682-57098685d48d",
     "digestMultibase": "zb1B1M6Bve5JEaNqeJSmuE", // digest of the Achievement being endorsed
-    "linkedClaim": {
+    "endorsement": {
        "type": "Endorsement",
        "statement": "This is an endorsement regarding Alice's 'UAV Control System for Drone Navigation' achievement. Alice has an exceptional skill set as an UAV guidance control engineer. See also the attached evidence.",
-       "claimant": {
+       "endorser": {
           "id": "did:web:bob.example.com",  // MUST be same as issuer
           // the endorsing entity's bona fides, tailored to the specific endorsement area or claims on a per-use basis
           "relevance": [
@@ -436,8 +469,8 @@ This example is functionally identical to the previous (an initial standalone se
     // Subject: the ID of Endorsement VC #2
     "id": "urn:uuid:4b4d-8d0f-0ad47cf4e64c",
     "digestMultibase": "zb1B1M6Bve5JEaNqeJSmuE", // digest of the VC being referenced
-    "linkedClaim": {
-       "claimant": {
+    "endorsement": {
+       "endorser": {
           "id": "did:web:bob.example.com",  // MUST be same as issuer
           // the endorsing entity's bona fides, tailored to the specific endorsement area or claims on a per-use basis
           "relevance": [
