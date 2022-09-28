@@ -2,10 +2,6 @@
 
 [![hackmd-github-sync-badge](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A/badge)](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A)
 
-Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/verifiable-endorsements-from-linked-claims.md
-
-Contact @BRiIYS-0T9GKZAz7VgyEQg if you want to push a change from HackMD
-
 ## Co-Authors
 
 ## Abstract
@@ -77,4 +73,9 @@ https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/
 ### Standards
 
 https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials
+
+---
+Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/verifiable-endorsements-from-linked-claims.md
+
+Contact @BRiIYS-0T9GKZAz7VgyEQg / @gvelez17 if you want to push a change from HackMD
 
