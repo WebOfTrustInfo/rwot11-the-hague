@@ -15,4 +15,6 @@ In our scenario, a healthcare provider in Sweden could leverage the protocol to 
 
 ### Health domain regulations
 
-## Accessibility
+## OCA key functions
+### Language localisations
+### Accessibility
