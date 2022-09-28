@@ -1,6 +1,6 @@
 # Composable Credentials Paper
 
-[![hackmd-github-sync-badge](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A/badge)](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A)
+[![hackmd-github-sync-badge](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A/badge)](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A) | [team workspace](./vc-le)
 
 ## Co-Authors
 
