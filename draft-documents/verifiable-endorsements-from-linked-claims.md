@@ -50,7 +50,7 @@ Academic class completed or exam score achieved
 
 ## Formats
 
-Format in development see [composable claims examples](./vc_le/)
+Format in development see [composable claims examples](https://github.com/WebOfTrustInfo/rwot11-the-hague/tree/master/draft-documents/vc-le/composable-sample1/)
 
 ### Model
 
