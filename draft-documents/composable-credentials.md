@@ -67,9 +67,13 @@ Alice started as a custodian but over time and through observation and conversat
   Juanita and Bob send their self-asserted skill endorsements to Alice after binding their attributions to those skills and competencies based on their knowledge of Alice's capabilities. Alice selects these credentials for inclusion in the set she prepares as a verifiable presentation to submit to the job application site.
 
 ### An endorsemet of an institution/busniess/gov issued credential to an individual by a third party.
-Claudio recently complete a certificate program in cybersecurity. The technical college issued the certificate in both paper and VC formats. Through conversations with some of his instructors he's become aware of an opening in a local cybersecurity sourcing company who provides short (1 to 6 month consulting project contracts) and medium term placements for contract employees). Claudio asks one of his instructors, Laura,for a reference. Laura agrres to serve as a reference and suggests that she provide a verifable endorsement credential to Claudio's digital credential wallet.
+Claudio recently complete a certificate program in cybersecurity. The technical college issued the certificate in both paper and VC formats. Through conversations with some of his instructors he's become aware of an opening in a local cybersecurity sourcing company who provides short (1 to 6 month consulting project contracts) and medium term placements for contract employees). Claudio asks one of his instructors, Laura,for a reference. Laura agrees to serve as a reference and suggests that she provide a verifable endorsement credential to Claudio's digital credential wallet.
 
-Laura asks Claudio for (a copy of) his VC conferring his cybersecurity certifiate awarded to him
+Laura asks Claudio for (a copy of) his VC conferring his cybersecurity certifiate awarded to him for successfully completing his course of study that awarded him a Certificate in Cyber Threat Analytics and Prevention (CTAP).Laura composes a self asserted verifiable endorsement VC that establishes her credentials or bona fides as a credible judge of Claudios knowldge, skills and abilities in this domain. She provides verifiable documentation of her work in the field through links to papers she has published, reports to which she contributed on cyberthreat assessment, and grants she has received for her workmin this domain.
+
+She describes the the work she has seen done by Claudio and her view of the level of performance he demonstrated. Laura also has offeres additional evidence of Claudios knowledge in this discipline from the help he provided as a contracted worker under a cyberassessment contract she oversaw for a local regional bank. These included statistical analyses of penetration tests, attack simulations and summary reports all in his Github account, all hashlinked into the evidence section of her endorsement VC for Claudio.
+
+Laura signs her verifiable endorsement VC and sends it as a VP to Claidios credential wallet. He accepts the presentation which puts the endorsement VC in his wallet and generates a VP including his CTAP certificate VC, the endorsement VC and several others that document related credentials pertinent to the job requirements. This VP is then sent to the cybersecurity sourcing company as part of his Verifiable Resume (TM).
 
 ### A review of a paper submitted to an academic conference
   Layla Soliman registered to attend her disciplinary conference in molecular genetics. The conference organizers asked her to review a paper submitted for presentation at the meeting to which she agreed. The organizers send Layla a link to the paper in a Google docs directory.
@@ -77,7 +81,6 @@ Laura asks Claudio for (a copy of) his VC conferring his cybersecurity certifiat
   Layla follows the link to the paper, reads the reviewer guidelines and sets out reading and taking notes and preparing her review comments.On completion of the reading the submitted paper manuscript she prepares her final comments and creates a self-assertion credential of type equals "review". Essentially this is a narrative credential that is cryptographically signed and linked to hashlinked to the Google doc location of the manuscript.
   
   Layla creates a simple Verifiable Presentation to send her review to the conference organizer's digital wallet where reviews are collated. The linked data endorsement is of type: review and contains the narrative of her review comments
-
 
 ### An ecommerce product review (5-star type)
 
@@ -89,6 +92,14 @@ Follow up with Joe Andrieu re: the issues of image capture and using multiBase h
 ### Task completed and reviewed in a task tracking system (adds signal to worker reputation)
 
 ### An endorsement that attests to authenticity of an article posted in a published news service
+
+Island News, the daily morning paper for the Signal Islands, has a reputation formin depth investigative reporting. Recently controversies has emerged when reporting on inappropriate use of provincial revenue collected from bond financing was published stating that government ministers involved in the oversite of the fund accounts associated with a new economic development, anchored by Wind Casinos, redirected hundreds of bitcoin to private ministerial accounts.
+
+Representatives of these ministers countered these accusations were fabricated and published purported notes from the reporting journaistis corroborating their claims.The journalists contested these representations of their work, with the back and forth of accusations and countering claims devolving into a confusing and ultimately unresolvable incident that diverted public attention tomthe serious concerns initially raised.
+
+Island News decided to hashlink future investigative reporting and associate them with a verifiable credential signed by the reporters involved. This was further subatantiated by an verifiable endorsement credential issued by The Internation Consortium of Investigative Journalism (the TICIJ), corroborating by a respected third party the claims of authenticity derived bybtheor review of the investigative journalism process and specufic transcripts of notes, photographic evidence and recordings the Island News submitted to them and they independently analyzed.
+
+Future investigative journalism reports contain the links to these credentials, publicly accessible, and verifiable for all who wish to see them.
 
 ### Reputation systems for social media platforms
 .l
