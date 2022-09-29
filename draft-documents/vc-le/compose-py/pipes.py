@@ -2,6 +2,11 @@ import asyncio
 from copy import deepcopy
 from keymgr import sign_with_did
 import json
+import pickle
+from pprint import pprint
+
+INPUT_DIR = './data/raw'
+OUTPUT_DIR = './data/claims'
 
 linked_claim_context = {
            "effectiveDate": {
@@ -31,8 +36,6 @@ sources = [
    'type': 'tec',
    'effdate': "2022-09-28T00:00:00Z",
    'name': 'olivers_spider'
- },
- {
  },
 ]
 
@@ -75,11 +78,18 @@ async def make_vc(claim, meta):
     #print(json.dumps(vc))
    
 async def run_pipe():
+    claim_num = 0
     for source in sources:
-        with open('./data/raw/'+source['file'], 'r') as f:
+        with open(INPUT_DIR + '/'+source['file'], 'r') as f:
             data = json.load(f)
         for raw_claim in data['attestations']:
-            print(json.dumps( await make_vc(raw_claim, source)))
+            vc = await make_vc(raw_claim, source)
+            fname = source['name'] + '_' + str(claim_num)
+            with open(OUTPUT_DIR + '/' + fname + '.json', 'wt') as f:
+                pprint(json.loads(vc), stream=f)
+            with open(OUTPUT_DIR + '/' + fname + '.pickle', 'wb') as f:
+                pickle.dump(vc, f)
+            claim_num += 1
 
 
 async def main():

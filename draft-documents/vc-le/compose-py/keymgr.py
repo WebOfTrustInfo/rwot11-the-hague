@@ -33,7 +33,7 @@ async def sign_with_did(vc_json, name):
         json.dumps(vc_json),
         json.dumps({}),
         jwk)
-    return (did, signed_cred)
+    return signed_cred
 
 
 def link_creds(signed_cred1, signed_cred2, output_type):
