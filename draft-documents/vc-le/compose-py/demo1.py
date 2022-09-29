@@ -28,8 +28,6 @@ mid4_cred1 = {'@context': ['https://www.w3.org/2018/credentials/v1',
  'credentialSubject': {'id': "http://example.org/credentials/3731"},
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': did,
-# 'issuer': {'id': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
-#            'name': 'olivers_spider'},
  'type': ['VerifiableCredential','LinkedClaim']}
 
 mid_cred1 = {'@context': ['https://www.w3.org/2018/credentials/v1',
