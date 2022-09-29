@@ -72,35 +72,45 @@ mid_cred1 = {'@context': ['https://www.w3.org/2018/credentials/v1',
  'issuer': did,
  'type': ['VerifiableCredential', 'LinkedClaim']}
 
-bad_credential = {'@context': ['https://www.w3.org/2018/credentials/v1',
 
-   {
-        "LinkedClaim": {
-          "@id": "http://cooperation.org/credentials/LinkedClaim/v1",
-          "@context": {
-            "lc":"http://cooperation.org/credentials/LinkedClaim/v1",
-            "effectiveDate": {
-              "@id": "lc:effectiveDate",
-              "@type": "xsd:dateTime"
-            },
-            "expirationDate": {
-              "@id": "lc:expirationDate",
-              "@type": "xsd:dateTime"
-            },
-            "linkedClaim": {"@id":"lc:linkedClaim", "@type":"@id"},
-            "aspect": {"@id": "lc:aspect"},
-            "source_type":{"@id": "lc:source_type"},
-            "sources": {"@id": "lc:sources"},
-          }
-        }
-    }
 
-  ],
- 'credentialSubject': {'id': 'lewwwk#4227',
+test_cred = {'@context': ['https://www.w3.org/2018/credentials/v1',
+{'CanContainLinkedClaim': {'@context': {'linkedClaim': {'@id': 'http://cooperation.org/credentials/LinkedClaimCapability/v1#linkedClaim'}},
+                                         '@id': 'http://cooperation.org/credentials/LinkedClaimCapability/v1'},
+               'LinkedClaim': {'@context': {
+                                            'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
+                                            'aspect': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#aspect'},
+                                            'source': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#source'},
+                                            'source_type': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#source_type'}},
+                               '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
+               'effectiveDate': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#effectiveDate',
+                                 '@type': 'xsd:dateTime'}
+}
+              ],
+ 'credentialSubject': {'id': "http://example.org/credentials/3731"},
+ 'issuanceDate': '2022-09-29T00:00:00Z',
+ 'issuer': did,
+ 'type': ['VerifiableCredential','LinkedClaim']}
+
+other_cred =  {'@context': ['https://www.w3.org/2018/credentials/v1',
+ {'CanContainLinkedClaim': {'@context': {'linkedClaim': {'@id': 'http://cooperation.org/credentials/LinkedClaimCapability/v1#linkedClaim'}},
+                                         '@id': 'http://cooperation.org/credentials/LinkedClaimCapability/v1'},
+               'LinkedClaim': {'@context': {
+                                            'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
+                                            'aspect': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#aspect'},
+                                            'source': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#source'},
+                                            'source_type': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#source_type'}},
+                               '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
+               'effectiveDate': {'@id': 'http://cooperation.org/credentials/LinkedClaim/v1#effectiveDate',
+                                 '@type': 'xsd:dateTime'}
+}
+],
+
+              'credentialSubject': {'id': "discord:someone",
                        'linkedClaim': {'aspect': 'impact:community',
+                                       'source': ['iviangita#3204'],
                                        'source_type': 'discord scrape',
-                                       'sources': ['iviangita#3204'],
-                                       'statement': '@David (please DYOR...) '
+                                        'statement': '@David (please DYOR...) '
                                                     '@Guy James  @Yineisy Mota '
                                                     'for mentioning or '
                                                     'retweeting Commons Stack '
@@ -109,17 +119,17 @@ bad_credential = {'@context': ['https://www.w3.org/2018/credentials/v1',
                                                     'helping us grow the '
                                                     'Commons Stack community '
                                                     'and spreading the '
-                                                    'message! 🙏🏼🌱 ',
-                                       'type': 'endorsement'}},
- 'effectiveDate': '2022-09-28',
- 'expirationDate': '2023-09-29T00:00:00Z',
+                                                    'message! ',
+                                       'type': 'LinkedClaim'},
+                       'type': 'CanContainLinkedClaim'},
+ 'effectiveDate': '2022-09-28T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': did,
  'type': ['VerifiableCredential', 'LinkedClaim']}
 
 async def main():
 #   for cred in [good_credential, mid8_cred1, mid4_cred1, mid_cred1, bad_credential]:
-    for cred in [mid_cred1]:
+    for cred in [other_cred]:
        signed_credential = await didkit.issue_credential(
            json.dumps(cred),
            json.dumps({}),

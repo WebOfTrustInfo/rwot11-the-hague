@@ -2,6 +2,7 @@ import asyncio
 import didkit
 import pickle
 import json
+from pprint import pprint
 
 def create_key(name):
     jwk = didkit.generate_ed25519_key()
@@ -10,7 +11,7 @@ def create_key(name):
     return jwk
 
 
-def sign_with_did(vc_json, name):
+async def sign_with_did(vc_json, name):
     try:
         with open(name + '.jwk', 'rb') as f:
             jwk = pickle.load(f)
@@ -19,12 +20,16 @@ def sign_with_did(vc_json, name):
 
     did = didkit.key_to_did("key", jwk)
 
-    vc_json['issuer']['id'] = did
+    vc_json['issuer'] = did
 
     # TODO look up what other fields need did from credential type
 
-    import pdb; pdb.set_trace()
-    signed_cred = didkit.issue_credential(
+    print("About to try to sign this cred: ")
+    pprint(vc_json)
+
+#    pprint(jwk)
+
+    signed_cred = await didkit.issue_credential(
         json.dumps(vc_json),
         json.dumps({}),
         jwk)
