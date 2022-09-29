@@ -33,7 +33,7 @@ templates = {
                 "linkedClaim": {
                   "type": "endorsement",
                   "aspect": "impact:community",
-                  "statement": "|TEXT|",
+                  "statement": "",
                   "source_type": "discord scrape",
                   "sources": []
                 }
@@ -49,6 +49,7 @@ def make_vc(claim, meta):
     vc['credentialSubject']['id'] = claim['to']
     vc['credentialSubject']['linkedClaim']['sources'].append(claim['from'])
     vc['issuer']['name'] = meta['name']
+    vc['credentialSubject']['linkedClaim']['statement'] = claim['text']
  
     return sign_with_did(vc, meta['name'])
 
