@@ -1,0 +1,8 @@
+pysha3==1.0b1
+vcpy
+attrdict
+pyld
+web3
+chainpoint
+jsonpath_rw
+pycoin

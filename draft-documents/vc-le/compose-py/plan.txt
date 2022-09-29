@@ -1,0 +1,6 @@
+
+# accept input pipe or input & sign with stored keys
+
+# compose and output according to template
+
+
