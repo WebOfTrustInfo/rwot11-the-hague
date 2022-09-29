@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,58 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['natesuits#4789'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for Case Studies\n'
+                                                    '!praise  for Solidity '
+                                                    'Progress\n'
+                                                    '!praise for Twitter and '
+                                                    'Praise aggregation.\n'
+                                                    '!praise for the '
+                                                    'Parameters and Dashboard '
+                                                    'work!\n'
+                                                    '!praise for spearheading '
+                                                    'all the Comms '
+                                                    'initiatives!\n'
+                                                    '!praise for the Hatcher '
+                                                    'Guidebook work!\n'
+                                                    '!praise for all the '
+                                                    'guidance and advice you '
+                                                    'provide for this '
+                                                    'community.\n'
+                                                    '!praise for all the '
+                                                    'perspectives on '
+                                                    'governance and IH '
+                                                    'interventions!\n'
+                                                    '!praise @ octopus for '
+                                                    'IH/Praise Analysis work!\n'
+                                                    '!praise for the work in '
+                                                    'TE Labs!\n'
+                                                    '!praise for the work in '
+                                                    'TE Services!\n'
+                                                    '!praise for pulling all '
+                                                    'of the TEC initiatives '
+                                                    'together into a positive '
+                                                    'and productive '
+                                                    'community.\n'
+                                                    '!praise for the blog and '
+                                                    'external comms work!\n'
+                                                    '!praise for all the work '
+                                                    'on our platforms!\n'
+                                                    '!praise @David (please '
+                                                    'DYOR...) for joining the '
+                                                    'community and getting '
+                                                    'involved!\n'
+                                                    '!praise for all of your '
+                                                    'contribution to TE, and '
+                                                    'for presenting on '
+                                                    'TokenSpice. ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:34.488Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..amPfa3BsS_XAfbny7y3wgP4aGvMrqw5PNfuDjetf9B1f8BAd0CWY9le4MezT7lYNUcO1MrsPgAJN18ZYMBSCAg',
+ 'proof': {'created': '2022-09-29T21:57:19.358Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..UlUg-KdkDZRth_iI-FytdPj3M53cO6zVn0LrTh_k4ZRTektMDVbkQHCgPwkyPoHqNXMA4GLRLzVzO5bB3AFOCg',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

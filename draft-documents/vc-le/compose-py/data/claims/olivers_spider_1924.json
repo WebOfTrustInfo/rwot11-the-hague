@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,20 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['jeffemmett#7202'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'to for laying the '
+                                                    'mathematical foundations '
+                                                    'for token engineering in '
+                                                    'his work with the '
+                                                    'University of Vienna & '
+                                                    'BlockScience ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:33.656Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..z7p0KygV9yr9jTaq_n0kr1bBJOVMmr5tX1XcRFPzxs-VITWm98eAFzPoGAaNUdBXE1TxUn7pxEjgu8MGuwUVAw',
+ 'proof': {'created': '2022-09-29T21:57:18.261Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..N4CmTealA_WDuLCwxBjqz9ciIuLqAop8EwHQRv7fxGwd4-Rb-8GwW_yJjeZewh-YNh7Xvb1AK6WZU2FDsOeSBQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

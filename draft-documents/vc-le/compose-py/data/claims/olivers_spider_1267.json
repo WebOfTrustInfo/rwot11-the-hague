@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,21 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['t-rossi#1714'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Dan Knobelsdorf.eth  for '
+                                                    'guidance and a heads up '
+                                                    'about the activation of '
+                                                    'the Trusted Seed and for '
+                                                    'kindly supporting me for '
+                                                    'some issue in the minting '
+                                                    'process  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:31.014Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..OERVoirIuAhSTfCnQq8YhiizvbukAXfpSl2BYNuEtsZDu2fW-xfCMNQiouCuoyHJfu9pKMR_E4ron8Vu2dTZCw',
+ 'proof': {'created': '2022-09-29T21:57:14.826Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..dbG29Arr4wZOpfa8lVbob8q3MOZ3Gu6D4haF-61Wz3gE4MQm_NHzPJbPqm3EiQwbdhp2mFWDss2tYXliWC0JCA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

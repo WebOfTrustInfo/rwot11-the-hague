@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,30 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['yineisy mota#1449'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@akrtws (TE Academy) '
+                                                    '@Idiom | Ocean @Pat   '
+                                                    '@Felipe Duarte  @Renzo '
+                                                    'D5  @James | NEAR   '
+                                                    '@Pepperoni Jo3 | Index  '
+                                                    'Bea, the @BasicIncomeOrg '
+                                                    'team, @iluscavia, '
+                                                    '@MarinaMarkezi (in '
+                                                    'Twitter) and Andrew '
+                                                    'Penland for their great '
+                                                    'performance during the '
+                                                    'DAO Reward System '
+                                                    'Assemblage last year! '
+                                                    'This is our opportunity '
+                                                    'for (finally) dishing '
+                                                    'praise to most of you! ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:34.236Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..rIvZnHX-6g6hiB98KtMmeHAQp4mvBywHyfzUkcWns07dW_HeuDFoz4F5se1rfyTucbTkXbaPyloCjdAcnm0aDw',
+ 'proof': {'created': '2022-09-29T21:57:19.099Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..USSwF_UPQQYJ3SkUp85gHrCOX7KNg8RsCnh7Bnt4O1vXegO23K2L6azF0oWMc7v6JVrWptOJ-I6JlWJo6IXMAg',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

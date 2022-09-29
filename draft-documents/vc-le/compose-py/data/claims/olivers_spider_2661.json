@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,19 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['yineisy mota#1449'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Yineisy Mota @Scott '
+                                                    'Morris @Rohit Malekar '
+                                                    '@Peter Nobels | Vitallity '
+                                                    'for joining our AMA on '
+                                                    '"Bonding Curves" today!  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:36.699Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..vXr1rjgKzHZ_WcfUsZOZ-RGNw8h8h_2mr9ZRypf-tPXEFkSJQXc3i8YYfu4ovkxI0cYvl1INh2aTyhr-h2ZlAQ',
+ 'proof': {'created': '2022-09-29T21:57:21.843Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..Nd5MV_bvWuCCTBTVKxAZsKdsXn3UYrAWqmFWMnZI8vigCN4o3cq9NK8xlly3KAF7uw58fAyVgrjm_ds4xmFzBA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

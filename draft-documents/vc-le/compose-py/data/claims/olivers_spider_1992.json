@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,19 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['philh#1102'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for their dedication to '
+                                                    'make the Governauts '
+                                                    'Rewards Systems program a '
+                                                    'positive experience for '
+                                                    'all the participants   ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:33.935Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..N9PL0PcvGuXgZM6K2XAQByrg0dxfdVdY4TKny0TCNmOdLqbt8itHlvS0r-nLgbtGkBoW6MmtFKHt8_jHCqzMAw',
+ 'proof': {'created': '2022-09-29T21:57:18.707Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..TMZt6BSNrFtQqgGKHVikum6ExsZgAKPiUM9c8jeOe-fR_YFqPaCgJJwKQTRND1lcf07MDpBvSb63htKX4B5GBw',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,19 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['dan knobelsdorf.eth#0326'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Yineisy Mota, '
+                                                    '@mafer_cordovas, and @Dan '
+                                                    'Knobelsdorf.eth  for '
+                                                    'praise quanting for '
+                                                    'almost 4hrs.  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:28.001Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..ZV42a6VaOp2Dqf5y8L82lGpf7nZ1Grr-gOMXNhGrKtLPs_WdsbhGdZ5IHN5MasdqnpkH_b-uzgbp0XTA7HVlCw',
+ 'proof': {'created': '2022-09-29T21:57:10.816Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..MTGMUKtw4CjponSpBxyESvWqSZXvOhOkURLFBzKvT1AyMlVFh0fWxerDggOqNa4qn0teXg4IijrekHl-oMkiBA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,28 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['jessicazartler#2263'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'Jamsheed Shorish, Matt '
+                                                    'Stephenson, the BSci & '
+                                                    'Hedera/HBAR Foundation '
+                                                    'teams and all the folks '
+                                                    'who worked on the first '
+                                                    'explainer of Automated '
+                                                    'Regression Markets and '
+                                                    'continuing research to '
+                                                    'develop price discovery '
+                                                    'for semi-fungible assets '
+                                                    'and an incredible first '
+                                                    'use case in renewable '
+                                                    'energy markets '
+                                                    'https://medium.com/block-science/introducing-automated-regression-markets-arms-a-new-price-discovery-mechanism-for-semi-fungible-935d31ca457c ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:36.811Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..eXAW4Nl1hWaWSbg7Doggr-KldoqYHlZRBrX-JB0rTkcgBLnMGpi3RGyS98PCwjsfc8yoncs1fN9C9olfNtfkAg',
+ 'proof': {'created': '2022-09-29T21:57:22.004Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..W-sLQPisM_7BaHZcW1puuO5RHuHh-O0bT9PP7bgyDQTOLfbZEfxp_iJWhJLZM1jVO2qsLSLGUbnMxSzSOdMYBQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,28 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['solsista#5370'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for taking up a very '
+                                                    'important thread in TEC: '
+                                                    '"Who do we serve and how" '
+                                                    'and start a conversation '
+                                                    'wrt operational '
+                                                    'excellence within TEC as '
+                                                    'a DAO as well as asking '
+                                                    'the bigger question of '
+                                                    'whether and how we can '
+                                                    'serve the higher purpose '
+                                                    'of token engineering by '
+                                                    'deliberately designing '
+                                                    'our developmental '
+                                                    'processes ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:26.113Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..LmodbDO0TTCRHoffrb0JTdbF3pfJOJilsSWy1j9sDYhUHgC_CHP3oeryedIq_EY7316pbMcwTnGxKVZtom_sCQ',
+ 'proof': {'created': '2022-09-29T21:57:08.310Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..5LLVjl-mgqEW5wX8IsHw0Spa4UDpDAXydyhF4r3P3JiTHXpwE1nz_SXGZWISgRdnX7J4tn8G6SBQgDduw7RjCg',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

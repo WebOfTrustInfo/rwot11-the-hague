@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,20 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['mettodo#7010'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for bringing this topic. '
+                                                    'Question: have you read '
+                                                    'https://www.goodreads.com/book/show/28820444-the-elephant-in-the-brain? '
+                                                    'If so, any opinion about '
+                                                    'it in relation to what '
+                                                    'you presented? ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:26.913Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..N2VScLH0hnRCdQA5ZjmmSLEa678vMOXw8KOKGNInGDvdZqZsvc_HA3j0TQZytdW75SJcA7ocj77EekLJqDsnDQ',
+ 'proof': {'created': '2022-09-29T21:57:09.446Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..3gZ88uN0N67ZO3qrWwhRBBLcAxSBGb6Qj4Lg2BzQU_CnVRUQCWcjTHKEoWLNRT468TQzS0-51UUx9aF9gVfxCA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,20 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['zeptimus#3359'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for editing this amazing '
+                                                    'video and  for '
+                                                    'coordination work. i love '
+                                                    'to see short and very '
+                                                    'impactful content thanks '
+                                                    'guys!!https://youtu.be/ShUSPMONPS8 ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:34.779Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..BsZW351WEBxyrbu1lPhgwLie3nRqlKag8XP2FJWjAzIglxckbOus22BOsBsVh6h1xgiA8way0xqwxoc7s0jwCg',
+ 'proof': {'created': '2022-09-29T21:57:19.712Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..nS6UHKoIr8FzVds07sHhAhMCAVyYvrB3oloDPuLOVNViS-z3h3HxnV9i4u_FJkrGV8H8yf6MOVvlQEfbNMs4AA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

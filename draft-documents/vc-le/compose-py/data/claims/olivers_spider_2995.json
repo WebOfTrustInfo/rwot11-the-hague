@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,32 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['zer8🧠#9093'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for being amazing '
+                                                    'leaders! \n'
+                                                    '\n'
+                                                    '!praise for being '
+                                                    'incredibly helpful and '
+                                                    'demonstrating incredible '
+                                                    'leadership in the Comms\n'
+                                                    '\n'
+                                                    '!praise  \n'
+                                                    '\n'
+                                                    '!praise @Mount Manu \n'
+                                                    '\n'
+                                                    '!praise @David (please '
+                                                    'DYOR...) for being the '
+                                                    'man \n'
+                                                    '\n'
+                                                    '!praise @John V for being '
+                                                    'amazing people ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:38.098Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..5AsWHcuYUW9FxoC5SgUiD2rWirISb6PkVTqBKu82Nbd9PBYGqbm7HPOFqmYXn24v4f-Iwt-VP1yeEPEUIE76Dg',
+ 'proof': {'created': '2022-09-29T21:57:23.783Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..I0Ar5Okogx0qSgWEXZ6XbBNmC3Y5udttG8R9xtiV08ZYOld_LahgoL2JqwrouZ5edpAcisRp-lNaqiIJZ-OFBA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

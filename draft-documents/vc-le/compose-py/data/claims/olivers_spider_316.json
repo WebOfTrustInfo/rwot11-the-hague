@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,22 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['tam2140#9361'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for organizing the Regens '
+                                                    'Unite event in Brussels '
+                                                    'and bringing together a '
+                                                    'community who have '
+                                                    'mission and values '
+                                                    'aligned. These events and '
+                                                    'spaces are where the '
+                                                    'magic happens. ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:27.182Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..uCy3jBE8ImlValiKVg3jsfjENuqhn6hDDpe82hplVWcfxowpth0hR1CMDHp1QNWl_eTMTyCrqyYXz5vHCEuXDQ',
+ 'proof': {'created': '2022-09-29T21:57:09.848Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..tRueyovzjneHkpLVoSYBC1Scma2LfOW4_s1SfddQOvF3fW9bSpNlYSGrejYA_dcuZfALJTy3ajoifUx9vS9yDA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

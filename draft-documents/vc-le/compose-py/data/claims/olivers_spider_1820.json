@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,22 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['aloysious#3049'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@akrtws (TE Academy) for '
+                                                    'being so welcoming and '
+                                                    'supportive across the '
+                                                    'commons but especially '
+                                                    'for the hype brought to '
+                                                    'all the new learners '
+                                                    'entering TEC. '
+                                                    '<:thankyou:771482295353737228> ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:33.217Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..x3j8kcA58KGpzg3-KsIwxVP7FMZgUZEufPl4wW6IiI9ZH9zgWV-vF5AgbDSq1oByG80Ce2AXL7dtJBvbYq9aAw',
+ 'proof': {'created': '2022-09-29T21:57:17.715Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..HaWtWtTe9cnGexqIQd_OWFSC_iaBZagvEjQlSe_jvRgqhlj7_3tLlJJT88ef-3NccR70TbVcFcfiNZ3hzm5cBA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

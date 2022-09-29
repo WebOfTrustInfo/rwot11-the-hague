@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,21 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['jessicazartler#2263'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Ruben Russel for all of '
+                                                    'his support to projects '
+                                                    'in the ecosystem and '
+                                                    'particularly supporting '
+                                                    'submitting a grant to '
+                                                    'PrimeDAO for proposal '
+                                                    'inverter modeling ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:31.678Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..pqvTf_ryJHTI_Zkmxha7khh2SdvqkRAQNxkudF5xMcJ52nXvd2x6CcqztIRaqOvi3Lay4tlF4Dlx-0eYDTUQBg',
+ 'proof': {'created': '2022-09-29T21:57:15.798Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..063rbAt9eV6xVVn-cgXaSiYG4cQjz-Axnflblj7L16UoUcwyqKJWte195aHodQ-BiYGgvpVW0GjhwPx5MrxvBQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

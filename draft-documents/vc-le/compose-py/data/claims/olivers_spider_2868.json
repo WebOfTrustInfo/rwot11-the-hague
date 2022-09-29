@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,29 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['eduardovegap#0422'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@angieberryberry, @aydj, '
+                                                    '@bitN8, @casale.eth, '
+                                                    '@Cesar, @chuygarcia.eth, '
+                                                    '@durgadas, @Lutzar, '
+                                                    '@Keytang, @natesuits, '
+                                                    '@Pythagorean, '
+                                                    '@RoguePenguins, '
+                                                    '@russlive215, '
+                                                    '@superfreek, @Tixter | '
+                                                    'ngel, @Tam2140, '
+                                                    '@acidlazzer, for joining '
+                                                    'Orientation call! I had a '
+                                                    "blast knowing y'all, "
+                                                    'looking forward to see '
+                                                    'you around! ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:37.615Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..I6SsaSgCR85tRLZ3OHMUmGf7hkX7wxpJOAtuXzPHS_3FGg8SY8gsnUxHiXHucHSFoK1qldRsiEKD2ueuO2xdCw',
+ 'proof': {'created': '2022-09-29T21:57:23.049Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..MgguKDQQwxmQx9gXglbe19Kq5VwjqKnmUdUNE0RXHy-QVhmmGGj6QbXgDtysKcfQXOA1MZl0a5DhFqgRb3nNBw',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

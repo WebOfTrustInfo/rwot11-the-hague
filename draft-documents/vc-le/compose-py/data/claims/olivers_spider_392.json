@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,23 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['aloysious#3049'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Yineisy Mota and for '
+                                                    'putting attention to '
+                                                    "inclusion design. I'm "
+                                                    'excited to support '
+                                                    'identity exploration with '
+                                                    "y'all. Can't wait to "
+                                                    'amplify and connect '
+                                                    'people / projects in the '
+                                                    "web3 space with y'all. ",
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:27.482Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..h993H-1WFrLjF_5L24E_xHe6UsVTcd-0FF-oC6NrtSsWKQEQCW5ZGYwWgj6458Xotul9IroKunJN78CJe_leCQ',
+ 'proof': {'created': '2022-09-29T21:57:10.266Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..hDxyLXCImJsBCDc6Z5P5w8gN2VcdPI_9K9DYO7dvIZi5JDSn1erZCETcfDvnDrlDnkmywid43yATE75gBXbjAQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

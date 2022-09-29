@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,28 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['nic#9212'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for joining me in a '
+                                                    'session and sharing his '
+                                                    'motivations and sharing '
+                                                    'so many golden nuggets of '
+                                                    'wisdom. I learned a lot '
+                                                    'from our side chats  '
+                                                    'Really great insights '
+                                                    'about the self and '
+                                                    'movement as expression. I '
+                                                    'am excited to learn more '
+                                                    'from the resources he '
+                                                    'will be sharing and to '
+                                                    'help each other with '
+                                                    'coding problems haha ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:35.241Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..0X9x70g5aYEfJ8vGMYCtWhgBSMtOz7kuMB76L067yNXdcDQHx9kOszEA6nsZO4Ddzemhd-L4xnpeD6VkY5yMDw',
+ 'proof': {'created': '2022-09-29T21:57:20.224Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9.._mGBU2FoVhZN14EpEuc5wrSpdHNVZSFhTi68suF9QlmEqQJdYw6_0VRZp3oq69dKHHwjo1qE3o4XS92Uwn79DA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

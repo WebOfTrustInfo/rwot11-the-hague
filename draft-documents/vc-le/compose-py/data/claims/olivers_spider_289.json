@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,27 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['juankbell#7458'],
                                        'source_type': 'discord scrape',
+                                       'statement': ', , , , '
+                                                    '@MorganicMovement  , ,  , '
+                                                    ', , , , @Mount Manu ,  , '
+                                                    ', , , , , , , @sem   , , '
+                                                    ', @akrtws (TE Academy) , '
+                                                    ', , , , @Heather, , , , , '
+                                                    '@karmaticacid, , for '
+                                                    'their impact in my life '
+                                                    'and making me feel '
+                                                    'supported and motivated '
+                                                    'during this year. Much '
+                                                    'appreciation, respect and '
+                                                    'love to all of you! ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:27.075Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..XhDHUuex8eb2b3aBl7I-yyF_IQ11cpG2Qr3_wX91td0lWD3wN4lEARkSR-jfsYlI4J1S0QfPiQxNSxwxlvY2Bg',
+ 'proof': {'created': '2022-09-29T21:57:09.705Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..0ZV1WPLlcRCdAG5H3_tXpsOeV7nm2_B8YrQhSgxS0pJ5eMo-OFxviAliSpUmQp_IShIWsKTxtw-joBvct3Y5BQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

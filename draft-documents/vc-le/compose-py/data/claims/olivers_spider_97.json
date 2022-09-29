@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,22 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['vyvy-vi#5040'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for all the care and '
+                                                    'effort put in by them in '
+                                                    'the R.A.D.D. jupyter '
+                                                    'notebook. It gives very '
+                                                    'insightful information, '
+                                                    'and I really really like '
+                                                    'the praise-graph at the '
+                                                    'end. ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:26.258Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..Vuq13golX5S10kHuafYrORlZYRYVJ63Y9zWWi17b0eWmaDJ9TZbLGRkmz_EEgrIPSYuvS6fTr10EBJ6k_vuPCA',
+ 'proof': {'created': '2022-09-29T21:57:08.578Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..jlisFfxA_BtG0VEC65ssJL-e0IyHqYU05joMetnQpH5FWuELaDfh2vUj3odA2kko5S9ZHa-XmnfCSyQEOdAFAQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

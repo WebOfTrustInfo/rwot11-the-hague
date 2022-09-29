@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,31 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['aloysious#3049'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for his commitment to '
+                                                    '"doing the work", for '
+                                                    'knowing his own '
+                                                    'boundaries and expressing '
+                                                    'them openly with folx, '
+                                                    'for synthesizing his '
+                                                    'wisdom and making it '
+                                                    'radically available for '
+                                                    'everyone, for being a '
+                                                    'Permissionary in our '
+                                                    'spaces! \n'
+                                                    '\n'
+                                                    '*permissionary: someone '
+                                                    'who embodies and models '
+                                                    'liberated,  decolonized '
+                                                    'behavior and '
+                                                    'linguistics. ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:34.663Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..JMkAKwXtP9uO_pLoOPQzDpLeVac1Xxw25fx3vncfkZ8O2fGwrdM5YcYDIyn8RKHk157RHLZnBPnmW7uHc9AuBg',
+ 'proof': {'created': '2022-09-29T21:57:19.574Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..t0TTqF9l_OAHdtXr4vEMIR6eZZ87fiNe542CRRb-nSrAxai39SJo9zVTp2gNwP1DfvpjXn55E9topFck9BrLCQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

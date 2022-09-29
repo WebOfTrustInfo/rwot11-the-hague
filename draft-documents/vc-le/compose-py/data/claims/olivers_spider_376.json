@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,22 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['ms#4235'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Mount Manu for the '
+                                                    'collective thoughts  and '
+                                                    'energy that were shared '
+                                                    "on today's brainstorming. "
+                                                    'These points and ideas '
+                                                    'help bring deliverables '
+                                                    'and goals from ambiguous '
+                                                    'to powerful clarity. ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:27.416Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..LrbcJESIF9xdN8LuaNCt-SndIjhzf2fhs9wrho-YXu5chd5TCuGJRoJTVCkPEJc2B_1DOQj5vvK7wi1CmxvUAw',
+ 'proof': {'created': '2022-09-29T21:57:10.184Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..e9tIAsVvuO2WRzUV5uIWsK37vTPWzCvmc9Np9NfU8K2EyiBEIqh8r3EDcWZQ1z_ZidJVnZV5vCdGs2A49yZnAw',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

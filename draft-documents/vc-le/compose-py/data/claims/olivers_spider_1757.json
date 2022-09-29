@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,23 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['juankbell#7458'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@mzargam @akrtws for '
+                                                    'promoting the '
+                                                    'comprehension of Token '
+                                                    'Engineering as a '
+                                                    'transdisciplinary field '
+                                                    'and opening the door to '
+                                                    'many of us to contribute '
+                                                    'in the building of this '
+                                                    'commons around it  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:32.984Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..ERiEwbxlUlURJojOCkiaPPwy3a3IDjpRKv8FOHN-YnavelqUpX3qRqO10HWHI52-tQTj-xWWrZ-MOEl_k3TCBw',
+ 'proof': {'created': '2022-09-29T21:57:17.365Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..2q6eR5a8e0UnUk9hfStDGTv920zw8wKeJJNL0S0blKLev8E37U5Aahk51KdbSrMQJjUPk6hwlB7lklTXKv-cCg',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,24 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['eduardovegap#0422'],
                                        'source_type': 'discord scrape',
+                                       'statement': ' @rad casale @Mount Manu '
+                                                    '@Zeptimus (,) @Mount '
+                                                    'Manu  for joining an '
+                                                    'amazing Orientation call! '
+                                                    'Thank you everyone for '
+                                                    'joining and engaging! We '
+                                                    'look forward to see you '
+                                                    'more around! If you have '
+                                                    'any question, my dms are '
+                                                    'open!  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:29.536Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..0XbkirvCCnyAO8QhuLQzH-A2NW1jlqsItUSmXOd3uKePSov1N8VCmdPEOhtgtg520V9lFm2GOGTw_d7-niAnDQ',
+ 'proof': {'created': '2022-09-29T21:57:12.704Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..Z5KG-QyCbAd0p_nVuqtCCWsIiLsYwHFX_UP8XrG4Uc6qcmf4WigLCQWtuFH3JGV4Gz2nw5XuQ5hK6hhDW6rRCA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

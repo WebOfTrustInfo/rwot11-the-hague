@@ -24,6 +24,7 @@ linked_claim_context = {
              "@context": {
                 "lc":"http://cooperation.org/credentials/LinkedClaim/v1",
                 "aspect": {"@id": "lc:aspect"},
+                "statement": {"@id": "lc:aspect"},
                 "source_type":{"@id": "lc:source_type"},
                 "source": {"@id": "lc:source"},
              }
@@ -56,14 +57,15 @@ template = {
                 "linkedClaim": {
                   "type": "LinkedClaim",
                   "aspect": "impact:community",
-#                  "statement": "",
+                  "statement": "",
                   "source_type": "discord scrape",
                   "source": []
                 }
        }
 }
 
-
+def remove_non_ascii(string):
+    return ''.join(char for char in string if ord(char) < 128)
 
 async def make_vc(claim, meta):
     vc = deepcopy(template) 
@@ -71,7 +73,7 @@ async def make_vc(claim, meta):
     vc['credentialSubject']['id'] = 'discord:' + claim['to']
     vc['credentialSubject']['linkedClaim']['source'].append(claim['from'])
     #vc['issuer']['name'] = meta['name']
-    #vc['credentialSubject']['linkedClaim']['statement'] = claim['text']
+    vc['credentialSubject']['linkedClaim']['statement'] = remove_non_ascii(claim['text'])
  
     return await sign_with_did(vc, meta['name'])
 

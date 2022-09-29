@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,30 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['tam2140#9361'],
                                        'source_type': 'discord scrape',
+                                       'statement': 'for the months of '
+                                                    'reflection and days worth '
+                                                    'of writing and refining '
+                                                    'your thinking about the '
+                                                    'TEC and how we can help '
+                                                    'better develop a strong '
+                                                    'and autonomous community. '
+                                                    'The document you shared '
+                                                    'to so carefully  '
+                                                    'consolidate your thoughts '
+                                                    'and make it available so '
+                                                    'that the community can '
+                                                    'provide feedback is a '
+                                                    'testament to your care '
+                                                    'and commitment to the '
+                                                    'TEC. ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:34.485Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..s35A1FLKFrHap23mZ47VqjRXaAv9QHwfYz0ruse55c9xwILkVw5h9HZz_cYMJZ-sKkXi1IJBG_D0a5BT1Z-vAA',
+ 'proof': {'created': '2022-09-29T21:57:19.349Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..BeBvGmno4s2Y7Y8CHpyVrsKWe3FQqfIRoomoHQjwX6jfDwE4ZKYOyuFcM3FJtJSc30ystoS8MDC_ntSWj-pjAw',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

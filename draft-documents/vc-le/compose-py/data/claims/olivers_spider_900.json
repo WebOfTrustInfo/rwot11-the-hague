@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,26 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['aloysious#3049'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Mount Manu ,  & for '
+                                                    'sharing your big hearts '
+                                                    'and medicinal words in '
+                                                    'the community hall '
+                                                    'gathering.     I feel '
+                                                    'like I fast forwarded '
+                                                    'through some grief work '
+                                                    'and am feeling really '
+                                                    'grateful about how '
+                                                    'regulated my nervous '
+                                                    'system feels. '
+                                                    '<:ThankYou:753828947460096054> ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:29.561Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..byJWWORkOoqsnZATjwYxUn3PoN1n38ZOZuD6eo3WPePyyKcBbkdJwBxRtseq9suwcPexu2Wq5IJNycdN7MxdCg',
+ 'proof': {'created': '2022-09-29T21:57:12.731Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..-K3Iq5AY9N_n9atPZQRKLE2HLsjITs0an5-uOsAHC7D9x19xnPKKaox-6Sqs5xc7VXQ0-AyLH4-fxt5GasupDQ',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,26 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['whyldwanderer#7002'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Mount Manu for todays '
+                                                    'insightful graviton '
+                                                    'training. I think it is '
+                                                    'important to talk about '
+                                                    'leadership roles within '
+                                                    'decentralized '
+                                                    'organizations so that we '
+                                                    'can learn to empower '
+                                                    'those around us as well '
+                                                    'as realize the potential '
+                                                    'within ourselves to reach '
+                                                    'our goals as a whole. ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:31.156Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..Nw56hWcmf7_1WwEgqmSEQQsNQSIQ94mf5R7mCdwpJj5ZzyB3h91cWkU2T7NrDy7HSmY4j7K2XyDAeZOKCtsbCg',
+ 'proof': {'created': '2022-09-29T21:57:15.027Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..xEgOR1dTjGTMW-cn2-0SH9jJrDs0soJJ9mx3eZ-U2fUccPnhjg0siKx1VRPiKWUWK4aE70i3cnc2xWS04_H0BA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

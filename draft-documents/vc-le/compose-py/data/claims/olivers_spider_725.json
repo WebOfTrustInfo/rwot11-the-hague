@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,30 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['iviangita#3204'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@antoniopaglino @Nelson '
+                                                    '@DaLN#0173 '
+                                                    '@freedumbs00#3857 '
+                                                    '@irenioskamoska#7519 '
+                                                    '@karmaticacid#1218 '
+                                                    '@lefterisjp | Rotki#7253 '
+                                                    '@Nikoline#5376 '
+                                                    '@Owocki#3458 '
+                                                    '@unquale#1948 for '
+                                                    'mentioning or retweeting '
+                                                    'Commons Stack on the '
+                                                    'socials the past week! '
+                                                    'Thank you for helping us '
+                                                    'grow the Commons Stack '
+                                                    'community and spreading '
+                                                    'the message!  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:28.823Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..urJ3GzRaTWMPCXQPiM3ttwDYNk1E20XNhjPmbDkOUTzOGgj8rCJRa33X5syxiUCgGwTyK7UwEAriBk9Br03mAQ',
+ 'proof': {'created': '2022-09-29T21:57:11.867Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..kUo6cGh7L6NUPWCI5xkLrtYq7QDuguibckRWimi8qA_YDBoMeXmXPQejPekXIZDCRctr8fiDnGxI2bqpAt6aAg',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

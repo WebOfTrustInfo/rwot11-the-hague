@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,22 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['mafer_cordovas#1034'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@Loie#2921 for your '
+                                                    'incredible participation '
+                                                    'at Schelling Point '
+                                                    'conference by Gitcoin at '
+                                                    'EthDenver. Regenerative '
+                                                    'Cryptoeconomics is the '
+                                                    'future but we are '
+                                                    'building it now  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:33.722Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..hEO-4EFNSPwRq619Rat5OSpq9lCvOVk-srk44ECuHhd6LIFYOIhevpy2x6IMl3FT0jRSYWYuoV8YhP5boV5OBA',
+ 'proof': {'created': '2022-09-29T21:57:18.366Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..KLLJUdR6kMwev8LLRhOq8SbBeg2FHrEQmpHcBy4UUV4IYw8iZbkiPIGzeSj1mFC3oLCU5f2mmLs6rkuHoxhQBg',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

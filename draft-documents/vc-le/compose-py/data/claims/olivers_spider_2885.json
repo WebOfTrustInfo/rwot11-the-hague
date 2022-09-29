@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,22 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['griff#3281'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@sem   @willjgriff  '
+                                                    '@sacha  @lkngtn   and the '
+                                                    'other members of the '
+                                                    'Gardens crew for all '
+                                                    'their work pushing out '
+                                                    "gardens! It's live on "
+                                                    'xDai, BrightID is using '
+                                                    'it!!! WOOT! ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:37.679Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..x82Ijy0kyq80sVG4jHRQqn2LvB2XsrUgzj8uxrXqx5Hen92aK4m8Af8fHArT70LDYklqeLn6Ojw_x9ve3KvKBg',
+ 'proof': {'created': '2022-09-29T21:57:23.144Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..HYYb2PSFkVvjcg0FcEUxJ_v02PIjwcvc969OnsEZt-kak9qnpKYyXuj-r_h7ZxNQFUkUfg-pKoYP5pok3-I2DA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},

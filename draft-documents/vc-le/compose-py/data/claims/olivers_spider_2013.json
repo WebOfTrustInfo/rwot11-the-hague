@@ -4,7 +4,8 @@
                'LinkedClaim': {'@context': {'aspect': {'@id': 'lc:aspect'},
                                             'lc': 'http://cooperation.org/credentials/LinkedClaim/v1',
                                             'source': {'@id': 'lc:source'},
-                                            'source_type': {'@id': 'lc:source_type'}},
+                                            'source_type': {'@id': 'lc:source_type'},
+                                            'statement': {'@id': 'lc:aspect'}},
                                '@id': 'http://cooperation.org/credentials/LinkedClaim/v1'},
                'effectiveDate': {'@id': 'lc:effectiveDate',
                                  '@type': 'xsd:dateTime'}}],
@@ -12,14 +13,25 @@
                        'linkedClaim': {'aspect': 'impact:community',
                                        'source': ['freshelle#9882'],
                                        'source_type': 'discord scrape',
+                                       'statement': '@David (please DYOR...) '
+                                                    '@Guy James @KZ Flyer @T '
+                                                    'Wells @ octopus  @Mert '
+                                                    'Ozd for mentioning or '
+                                                    'retweeting TE Commons on '
+                                                    'the socials the past '
+                                                    'week! Thank you for '
+                                                    'helping us grow the Token '
+                                                    'Engineering Commons '
+                                                    'community and spreading '
+                                                    'the message!  ',
                                        'type': 'LinkedClaim'},
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
  'issuanceDate': '2022-09-29T00:00:00Z',
  'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:39:34.016Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..UXXdsG0Jqb2TlHj33wVOfubqkD-w9MEqz0C9Z4sQixYNE7uTWJGvz0RrM53CeQv2ZJHzFz5kvwqTM6nUoW5iCA',
+ 'proof': {'created': '2022-09-29T21:57:18.815Z',
+           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..x8UWWwFMPGI7gFQpD9Kgs0TJMgRA4w-yAruFsrKBGmEuovG5s7ilyJaLNRsIDnVSn3besvAPNnpfUlTjBKhOBA',
            'proofPurpose': 'assertionMethod',
            'type': 'Ed25519Signature2018',
            'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},
