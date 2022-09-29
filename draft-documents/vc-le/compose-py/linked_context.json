@@ -1,0 +1,9 @@
+{
+  "credentialSubject": {
+     "id":"weather in netherlands",
+     "linkedClaim": {
+         "aspect": "quality:experience",
+         "effectiveDate":"2022-09-27",
+         "issuanceDate":"2022-",
+     
+  "source":["Diogo"],

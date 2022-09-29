@@ -19,9 +19,11 @@ https://www.w3.org/TR/vc-data-model/#contexts
 
 https://www.w3.org/2018/credentials/#VerifiableCredential
 
+https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials
+
 https://www.spruceid.dev/didkit/didkit/did-methods
 
-https://pypi.org/project/didkit/   <<<-----
+https://pypi.org/project/didkit/   <<<
 
 https://github.com/multiformats/multibase
 
@@ -30,3 +32,5 @@ https://github.com/multiformats/py-multihash
 https://github.com/docknetwork/vcpy/
 
 https://github.com/blueskyCommunity/OpenTrustClaims/blob/main/experiments/iiw_2022_size.json
+
+https://playground.chapi.io/examples/jff/jff.json
