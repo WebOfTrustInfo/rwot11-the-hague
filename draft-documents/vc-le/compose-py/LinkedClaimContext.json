@@ -1,0 +1,21 @@
+{
+           "effectiveDate": {
+              "@id": "lc:effectiveDate",
+              "@type": "xsd:dateTime"
+            },
+            "CanContainLinkedClaim": {
+                "@id":"http://cooperation.org/credentials/LinkedClaimCapability/v1",
+                "@context": {
+                    "linkedClaim": {"@id":"http://cooperation.org/credentials/LinkedClaimCapability/v1#linkedClaim"}
+                }
+            },
+           "LinkedClaim": {
+             "@id": "http://cooperation.org/credentials/LinkedClaim/v1",
+             "@context": {
+                "lc":"http://cooperation.org/credentials/LinkedClaim/v1",
+                "aspect": {"@id": "lc:aspect"},
+                "source_type":{"@id": "lc:source_type"},
+                "source": {"@id": "lc:source"}
+             }
+          }
+}
