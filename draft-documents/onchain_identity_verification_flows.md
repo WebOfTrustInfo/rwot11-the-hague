@@ -1,5 +1,8 @@
 # On-chain identity proof verification design patterns: an evaluation of different strategies to inject digital identity into decentralized applications.
 
+[![hackmd-github-sync-badge](https://hackmd.io/U25XEx75SAqLH4cfVBzNVA/badge)](https://hackmd.io/U25XEx75SAqLH4cfVBzNVA)
+
+
 ## Editors: 
 - Juan Caballero (Centre.io)
 - Egidio Casati (Nym Labs)
@@ -127,50 +130,42 @@ Because the solution space for the same problem is fresh and terminology is stil
 
 ## Use cases 
 
-Regulated protocol would like to restrict or gated access to a smart contract (or even to a dApp frontend) to wallets that have been cleared against a predetermined wallet-controller criterion relevant to its regulators
-Example criteria: 
-Only wallets whose controllers have been KYC-onboarded by trusted KYC custodian can provide KYC information for a given transaction upon jurisdictionally unambiguous subpoena or other authenticated request
-Real-world examples: Verite.id ecosystem issuers like Circle and Violet; KYCDAO  ; aka “KYC-gated DeFi”
-Allowlist/denylist for NFT mint events - Regulated criteria encoded as offline VC, checked before mint transaction
-Regulated protocol would like to restrict or gated access to a smart contract or a dapp  to wallets that have been cleared against a predetermined account-history criterion relevant to its regulators
-Example criteria: “account has never transacted with Tornado Cash” or “account not flagged as suspicious by X, Y or Z machine-learning algorithm trusted by regulators”
-Tokenized security would like contract-level enforcement of wallet-holder requirements
-Example requirements: wallet controller must be KYC’d or KYB’d with known jurisdictional competent authority and, if required, have verifiable affidavit of Investor Accreditation
-Example enforcement mechanism: only transact SALES (or only transact TRANSFERS) to wallets that can deliver verifiable proof to the smart contract; 
-Less popular enforcement mechanism: “interventionist” smart contract which can freeze, revoke, or seize asset held by non-conformant (or sanctioned) wallet aka“SEC accredited investor” (for fund raising) 
+- Regulated protocol would like to restrict or gated access to a smart contract (or even to a dApp frontend) to wallets that have been cleared against a predetermined wallet-controller criterion relevant to its regulators
+    - Example criteria: Only wallets whose controllers have been KYC-onboarded by trusted KYC custodian can provide KYC information for a given transaction upon jurisdictionally unambiguous subpoena or other authenticated request
+    - Real-world examples: Verite.id ecosystem issuers like Circle and Violet; KYCDAO  ; aka “KYC-gated DeFi”
+- Allowlist/denylist for NFT mint events - Regulated criteria encoded as offline VC, checked before mint transaction
+- Regulated protocol would like to restrict or gated access to a smart contract or a dapp  to wallets that have been cleared against a predetermined account-history criterion relevant to its regulators
+    - Example criteria: “account has never transacted with Tornado Cash” or “account not flagged as suspicious by X, Y or Z machine-learning algorithm trusted by regulators”
+- Tokenized security would like contract-level enforcement of wallet-holder requirements
+    - Example requirements: wallet controller must be KYC’d or KYB’d with known jurisdictional competent authority and, if required, have verifiable affidavit of Investor Accreditation
+    - Example enforcement mechanism: only transact SALES (or only transact TRANSFERS) to wallets that can deliver verifiable proof to the smart contract; 
+    - Less popular enforcement mechanism: “interventionist” smart contract which can freeze, revoke, or seize asset held by non-conformant (or sanctioned) wallet aka“SEC accredited investor” (for fund raising) 
 
 ### Potential Use-Cases (TBD)
-“Non-consensual Airdrop” - many of today’s asset blockchains allow assets to be “dropped” into wallets without meaningful and/or verifiable consent. How non-consensual or non-verifiably consensual asset ownership or badging can be applied to these technologies should be considered
+- “Non-consensual Airdrop” - many of today’s asset blockchains allow assets to be “dropped” into wallets without meaningful and/or verifiable consent. How non-consensual or non-verifiably consensual asset ownership or badging can be applied to these technologies should be considered
 
 ## Architectural approaches compared: 
-NFT (SBT) or other on-chain badge attached publicly to account; 
-Critical implementation details: relative opacity of token; identified “issuers”/authorities of badge/SBT;
-How do on-chain consumers nuance/filter/extend the information they can deduce from the badge?
-On-Chain Verifiable Credential Verification
-VCs verified and/or validated on-chain - see Violet.co’s benchmarking exercise/proof of concept for minimum viable on-chain signature verification using EIP712
-Verifiable Credentials + Trusted intermediary
-Do off-chain “translators” or “oracles” verify off-chain and communicate to smart contracts?
-Verifiable Credentials + ZK Proofs
-On-chain consumers accept ZK Proof with transaction from wallet
+- NFT (SBT) or other on-chain badge attached publicly to account; 
+    - Critical implementation details: relative opacity of token; identified “issuers”/authorities of badge/SBT;
+    - How do on-chain consumers nuance/filter/extend the information they can deduce from the badge?
+- On-Chain Verifiable Credential Verification
+    - VCs verified and/or validated on-chain - see Violet.co’s benchmarking exercise/proof of concept for minimum viable on-chain signature verification using EIP712
+- Verifiable Credentials + Trusted intermediary
+    - Do off-chain “translators” or “oracles” verify off-chain and communicate to smart contracts?
+- Verifiable Credentials + ZK Proofs
+    - On-chain consumers accept ZK Proof with transaction from wallet
 
-Evaluating the space (quantitative and qualitative evaluation)
-Accessible easy, dao, 
-Correlation public non private
-
-Further Research Directions
+## Further Research Directions
 Composable verification systems: Egidio’s architecture where smart contract checks the information for example egidio showcased the idea of having the lower level smart contract checking the credentials, instead of the DApp
 Considerations of consent - mention Violet.co badge contract 
 API DDoS/AuthN model discussions, CACAOs
 
+## References: 
 
-
-
-References: 
-
-Vitalik’s Soulbound https://vitalik.ca/general/2022/01/26/soulbound.html 
-Soulbound Whitepaper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763
-How To Use Verifiable Credentials And Verite To Build An Off-Chain NFT Allowlist https://docs.centre.io/blog/NFT-allowlists-with-verifiable-credentials-and-verite 
-Pre-print draft of Chainlink Labs Research on ZK Circuit-based Verification: https://eprint.iacr.org/2022/321.pdf 
+- Vitalik’s Soulbound https://vitalik.ca/general/2022/01/26/soulbound.html 
+- Soulbound Whitepaper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763
+- How To Use Verifiable Credentials And Verite To Build An Off-Chain NFT Allowlist https://docs.centre.io/blog/NFT-allowlists-with-verifiable-credentials-and-verite 
+- Pre-print draft of Chainlink Labs Research on ZK Circuit-based Verification: https://eprint.iacr.org/2022/321.pdf 
 https://www.theverge.com/2021/10/14/22726556/signal-founder-moxie-marlinspike-nft-whim-change-platform-shit-emoji-fragility  
 
 
