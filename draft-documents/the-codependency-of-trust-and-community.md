@@ -42,7 +42,7 @@ Even leaving the community does not cut the ties that bind;  the new adult takes
 
 This is explored further in Karl Smith's paper: 'From dividual and individual selves to porous subjects" The dominant North / Western hemisphere conception of a 'self-sovereign' individual is contrasted with a more nuanced and complex Southern / Eastern hemisphere outlook on self within community, in which the 'self' can be considered as the sum of the different experiences within more than one community environment.  "I am 'dividual' not 'individual' or atomic".  "I have many links with communities that bring new experiences to me and 'I' grow over time."
 
-## A Model of how Individual Trust
+## A Model of how Individuals Trust
 In this section we explore how two individuals, previously unknown to each other, go about the process of establishing a certain level of trust with each other in a particular context. Then, using this framework developed from the story of our hero, Angus, looking to invest money with a stockbroker, propose how one could expand this framework of two individuals going through a trust lifecycle to create a read world model of how communities interact based on the discreet Trust Events individuals from disparate communities have. 
 
 ### The Trust Lifecycle Story
