@@ -5,11 +5,11 @@
 
 ## Editors: 
 - Juan Caballero (Centre.io)
-- Egidio Casati (Nym Labs)
-- Robert Mao (ArcBlock)
+- Egidio Casati (Nymlab.it)
+- Robert Mao (ArcBlock.io)
 - Martin Riedel (identity.com) 
 - Fabrice Rochette (2060.io)
-- Andrea Scorza (LTO network)
+- Andrea Scorza (LTOnetwork.com)
 
 ## Abstract
 
