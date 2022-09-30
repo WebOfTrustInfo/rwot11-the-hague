@@ -5,7 +5,7 @@ Andre Kudra*,
 Torsten Lodderstedt,
 Paul Bastian,
 Mirko Mollik,
-Maaike Leuken, 
+Maaike van Leuken, 
 Caspar Roelofs.
 
 ## Abstract
