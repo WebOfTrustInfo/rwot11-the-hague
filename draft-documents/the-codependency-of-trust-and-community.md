@@ -100,6 +100,11 @@ This notion of community actions is crucial to how humans function within groups
 These concepts can be seen in institutions where the burden of risk is mitigated by jurisdictional, legal procedures and even extends into software systems where users of a system place a certain amount of trust in the developers of that system in order for you to rely on the system to perform certain tasks. In these examples, trust is placed, not on specific individual members of the community but on the community as an Entity. There is a reliance on the community-arbitration mechanisms that maintain the expected function or utility of the community such that bad behaviour and their effects are corrected. In this way communities can learn to trust other communities as separate Entities and interact with each other through Trust Levels and Trust Decisions of their own.
 
 ### How Community Takes the Burden of Risk
+By forming communities, individuals can offload the burden of risk of interaction from themselves to the community; there is always a collective response to acting maliciously. Individuals can then trust their community to help maintain robust trust relationships between each individual within a given context.
+
+By leveraging the model, we can build up a notion of trust within a community based on the trust between collections of individuals. We can then further build on this to form inter-community trust by modelling communities themselves as individual entities to understand how small communities can band together to form larger communities; families to countries.
+
+In this paper we aim simply to establish the concepts for how two individuals build their personal trust relationship, how individuals form communities, and move through trust lifecycles and leave this idea of applying this framework to a real world model of these various forms of entrusted systems to future work.
 
 ## The Term Trustless
 
