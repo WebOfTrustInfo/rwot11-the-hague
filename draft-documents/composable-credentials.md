@@ -1,4 +1,4 @@
-# Composable Credentials Paper
+# Composable Credentials
 
 [![hackmd-github-sync-badge](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A/badge)](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A)
 
