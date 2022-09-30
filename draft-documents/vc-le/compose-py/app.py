@@ -61,8 +61,7 @@ async def make_vc(claim, name, effdate):
     vc = deepcopy(template)
     vc['effectiveDate'] = effdate or datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ") 
     vc['credentialSubject']['id'] = claim['to']
-    vc['credentialSubject']['linkedClaim']['source'].append(claim['source'])
-    vc['credentialSubject']['linkedClaim']['source'].append(claim['from'])
+    vc['credentialSubject']['linkedClaim']['source'] = [claim['source'], claim['from']]
     #vc['issuer']['name'] = meta['name']
     vc['credentialSubject']['linkedClaim']['statement'] = remove_non_ascii(claim['statement'])
     vc['credentialSubject']['linkedClaim']['aspect'] = claim['aspect']
