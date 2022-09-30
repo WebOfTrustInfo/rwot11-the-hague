@@ -35,25 +35,13 @@ V. Summary
 
 ### The DID Creation Switcharoo [C]
 
-[example is did:key, did is created in a way other than expected by controller]
-
 ### The Poop-Emoji DID Doc [R]
-
-[did:document simultaneously looks different from different people]
 
 ### The Scapegoat DID Identity [R of U]
 
-[the good and bad (scapegoat)]
-
 ### The Prescient Mempool Attack [U]
 
-[someone already has your key, when you rotate it, then get there ahead of you, for example with BTCR when they see update of current BTCR]
-
-[solution: pre-rotation]
-
 ### The Dishonorable DID Deletion [D]
-
-[pretend to delete, but keep it using with other people]
 
 ## Current Draft
 
