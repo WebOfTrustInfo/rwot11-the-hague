@@ -97,6 +97,8 @@ Future investigative journalism reports contain the links to these credentials, 
 .l
 ### Social impact - philanthropic grant helped attesting individual (or witnessed)
 
+When philanthropic organizations grant funds to help a target population, currently the grantee submits an impact report about the impact.  The individuals intended to benefit are more or less passive objects.  In the proposed model, the individuals intended to benefit from a grant could be asked to individually attest to the benefit received, as well as witnesses.  This way bottom-up accountability can be achieved and the impact of philanthropy can be measured and receive feedback from a broad set of recipients and witnesses.
+
 ### Academic class completed or exam score achieved
 
 ## Composing Credentials via Anchored Resources / Hashlinking
