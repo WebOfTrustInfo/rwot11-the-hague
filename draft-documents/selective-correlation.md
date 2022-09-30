@@ -1,13 +1,13 @@
 
-[![hackmd-github-sync-badge](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw/badge)](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw)
-
-Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/correlation-paper.md
-
-Contact @ChristopherA if you want push a change from HackMD.
-
 Selective Correlation 
 ==================================
 ***Data Minimization, Selective Disclosure, and Progressive Trust***
+
+Collaboration is at [![hackmd-github-sync-badge](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw/badge)](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw)
+
+Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/selective-correlation.md
+
+Contact @ChristopherA if you want access to HackMD or to push a change from HackMD.
 
 # To Do
 
