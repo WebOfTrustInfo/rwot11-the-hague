@@ -112,12 +112,41 @@ By leveraging the model, we can build up a notion of trust within a community ba
 In this paper we aim simply to establish the concepts for how two individuals build their personal trust relationship, how individuals form communities, and move through trust lifecycles and leave this idea of applying this framework to a real world model of these various forms of entrusted systems to future work.
 
 ## References
-1. Vala Afshar: [Tweet](https://twitter.com/ValaAfshar/status/1561454277423513601)
-2. [The Digital Citizen](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/draft-documents/digital-citizen.md)
-3. [From Probability to Consilience: How Explanatory Values Implement Bayesian Reasoning](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(20)30228-X?rss=yes)
-4. [Ian Beeson: Implications of the theory of autopoiesis for the discipline and practice of information systems in Realigning Research and Practice in Information Systems Development, 2001](https://ifipwg82.org/sites/ifipwg82.org/files/beeson.pdf)
-5. [Abeba Birhane, “Descartes was wrong: ‘a person is a person through other persons’ “ 7 April 2017](https://aeon.co/ideas/descartes-was-wrong-a-person-is-a-person-through-other-persons)
-6. [Ian Grigg, Identity Cycle, 2021](http://iang.org/identity_cycle/)
+* Vala Afshar, tweet: 
+    * [https://twitter.com/ValaAfshar/status/1561454277423513601](https://twitter.com/ValaAfshar/status/1561454277423513601)
+* Ian Beeson: Implications of the theory of autopoiesis for the discipline and practice of information systems" in Realigning Research and Practice in Information Systems Development, 2001: 
+    * [https://ifipwg82.org/sites/ifipwg82.org/files/beeson.pdf](https://ifipwg82.org/sites/ifipwg82.org/files/beeson.pdf)
+* Abeba Birhane, “Descartes was wrong: ‘a person is a person through other persons’ “ 7 April 2017: 
+    * [https://aeon.co/ideas/descartes-was-wrong-a-person-is-a-person-through-other-persons](https://aeon.co/ideas/descartes-was-wrong-a-person-is-a-person-through-other-persons)
+* Siu Kei Chung, et al, The Digital Citizen: 
+    * [https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/draft-documents/digital-citizen.md](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/draft-documents/digital-citizen.md)
+* Ian Grigg, Identity Cycle, 2021: 
+    * [http://iang.org/identity_cycle/](http://iang.org/identity_cycle/)
+* Mark S. Miller, Chip Morningstar, Bill Frantz, “An Ode to the Granovetter Diagram,” Financial Cryptography 2000
+    * http://www.erights.org/elib/capability/ode/overview.html
+* Dirk Pranke, “Identity is a Wicked Problem,” W3C, 2011: 
+    * [https://www.w3.org/2011/identity-ws/slides/Pranke-wicked.pdf](https://www.w3.org/2011/identity-ws/slides/Pranke-wicked.pdf)
+* Erik Rietveld et al, “Trusted strangers: social affordances for social cohesion”: 
+    * [https://link.springer.com/article/10.1007/s11097-017-9554-7](https://link.springer.com/article/10.1007/s11097-017-9554-7)
+* Philip Sheldrake, “Human identity: the number one challenge in computer science,” 2022: 
+    * [https://generative-identity.org/human-identity-the-number-one-challenge-in-computer-science/](https://generative-identity.org/human-identity-the-number-one-challenge-in-computer-science/)
+* Karl Smith on 'From dividual and individual selves to porous subjects"
+    * [https://doi.org/10.1111/j.1757-6547.2012.00167.x](https://doi.org/10.1111/j.1757-6547.2012.00167.x)
+    * [https://onlinelibrary.wiley.com/doi/full/10.1111/j.1757-6547.2012.00167.x](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1757-6547.2012.00167.x)
+* Charles Vogl, "The Art of Community," 2016: 
+    * [https://www.charlesvogl.com/articles/defining-community](https://www.charlesvogl.com/articles/defining-community)
+* Wojtowicz & DeDoo, From Probability to Consilience: How Explanatory Values Implement Bayesian Reasoning: 
+    * [https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(20)30228-X?rss=yes ](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(20)30228-X?rss=yes)
+
+
+
+
+
+
+
+
+
+
 
 # Appendix A - On the term "Trustless"
 Within the world of blockchain, cryptocurrency, and Self-Sovereign Identity there is the notion of a “Trustless” system. When interacting with a software system, a system is considered “Trustless” if two parties making use of the system do not need to take on the burden of establishing trust between each other, but rather both leverage the fact that as participants they have entrusted those who develop, operate and govern the system, within its entire socio-economic context, to function as claimed. They perceive they have offloaded the burden of risk to the software system as developed. This pattern should feel familiar to those who have read the above writing; because of this we would like to put forward a new term that may take the place of “Trustless”. 
