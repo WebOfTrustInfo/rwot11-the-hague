@@ -6,8 +6,7 @@
 * Nick Meyne - [nick.meyne@smtngood.eu](nick.meyne@smtngood.eu)
 
 ## Abstract
-In this paper for RWoT we propose a model of trust and community that draws on thinking in complementary disciplines such as Physics and Mathematics (Theory of Explanation), Biology (Autopoeisis) and Social Sciences (social systems).
-
+In this paper for RWoT we propose a model of trust and community that draws on thinking in complementary disciplines such as Physics and Mathematics (Theory of Explanation), Biology (Autopoeisis) and Social Sciences (social systems). We offer a definition of trust by studying the way that it manifests between individuals and communities. We derive a conceptual model of trust by identifying key events between individuals that determine trust within a particular context and use the model to describe how larger societal structures can be built from the composition of individual trust.
 
 ## The Role of Community in Trust
 Typically, and more so in technical discussion, Trust is considered a quality between two people:  Alice trusts Bob to do something. This section proposes that Trust, considered outside the context of a Community, is trust emasculated, for two motives - a person’s ability to trust was formed in a Community context, and the person carries a nearly innate desire for Community within their psyche not only as an indispensable tool for trust but also as a way of life.
