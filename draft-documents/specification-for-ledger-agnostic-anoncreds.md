@@ -34,3 +34,21 @@ A review of a [new revocation scheme](https://docs.google.com/presentation/d/10d
 ### W3C Data Model Representation for AnonCreds
 
 A W3C Data Model representation for AnonCreds was discussed and reviewed. An initial version based on the learnings needs to be worked out and submitted as an `AnonCreds2022` proof type. The representation can build on the work done in this [PR](https://github.com/hyperledger/indy-sdk/pull/2223)
+
+### Documentation on the Applied Cryptography 
+
+The final specification should provide a concise picture to guide implmentors on the cryptographic primitives and constructs that AnonCreds support. 
+
+However, much of the cryptographic material is included in the AnonCreds data model, 
+therefore it is important to provide description and explanation on the underlying [CL signature scheme].
+In addition, it will be helpful to document what the currently implementation does,
+which will also provide the basis for evolution for next specification versions.
+
+Remaining tasks include:
+
+* Fill out terminologies describing cryptographic material
+* Add description of underlying cryptographic schemes implemented in the [Ursa library]
+* Create a new section to explain the elements in the cryptographic material and how they are used
+
+[CL Signature scheme]: https://cs.brown.edu/people/alysyans/papers/cl04.pdf
+[Ursa library]: https://github.com/hyperledger/ursa
