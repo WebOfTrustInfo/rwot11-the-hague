@@ -1,0 +1,23 @@
+@startuml
+title Broadcaster topology
+hide footbox
+actor S as "Sender"
+participant Broadcaster
+participant M1 as "Mediator 1"
+actor R1 as "Recipient 1"
+participant M2 as "Mediator 2"
+actor R2 as "Recipient 2"
+participant M3 as "Mediator 3"
+actor R3 as "Recipient 3"
+S -> Broadcaster: Enc(Message, GK) \n+ Recipient list
+note left
+GK: Group Key
+R1,R2,R3: Recipient keys
+end note
+Broadcaster -> M1: Forward(Enc(Message, GK), R1)
+M1 -> R1: Enc(Message, GK)
+Broadcaster -> M2: Forward(Enc(Message, GK), R2)
+M2 -> R2: Enc(Message, GK)
+Broadcaster -> M3: Forward(Enc(Message, GK), R3)
+M3 -> R3: Enc(Message, GK)
+@enduml
