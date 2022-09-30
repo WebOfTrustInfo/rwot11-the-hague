@@ -11,9 +11,9 @@
 
 ## Abstract
 
-The Verifiable Credential ecosystem has encountered several use cases that require a third-party assertion, or an endorsement of an existing object (another VC, a PDF, a webpage, etc). Whether it is product reviews, endorsements of self-created credentials, academic paper reviews, or some other general purpose third party assertion, these use cases have several requirements in common.  Each use case may also require a domain-specific set of fields.
+The Verifiable Credential ecosystem has encountered several use cases that require a third-party assertion, or an endorsement of an existing object (another VC, a PDF, a webpage, etc). Whether it is product reviews, endorsements of self-created credentials, provenance of academic paper reviews, or some other general purpose third party assertion, these use cases have several requirements in common.  Each use case may also require a domain-specific set of fields.
 
-We propose a minimal format for Linked Claims that will allow each use case of 3rd party assertions to be represented as a set of LinkedClaims.
+We propose a minimal format for connecting credentials that will allow each use case of 3rd party assertions to be represented as a set of LinkedClaims.
 
 Further, we propose to demonstrate the ability to compose several LinkedClaims into a single domain-specific credential, specifically a Verifiable Endorsement, that will satisfy the domain requirements of the likely users.
 
@@ -25,12 +25,11 @@ As the Verifiable Credential community gathers implementation experience based o
 
 The first approach favors large **compound credentials** that contain many claims, signed by the issuer as a set. In the education space, the CLRv2 (Comprehensive Learner Record v2) spec is one such canonical example, intended to be, well, comprehensive, containing a person's entire educational history associated with enrollment overseen by a single issuer, the institution awarding the degree. Another example, both in the physical world of plastic cards, as well as in the world of digital credentials, is the Drivers License, a collection of unrelated claims (name, address, age, picture, driving ability), grouped together, for historical reasons of convenience.
 
-The second approach uses <outline second approach> - micro-credentials, optionally linked together cryptographically.
+The second approach, which is isomorphic/functionally equivalent to the first, uses linked micro-credentials with cryptographic binding.
 
-<downsides of the compound approach>
+The compound credential provides the recipient with a rich set of claims of potentially multiple types, along with alignments and other metadata needed to sematically express complex relationships among them. This is useful, but can lead to large payloads and introduce complexities on the part of systems consuming them. It also means any change to any part of the complex payload that needs updating to require rhe revoation of the compound VC and after corrections are made re-signing of the change parts and resigning of the overal compound payload package.
 
-<micro-credentials allow for easier data minimization and partial disclosure, and allow for secure re-composition down the line>
-
+Micro-credentials allow for easier data minimization, editing and reissuance of only those microcredentials whose data elements need updating, facilitates partial disclosure, and allows for secure re-composition down the line.
 
 ### A Brief Primer on Verifiable Presentations
 
@@ -41,10 +40,6 @@ Aside from serving as a lightweight container for one or more VCs, VPs allow the
 - Also, by (optionally) signing a VP, you're adding a tamper-proof binding on the bundle itself (in addition to the fact that any given VC inside a VP is already tamper-proof by itself).
 - Little known fact: the VCs inside a presentation don't have to be about the presenter. The holder may have in their possession credentials issued by third parties. For example, when applying to a job, an individual can obtain (and pass along) their school's accreditation credential. They can also obtain and pass along a VC of the job description they're applying for.
 Neither of those VCs (the school accreditation, and the job description) mention the person at all (the job applicant is not the subject of either of those). As part of the application process, the job applicant submits a bundle of credentials (the Verifiable Presentation), some of which may be about the applicant (such as their awards and achievements), and others that are not directly related, but that provide contextual value to the recipient (such as the job description VC).
-
-### Definitions
-
-* **hashlink** - a cryptographically binding a VC to another object by including a _digest_ hash.
 
 ## Requirements for Linked Claims and Endorsements
 
@@ -69,6 +64,7 @@ Nice to haves include:
 
 ### Endorsements of self-asserted skill credentials
   Alice has worked in warehouse distribution centers since she dropped out of high school to earn money to support her mother, and siblings, after her mother was forced to recuperate from injuries incurred in a vehicle accident.
+    
 Alice started as a custodian but over time and through observation and conversation with her co-workers she learned she could get trained to drive a warehouse forklift and significantly increase her earning potential. She enrolled in class 4 OSHA certified forklift driver training course while continuing her night custodian job. After receiving her certification she applied for a forklift driver opening at the company where she was employed but sought corroboration of her skills both from her instructors at ISETA (Bootcamp 1.0) and the forklift specialization course, along with an endorsement from her current supervisor attesting to her reliability, teamwork, and attention to detail she has expressed in her current job.
   
   Alice sends the self-asserted credential describing her skills relevant to the forklift driver position to Bob, her instructor ay ISETA of the OSHA forklift training course by email and points out the attributes she thinks he can attest to amongst her skill claims. 
@@ -97,31 +93,37 @@ Laura signs her verifiable endorsement VC and sends it as a VP to Claidios crede
 
 ### An ecommerce product review (5-star type)
 
-### Assertion that an image/video was taken by a camera crew is not been altered from the time the images were captured.  (for https://proofmode.org/)
-Follow up with Joe Andrieu re: the issues of image capture and using multiBase hashlink signature methods.
+### Assertion that an image/video was taken by a camera crew has not been altered from the time the images were captured.  
+Ansel Abrams is a professional photographer who publishes his images in magazines, newpapers/services and on his own photo gallery on the web. Recently he has been embroiled in several controversies over the authenticity of what were purported to be 'his' images but which were in fact subtly edited representations of his work. One of these resukted in expensive legal costs in defending his claims of manipulation without his consent.
+    
+Ansel has now introduced into his workflow a requirement that any publication of any image he creates must be cryptogrphically hashlinked and signed by him. This both makes it simple for him to prove tampering has occurred to one of his photos. It also imposes a requirement that any purchuser of his work of does have a legitimate reason to edit his image contact him for permission to do so and either provide him the edited version that he can cryptographically add this derivative work to his repository or request the publisher to state their provenance for the derivative image.
 
 ### A person was harmed by an entity (may be known or unknown)
 
-### Task completed and reviewed in a task tracking system (adds signal to worker reputation)
+### An endorsement that attests to the provenance of an article posted in a published news service
 
-### An endorsement that attests to authenticity of an article posted in a published news service
+Island News, the daily morning paper for the Signal Islands, has a reputation for in depth investigative reporting. Recently, controversies have emerged when a report on inappropriate use of provincial revenue collected from bond financing was published stating that government ministers involved in the oversight of the fund accounts associated with a new economic development, anchored by Wind Casinos, redirected substantial amounts of Bitcoin to private ministerial accounts.
 
-Island News, the daily morning paper for the Signal Islands, has a reputation formin depth investigative reporting. Recently controversies has emerged when reporting on inappropriate use of provincial revenue collected from bond financing was published stating that government ministers involved in the oversite of the fund accounts associated with a new economic development, anchored by Wind Casinos, redirected hundreds of bitcoin to private ministerial accounts.
+Representatives of these ministers countered that these accusations were fabricated and published purported notes from the reporting journaistis corroborating their claims.The journalists contested these representations of their work, with the back and forth of accusations and countering claims devolving into a confusing and ultimately unresolvable incident that diverted public attention tomthe serious concerns initially raised.
 
-Representatives of these ministers countered these accusations were fabricated and published purported notes from the reporting journaistis corroborating their claims.The journalists contested these representations of their work, with the back and forth of accusations and countering claims devolving into a confusing and ultimately unresolvable incident that diverted public attention tomthe serious concerns initially raised.
-
-Island News decided to hashlink future investigative reporting and associate them with a verifiable credential signed by the reporters involved. This was further subatantiated by an verifiable endorsement credential issued by The Internation Consortium of Investigative Journalism (the TICIJ), corroborating by a respected third party the claims of authenticity derived bybtheor review of the investigative journalism process and specufic transcripts of notes, photographic evidence and recordings the Island News submitted to them and they independently analyzed.
+Island News decided to hashlink future investigative reporting and associate them with a verifiable credential signed by the reporters involved. This was further substantiated by a verifiable endorsement credential issued by The Internation Consortium of Investigative Journalism (the TICIJ), corroborating by a respected third party the claims of authenticity derived bybtheor review of the investigative journalism process and specufic transcripts of notes, photographic evidence and recordings the Island News submitted to them and they independently analyzed.
 
 Future investigative journalism reports contain the links to these credentials, publicly accessible, and verifiable for all who wish to see them.
 
 ### Social impact - philanthropic grant helped attesting individual (or witnessed)
 
+When philanthropic organizations grant funds to help a target population, currently the grantee submits an impact report about the impact. The individuals intended to benefit are more or less passive objects. In the proposed model, the individuals intended to benefit from a grant could be asked to individually attest to the benefit received, as well as witnesses. This way bottom-up accountability can be achieved and the impact of philanthropy can be measured and receive feedback from a broad set of recipients and witnesses.
+
+Linked claims will enable the many signed attestations to be credible as the signatories may have additional credentials linked to them.  It also enables auditability as individuals who are surveyed can verify their signatures cryptographically.
+
 ## Composing Credentials via Anchored Resources / Hashlinking
 
 ### Hashlink Prior Art
+A hashlink cryptographically binds a VC to another VC or object by including a digest hash of the liked object itself. For further information see these links.
 
 - [Cryptographic Hyperlinks IETF Draft](https://datatracker.ietf.org/doc/html/draft-sporny-hashlink-07)
 - [ACDC - Authentic Chained Data Containers Draft](https://www.ietf.org/archive/id/draft-ssmith-acdc-02.html)
+- Adobe/Intel/etc [Content Authenticity Initiative](https://contentauthenticity.org/)
 
 ### Proposal
 This paper introduces two new related properties: `anchoredResource` and `digestMultibase`.
@@ -132,7 +134,7 @@ An anchored resource points to one or more linked or bound resources. It can app
 #### digestMultibase
 A `digestMultibase` property provides a way to lock down a link using a hash of its content, by specifying the hash algorithm, and (optionally) the canonicalization mechanism to perform before hashing.
 
-### Composed vs Atomic Credentials
+### Compound vs Single-assertion (Micro-) Credentials
 
 explain, add picture -- the VC model in general, and the hash linking mechanism, enables a set of claims to be expressed either as standalone credentials, or as a single composed credential.
 
@@ -278,7 +280,7 @@ Example of a linked claim representing a witnessing of an event.
 }
 ```
 
-### Combined Linked Claim - A Verifiable Endorsement
+### Example - A Verifiable Endorsement
 
 This example is composed of two components -- an initial standalone VC, and then an _endorsement_ of that VC, with a one-way cryptographic binding to it.
 
@@ -403,7 +405,7 @@ This example is composed of two components -- an initial standalone VC, and then
 }
 ```
 
-### Decomposed Linked Claim - Verifiable Endorsement
+### Verifiable Endorsement - De-structured Into Linked Standalone VCs
 
 This example is functionally identical to the previous (an initial standalone self-issued VC combined an _endorsement_ of that VC), except that it de-composes the parts of the endorsement into separate standalone VCs (that are still linked, cryptographically). These would typically be presented as a bundle, in a Verifiable Presentation:
 
@@ -593,14 +595,12 @@ This example is functionally identical to the previous (an initial standalone se
 }
 ```
 
-### Verfier
+### Verifying Linked VCs
 
 To make this meaningful a verifier for a VP must validate that the composed documents are truly composed the way the business logic asserts; AND that linked documents are linked (by issuer/source) the way business logic asserts
 
-So two new callbacks are needed 
-    1) verify composition
-    2) verify links
-
+A new 'verifyAnchoredResources' callback is needed for VC libraries.
+                                           
 ## References
 
 Replabs DAO: https://replabs.web.app/dao/tec
@@ -633,6 +633,11 @@ https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials
 Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/verifiable-endorsements-from-linked-claims.md
 
 Original draft at https://docs.google.com/document/d/1mgIKC3U3OaYtq2koht9aQwAgJIrAEFCHq3XJvUOie5o/edit#
-
+    
+    
+    Working Addenda
+ 
+    
+    
 Contact @BRiIYS-0T9GKZAz7VgyEQg / @gvelez17 if you want to push a change from HackMD
 
