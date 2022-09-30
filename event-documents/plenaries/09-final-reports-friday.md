@@ -70,3 +70,12 @@ Hope to send paper on to credentials community group.
 Proposed a new mesh network with scalable onion-like routing.
 
 Includes concept of broadcasters who make it easier to send widespread messages.
+
+# Shared Patterns
+
+What shared patterns have we seen?
+
+* We're now using a shared language over DIDs and VCs that didn't exist in early RWOT events.
+* Similarly, terms like "selective disclosure" have come into more common usage: fundamental tools that also weren't commonly used in early RWOTs.
+* More focus on user experience, what are the edge cases, it feels like an evolution toward the end-user, going beyond the basics.
+* Excited by cross-pollination of problems & solutions, with surprising answers coming out of work.
