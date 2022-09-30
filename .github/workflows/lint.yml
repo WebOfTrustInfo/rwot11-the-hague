@@ -47,5 +47,4 @@ jobs:
         LOG_LEVEL: WARN
         VALIDATE_ALL_CODEBASE: false # Only check new or edited files
         MULTI_STATUS: true
-        DISABLE_ERRORS: true
         VALIDATE_MARKDOWN: true
