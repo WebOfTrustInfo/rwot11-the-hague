@@ -123,7 +123,6 @@ It's not clear we can do classic key agreement as a verification relationship be
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://www.w3.org/2018/credentials/examples/v1",
-    "https://github.com/WebOfTrustInfo/rwot11-the-hague/raw/master/draft-documents/didmerkle/context"
   ],
   "type": [
     "VerifiableCredential"
@@ -131,7 +130,7 @@ It's not clear we can do classic key agreement as a verification relationship be
   "issuer": "did:ex:italy",
   "issuanceDate": "2010-01-01T19:23:24Z",
   "credentialSubject": {
-    "@context": "https://hackmd.io/@JoeAndrieu/Hk_2NMmfi/download",
+    "@context": "https://github.com/WebOfTrustInfo/rwot11-the-hague/raw/master/draft-documents/didmerkle/context",
     "id": "did:merkle:zH3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV",
     "citizenship": "it"
   },
@@ -153,8 +152,7 @@ It's not clear we can do classic key agreement as a verification relationship be
   "verifiableCredential" : {
       "@context": [
         "https://www.w3.org/2018/credentials/v1",
-        "https://www.w3.org/2018/credentials/examples/v1",
-        "https://github.com/WebOfTrustInfo/rwot11-the-hague/raw/master/draft-documents/didmerkle/context"
+        "https://www.w3.org/2018/credentials/examples/v1"
       ],
       "type": [
         "VerifiableCredential"
@@ -162,7 +160,7 @@ It's not clear we can do classic key agreement as a verification relationship be
       "issuer": "did:ex:italy",
       "issuanceDate": "2010-01-01T19:23:24Z",
       "credentialSubject": {
-        "@context": "https://hackmd.io/@JoeAndrieu/Hk_2NMmfi/download",
+        "@context": "https://github.com/WebOfTrustInfo/rwot11-the-hague/raw/master/draft-documents/didmerkle/context",
         "id": "did:merkle:zH3C2AVvLMv6gmMNm3uVAjZpfkcJCwDwnZn6z3wXmqPV",
         "citizenship": "it"
       },
@@ -196,8 +194,7 @@ It's not clear we can do classic key agreement as a verification relationship be
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://www.w3.org/2018/credentials/examples/v1",
-    "https://hackmd.io/@JoeAndrieu/Hk_2NMmfi/download"
+    "https://www.w3.org/2018/credentials/examples/v1"
   ],
   "type": [
     "VerifiableCredential"
@@ -205,7 +202,7 @@ It's not clear we can do classic key agreement as a verification relationship be
   "issuer": "did:merkle:zH3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV?did=XYZ&proof=123",
   "issuanceDate": "2010-01-01T19:23:24Z",
   "credentialSubject": {
-    "@context": "https://hackmd.io/@JoeAndrieu/r1ADDMQGs/download",
+    "@context":"https://github.com/WebOfTrustInfo/rwot11-the-hague/raw/master/draft-documents/didmerkle/context",
     "id": "did:merkle:zH3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV",
     "citizenship": "it"
   },
@@ -453,21 +450,21 @@ Removed from credential json:
 New Merkle tree becomes:  
 
 ```
-                               ┌(Hash 0-0-0)─< did:key:JulietPubKey1, hash of (citizenzip:IT), hash of (yearofbirth:2001)
+                               ┌(Hash 0-0-0)─< did:key:JulietPubKey1, JulietSalt1, hash of (citizenzip:IT+JulietSalt1), hash of (yearofbirth:2001+JulietSalt1)
                     ┌(Hash 0─0)┤     
-                    │          └(Hash 0─0-1)─< did:key:BjornPubKey1, hash of (citizenzip:SU), hash of (yearofbirth:1974)
+                    │          └(Hash 0─0-1)─< did:key:BjornPubKey1, BjornSalt1, hash of (citizenzip:SU+BjornSalt1), hash of (yearofbirth:1974+BjornSalt1)
            ┌(Hash 0)┤  
-           │        │          ┌(Hash 0─1-0)─< did:key:JulietPubKey2, hash of (citizenzip:IT), hash of (yearofbirth:2001)
+           │        │          ┌(Hash 0─1-0)─< did:key:JulietPubKey2, JulietSalt2, hash of (citizenzip:IT+JulietSalt2), hash of (yearofbirth:2001+JulietSalt2)
            │        └(Hash 0-1)┤     
-  (Merkle  │                   └(Hash 0─1-1)─< did:key:JulietPubKey3, hash of (citizenzip:IT), hash of (yearofbirth:2001)
+  (Merkle  │                   └(Hash 0─1-1)─< did:key:JulietPubKey3, JulietSalt3, hash of (citizenzip:IT+JulietSalt3), hash of (yearofbirth:2001+JulietSalt3)
 ─- Root  --┤  
-   Hash)   │                   ┌(Hash 1-0-0)─< did:key:BjornPubKey2, hash of (citizenzip:SU), hash of (yearofbirth:1974)
+   Hash)   │                   ┌(Hash 1-0-0)─< did:key:BjornPubKey2, BjornSalt2, hash of (citizenzip:SU), hash of (yearofbirth:1974)
            │        ┌(Hash 1-0)┤     
-           │        │          └(Hash 1-0-1)─< did:key:JulietPubKey4, hash of (citizenzip:IT), hash of (yearofbirth:2001)
+           │        │          └(Hash 1-0-1)─< did:key:JulietPubKey4, JulietSalt4, hash of (citizenzip:IT), hash of (yearofbirth:2001)
            └(Hash 1)┤  
-                    │          ┌(Hash 1-1-0)─< did:key:BjornPubKey3, hash of (citizenzip:SU), hash of (yearofbirth:1974)
+                    │          ┌(Hash 1-1-0)─< did:key:BjornPubKey3, BjornSalt3, hash of (citizenzip:SU), hash of (yearofbirth:1974)
                     └(Hash 1-1)┤
-                               └(Hash 1-1-1)─< did:key:BjornPubKey4, hash of (citizenzip:SU), hash of (yearofbirth:1974)
+                               └(Hash 1-1-1)─< did:key:BjornPubKey4, BjornSalt4, hash of (citizenzip:SU), hash of (yearofbirth:1974)
 ```
 
 Note: attributes (e.g. here: "citizenship" and "yearofbirth") should point to associated context contents
