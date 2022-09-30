@@ -111,7 +111,15 @@ By leveraging the model, we can build up a notion of trust within a community ba
 
 In this paper we aim simply to establish the concepts for how two individuals build their personal trust relationship, how individuals form communities, and move through trust lifecycles and leave this idea of applying this framework to a real world model of these various forms of entrusted systems to future work.
 
-## The Term Trustless
+## References
+1. Vala Afshar: [Tweet](https://twitter.com/ValaAfshar/status/1561454277423513601)
+2. [The Digital Citizen](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/draft-documents/digital-citizen.md)
+3. [From Probability to Consilience: How Explanatory Values Implement Bayesian Reasoning](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(20)30228-X?rss=yes)
+4. [Ian Beeson: Implications of the theory of autopoiesis for the discipline and practice of information systems in Realigning Research and Practice in Information Systems Development, 2001](https://ifipwg82.org/sites/ifipwg82.org/files/beeson.pdf)
+5. [Abeba Birhane, “Descartes was wrong: ‘a person is a person through other persons’ “ 7 April 2017](https://aeon.co/ideas/descartes-was-wrong-a-person-is-a-person-through-other-persons)
+6. [Ian Grigg, Identity Cycle, 2021](http://iang.org/identity_cycle/)
+
+# Appendix A - On the term "Trustless"
 Within the world of blockchain, cryptocurrency, and Self-Sovereign Identity there is the notion of a “Trustless” system. When interacting with a software system, a system is considered “Trustless” if two parties making use of the system do not need to take on the burden of establishing trust between each other, but rather both leverage the fact that as participants they have entrusted those who develop, operate and govern the system, within its entire socio-economic context, to function as claimed. They perceive they have offloaded the burden of risk to the software system as developed. This pattern should feel familiar to those who have read the above writing; because of this we would like to put forward a new term that may take the place of “Trustless”. 
 
 What actually happens in these “Trustless” systems, of which Bitcoin would be the most well known of a system described as such, is that each party making use of the system is entrusting the system to behave as the developers claim and thus decide that they are comfortable relying on the system to properly complete this very high risk action of sending money. It is not that the individuals have no trust, or are trustless, but rather that they have both entrusted the software system, and community of developers and all participants in that ecosystem (core developer, miner, holder, exchanges, wallet developers etc) to act in the manner advertised. Effectively here we have an analogous case to our discussion of groups and communities above, but 'trustless' only in the much narrower context of reliable consensus algorithm code penalising 'bad' behaviour such as collusion across nodes, by making it costly.
@@ -120,12 +128,3 @@ To be clear, an entrusted system enables trustless interactions between users. W
 
 So we challenge those who are involved in this fast-expanding digital space to consider, is your system a “Trustless System”, or could you describe it better as an “Entrusted System”? As a note we would like to credit Sean Conway in finding this replacement term.
 
-
-
-## References
-1. Vala Afshar: [Tweet](https://twitter.com/ValaAfshar/status/1561454277423513601)
-2. [The Digital Citizen](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/draft-documents/digital-citizen.md)
-3. [From Probability to Consilience: How Explanatory Values Implement Bayesian Reasoning](https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(20)30228-X?rss=yes)
-4. [Ian Beeson: Implications of the theory of autopoiesis for the discipline and practice of information systems in Realigning Research and Practice in Information Systems Development, 2001](https://ifipwg82.org/sites/ifipwg82.org/files/beeson.pdf)
-5. [Abeba Birhane, “Descartes was wrong: ‘a person is a person through other persons’ “ 7 April 2017](https://aeon.co/ideas/descartes-was-wrong-a-person-is-a-person-through-other-persons)
-6. [Ian Grigg, Identity Cycle, 2021](http://iang.org/identity_cycle/)
