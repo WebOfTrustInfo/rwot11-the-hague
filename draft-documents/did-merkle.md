@@ -123,7 +123,7 @@ It's not clear we can do classic key agreement as a verification relationship be
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://www.w3.org/2018/credentials/examples/v1",
-    "https://hackmd.io/@JoeAndrieu/Hk_2NMmfi/download"
+    "https://github.com/WebOfTrustInfo/rwot11-the-hague/raw/master/draft-documents/didmerkle/context"
   ],
   "type": [
     "VerifiableCredential"
@@ -154,7 +154,7 @@ It's not clear we can do classic key agreement as a verification relationship be
       "@context": [
         "https://www.w3.org/2018/credentials/v1",
         "https://www.w3.org/2018/credentials/examples/v1",
-        "https://hackmd.io/@JoeAndrieu/Hk_2NMmfi/download"
+        "https://github.com/WebOfTrustInfo/rwot11-the-hague/raw/master/draft-documents/didmerkle/context"
       ],
       "type": [
         "VerifiableCredential"
@@ -280,19 +280,28 @@ Merkle DIDs are immutable and cannot be deactivated.
 1.  How to update the merkle tree by removing or adding new users to the group
 
 
-## Down the rabbit hole
+## Further examples and use cases (still not developped here)
+
+Down the rabbit hole: these are less simple but more powerful examples and use cases, in order to not reduce did.merkle to the simple use case of "giving the same public credential attribute and content to a group".  
+By placing more contents insides Merkle tree leaves we got more generic and larger use cases, and it gets easier to build large Merkle tree to improve non-correlation quality level.
+
+You definetely can place different attributes, different values, directly or prehashed, inside Merkle tree leaves.
+
+These examples below are adaptations of the simple example described above.
+
+It won't contain details explanations on how to build the Verifiable presentation but it would be always the same thing:  
 
 ### Claim value moved to leaves
 
-Claim value can be moved from credential json to hashed contents of merkle tree leaves  
+Claim value can be moved from credential json to hashed contents of Merkle tree leaves  
 
-What would change from initial example :  
+**What would change from initial example :**  
 
 Updated credential content:  
 
 "citizenship"~~: "it"~~  
 
-New merkle would become:  
+New Merkle tree becomes:  
 
 ```
                                ┌(Hash 0-0-0)─< did:key:JulietPubKey1, IT
@@ -318,7 +327,7 @@ Claim values can be moved from credential json to hashed contents of Merkle tree
 
 Values can be different from one holder to another  
 
-What would change from initial example:  
+**What would change from initial example:**  
 
 Removed from credential json:  
 
@@ -326,7 +335,7 @@ Removed from credential json:
 
 Introducing "Bjorn" from Sweden inside the initial tree, replacing Federico as an example
 
-New merkle would become:  
+New Merkle tree becomes:  
 
 ```
                                ┌(Hash 0-0-0)─< did:key:JulietPubKey1, IT
@@ -348,20 +357,58 @@ New merkle would become:
 
 ### Claim attribute with different values moved to leaves
 
-Claim attribute and values can be moved from credential json to the hashed content of merkle tree leaves  
+Claim attribute and values can be moved from credential json to the hashed content of Merkle tree leaves  
+Values can be different from one holder to another  
+
+Introducing "Bjorn" from Sweden inside the initial tree, replacing Federico as an example
+
+**What would change from initial example:**  
+
+Removed from credential json:  
+
+~~"citizenship": "it"~~  
+
+New Merkle tree becomes:  
+```
+                               ┌(Hash 0-0-0)─< did:key:JulietPubKey1, citizenzip:IT
+                    ┌(Hash 0─0)┤     
+                    │          └(Hash 0─0-1)─< did:key:BjornPubKey1, citizenzip:SU
+           ┌(Hash 0)┤  
+           │        │          ┌(Hash 0─1-0)─< did:key:JulietPubKey2, citizenzip:IT
+           │        └(Hash 0-1)┤     
+  (Merkle  │                   └(Hash 0─1-1)─< did:key:MarioPubKey1, citizenzip:IT
+─- Root  --┤  
+   Hash)   │                   ┌(Hash 1-0-0)─< did:key:JulietPubKey3, citizenzip:IT
+           │        ┌(Hash 1-0)┤     
+           │        │          └(Hash 1-0-1)─< did:key:MarioPubKey2, citizenzip:IT
+           └(Hash 1)┤  
+                    │          ┌(Hash 1-1-0)─< did:key:MarioPubKey3, citizenzip:IT
+                    └(Hash 1-1)┤
+                               └(Hash 1-1-1)─< did:key:BjornPubKey2, citizenzip:SU
+```
+
+
+Note: attribute (e.g. here: "citizenship") should point to an associated context content
+
+### Different Claim Attributes with different Values moved to leaves
+
+Claim attributes and values can be moved from credential json to the hashed content of Merkle tree leaves  
+
 Values can be different from one holder to another  
 
 Claim attributes can be different from one holder to another
 
 Introducing "Bjorn" from Sweden inside the initial tree, replacing Federico and Mario as an example
 
-What would change from initial example:  
+Now Bjorn and Juliet have citizenship and yearofbirth info inside the Merkle tree
+
+**What would change from initial example:**  
 
 Removed from credential json:  
 
 ~~"citizenship": "it"~~  
 
-New merkle would become:  
+New Merkle tree becomes:  
 
 ```
                                ┌(Hash 0-0-0)─< did:key:JulietPubKey1, citizenzip:IT
@@ -381,43 +428,46 @@ New merkle would become:
                                └(Hash 1-1-1)─< did:key:BjornPubKey4, yearofbirth:1974
 ```
 
-Note : attribute (e.g. here: "citizenship") should point to an associated context content
+Note: attributes (e.g. here: "citizenship" and "yearofbirth") should point to associated context contents
 
-### Different Claim Attributes with different Values moved to leaves
+### Hashed Different Claim Attributes with different Values moved to leaves
 
-Claim attributes and values can be moved from credential json to the hashed content of merkle tree leaves  
+Claim attributes and values can be moved from credential json to the hashed content of Merkle tree leaves  
 
 Values can be different from one holder to another  
 
-Claim attributes can be different from one old to another
+Claim attributes can be different from one holder to another
+
+Attributes and values can be hashed and listed and holder can make selective dislosure of the hashed information (attributes and values)
 
 Introducing "Bjorn" from Sweden inside the initial tree, replacing Federico and Mario as an example
 
+Now Bjorn and Juliet have citizenship and yearofbirth info inside the Merkle tree
 
-What would change from initial example:  
+**What would change from initial example:**  
 
 Removed from credential json:  
 
 ~~"citizenship": "it"~~  
 
-New merkle would become:  
+New Merkle tree becomes:  
 
 ```
-                               ┌(Hash 0-0-0)─< did:key:JulietPubKey1, citizenzip:IT
+                               ┌(Hash 0-0-0)─< did:key:JulietPubKey1, hash of (citizenzip:IT), hash of (yearofbirth:2001)
                     ┌(Hash 0─0)┤     
-                    │          └(Hash 0─0-1)─< did:key:BjornPubKey1, citizenzip:SU
+                    │          └(Hash 0─0-1)─< did:key:BjornPubKey1, hash of (citizenzip:SU), hash of (yearofbirth:1974)
            ┌(Hash 0)┤  
-           │        │          ┌(Hash 0─1-0)─< did:key:JulietPubKey2, citizenzip:IT
+           │        │          ┌(Hash 0─1-0)─< did:key:JulietPubKey2, hash of (citizenzip:IT), hash of (yearofbirth:2001)
            │        └(Hash 0-1)┤     
-  (Merkle  │                   └(Hash 0─1-1)─< did:key:MarioPubKey1, citizenzip:IT
+  (Merkle  │                   └(Hash 0─1-1)─< did:key:JulietPubKey3, hash of (citizenzip:IT), hash of (yearofbirth:2001)
 ─- Root  --┤  
-   Hash)   │                   ┌(Hash 1-0-0)─< did:key:JulietPubKey3, citizenzip:IT
+   Hash)   │                   ┌(Hash 1-0-0)─< did:key:BjornPubKey2, hash of (citizenzip:SU), hash of (yearofbirth:1974)
            │        ┌(Hash 1-0)┤     
-           │        │          └(Hash 1-0-1)─< did:key:MarioPubKey2, citizenzip:IT
+           │        │          └(Hash 1-0-1)─< did:key:JulietPubKey4, hash of (citizenzip:IT), hash of (yearofbirth:2001)
            └(Hash 1)┤  
-                    │          ┌(Hash 1-1-0)─< did:key:MarioPubKey3, citizenzip:IT
+                    │          ┌(Hash 1-1-0)─< did:key:BjornPubKey3, hash of (citizenzip:SU), hash of (yearofbirth:1974)
                     └(Hash 1-1)┤
-                               └(Hash 1-1-1)─< did:key:BjornPubKey2, citizenzip:SU
+                               └(Hash 1-1-1)─< did:key:BjornPubKey4, hash of (citizenzip:SU), hash of (yearofbirth:1974)
 ```
 
-Note : attribute (e.g. here: "citizenship") should point to an associated context content
+Note: attributes (e.g. here: "citizenship" and "yearofbirth") should point to associated context contents
