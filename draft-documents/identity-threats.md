@@ -29,19 +29,13 @@ IV. Why decentralization is important
 V. Summary
    A. (The Elevator Pitch)
    
-## Planned Attack List
+### Planned Attack List
 
-## Threats
-
-### The DID Creation Switcharoo [C]
-
-### The Poop-Emoji DID Doc [R]
-
-### The Scapegoat DID Identity [R of U]
-
-### The Prescient Mempool Attack [U]
-
-### The Dishonorable DID Deletion [D]
+1. The DID Creation Switcharoo [C]
+2. The Poop-Emoji DID Doc [R]
+3. The Scapegoat DID Identity [R of U]
+4. The Prescient Mempool Attack [U]
+5. The Dishonorable DID Deletion [D]
 
 ## Current Draft
 
