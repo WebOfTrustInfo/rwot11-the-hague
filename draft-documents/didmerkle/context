@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "id": "https://hackmd.io/y90zzprAScCIaj41JcCQmg",
+    "@protected": true,
+    "citizenship": {
+      "@id": "https://hackmd.io/y90zzprAScCIaj41JcCQmg#citizenship",
+      "@type": "https://schema.org/addressRegion"
+    }
+  }
+}

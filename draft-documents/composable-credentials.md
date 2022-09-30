@@ -1,27 +1,13 @@
-# Composable Credentials Paper
+# Composing Credentials via Links and Cryptographic Binding
 
 [![hackmd-github-sync-badge](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A/badge)](https://hackmd.io/r8CsaGShSIu2z1K6iTHi6A)
 
 ## Co-Authors
 
+* Philip D. Long - @longpd
 * Dmitri Zagidulin - @dmitrizagidulin
 * Golda Velez - @gvelez17
-* Philip D. Long - @longpd
 * Oliver Klingefjord - @Klingefjord
-
-## TODO
-- Confirm that VC-DATA-MODEL v2.0 has the 'effectiveDate' field
-- Decide on top-level credential type
-- Decide on context url
-- howKnown -> source_type
-- best way to express controlled/suggested vocabs?
-
-
-- Verifier for correctly composed and correctly linked credentials
-
-   * composed means the subject is the uri of a claim 
-   * linked means the subject is the issuer or source of a claim
-
 
 ## Abstract
 
@@ -31,7 +17,34 @@ We propose a minimal format for Linked Claims that will allow each use case of 3
 
 Further, we propose to demonstrate the ability to compose several LinkedClaims into a single domain-specific credential, specifically a Verifiable Endorsement, that will satisfy the domain requirements of the likely users.
 
-This approach will enable rich shared datasets to inform trust decisions, while satisfying the requirements of domain-specific end users.  If time permits a sample score can be built over the linked claim dataset.
+This approach will enable rich shared datasets to inform trust decisions, while satisfying the requirements of domain-specific end users. If time permits a sample score can be built over the linked claim dataset.
+
+## Introduction
+
+As the Verifiable Credential community gathers implementation experience based on the VC Data Model v1.0, and as it starts working on the next version of the spec, we see the VC landscape adopt two different (but interoperable) architectures.
+
+The first approach favors large **compound credentials** that contain many claims, signed by the issuer as a set. In the education space, the CLRv2 (Comprehensive Learner Record v2) spec is one such canonical example, intended to be, well, comprehensive, containing a person's entire educational history associated with enrollment overseen by a single issuer, the institution awarding the degree. Another example, both in the physical world of plastic cards, as well as in the world of digital credentials, is the Drivers License, a collection of unrelated claims (name, address, age, picture, driving ability), grouped together, for historical reasons of convenience.
+
+The second approach uses <outline second approach> - micro-credentials, optionally linked together cryptographically.
+
+<downsides of the compound approach>
+
+<micro-credentials allow for easier data minimization and partial disclosure, and allow for secure re-composition down the line>
+
+
+### A Brief Primer on Verifiable Presentations
+
+VPs are a general purpose wrapper/envelope for one or more VCs. When an Issuer sends VCs to a wallet, it sends them wrapped inside a VP envelope. When a wallet holder presents VCs to a requesting party, the wallet also wraps them inside a VP envelope.
+    
+Aside from serving as a lightweight container for one or more VCs, VPs allow the presenter to perform DID-Authentication, to prove cryptographic control over a particular DID, and in this case conveying the sender of the VC is reponsible for which is useful to some use cases.
+- VPs don't have to be signed. Performing DID-Authentication is optional. It's reserved for use cases where it's important for the receiver to know who the presentation is coming from.
+- Also, by (optionally) signing a VP, you're adding a tamper-proof binding on the bundle itself (in addition to the fact that any given VC inside a VP is already tamper-proof by itself).
+- Little known fact: the VCs inside a presentation don't have to be about the presenter. The holder may have in their possession credentials issued by third parties. For example, when applying to a job, an individual can obtain (and pass along) their school's accreditation credential. They can also obtain and pass along a VC of the job description they're applying for.
+Neither of those VCs (the school accreditation, and the job description) mention the person at all (the job applicant is not the subject of either of those). As part of the application process, the job applicant submits a bundle of credentials (the Verifiable Presentation), some of which may be about the applicant (such as their awards and achievements), and others that are not directly related, but that provide contextual value to the recipient (such as the job description VC).
+
+### Definitions
+
+* **hashlink** - a cryptographically binding a VC to another object by including a _digest_ hash.
 
 ## Requirements for Linked Claims and Endorsements
 
@@ -39,7 +52,7 @@ This approach will enable rich shared datasets to inform trust decisions, while 
 2. They must be able to refer to (make a statement about) an external object, such as:
     * Another VC
     * A URL (web page, PDF, image, etc)
-    * A subsection of another VC (for example, an individual achievement or course in a transcript VC that contains multiple courses).
+    * A subsection of another VC (for example, an individual achievement or course in a transcript VC that contains multiple courses, or a one among a set of competences in VC).
 3. They must provide an (optional) mechanism for cryptographic binding between VCs or between a VC and another URL. (Hashlink mechanism.)
 4. They should define properties that describe the endorsement or assertion:
     * a property describing that is an extension of the VC issuer, describing who is making the endorsement, what their expertise/bonafides is, what their relationship to the subject, etc.
@@ -60,13 +73,13 @@ Alice started as a custodian but over time and through observation and conversat
   
   Alice sends the self-asserted credential describing her skills relevant to the forklift driver position to Bob, her instructor ay ISETA of the OSHA forklift training course by email and points out the attributes she thinks he can attest to amongst her skill claims. 
   
-  Alice does the same thing sending her self-assertion credential to Juanita,her current supervisor, pointing out those attribute she suggests Juanita has direct knowledge about her performance.
+  Alice does the same thing sending her self-assertion credential to Juanita,her current supervisor, pointing out those attributes she suggests Juanita has direct knowledge about her performance.
   
   Both Bob and Juanita construct a linked-claims Verifiable Credential endorsing Alice for those attributes they have expertise in and can address with professional credibility based on their own bona fides included in their relevance arrestations describing their own training and background.
   
   Juanita and Bob send their self-asserted skill endorsements to Alice after binding their attributions to those skills and competencies based on their knowledge of Alice's capabilities. Alice selects these credentials for inclusion in the set she prepares as a verifiable presentation to submit to the job application site.
 
-### An endorsemet of an institution/busniess/gov issued credential to an individual by a third party.
+### An endorsement of an institution/busniess/gov issued credential to an individual by a third party.
 Claudio recently complete a certificate program in cybersecurity. The technical college issued the certificate in both paper and VC formats. Through conversations with some of his instructors he's become aware of an opening in a local cybersecurity sourcing company who provides short (1 to 6 month consulting project contracts) and medium term placements for contract employees). Claudio asks one of his instructors, Laura,for a reference. Laura agrees to serve as a reference and suggests that she provide a verifable endorsement credential to Claudio's digital credential wallet.
 
 Laura asks Claudio for (a copy of) his VC conferring his cybersecurity certifiate awarded to him for successfully completing his course of study that awarded him a Certificate in Cyber Threat Analytics and Prevention (CTAP).Laura composes a self asserted verifiable endorsement VC that establishes her credentials or bona fides as a credible judge of Claudios knowldge, skills and abilities in this domain. She provides verifiable documentation of her work in the field through links to papers she has published, reports to which she contributed on cyberthreat assessment, and grants she has received for her workmin this domain.
@@ -101,11 +114,7 @@ Island News decided to hashlink future investigative reporting and associate the
 
 Future investigative journalism reports contain the links to these credentials, publicly accessible, and verifiable for all who wish to see them.
 
-### Reputation systems for social media platforms
-.l
 ### Social impact - philanthropic grant helped attesting individual (or witnessed)
-
-### Academic class completed or exam score achieved
 
 ## Composing Credentials via Anchored Resources / Hashlinking
 
@@ -586,7 +595,7 @@ This example is functionally identical to the previous (an initial standalone se
 
 ### Verfier
 
-to make this meaningful a verifier for a VP must validate that the composed documents are truly composed the way the business logic asserts; AND that linked documents are linked (by issuer/source) the way business logic asserts
+To make this meaningful a verifier for a VP must validate that the composed documents are truly composed the way the business logic asserts; AND that linked documents are linked (by issuer/source) the way business logic asserts
 
 So two new callbacks are needed 
     1) verify composition
@@ -608,6 +617,17 @@ https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/
 ### Standards
 
 https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials
+
+## TODO
+- Confirm that VC-DATA-MODEL v2.0 has the 'effectiveDate' field
+- Decide on top-level credential type
+- Decide on context url
+- howKnown -> source_type
+- best way to express controlled/suggested vocabs?
+- check with Oliver if he wants to flesh out the "### Reputation systems for social media platforms" usecase
+
+
+- Verifier for correctly composed and correctly linked credentials
 
 ---
 Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/verifiable-endorsements-from-linked-claims.md
