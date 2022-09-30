@@ -1,13 +1,13 @@
 
-Selective Correlation 
-==================================
-***Data Minimization, Selective Disclosure, and Progressive Trust***
-
-Collaboration is at [![hackmd-github-sync-badge](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw/badge)](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw)
+[![hackmd-github-sync-badge](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw/badge)](https://hackmd.io/1rGIb8kmSKWE7QYWfVR_rw)
 
 Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/selective-correlation.md
 
-Contact @ChristopherA if you want access to HackMD or to push a change from HackMD.
+Contact @ChristopherA if you want push a change from HackMD.
+
+Selective Correlation 
+==================================
+***Data Minimization, Selective Disclosure, and Progressive Trust***
 
 # To Do
 
@@ -188,6 +188,7 @@ Choices:
 * **[BBS-SIG]** BBS Signature Scheme: https://identity.foundation/bbs-signature/draft-looker-cfrg-bbs-signatures.html
 * **[ANONCREDS]** AnonCreds: https://anoncreds-wg.github.io/anoncreds-spec/
 * **[SD-JWT]** SD-JWT: https://github.com/oauthstuff/draft-selective-disclosure-jwt
+* **[JWP]** JWP: https://www.ietf.org/archive/id/draft-jmiller-jose-json-web-proof-00.html
 * **[REDACTION2016-LD]** Redaction Signature Suite 2016: https://w3c-ccg.github.io/lds-redaction2016/
 * **[MERKLE2021-LD]** Merkle Disclosure Proof 2021: https://w3c-ccg.github.io/Merkle-Disclosure-2021/
 * **[GORDIAN]** Gordian Envelopes: https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/02-ENVELOPE.md
@@ -203,6 +204,7 @@ Mapping of Characteristics and Technologies
 |BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ? |
 |ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ? |
 |SD-JWT           | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+|JWP              | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 |REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
 |MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
 |GORDIAN          | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? |
