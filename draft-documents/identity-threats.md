@@ -138,8 +138,6 @@ Mark is able to see the endorsement, so he stands by his own endorsement to Clif
 1. **Hash DID Doc.** DID Documents can be hashed and that hash can then be stored in an immutable ledger, such as a blockchain. This allows anyone to verify the current state of a DID doc, and also provides timestamping of when it was last changed.               
     
 ### Don't Talk about Fight Club (unless you want to compare DIDs) [R of U]
-
-### Writer: Kate
     
 **Keywords**: bad reputation, double-spend identity, canonical update
     
