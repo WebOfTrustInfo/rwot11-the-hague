@@ -30,3 +30,33 @@
 * Helping to structure discussions could be useful when working in groups.
 * Missed not having white boards.
 * We need help in puzzling out what the actual space requirements are.
+
+## Dreams
+
+* That we have RWOT where organizations & communities from non-white dominated areas. May or may not be technically oriented,
+* That we have fewer DID methods.
+* That RWOT eat its own dog food. (A group that walks through everything we're talking about and uses it and discovers state of play.)
+* That the values of the Web of Trust (balance between privacy & knowledgeable, and need for trust) spreads.
+* That we used online system to continue discussions between RWOTs.
+* That we maintain energy between events.
+* That we have a podcast! (About papers! About technologies! Interviews!)
+* That we bridge gaps between RWOTs with podcasts.
+* That we have funding for some of these continuing efforts. Maybe crowd-funding.
+* That we have grant manager or executive director.
+* That we restore our reserves lost over COVID years.
+* That we bring in people from lots of different backgrounds.
+* That you will come back and continue working with us in this community to change the world.
+
+## Ways to Help
+
+The community is volunteer-run, so if you want to do something, take the agency to do so!
+
+* The board is currently three people, and should be four or five or more!
+* We are very short of people to help produce the actual events.
+
+## The Future
+
+* We hope to do a RWOT in Tokyo in the future. (But there need to be some stylistic changes due to cultural differences.)
+
+We'll see you in Los Angeles in the Spring!
+
