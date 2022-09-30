@@ -1,4 +1,9 @@
 # The Co-Dependency of Trust and Community 
+## Co-Authors
+* Ian Grigg - [iang@iang.org](iang@iang.org)
+* Chris Chung - [chris@violet.co](chris@violet.co)
+* Eric Schuh - [eric@legreq.com](eric@legreq.com)
+* Nick Meyne - [nick.meyne@smtngood.eu](nick.meyne@smtngood.eu)
 
 ## Abstract
 In this paper for RWoT we propose a model of trust and community that draws on thinking in complementary disciplines such as Physics and Mathematics (Theory of Explanation), Biology (Autopoeisis) and Social Sciences (social systems).
