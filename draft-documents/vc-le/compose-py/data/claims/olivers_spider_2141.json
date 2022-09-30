@@ -20,11 +20,4 @@
                        'type': 'CanContainLinkedClaim'},
  'effectiveDate': '2022-09-28T00:00:00Z',
  'expirationDate': '2023-09-29T00:00:00Z',
- 'issuanceDate': '2022-09-29T00:00:00Z',
- 'issuer': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK',
- 'proof': {'created': '2022-09-29T21:57:19.403Z',
-           'jws': 'eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..A9LHmAkFXnrvPOzrWbtyszvSXGD0rADU8fsYKZ9MZjak6UorXG2eeCPzzNn7D20wm2Ub2F9_fozuMoRIKzI9Aw',
-           'proofPurpose': 'assertionMethod',
-           'type': 'Ed25519Signature2018',
-           'verificationMethod': 'did:key:z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK#z6Mkrk38THWmeFVvN9GfxH7qKwH5iP3FpNAK1qkdif7Y6AkK'},
- 'type': ['VerifiableCredential', 'LinkedClaim']}
+ 'issuanceDate': '2022-09-29T00:00:00Z'

@@ -3,6 +3,7 @@ import didkit
 import pickle
 import json
 from pprint import pprint
+from warnings import warn
 
 def create_key(name):
     jwk = didkit.generate_ed25519_key()
@@ -28,12 +29,15 @@ async def sign_with_did(vc_json, name):
     pprint(vc_json)
 
 #    pprint(jwk)
-
-    signed_cred = await didkit.issue_credential(
-        json.dumps(vc_json),
-        json.dumps({}),
-        jwk)
-    return signed_cred
+    try:
+        signed_cred = await didkit.issue_credential(
+            json.dumps(vc_json),
+            json.dumps({}),
+            jwk)
+        return signed_cred
+    except Exception as e:
+        warn(str(e))
+        return "ERROR: " + str(e)
 
 
 def link_creds(signed_cred1, signed_cred2, output_type):
