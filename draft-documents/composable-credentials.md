@@ -9,19 +9,6 @@
 * Philip D. Long - @longpd
 * Oliver Klingefjord - @Klingefjord
 
-## TODO
-- Confirm that VC-DATA-MODEL v2.0 has the 'effectiveDate' field
-- Decide on top-level credential type
-- Decide on context url
-- howKnown -> source_type
-- best way to express controlled/suggested vocabs?
-
-
-- Verifier for correctly composed and correctly linked credentials
-
-   * composed means the subject is the uri of a claim 
-   * linked means the subject is the issuer or source of a claim
-
 
 ## Abstract
 
@@ -32,6 +19,11 @@ We propose a minimal format for Linked Claims that will allow each use case of 3
 Further, we propose to demonstrate the ability to compose several LinkedClaims into a single domain-specific credential, specifically a Verifiable Endorsement, that will satisfy the domain requirements of the likely users.
 
 This approach will enable rich shared datasets to inform trust decisions, while satisfying the requirements of domain-specific end users.  If time permits a sample score can be built over the linked claim dataset.
+
+### Definitions
+
+   * composed means the subject is the uri of a claim 
+   * linked means the subject is the issuer or source of a claim
 
 ## Requirements for Linked Claims and Endorsements
 
@@ -608,6 +600,16 @@ https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/
 ### Standards
 
 https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials
+
+## TODO
+- Confirm that VC-DATA-MODEL v2.0 has the 'effectiveDate' field
+- Decide on top-level credential type
+- Decide on context url
+- howKnown -> source_type
+- best way to express controlled/suggested vocabs?
+
+
+- Verifier for correctly composed and correctly linked credentials
 
 ---
 Syncs to -> https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/draft-documents/verifiable-endorsements-from-linked-claims.md
