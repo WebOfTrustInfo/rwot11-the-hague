@@ -1,3 +1,7 @@
+# Identity Threats
+
+**Authors:** Shannon Appelcline (Blockchain Commons), Kate Sills (DCD) Carsten Stöcker (Spherity), Cihan Saglam (Danube Tech)
+
 ## Abstract
 
 Decentralized identity solutions, such as DID methods, tend to be designed to protect against certain attacks, but the purpose of that design is not usually explicitly stated in any architectural description or threat documentation. In particular, some DID methods have costly on-chain requirements. We can today see that these DID methods were purposefully shaped, but it's not clear why such decisions were made. The purpose of this paper is to list attacks on DID methods so that we can better understand what threats a system might be vulnerable to (or not).
