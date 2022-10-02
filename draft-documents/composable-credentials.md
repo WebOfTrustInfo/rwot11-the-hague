@@ -27,7 +27,7 @@ The first approach favors large **compound credentials** that contain many claim
 
 The second approach, which is isomorphic/functionally equivalent to the first, uses linked micro-credentials with cryptographic binding.
 
-The compound credential provides the recipient with a rich set of claims of potentially multiple types, along with alignments and other metadata needed to sematically express complex relationships among them. This is useful, but can lead to large payloads and introduce complexities on the part of systems consuming them. It also means any change to any part of the complex payload that needs updating to require rhe revoation of the compound VC and after corrections are made re-signing of the change parts and resigning of the overal compound payload package.
+The compound credential provides the recipient with a rich set of claims of potentially multiple types, along with alignments and other metadata needed to sematically express complex relationships among them. This is useful, but can lead to large payloads and introduce complexities on the part of systems consuming them. It also means any change to any part of the complex payload that needs updating requires the revoation of the compound VC, and any of the compents within it. After corrections are made those edited parts need re-signing/reissusing, as well as the the overal compound payload package.
 
 Micro-credentials allow for easier data minimization, editing and reissuance of only those microcredentials whose data elements need updating, facilitates partial disclosure, and allows for secure re-composition down the line.
 
@@ -59,6 +59,11 @@ Nice to haves include:
 
 1. Ability to create "local names" from the perspective of the issuer to generate URIs for things that do not have authoritative URIs
 2. Ability to compose one or more minimal endorsement VCs into a composite for a specific use case
+
+## Existing Standards Overview
+
+* Coalition for Content Provenance and Authenticity (C2PA)
+https://c2pa.org/specifications/specifications/1.0/specs/C2PA_Specification.html
 
 ## Use Cases
 
