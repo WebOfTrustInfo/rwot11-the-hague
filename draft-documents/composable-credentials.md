@@ -623,11 +623,12 @@ https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/
 
 https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials
 
+Note: effectiveDate is in a proposed modification to the standard
+
 ## TODO
-- Confirm that VC-DATA-MODEL v2.0 has the 'effectiveDate' field
+
 - Decide on top-level credential type
 - Decide on context url
-- howKnown -> source_type
 - best way to express controlled/suggested vocabs?
 - check with Oliver if he wants to flesh out the "### Reputation systems for social media platforms" usecase
 
