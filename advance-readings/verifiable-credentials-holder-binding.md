@@ -1,10 +1,10 @@
-Link: [Verifiable Credentials Holder Binding](./verifiable-credentials-holder-binding.md)
-
-This is a proposed collaborative paper to be completed at [RWOT 2022](https://rwot11.eventbrite.com/), Den Haag, Netherlands, 26-30 September. Advance reading: see [here](https://github.com/WebOfTrustInfo/rwot11-the-hague/tree/master/advance-readings).
-
 # W3C Verifiable Credentials Holder Binding Specification
 
 by [Oliver Terbu](mailto:oliver.terbu@tspruceid.com), Spruce Systems, Inc. (Berlin/New York)
+
+## Links
+
+This is a proposed collaborative paper to be completed at [RWOT 2022](https://rwot11.eventbrite.com/), Den Haag, Netherlands, 26-30 September. See [Verifiable Credentials Holder Binding](../draft-documents/verfiable-credentials-holder-binding.md) for the full draft paper.
 
 ## Abstract
 
