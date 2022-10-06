@@ -5,7 +5,13 @@ and [Imad El Aouny](mailto:imad.elaouny@mydid.com), myDID SA
 
 RWOT XI, 2022, September
 
-## DID Privacy concerns 
+## NOTE: Deprecated content
+
+This initial paper was the source of [another paper/proposition called did-merkle that has been published as a draft paper](../draft-documents/did-merkle.md).
+
+# Original (deprecated) content below
+
+## DID Privacy concerns
 
 We developed a DID+VC Wallet following W3C specifications and were not fully satisfied how Identifiers are used by default everywhere all the time and how easily different actors like credential verifiers (or even websites only using authentication) can match / correlate / link / trace users between services.  
   
