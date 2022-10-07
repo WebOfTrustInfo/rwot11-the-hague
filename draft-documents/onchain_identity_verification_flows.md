@@ -4,12 +4,12 @@
 
 
 ## Editors: 
-- Juan Caballero (Centre.io)
-- Egidio Casati (Nymlab.it)
-- Robert Mao (ArcBlock.io)
-- Martin Riedel (identity.com) 
-- Fabrice Rochette (2060.io)
-- Andrea Scorza (LTOnetwork.com)
+- Juan Caballero ([Centre.io](https://Centre.io))
+- Egidio Casati ([NymLab.it](https://NymLab.it))
+- Robert Mao ([ArcBlock.io](https://ArcBlock.io))
+- Martin Riedel ([identity.com](https://identity.com)) 
+- Fabrice Rochette ([2060.io](https://2060.io))
+- Andrea Scorza ([LTOnetwork.com](https://LTOnetwork.com))
 
 ## Abstract
 
@@ -141,32 +141,31 @@ Because the solution space for the same problem is fresh and terminology is stil
     - Example enforcement mechanism: only transact SALES (or only transact TRANSFERS) to wallets that can deliver verifiable proof to the smart contract; 
     - Less popular enforcement mechanism: “interventionist” smart contract which can freeze, revoke, or seize asset held by non-conformant (or sanctioned) wallet aka“SEC accredited investor” (for fund raising) 
 
-### Potential Use-Cases (TBD)
-- “Non-consensual Airdrop” - many of today’s asset blockchains allow assets to be “dropped” into wallets without meaningful and/or verifiable consent. How non-consensual or non-verifiably consensual asset ownership or badging can be applied to these technologies should be considered
-
-## Architectural approaches compared: 
-- NFT (SBT) or other on-chain badge attached publicly to account; 
-    - Critical implementation details: relative opacity of token; identified “issuers”/authorities of badge/SBT;
-    - How do on-chain consumers nuance/filter/extend the information they can deduce from the badge?
-- On-Chain Verifiable Credential Verification
-    - VCs verified and/or validated on-chain - see Violet.co’s benchmarking exercise/proof of concept for minimum viable on-chain signature verification using EIP712
-- Verifiable Credentials + Trusted intermediary
-    - Do off-chain “translators” or “oracles” verify off-chain and communicate to smart contracts?
-- Verifiable Credentials + ZK Proofs
-    - On-chain consumers accept ZK Proof with transaction from wallet
 
 ## Further Research Directions
-Composable verification systems: Egidio’s architecture where smart contract checks the information for example egidio showcased the idea of having the lower level smart contract checking the credentials, instead of the DApp
-Considerations of consent - mention Violet.co badge contract 
-API DDoS/AuthN model discussions, CACAOs
+- Composable verification systems: 
+    - Egidio’s architecture where smart contract checks the information for example egidio showcased the idea of having the lower level smart contract checking the credentials, instead of the DApp
+- API DDoS/AuthN model discussions, CACAOs
+- Considerations of consent - mention Violet.co badge contract 
+- “Non-consensual Airdrop” - many of today’s asset blockchains allow assets to be “dropped” into wallets without meaningful and/or verifiable consent. How non-consensual or non-verifiably consensual asset ownership or badging can be applied to these technologies should be considered
 
 ## References: 
 
-- Vitalik’s Soulbound https://vitalik.ca/general/2022/01/26/soulbound.html 
-- Soulbound Whitepaper: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763
-- How To Use Verifiable Credentials And Verite To Build An Off-Chain NFT Allowlist https://docs.centre.io/blog/NFT-allowlists-with-verifiable-credentials-and-verite 
-- Pre-print draft of Chainlink Labs Research on ZK Circuit-based Verification: https://eprint.iacr.org/2022/321.pdf 
-https://www.theverge.com/2021/10/14/22726556/signal-founder-moxie-marlinspike-nft-whim-change-platform-shit-emoji-fragility  
+- [Soulbound Whitepaper][SBT]
+- [DeSoc Whitepaper][DeSoc]
+- [How To Use Verifiable Credentials And Verite To Build An Off-Chain NFT Allowlist][NFTallowlist] (Verite docs)
+- [Pre-print draft of Chainlink Labs Research on ZK Circuit-based Verification][defiZK] (iacr / Chainlink)
+- [NFT metadata fragility][poopMOJI] (the verge)
+- [MetaMask snap for VC/VP handling in crypto wallets][metamaskSNAP] (medium / BlockchainLAB UM)
+- [Proof-of-concept for verifying VCs on-chain on EVM chains][EVMonchainVC] (Violet.co research)
+
+[SBT]: https://vitalik.ca/general/2022/01/26/soulbound.html 
+[DeSoc]: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763
+[NFTallowlist]: https://docs.centre.io/blog/NFT-allowlists-with-verifiable-credentials-and-verite 
+[defiZK]: https://eprint.iacr.org/2022/321.pdf 
+[poopMOJI]: https://www.theverge.com/2021/10/14/22726556/signal-founder-moxie-marlinspike-nft-whim-change-platform-shit-emoji-fragility  
+[metamaskSNAP]:  https://medium.com/@blockchainlabum/its-time-to-prove-your-worth-in-dao-ssi-using-metamask-snaps-part-2-3-17eb98678054
+[EVMonchainVC]: https://twitter.com/RaphaelRoullet/status/1567553217915138048?s=20&t=wAj9fa4S3OoqJZukOm2Esg
 
 
 
