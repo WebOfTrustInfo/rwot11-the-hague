@@ -8,7 +8,7 @@ Our discussions also revealed the importance of a neutral **Ecosystem Coordinato
 We consider this a starting point for further discussions.
 
 ## Enterprise SSI - Stakeholder Mapping
-![SSI Stakeholder Map](/Enterprise_SSI-Stakeholder_Mapping.png)
+![SSI Stakeholder Map](stakeholder-mapping/Enterprise_SSI-Stakeholder_Mapping.png)
 
 | Role | Function |
 | ----------- | ----------- |
