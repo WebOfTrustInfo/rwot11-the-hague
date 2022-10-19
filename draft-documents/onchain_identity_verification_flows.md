@@ -13,11 +13,19 @@
 
 ## Abstract
 
+In recent months, this space has often been called "on-chain web3 identity," but marketing and the newness of many commentators to identity and compliance topics has largely muddied the waters and reduced the space to a three-way rivaly between "soul-bound tokens", verifiable credentials, and a loosely-defined "zero knowledge" set of solutions.  Working at a high level, we tried to identify a taxonomy that would be useful for mapping this solution space. 
+
+We defined the space as various architectures deploying on-chain artefacts to aid in the verification of claims about a wallet's controller. From there, we tried to bucket these into patterns and identity strengths and weaknesses of each against a short, exemplary list of use-cases.  The goal is not so much evaluating these, as any evaluation should be more squarely grounded in more detailed use-cases and non-technical requirements. Instead, we strove to identify traits inherent to each high-level bucket that could lead to high-level fitness-for-purpose evaluations, i.e. "strengths and weaknesses" of each.
+
+### Historical Context
+
 On August 8th, 2022, the US Department of Treasury brought regulation against a decentralized application (dApp) for the very first time, by bringing the liability for interactions with OFAC-sanctioned entities to ALL ethereum wallets that interacted with the Tornando Cash on chain mixer.
 
-This is a once-in-a-lifetime opportunity to leverage on-chain digital identity as a way to anticipate the regulation trajectory and unlock adoption of decentralized applications (including decentralized finance) with sophisticated compliance and reporting/auditing strategies.
+This is a once-in-a-lifetime opportunity to leverage on-chain digital identity as a way to anticipate the regulation trajectory and unlock adoption of decentralized applications (including decentralized finance) with sophisticated compliance and reporting/auditing strategies.  The impetus for this paper was largely to analyze different on-chain credential  / proof verification as part of a process for validating transactions involving digital assets (i.e. “DeFi transactions”).  
 
-In this paper we want to analyze different on-chain credential  / proof verification as part of a process for validating transactions involving digital assets (i.e. “DeFi transactions”).
+That said, we re-scoped the paper a bit to include other use-cases where a fundamentally pseudonymous, decentralized PKI system could be used to prove and verify realworld claims without necessarily deanonymizing the user in the transaction or outside of it.
+
+### Methodology
 
 Our analysis includes solutions with different privacy strategies, ranging from on-chain tokenized identities (i.e. “Soulbound Tokens”) to on-chain validation of Proofs derived from anonCreds.
 
@@ -29,61 +37,8 @@ This paper is intended for the following audience:
 
 This paper isn’t intended for asset holders and final users in general, as we expect they should benefit from sound regulation unlocking mass adoption via usability, while preserving on-chain privacy.
 
-
-## Mapping the space of on-chain identity verifications
-
-We grouped architectures into four high-level categories and analyzed them.  Here is a high-level summary of relative use-case fits and challenges.
-
-## Public On-Chain Badges that represent off-chain verifications
-Contracts can directly interpret on-chain badges to make decisions (Web 2.0 authentication or Web3 transaction authorization). This specifically can include information that is found within the Token itself. For example, all NFTs on a given blockchain containing a specific trait are allowed to execute an instruction on a specific smart contract. No additional calls to other data sources (elsewhere on-chain or off-chain) are required to accept or reject a transaction or make authentication decisions.
-
-While multiple ERC draft standards are being used, these are generally referred to in the market and in blockchain discussions as access based on [Soul-bound Tokens (SBTs)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) [1,2], i.e. an ERC721 without a transfer function badging the account.
-
-### Diagram 
-![](https://i.imgur.com/SRGnIWH.png)
-https://swimlanes.io/d/KWnh1JOTh 
-
-
-## Opaque On-Chain Badges that verify off-chain identities (trusted intermediary)
-
-In order to minimize identifying information in relation to the public approach, one solution is to minimize the exposed information to a well-defined minimum. Access decisions are still made by a smart contract combining badge metadata with additional data fetched just before and submitted at time of decision, whether that additional data comes from: 
-1. an API call from a dApp front-end to issuer or other intermediary, 
-1. an oracle call, 
-1. another smart contract, or 
-1. A valid transaction signed by the issuer or other trusted intermediary and delivereddeliver via the wallet. 
-
-In this approach, the additional call (which might be “expensive” computationally or in gas/transaction fee terms) is “validated” by the first, while the older data (status at time of issuance) is confirmed or updated (status at time of additional call). 
-
-### Replayability 
-Auditing and replaying transactions that involve a second data source pose real issues for these architectures– at a later time, the second-data source call needs to be verifiable and/or replayable. In some sense, the trust model and security model is the “worst of two worlds” of the two data sources.  For example,
-1. An API must allow “historical queries,” i.e. the API call needs to be replayable and verifiable after the underlying state changes (which changes the trust model for some use-cases). One way of strengthening this replay on a technical level is to include current block_height in query and response. Historical query could also be protected or authorized per-wallet by an off-chain signature from the wallet, i.e. a CACAO session receipt.
-1. Oracles must similarly maintain and verify historical state in the case of future replay.
-1. Dependencies on additional smart contracts increase code-auditing surface and trust threshold.
-1. If the second data source passes information to first transactions as an off chain transaction (a message that could be written to the chain by the first smart contract but is not executed), the first contract needs to somehow store and access this non-executed transaction for the entire flow to be replayable. 
-
-### Diagram 
-Simple Diagram for case #2
-
-![](https://i.imgur.com/DHZ8pW8.png)
-https://swimlanes.io/d/4221tERaE
-
-## Blinded Off-Chain Proof Verified On-Chain 
-Smart Contracts receive a ZK proof generated elsewhere (i.e. off-chain, in-wallet, in-dapp, etc), which is verifiably derived from a previously issued (capable) credential. The proof is generated by the credential holder within the bounds of the ZK framework, proofing one or more predicates and/or attributes about the credential against a static credential schema. A smart contract receives the given proof and verifies its correctness (against the same credential schema) and determines if the transaction can be effectively processed or not. This is often referred to as an “Anonymous Credential” (because it relies on a correlation-resistant credential of the same name) or, more precisely, as a “Fully pseudonymous proof” because it links an anonymous credential to a pseudonymous identifier (i.e. a blockchain account). 
-
-### Diagram 
-![](https://i.imgur.com/qD3Wq0q.png)
-https://swimlanes.io/u/TukH4NaJU
-
-## P2P Off-Chain Verification
-Alice wants to send funds to Bob. Alice sends Bob a signed transaction authorizing a transfer to Bob. Before deciding whether or not to forward this valid transaction to the Asset Smart Contract, Bob would like to validate Alice according to some criteria. Bob requests a proof against that criteria (or Bob already received it with the authorization). Bob verifies proof to determine if he will send Alice’s transaction to the chain and thus accept the transaction. This use case applies when Alice would like to verify funds paid back by a decentralized service.
-
-### Diagram 
-![](https://i.imgur.com/kxV6kDT.png)
-https://swimlanes.io/d/rVMZY7dTb 
-
 ## Terminology
 Because the solution space for the same problem is fresh and terminology is still shifting, it is important to align to a common nomenclature within the scope of the analysis. This will be defined below.
-
 
 #### Credential Issuer
 - AKA Issuer (context sensitive)
@@ -128,18 +83,96 @@ Because the solution space for the same problem is fresh and terminology is stil
 - AKA Data Controller (GDPR), Identity Provider (OIDC), KYC Custodian
 - Storer and controller of data needed to verify identity of an actor (can be internal or outsourced). Some wallets interact directly with a custodial data store (encrypted data vault, decentralized web node, personal data store, locker, etc) which can also be considered custodial, though more regulated custodians with complex authorization may be needed for some regulated use cases.
 
+
+## Architecture A: Public On-Chain Badges that represent off-chain verifications
+Contracts can directly interpret on-chain badges to make decisions (Web 2.0 authentication or Web3 transaction authorization). This specifically can include information that is found within the Token itself. For example, all NFTs on a given blockchain containing a specific trait are allowed to execute an instruction on a specific smart contract. No additional calls to other data sources (elsewhere on-chain or off-chain) are required to accept or reject a transaction or make authentication decisions.
+
+While multiple ERC draft standards are being used, these are generally referred to in the market and in blockchain discussions as access based on [Soul-bound Tokens (SBTs)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) [1,2], i.e. an ERC721 without a transfer function badging the account.
+
+### Diagram 
+![](https://i.imgur.com/SRGnIWH.png)
+https://swimlanes.io/d/KWnh1JOTh 
+
+
+## Architecture B: Opaque On-Chain Badges that verify off-chain identities (trusted intermediary)
+
+In order to minimize identifying information in relation to the public approach, one solution is to minimize the exposed information to a well-defined minimum. Access decisions are still made by a smart contract combining badge metadata with additional data fetched just before and submitted at time of decision, whether that additional data comes from: 
+1. an API call from a dApp front-end to issuer or other intermediary, 
+1. an oracle call, 
+1. another smart contract, or 
+1. A valid transaction signed by the issuer or other trusted intermediary and delivereddeliver via the wallet. 
+
+In this approach, the additional call (which might be “expensive” computationally or in gas/transaction fee terms) is “validated” by the first, while the older data (status at time of issuance) is confirmed or updated (status at time of additional call). 
+
+### Replayability 
+Auditing and replaying transactions that involve a second data source pose real issues for these architectures– at a later time, the second-data source call needs to be verifiable and/or replayable. In some sense, the trust model and security model is the “worst of two worlds” of the two data sources.  For example,
+1. An API must allow “historical queries,” i.e. the API call needs to be replayable and verifiable after the underlying state changes (which changes the trust model for some use-cases). One way of strengthening this replay on a technical level is to include current block_height in query and response. Historical query could also be protected or authorized per-wallet by an off-chain signature from the wallet, i.e. a CACAO session receipt.
+1. Oracles must similarly maintain and verify historical state in the case of future replay.
+1. Dependencies on additional smart contracts increase code-auditing surface and trust threshold.
+1. If the second data source passes information to first transactions as an off chain transaction (a message that could be written to the chain by the first smart contract but is not executed), the first contract needs to somehow store and access this non-executed transaction for the entire flow to be replayable. 
+
+### Diagram 
+Simple Diagram for case #2
+
+![](https://i.imgur.com/DHZ8pW8.png)
+https://swimlanes.io/d/4221tERaE
+
+## Architecture C: Blinded Off-Chain Proof Verified On-Chain 
+Smart Contracts receive a ZK proof generated elsewhere (i.e. off-chain, in-wallet, in-dapp, etc), which is verifiably derived from a previously issued (capable) credential. The proof is generated by the credential holder within the bounds of the ZK framework, proofing one or more predicates and/or attributes about the credential against a static credential schema. A smart contract receives the given proof and verifies its correctness (against the same credential schema) and determines if the transaction can be effectively processed or not. This is often referred to as an “Anonymous Credential” (because it relies on a correlation-resistant credential of the same name) or, more precisely, as a “Fully pseudonymous proof” because it links an anonymous credential to a pseudonymous identifier (i.e. a blockchain account). 
+
+### Diagram 
+![](https://i.imgur.com/qD3Wq0q.png)
+https://swimlanes.io/u/TukH4NaJU
+
+## Architecture D: P2P Off-Chain Verification
+Alice wants to send funds to Bob. Alice sends Bob a signed transaction authorizing a transfer to Bob. Before deciding whether or not to forward this valid transaction to the Asset Smart Contract, Bob would like to validate Alice according to some criteria. Bob requests a proof against that criteria (or Bob already received it with the authorization). Bob verifies proof to determine if he will send Alice’s transaction to the chain and thus accept the transaction. This use case applies when Alice would like to verify funds paid back by a decentralized service.
+
+### Diagram 
+![](https://i.imgur.com/kxV6kDT.png)
+https://swimlanes.io/d/rVMZY7dTb 
+
+
 ## Use cases 
 
-- Regulated protocol would like to restrict or gated access to a smart contract (or even to a dApp frontend) to wallets that have been cleared against a predetermined wallet-controller criterion relevant to its regulators
-    - Example criteria: Only wallets whose controllers have been KYC-onboarded by trusted KYC custodian can provide KYC information for a given transaction upon jurisdictionally unambiguous subpoena or other authenticated request
+1. Regulated protocol would like to restrict or gate access to a smart contract (or even just to a dApp frontend) to wallets that have been cleared against a predetermined wallet-controller criterion relevant to its regulators
+    - Example criteria: Only wallets whose controllers have been KYC-onboarded by atrusted KYC custodian can provide KYC information for a given transaction upon jurisdictionally unambiguous subpoena or other authenticated request
     - Real-world examples: Verite.id ecosystem issuers like Circle and Violet; KYCDAO  ; aka “KYC-gated DeFi”
-- Allowlist/denylist for NFT mint events - Regulated criteria encoded as offline VC, checked before mint transaction
-- Regulated protocol would like to restrict or gated access to a smart contract or a dapp  to wallets that have been cleared against a predetermined account-history criterion relevant to its regulators
+    - Auditing requirement: some smart-contract interactions require all parties trusting/relying on a custodian to be able to query custodian for underlying PII in case of subpoena, etc
+
+2. Allowlist/denylist for NFT mint events - Regulated criteria encoded as offline VC, checked before mint transaction
+    - Regulated protocol would like to restrict or gated access to a smart contract or a dapp  to wallets that have been cleared against a predetermined account-history criterion relevant to its regulators
     - Example criteria: “account has never transacted with Tornado Cash” or “account not flagged as suspicious by X, Y or Z machine-learning algorithm trusted by regulators”
-- Tokenized security would like contract-level enforcement of wallet-holder requirements
+
+3. Tokenized security would like contract-level enforcement of wallet-holder requirements
     - Example requirements: wallet controller must be KYC’d or KYB’d with known jurisdictional competent authority and, if required, have verifiable affidavit of Investor Accreditation
-    - Example enforcement mechanism: only transact SALES (or only transact TRANSFERS) to wallets that can deliver verifiable proof to the smart contract; 
-    - Less popular enforcement mechanism: “interventionist” smart contract which can freeze, revoke, or seize asset held by non-conformant (or sanctioned) wallet aka“SEC accredited investor” (for fund raising) 
+    - Example enforcement mechanism: only transact SALES (or only transact TRANSFER methods) to wallets that can deliver verifiable proof to the smart contract; enforced by EIP712 or other metatransaction/multisig mechanism requiring proof to be checked before transaction is accepted
+    - Less popular enforcement mechanism: “interventionist” smart contract which can freeze, revoke, or seize asset held by non-conformant (or sanctioned) wallet aka “SEC accredited investor” (for fund raising) 
+
+
+## High-Level Analysis & Conclusions
+
+We grouped architectures into four high-level categories and analyzed them.  Here is a high-level summary of relative use-case fits and challenges.
+
+
+
+### Properties Chart
+
+|Architecture|How Reconstruct Audit Trail|Trusted Intermediaries|Simplicity|Implementation complexity|Flexibility|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|A|On-chain receipts + Issuer records|None|High|Low|Low|
+|B|All parties (issuer+verifier) must be subpoenad/cooperate|Verifier must be trusted by relying party and wallet controller|Low|High|High|
+|C|Issuer & Wallet Controller need to cooperate to reconstruct (poss. also circuit-building middleware)|Whoever combines ZK inputs into a "circuit" needs to be trust by all|Medium|Medium (depends on SDKs & middleware used)|Medium|
+|D|Issuer & 2 Wallet Controllers need to cooperate to reconstruct|Routing/Messaging infra, possibly also proofing/dereferencing support for complex VCs|High|High (until DIDComm is more mature?) |High|
+
+### Architecture/Use Cases Applicability
+
+|Architecture|Use case 1|Use Case 2|Use Case 3|
+|:---:|:---|:---|:---|
+|A|Fastest|Best for single-jurisdiction/single-criterion minting contexts|Too brittle|
+|B|Best (brownfield)|May be too complex for today's NFT industry and use cases|May require as-yet theoretical tooling (i.e. Oracle connection to verifier/intermediary)|
+|C|Best (greenfield)|May be too technically demanding for today's NFT industry and usecases|Good building block of a compliance-built-in stack/VM/etc|
+|D|Unrealistic|Depends on business & regulatory model of NFT mint context|Possibly a good fit for FATF-conformant reporting, esp. for self-custody wallets|
+
 
 
 ## Further Research Directions
