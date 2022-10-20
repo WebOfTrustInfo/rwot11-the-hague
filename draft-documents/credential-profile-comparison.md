@@ -1,3 +1,7 @@
+NOTE - we have moved the draft paper to a new repository, to allow annyone to open PRs and issues for edits, suggestions, questions or any other feedback: https://github.com/vcstuff/credential-profile-comparison/blob/main/credential-profile-comparison.md
+
+
+
 # RWOT11: A credential profile comparison matrix to facilitate technical and non-technical decision making
 
 ## Authors
