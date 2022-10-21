@@ -71,7 +71,6 @@ Alice started as a custodian but over time and through observation and conversat
   
   Layla creates a simple Verifiable Presentation to send her review to the conference organizer's digital wallet where reviews are collated. The linked data endorsement is of type: review and contains the narrative of her review comments
 
-
 ### An ecommerce product review (5-star type)
 
 ### Assertion that an image/video was taken by a camera crew is not been altered from the time the images were captured.  (for https://proofmode.org/)
@@ -84,12 +83,10 @@ Follow up with Joe Andrieu re: the issues of image capture and using multiBase h
 ### An endorsement that attests to authenticity of an article posted in a published news service
 
 ### Reputation systems for social media platforms
-.l
+
 ### Social impact - philanthropic grant helped attesting individual (or witnessed)
 
 ### Academic class completed or exam score achieved
-
-## Composing Credentials via Anchored Resources / Hashlinking
 
 ### Hashlink Prior Art
 
