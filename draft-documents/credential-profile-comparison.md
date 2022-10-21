@@ -1,7 +1,3 @@
-NOTE - we have moved the draft paper to a new repository, to allow annyone to open PRs and issues for edits, suggestions, questions or any other feedback: https://github.com/vcstuff/credential-profile-comparison/blob/main/credential-profile-comparison.md
-
-
-
 # RWOT11: A credential profile comparison matrix to facilitate technical and non-technical decision making
 
 ## Authors
@@ -9,9 +5,12 @@ Andre Kudra*,
 Torsten Lodderstedt,
 Paul Bastian,
 Mirko Mollik,
-Maaike van Leuken, 
-Caspar Roelofs.
+Maaike van Leuken,
+Caspar Roelofs
 
+## Note
+
+The draft paper has been [moved to a new repository](https://github.com/vcstuff/credential-profile-comparison/blob/main/credential-profile-comparison.md), to allow anyone to open PRs and issues for edits, suggestions, questions or any other feedback.
 ## Abstract
 In this paper, a *comparison matrix* for the wide variety of credential formats - such as [W3C Verifiable Credentials](https://w3c.github.io/vc-data-model/), [AnonCreds](https://anoncreds-wg.github.io/anoncreds-spec/), ISO-standard [Mobile Driving License (mDL)](https://www.iso.org/standard/69084.html) - and the various related signing algorithms, revocation mechanisms, and key management systems (collectively referred to as **credential profiles**) is introduced. The [credential profile comparison matrix](https://docs.google.com/spreadsheets/d/1Z4cYfjbbE-rABcfC-xab8miocKLomivYMUFibOh9BVo) is a living document that serves as an accessible resource for an in-depth evaluation of the technical requirements and their technical and non-technical implications for different use-cases and objectives. This paper introduces the rationale behind this matrix, the various properties that are included in the matrix and their definitions, and serves as an application guide on how to use the matrix for more informed technical and non-technical discussions and decision making.
 
