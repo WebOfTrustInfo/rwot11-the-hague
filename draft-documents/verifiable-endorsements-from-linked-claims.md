@@ -13,8 +13,10 @@
 - Confirm that VC-DATA-MODEL v2.0 has the 'effectiveDate' field
 - Decide on top-level credential type
 - Decide on context url
-- "howKnown": "first-hand",   // provenance? source? check journalism term
-
+- "howKnown": "first-hand", // provenance? source? check journalism term. The terms "primary", "secondary" and "teritary" are most 
+  appropriate. These are similar to attribution terms, "on the record", "not attributable", also called "on background" or 
+  "on deep background" , "off the record", all of which pertain to revealing the identity of the source of information. 
+  Preference: "primarySource", "secondarySource", "teritiarySource".
 
 ## Abstract
 
