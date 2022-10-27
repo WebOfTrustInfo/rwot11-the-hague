@@ -2,7 +2,6 @@
 
 **Authors:** Shannon Appelcline (Blockchain Commons), Kate Sills (Independent, work funded by Digital Contract Design), Carsten Stöcker (Spherity), Cihan Saglam (Danube Tech)
 
-
 ## Abstract
 
 Decentralized identity solutions, such as DID methods, tend to be designed to protect against certain attacks, but the purpose of that design is not usually explicitly stated in any architectural description or threat documentation. In particular, some DID methods have costly on-chain requirements. We can today see that these DID methods were purposefully shaped, but it's not clear why such decisions were made. The purpose of this paper is to list a few colorful attacks on DID methods so that we can better understand what threats a system might be vulnerable to.
@@ -20,12 +19,14 @@ A cousin of SDLC is Computerized System Validation (CSV) which is widely used in
 Both, SDLC and CSV, are focusing on the process of testing/validating/qualifying a regulated computerized system to ensure that it does exactly what it is designed to do in a consistent and reproducible manner that is as safe, secure and reliable. The state of validated software systems and their electronic digital records and signatures shall be maintained, tested and controlled through the entire life cycle until the software is end of life and the retention period is fully expired.
 
 These processes include the following activities:
+
 1. System classification wrt/ legal compliance applicability and a risk-based classification with impact on product quality, safety and data integrity
-2. Creation of a test/validation/qualification plan based on the risk-based categorisation
+2. Creation of a test/validation/qualification plan based on the risk-based categorization
 3. SLDC requirement definition and implementation
 4. Formal test verification, quality assurance and documentation
 
-It shall be understood that there are multiple legal compliance requirements that affect validated software. Examples are: eIDAS, GDPR, GxP, HIPAA, or PCI. These compliance requirements are defining controls and non-functional requirements (NFRs). Common attributes of the NFRs shall be in scope of security testing[^wikisectesting]. These common attributes include
+It shall be understood that there are multiple legal compliance requirements that affect validated software. Examples are: eIDAS, GDPR, GxP, HIPAA, or PCI. These compliance requirements are defining controls and non-functional requirements (NFRs). Common attributes of the NFRs shall be in scope of security testing[^wikisectesting]. These common attributes include:
+
 * authentication,
 * authorization,
 * confidentiality incl. data privacy,
@@ -53,7 +54,7 @@ As we are only focusing on the attack surface of DID document operations the ent
 
 ### 1. Creation: The DID Creation Switcharoo
 
-![](./images/creation.jpeg)
+![Creation: The DID Creation Switcharoo](./images/creation.jpeg)
 
 **Keywords:** DID creation, DID derivation from public key, interface with KMS, malicious derivation code injection, replacement of DIDs, secure SW supply chain
 
@@ -80,6 +81,7 @@ Matt, a wealthy celebrity and happy F²B customer, parses the invoice message, r
 The user story described above is not a theoretical threat. Attacks on companies like SolarWinds [^SolarWinds], Colonial Pipeline [^Colonial] and Codecov [^Codecov] showed how threat actors could compromise organizations on a mass scale by planting malware in software updates from trusted vendors.
 
 **Risks:**
+
 1. **Blitz Identity Theft.** Victims create public/private key pairs and derive DID identifiers from their corresponding public keys. They assume they control the DIDs with their private keys stored in a secure KMS. Victims might activate business processes or service endpoints with their DIDs or share their DIDs with external parties. They do not detect that an attacker switched the DIDs with a tiny code injected into the DID derivation algorithm until they sign a data payload with their corresponding private keys and the signature in the proof is being verified. The time between DID creation and the detection of the 'DID Creation Switcharoo' is the window of opportunity for 'identity theft' for the threat actor.
 2. **Service Endpoint Attack.** Fresh DIDs that are shared with supply chain partners can be configured by the attacker. Attackers can configure key material and service end-points. This configuration enables them to reroute authenticated and encrypted communication to their own endpoints.
 3. **Compliance Attack**. Threat actors can immediately start signing on behalf of the victim and create forged compliance data and audit logs.
@@ -97,7 +99,7 @@ The user story described above is not a theoretical threat. Attacks on companies
 
 ### 2. Read: The Poop-Emoji DID Doc
 
-![](./images/read.jpeg)
+![Read: The Poop-Emoji DID Doc](./images/read.jpeg)
 
 **Keywords:** duplicity, read
 
@@ -130,7 +132,7 @@ Mark is able to see the endorsement, so he stands by his own endorsement to Clif
 
 ### 3. Read/Update: Don't Talk about Fight Club (unless you want to compare DIDs)
 
-![](./images/read-update.jpeg)
+![Read/Update: Don't Talk about Fight Club](./images/read-update.jpeg)
 
 **Keywords:** DID update, DID read, bad reputation, double-spend identity, canonical update, forked identity, malicious controller attack
 
@@ -152,11 +154,12 @@ Tyler was able to make sure that George's review would be dropped because he cho
 
 Because no one in Fight Club talks about Fight Club, the split identity is not discovered.
 
-**Risks**
+**Risks:**
+
 1. **Hiding Bad Reputation**: Reputation usually requires collecting information from multiple sources about the same subject. However, if the subject is able to selectively use a different identifier, software that naively correlates only based on identifier (and not on the entity that is the subject) will miss the bad reviews.
 2. **Repudiation**: Being able to carry over reputation to a new identity and then drop the identity at will without anyone noticing creates a repudiation problem. How does a verifier know that you controlled the newly created DID if the update was not recorded anywhere?
 
-**Mitigations**
+**Mitigations:**
 
 1. **Canonical updates, such as transactions on a blockchain:** If all updates for a particular DID must be recorded in a particular location where the updates are checked for contradiction, then the subject cannot split off a new DID specifically for bad reviews while retaining their original DID as their main identity. While the subject can of course maintain multiple DIDs from the very beginning, by enforcing canonical updates, we can at least prevent the victim from seeing the new DID as a recent update of the main identity, carrying over the main identity's reputation.
 2. **Canonical bindings of DIDs to real world entities:** For particular use cases, it might be appropriate for a new kind of DID method where the identifier is not random. In this case, the identifier matches the human-readable reference -- for example, the business name or address of a restaurant. However, this is similar to a "real name" policy, which takes away the ability of the subject to create multiple identifiers or identify by a different name than determined by authorities. Additionally, this approach leads to vulnerability to spoofing attacks and requires potentially costly governance of the identifier namespace.
@@ -164,7 +167,7 @@ Because no one in Fight Club talks about Fight Club, the split identity is not d
 
 ### 4. Update: Harmer in the Dwell Latency Attack
 
-![](./images/update.jpeg)
+![Update: Harmer in the Dwell Latency Attack](./images/update.jpeg)
 
 **Keywords:** timing, update
 
@@ -195,13 +198,11 @@ Arthur is able to push a key rotation of his own before Victor's rotation goes t
 
 ### 5. Delete: The Dishonorable DID Deletion
 
-![](./images/delete.jpeg)
-
+![Delete: The Dishonorable DID Deletion](./images/delete.jpeg)
 
 **Keywords:** deletion, reputability
 
 **Summary:** If a DID method defines off-chain creation and allows update/deactivate operations, those should be provably documented. Solely removing the corresponding private key to a publicly resolvable DID neither equates to deactivating nor complying with the DID Core specs. The ethereum-based method, "did:ethr", defines two ways to deactivate a DID. According to its specs, deactivation can be done off-chain by removing the private key when a DID has no update on the verifiable data registry.
-
 
 **User Story:** Bob was a proud member of Pleasantville, a virtual world in Metaverse. He enjoyed the relationships with other members, but more and more, it showed him how terrible Real Life was. While everybody smiled at his tall-dark-and-handsome avatar in Pleasantville, not one of his building complex neighbors liked him. While he had a weekly date in Pleasantville, he hadn't been outside his apartment in almost two years.
 
@@ -272,4 +273,3 @@ Therefore developers shall implement the mitigation measures described above and
 [^Colonial]: Dark Reading, May 2022, [Colonial Pipeline 1 Year Later: What Has Yet to Change?](https://www.darkreading.com/vulnerabilities-threats/colonial-pipeline-1-year-later-what-has-yet-to-change-)
 
 [^Codecov]: Dark Reading, April 2021, [Attackers Compromised Code-Checking Vendor's Tool for Two Months](https://www.darkreading.com/attacks-breaches/attackers-compromised-code-checking-vendor-s-tool-for-two-months)
-
