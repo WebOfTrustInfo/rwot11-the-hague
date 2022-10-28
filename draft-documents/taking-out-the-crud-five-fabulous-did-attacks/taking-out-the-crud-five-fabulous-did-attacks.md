@@ -4,7 +4,7 @@
 
 ## Abstract
 
-Decentralized identity solutions, such as DID methods, tend to be designed to protect against certain attacks, but the purpose of that design usually is not explicitly stated in any architectural description or threat documentation. In particular, some DID methods have costly on-chain requirements that are otherwise unjustified. We can today see that these DID methods were purposefully shaped, but it's not clear why such decisions were made. The purpose of this paper is to describe a few colorful attacks on DID methods so that we can better understand what threats a system might be vulnerable to.
+Decentralized identity solutions, such as DID methods, tend to be designed to protect against certain attacks, but the purpose of that design usually is not explicitly stated in any architectural description or threat documentation. In particular, some DID methods have costly on-chain requirements that must have had a reasoning behind their requirement. We can today see that these DID methods were purposefully shaped, but it's not clear why such decisions were made. The purpose of this paper is to describe a few colorful attacks on DID methods so that we can better understand what threats a system might be vulnerable to.
 
 Although we derived the examples in this paper by examining current DID methods, we believe these attack vectors are more general, even for systems not using DIDs. The goal is to support engineers and developers who are developing decentralized identity solutions to safeguard their work and make it secure and compliant.
 
@@ -12,9 +12,7 @@ Although we derived the examples in this paper by examining current DID methods,
 
 Security, as part of the software development process, is an ongoing process involving people and practices. It ensures application confidentiality, integrity, and availability. Secure software is the result of security-aware software development processes where security is built in and software is thus developed with security in mind.[^OWASP1]
 
-Security is most effective if planned, managed, tested and controlled throughout every stage of the Software Development Life Cycle (SDLC), especially for critical applications concerning health, safety, regulatory compliance or critical infrastructures. Government agencies and industries such as travel and transport, energy, or defense all adhere to formal and strict SDLC processes.
-
-A cousin of SDLC is Computerized System Validation (CSV) which is widely used in the Pharmaceutical, Life Sciences, and BioTech industries.
+Security is most effective if planned, managed, tested, and controlled throughout every stage of the Software Development Life Cycle (SDLC), especially for critical applications concerning health, safety, regulatory compliance, or critical infrastructures. Government agencies and industries such as travel and transport, energy, or defense all adhere to formal and strict SDLC processes. A cousin of SDLC is Computerized System Validation (CSV) which is widely used in the Pharmaceutical, Life Sciences, and BioTech industries.
 
 Both SDLC and CSV focus on the process of testing/validating/qualifying a regulated computerized system to ensure that it does exactly what it is designed to do in a consistent and reproducible manner that is as safe, secure, and reliable. The state of validated software systems and their electronic digital records and signatures shall be maintained, tested, and controlled through the entire life cycle until the software is end of life and the retention period is fully expired.
 
@@ -40,9 +38,9 @@ The emergence of decentralized identity technology will soon be a foundational p
 
 > "When it is your job to keep billions of people and devices safe online, you have to live and breathe and see the internet [as well as the underlying identity & trust infrastructure] just like the attackers do.", Hacking Google [^HackingGoogle]
 
-A critical part of security test planning is threat modeling. In threat modeling a data flow model is created and vulnerabilities among different software components as well as internal and external system and human user interfaces are analyzed from the perspective of attackers. Such a data flow model touches all aspects and modules of the digital identity system and its interfaces. Attackers only need a single entry point to inject malicious code or conduct an identity theft attack. Each interface or code dependency thus presents another unique opportunity for threat actors to attack.
+A critical part of security-test planning is threat modeling. In threat modeling a data flow model is created and vulnerabilities from the perspective of attackers are analyzed among different software components as well as internal and external system and human user interfaces. Such a data flow model touches all aspects and modules of the digital identity system and its interfaces. Attackers only need a single entry point to inject malicious code or conduct an identity theft attack. Each interface or code dependency thus presents another unique opportunity for threat actors to attack.
 
-This paper focuses on a subset of the data flow model of an identity system that is related to the data flow interactions with regards to creating, reading, updating and deleting (CRUD) DID documents. It describes threat scenario categories of DID-methods and determines their vulnerabilities. We introduce user stories for each threat scenario from the perspective of the victim and attacker.
+This paper focuses on a subset of the data flow model of an identity system that is related to the data flow interactions with regards to creating, reading, updating, and deleting (CRUD) DID documents. It describes threat scenario categories of DID-methods and determines their vulnerabilities. We introduce user stories for each threat scenario from the perspective of the victim and attacker.
 
 As we are only focusing on the attack surface of DID document operations, the larger field of secure Key Management Systems (KMS) and Random Number Generator attacks are out of scope, but the interface between the KMS and the software that facilitates the DID operations is in scope of the paper.
 
@@ -86,7 +84,7 @@ The user story described above is not a theoretical threat. Attacks on companies
 **Mitigations:**
 
 1. **Secure the CI/CD Pipeline.** Securing the CI/CD pipeline includes security scanning tools for vulnerabilities for both open-source SW and commercial off the shelf (COTS) SW components.
-2. **Audit by Third Party SW Provider.** Auditing the Information Security Management System (ISMS, ISO 27001) and SDLC processes of COTS SW development partners or solution providers allows a systematic methodology for discovering malicious injection of this sort.
+2. **Require Audit by Third Party SW Provider.** Auditing the Information Security Management System (ISMS, ISO 27001) and SDLC processes of COTS SW development partners or solution providers allows a systematic methodology for discovering malicious injection of this sort.
 3. **Double Check the DID Derivation**. A user of a DID software package would derive a DID with an independent, validated software tool.
 4. **Sign with DIDs Prior to any Internal or External Usage.** Checking a new derived DID by signing a transaction and verifying the signature allows another methodology for double-checking the derivation.
 5. **Establish Ecosystem Conformance Criteria.** A first conformance criterion can define a valid DID document (and corresponding DID) when the owner has performed at least one signed DID document operation. A second conformance criterion can establish a control requiring that DID owners must perform DID document operations and check that the DID documents were signed with the correct corresponding private key in their secure KMS systems. As a consequence, default DID documents in on-chain DID registries shall not be accepted as a valid DID (e.g. default DID documents of DID:ethr).
@@ -97,7 +95,7 @@ The user story described above is not a theoretical threat. Attacks on companies
 
 ![Read: The Poop-Emoji DID Doc](./images/read.jpeg)
 
-**Keywords:** DID read, duplicity, mutable DID documents, fake identities
+**Keywords:** DID read, duplicity, fake identities, mutable DID documents, nonattributability, nonverifiability
 
 **NFR Attributes:** attributability, availability, integrity
 
@@ -130,29 +128,29 @@ Mark is able to see Cliff's endorsement, so he stands by his own endorsement to 
 
 ![Read/Update: Don't Talk about Fight Club](./images/read-update.jpeg)
 
-**Keywords:** DID update, DID read, bad reputation, double-spend identity, canonical update, forked identity, malicious controller attack
+**Keywords:** DID update, DID read, bad reputation, canonical update, double-spend identity, forked identity, malicious controller attack
 
 **NFR Attributes:** attributability, non-repudiation
 
 **Summary:** If a malicious identity controller anticipates negative feedback from a user or customer, the controller can give the user a DID which is not the identity that other people look to for reputation, thus dodging the bad review.
 
-From the user's perspective, this attack is difficult to detect in cases where public knowledge is not common (dark markets, black markets, fight clubs, etc.). It can simply look like the controller has updated their DID to a new identifier in a DID method that doesn't support canonical updates (e.g. rotate their keys in key-based DID methods).
+From the user's perspective, this attack is difficult to detect in cases where public knowledge is not common (dark markets, black markets, fight clubs, etc.). It can simply look like the controller has updated their DID to a new identifier when using a DID method that doesn't support canonical updates (e.g. rotatation of keys in key-based DID methods).
 
-**Examples:** did:key and similar DID methods if they loosened their restrictions and allowed updates
+**Examples:** did:key and similar DID methods if they loosened their restrictions and allowed updates.
 
-**Assumptions:** The victim has reason not to publicly claim involvement with the identity controller
+**Assumptions:** The victim has reason not to publicly claim involvement with the identity controller.
 
-**User Story:** George joins Fight Club, an underground men's group. At first, he's thrilled to be included but as time goes on he realizes that Tyler, the leader, is abusive. He leaves the group, but that's not enough — he wants to warn others. He writes a negative review of Tyler with Tyler's DID as the subject of the review.
+**User Story:** George joins Fight Club, an underground men's group. At first, he's thrilled to be included but as time goes on he realizes that Tyler, the leader, is abusive. He leaves the group, but that's not enough: he wants to warn others. He writes a negative review of Tyler with Tyler's DID as the subject of the review.
 
 Unfortunately, unbeknownst to George, no one will ever read his review of Tyler. When people hear about Fight Club and want to check it out, the invitees see a different DID, one that has only good reviews.
 
-Tyler was able to make sure that George's review would be dropped because he chose to use a DID method that allowed updates without having to publicly announce them and without deactivating the old DID. Thus, from George's perspective, nothing is wrong: Tyler just did a regular key rotation. But the new invitees never hear of any update to a new DID and never know that George's review might be pertinent to them.
+Tyler was able to make sure that George's review would be dropped because he chose to use a DID method that allowed updates without having to publicly announce them and without deactivating the old DID. George was given the updated DID; everyone else was given the original. Thus, from George's perspective, nothing is wrong: Tyler just did a regular key rotation. But the new invitees never hear of any update to a new DID and never know that George's review might be pertinent to them.
 
 Because no one in Fight Club talks about Fight Club, the split identity is not discovered.
 
 **Risks:**
 
-1. **Bad Reputation Masking**: Reputation usually requires the collection of information from multiple sources about the same subject. However, if the subject is able to selectively use a different identifier, software that naively correlates only based on identifier (and not on the entity that is the subject) will miss the bad reviews.
+1. **Bad Reputation Suppression**: Reputation usually requires the collection of information from multiple sources about the same subject. However, if the subject is able to selectively use a different identifier, software that naively correlates only based on identifier (and not on the entity that is the subject) will miss the bad reviews.
 2. **Repudiation**: Being able to carry over reputation to a new identity and then drop the identity at will without anyone noticing creates a repudiation problem. How does a verifier know that you controlled the newly created DID if the update was not recorded anywhere?
 
 **Mitigations:**
@@ -165,7 +163,7 @@ Because no one in Fight Club talks about Fight Club, the split identity is not d
 
 ![Update: Harmer in the Dwell Latency Attack](./images/update.jpeg)
 
-**Keywords:** DID update, timing, frontrunning, dwell time, latency, advanced persistent threat
+**Keywords:** DID update, advanced persistent threat, dwell time,  frontrunning, latency, timing
 
 **NFR Attributes:** authentication, authorization,  availability, confidentiality, data privacy
 
@@ -196,9 +194,9 @@ Arthur is able to push a key rotation of his own before Victor's rotation goes t
 
 ![Delete: The Dishonorable DID Deletion](./images/delete.jpeg)
 
-**Keywords:** DID delete, reputability
+**Keywords:** DID delete, cthulhu, repudiation, spec compliance, trust
 
-**Summary:** If a DID method defines off-chain creation and allows update/deactivate operations, those should be provably documented. Solely removing the corresponding private key to a publicly resolvable DID neither equates to deactivating nor complying with the DID Core specs. 
+**Summary:** If a DID method defines off-chain creation and allows update/deactivate operations, those should be provably documented. Solely removing the corresponding private key to a publicly resolvable DID neither equates to deactivating nor complies with the DID Core specs. 
 
 **Examples:** The ethereum-based DID method, "did:ethr", defines two ways to deactivate a DID. According to its specs, deactivation can be done off-chain by removing the private key when a DID has no update on the verifiable data registry.
 
@@ -217,7 +215,7 @@ He was invincible. He could take risks nobody dared to take. He lived through ot
 **Mitigations:**
 
 1. **Require Provable Change History:** DIDs resolving from public verifiable data registries should have all the state changes on-chain.
-2. **Intitiate Conformance Checks for DID Methods:**  If a DID method supports deactivation operation, the way to perform it shouldn't cause any ambiguity, nor should it rely on the honesty of the controllers. It should conform to the requirements of DID Core specs and return a deactivation state upon a resolution.
+2. **Intitiate Conformance Checks for DID Methods:**  If a DID method supports a deactivation operation, the way to perform it shouldn't cause any ambiguity, nor should it rely on the honesty of the controllers. It should conform to the requirements of DID Core specs and return a deactivation state upon resolution.
 
 ## Conclusion
 
@@ -233,7 +231,7 @@ It shall be understood that identity systems must be embedded into a trust frame
 
 To establish trust, solution providers shall implement strong PKI-based identity infrastructure and cryptographic tokens to authenticate identity claims. In decentralized identity systems the PKI identity infrastructure is built upon DID documents.
 
-Therefore developers shall implement the mitigation measures described above and cannot implement the DID CRUD risk mitigation measures in isolation. Mitigation measures must be part of a set of ecosystem-wide conformance criteria that are endorsed, audited and enforced by the entire use case ecosystem and the respective identity & trust governance structure. If mitigation measures are implemented in isolation or inconsistently across different solution providers or their conformance is not enforced, a consistent, reliable LoA cannot be achieved. Hence, trust is broken in systems with weak identity conformance governance or less secure software development practices.
+Therefore developers shall implement the mitigation measures described above and cannot implement the DID CRUD risk mitigation measures in isolation. Mitigation measures must be part of a set of ecosystem-wide conformance criteria that are endorsed, audited, and enforced by the entire use-case ecosystem and the respective identity & trust governance structure. If mitigation measures are implemented in isolation or inconsistently across different solution providers or their conformance is not enforced, a consistent, reliable LoA cannot be achieved. Hence, trust is broken in systems with weak identity conformance governance or less secure software development practices.
 
 ## Glossary
 
@@ -272,11 +270,11 @@ Therefore developers shall implement the mitigation measures described above and
 
 **Lead Author:** Kate Sills (Independent, work funded by Digital Contract Design)
 
-**Authors:**  Shannon Appelcline (Blockchain Commons), Kate Sills (Independent, work funded by Digital Contract Design), Carsten Stöcker (Spherity), Cihan Saglam (Danube Tech)
+**Authors:**  Shannon Appelcline (Blockchain Commons), Cihan Saglam (Danube Tech), Kate Sills (Independent, work funded by Digital Contract Design), Carsten Stöcker (Spherity)
 
 ## Sample APA Citation
 
-Appelcline, S., Sills, K., Stöcker, C., and Saglam C. (2022). Taking out the CRUD: Five Fabulous DID Attacks. Rebooting the Web of Trust XI. Retrieved from https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/final-documents/taking-out-the-crud-five-fabulous-did-attacks.pdf
+Appelcline, S., Saglam C., Sills, K., and Stöcker, C. (2022). Taking out the CRUD: Five Fabulous DID Attacks. Rebooting the Web of Trust XI. Retrieved from https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/final-documents/taking-out-the-crud-five-fabulous-did-attacks.pdf.
 
 This paper is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 
