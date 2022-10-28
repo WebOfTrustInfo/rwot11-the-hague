@@ -66,7 +66,7 @@ Quentin, a senior software developer at 'Quick and Cheap SW Solutions', loves th
 
 'Fortune favours the Brave' (F²B) is one of those companies. It's a global market leader in DeFI, with its success built on a solid foundation of security, privacy, and compliance. F²B is proud to be the first DeFi company in the world to have ISO 22301:2019, ISO/IEC 27701:2019, ISO/IEC 27001:2013 and PCIDSS v3.2.1 Level 1 compliance and is independently assessed at Tier 4, the highest level for both NIST Cybersecurity and Privacy Frameworks, as well as SOC2 compliance.
 
-F²B has used Quentin's Trustziod ERP suites for many years ... which means they're now using Anastasia's malicious code. That code wakes up when F²B derives a new DID for an Accounts-Receivable process from a public key that was created with F²B's world-class PKI infrastructure. 
+F²B has used Quentin's Trustziod ERP suites for many years ... which means they're now using Anastasia's malicious code. That code wakes up when F²B derives a new DID for an Accounts-Receivable process from a public key that was created with F²B's world-class PKI infrastructure.
 
 Anastasia's code does not apply the proper DID derivation algorithm. Instead, her code replaces the output of the deviation function with a DID that is controlled by Anastasia. A few hours later, F²B triggers the Accounts-Receivable process using the new DID in one data field of a legacy invoicing protocol.
 
@@ -196,7 +196,7 @@ Arthur is able to push a key rotation of his own before Victor's rotation goes t
 
 **Keywords:** DID delete, cthulhu, repudiation, spec compliance, trust
 
-**Summary:** If a DID method defines off-chain creation and allows update/deactivate operations, those should be provably documented. Solely removing the corresponding private key to a publicly resolvable DID neither equates to deactivating nor complies with the DID Core specs. 
+**Summary:** If a DID method defines off-chain creation and allows update/deactivate operations, those should be provably documented. Solely removing the corresponding private key to a publicly resolvable DID neither equates to deactivating nor complies with the DID Core specs.
 
 **Examples:** The ethereum-based DID method, "did:ethr", defines two ways to deactivate a DID. According to its specs, deactivation can be done off-chain by removing the private key when a DID has no update on the verifiable data registry.
 
@@ -274,7 +274,7 @@ Therefore developers shall implement the mitigation measures described above and
 
 ## Sample APA Citation
 
-Appelcline, S., Saglam C., Sills, K., and Stöcker, C. (2022). Taking out the CRUD: Five Fabulous DID Attacks. Rebooting the Web of Trust XI. Retrieved from https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/final-documents/taking-out-the-crud-five-fabulous-did-attacks.pdf.
+Appelcline, S., Saglam C., Sills, K., and Stöcker, C. (2022). Taking out the CRUD: Five Fabulous DID Attacks. Rebooting the Web of Trust XI. Retrieved from [https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/final-documents/taking-out-the-crud-five-fabulous-did-attacks.pdf](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/final-documents/taking-out-the-crud-five-fabulous-did-attacks.pdf).
 
 This paper is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 
