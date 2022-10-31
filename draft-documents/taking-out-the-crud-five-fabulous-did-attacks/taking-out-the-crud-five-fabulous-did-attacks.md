@@ -286,7 +286,7 @@ decentralized trust on the internet with the goal of writing at least 5 white pa
 
 * **RWOT Board of Directors:** Christopher Allen, Joe Andrieu, Erica Connell.
 * **RWOT11 Coordination Team:** Will Abramson, Christopher Allen, Joe Andrieu, Shannon
-Appelcline Erica Connell, Eric Schuh, Carsten Stöcker.
+Appelcline, Erica Connell, Eric Schuh, Carsten Stöcker.
 * **Workshop Credits:** Will Abramson (Producer), Christopher Allen
 (Founder), Shannon Appelcline (Editor-in-Chief), Erica Connell
 (Host), Amy Guy (Ombudsperson), Willemijn Lambert (Graphic Recorder), Eric Schuh (Ombudsperson), Carsten Stöcker
