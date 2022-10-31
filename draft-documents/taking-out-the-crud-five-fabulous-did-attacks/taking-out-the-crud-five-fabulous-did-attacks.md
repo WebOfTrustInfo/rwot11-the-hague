@@ -284,7 +284,17 @@ _This paper was produced as part of the Rebooting the Web of Trust XI design wor
 2022, over 60 tech visionaries came together in The Hague, The Netherlands to talk about the future of
 decentralized trust on the internet with the goal of writing at least 5 white papers and specs. This is one of them._
 
-[RWOT11 Credits in process]
+* **RWOT Board of Directors:** Christopher Allen, Joe Andrieu, Erica Connell.
+* **RWOT11 Coordination Team:** Will Abramson, Christopher Allen, Joe Andrieu, Shannon
+Appelcline Erica Connell, Eric Schuh, Carsten Stöcker.
+* **Workshop Credits:** Will Abramson (Producer), Christopher Allen
+(Founder), Shannon Appelcline (Editor-in-Chief), Erica Connell
+(Host), Amy Guy (Ombudsperson), Willemijn Lambert (Graphic Recorder), Eric Schuh (Ombudsperson), Carsten Stöcker
+(Co-Producer, Demo Organizer), Dorothy Zablah (Facilitator).
+* **Gold Sponsors:** The City of the Hague, Digital Contract Design,
+Dutch Blockchain Coalition, The Hague University of Applied Sciences, eSSIF-Lab.
+* **Contributing Sponsors:** Blockchain Commons, Legendary
+Requirements, Spherity.
 
 _Thanks to all our attendees and other contributors!_
 
