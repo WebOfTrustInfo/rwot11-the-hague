@@ -50,8 +50,8 @@ an example rendering to be compatible with standards:
     "linkedClaim": {
          "claim": "harmed",
          "object": {
-             "id": "https://en.wikipedia.org/wiki/Salingyi_Township",
-         }
+             "id": "https://en.wikipedia.org/wiki/Salingyi_Township"
+         },
          "aspect": "risk:safety",
          "effective_date": "2021-12-07",
          "how_known": "second-hand",
