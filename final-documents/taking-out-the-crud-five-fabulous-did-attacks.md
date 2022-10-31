@@ -252,20 +252,6 @@ Therefore developers shall implement the mitigation measures described above and
 | 13 | SDLC | Secure (SW) Development Life Cycle|
 | 14 | VC | Verifiable Credential |
 
-## References
-
-[^OWASP1]: The Open Web Application Security Project, [Securing Enterprise Web Applications at the Source: An Application Security Perspective](https://owasp.org/www-pdf-archive/Securing_Enterprise_Web_Applications_at_the_Source.pdf)
-
-[^wikisectesting]: Wikipedia, [Security Testing](https://en.wikipedia.org/wiki/Security_testing)
-
-[^HackingGoogle]: Youtube, [Hacking Google Documentary](https://www.youtube.com/playlist?list=PL590L5WQmH8dsxxz7ooJAgmijwOz0lh2H)
-
-[^SolarWinds]: Dark Reading, August 2022, [Nearly 3 Years Later, SolarWinds CISO Shares 3 Lessons From the Infamous Attack](https://www.darkreading.com/edge-articles/3-years-later-solarwinds-ciso-shares-3-lessons-from-the-infamous-attack)
-
-[^Colonial]: Dark Reading, May 2022, [Colonial Pipeline 1 Year Later: What Has Yet to Change?](https://www.darkreading.com/vulnerabilities-threats/colonial-pipeline-1-year-later-what-has-yet-to-change-)
-
-[^Codecov]: Dark Reading, April 2021, [Attackers Compromised Code-Checking Vendor's Tool for Two Months](https://www.darkreading.com/attacks-breaches/attackers-compromised-code-checking-vendor-s-tool-for-two-months)
-
 ## Additional Credits
 
 **Lead Author:** Kate Sills (Independent, work funded by Digital Contract Design)
@@ -306,4 +292,19 @@ comments, thoughts, or expansions on this paper, please post them to our GitHub 
 [https://github.com/WebOfTrustInfo/rwot11/issues](https://github.com/WebOfTrustInfo/rwot11/issues)
 
 The twelfth Rebooting the Web of Trust design workshop is scheduled for early 2022 in Los Angeles, California. If you’d like to be involved or would like to help sponsor the event, email: [Leadership@WebOfTrust.info](mailto:Leadership@WebOfTrust.info)
+
+
+## References
+
+[^OWASP1]: The Open Web Application Security Project, [Securing Enterprise Web Applications at the Source: An Application Security Perspective](https://owasp.org/www-pdf-archive/Securing_Enterprise_Web_Applications_at_the_Source.pdf)
+
+[^wikisectesting]: Wikipedia, [Security Testing](https://en.wikipedia.org/wiki/Security_testing)
+
+[^HackingGoogle]: Youtube, [Hacking Google Documentary](https://www.youtube.com/playlist?list=PL590L5WQmH8dsxxz7ooJAgmijwOz0lh2H)
+
+[^SolarWinds]: Dark Reading, August 2022, [Nearly 3 Years Later, SolarWinds CISO Shares 3 Lessons From the Infamous Attack](https://www.darkreading.com/edge-articles/3-years-later-solarwinds-ciso-shares-3-lessons-from-the-infamous-attack)
+
+[^Colonial]: Dark Reading, May 2022, [Colonial Pipeline 1 Year Later: What Has Yet to Change?](https://www.darkreading.com/vulnerabilities-threats/colonial-pipeline-1-year-later-what-has-yet-to-change-)
+
+[^Codecov]: Dark Reading, April 2021, [Attackers Compromised Code-Checking Vendor's Tool for Two Months](https://www.darkreading.com/attacks-breaches/attackers-compromised-code-checking-vendor-s-tool-for-two-months)
 
