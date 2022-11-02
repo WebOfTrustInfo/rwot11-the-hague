@@ -4,7 +4,14 @@ This repository contains documents related to RWOT11, the eleventh Rebooting the
 
 The goal of the workshop is to generate five technical white papers and/or proposals on topics decided by the group that would have the  greatest impact on the future.
 
-Links to the EventBrite page to order tickets to RWOT2022: https://rwot11.eventbrite.com
+## Final Papers
+
+## [*Taking out the CRUD: Five Fabulous DID Attacks*](final-papers/taking-out-the-crud-five-fabulous-did-attacks.pdf) [(Text)](final-papers/taking-out-the-crud-five-fabulous-did-attacks.md)
+#### by Shannon Appelcline, Cihan Saglam, Kate Sills, Carsten Stöcker
+
+> Decentralized identity solutions, such as DID methods, tend to be designed to protect against certain attacks, but the purpose of that design usually is not explicitly stated in any architectural description or threat documentation. In particular, some DID methods have costly on-chain requirements that must have had a reasoning behind their requirement. We can today see that these DID methods were purposefully shaped, but it’s not clear why such decisions were made. The purpose of this paper is to describe a few colorful attacks on DID methods so that we can better understand what threats a system might be vulnerable to.
+
+> Although we derived the examples in this paper by examining current DID methods, we believe these attack vectors are more general, even for systems not using DIDs. The goal is to support engineers and developers who are developing decentralized identity solutions to safeguard their work and make it secure and compliant.
 
 ## Advance Readings
 
