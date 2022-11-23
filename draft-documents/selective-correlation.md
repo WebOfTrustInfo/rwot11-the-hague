@@ -25,12 +25,11 @@ Selective Correlation
 
 # Authors
 
-* Brent Zundel (lead author) - @brentzundel (GitHub), brent.zundel@avast.com, [Avast]
+* Brent Zundel (lead author) - @brentzundel (GitHub), brent.zundel@gendigital.com, [Gen Digital](https://www.gendigital.com/)
 * Christopher Allen - @ChristopherA (GitHub & Twitter), ChristopherA@LifeWithAlacrity.com - [Blockchain Commons](https://www.BlockchainCommons.com)
-* Fabio Tagliaferro - @fabtagliaferro (GitHub), [University of Verona](https://www.di.univr.it/?ent=persona&id=39578&lang=en), [Commercio.Network](https://commercio.network/)
 * Markus Sabadello - @peacekeeper (GitHub), [Danube Tech](https://danubetech.com/)
-(https://www.avast.com/)
 * Elena Chachkarova - @elenachachkarova (GitHub), [Nymlab](https://www.nymlab.it/#/)
+* Fabio Tagliaferro - @fabtagliaferro (GitHub), [University of Verona](https://www.di.univr.it/?ent=persona&id=39578&lang=en), [Commercio.Network](https://commercio.network/)
 
 # Introduction
 
@@ -63,18 +62,17 @@ The classification uses examples from existing components to help illustrate and
 ## Correlation
 
 There are seven types of correlation:
-* Desirable Correlation — the association between the party's datasets is necessary for the process, either for identification, authenication, authorization, or provenance).
+* Desirable Correlation — the association between the party's datasets is necessary for the process, either for identification, authentication, authorization, or provenance.
 * Risky Correlation - the association between the parties' datasets could be used against the benefit of the parties.
-* Temporary Correlation - the correlation can be observed for a limited amount of time, or can be repudiated in the future easily.
-* Transitive Correlation - the observer correlates the subject indirectly, that is, without the subject being involved in the collection of data.
+* Temporary Correlation - the correlation can be repudiated in the future easily.
+* Transient Correlation - the correlation can be observed for a limited amount of time and thus is not permanent.
+* Transitive Correlation - the observer correlates the subject indirectly, that is, without the subject being involved in the collection of data for example by passing a credential.
 * Correlation Using Neither Identifiers Nor Consent -
 * Quasi Correlation - correlation that is not certain, usually based on experience of the observer about particular characteristics of the data
 * Spontaneous Correlation - 
-* Unwanted or Ambient Correlation - correlation obtained out -> example: [Am I Unique - Learn how identifiable you are on the Internet](https://amiunique.org/)
+* Unwanted or Ambient Correlation - the correlation can be observed from the environment where the subject is included, usually observing the (digital) footprint -> example: [Am I Unique - Learn how identifiable you are on the Internet](https://amiunique.org/)
 
 TODO
-* Correlation is good becauuse
-* Correlation is bad because
 * can it even be avoided?
 * herd privacy: (see below) https://w3c.github.io/did-core/#herd-privacy & https://github.com/w3c/did-core/issues/539
 * differential privacy (see below, but can we even do it\) https://privacytools.seas.harvard.edu/differential-privacy
@@ -91,7 +89,7 @@ There are three types of minimization:
 * Scope minimization – the data should only be used for the strict purpose of the active task. 
 
 [//]: # (@ChristopherA: should we explain why for each these? herd privacy? avoid potential collection of "toxic" GDPR data; ??)
-[//]: # (@fabtagliaferro: GDPR added to verifier desires for data minimization below)
+[//]: # (@fabtagliaferro: GDPR added to verifier desires for data minimization below, herd privacy explained in short definition below)
 
 Data minimization is enacted primarily by policy decisions made by stakeholders in the credentials ecosystem:
 * Credential issuers ensure that credentials may be presented in such a way as to enable data minimization. This may require issuing multiple, related, granular sub-credentials. 
@@ -103,7 +101,7 @@ Data minimization is enacted primarily by policy decisions made by stakeholders 
 [//]: # (@ChristopherA: I'd love to see reasons that subjects desire data minimization, and even better, when holders/verifiers ≠ subject desire data minimization.)
 
 A subject desires data minimization for various reasons:
-* Subjects can wait to share some information and provide them gradually
+* Subjects can wait to share some information and provide them gradually (Progressive Trust)
 * Reduce the risk of undesired correlation 
 
 A verifier desires data minimization for various reasons:
@@ -117,26 +115,31 @@ Data minimization policies impact selective disclosure, the next privacy enhance
 
 ## Definitions / Terminology
 
-Elide/Elision: The term elide means "to leave out", and elision is the act or instance of ommitting something. (Redaction is a related term
+**Correlatable**: Data is said to be correlatable if by examining it that there is a way to determine whether it is associated with sets of other data stored elsewhere. This also includes lossy projections of the sets of data such as deterministic hashes that demonstrate that assocation.
 
-Correlatable: Data is said to be correlatable if by examining it that there is a way to determine whether it is associated with sets of other data stored elsewhere. This also includes lossy projections of the sets of data such as deterministic hashes that demonstrate that assocation.
+**Decorrelation**: A general term for any process that is used to reduce correlation within data, or cross-correlation with other sets of data, while preserving other useful aspects of the data. 
 
-Non-correlatable: If there is no practical way to learn whether a set of data is a projection of a other data, they are said to be noncorrelatable.
+**Differential Privacy**: A decorrelation process for sharing information about sets of data by describing the patterns of groups within the dataset while withholding information about individuals in the dataset. The idea behind differential privacy is that if the effect of making an arbitrary single substitution in the database is small enough, the query result cannot be used to infer much about any single individual, and therefore provides privacy. For instance, adding a random number (say 4) from one part of the set and subtracting 4 from another part of the set when the business purpose of the data is total or average.
 
-Quasi-correlatable: Between projections that are definitely correlatable and definitely noncorrelatable, there are projections that may leak a little information about their data. In particular (in no particular order), size, order, use of particular formatting, date/time, location, algorithm usage, and other identifiable patterns.
+**Elide/Elision**: The term elide means "to leave out", and elision is the act or instance of ommitting something. (Redaction is a related term
 
-Decorrelation: A general term for any process that is used to reduce correlation within data, or cross-correlation with other sets of data, while preserving other useful aspects of the data. 
+**Herd Privacy**: The decorrelation choices made by one set vs other data sets may result in correlation. Herd privacy process ensures that this doesn't happen by making them indistiguishable from other data sets.
 
-Differential Privacy: A decorrelation process for sharing information about sets of data by describing the patterns of groups within the dataset while withholding information about individuals in the dataset. The idea behind differential privacy is that if the effect of making an arbitrary single substitution in the database is small enough, the query result cannot be used to infer much about any single individual, and therefore provides privacy. For instance, adding a random number (say 4) from one part of the set and subtracting 4 from another part of the set when the business purpose of the data is total or average.
+**Non-correlatable**: If there is no practical way to learn whether a set of data is a projection of a other data, they are said to be noncorrelatable.
 
-Herd Privacy: The decorrelation choices made by one set vs other data sets may result in correlation. Herd privacy process ensures that this doesn't happen by making them indistiguishable from other data sets.
+**Nonce**: aka "Number Used Once". This is an arbitrary number that is used just once in a cryptographic function such as signatures or encryption, to prevent correlation. Note that this is not necessarly a random number, simply a number that is never used again, and in some cases it can be quite valuable for a nonce to be generated deterministically.
 
-Salt: This is random data (values and length) that are used as an additional input to a cryptographic function such as a hash of data, encryption, signature, to prevent correlation.
+**Quasi-correlatable**: Between projections that are definitely correlatable and definitely noncorrelatable, there are projections that may leak a little information about their data. In particular (in no particular order), size, order, use of particular formatting, date/time, location, algorithm usage, and other identifiable patterns.
 
-Nonce: aka "Number Used Once". This is an arbitrary number that is be used just once in a cryptographic function such as signatures or encryption, to prevent correlation. Note that this is not necessarly a random number, simply a number that is never used again, and in some cases it can be quite valuable for a nonce to be generated deterministically.
+**Salt**: This is random data (values and length) that are used as an additional input to a cryptographic function such as a hash of data, encryption, signature, to prevent correlation.
 
 ## Capabilities and Techniques
+
 ### Elision
+Elision is the ability of an individual to derive from a credential another credential with some attributes removed. Stakeholders in the credentials ecosystem enable elision capabilities in the following ways:
+* Credential issuers negotiate with the holder to enable elision, by issuing credentials with a subset of attributes already included in another credential. 
+* Credential inspectors ensure that the elided credentials can be verified with the usual procedure, but they won't be able to know if any kind of elision has been performed if they cannot correlate them with the starting credentials. 
+
 ### Selective disclosure
 Selective disclosure is the ability of an individual to granularly decide what information to share. Stakeholders in the credentials ecosystem enable selective disclosure capabilities in the following ways:
 * Credential issuers format the credential and its attributes in such a way as to enable selective disclosure. As with the strategy of data minimization, they may issue multiple, related, granular sub-credentials. Each attribute and the overall credential may be formatted to support cryptography, a capability described in more detail below. 
@@ -145,18 +148,18 @@ Selective disclosure is the ability of an individual to granularly decide what i
 Once data minimization policies and selective disclosure are in place, the third and last enhancement can be applied. 
 
 ### Progressive Trust
-Progressive trust is the ability of an individual to gradually increase the amount of relevant data revealed as trust is built or value generated. 
+Progressive trust is the process usable by an individual to gradually increase the amount of relevant data revealed as trust is built or value generated. 
 
 To enable progressive trust capabilities, stakeholders in the credentials ecosystem act in the following ways:
 * Issuers format the credential(s) in such a way as to enable progressive trust. This may require issuing multiple, related, atomic sub-credentials. It also may require formatting the credential to support mathematical queries and cryptographic proofs. Finally, the issuer's data model may express how the various sub-credentials are related in a scenario involving progressive trust. 
 * Inspectors ensure that requests are framed in such a way as to enable progressive trust. They structure the communication in order to to gradually escalate credential requests in order to enable a subject to progressively trust the inspector more and more, revealing the minimum data necessary to accomplish each step of the task or goal and revealing more and more as the mutual communication progresses. 
 
 ### Progressive Disclosure
-Progressive disclusure is one of the possible ways for an individual to let the progressive trust with another party proceed.
+Progressive disclusure is one of the possible ways for an individual to let the progressive trust with another party proceed. The individual starts anonymously and continues to provide information, recognizing that the more data is revealed, the more risk that the other would be able to correlate. But with the gained trust, the risk will be considered a benefit, instead.
 
 To enable progressive disclosure capabilities, stakeholders in the credentials ecosystem act in the following ways:
 * Issuers format the credential(s) in such a way as to enable progressive disclosure. This requires issuing credentials that can be selectively disclosed multiple times. Each presentation will share attributes that have not been shared before. 
-* Inspectors ensure that requests are framed in such a way as to enable progressive trust. #todo
+* Inspectors ensure that requests are framed in such a way as to enable progressive trust. This requires presentation protocols that can link together some previously made presentations, forming a progressive trust instance.
 
 ## Technology Characteristics and Choices
 
@@ -191,7 +194,9 @@ Choices:
 * **[JWP]** JWP: https://www.ietf.org/archive/id/draft-jmiller-jose-json-web-proof-00.html
 * **[REDACTION2016-LD]** Redaction Signature Suite 2016: https://w3c-ccg.github.io/lds-redaction2016/
 * **[MERKLE2021-LD]** Merkle Disclosure Proof 2021: https://w3c-ccg.github.io/Merkle-Disclosure-2021/
-* **[GORDIAN]** Gordian Envelopes: https://github.com/BlockchainCommons/BCSwiftSecureComponents/blob/master/Docs/02-ENVELOPE.md
+* **[COCONUT]** Coconut: https://arxiv.org/abs/1802.07344
+* **[GORDIAN]** Gordian Envelopes: https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Envelope-Tech-Intro.md
+* **[GORDIAN-IETF]** IETF I-D (draft will be submitted December): https://blockchaincommons.github.io/WIPs-IETF-draft-envelope/draft-mcnally-envelope.html
 
 Mapping of Characteristics and Technologies
 
@@ -207,14 +212,17 @@ Mapping of Characteristics and Technologies
 |JWP              | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 |REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
 |MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
+|COCONUT          | ? | ? | ? | ? | ? | ? | ? | ? | ? |
 |GORDIAN          | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? |
 
 # Use Cases
 [//]: # (We'd like to have a progressive set of use case to demonstration desireable and undesirable correlation, but also avoid government focused scenarios -- in particular the overused over-21 mobile driver's license example )
 
-These use cases focus at their core a single credential, presented by various parties to others, with desirable corellation as well as threats if undesirable correlation occurs. An actual decentralized system probably has more trust assurance, multiple credentials and more verifiable presentation metadata than what is discussed below.
+These use cases focus at their core a single credential, presented by various parties to others, with desirable correlation as well as threats if undesirable correlation occurs. An actual decentralized system probably has more trust assurance, multiple credentials and more verifiable presentation metadata than what is discussed below.
 
 Educational / Professional Use Case:
+
+(Educational use will be replaced by: https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Envelope-Use-Cases-Educational.md)
 
 1) DREW ENTERS SCHOOL: Drew, a member of a minority, desires comprehensive training in a high-paid building construction specialty — plasma welding. He applies to Acme Professional School and is accepted. Drew offers the school a DID, and adds details to allow for others to authenticate Drew (such as a photo) in a Student ID. Students of Acme Professional School are qualified to receive government-backed students loans from Burton Bank — Drew applies, and receives a loan, and payments are deferred until he graduates.
     * TRANSACTIONS: Drew becomes a student of Acme Professional School. Drew receives Student ID. Drew applies for student loan and pays for schooling.
@@ -229,20 +237,20 @@ Educational / Professional Use Case:
 3) EXAMPLE OF ELISION BY A DREW (SUBJECT/HOLDER): Drew applies for a plasma welding gig at Erickson's Construction, that requires a workplace safety certification. Drew (the subject & holder) offers their Acme Professional School educational credential with details on the training and safety certification (they desire correlation as being qualified for the job) without personal information (such as ethnic name, photo as they do not wish to be correlated as a minority).
     * TRANSACTIONS: Drew applies for employement with educational credential.
     * DESIRABLE CORRELATION: Drew desires to be correlated as a qualified graduate, and school is correlated as a legitmate accredited school. ((Elena suggest is that sometimes you might want to elide the school name, for instance if it was accredited but was based in eastern europe it might be discrimiated against.))
-    * CORRELATION THREAT: Drew does not wish to be descriminated against for his family origin.
+    * CORRELATION THREAT: Drew does not wish to be descriminated against for his family origin.((Elena: and / or where his school is based))
 
 4) EXAMPLE OF PROGRESSIVE TRUST: Erickson's Construction offers Drew a temporary gig at a reasonable hourly rate, pending additional verification of identity at the workplace. Drew (subject & holder) presents his Acme Professional School (issuer) educational credential again, but this time with sufficient authentication (such as photo), so that Erickson's Construction (verifier) can issue a pass to enter the workplace.
     * TRANSACTIONS: Drew receives offer, accepts offer. Gives tax information, legal name, photo. 
     * DESIRABLE CORRELATION: This same credential that the job was offered to is presented again, with less elision, to satisify workplace require.
     * CORRELATION THREAT: 
 
-5) EXAMPLE OF ELISION BY A HOLDER: Erickson's Construction (holder≠subject) needs to prove to Three Towers Corporation (verifier) that they have sufficient number of qualified employees for the contract. They provide Drew's (subject) educational credential (already partially elided by the subject) to Three Towers. Three Towers can verify that the the school (Acme Professional School but elided by Drew) is accredited, but in addtions Erickson Construction further elides the names of the employees (to prevent pouching by other firms). 
+5) EXAMPLE OF ELISION BY A HOLDER: Erickson's Construction (holder≠subject) needs to prove to Three Towers Corporation (verifier) that they have sufficient number of qualified employees for the contract. They provide Drew's (subject) educational credential (already partially elided by the subject) to Three Towers. Three Towers can verify that the school (Acme Professional School but elided by Drew) is accredited, but in addition Erickson Construction further elides the names of the employees (to prevent pouching by other firms). 
     * TRANSACTIONS: Erickson Constructions (holder) presents Three Towers (verifier) multiple elided employee educational credentials.
     * DESIRABLE CORRELATION: Erickson Construction proves sufficent and properly trained staffing, from accredited schools.
     * CORRELATION THREAT:  * CORRELATION THREAT: Erickson Construction may not wish to be digital known as hiring minorities. Erikson Construction does not employees be 
     * MISC. is there an insurance or courts elision use case beyond this that isn't substantially similar?
 
-6) Acme Professional School desires renew their relationship with Burton Bank to continue to be able to recive funds from government-backed students loans. To renew this relationship Burton Bank & government regulators require that 80% of students complete a certificate within two years. Acme Professionalal School presents the educational credentials of their graduates, with all personal data elided. (As Burton Bank already has these personal data from all loan holders, they are not essential to the business purpose). Burton Bank is able to correllate which of those credentials hold loans, but not recieve toxic data of other students.
+6) Acme Professional School desires to renew their relationship with Burton Bank to continue to be able to recive funds from government-backed students loans. To renew this relationship Burton Bank & government regulators require that 80% of students complete a certificate within two years. Acme Professionalal School presents the educational credentials of their graduates, with all personal data elided. (As Burton Bank already has these personal data from all loan holders, they are not essential to the business purpose). Burton Bank is able to correlate which of those credentials hold loans, but not recieve toxic data of other students.
     * TRANSACTIONS: Acme Professional School (issuer) presents Burton Bank (verifier) multiple elided student educational credentials. Drew (subject) educational creditional is one of those credentials.
     * DESIRABLE CORRELATION: Both Acme Professional School and Burton Bank need to correlate educational credentials with loan holders.
     * CORRELATION THREAT: Burton Bank wants to avoid accepting correlatable personal data of non-loan  students, nor wishes to offer the personal data of students with loans.
@@ -251,31 +259,25 @@ Educational / Professional Use Case:
 
 Healthcare Use Case:
 
-1) ALEX IS OFFERED TO SIGN TO A PRIVATE HEALTH SERVICE THROUGH HER EMPLOYER: Alex (holder) signs up for a private health service (issuer) that provides various discounts to other services for their clients who take different tests / complete milestones. The health service offers to issue health credential to Alex with her milestones that can be used as a proof for unlocking discounts to various places they have partnered with (example: free cinema tickets, discount on dinner, etc). Alex does a number of health tests and requests to be issued such credential to be able to show proof of her record and get discounts. 
+1) ALEX STARTS A NEW JOB: Alex starts a new job at Company A and provides the Human Resources team at his new company with a DID to be issued an employment credential with his job positions and further details.
+    * TRANSACTIONS: Alex becomes an employee of Company A and is issued an employment credential.
+    * DESIRABLE CORRELATION: Alex wants to be correlated as an employee of Company A so he can get access to pension plans, employees' benefits and so on.
+    * CORRELATION THREAT: 
 
-    * TRANSACTION: Alex signs up for private health insurance and follows advice from the practitioners there. Alex passes milestones and would like to receive a health credential.
-    * DESIRABLE CORRELATION: Alex wants to be correlated to the milestones she did with her health service provider.
-    * CORRELATION THREAT: N/A
+2) ALEX SIGNS UP FOR A HEALTHCARE SERVICE PROVIDER: Alex joins a new healthcare provider. Alex can get a discount as an employee of Company A, due to a partnership between his company and the healthcare service provider. Alex presents his employment credential to the provider with eluded data.
+    * TRANSACTIONS: Alex uses his employee credential to prove he works at Company A but eludes any irrelevant personal information.
+    * DESIRABLE CORRELATION: Alex wants to be correlated as an employee of Company A.
+    * PRIVACY THREAT: Alex does not want to share any further personal information with his new healthcare provider.
 
-2) ALEX WANTS TO USE A DISCOUNT AT THE GYM: As a trial employees' wellbeing project Alex's company has signed a  partnership with a new gym and they want to know if the gym is actually being used. Alex joins the gym and wishes to use a discount of 50% for employees of her company. 
-    * TRANSACTION: Alex would like to send an employer credential only revealing the employer’s name to the gym. 
-    * DESIRABLE CORRELATION: Alex wants to be correlated with the company that she is employed by.
-    * THREAT: Alex does not want to reveal any further information apart from the company name and that she is employed there.
+3) COMPANY A WANTS TO CHECK ON THE PARTNERSHIP WITH HEALTHCARE PROVIDER: Company A wants to check if the partnership with the healthcare provider is worth it to continue investing in. Company A requests data from the healthcare provider on the use of their employees.
+    * TRANSACTIONS: Company A requests a data report from the healthcare provider.
+    * DESIRABLE CORRELATION: Healthcare provider wants to correlate clients with employees of Company A.
+    * CORRELATION THREAT: Healthcare provider does not want to accidentally reveal private information of their clients to Company A; Healthcare provider wants to only send data related to employees of Company A.
 
-3) EXAMPLE OF PROGRESSIVE TRUST: Alex decides she would like to add a nutritional plan to her subscription with her  gym and likes to share her allergies information from her health credential.
-    * TRANSACTION: Alex would like to send information from her health credential to the gym.
-    * DESIRABLE CORRELATION: Alex wants to be correlated with allergy information from her health credential.
-    * CORRELATION THREAT: Alex doesn’t want irrelevant details concerning her health to be disclosed to the gym staff.
-
-4) EXAMPLE OF A CORRELATION THREAT: Company A needs to know if it is worthed to continue partnering with Alex's gym and requests information for usage. Alex’s gym (holder) has to send a report back of how many of their clients (subjects) come from Company A and what type of services they have used. In the report, the number of nutritional plans that have been requested is included.
-    * TRANSACTION: Gym sends report of their clients statistics to Company A.
-    * DESIRABLE CORRELATION: The gym wants to correlate their clients with being employees from Company A.
-    * CORRELATION THREAT: By looking at the gym report Alex's employer could correlate her profile and reveal personal health information that they should not have.
-
-5) EXAMPLE OF HERD PRIVACY: Alex's gym generates the first report and realises there is only one user of the nutrition plan service and worry that this information could be used to correlate that employee, so decides to exclude this cetagory from the first report. A year later, the gym is now a lot more popular with Company A's employees. The gym is asked to send a report again. This time there are about 20 employees on the nutrition plan and that should provide enough herd privacy for Alex  
-    * TRANSACTION: Gym sends a report with categories to Company A ob
-    * DESIRABLE CORRELATION: Gym wants to correlate Company A employees with services but elide their names.
-    * CORRELATION THREAT: Gym is worried they might send correlatable information to Company A.
+4) HEALTHCARE PROVIDER SENDS INFORMATION BACK TO COMPANY A: In order to reduce correlation, the healthcare provider decides to send back only the number of credentials with eluding of the employee's name so they can be sure to preserve privacy.
+    * TRANSACTIONS: Healthcare provider sends data back to Company A with the number of clients that are verified employees of Company A without showing their names.
+    * DESIRABLE CORRELATION: Healthcare provider correlates clients to be employees of Company A.
+    * ELISION BY HOLDER: Healthcare provider eludes the names of the clients.
     
 ## Correlation Adversary from Smart Custody
 
