@@ -1,8 +1,6 @@
-# The quest to link credentials with data exchange agreements and secured, inclusive interfaces.
+# Linking credentials with data exchange agreements through secured inclusive interfaces.
 
-**Revisiting the issue of patient data exchange in a cross-border, multi-jurisdiction and inclusive setting.**  
-
-**Linking verifiable credentials with the right to use data in a secure, inclusive user interaction**
+**On the need to link verifiable credentials with the right to use data in a secure, inclusive user interaction**
 
 *This short paper is the outcome of a collaborative project at the 11th Rebooting Web of Trust (RWOT) workshop from September 26 to 30, 2022, in Den Hague, Netherlands*. 
 
@@ -32,36 +30,68 @@ The authors want to extend special thanks to the following persons who contribut
     
 ## Abstract
 
-In this collaborative work from RWOT11, we revisit the issue of patient data exchange in a cross-border, multi-jurisdiction and inclusive setting. Here, we combine accessibility and the right-to-use features into data exchange scenarios using Overlays Capture Architecture (OCA) and Data Exchange Agreements (DEXA).
+In this collaborative work from RWOT11, we revisit the issue of patient data exchange in a setting requiring cross-border, multi-jurisdiction and inclusive access to all participants. A fundamental problem in developing large-scale real-world solutions based on verifiable credentials is keeping the simplicity of usage for individuals in different contexts without sacrificing security.
 
-We elaborate on a cross-border health data exchange ecosystem where organisations and individuals across geographical borders can digitally interact, addressing critical issues concerning regulatory compliance, transparency, auditability and inclusiveness of any data exchange transaction. 
+We aim to highlight selected technical challenges and outline how the DEXA and OCA protocols contribute to scalable solutions.
 
-First, the paper reflects on accessibility and data representations, an example of a human-centric feature that must meet regulatory requirements and end-user needs. Then we introduce the DEXA protocol. It enables human-centric automated agreement handling for data exchange between a Data Source (DS) and a Data Using Service (DUS). 
+We illustrate our essay with the well-known use case of the digitalised patient prescription cast in a multi-jurisdictional setting, considering the accessibility requirement of a visually impaired patient. This scenario provides a tangible setting to translate the technical challenges into legal and societal questions: 
 
-Finally, a use case for medical prescriptions delivered to a patient in a cross-border setting demonstrates the adopted solution. The use case highlights:
+1. How Data Exchange Agreements address the fundamental legal data protection requirements (e.g. GDPR) in a scalable, auditable and convenient manner for all parties involved in a data exchange transaction. 
 
-1. How Data Exchange Agreements address the fundamental requirements of GDPR in a scalable, auditable and convenient manner for all parties involved in a data exchange transaction. 
-2. How semantic overlays offer a bridging solution for language and accessibility challenges.
-    
+2. How task-oriented layered overlays offer a secure user-centric solution for language and accessibility requirements.
+
+We start by stating the problem along three dimensions: i)verifiable credential presentation and wallet appropriation, ii) agreements for data exchanges in muti-jurisdictions, and iii) preservation of context. Then, the following sections outline the existing solutions and present the contributions of the DEXA and OCA protocols toward the solution.
+
+The essay provides references and appendices for readers interested in going deeper. 
+
 ## 1. Introduction
+This essay links verifiable credentials with the right to use data in a secure, inclusive user interaction. We illustrate our approach through the well-known scenario provided by the digitalisation of the patient prescription. 
 
-Verifiable credentials (VC) will become critical components for the digital transformation of real-world processes. However, in light of that positioning, VC will have to be integrated into digital processes that deliver at least the same level of security and usability as their paper-based counterparts in the physical world. To achieve this, the VC faces a few steep challenges to ensure broad adoption. In this paper, we illustrate three challenges:
+#### 1.1 Revisiting the issue of patient data exchange in a cross-border, multi-jurisdiction and inclusive setting.
+
+In our scenario, Fredrik is a visually impaired Swedish resident undergoing treatment at a local healthcare provider. Following Fredrik's last visit, the healthcare provider delivered a digital prescription made available in the Swedish-governed healthcare data space. The health data space must meet the requirements of the countries' health professionals, including insurance, public health and other third parties. 
+
+The system is also accessible to patients. Independently of his location, Fredrik has secured access. Therefore the system allows cross-border jurisdictions usage. For example, this will be necessary when Fredrik visits his daughter studying in Zurich, Switzerland (i.e. a non-EU jurisdiction).
+
+While in Zurich, Fredrik uses his digital prescription in a swiss pharmacy not connected to the Swedish healthcare system. Fredrik speaks only swedish, and the pharmacist only german. Therefore we assume that both Fredrik and the pharmacist have an online connection and can exchange digital information.
+ 
+Fredrik can provide verifiable information that the pharmacist must authenticate. In turn, the swiss pharmacist must also deliver authentic information that the Swedish healthcare system will require for its internal processes (e.g. prescription double-spend).
+
+Our scenario requires that all transactions are auditable, and Fredrik is issued a receipt and warning in swedish for the possible adverse effects of taking medicine. 
+
+This scenario exemplifies the need for human-centric, context-aware, device-independent automated agreement handling for data exchange between a Data Source (DS) and a Data Using Service (DUS). 
+
+#### 1.2 Presentation - Agreements - Context
+Verifiable credentials (VC) will become critical components for the digital transformation of real-world processes. However, in light of that positioning, VC will have to be integrated into digital processes that deliver at least the same level of security, usability and safety as their paper-based counterparts in the physical world. The above scenario is a complex edge case for a system designer, but deviations from standard designs are the rule in real-world systems. Enabling this real-world diversity in a machine-readable format is the fundamental driver behind the growing emergence of decentralised systems. 
+To achieve this, the VC faces a few steep challenges to ensure broad adoption. In this paper, we illustrate three challenges:
 
 - VC representation and wallet appropriation
 - VC and multi-jurisdictional data exchange agreements
 - VC and context preservation
-    
+
+#### 1.3 The RWOT11 collaboration
 The collaborative work done during the RWOT11 conference brought together authors from three organisations to address these challenges: 
 
-- [VM,AS] *Representations and Accessibility* requirements for VC;
-- [LC,FL] *Data exchange agreements*. DEXA protocol for data exchange;
-- [PP,PK] *Context preservation & governance*. Overlays Capture Architecture for data presentation.
+- [VM, AS] *Representations and Accessibility* requirements for VC;
+- [LC, FL] *Data exchange agreements*. DEXA protocol for data exchange;
+- [PP, PK] *Context preservation & governance*. Overlays Capture Architecture for data presentation.
+ 
+At the start of his user journey, Fredrik has to interact with the information system. Section two, "Credential Representation", deals with the challenges for systems designers. We present the current state-of-the-art credential rendering and demonstrate the need to decouple verifiable data from the presentation layer. For Fredrik and the swiss pharmacists to have a trusted relationship, such decoupling is required. Each will rely on the level of assurance provided by their respective systems, not a common platform.
 
-To provide clear context and a link to this publication for future ongoing work, we present a multi-jurisdiction version of the medical prescription use case as a reference.
-    
+Similarly, section three, "Data Exchange Agreements (DEXA) protocol", demonstrates the need to link verifiable data to context-dependent agreements. Fredrik receives a prescription within the Swedish ecosystem designed for the country and uses it in a different ecosystem. Starting from the legal requirement of data protection, we introduce how agreements link to a transaction through the open-source protocol DEXA.
+
+The proposed data exchange agreements attached to the transaction integrate better into the context of the relationships between organisations and individuals, depending on their roles in different usage scenarios involving personal data. The agreements can be classified into four broad categories, as shown in the figure below. These are agreements between:
+
+* An individual and an organisation (data agreement)
+* Two organisations, a data source and a data-using service (data disclosure agreement)
+* An organisation and its supplier (data processing agreement)
+* Two individuals (delegation agreement)
+ 
+In Section 4, "Context preservation -a decentralised semantic approach", we deal with the dynamic context-aware requirement imposed by Fredrik. Different languages and accessibility requirements are examples of context-dependent use of verifiable information. These requirements differ from credential presentation in section two and data exchange agreements in section three. Collectively they point to decentralised semantics, a concept that breaks down the definition of digital objects into a layered structure. Finally, we introduce Overlays Capture Architecture (OCA) to enable Fredrik's multi-lingual credential exchange independent of other presentation layers.
+
 ## 2. Credential representations
 
-Any human-operated system's security and user experience depends on the contextual information conveyed through user interfaces, user responses, and the interpretation of user actions. Unlike with physical credentials or closed-loop digital systems, issuers of VC rely on a variety of software or hardware wallets to interpret and convey comprehensible information to users. The wallets define the representation of data and user experience in critical moments of interaction, in which users have to make choices about sharing, accepting and verifying that data. 
+Any human-operated system's security and user experience depends on the contextual information conveyed through user interfaces, user responses, and the interpretation of user actions. Unlike physical credentials or closed-loop digital systems, issuers of VC rely on a variety of software or hardware wallets to interpret and convey comprehensible information to users. The wallets define the representation of data and user experience in critical moments of interaction, in which users have to make choices about sharing, accepting and verifying that data. 
 
 Wallets also have to cater for existing user mental models regarding how credentials are represented and used. In many contexts there are pre-conceived ideas of what, for example, an id card, a passport or a medical prescription 'look like' and how they can be used. Relying on a wallet to replicate the appearance of an existing credential may initially seem appealing since such a skeuomorphic approach could ease public acceptance but there are drawbacks to this approach. Government and public body issuers have expressed concerns about confusion between digital and physical artefacts that may have differing legal status, liabilities or associated level of assurance, as well as divergent acceptance and verification processes. It is therefore advised that VC should be distinct from any physical counterparts. 
 
@@ -114,7 +144,7 @@ The Data Exchange Agreement (DEXA) [4] protocol suite enables automated agreemen
 
 A *Data Agreement* (DA) is a construct between an organisation and an individual regarding the use and processing of personal data [2]. It records the conditions for an organisation to process personal data following the relevant data protection regulations, which could be data laws or norms such as the MyData principles. It can have any legal basis outlined by the applicable data protection regulation. The agreement can be with a data source (issuer) or a data-using service (verifier) or used for personal data exchange with third parties.
 
-A data agreement simplifies and globalises the use of comprehensible data for humans and machines alike. A W3C-specified decentralised identifier (DID) implements the data agreement within DEXA [3]. Shown below is an example of a Data Agreement as part of a credential presentation:
+A data agreement gives a simple overview of the data usage for humans and machines alike which is enforced between the parties involved. A W3C-specified decentralised identifier (DID) implements the data agreement within DEXA [3]. Shown below is an example of a Data Agreement as part of a credential presentation:
 
 ![](https://i.imgur.com/DwD6ACe.jpg)
 
@@ -153,20 +183,20 @@ The "*platform approach*" might be tempting within a single jurisdiction. Still,
 ## 4. Context preservation - a Decentralised Semantic approach
 *See reference [7,8]*
     
-#### Semantic to the rescue   
-"Context preservation" is a common requirement lurking behind the challenges presented in sections 3 (VC presentation) and 4 (VC links to agreements).
+#### Semantics to the rescue   
+"Context preservation" is a common requirement lurking behind the challenges presented in sections 2 (VC presentation) and 3 (VC links to agreements).
 In each challenge, the system must be aware of the context in which the user operates. Specifically, the issuer controlling the credentials related to the prescription has no control over its presentation on a patient's device. Moreover, the chosen scenario shows a use case where the issuer does not control the jurisdiction where the user will carry out its transactions. The challenge is to securely provide a deterministic digital item in contexts not known in advance.
 
-A complete framework addressing these topics is the Dynamic Data Economy (DDE) [Ref] architecture based on the four domains of data management (Inputs, Semantics, Governance, Economy) 
+A complete framework addressing these topics is the Dynamic Data Economy (DDE) [13] architecture based on the four domains of data management (Inputs, Semantics, Governance, Economy) 
 
 ![](https://i.imgur.com/58RhnfN.png)
 
 
-*Figure X: Dynamic Data Economy four domains [Ref]*
+*Figure 4.1: Dynamic Data Economy four domains [13]*
 
-This paper shows how the semantic domain, layer 1 of the DDE technology stack, contributes to solutions through the Overlays Capture Architecture (OCA), a specific reference implementation of decentralised semantics [Ref] developed at the Human Colossus Foundation [Ref]. 
+This paper shows how the semantic domain, layer 1 of the DDE technology stack, contributes to solutions through the Overlays Capture Architecture (OCA), a specific reference implementation of decentralised semantics [7] developed at the Human Colossus Foundation [13]. 
     ![](https://i.imgur.com/7dXKyNb.png)
-*Figure X: Dynamic Data Economy Tech. Stack [Ref]*
+*Figure 4.2: Dynamic Data Economy Tech. Stack [14]*
     
 The Overlays Capture Architecture (OCA) is an explicit representation of task-specific objects ("Overlays") that have deterministic relationships with other objects. These "Overlays" define individual semantic tasks, which, when combined, provide additional context to the object. An OCA bundle consists of a "Capture Base" and "Overlays". The sum of its parts represents a contextually-rich schema.
 
@@ -176,10 +206,10 @@ The segregation of overlays by task enables interoperability in the construction
 Internationalisation for presentations and documents in different languages is an apparent first application of OCA in multi-jurisdiction settings. However, this is the tip of the iceberg.
 Health care is a highly regulated domain. Any process must fulfil conformity requirements in the European Health Data Spaces [Ref], which drives the need for regulatory compliance and data provenance. For example, the testing requirements reference several standards bodies. 
 
-OCA is ontology-agnostic, offering a harmonisation solution between data models and data representation formats. OCA provides a roadmap to resolve privacy-compliant data sharing between servers and networks across sectoral or jurisdictional boundaries. Therefore, the layered architecture of OCA offers a bridging mechanism between different data standards used by various actors. For example, bridging an FHIR profile to an OCA resource for data capture facilitates interoperability with CDISC profiles. The interplay between overlays and the unicity of composite bundles is an exciting field of research for processes dealing with a complex mesh of data exchange agreements.
+OCA is ontology-agnostic, offering a harmonisation solution between data models and data representation formats. OCA provides a roadmap to resolve privacy-compliant data sharing between servers and networks across sectoral or jurisdictional boundaries. Therefore, the layered architecture of OCA offers a bridging mechanism between different data standards used by various actors. For example, bridging a FHIR-profile to an OCA-resource for data capture facilitates interoperability with CDISC-profiles. The interplay between overlays and the unicity of composite bundles is an exciting field of research for processes dealing with a complex mesh of data exchange agreements.
 
 #### OCA for inclusive representations of credentials
-The specification [Ref] ([here](https://oca.colossi.network/v1.1.0-rc.html))[add reference]of OCA rests on the concept of overlays. Therefore, here we add definitions of relevant overlays for the use case at hand:
+The specification of OCA rests on the concept of overlays. Therefore, here we add definitions of relevant overlays for the use case at hand:
 
 
 <table>
@@ -221,36 +251,31 @@ The specification [Ref] ([here](https://oca.colossi.network/v1.1.0-rc.html))[add
   </tr>    
 </table>
 
-## 5. Scenario
+The OCA specification v1.0 can be found on in reference [[17](https://oca.colossi.network/v1.1.0-rc.html)] together with additional documentation and code examples. In addition, for sake of completness  we provide a short version of the OCA specification at the time of the RWOT11 conference as an appendix.
 
-In our scenario, a healthcare provider in Sweden leverages the DEXA protocol to publish the availability of their prescriptions, in Swedish, in a cross-border healthcare data space. Subsequently, a Pharmacy in Zurich signs up to process the drug prescription in German and issues a generic medicine to the patient, Fredrik. To integrate the other challenges this paper addresses, we also include the following constraints to illustrate the difficulties of preserving context in an inclusive digital health system: Frederik is visually impaired and does not understand the local language.
 
-In Section 4 we introduced the Overlays Capture Architecture (OCA) that enables language localisation and provides the additional metadata used to support accessible representation of the credential for Frederik who use assistive technologies to audio describe his data. Our scenario requires that all transactions are auditable, and Fredrik is issued a receipt, with a warning in Swedish for the possible adverse effects of taking medicine. 
+## 5. Conclusions  
 
-This scenario illustrates that many agreements govern the transaction in a cross-border data exchange ecosystem. The *"one-size-fits-all"* approaches will not work at scale. Integrating many contracts into a single legally binding data exchange is beyond the reach of international agreements. 
+*"Naked VCs do not scale; they must be dressed !"* could be the punch line conclusion of this work. However, we point to something more profound. In part of the text, we use the terminology of "verifiable information" instead of "verifiable credential". This distinction underlines that, often, it is the purpose and the authenticity of information that drives user interaction. The trust relationship between the two parties of a transaction can emerge from a digital system only if the presentation of the information in the users' context and the liability of each interacting party is secured and expressed in a simple form. Fredrik and the swiss pharmacist each rely upon their own digital systems that must provide an assurance level matching the potential risk of a transaction. 
 
-The proposed data exchange agreements attached to the transaction integrate better into the context of the relationships between organisations and individuals, depending on their roles in different usage scenarios involving personal data. The agreements can be classified into four broad categories, as shown in the figure below. These are agreements between:
+The challenges we presented, credential presentation, data exchange agreements, accessibility and international requirements all point in the same direction. Verifiable credentials to be used in a broad ecosystem will require a strong link (in the cryptographic sense) to other data objects.  
 
-* An individual and an organisation (data agreement)
-* Two organisations, a data source and a data-using service (data disclosure agreement)
-* An organisation and its supplier (data processing agreement)
-* Two individuals (delegation agreement)
+We provided a view of the current state-of-the-art and a constructive approach to address these challenges using the existing DEXA and OCA protocols.
 
-## 6. Conclusions  
+Our approach is a Self-Sovereign not because of an SSI technology but because the user (e.g. Fredrik, Pharmacist) is the holder and driver of the contextual use of verifiable information. Specifically, this means:
 
-The challenges of VCs addressed in this paper have a primary interest for any organisation currently involved in the digital transformation of citizen-centric processes, particularly for the healthcare sector with large-scale initiatives like the EU Health Data Space or the US-HIE (Health Information Exchange). 
+1. the user is the carrier of trust across ecosystems (see EU Horizon 2020 projects eSSIF-Lab DKMS-4-SSI [17] , eSSIF-Lab Dynamic Data Sharing Engine [16], DAPSI Digital Immunization Passport [15]);
+2. the organisations partake in cross-border data exchange in a scalable, regulatory-compliant and auditable manner.
+ 
+Those stakeholders will find data interactions through user-centric data agreements exciting. However, the most compelling factor is the interoperability requirements defined by HIE and EHDS concerning jurisdictional and sectoral regulations. Rather than a secondary process to meet inclusivity compliance requirements, this steers consideration of up-front accessibility requirements as key to enabling interoperability at scale. 
 
-The novelty of our approach is a combination of (i.) considering the user as the carrier of trust across ecosystems **[PP add references to NGI projects]** and (ii.) organisations partaking in cross-border data exchange in a scalable, regulatory-compliant manner. Those stakeholders will find data interactions through user-centric data agreements exciting. However, the most compelling factor is the interoperability requirements defined by HIE and EHDS concerning jurisdictional and sectoral regulations. Rather than a secondary process to meet inclusivity compliance requirements, this steers consideration of up-front accessibility requirements as key to enabling interoperability at scale. 
-
-The challenges presented here indicate that the concept of Self-Sovereign Identity, as developed until now, must consider the societal landscape for deployed systems. The risks in not doing so have been pointed out at RWOT11 and **[PP to add links to conferences XXX and YYY]**.
+The challenges addressed in this paper have a primary interest for any organisation currently involved in the digital transformation of citizen-centric processes, particularly for the healthcare sector with large-scale initiatives like the EU Health Data Space or the US-HIE (Health Information Exchange). It shows that the concept of Self-Sovereign Identity, as developed until now, must and can consider the societal landscape. The risks of not doing so emerged in numerous discussions at this RWOT11 conference and others attended by some of the authors (i.e. the Cancer Drug Development Forum workshop on patient right of equity to access treatments [18] or DPO Associates' Master Class "Cloud or Not-Cloud"[19]).
      
-## 7. Acknowledgements
+## 6. Acknowledgements
    
-We thank the following personnel for supporting us in writing this paper:
+We thank the participants and organisers of RWOT11 for providing the space for insights full discussions.
 
-
-
-## 8. References
+## 7. References
 
 [1] European Union e-Health network, e-prescriptions and eIDAS integrated vision: https://health.ec.europa.eu/latest-updates/eprescription-eidas-integrated-vision-2022-08-01_en (Last accessed: 08-Oct-2022)
 
@@ -266,7 +291,7 @@ We thank the following personnel for supporting us in writing this paper:
     
 [7] Overlays Capture Architectures (OCA) specifications, https://oca.colossi.network/v1.1.0-rc.html (Last accessed: 11-Nov-2022)
 
-[8] OCA transformation layer (add link:Philippe)
+[8] "OCA transformation layer", The Official OCA [website](https://oca.colossi.network/guide/applications/#use-case-1-data-transformation-using-overlays), last accessed November 1st
 
 [9] DIF Wallet Rendering Specification (draft):
 https://identity.foundation/wallet-rendering/
@@ -278,6 +303,23 @@ https://identity.foundation/credential-manifest/
 
 [12] Open Badges Specification
 https://1edtech.github.io/openbadges-specification/ob_v3p0.html
+
+[13] "Dynamic Data Economy Principles", Human Colossus [website](https://static1.squarespace.com/static/5ead4c8660689c348c80958e/t/62f288b25f9c364d7945e6eb/1660061875006/HCF+DDE+Principles+v1.0.0.pdf), last accessed on November 1st 2022
+
+[14] "Humancolossus Trust Infrastructure Stack V1.0", The Human Colossus Foundation [website](https://static1.squarespace.com/static/5ead4c8660689c348c80958e/t/62f2893465394d4b829661bc/1660062007339/HCF+DDE+Trust+Infrastructure+Stack+v1.0.0.pdf)
+
+[15] EU Horizon 2020 -New Generation Internet DAPSI “Digital Immunization Passport” grant agreement 871498 https://dapsi.ngi.eu/hall-of-fame/dip/
+
+[16] EU Horizon 2020 -New Generation Internet sSSIF-Lab Business Oriented Call#1 “Dynamic Data Sharing Hub” grant agreement 871932 https://essif-lab.eu/dynamic-data-sharing-hub-with-consent-flow-by-the-human-colossus-foundat ion/
+
+[17] EU Horizon 2020 -New Generation Internet sSSIF-Lab Infrastructure Oriented Call#3 “DKMS-4-SSI” grant agreement 871932 https://essif-lab.eu/decentralized-key-management-infrastructure-for-ssi-by-the-human-colossus -foundation/
+
+[18] HCF: "A distributed governance approach" in CDDF workshop *Leveraging the potential of precision medicine: Ensuring equity of access to precision diagnostics and treatments for patients*, Amsterdam, Netherlands November 15th 2022
+
+
+[19] HCF: "Cloud or *not* Cloud", DPO Associate's Master Class, Lausanne, Switzerland November 24th 2022
+
+
 
 ---
 
@@ -350,7 +392,7 @@ A typical cross-border data exchange scenario is well laid out in the European U
 ### Appendix B Overview of OCA Overlays
 For completeness, we present additional information on OCA valid at the time of RWOT11 event participation.
 
-The OCA specification is maintained at the Human Colossus Foundation and can be accessed here **[PP] add link**. Readers can find more information about OCA on the official [OCA website](https://oca.colossi.network).
+The OCA specification is maintained at the Human Colossus Foundation and can be accessed here [[17](https://oca.colossi.network/v1.1.0-rc.html)]. Readers can find more information about OCA on the official [OCA website](https://oca.colossi.network).
     
 The following OCA features support the inclusive representation of credentials:
 
