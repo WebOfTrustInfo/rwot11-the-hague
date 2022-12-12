@@ -15,13 +15,13 @@ Data Exchange Agreements (DEXA), Data Disclosure Agreements (DDA), Data Agreemen
 * Ms. Lotta Lundin [LL] ([iGrant.io](https://igrant.io), Sweden)
 * Mr. Fredrik Lindén [FL] ([MyData](https://www.mydata.org), Sweden)
 * Dr. Philippe Page [PP] ([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
-* Mr. Paul Knowles [PK]([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
-* Mr. Víctor Martínez Jurado [VM]([SICPA](https://www.sicpa.com), Switzerland)
-* Mr. Andrew Slack [AS]([SICPA](https://www.sicpa.com), Switzerland)
+* Mr. Paul Knowles [PK] ([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
+* Mr. Víctor Martínez Jurado [VM] ([SICPA](https://www.sicpa.com), Switzerland)
+* Mr. Andrew Slack [AS] ([SICPA](https://www.sicpa.com), Switzerland)
 
 ## Contributors
 
-The authors want to extend special thanks to the following persons who contributed significantly to developing the concepts presented in the publication.  
+The authors want to extend special thanks to the following persons who contributed significantly to developing the concepts presented in the publication.
 
 * Mr. Jan Linquist (Linaltec, Sweden)
 * Mr. Max Carlson (Govstack Initiative)
@@ -45,6 +45,7 @@ We start by stating the problem along three dimensions: i)verifiable credential 
 The essay provides references and appendices for readers interested in going deeper. 
 
 ## 1. Introduction
+
 This essay links verifiable credentials with the right to use data in a secure, inclusive user interaction. We illustrate our approach through the well-known scenario provided by the digitalisation of the patient prescription. 
 
 ### 1.1 Revisiting the issue of patient data exchange in a cross-border, multi-jurisdiction and inclusive setting.
@@ -139,7 +140,7 @@ In the DEXA framework, the conversion of DPIA results to a machine-readable form
     
 ![](https://i.imgur.com/1WUYsCT.png)
 
-*Figure 1: Data Exchange Agreement Landspace [4]*
+*Figure 3.1: Data Exchange Agreement Landspace [4]*
 
 The Data Exchange Agreement (DEXA) [4] protocol suite enables automated agreement handling for data exchange between a Data Source (DS) and a Data Using Service (DUS). DEXA provides a human-centric and auditable approach to data transactions through cryptographically-signed data agreements between individuals and organisation(s) involved in data exchange. For organisations, it helps to be transparent and legitimate in their data usage while leveraging data in a scalable manner as part of a data ecosystem. Furthermore, the DEXA protocol brings in the requisite trust and governance to establish a ubiquitous data exchange space while empowering individuals to control their data.
 
@@ -151,7 +152,7 @@ A data agreement gives a simple overview of the data usage for humans and machin
 
 ![](https://i.imgur.com/DwD6ACe.jpg)
 
-*Figure 2: Example Data Agreement from iGrant.io Data Wallet [4]*
+*Figure 3.2: Example Data Agreement from iGrant.io Data Wallet [4]*
 
 Appendix C provides the DA ontology and reference [20] provides the demonstration of an implementation using iGrant.io Data Wallets.
 
@@ -184,17 +185,18 @@ The "*platform approach*" might be tempting within a single jurisdiction. Still,
 
 
 ## 4. Context preservation - a Decentralised Semantic approach
+
 *See reference [7,8]*
     
 ### Semantics to the rescue
 
 "Context preservation" is a common requirement lurking behind the challenges presented in sections 2 (VC presentation) and 3 (VC links to agreements).
+
 In each challenge, the system must be aware of the context in which the user operates. Specifically, the issuer controlling the credentials related to the prescription has no control over its presentation on a patient's device. Moreover, the chosen scenario shows a use case where the issuer does not control the jurisdiction where the user will carry out its transactions. The challenge is to securely provide a deterministic digital item in contexts not known in advance.
 
 A complete framework addressing these topics is the Dynamic Data Economy (DDE) [13] architecture based on the four domains of data management (Inputs, Semantics, Governance, Economy) 
 
-![](https://i.imgur.com/58RhnfN.png)
-
+![](https://i.imgur.com/hNpAq8T.png)
 
 *Figure 4.1: Dynamic Data Economy four domains [13]*
 
@@ -330,7 +332,8 @@ https://1edtech.github.io/openbadges-specification/ob_v3p0.html
 ---
 
 ## Appendix A Use case: Using a medical prescription in a different country
- ** ADD FIGURES AND SEQUENCE DIAGRAMS**
+
+** ADD FIGURES AND SEQUENCE DIAGRAMS**
     
 A typical cross-border data exchange scenario is well laid out in the European Union e-Health network, e-prescriptions and eIDAS integrated vision [1] and is as given below: 
 
@@ -369,7 +372,6 @@ A typical cross-border data exchange scenario is well laid out in the European U
   * ATC code of the prescription, IDMP attributes (such as EDQM dose form), prescribed amount or other critical data
   * Timestamp and digital signature	
 
-
 5. The dispensation provider (Pharmacy) scans the QR code, verifies the digital signature and generates a request to send to country A based on the information provided.
 
 6. **Option A** Default option [Typical steps following the MyHealth@EU workflow leading to possible dispensation]		
@@ -393,7 +395,6 @@ A typical cross-border data exchange scenario is well laid out in the European U
 10.	Termination of the workflow. No more access to the Patient's data from Country A is possible.		
 
 ---
-
 
 ## Appendix B Overview of OCA Overlays
 
