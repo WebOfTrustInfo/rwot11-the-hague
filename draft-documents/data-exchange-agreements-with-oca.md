@@ -12,8 +12,10 @@ Data Exchange Agreements (DEXA), Data Disclosure Agreements (DDA), Data Agreemen
 
 ## Authors
 * Lal Chandran [LC]([iGrant.io](https://igrant.io), Sweden)
+* Lotta Lundin [LL]([iGrant.io](https://igrant.io), Sweden)
 * Fredrik Lindén [FL] ([MyData](https://www.mydata.org), Sweden)
 * Philippe Page [PP]([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
+* Paul Knowles [PK] ([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
 * Víctor Martínez Jurado [VM] ([SICPA](https://www.sicpa.com), Switzerland)
 * Andrew Slack [AS] ([SICPA](https://www.sicpa.com), Switzerland)
 
@@ -22,9 +24,7 @@ Data Exchange Agreements (DEXA), Data Disclosure Agreements (DDA), Data Agreemen
 The authors want to extend special thanks to the following persons who contributed significantly to developing the concepts presented in the publication.  
 
 * Mr. Jan Linquist (Linaltec, Sweden)
-* Ms. Lotta Lundin (iGrant.io, Sweden)
 * Mr. Max Carlson (Govstack Initiative)
-* Mr. Paul Knowles (Human Colossus Foundation, Switzerland)
 * Mr. George Padayatti (iGrant.io, Sweden)
 * Dr. David Goodman (iGrant.io, Sweden)
     
@@ -150,7 +150,7 @@ A data agreement gives a simple overview of the data usage for humans and machin
 
 *Figure 2: Example Data Agreement from iGrant.io Data Wallet [4]*
 
-Appendix C provides the DA ontology.
+Appendix C provides the DA ontology and reference [] provides the demonstration of an implementation using iGrant.io Data Wallets.
 
 #### Data Disclosure Agreements
 
@@ -316,10 +316,9 @@ https://1edtech.github.io/openbadges-specification/ob_v3p0.html
 
 [18] HCF: "A distributed governance approach" in CDDF workshop *Leveraging the potential of precision medicine: Ensuring equity of access to precision diagnostics and treatments for patients*, Amsterdam, Netherlands November 15th 2022
 
-
 [19] HCF: "Cloud or *not* Cloud", DPO Associate's Master Class, Lausanne, Switzerland November 24th 2022
 
-
+[20] Data wallet with data agreements for consent-based auditable and immutable data transactions, https://www.youtube.com/watch?v=lx8F5D9qPQI (Last accessed: 11-Dec-2022)
 
 ---
 
