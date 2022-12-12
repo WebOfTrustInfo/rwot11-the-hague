@@ -203,7 +203,7 @@ A complete framework addressing these topics is the Dynamic Data Economy (DDE) [
 
 This paper shows how the semantic domain, layer 1 of the DDE technology stack, contributes to solutions through the Overlays Capture Architecture (OCA), a specific reference implementation of decentralised semantics [7] developed at the Human Colossus Foundation [13].
 
-![](https://i.imgur.com/7dXKyNb.png)
+![](https://i.imgur.com/5FR3CzB.png)
 
 *Figure 4.2: Dynamic Data Economy Tech. Stack [14]*
 
@@ -329,8 +329,6 @@ We thank the participants and organisers of RWOT11 for providing the space for i
 
 [20] Data wallet with data agreements for consent-based auditable and immutable data transactions, <https://www.youtube.com/watch?v=lx8F5D9qPQI> (Last accessed: 11-Dec-2022)
 
----
-
 ## Appendix A Use case: Using a medical prescription in a different country
 
 A typical cross-border data exchange scenario is well laid out in the European Union e-Health network, e-prescriptions and eIDAS integrated vision [1] and is as given below:
@@ -386,13 +384,11 @@ A typical cross-border data exchange scenario is well laid out in the European U
 
     In the case of 6B, the Dispenser manually invalidates the prescription in the Wallet app.
 
-9. The Wallet receives an updated prescription status from Country A with the invalidated or updated (in the case of a partial dispense) dispensed prescription.  
+9. The Wallet receives an updated prescription status from Country A with the invalidated or updated (in the case of a partial dispense) dispensed prescription.
 
     A push notification provides an updated prescription status in the Wallet.
 
-10. Termination of the workflow. No more access to the Patient's data from Country A is possible.  
-
----
+10. Termination of the workflow. No more access to the Patient's data from Country A is possible.
 
 ## Appendix B Overview of OCA Overlays
 
