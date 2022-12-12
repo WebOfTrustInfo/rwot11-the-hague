@@ -11,13 +11,13 @@ Data Exchange Agreements (DEXA), Data Disclosure Agreements (DDA), Data Agreemen
 [![hackmd-github-sync-badge](https://hackmd.io/1wxXNi2vSIeEv2-Ua6f1vA/badge)](https://hackmd.io/1wxXNi2vSIeEv2-Ua6f1vA)
 
 ## Authors
-* Lal Chandran [LC]([iGrant.io](https://igrant.io), Sweden)
-* Lotta Lundin [LL]([iGrant.io](https://igrant.io), Sweden)
-* Fredrik Lindén [FL] ([MyData](https://www.mydata.org), Sweden)
-* Philippe Page [PP]([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
-* Paul Knowles [PK] ([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
-* Víctor Martínez Jurado [VM] ([SICPA](https://www.sicpa.com), Switzerland)
-* Andrew Slack [AS] ([SICPA](https://www.sicpa.com), Switzerland)
+* Mr. Lal Chandran [LC]([iGrant.io](https://igrant.io), Sweden)
+* Ms. Lotta Lundin [LL]([iGrant.io](https://igrant.io), Sweden)
+* Mr. Fredrik Lindén [FL] ([MyData](https://www.mydata.org), Sweden)
+* Dr. Philippe Page [PP]([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
+* Mr. Paul Knowles [PK] ([Human Colossus Foundation](https://humancolossus.foundation), Switzerland)
+* Mr. Víctor Martínez Jurado [VM] ([SICPA](https://www.sicpa.com), Switzerland)
+* Mr. Andrew Slack [AS] ([SICPA](https://www.sicpa.com), Switzerland)
 
 ## Contributors
 
@@ -150,7 +150,7 @@ A data agreement gives a simple overview of the data usage for humans and machin
 
 *Figure 2: Example Data Agreement from iGrant.io Data Wallet [4]*
 
-Appendix C provides the DA ontology and reference [] provides the demonstration of an implementation using iGrant.io Data Wallets.
+Appendix C provides the DA ontology and reference [20] provides the demonstration of an implementation using iGrant.io Data Wallets.
 
 #### Data Disclosure Agreements
 
