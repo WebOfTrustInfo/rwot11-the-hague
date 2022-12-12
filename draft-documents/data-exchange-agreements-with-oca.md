@@ -106,7 +106,7 @@ While there are some common patterns that are applied to the representation of V
 
 Consistency in data representation does not need to mean uniformity in wallet experiences however. Wallets should provide cohesive, culturally and contextually relevant experiences that cater to individual preferences and needs. These experiences may vary significantly between individuals and regions and can relate to language, colours, symbology, motion, voices and audio tones. A balance has to be found between consistent representation of issuer data and contextually relevant appropriations.
 
-### Current state of the art
+### 2.1 Current state of the art
 
 Within the VC community, there exist a number of proposals for defining how a credential should be 'rendered', such as the Open Badges [12], DIF Wallet Rendering (draft) [9] and Credential Manifest [11] specifications. As well as another proposal from RWOT11 for Rendering Verifiable Credentials. All of these provide rendering 'hints' that are embedded, or linked, UI markup within the credential schema. While such approaches can give issuers control over the consistent representation of the credential, they promote document-centric representation of the data that reduces flexibility in it's use and limits possibility for appropriation by wallets to meet consumer preferences or contextual needs. For example, pre-determined visual layouts for credentials, possibly from multiple issuers, may be challenging for wallets to cohesively display alongside each other. This could result in difficulty for users to understand data, and may induce additional cognitive burden.  
 
@@ -116,7 +116,7 @@ The RWOT proposal addresses accessibility requirements, by providing capability 
 
 A pattern already seen in popular OS 'wallet apps' is for the wallet provider to define a set number of layout types depending on data object typology; for example, Apple Wallet has five "Pass" styles: Boarding pass, Coupon, Event ticket, Store card and Generic. The data provider can then populate these layouts with attributes and attribute characteristics. This pattern provides a consistent in-wallet experience while allowing the data provider to define specific representation characteristics for data attributes in different media formats. This helps to create distinctive yet consistent representations, allowing for easier recognition and lower cognitive burdens for data consumers using the wallet. This approach also results in more constrained requirements in terms of data needed to from the provider, leaving layout to the wallet.
 
-### Design for appropriation
+### 2.2 Design for appropriation
 
 This approach of decoupling verifiable data from the presentation layer would enable VC to move away from static, document-centric representations and embrace contextual flexibility and portability of user held verifiable data. The Overlay Capture Architecture (OCA), described later in this paper, provides such a method to do this. Issuers are able to define and host a bundle of 'semantic overlays' that are referenced in the credential and that wallets can fetch as required. The overlays provide metadata that supports contextually relevant credential and attribute representations. For example, a language overlay can provide translated attribute descriptions, these could be used by assistive technologies to drive an audio representation. An asset overlay can provide the logo of the issuer and it's display aspect ratio. The benefits of this decoupling of data and presentation are three-fold:
 
@@ -126,7 +126,7 @@ This approach of decoupling verifiable data from the presentation layer would en
 
 * It supports greater inclusivity by providing attribute metadata that can be used to drive alternative representations of data using assistive technologies. Importantly, and uniquely, it does this in such a way that it does not encumber the VC itself with additional layout or formatting information that may not be necessary in all cases. Such additional data may itself exclude those who have limited network access.
 
-### Use case scenario
+### 2.3 Use case scenario
 
 In the context of a cross-border health data exchange, credential representations need to be available in multiple languages and may need to meet regionally specific accessibility requirements. Within a population there will also be diverse access to technology, devices and networks. Individuals will have unique preferences and needs in how they consume their data, some perhaps with differing abilities requiring wallets that provide multimodal feedback. The preferences of the data subject may be very different from the requirements of the health professionals with whom they share their data.
 
@@ -134,7 +134,7 @@ The proposed approach of utilising semantic overlays to appropriate the represen
 
 ## 3 Data Exchange Agreements (DEXA) protocol
 
-### Background: The data exchange landscape
+### 3.1 Background: The data exchange landscape
 
 New data regulations are emerging worldwide, mandating organisations to implement controls and safeguards when processing, consuming and exposing personal data. Typically, a Data Protection Impact Assessment (DPIA) or similar process details the purpose of data usage, the lawful basis, etc.
 
@@ -146,7 +146,7 @@ In the DEXA framework, the conversion of DPIA results to a machine-readable form
 
 The Data Exchange Agreement (DEXA) [4] protocol suite enables automated agreement handling for data exchange between a Data Source (DS) and a Data Using Service (DUS). DEXA provides a human-centric and auditable approach to data transactions through cryptographically-signed data agreements between individuals and organisation(s) involved in data exchange. For organisations, it helps to be transparent and legitimate in their data usage while leveraging data in a scalable manner as part of a data ecosystem. Furthermore, the DEXA protocol brings in the requisite trust and governance to establish a ubiquitous data exchange space while empowering individuals to control their data.
 
-### Data Agreements
+### 3.2 Data Agreements
 
 A *Data Agreement* (DA) is a construct between an organisation and an individual regarding the use and processing of personal data [2]. It records the conditions for an organisation to process personal data following the relevant data protection regulations, which could be data laws or norms such as the MyData principles. It can have any legal basis outlined by the applicable data protection regulation. The agreement can be with a data source (issuer) or a data-using service (verifier) or used for personal data exchange with third parties.
 
@@ -158,18 +158,18 @@ A data agreement gives a simple overview of the data usage for humans and machin
 
 Appendix C provides the DA ontology and reference [20] provides the demonstration of an implementation using iGrant.io Data Wallets.
 
-### Data Disclosure Agreements
+### 3.3 Data Disclosure Agreements
 
 A *Data Disclosure Agreement* (DDA), also referred to as Data Sharing Agreement, enables automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite while establishing a scalable regulatory-compliant data space. It also provides individuals control over how their data is used and exchanged.
 
 Appendix C provides the DDA ontology.
 
-### Data Processing Agreements
+### 3.4 Data Processing Agreements
 
 A *Data Processing Agreement* (DPA) is a construct between an organisation and its suppliers, as illustrated in figure 1. Here, there is a vertical relationship between Organisation A as a data
 controller and its supplier as a data processor or sub-processor. For a higher level of accountability between these organisations and mandatory for the GDPR, a data processing agreement is set up, which lays out what routines are required to be in place: for example, a data processor’s obligations in case of a data breach or how the rights of the individual, such as access rights, are supported, among other policies and routines. An auditor should also be able to inspect the organisation and use the data processing agreement as reference material during the inspection. As depicted in figure 2, the data processing agreement is connected to the individual at the top of the hierarchy via the data controller organisation.
 
-### Delegation Agreements
+### 3.5 Delegation Agreements
 
 A delegation agreement describes scenarios in which a delegate acts on behalf of an individual in signing off a data exchange. There are several scenarios where delegation is
 necessary. For example, in the case of:
@@ -177,7 +177,7 @@ necessary. For example, in the case of:
 * guardianship when an individual is incapable of signing off due to infirmity, incapacity or illness; or
 * an individual receives temporary rights to sign off on behalf of another individual: for example, purchasing medicine at a pharmacy or collecting a parcel from a post office.
 
-### The rationale for a multi-jurisdictions approach
+### 3.6 The rationale for a multi-jurisdictions approach
 
 Today, the governance of data exchanges is dependent on centralised platforms, limiting the impact of an end-user self-sovereign approach as the transaction’s regulatory compliance remains under the platform’s control. Despite receiving a decentralised capacity of authenticating itself, the end-user remains trapped in a "cookie" style agreement over the overall relationship instead of receiving proof of compliance specific to a transaction.
 
@@ -189,7 +189,7 @@ The "*platform approach*" might be tempting within a single jurisdiction. Still,
 
 *See reference [7,8]*
 
-### Semantics to the rescue
+### 4.1 Semantics to the rescue
 
 "Context preservation" is a common requirement lurking behind the challenges presented in sections 2 (VC presentation) and 3 (VC links to agreements).
 
@@ -211,14 +211,14 @@ The Overlays Capture Architecture (OCA) is an explicit representation of task-sp
 
 The segregation of overlays by task enables interoperability in the construction process of any digital object without compromising the integrity of the semantic structure, the encapsulated objects, or the relationship between those objects.
 
-### Health domain regulations
+### 4.2 Health domain regulations
 
 Internationalisation for presentations and documents in different languages is an apparent first application of OCA in multi-jurisdiction settings. However, this is the tip of the iceberg.
 Health care is a highly regulated domain. Any process must fulfil conformity requirements in the European Health Data Spaces [Ref], which drives the need for regulatory compliance and data provenance. For example, the testing requirements reference several standards bodies.
 
 OCA is ontology-agnostic, offering a harmonisation solution between data models and data representation formats. OCA provides a roadmap to resolve privacy-compliant data sharing between servers and networks across sectoral or jurisdictional boundaries. Therefore, the layered architecture of OCA offers a bridging mechanism between different data standards used by various actors. For example, bridging a FHIR-profile to an OCA-resource for data capture facilitates interoperability with CDISC-profiles. The interplay between overlays and the unicity of composite bundles is an exciting field of research for processes dealing with a complex mesh of data exchange agreements.
 
-### OCA for inclusive representations of credentials
+### 4.3 OCA for inclusive representations of credentials
 
 The specification of OCA rests on the concept of overlays. Therefore, here we add definitions of relevant overlays for the use case at hand:
 
