@@ -139,7 +139,7 @@ The proposed approach of utilising semantic overlays to appropriate the represen
 
 New data regulations are emerging worldwide, mandating organisations to implement controls and safeguards when processing, consuming, and exposing personal data. Typically, a Data Protection Impact Assessment (DPIA) or similar process details the purpose of data usage, the lawful basis, etc.
 
-In the DEXA framework, the conversion of DPIA results to a machine-readable format constitutes the basis for any agreement between the stakeholders in the data exchange ecosystem, as illustrated in Figure 1 below.
+In the DEXA framework, the conversion of DPIA results to a machine-readable format constitutes the basis for any agreement between the stakeholders in the data exchange ecosystem, as illustrated in figure 3.1 below.
 
 ![Data Exchange Agreement Landspace](https://i.imgur.com/1WUYsCT.png)
 
@@ -167,8 +167,7 @@ Appendix C provides the DDA ontology.
 
 ### 3.4 Data Processing Agreements
 
-A *Data Processing Agreement* (DPA) is a construct between an organisation and its suppliers, as illustrated in figure 1. Here, there is a vertical relationship between Organisation A as a data
-controller and its supplier as a data processor or sub-processor. For a higher level of accountability between these organisations, and mandatory for the GDPR, a data processing agreement is set up, which lays out what routines are required to be in place; for example, a data processor’s obligations in case of a data breach or how the rights of the individual, such as access rights, are supported, among other policies and routines. An auditor should also be able to inspect the organisation and use the data processing agreement as reference material during the inspection. As depicted in figure 3.1, the data processing agreement is connected to the individual at the top of the hierarchy via the data controller organisation.
+A *Data Processing Agreement* (DPA) is a construct between an organisation and its suppliers, as illustrated in figure 3.1. Here, there is a vertical relationship between Organisation A as a data controller and its supplier as a data processor or sub-processor. For a higher level of accountability between these organisations, and mandatory for the GDPR, a data processing agreement is set up, which lays out what routines are required to be in place; for example, a data processor’s obligations in case of a data breach or how the rights of the individual, such as access rights, are supported, among other policies and routines. An auditor should also be able to inspect the organisation and use the data processing agreement as reference material during the inspection. As depicted in figure 3.1, the data processing agreement is connected to the individual at the top of the hierarchy via the data controller organisation.
 
 ### 3.5 Delegation Agreements
 
