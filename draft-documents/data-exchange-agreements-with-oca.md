@@ -32,41 +32,42 @@ The authors want to extend special thanks to the following persons who contribut
 
 ## Abstract
 
-In this collaborative work from RWOT11, we revisit the issue of patient data exchange in a setting requiring cross-border, multi-jurisdiction and inclusive access to all participants. A fundamental problem in developing large-scale real-world solutions based on verifiable credentials is keeping the simplicity of usage for individuals in different contexts without sacrificing security.
+In this collaborative work from RWOT11, we revisit the issue of patient data exchange in a setting requiring cross-border, multi-jurisdiction, and inclusive access to all participants. A fundamental problem in developing large-scale real-world solutions based on verifiable credentials is keeping the simplicity of usage for individuals in different contexts without sacrificing security.
 
 We aim to highlight selected technical challenges and outline how the DEXA and OCA protocols contribute to scalable solutions.
 
-We illustrate our essay with the well-known use case of the digitalised patient prescription cast in a multi-jurisdictional setting, considering the accessibility requirement of a visually impaired patient. This scenario provides a tangible setting to translate the technical challenges into legal and societal questions:
+We illustrate our essay with the well-known use case of the digitalised patient prescription, but cast in a multi-jurisdictional setting and considering the accessibility requirement of a visually impaired patient. This scenario provides a tangible setting to translate the technical challenges into legal and societal questions:
 
-1. How Data Exchange Agreements address the fundamental legal data protection requirements (e.g. GDPR) in a scalable, auditable and convenient manner for all parties involved in a data exchange transaction.
+1. How Data Exchange Agreements address the fundamental legal data protection requirements (e.g. GDPR) in a scalable, auditable, and convenient manner for all parties involved in a data exchange transaction.
 
 2. How task-oriented layered overlays offer a secure user-centric solution for language and accessibility requirements.
 
-We start by stating the problem along three dimensions: i)verifiable credential presentation and wallet appropriation, ii) agreements for data exchanges in muti-jurisdictions, and iii) preservation of context. Then, the following sections outline the existing solutions and present the contributions of the DEXA and OCA protocols toward the solution.
+We start by stating the problem along three dimensions: i) verifiable credential presentation and wallet appropriation, ii) agreements for data exchanges in muti-jurisdictions, and iii) preservation of context. Then, the following sections outline the existing solutions and present the contributions of the DEXA and OCA protocols toward the solution.
 
 The essay provides references and appendices for readers interested in going deeper.
 
 ## 1. Introduction
 
-This essay links verifiable credentials with the right to use data in a secure, inclusive user interaction. We illustrate our approach through the well-known scenario provided by the digitalisation of the patient prescription.
+This essay links verifiable credentials with the right to use data in a secure and inclusive user interaction. We illustrate our approach through the well-known scenario provided by the digitalisation of the patient prescription.
 
-### 1.1 Revisiting the issue of patient data exchange in a cross-border, multi-jurisdiction and inclusive setting
+### 1.1 Revisiting the issue of patient data exchange in a cross-border, multi-jurisdiction, and inclusive setting
 
-In our scenario, Fredrik is a visually impaired Swedish resident undergoing treatment at a local healthcare provider. Following Fredrik's last visit, the healthcare provider delivered a digital prescription made available in the Swedish-governed healthcare data space. The health data space must meet the requirements of the countries' health professionals, including insurance, public health and other third parties.
+In our scenario, Fredrik is a visually impaired Swedish resident undergoing treatment at a local healthcare provider. Following Fredrik's last visit, the healthcare provider delivered a digital prescription made available in the Swedish-governed healthcare data space. The health data space must meet the requirements of the countries' health professionals, including insurance, public health, and other third parties.
 
-The system is also accessible to patients. Independently of his location, Fredrik has secured access. Therefore the system allows cross-border jurisdictions usage. For example, this will be necessary when Fredrik visits his daughter studying in Zurich, Switzerland (i.e. a non-EU jurisdiction).
+The system is also accessible to patients. Independent of his location, Fredrik has securex access. Therefore the system allows cross-border jurisdictions usage. For example, this will be necessary when Fredrik visits his daughter studying in Zurich, Switzerland (i.e. a non-EU jurisdiction).
 
-While in Zurich, Fredrik uses his digital prescription in a swiss pharmacy not connected to the Swedish healthcare system. Fredrik speaks only swedish, and the pharmacist only german. Therefore we assume that both Fredrik and the pharmacist have an online connection and can exchange digital information.
+While in Zurich, Fredrik uses his digital prescription in a Swiss pharmacy not connected to the Swedish healthcare system. Fredrik speaks only Swedish, and the pharmacist only German. Therefore we assume that both Fredrik and the pharmacist have an online connection and can exchange digital information.
 
-Fredrik can provide verifiable information that the pharmacist must authenticate. In turn, the swiss pharmacist must also deliver authentic information that the Swedish healthcare system will require for its internal processes (e.g. prescription double-spend).
+Fredrik can provide verifiable information that the pharmacist must authenticate. In turn, the swiss pharmacist must also deliver authentic information that the Swedish healthcare system will require for its internal processes (e.g. to avoid prescription double-spend).
 
-Our scenario requires that all transactions are auditable, and Fredrik is issued a receipt and warning in swedish for the possible adverse effects of taking medicine.
+Our scenario requires that all transactions are auditable, and Fredrik is issued a receipt and warning in Swedish for the possible adverse effects of taking medicine.
 
 This scenario exemplifies the need for human-centric, context-aware, device-independent automated agreement handling for data exchange between a Data Source (DS) and a Data Using Service (DUS).
 
 ### 1.2 Presentation - Agreements - Context
 
-Verifiable credentials (VC) will become critical components for the digital transformation of real-world processes. However, in light of that positioning, VC will have to be integrated into digital processes that deliver at least the same level of security, usability and safety as their paper-based counterparts in the physical world. The above scenario is a complex edge case for a system designer, but deviations from standard designs are the rule in real-world systems. Enabling this real-world diversity in a machine-readable format is the fundamental driver behind the growing emergence of decentralised systems.
+Verifiable credentials (VC) will become critical components for the digital transformation of real-world processes. However, in light of that positioning, VC will have to be integrated into digital processes that deliver at least the same level of security, usability, and safety as their paper-based counterparts in the physical world. The above scenario is a complex edge case for a system designer, but deviations from standard designs are the rule in real-world systems. Enabling this real-world diversity in a machine-readable format is the fundamental driver behind the growing emergence of decentralised systems.
+
 To achieve this, the VC faces a few steep challenges to ensure broad adoption. In this paper, we illustrate three challenges:
 
 * VC representation and wallet appropriation
@@ -81,7 +82,7 @@ The collaborative work done during the RWOT11 conference brought together author
 * [LC, FL] *Data exchange agreements*. DEXA protocol for data exchange;
 * [PP, PK] *Context preservation & governance*. Overlays Capture Architecture for data presentation.
 
-At the start of his user journey, Fredrik has to interact with the information system. Section two, "Credential Representation", deals with the challenges for systems designers. We present the current state-of-the-art credential rendering and demonstrate the need to decouple verifiable data from the presentation layer. For Fredrik and the swiss pharmacists to have a trusted relationship, such decoupling is required. Each will rely on the level of assurance provided by their respective systems, not a common platform.
+At the start of his user journey, Fredrik has to interact with the information system. Section two, "Credential Representation", deals with the challenges for systems designers. We present the current state-of-the-art credential rendering and demonstrate the need to decouple verifiable data from the presentation layer. For Fredrik and the Swiss pharmacists to have a trusted relationship, such decoupling is required. Each will rely on the level of assurance provided by their respective systems, not a common platform.
 
 Similarly, section three, "Data Exchange Agreements (DEXA) protocol", demonstrates the need to link verifiable data to context-dependent agreements. Fredrik receives a prescription within the Swedish ecosystem designed for the country and uses it in a different ecosystem. Starting from the legal requirement of data protection, we introduce how agreements link to a transaction through the open-source protocol DEXA.
 
@@ -92,33 +93,33 @@ The proposed data exchange agreements attached to the transaction integrate bett
 * An organisation and its supplier (data processing agreement)
 * Two individuals (delegation agreement)
 
-In Section 4, "Context preservation -a decentralised semantic approach", we deal with the dynamic context-aware requirement imposed by Fredrik. Different languages and accessibility requirements are examples of context-dependent use of verifiable information. These requirements differ from credential presentation in section two and data exchange agreements in section three. Collectively they point to decentralised semantics, a concept that breaks down the definition of digital objects into a layered structure. Finally, we introduce Overlays Capture Architecture (OCA) to enable Fredrik's multi-lingual credential exchange independent of other presentation layers.
+In Section 4, "Context preservation — a decentralised semantic approach", we deal with the dynamic context-aware requirement imposed by Fredrik. Different languages and accessibility requirements are examples of context-dependent use of verifiable information. These requirements differ from credential presentation in section two and data exchange agreements in section three. Collectively they point to decentralised semantics, a concept that breaks down the definition of digital objects into a layered structure. Finally, we introduce Overlays Capture Architecture (OCA) to enable Fredrik's multi-lingual credential exchange independent of other presentation layers.
 
 ## 2. Credential representations
 
-Any human-operated system's security and user experience depends on the contextual information conveyed through user interfaces, user responses, and the interpretation of user actions. Unlike physical credentials or closed-loop digital systems, issuers of VC rely on a variety of software or hardware wallets to interpret and convey comprehensible information to users. The wallets define the representation of data and user experience in critical moments of interaction, in which users have to make choices about sharing, accepting and verifying that data.
+Any human-operated system's security and user experience depends on the contextual information conveyed through user interfaces, user responses, and the interpretation of user actions. Unlike physical credentials or closed-loop digital systems, issuers of VC rely on a variety of software or hardware wallets to interpret and convey comprehensible information to users. The wallets define the representation of data and user experience in critical moments of interaction, in which users have to make choices about sharing, accepting, and verifying that data.
 
-Wallets also have to cater for existing user mental models regarding how credentials are represented and used. In many contexts there are pre-conceived ideas of what, for example, an id card, a passport or a medical prescription 'look like' and how they can be used. Relying on a wallet to replicate the appearance of an existing credential may initially seem appealing since such a skeuomorphic approach could ease public acceptance but there are drawbacks to this approach. Government and public body issuers have expressed concerns about confusion between digital and physical artefacts that may have differing legal status, liabilities or associated level of assurance, as well as divergent acceptance and verification processes. It is therefore advised that VC should be distinct from any physical counterparts.
+Wallets also have to cater to existing user mental models regarding how credentials are represented and used. In many contexts there are pre-conceived ideas of what, for example, an id card, a passport, or a medical prescription 'looks like' and how it can be used. Relying on a wallet to replicate the appearance of an existing credential may initially seem appealing since such a skeuomorphic approach could ease public acceptance but there are drawbacks. Government and public body issuers have expressed concerns about confusion between digital and physical artefacts that may have differing legal status, liabilities, or associated level of assurance, as well as divergent acceptance and verification processes. It is therefore advised that VC should be distinct from any physical counterparts.
 
-Additionally, physical credentials often contain accessibility features, or can be issued in alternative formats or languages, to support inclusivity requirements. Unfortunately, existing representation and interaction patterns in VC wallets tend towards visual-centric models that are not be accessible. If VC and wallets are to support public sector applications they must meet accessibility requirements, such as European Standard for Digital Accessibility or US Section 508 [6], to make them usable for all in society.
+Additionally, physical credentials often contain accessibility features, or can be issued in alternative formats or languages, to support inclusivity requirements. Unfortunately, existing representation and interaction patterns in VC wallets tend towards visual-centric models that are not accessible. If VC and wallets are to support public sector applications they must meet accessibility requirements, such as European Standard for Digital Accessibility or US Section 508 [6], to make them usable for all in society.
 
-While there are some common patterns that are applied to the representation of VC today, such as the prominent use of 'cards' as a way to display credentials, the implementation details remain at the sole discretion of wallet providers. This can lead to inconsistent data representations across software, platforms and devices. As adoption and use of credentials expands, wallets are also needing to adapt to handle greater volumes and variety of data and more complex combinatorial applications of this data. It should therefore be anticipated that there will be an evolution, and potentially diversification, of wallet interaction models beyond the card-centric approach seen today. UX-informing material embedded or securely referenced within verifiable data can help issuers to ensure consistent, recognisable and accessible representations of the data they sign within a diversity of wallet contexts.
+While there are some common patterns that are applied to the representation of VC today, such as the prominent use of 'cards' as a way to display credentials, the implementation details remain at the sole discretion of wallet providers. This can lead to inconsistent data representations across software, platforms, and devices. As adoption and use of credentials expands, wallets are also needing to adapt to handle greater volumes and variety of data and more complex combinatorial applications of this data. It should therefore be anticipated that there will be an evolution, and potentially diversification, of wallet interaction models beyond the card-centric approach seen today. UX-informing material embedded or securely referenced within verifiable data can help issuers to ensure consistent, recognisable, and accessible representations of the data they sign within a diversity of wallet contexts.
 
-Consistency in data representation does not need to mean uniformity in wallet experiences however. Wallets should provide cohesive, culturally and contextually relevant experiences that cater to individual preferences and needs. These experiences may vary significantly between individuals and regions and can relate to language, colours, symbology, motion, voices and audio tones. A balance has to be found between consistent representation of issuer data and contextually relevant appropriations.
+Consistency in data representation does not need to mean uniformity in wallet experiences however. Wallets should provide cohesive, culturally and contextually relevant experiences that cater to individual preferences and needs. These experiences may vary significantly between individuals and regions and can relate to language, colours, symbology, motion, voices, and audio tones. A balance has to be found between consistent representation of issuer data and contextually relevant appropriations.
 
 ### 2.1 Current state of the art
 
-Within the VC community, there exist a number of proposals for defining how a credential should be 'rendered', such as the Open Badges [12], DIF Wallet Rendering (draft) [9] and Credential Manifest [11] specifications. As well as another proposal from RWOT11 for Rendering Verifiable Credentials. All of these provide rendering 'hints' that are embedded, or linked, UI markup within the credential schema. While such approaches can give issuers control over the consistent representation of the credential, they promote document-centric representation of the data that reduces flexibility in it's use and limits possibility for appropriation by wallets to meet consumer preferences or contextual needs. For example, pre-determined visual layouts for credentials, possibly from multiple issuers, may be challenging for wallets to cohesively display alongside each other. This could result in difficulty for users to understand data, and may induce additional cognitive burden.  
+Within the VC community, there exist a number of proposals for defining how a credential should be 'rendered', such as the Open Badges [12], DIF Wallet Rendering (draft) [9], and Credential Manifest [11] specifications, as well as another proposal from RWOT11 for Rendering Verifiable Credentials. All of these provide rendering 'hints' that are embedded, or linked, UI markup within the credential schema. While such approaches can give issuers control over the consistent representation of the credential, they promote document-centric representation of the data that reduces flexibility in its use and limits possibility for appropriation by wallets to meet consumer preferences or contextual needs. For example, pre-determined visual layouts for credentials, possibly from multiple issuers, may be challenging for wallets to cohesively display alongside each other. This could result in difficulty for users to understand data, and may induce additional cognitive burden.  
 
-Additionally, these approaches risk adding significant bulk to the credential size since additional render data is required despite the fact it may not be used in all cases - for example a machine agent does not require a visual rendering. This can affect usability of the verifiable data, especially for those with limited network access that may want to interact with lighter versions of a credential. It would be preferable to keep credentials lean with the possibility for wallets to add contextually relevant semantics on demand.
+Additionally, these approaches risk adding significant bulk to the credential size since additional render data is required despite the fact it may not be used in all cases; for example, a machine agent does not require a visual rendering. This can affect usability of the verifiable data, especially for those with limited network access that may want to interact with lighter versions of a credential. It would be preferable to keep credentials lean with the possibility for wallets to add contextually relevant semantics on demand.
 
-The RWOT proposal addresses accessibility requirements, by providing capability to embed alternative rendering formats or hints, such as audio or tactile instruction sets. However, this approach results in multiple duplicates of the same data being provided for each rendering type and the need for format specific instructions to be included. This gives complete control to the issuer regarding the representation of the data across all representation types. Though a paired back approach, providing only the necessary metadata such as attribute labels and descriptions, would be sufficient for native or browser based assistive tooling to comprehend and interpret into relevant formats [6]; for example audio, tactile or haptic feedback. This would  allow for a leaner credential and more flexibility in how a wallet could appropriate the data in contextually relevant ways while still ensuring the issuer was in control of defining the source data.
+The RWOT proposal addresses accessibility requirements by providing capability to embed alternative rendering formats or hints, such as audio or tactile instruction sets. However, this approach results in multiple duplicates of the same data being provided for each rendering type and the need for format specific instructions to be included. This gives complete control to the issuer regarding the representation of the data across all representation types. Though a paired back approach, providing only the necessary metadata such as attribute labels and descriptions, would be sufficient for native or browser based assistive tooling to comprehend and interpret into relevant formats [6]; for example, audio, tactile, or haptic feedback. This would  allow for a leaner credential and more flexibility in how a wallet could appropriate the data in contextually relevant ways while still ensuring the issuer was in control of defining the source data.
 
-A pattern already seen in popular OS 'wallet apps' is for the wallet provider to define a set number of layout types depending on data object typology; for example, Apple Wallet has five "Pass" styles: Boarding pass, Coupon, Event ticket, Store card and Generic. The data provider can then populate these layouts with attributes and attribute characteristics. This pattern provides a consistent in-wallet experience while allowing the data provider to define specific representation characteristics for data attributes in different media formats. This helps to create distinctive yet consistent representations, allowing for easier recognition and lower cognitive burdens for data consumers using the wallet. This approach also results in more constrained requirements in terms of data needed to from the provider, leaving layout to the wallet.
+A pattern already seen in popular OS 'wallet apps' is for the wallet provider to define a set number of layout types depending on data object typology; for example, Apple Wallet has five "Pass" styles: Boarding pass, Coupon, Event ticket, Store card, and Generic. The data provider can then populate these layouts with attributes and attribute characteristics. This pattern provides a consistent in-wallet experience while allowing the data provider to define specific representation characteristics for data attributes in different media formats. This helps to create distinctive yet consistent representations, allowing for easier recognition and lower cognitive burdens for data consumers using the wallet. This approach also results in more constrained requirements in terms of data needed from the provider, leaving layout to the wallet.
 
 ### 2.2 Design for appropriation
 
-This approach of decoupling verifiable data from the presentation layer would enable VC to move away from static, document-centric representations and embrace contextual flexibility and portability of user held verifiable data. The Overlay Capture Architecture (OCA), described later in this paper, provides such a method to do this. Issuers are able to define and host a bundle of 'semantic overlays' that are referenced in the credential and that wallets can fetch as required. The overlays provide metadata that supports contextually relevant credential and attribute representations. For example, a language overlay can provide translated attribute descriptions, these could be used by assistive technologies to drive an audio representation. An asset overlay can provide the logo of the issuer and it's display aspect ratio. The benefits of this decoupling of data and presentation are three-fold:
+This approach of decoupling verifiable data from the presentation layer would enable VC to move away from static, document-centric representations and embrace contextual flexibility and portability of user-held verifiable data. The Overlay Capture Architecture (OCA), described later in this paper, provides such a method to do this. Issuers are able to define and host a bundle of 'semantic overlays' that are referenced in the credential and that wallets can fetch as required. The overlays provide metadata that supports contextually relevant credential and attribute representations. For example, a language overlay can provide translated attribute descriptions, these could be used by assistive technologies to drive an audio representation. An asset overlay can provide the logo of the issuer and its display aspect ratio. The benefits of this decoupling of data and presentation are three-fold:
 
 * It discourages skeuomorphic representations of data objects. For example, a passport that looks like a physical passport document. Verifiable data objects made to look like existing physical artefacts are a dangerous design pattern, with uninformed verifiers potentially reverting to visual information checks, trusting visual inspections rather than cryptographically verifying the data presented. It can also introduce confusion for users about how the data can be used and what the verification processes are.
 
@@ -130,13 +131,13 @@ This approach of decoupling verifiable data from the presentation layer would en
 
 In the context of a cross-border health data exchange, credential representations need to be available in multiple languages and may need to meet regionally specific accessibility requirements. Within a population there will also be diverse access to technology, devices and networks. Individuals will have unique preferences and needs in how they consume their data, some perhaps with differing abilities requiring wallets that provide multimodal feedback. The preferences of the data subject may be very different from the requirements of the health professionals with whom they share their data.
 
-The proposed approach of utilising semantic overlays to appropriate the representation of data in a way that is relevant to it's contextual use supports this use case. We detail the flow later in the conclusion of the paper.
+The proposed approach of utilising semantic overlays to appropriate the representation of data in a way that is relevant to its contextual use supports this use case. We detail the flow later, in the conclusion of the paper.
 
 ## 3 Data Exchange Agreements (DEXA) protocol
 
 ### 3.1 Background: The data exchange landscape
 
-New data regulations are emerging worldwide, mandating organisations to implement controls and safeguards when processing, consuming and exposing personal data. Typically, a Data Protection Impact Assessment (DPIA) or similar process details the purpose of data usage, the lawful basis, etc.
+New data regulations are emerging worldwide, mandating organisations to implement controls and safeguards when processing, consuming, and exposing personal data. Typically, a Data Protection Impact Assessment (DPIA) or similar process details the purpose of data usage, the lawful basis, etc.
 
 In the DEXA framework, the conversion of DPIA results to a machine-readable format constitutes the basis for any agreement between the stakeholders in the data exchange ecosystem, as illustrated in Figure 1 below.
 
@@ -150,7 +151,7 @@ The Data Exchange Agreement (DEXA) [4] protocol suite enables automated agreemen
 
 A *Data Agreement* (DA) is a construct between an organisation and an individual regarding the use and processing of personal data [2]. It records the conditions for an organisation to process personal data following the relevant data protection regulations, which could be data laws or norms such as the MyData principles. It can have any legal basis outlined by the applicable data protection regulation. The agreement can be with a data source (issuer) or a data-using service (verifier) or used for personal data exchange with third parties.
 
-A data agreement gives a simple overview of the data usage for humans and machines alike which is enforced between the parties involved. A W3C-specified decentralised identifier (DID) implements the data agreement within DEXA [3]. Shown below is an example of a Data Agreement as part of a credential presentation:
+A data agreement gives a simple overview of the data usage for humans and machines alike that is enforced between the parties involved. A W3C-specified decentralised identifier (DID) implements the data agreement within DEXA [3]. Shown below is an example of a Data Agreement as part of a credential presentation:
 
 ![Example Data Agreement in a live digital wallet application](https://i.imgur.com/DwD6ACe.jpg)
 
@@ -160,14 +161,14 @@ Appendix C provides the DA ontology and reference [20] provides the demonstratio
 
 ### 3.3 Data Disclosure Agreements
 
-A *Data Disclosure Agreement* (DDA), also referred to as Data Sharing Agreement, enables automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite while establishing a scalable regulatory-compliant data space. It also provides individuals control over how their data is used and exchanged.
+A *Data Disclosure Agreement* (DDA), also referred to as Data Sharing Agreement, enables automated agreement handling for data exchange between a Data Source (DS) and Data Using Service (DUS). It helps organisations to continue leveraging their data assets while being transparent and legitimate in their data usage. Automated agreement handling is a requisite when establishing a scalable regulatory-compliant data space. It also provides individuals control over how their data is used and exchanged.
 
 Appendix C provides the DDA ontology.
 
 ### 3.4 Data Processing Agreements
 
 A *Data Processing Agreement* (DPA) is a construct between an organisation and its suppliers, as illustrated in figure 1. Here, there is a vertical relationship between Organisation A as a data
-controller and its supplier as a data processor or sub-processor. For a higher level of accountability between these organisations and mandatory for the GDPR, a data processing agreement is set up, which lays out what routines are required to be in place: for example, a data processor’s obligations in case of a data breach or how the rights of the individual, such as access rights, are supported, among other policies and routines. An auditor should also be able to inspect the organisation and use the data processing agreement as reference material during the inspection. As depicted in figure 2, the data processing agreement is connected to the individual at the top of the hierarchy via the data controller organisation.
+controller and its supplier as a data processor or sub-processor. For a higher level of accountability between these organisations, and mandatory for the GDPR, a data processing agreement is set up, which lays out what routines are required to be in place; for example, a data processor’s obligations in case of a data breach or how the rights of the individual, such as access rights, are supported, among other policies and routines. An auditor should also be able to inspect the organisation and use the data processing agreement as reference material during the inspection. As depicted in figure 3.1, the data processing agreement is connected to the individual at the top of the hierarchy via the data controller organisation.
 
 ### 3.5 Delegation Agreements
 
@@ -179,7 +180,7 @@ necessary. For example, in the case of:
 
 ### 3.6 The rationale for a multi-jurisdictions approach
 
-Today, the governance of data exchanges is dependent on centralised platforms, limiting the impact of an end-user self-sovereign approach as the transaction’s regulatory compliance remains under the platform’s control. Despite receiving a decentralised capacity of authenticating itself, the end-user remains trapped in a "cookie" style agreement over the overall relationship instead of receiving proof of compliance specific to a transaction.
+Today, the governance of data exchanges is dependent on centralised platforms, limiting the impact of an end-user self-sovereign approach, as the transaction’s regulatory compliance remains under the platform’s control. Despite having the decentralised capacity to authenticate itself, the end-user remains trapped in a "cookie" style agreement over the overall relationship instead of receiving proof of compliance specific to a transaction.
 
 To illustrate the limitation of the platform governance approach, we revisit a classic use case of a patient receiving a medical prescription and using it to receive the medication. The thorny problem lurking behind this use case differs from the authentication of the prescription holder. Instead, it introduces a *double-spend* problem. How the system ensures the medication is only sometimes requested.
 
@@ -261,20 +262,20 @@ The specification of OCA rests on the concept of overlays. Therefore, here we ad
   </tr>
 </table>
 
-The OCA specification v1.0 can be found on in reference [[17](https://oca.colossi.network/v1.1.0-rc.html)] together with additional documentation and code examples. In addition, for sake of completness  we provide a short version of the OCA specification at the time of the RWOT11 conference as an appendix.
+The OCA specification v1.0 can be found on in reference [[17](https://oca.colossi.network/v1.1.0-rc.html)] together with additional documentation and code examples. In addition, for sake of completeness, we provide a short version of the OCA specification at the time of the RWOT11 conference as an appendix.
 
 ## 5. Conclusions
 
-*"Naked VCs do not scale; they must be dressed !"* could be the punch line conclusion of this work. However, we point to something more profound. In part of the text, we use the terminology of "verifiable information" instead of "verifiable credential". This distinction underlines that, often, it is the purpose and the authenticity of information that drives user interaction. The trust relationship between the two parties of a transaction can emerge from a digital system only if the presentation of the information in the users' context and the liability of each interacting party is secured and expressed in a simple form. Fredrik and the swiss pharmacist each rely upon their own digital systems that must provide an assurance level matching the potential risk of a transaction.
+*"Naked VCs do not scale; they must be dressed!"* could be the punch-line conclusion of this work. However, we point to something more profound. In part of the text, we use the terminology of "verifiable information" instead of "verifiable credential". This distinction underlines that, often, it is the purpose and the authenticity of information that drives user interaction. The trust relationship between the two parties of a transaction can emerge from a digital system only if the presentation of the information in the users' context and the liability of each interacting party is secured and expressed in a simple form. Fredrik and the Swiss pharmacist each rely upon their own digital systems that must provide an assurance level matching the potential risk of a transaction.
 
-The challenges we presented, credential presentation, data exchange agreements, accessibility and international requirements all point in the same direction. Verifiable credentials to be used in a broad ecosystem will require a strong link (in the cryptographic sense) to other data objects.  
+The challenges we presented, credential presentation, data exchange agreements, accessibility, and international requirements all point in the same direction. For verifiable credentials to be used in a broad ecosystem will require a strong link (in the cryptographic sense) to other data objects.  
 
 We provided a view of the current state-of-the-art and a constructive approach to address these challenges using the existing DEXA and OCA protocols.
 
 Our approach is a Self-Sovereign not because of an SSI technology but because the user (e.g. Fredrik, Pharmacist) is the holder and driver of the contextual use of verifiable information. Specifically, this means:
 
 1. the user is the carrier of trust across ecosystems (see EU Horizon 2020 projects eSSIF-Lab DKMS-4-SSI [17] , eSSIF-Lab Dynamic Data Sharing Engine [16], DAPSI Digital Immunization Passport [15]);
-2. the organisations partake in cross-border data exchange in a scalable, regulatory-compliant and auditable manner.
+2. the organisations partake in cross-border data exchange in a scalable, regulatory-compliant, and auditable manner.
 
 Those stakeholders will find data interactions through user-centric data agreements exciting. However, the most compelling factor is the interoperability requirements defined by HIE and EHDS concerning jurisdictional and sectoral regulations. Rather than a secondary process to meet inclusivity compliance requirements, this steers consideration of up-front accessibility requirements as key to enabling interoperability at scale.
 
@@ -331,30 +332,32 @@ We thank the participants and organisers of RWOT11 for providing the space for i
 
 ## Appendix A Use case: Using a medical prescription in a different country
 
-A typical cross-border data exchange scenario is well laid out in the European Union e-Health network, e-prescriptions and eIDAS integrated vision [1] and is as given below:
+A typical cross-border data exchange scenario is well laid out in the European Union e-Health network, e-prescriptions, and eIDAS integrated vision [1] and is as reiterated below:
 
 1. A Patient receives a prescription from an authorised Prescriber in Country A. The Wallet of the Patient [or their authorised Representative] receives a prescription notification.
 
-   The Wallet connects to the ePrescription service in Country A, which displays ePrescriptions (as per pre-requisites).
+   _The Wallet connects to the ePrescription service in Country A, which displays ePrescriptions (as per pre-requisites)._
 
 2. The Patient [or their Representative] from Country A visits a pharmacy in Country B to get the medicine(s) prescribed in Country A.
 
 3. (optional) The Patient [or their Representative] identifies themself to the Pharmacist at the Pharmacy.
 
-   The case of representation (by an authorised third party (e.g., a Next of Kin) needs to be covered.
+   The case of representation (by an authorised third party, e.g., a Next of Kin) needs to be covered.
 
-   User identification (also: representation)
+   _The wallet provides user identification (also: representation)._
 
 4. The health professional (Pharmacist) informs the Patient [or their Representative] about their data protection rights and asks for the Patient's consent (where applicable).
 
     **Option A** Prescription list. The Patient [or their Representative] presents a QR code containing the following:
 
-    * Member State code1
+    * Member State code
     * Set of the prescription holder's identifiers.
     * Set of the wallet holder's identifiers (if different from the prescription holder).
-    * Timestamp and digital signature. The Wallet generates a QR code containing identifiers and instructions to fetch the prescription list1.
+    * Timestamp and digital signature.
+     
+    _The Wallet generates a QR code containing identifiers and instructions to fetch the prescription list._
 
-    The Wallet could show a prescription list to the Patient.
+    _The Wallet could show a prescription list to the Patient._
 
     **Option B** Specific prescription. The Patient [or their Representative] presents a QR code containing the following:
 
@@ -362,19 +365,18 @@ A typical cross-border data exchange scenario is well laid out in the European U
     * Set of prescription holder's identifiers
     * Set of the wallet holder identifiers (if different from the prescription holder)
     * Prescription ID, dispensation PIN or other similar details
+    * ATC code of the prescription, IDMP attributes (such as EDQM dose form), prescribed amount or other critical data
+    * Timestamp and digital signature
 
-    The Wallet generates a QR code containing identifiers and instructions on how to fetch a specific prescription, including limited prescription details (for offline use in exceptional circumstances).
-
-* ATC code of the prescription, IDMP attributes (such as EDQM dose form), prescribed amount or other critical data
-* Timestamp and digital signature
+    _The Wallet generates a QR code containing identifiers and instructions on how to fetch a specific prescription, including limited prescription details (for offline use in exceptional circumstances)._
 
 5. The dispensation provider (Pharmacy) scans the QR code, verifies the digital signature and generates a request to send to country A based on the information provided.
 
 6. **Option A** Default option [Typical steps following the MyHealth@EU workflow leading to possible dispensation]  
 
-   **Option B** Exceptional situations (internet disruption or other similar use cases) (If supported by both Country A and Country B)
+   **Option B** Exceptional situations (internet disruption or other similar use cases) 
 
-   In case of disruption or other exceptional circumstance that prevents communication via MyHealth@EU, the Dispenser evaluates the possibility of dispensing medicine based on the information included in the QR code.
+   In case of disruption or other exceptional circumstance that prevents communication via MyHealth@EU, the Dispenser evaluates the possibility of dispensing medicine based on the information included in the QR code (If supported by both Country A and Country B).
 
    The pharmacy system will store the data if the Dispenser can perform dispensation. Upon restoring connectivity, follow the steps for the Default option, 6A.  
 
@@ -382,11 +384,11 @@ A typical cross-border data exchange scenario is well laid out in the European U
 
 8. The Dispenser provides the drug to the Patient.
 
-    In the case of 6B, the Dispenser manually invalidates the prescription in the Wallet app.
+    _In the case of 6B, the Dispenser manually invalidates the prescription in the Wallet app._
 
 9. The Wallet receives an updated prescription status from Country A with the invalidated or updated (in the case of a partial dispense) dispensed prescription.
 
-    A push notification provides an updated prescription status in the Wallet.
+   _A push notification provides an updated prescription status in the Wallet._
 
 10. Termination of the workflow. No more access to the Patient's data from Country A is possible.
 
@@ -495,7 +497,7 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code>@context</code>
    </td>
-   <td>Defines the context of any this document. E.g. the link the JSON-LD
+   <td>The context of this document. E.g. the link, the JSON-LD
    </td>
   </tr>
   <tr>
@@ -525,7 +527,7 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code>language</code>
    </td>
-   <td>Is the language used. If not present default language is English
+   <td>The language used. If not present, default language is English
    </td>
   </tr>
   <tr>
@@ -537,19 +539,19 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code>data_controller_url</code>
    </td>
-   <td>This is the controller URL
+   <td>The controller URL
    </td>
   </tr>
   <tr>
    <td><code>data_controller_legal_id</code>
    </td>
-   <td>This is the legal ID to the data controller. E.g. Swedish org. number
+   <td>The legal ID to the data controller. E.g. Swedish org. number
    </td>
   </tr>
   <tr>
    <td><code>data_policy</code>
    </td>
-   <td>Encapsulates the data policies used in the use of personal data
+   <td>Encapsulation of the data policies used for the use of personal data.
    </td>
   </tr>
   <tr>
@@ -579,7 +581,7 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code> - geographic_restriction</code>
    </td>
-   <td>The country or economic union is restricted for processing personal data [value based on <a href="https://w3c.github.io/dpv/dpv/#vocab-jurisdictions">W3C Location and Jurisdiction</a>]
+   <td>Restriction on the country or economic union for processing personal data [value based on <a href="https://w3c.github.io/dpv/dpv/#vocab-jurisdictions">W3C Location and Jurisdiction</a>]
    </td>
   </tr>
   <tr>
@@ -591,25 +593,25 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code> - third_party_disclosure</code>
    </td>
-   <td>This is a boolean value to indicate that the DA is used for third party data disclosures. This indicates that some data disclosures will happen and is used to release personal data to DUS based on an agreement
+   <td>A boolean value to indicate that the DA is used for third party data disclosures. This indicates that some data disclosures will happen and is used to release personal data to DUS based on an agreement
    </td>
   </tr>
   <tr>
    <td><code>purpose</code>
    </td>
-   <td>Describes the purpose for which a data controller (DSor DUS) uses personal data. This is the purpose for which the data agreement is being formulated.[values based on W3C DPV Purposes]
+   <td>The purpose for which a data controller (DSor DUS) uses personal data. This is the purpose for which the data agreement is being formulated. [values based on W3C DPV Purposes]
    </td>
   </tr>
   <tr>
    <td><code>purpose_description</code>
    </td>
-   <td>Provides a description of the purpose for which the personal data is used
+   <td>A description of the purpose for which the personal data is used
    </td>
   </tr>
   <tr>
    <td><code>lawful_basis</code>
    </td>
-   <td>Indicates the lawful basis for processing personal information. This can be based on consent, legal obligation, contract, vital interest, public task or legitimate_interest. [values based on W3C DPV legal basis]
+   <td>The lawful basis for processing personal information. This can be based on consent, legal obligation, contract, vital interest, public task or legitimate_interest. [values based on W3C DPV legal basis]
    </td>
   </tr>
   <tr>
@@ -621,7 +623,7 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code>personal_data []</code>
    </td>
-   <td>Encapsulates the attributes used for the usage purpose defined
+   <td>Encapsulation of the attributes used for the usage purpose defined
    </td>
   </tr>
   <tr>
@@ -639,7 +641,7 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code> - attribute_sensitive</code>
    </td>
-   <td>[OPTIONAL] Defines the sensitivity of the data as per PII (Personal Identifiable Information)
+   <td>[OPTIONAL] Definition of the sensitivity of the data as per PII (Personal Identifiable Information)
    </td>
   </tr>
   <tr>
@@ -651,25 +653,25 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code> - restrictions []</code>
    </td>
-   <td>[OPTIONAL] If provided, this can be used to restrict where the data is being consumed
+   <td>[OPTIONAL] Restriction on where the data is being consumed
    </td>
   </tr>
   <tr>
    <td><code>  -- schema_ID</code>
    </td>
-   <td>[OPTIONAL] Restrict data from this personal data schema issued by a legal entity
+   <td>[OPTIONAL] Restriction on data from this personal data schema issued by a legal entity
    </td>
   </tr>
   <tr>
    <td><code> -- credential_def_ID</code>
    </td>
-   <td>[OPTIONAL] Restrict data from this credential schema from an organisation
+   <td>[OPTIONAL] Restriction on data from this credential schema from an organisation
    </td>
   </tr>
   <tr>
    <td><code>dpia</code>
    </td>
-   <td>Encapsulate the organisation performing the Data Protection Impact Assessment (DPIA)
+   <td>Encapsulation of the organisation performing the Data Protection Impact Assessment (DPIA)
    </td>
   </tr>
   <tr>
@@ -687,13 +689,13 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code>code_of_conduct</code>
    </td>
-   <td>The data controller may follow a code of conduct which sets the proper application of privacy regulation taking into account specific features within a sector. The code of conduct shall reference the name of the code of conduct and with a public accessible reference.
+   <td>The data controller may follow a code of conduct which sets the proper application of privacy regulation, taking into account specific features within a sector. The code of conduct shall reference the name of the code of conduct and provide a public accessible reference.
    </td>
   </tr>
   <tr>
    <td><code>event []</code>
    </td>
-   <td>Encapsulates the data agreement lifecyle event data. For e.g. Data Agreement Offer, Accept, Reject, Terminate etc.
+   <td>Encapsulation of the data agreement lifecyle event data. For e.g. Data Agreement Offer, Accept, Reject, Terminate etc.
    </td>
   </tr>
   <tr>
@@ -723,7 +725,7 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code>proof []</code>
    </td>
-   <td>Encapsulates the event signatures that allows anyone (e.g. an auditor) to verify the authenticity and source of the data agreement. It uses linked data proofs as per W3C and contains a set of attributes that represent a Linked Data digital proof and the parameters required to verify it
+   <td>Encapsulation of the event signatures that allows anyone (e.g. an auditor) to verify the authenticity and source of the data agreement. It uses linked data proofs as per W3C and contains a set of attributes that represent a Linked Data digital proof and the parameters required to verify it
    </td>
   </tr>
   <tr>
@@ -747,7 +749,7 @@ The latest data agreement ontology is provided below [2].
   <tr>
    <td><code> - verificationMethod</code>
    </td>
-   <td>Should match the data_using_service did
+   <td>Should match the data_using_service DID
    </td>
   </tr>
   <tr>
@@ -798,7 +800,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>Defines the context of this document. E.g. the link the JSON-LD
+   <td>The context of this document. E.g. the link, the JSON-LD
    </td>
   </tr>
   <tr>
@@ -838,7 +840,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>language used. If not present default language is English
+   <td>Language used. If not present, default language is English
    </td>
   </tr>
   <tr>
@@ -846,7 +848,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>Encapsulates the data controller data
+   <td>Encapsulation of the data controller data
    </td>
   </tr>
   <tr>
@@ -854,7 +856,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>This is the DID of the data source preparing the agreement
+   <td>The DID of the data source preparing the agreement
    </td>
   </tr>
   <tr>
@@ -870,7 +872,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>This is the legal ID to the data source. E.g. Swedish Organisation Number
+   <td>The legal ID to the data source. E.g. Swedish Organisation Number
    </td>
   </tr>
   <tr>
@@ -878,7 +880,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>This is the data source organisation URL
+   <td>The data source organisation URL
    </td>
   </tr>
   <tr>
@@ -918,7 +920,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>The jurisdiction associated with the data source exposing the personal data that the privacy regulation is followed. These can be country, economic union, law, location or region. [value based on<a href="https://w3c.github.io/dpv/dpv/#vocab-jurisdictions"> W3C Location and Jurisdiction</a>]
+   <td>The jurisdiction associated with the data source exposing the personal data whose privacy regulation is followed. These can be country, economic union, law, location or region. [value based on<a href="https://w3c.github.io/dpv/dpv/#vocab-jurisdictions"> W3C Location and Jurisdiction</a>]
    </td>
   </tr>
   <tr>
@@ -942,7 +944,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>FALSE
    </td>
-   <td>The country or economic union is restricted from processing personal data.[value based on<a href="https://w3c.github.io/dpv/dpv/#vocab-jurisdictions"> W3C Location and Jurisdiction</a>] for the data source
+   <td>Restriction on the country or economic union for processing personal data. [value based on<a href="https://w3c.github.io/dpv/dpv/#vocab-jurisdictions"> W3C Location and Jurisdiction</a>] for the data source
    </td>
   </tr>
   <tr>
@@ -958,7 +960,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>Describes the purpose for which the data source shares personal data as described in the data agreement [values based on W3C DPV Purposes]
+   <td>The purpose for which the data source shares personal data as described in the data agreement [values based on W3C DPV Purposes]
    </td>
   </tr>
   <tr>
@@ -974,7 +976,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>Indicate the lawful basis for sharing personal data. These can be consent, legal obligation, contract, vital interest, public task or legitimate_interest. [values based on<a href="https://w3c.github.io/dpv/dpv/#legal_basis-classes"> W3C DPV legal basis</a>]
+   <td>The lawful basis for sharing personal data. These can be consent, legal obligation, contract, vital interest, public task, or legitimate_interest. [values based on<a href="https://w3c.github.io/dpv/dpv/#legal_basis-classes"> W3C DPV legal basis</a>]
    </td>
   </tr>
   <tr>
@@ -982,7 +984,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>Encapsulates the attributes shared by the data source
+   <td>Encapsulation of the attributes shared by the data source
    </td>
   </tr>
   <tr>
@@ -1006,7 +1008,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>FALSE
    </td>
-   <td>Defines the sensitivity of the data as per PII
+   <td>The sensitivity of the data as per PII
    </td>
   </tr>
   <tr>
@@ -1022,7 +1024,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>FALSE
    </td>
-   <td>The code of conduct is followed by the data source. This provides the proper application of privacy regulation taking into account specific features within a sector. The code of conduct shall reference the name of the code of conduct and with a publicly accessible reference.
+   <td>The code of conduct is followed by the data source. This provides the proper application of privacy regulation taking into account specific features within a sector. The code of conduct shall reference the name of the code of conduct and provide a publicly accessible reference.
    </td>
   </tr>
   <tr>
@@ -1038,7 +1040,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>This is the DID of the data using service signing the agreement
+   <td>The DID of the data using service signing the agreement
    </td>
   </tr>
   <tr>
@@ -1062,7 +1064,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>This is the data using service organisation URL
+   <td>The data using service organisation URL
    </td>
   </tr>
   <tr>
@@ -1086,7 +1088,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>The jurisdiction associated with the data using service consuming personal data that the privacy regulation is followed. These can be country, economic union, law, location or region. [value based on W3C Location and Jurisdiction]
+   <td>The jurisdiction associated with the data using service consuming personal data whose privacy regulation is followed. These can be country, economic union, law, location or region. [value based on W3C Location and Jurisdiction]
    </td>
   </tr>
   <tr>
@@ -1094,7 +1096,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>FALSE
    </td>
-   <td>Reference to how data subject may withdraw.
+   <td>Reference to how data subject may withdraw
    </td>
   </tr>
   <tr>
@@ -1118,7 +1120,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>Encapsulates the data disclosure agreement lifecycle event data. For e.g. data disclosure agreement Offer, Accept, Reject, Terminate etc.
+   <td>Encapsulation of the data disclosure agreement lifecycle event data. For e.g. data disclosure agreement Offer, Accept, Reject, Terminate etc.
    </td>
   </tr>
   <tr>
@@ -1142,7 +1144,7 @@ The latest data agreement ontology is provided below [2].
    </td>
    <td>TRUE
    </td>
-   <td>Should match the data_using_service did
+   <td>Should match the data_using_service DID
    </td>
   </tr>
   <tr>
