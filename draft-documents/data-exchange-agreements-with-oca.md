@@ -52,9 +52,7 @@ This essay links verifiable credentials with the right to use data in a secure a
 
 ### 1.1 Revisiting the issue of patient data exchange in a cross-border, multi-jurisdiction, and inclusive setting
 
-In our scenario, Fredrik is a visually impaired Swedish resident undergoing treatment at a local healthcare provider. Following Fredrik's last visit, the healthcare provider delivered a digital prescription made available in the Swedish-governed healthcare data space. The health data space must meet the requirements of the countries' health professionals, including insurance, public health, and other third parties.
-
-The system is also accessible to patients. Independent of his location, Fredrik has securex access. Therefore the system allows cross-border jurisdictions usage. For example, this will be necessary when Fredrik visits his daughter studying in Zurich, Switzerland (i.e. a non-EU jurisdiction).
+In our scenario, Fredrik is a visually impaired Swedish resident undergoing treatment at a local healthcare provider. Following Fredrik's last visit, the healthcare provider delivered a digital prescription made available in the Swedish-governed healthcare data space. The health data space must meet the requirements of the countries' health professionals, including insurance, public health, and other third parties. The system is also accessible to patients, independent of their location, apart from allowing cross-border jurisdictional usage. For example, this will be necessary when Fredrik visits his daughter studying in Zurich, Switzerland (i.e. a non-EU jurisdiction).
 
 While in Zurich, Fredrik uses his digital prescription in a Swiss pharmacy not connected to the Swedish healthcare system. Fredrik speaks only Swedish, and the pharmacist only German. Therefore we assume that both Fredrik and the pharmacist have an online connection and can exchange digital information.
 
