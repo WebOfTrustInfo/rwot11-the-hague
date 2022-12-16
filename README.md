@@ -6,6 +6,16 @@ The goal of the workshop is to generate five technical white papers and/or propo
 
 ## Final Papers
 
+## [*Linking Credentials with Data Exchange Agreements through Secured Inclusive Interfaces*](data-exchange-agreements-with-oca.pdf) [(Text)](data-exchange-agreements-with-oca.md)
+
+#### by  Lal Chandran, Lotta Lundin, Fredrik Lindén,  Philippe Page,  Paul Knowles,  Víctor Martínez Jurado,  Andrew Slack
+
+> On the need to link verifiable credentials with the right to use data in a secure, inclusive user interaction.
+
+> In this collaborative work from RWOT11, we revisit the issue of patient data exchange in a setting requiring cross-border, multi jurisdiction, and inclusive access to all participants. A fundamental problem in developing large-scale real-world solutions based on verifiable credentials is keeping the simplicity of usage for individuals in different contexts without sacrificing security.
+
+> We aim to highlight selected technical challenges and outline how the DEXA and OCA protocols contribute to scalable solutions.
+
 ## [*Taking out the CRUD: Five Fabulous DID Attacks*](final-documents/taking-out-the-crud-five-fabulous-did-attacks.pdf) [(Text)](final-documents/taking-out-the-crud-five-fabulous-did-attacks.md)
 #### by Shannon Appelcline, Cihan Saglam, Kate Sills, Carsten Stöcker
 
