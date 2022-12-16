@@ -6,7 +6,7 @@ The goal of the workshop is to generate five technical white papers and/or propo
 
 ## Final Papers
 
-## [*Linking Credentials with Data Exchange Agreements through Secured Inclusive Interfaces*](data-exchange-agreements-with-oca.pdf) [(Text)](data-exchange-agreements-with-oca.md)
+## [*Linking Credentials with Data Exchange Agreements through Secured Inclusive Interfaces*](final-documents/data-exchange-agreements-with-oca.pdf) [(Text)](final-documents/data-exchange-agreements-with-oca.md)
 
 #### by  Lal Chandran, Lotta Lundin, Fredrik Lindén,  Philippe Page,  Paul Knowles,  Víctor Martínez Jurado,  Andrew Slack
 
