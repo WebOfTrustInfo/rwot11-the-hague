@@ -361,10 +361,11 @@ See also [*Verify the Verifier - Anti-coercion by Design; October 2020 | TNO*](h
     immigration nor Oskar himself is physically able to compromise
     Oskar's EUDI wallet to surrender the information.
 
-![](Pictures/10000000000001E0000002D0D7B5D00E.jpg){width="2.6299in"
-height="4.0098in"}**Figure 2: A properly-implemented wallet with
+![](images/verifier-fig2.jpg)
+
+***Figure 2: A properly-implemented wallet with
 Verifiable-Verifier List protects citizens against overzealous law
-enforcement.**
+enforcement.***
 
 ## 2.3 Commonalities and Differences
 
@@ -551,8 +552,7 @@ on the Ethereum blockchain. The application then makes a request to
 Ethereum in order to get the list of trusted Issuers and check if the
 party of interest is in the list.
 
-![](Pictures/10000201000001C10000012EDCCC7FCA.png){width="4.6772in"
-height="3.1457in"}The governance of the list of trusted Issuers is done
+The governance of the list of trusted Issuers is done
 by Open Credentialing Initiative
 ([*https://open-credentialing-initiative.github.io/OCI-Governance/#trusted-issuer-registry-governance*](https://open-credentialing-initiative.github.io/OCI-Governance/#trusted-issuer-registry-governance)),
 who maintains a Trusted Issuer Registry. To this end, it employs an
@@ -560,7 +560,9 @@ Ethereum smart contract managed by so-called Statekeepers. They execute
 the Steering Committee's decisions concerning the Trusted Issuer
 Registry and report to the Steering Committee.
 
-Figure 3: Maintaining an Ethereum-based Trusted Issuer Registry.
+![](images/verifier-fig3.png)
+
+***Figure 3: Maintaining an Ethereum-based Trusted Issuer Registry.***
 
 The approach aims to enforce the following policies:
 
@@ -601,14 +603,15 @@ The approach aims to enforce the following policies:
 
 ### 3.6.2 Architecture
 
-![](Pictures/1000000000000559000003FC0C0FD495.png){width="6.5in"
-height="4.8472in"}The smart contract containing the trusted Issuer
+The smart contract containing the trusted Issuer
 registry is deployed to the Ethereum blockchain and acts as a backend.
 Its state and methods can be accessed via an Ethereum node, e.g., an
 OCI-owned one, that exposes all needed RPC methods or by a service such
 as Infura.
 
-Figure 4: Interacting with the Ethereum blockchain.
+![](images/verifier-fig4.png)
+
+***Figure 4: Interacting with the Ethereum blockchain.***
 
 ## 3.7 Trust-over-IP Trust Registry Task Force
 
@@ -782,9 +785,10 @@ In this section, we will explain the entities and their relationships
 and policies that define the management of the list discussed in this
 document, according to the perspectives described above.
 
-![](Pictures/10000201000008000000054AE498B070.png){width="6.5in"
-height="4.2917in"}Figure 5: Governance of Verifiable-Issuers/Verifiers
-Lists.
+![](images/verifier-fig5.png)
+
+***Figure 5: Governance of Verifiable-Issuers/Verifiers
+Lists.***
 
 First, assume a Verifiable Data Eco-System that uses this list together.
 Then, consider a community with Community Members who have decided to
@@ -865,9 +869,9 @@ on behalf of an Issuer, Holder, or Verifier. The party might request the
 entire List, or portions of the List over either a public channel, or a
 private channel.
 
-![](Pictures/10000201000003CE0000010CDD464313.png){width="7in"
-height="1.9256in"}Figure 6: Conceptual model of sharing Lists of
-Verifiable Issuers and Verifiers.
+![](images/verifier-fig6.png)
+
+***Figure 6: Conceptual model of sharing Lists of Verifiable Issuers and Verifiers.***
 
 ## 4.2 Requirements
 
@@ -969,11 +973,10 @@ databases, distributed ledgers, and 3rd-party APIs.
 The following diagram illustrates the high-level architecture of the
 proposed methodology:
 
-![](Pictures/100002010000076F000004EAAB855C0C.png){width="5.3in"
-height="3.4902in"}
+![](images/verifier-fig7.png)
 
-Figure 7: Serialization of Verifiable-Issuers/Verifiers Lists for smart
-contracts.
+***Figure 7: Serialization of Verifiable-Issuers/Verifiers Lists for smart
+contracts.***
 
 EXAMPLE: Response from the smart contract
 
