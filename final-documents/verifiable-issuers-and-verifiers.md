@@ -1143,10 +1143,13 @@ There are two options regarding record control delegation. Each of the
 options provides different controls:
 
 A.  Adding RRs directly in the zone
+
     a.  The List Zone owner has complete control of
         adding/removing/updating any of the entries.
+
 B.  Adding NS RR to delegate the control of the zone to another domain
     name server
+    
     a.  The List Zone owner has control over adding/removing control of
         the entry for the entry owner
     b.  Update of the RRs bound the Entry Label is under the control of
