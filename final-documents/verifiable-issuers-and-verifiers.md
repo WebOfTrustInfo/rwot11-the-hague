@@ -113,7 +113,7 @@ services](https://en.wikipedia.org/wiki/Trust_service_provider) for
 transactions](https://en.wikipedia.org/wiki/Electronic_transactions) in
 the [European Single
 Market](https://en.wikipedia.org/wiki/European_Single_Market). It was
-established in EU Regulation 910/2014 of 23 July 2014.^\ ^All
+established in EU Regulation 910/2014 of 23 July 2014. All
 organizations delivering public digital services in an EU member state
 must recognize electronic identification from all EU member states from
 September 29, 2018.
