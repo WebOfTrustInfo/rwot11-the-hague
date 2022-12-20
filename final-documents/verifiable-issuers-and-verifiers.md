@@ -223,7 +223,7 @@ the previous section.
 
 -   Contains zero-or-more entries about any **party**.
 -   A list entry contains data about one specific **party.** The data is
-    specified by the **party **that **governs **the **list**.
+    specified by the **party** that **governs** the **list**.
 -   A list is associated with a policy containing one or more criteria
     that are used to determine whether or not a **party** qualifies for
     being registered in the **list**. Criterion may distinguish between
@@ -241,7 +241,7 @@ the previous section.
     **verifier** as well as other verifiable-credential-related roles
     (e.g., revocator).
 -   May or may not be a legal authority.
--   The **party **that manages the list has to be able to precisely
+-   The **party** that manages the list has to be able to precisely
     describe the thing that the list entry enables because software will
     act upon that machine-readable description. For example, \"Issues
     Student ID cards for University X\".
