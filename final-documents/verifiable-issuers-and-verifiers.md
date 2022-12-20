@@ -40,7 +40,7 @@ decision to trust the Issuer of a Verifiable Credential that is
 presented by a Holder.
 
 Digitally sharing lists of Verifiable Issuers and Verifiers is a
-relatively new concept^[^1]^. The list of parties that are allowed to
+relatively new concept[^1]. The list of parties that are allowed to
 use the digital fingerprint information on the chip of RFID-based
 digital passports is one example. This is cryptographically enforced:
 "chip-says-no" when an unauthorized party attempts to access this
@@ -376,7 +376,7 @@ form of sharing (publication/access), so that the list is available to
 its users. This paper will presume that the types of lists themselves,
 as well as their sharing methods, can be technically identical. The only
 distinction is that a list could contain only Verifiable Issuers, only
-Verifiable Verifiers, or a mixture^[^2]^ of both, so the data model
+Verifiable Verifiers, or a mixture[^2] of both, so the data model
 should accommodate this.
 
 Major differences arise in the applications surrounding the lists.
@@ -441,7 +441,7 @@ one. This means that Verifiers are not onboarded and they are not
 accredited either -- in the sense of the accreditation given to Issuers.
 If needed be, we could replicate the Issuers' trust model and apply it
 to Verifiers. However, before doing this, we would need to have a
-requirement from a Use Case^[^3]^."
+requirement from a Use Case[^3]."
 
 ## 3.3 Biometric passport chip
 
