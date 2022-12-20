@@ -2,7 +2,7 @@
 
 ### Enabling anyone to share information about the Issuers and Verifiers for whom they assure trust
 
-### by Manu Sporny, Oskar van Deventer, Isaac Henderson Johnson Jeyakumar, Shigeya Suzuki, Konstantin Tsabolov, Line Kofoed, Rieks Joostena
+#### by Manu Sporny, Oskar van Deventer, Isaac Henderson Johnson Jeyakumar, Shigeya Suzuki, Konstantin Tsabolov, Line Kofoed, Rieks Joostena
 
 ## Abstract
 
