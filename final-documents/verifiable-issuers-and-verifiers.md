@@ -277,12 +277,10 @@ document, they are included by reference:
     checks if Acme Inc. is in the Verifiable Issuer List of licensed 3rd
     party certification bodies to see if the Issuer of Acme Inc.\'s
     certification is an approved certification body.
-
     -   Note: The solution might need to convey a single item in a List
         vs. the entire List.
     -   Note: Many similar certification/license use cases are out
         there.
-
 -   Walmay, Inc. is a wholesaler of drugs. John & Jane is a manufacturer
     of drugs. Walmay, Inc. finds out that a lot of Adenosine
     Triphosphate drugs has broken packaging and decides to return the
@@ -293,7 +291,6 @@ document, they are included by reference:
     Issuer. John & Jane then verifies that the Issuer is a member of the
     Verifiable-Issuer List of Issuers authorized to issue ATP
     (Authorized Trading Partner) credentials.
-
 -   Elena is an IT Administrator in the hiring department of a mid-size
     company that would like to vet job applicants as having received
     their degrees from an accredited college or university. Elena
@@ -301,9 +298,7 @@ document, they are included by reference:
     (Verifiable-Issuer Lists) containing several hundred organizations
     that are curated by the various accreditation bodies that they
     trust.
-
--   ![](Pictures/1000000000000438000002D0D6212B39.jpg){width="5.6in"
-    height="3.3902in"}Line is elected treasurer of a Dutch church. In
+-   Line is elected treasurer of a Dutch church. In
     her role as treasurer, she goes online to open a bank account for
     the church. To comply with certain laws and adhere to internal risk
     mitigating policies, the bank needs to verify that Line has been
@@ -322,8 +317,10 @@ document, they are included by reference:
     on the list, the bank is now able to open a bank account for the
     church, which Line can administer.
 
-Figure 1: A Verifiable-Issuer List helps verifying whether a diploma is
-genuine.
+![](images/verifier-fig1.jpg)
+
+***Figure 1: A Verifiable-Issuer List helps verifying whether a diploma is
+genuine.***
 
 ## 2.2 Verifiable Verifier Use Cases
 
