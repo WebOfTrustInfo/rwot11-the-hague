@@ -229,7 +229,7 @@ the previous section.
     being registered in the **list**. Criterion may distinguish between
     **parties**, e.g., between parties that are trusted to issue or
     verify VCs of a specific kind.
--   Other parties may use the data in a **list entry **as the basis for
+-   Other parties may use the data in a **list entry** as the basis for
     a decision, e.g., to share further information, or to engage in a
     transaction. The perceived use of **list entries** by other
     **parties** should guide the **party** that governs the **list** as
