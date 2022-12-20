@@ -23,6 +23,13 @@ The goal of the workshop is to generate five technical white papers and/or propo
 
 > Although we derived the examples in this paper by examining current DID methods, we believe these attack vectors are more general, even for systems not using DIDs. The goal is to support engineers and developers who are developing decentralized identity solutions to safeguard their work and make it secure and compliant.
 
+## [*Verifiable Issuers & Verifiers*](final-documents/verifiable-issuers-and-verifiers.pdf) [(Text)](final-documents/verifiable-issuers-and-verifiers.md)
+#### by Manu Sporny, Oskar van Deventer, Isaac Henderson Johnson Jeyakumar, Shigeya Suzuki, Konstantin Tsabolov, Line Kofoed, Rieks Joostena
+
+> Enabling anyone to share information about the Issuers and Verifiers for whom they assure trust
+
+> This work focuses on how a party or its agent can decide whether or not to engage with a counterparty in a transaction. The purpose of this work is to enable the sharing of a list of Verifiable Issuers and Verifiers in a way that is useful to a particular transaction. A set of use cases provide examples where verification of an Issuer ("Is that diploma from a recognized university?") or Verifier ("Should the wallet block an unauthorized Verifier?") is needed. The studied prior art highlights various solutions to verify Issuers and Verifiers and identifies a lack of standards. Important contributions from this paper include a unified set of requirements, a data model, and multiple serializations of the data model --- including but not limited to Verifiable Credentials, DNSSEC, and blockchain-based serializations --- that could then be incubated and sent onto the standards track at global standards setting organizations.
+
 ## Advance Readings
 
 In advance of the design workshop, all participants are invited to contribute a one-or-two page topic paper to be shared with the other attendees on either:
