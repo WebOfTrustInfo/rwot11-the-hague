@@ -369,7 +369,7 @@ height="4.0098in"}**Figure 2: A properly-implemented wallet with
 Verifiable-Verifier List protects citizens against overzealous law
 enforcement.**
 
-## []2.3 Commonalities and Differences
+## 2.3 Commonalities and Differences
 
 Conceptually and technically, the two types of lists (Verifiable Issuer,
 Verifiable Verifier) are fairly similar. Each type is a governed list of
