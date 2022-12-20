@@ -755,8 +755,7 @@ document, according to the perspectives described above.
 
 ![](images/verifier-fig5.png)
 
-***Figure 5: Governance of Verifiable-Issuers/Verifiers
-Lists.***
+***Figure 5: Governance of Verifiable-Issuers/Verifiers Lists.***
 
 First, assume a Verifiable Data Eco-System that uses this list together.
 Then, consider a community with Community Members who have decided to
@@ -1095,17 +1094,12 @@ API, which acts as a proxy service for trust list discovery and provider
 verification. The query of the TRAIN API looks as follows. An example of
 Swagger API can be found in the following
 [*link*](https://essif.trust-scheme.de/swagger_train/).
-
-+----------------------------------------------------------------------+
-| {                                                                    |
-|                                                                      |
-| "Issuer":                                                            |
-| "[*https://universityx.com/2142*](https://universityx.com/2142)",,   |
-|                                                                      |
-| "Trust_Scheme_Pointer": exams.universityx.com                        |
-|                                                                      |
-| }                                                                    |
-+----------------------------------------------------------------------+
+```
+{
+   “Issuer”: “https://universityx.com/2142”,, 
+   “Trust_Scheme_Pointer”: exams.universityx.com
+}
+```
 
 ### _Verifiable Credentials_
 
@@ -1118,16 +1112,12 @@ This is also published in detail in the following paper entitled "[*A
 novel approach to establish trust in verifiable credential issuers in
 Self-sovereign identity ecosystems using
 TRAIN*](https://dl.gi.de/handle/20.500.12116/38702)".
-
-+--------------------------------------------------------------+
-| \"termsOfUse\": \[{​                                          |
-|                                                              |
-| \"type\": \"https://train.trust-scheme.de/info\",​            |
-|                                                              |
-| \"trustScheme\": \["example.tso.com", "ssi.company.uk"\]​     |
-|                                                              |
-| }\]​                                                          |
-+--------------------------------------------------------------+
+```
+"termsOfUse": [{​
+    "type": "https://train.trust-scheme.de/info",​
+    "trustScheme": [“example.tso.com”, “ssi.company.uk”]​
+}]
+```
 
 At the Verifier side, the Verifier can fetch Issuer details and call the
 TRAIN to verify whether the Issuer has been listed in the trust-list
@@ -1187,119 +1177,69 @@ the last line must be used in a TXT-based retention method to comply
 with the current convention. On the other hand, since the use of TXT
 records is inefficient, a better method may need to be explored.
 
-+------------------------------------------------------------------+
-| @ IN SOA consortium.example. admin.consortium.example. (         |
-|                                                                  |
-| 2022122401 43200 300 3600000 36000 )                             |
-|                                                                  |
-| IN NS ns1.consortium.example.                                    |
-|                                                                  |
-| IN NS ns2.consortium.example.                                    |
-|                                                                  |
-| IN A 192.168.1.1                                                 |
-|                                                                  |
-| ns1 IN A 192.168.1.1                                             |
-|                                                                  |
-| ns2 IN A 192.168.1.2                                             |
-|                                                                  |
-| consortium.example. IN DNSKEY 256 3 8 AwEAA\[\...janSJw==        |
-|                                                                  |
-| consortium.example. IN DNSKEY 257 3 8 AwEAAQ\[\...\]1lHI4Q==     |
-|                                                                  |
-| issuer.consortium.example. IN KEY 512 3 8 AwEAAQ\[\...\]f2zRew== |
-+------------------------------------------------------------------+
+```
+@		IN	SOA	consortium.example. admin.consortium.example. (
+        		2022122401 43200 300 3600000 36000 )
+
+		IN	NS	ns1.consortium.example.
+		IN	NS	ns2.consortium.example.
+		IN	A	192.168.1.1
+ns1		IN	A	192.168.1.1
+ns2		IN	A	192.168.1.2
+
+consortium.example. IN DNSKEY 256 3 8 AwEAA[...janSJw==
+consortium.example. IN DNSKEY 257 3 8 AwEAAQ[...]1lHI4Q==
+issuer.consortium.example. IN KEY 512 3 8 AwEAAQ[...]f2zRew==
+```
 
 ### 5.3.5 Verifiable Credentials Serialization
 
 The data model described in this section can be expressed as a
 Verifiable Credential as outlined in the example below:
 
-+----------------------------------------------------------------------+
-| {                                                                    |
-|                                                                      |
-| \"@context\": \[                                                     |
-|                                                                      |
-| \"https://www.w3.org/2018/credentials/v2\",                          |
-|                                                                      |
-| \"https://w3id.org/verifiable-party/v1\"                             |
-|                                                                      |
-| \],                                                                  |
-|                                                                      |
-| \"issuer\": {                                                        |
-|                                                                      |
-| \"id\": \"did:web:authority.example\",                               |
-|                                                                      |
-| \"name\": \"National Education Accreditation Authority of Utopia\"   |
-|                                                                      |
-| },                                                                   |
-|                                                                      |
-| \"issuanceDate\": \"2023-02-13T00:18:30.053Z\",                      |
-|                                                                      |
-| \"type\": \[\"VerifiableCredential\",                                |
-| \"VerifiablePartyCredential\"\],                                     |
-|                                                                      |
-| \"credentialSubject\": \[{                                           |
-|                                                                      |
-| \"id\": \"did:web:registrar.utopia.edu.example\",                    |
-|                                                                      |
-| \"type\": \"VerifiableIssuer\",                                      |
-|                                                                      |
-| \"name\": \"Utopia University Registrar\",                           |
-|                                                                      |
-| \"legalName\": \"The Polytechnic University of Utopia Registrar\",   |
-|                                                                      |
-| \"website\": \"https://utopia.edu.example/\",                        |
-|                                                                      |
-| \"email\": \"accreditation@neaau.org.example\",                      |
-|                                                                      |
-| \"identifier\": \[{                                                  |
-|                                                                      |
-| \"type\": \"PropertyValue\",                                         |
-|                                                                      |
-| \"propertyId\": \"Utopia Educational Institution ID\",               |
-|                                                                      |
-| \"value\": \"123456789\"                                             |
-|                                                                      |
-| }\],                                                                 |
-|                                                                      |
-| \"usesOperationalScheme\": \[{                                       |
-|                                                                      |
-| \"id\": \"http://oid-info.com/get/1.2.3.4.5\",                       |
-|                                                                      |
-| \"name\": \"Utopian Trust Scheme 819-4\"                             |
-|                                                                      |
-| }\],                                                                 |
-|                                                                      |
-| \"accreditation\": \[{                                               |
-|                                                                      |
-| \"id\": \"https://utopia.gov.example/accreditations/123\"            |
-|                                                                      |
-| }\],                                                                 |
-|                                                                      |
-| \"authorizedToIssue\": \[{                                           |
-|                                                                      |
-| \"type\": \"UniversityDegreeCredential\",                            |
-|                                                                      |
-| \"credentialSchema\": {                                              |
-|                                                                      |
-| \"id\": \"https://Issuer.example/degree.json\",                      |
-|                                                                      |
-| \"type\": \"AuthorizedIssuerJsonSchema2022\",                        |
-|                                                                      |
-| \"schema\":                                                          |
-| \"{                                                                  |
-| \\\"properties\\\":\\{\\\"credentialSubject.state\\\":\\\"UA\\\"}}\" |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| }\]                                                                  |
-|                                                                      |
-| },                                                                   |
-|                                                                      |
-| \"proof\": { \... }                                                  |
-|                                                                      |
-| }                                                                    |
-+----------------------------------------------------------------------+
+```
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v2",
+    "https://w3id.org/verifiable-party/v1"
+  ],
+  "issuer": {
+    "id": "did:web:authority.example",
+    "name": "National Education Accreditation Authority of Utopia"
+  },
+  "issuanceDate": "2023-02-13T00:18:30.053Z",
+  "type": ["VerifiableCredential", "VerifiablePartyCredential"],
+  "credentialSubject": [{
+    "id": "did:web:registrar.utopia.edu.example",
+    "type": "VerifiableIssuer",
+    "name": "Utopia University Registrar",
+    "legalName": "The Polytechnic University of Utopia Registrar",
+    "website": "https://utopia.edu.example/",
+    "email": "accreditation@neaau.org.example",
+    "identifier": [{
+      "type": "PropertyValue",
+      "propertyId": "Utopia Educational Institution ID",
+      "value": "123456789"
+    }],
+    "usesOperationalScheme": [{
+      "id": "http://oid-info.com/get/1.2.3.4.5",
+      "name": "Utopian Trust Scheme 819-4"
+    }],
+    "accreditation": [{
+      "id": "https://utopia.gov.example/accreditations/123"
+    }],
+    "authorizedToIssue": [{
+      "type": "UniversityDegreeCredential",
+      "credentialSchema": {
+        "id": "https://Issuer.example/degree.json",
+        "type": "AuthorizedIssuerJsonSchema2022",
+        "schema": "{\"properties\":\{\"credentialSubject.state\":\"UA\"}}"
+      }
+    }]
+  },
+  "proof": { ... }
+}
+```
 
 # 6. Conclusions and Future Work
 
