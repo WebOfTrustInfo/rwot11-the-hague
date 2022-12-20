@@ -481,8 +481,7 @@ Gaia-X also provides an associated Trust Framework
 ### 3.5.1 TRAIN (TRust mAnagement INfrastructure)
 
 [*Fraunhofer IAO*](https://www.iao.fraunhofer.de/en.html), a German
-Research Institute based in Stuttgart, Germany, has developed [***TRAIN
-***](https://train.trust-scheme.de/info/)[*(TRust mAnagement
+Research Institute based in Stuttgart, Germany, has developed [***TRAIN***](https://train.trust-scheme.de/info/)[*(TRust mAnagement
 INfrastructure)*](https://train.trust-scheme.de/info/), which provides
 an infrastructure that allows to verify the trustworthiness of involved
 parties in an SSI Ecosystem. An example would be if a certain Issuer is
