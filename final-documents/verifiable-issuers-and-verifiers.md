@@ -663,67 +663,36 @@ compatible with the W3C Verifiable Credentials ecosystem. As such, the
 paper proposed a data model and serialization format for the lists. An
 example of a serialized list is shown below:
 
-EXAMPLE: An VerifiableIssuerCredential Verifiable Credential
-
-+----------------------------------------------------------------------+
-| {                                                                    |
-|                                                                      |
-| \"@context\": \[                                                     |
-|                                                                      |
-| \"https://www.w3.org/2018/credentials/v2\",                          |
-|                                                                      |
-| \"https://w3id.org/vc/viv/v1\"                                       |
-|                                                                      |
-| \],                                                                  |
-|                                                                      |
-| \"type\": \[\"VerifiableCredential\",                                |
-| \"VerifiableIssuerCredential\"\],                                    |
-|                                                                      |
-| \"issuer\": \"did:web:authority.example\",                           |
-|                                                                      |
-| \"validFrom\": \"2023-02-13T00:18:30.053Z\",                         |
-|                                                                      |
-| \"credentialSubject\": \[{                                           |
-|                                                                      |
-| \"id\": \"did:web:issuer.example\",                                  |
-|                                                                      |
-| \"type\": \"AuthorizedIssuer\",                                      |
-|                                                                      |
-| \"authorizedToIssueCredential\": \[{                                 |
-|                                                                      |
-| \"type\": \"UniversityDegreeCredential\",                            |
-|                                                                      |
-| \"credentialSchema\": {                                              |
-|                                                                      |
-| \"id\": \"https://issuer.example/degree.json\",                      |
-|                                                                      |
-| \"type\": \"JsonSchema2022\"                                         |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| }, {                                                                 |
-|                                                                      |
-| \"type\": \"StudentIdCredential\",                                   |
-|                                                                      |
-| \"credentialSchema\": {                                              |
-|                                                                      |
-| \"type\": \"AuthorizedIssuerJsonSchema2022\",                        |
-|                                                                      |
-| \"schema\":                                                          |
-| \"{                                                                  |
-| \\\"properties\\\":\\{\\\"credentialSubject.state\\\":\\\"NV\\\"}}\" |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| }\]                                                                  |
-|                                                                      |
-| },                                                                   |
-|                                                                      |
-| \"proof\": { \... }                                                  |
-|                                                                      |
-| }                                                                    |
-+----------------------------------------------------------------------+
-
+**EXAMPLE: An VerifiableIssuerCredential Verifiable Credential**
+```
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v2",
+    "https://w3id.org/vc/viv/v1"
+  ],
+  "type": ["VerifiableCredential", "VerifiableIssuerCredential"],
+  "issuer": "did:web:authority.example",
+  "validFrom": "2023-02-13T00:18:30.053Z",
+  "credentialSubject": [{
+    "id": "did:web:issuer.example",
+    "type": "AuthorizedIssuer",
+    "authorizedToIssueCredential": [{
+      "type": "UniversityDegreeCredential",
+      "credentialSchema": {
+        "id": "https://issuer.example/degree.json",
+        "type": "JsonSchema2022"
+      }
+    }, {
+      "type": "StudentIdCredential",
+      "credentialSchema": {
+        "type": "AuthorizedIssuerJsonSchema2022",
+        "schema": "{\"properties\":\{\"credentialSubject.state\":\"NV\"}}"
+      }
+    }]
+  },
+  "proof": { ... }
+}
+```
 The use cases and requirements outlined in the Authorized Issuer List
 paper have been merged into this paper. The base data model provided in
 the Authorized Issuer List paper has been analyzed and merged into the
@@ -978,159 +947,87 @@ proposed methodology:
 ***Figure 7: Serialization of Verifiable-Issuers/Verifiers Lists for smart
 contracts.***
 
-EXAMPLE: Response from the smart contract
+**EXAMPLE: Response from the smart contract**
+```
+[
+  "did:web:weboftrust.info",
+  "did:ethr:0x0..."
+]
+```
 
-+--------------------------------+
-| \[                             |
-|                                |
-| \"did:web:weboftrust.info\",   |
-|                                |
-| \"did:ethr:0x0\...\"           |
-|                                |
-| \]                             |
-+--------------------------------+
+**EXAMPLE: Minimal response from the List Access Point**
+```
+[
+  {
+    "id": "did:web:weboftrust.info",
+    "type": "VerifiableIssuer"
+  },
+  {
+    "id": "did:ethr:0x0...",
+    "type": "VerifiableIssuer"
+  }
+]
+```
 
-EXAMPLE: Minimal response from the List Access Point
-
-+------------------------------------------+
-| \[                                       |
-|                                          |
-| {                                        |
-|                                          |
-| \"id\": \"did:web:weboftrust.info\",     |
-|                                          |
-| \"type\": \"VerifiableIssuer\"           |
-|                                          |
-| },                                       |
-|                                          |
-| {                                        |
-|                                          |
-| \"id\": \"did:ethr:0x0\...\",            |
-|                                          |
-| \"type\": \"VerifiableIssuer\"           |
-|                                          |
-| }                                        |
-|                                          |
-| \]                                       |
-+------------------------------------------+
-
-EXAMPLE: Rich response from List Access Point
-
-+----------------------------------------------------------------------+
-| \[                                                                   |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"id\": \"did:web:weboftrust.info\",                                 |
-|                                                                      |
-| \"type\": \"VerifiableIssuer\",                                      |
-|                                                                      |
-| \"name\": \"Utopia University\",                                     |
-|                                                                      |
-| \"legalName\": \"The Polytechnic University of Utopia\",             |
-|                                                                      |
-| \"website\": \"https://utopia.edu.example/\",                        |
-|                                                                      |
-| \"email\": \"accreditation@neaau.org.example\",                      |
-|                                                                      |
-| \"identifier\": \[                                                   |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"type\": \"PropertyValue\",                                         |
-|                                                                      |
-| \"propertId\": \"Utopia Educational Institution ID\",                |
-|                                                                      |
-| \"value\": \"123456789\"                                             |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| \],                                                                  |
-|                                                                      |
-| \"usesOperationalScheme\": \[                                        |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"id\": \"http://oid-info.com/get/1.2.3.4.5\",                       |
-|                                                                      |
-| \"name\": \"Utopian Trust Scheme 819-4\"                             |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| \],                                                                  |
-|                                                                      |
-| \"accreditation\": \[                                                |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"id\": \"https://utopia.gov.example/accreditations/123\"            |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| \],                                                                  |
-|                                                                      |
-| \"service\": \[                                                      |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"id\": \"did:example:123456789\",                                   |
-|                                                                      |
-| \"name\": \"University Diploma Service\",                            |
-|                                                                      |
-| \"authorizedToIssue\": \[                                            |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"type\": \"UniversityDegreeCredential\",                            |
-|                                                                      |
-| \"credentialSchema\": {                                              |
-|                                                                      |
-| \"id\": \"https://Issuer.example/degree.json\",                      |
-|                                                                      |
-| \"type\": \"AuthorizedIssuerJsonSchema2022\"                         |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| \]                                                                   |
-|                                                                      |
-| },                                                                   |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"id\": \"did:example:abcdefghij\",                                  |
-|                                                                      |
-| \"name\": \"University Student Identity Services\",                  |
-|                                                                      |
-| \"authorizedToIssue\": \[                                            |
-|                                                                      |
-| {                                                                    |
-|                                                                      |
-| \"type\": \"StudentIdCredential\",                                   |
-|                                                                      |
-| \"credentialSchema\": {                                              |
-|                                                                      |
-| \"type\": \"AuthorizedIssuerJsonSchema2022\",                        |
-|                                                                      |
-| \"schema\":                                                          |
-| \"{                                                                  |
-| \\\"properties\\\":\\{\\\"credentialSubject.state\\\":\\\"UA\\\"}}\" |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| \]                                                                   |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| \]                                                                   |
-|                                                                      |
-| }                                                                    |
-|                                                                      |
-| \]                                                                   |
-+----------------------------------------------------------------------+
+**EXAMPLE: Rich response from List Access Point**
+```
+[
+  {
+    "id": "did:web:weboftrust.info",
+    "type": "VerifiableIssuer",
+    "name": "Utopia University",
+    "legalName": "The Polytechnic University of Utopia",
+    "website": "https://utopia.edu.example/",
+    "email": "accreditation@neaau.org.example",
+    "identifier": [
+      {
+        "type": "PropertyValue",
+        "propertId": "Utopia Educational Institution ID",
+        "value": "123456789"
+      }
+    ],
+    "usesOperationalScheme": [
+      {
+        "id": "http://oid-info.com/get/1.2.3.4.5",
+        "name": "Utopian Trust Scheme 819-4"
+      }
+    ],
+    "accreditation": [
+      {
+        "id": "https://utopia.gov.example/accreditations/123"
+      }
+    ],
+    "service": [
+      {
+        "id": "did:example:123456789",
+        "name": "University Diploma Service",
+        "authorizedToIssue": [
+          {
+            "type": "UniversityDegreeCredential",
+            "credentialSchema": {
+              "id": "https://Issuer.example/degree.json",
+              "type": "AuthorizedIssuerJsonSchema2022"
+            }
+          }
+        ]
+      },
+      {
+        "id": "did:example:abcdefghij",
+        "name": "University Student Identity Services",
+        "authorizedToIssue": [
+          {
+            "type": "StudentIdCredential",
+            "credentialSchema": {
+              "type": "AuthorizedIssuerJsonSchema2022",
+              "schema": "{\"properties\":\{\"credentialSubject.state\":\"UA\"}}"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
+```
 
 ### 5.3.2 Verifiable List and Consortium
 
