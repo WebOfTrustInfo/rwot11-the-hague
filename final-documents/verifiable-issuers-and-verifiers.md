@@ -1,9 +1,8 @@
-Rebooting the Web of Trust
+# Verifiable Issuers & Verifiers      
 
-Designing the Future of Decentralized Self-sovereign Identity
+### Enabling anyone to share information about the Issuers and Verifiers for whom they assure trust
 
-![](../../../../../../Dropbox/RWOT/Sponsor%20Logo%20Boxes/sponsors-rwot11.psd){width="7in"
-height="2.0299in"}RWOT XI Gold Sponsors:
+### by Manu Sporny, Oskar van Deventer, Isaac Henderson Johnson Jeyakumar, Shigeya Suzuki, Konstantin Tsabolov, Line Kofoed, Rieks Joostena
 
 ## Abstract
 
@@ -22,9 +21,9 @@ DNSSEC, and blockchain-based serializations --- that could then be
 incubated and sent onto the standards track at global standards setting
 organizations.
 
-[]{#anchor}1. Introduction
+# 1. Introduction
 
-## []{#anchor-1}1.1 General
+## 1.1 General
 
 The maintenance of lists of Verifiable Issuers, sometimes referred to as
 Trusted Registries, is a well-known concept from the pre-internet age.
@@ -82,12 +81,12 @@ document as input and inspiration for their code and other products.
 Deployers of SSI use cases may use this document in the specification
 process of their deployment.
 
-## []{#anchor-2}1.2 Terminology
+## 1.2 Terminology
 
 This section defines key terminology used throughout this paper with
 references to W3C terminology.
 
-Credential
+### Credential
 
 A set of one or more
 [claims](https://www.w3.org/TR/vc-data-model/#dfn-claims) made by an
@@ -101,7 +100,7 @@ which can also be cryptographically verified. The
 credential can be about different [subjects.
 ](https://www.w3.org/TR/vc-data-model/#dfn-subjects)
 
-Electronic Identification, Authentication and Trust Services (eIDAS)
+### Electronic Identification, Authentication and Trust Services (eIDAS)
 
 **eIDAS** (**e**lectronic **ID**entification, **A**uthentication and
 trust **S**ervices) is an [EU
@@ -119,14 +118,14 @@ organizations delivering public digital services in an EU member state
 must recognize electronic identification from all EU member states from
 September 29, 2018.
 
-European Digital Identity (EUDI)
+### European Digital Identity (EUDI)
 
 The European Digital Identity is based on a European Commission document
 called "European Digital Identity Architecture and Reference Framework"
 that has established the functional and architectural requirements for
 an upcoming European Digital Identity Wallet.
 
-Holder
+### Holder
 
 A role an [entity](https://www.w3.org/TR/vc-data-model/#dfn-entities)
 might perform by possessing one or more [verifiable
@@ -142,7 +141,7 @@ they are holding. Holders store their
 [credential
 repositories](https://www.w3.org/TR/vc-data-model/#dfn-credential-repository).
 
-Issuer
+### Issuer
 
 A role an [entity](https://www.w3.org/TR/vc-data-model/#dfn-entities)
 can perform by asserting
@@ -155,7 +154,7 @@ and transmitting the [verifiable
 credential](https://www.w3.org/TR/vc-data-model/#dfn-verifiable-credentials)
 to a [holder](https://www.w3.org/TR/vc-data-model/#dfn-holders).
 
-Level of Assurance (LoA)
+### Level of Assurance (LoA)
 
 The degree of certainty that a relying party can have about the true
 identity of someone presenting an identity credential. Four levels of
@@ -165,7 +164,7 @@ assurance is measured by the strength and rigor of the identity proofing
 process, the strength of the token used to authenticate the identity
 claim, and the management processes the identity provider applies to it.
 
-Sharing
+### Sharing
 
 The act of transferring information from one party to another. This
 paper uses the word \"sharing\" instead of \"publishing\" as the latter
@@ -174,7 +173,7 @@ Issuer/Verifier** **lists** described in this paper are made available
 in some form or other. They might be pushed to a party or pulled from a
 party and might use a public communication channel or a private one.
 
-Verifiable Issuer / Verifiable Verifier
+### Verifiable Issuer / Verifiable Verifier
 
 A party that is verifiable might have different levels of
 trustworthiness associated with it by different parties. Note that
@@ -184,7 +183,7 @@ authority. This paper uses the word "verifiable" as no presumption
 should be made about the application of the lists, or the
 trust/authority that they assure.
 
-Verifiable Issuer/Verifier List
+### Verifiable Issuer/Verifier List
 
 A container that consists of a set of **Verifiable** **Issuers** or
 **Verifiers**. The word "list" can be considered synonymous to
@@ -193,7 +192,7 @@ authority associated with it. This paper uses the word "list" and
 presumes there will always be some form of governance, if only the
 establishment of its purpose and the format of its entries.
 
-Verifier
+### Verifier
 
 A role an [entity](https://www.w3.org/TR/vc-data-model/#dfn-entities)
 performs by receiving one or more [verifiable
@@ -203,7 +202,7 @@ presentation](https://www.w3.org/TR/vc-data-model/#dfn-verifiable-presentations)
 for processing. Other specifications might refer to this concept as a
 relying party.
 
-## []{#anchor-3}1.3 Criteria
+## 1.3 Criteria
 
 This section contains criteria that can be used to determine whether
 something does or does not fit a particular terminological definition in
@@ -247,7 +246,7 @@ the previous section.
     act upon that machine-readable description. For example, \"Issues
     Student ID cards for University X\".
 
-[]{#anchor-4}2. Use Cases
+# 2. Use Cases
 
 This section outlines use cases that highlight the need for the
 technology described in this paper by discussing the use cases in two
@@ -268,7 +267,7 @@ document, they are included by reference:
 -   [*ESSIF-Lab Trust Management Infrastructure (TRAIN) Business
     Case*](https://gitlab.grnet.gr/essif-lab/infrastructure/fraunhofer/train_project_summary#business-problem)
 
-## []{#anchor-5}2.1 Verifiable Issuer Use Cases
+## 2.1 Verifiable Issuer Use Cases
 
 -   Acme Inc. is a producer of medical equipment. Twin Mountains
     Hospital decided to buy equipment from Acme Inc. The law says that
@@ -326,11 +325,9 @@ document, they are included by reference:
 Figure 1: A Verifiable-Issuer List helps verifying whether a diploma is
 genuine.
 
-## []{#anchor-6}2.2 Verifiable Verifier Use Cases
+## 2.2 Verifiable Verifier Use Cases
 
-See also [*Verify the Verifier - Anti-coercion by Design; October 2020
-\|
-TNO*](https://blockchain.tno.nl/blog/verify-the-verifier-anti-coercion-by-design/)
+See also [*Verify the Verifier - Anti-coercion by Design; October 2020 | TNO*](https://blockchain.tno.nl/blog/verify-the-verifier-anti-coercion-by-design/)
 
 -   Yuri has a digital driver\'s license and is attempting to rent a car
     from CarMart. CarMart requests to see Yuri\'s age, motor vehicle
@@ -372,7 +369,7 @@ height="4.0098in"}**Figure 2: A properly-implemented wallet with
 Verifiable-Verifier List protects citizens against overzealous law
 enforcement.**
 
-## []{#anchor-7}2.3 Commonalities and Differences
+## []2.3 Commonalities and Differences
 
 Conceptually and technically, the two types of lists (Verifiable Issuer,
 Verifiable Verifier) are fairly similar. Each type is a governed list of
@@ -392,9 +389,9 @@ between the two types of lists, or whether/how the consulting of lists
 is implemented and enforced. All of these differences are out of the
 scope of this paper.
 
-[]{#anchor-8}3. Analysis of Prior Art
+# 3. Analysis of Prior Art
 
-## []{#anchor-9}3.1 Historic Perspective of lists of Verifiable Issuers and Verifiers
+## 3.1 Historic Perspective of lists of Verifiable Issuers and Verifiers
 
 Verifiable Issuer lists pre-date the digital age. Governments have
 always maintained lists of organizations with accreditation. This
@@ -415,7 +412,7 @@ described in the remainder of this section. Note that, as highlighted in
 the terminology section, different prior art uses different terminology,
 e.g., "trusted" or "register."
 
-## []{#anchor-10}3.2 EBSI Trusted Issuer Registry
+## 3.2 EBSI Trusted Issuer Registry
 
 EBSI, the European Blockchain Service Infrastructure, is a joint
 initiative from the European Commission and the European Blockchain
@@ -448,7 +445,7 @@ If needed be, we could replicate the Issuers' trust model and apply it
 to Verifiers. However, before doing this, we would need to have a
 requirement from a Use Case^[^3]^."
 
-## []{#anchor-11}3.3 Biometric passport chip
+## 3.3 Biometric passport chip
 
 Certain passports have a chip that stores biometric information (facial
 image and fingerprints). See
@@ -466,7 +463,7 @@ States. This is achieved through a more complex cryptographic
 infrastructure than is found in BAC/SAC and also implies an additional
 Public Key Infrastructure for its Verifiable-Verifier List.
 
-## []{#anchor-12}3.4 Gaia-X trust registry
+## 3.4 Gaia-X trust registry
 
 Gaia-X is a framework for European federated cloud infrastructure
 ([*https://docs.gaia-x.eu/framework/*](https://docs.gaia-x.eu/framework/))
@@ -481,9 +478,9 @@ Gaia-X provides open-souce code for a personal credential manager
 Gaia-X also provides an associated Trust Framework
 ([*https://compliance.gaia-x.eu/*](https://compliance.gaia-x.eu/)).
 
-## []{#anchor-13}3.5 eSSIF-Lab TRAIN
+## 3.5 eSSIF-Lab TRAIN
 
-### []{#anchor-14}3.5.1 TRAIN (TRust mAnagement INfrastructure)
+### 3.5.1 TRAIN (TRust mAnagement INfrastructure)
 
 [*Fraunhofer IAO*](https://www.iao.fraunhofer.de/en.html), a German
 Research Institute based in Stuttgart, Germany, has developed [***TRAIN
@@ -503,7 +500,7 @@ Internet Domain Name System (DNS, DNSSEC) with its existing global
 infrastructure, organization, governance and security standards to
 establish the trust discovery process.
 
-### []{#anchor-15}3.5.2 Interoperability using ETSI Trust List
+### 3.5.2 Interoperability using ETSI Trust List
 
 TRAIN leverages the European Telecommunications Standards Institute
 (ETSI) Technical Standard (TS) 119 612 \[ETSI\] for Trust Lists to
@@ -524,7 +521,7 @@ through TRAIN Trust Lists in a machine-readable form. Thereby other
 entities are able to verify the trustworthiness of these entities
 \[TRAIN\].
 
-### []{#anchor-16}3.5.3 TRAIN Outcomes
+### 3.5.3 TRAIN Outcomes
 
 An illustrative interoperability use case for the European Health
 Insurance Card (EHIC) has been realized and demonstrated with SICPA SA
@@ -537,9 +534,9 @@ Network (GCCN), an initiative by Linux Foundation for Public Health
 (LPFH) to identify the trustworthiness of Covid Credentials on a global
 scale\[GCCN\].
 
-## []{#anchor-17}3.6 Ethereum-based
+## 3.6 Ethereum-based
 
-### []{#anchor-18}3.6.1 General
+### 3.6.1 General
 
 Spherity GmbH
 ([*https://www.spherity.com/*](https://www.spherity.com/)), a German
@@ -605,7 +602,7 @@ The approach aims to enforce the following policies:
         recorded in the Ethereum network, so no one can trace if the
         list was retrieved or the frequency of such operations.
 
-### []{#anchor-19}3.6.2 Architecture
+### 3.6.2 Architecture
 
 ![](Pictures/1000000000000559000003FC0C0FD495.png){width="6.5in"
 height="4.8472in"}The smart contract containing the trusted Issuer
@@ -616,7 +613,7 @@ as Infura.
 
 Figure 4: Interacting with the Ethereum blockchain.
 
-## []{#anchor-20}3.7 Trust-over-IP Trust Registry Task Force
+## 3.7 Trust-over-IP Trust Registry Task Force
 
 The [*Trust Registry Task force of Trust Over IP
 Foundation*](https://wiki.trustoverip.org/display/HOME/Trust+Registry+Task+Force)
@@ -653,7 +650,7 @@ The technology links to Fraunhofer TRAIN, which was also initiated in
 the eSSIF-Lab context. Both are documents published by the ToIP
 Foundation.
 
-## []{#anchor-21}3.8 Expression as Verifiable Credential
+## 3.8 Expression as Verifiable Credential
 
 In 2022, an advanced reading paper was submitted to the Rebooting the
 Web of Trust 11 conference in The Hague, Netherlands. The paper was
@@ -733,7 +730,7 @@ the Authorized Issuer List paper has been analyzed and merged into the
 TRAIN work described in this paper in a way that the authors believe
 will be compatible with the ETSI standard (TS 119 612) for Trust Lists.
 
-## []{#anchor-22}3.9 Governance of Verifiable-Issuers/Verifiers Lists
+## 3.9 Governance of Verifiable-Issuers/Verifiers Lists
 
 Governance of a Verifiable-Issuers/Verifiers List may include the
 following:
@@ -826,7 +823,7 @@ the governance contexts are the following:
 -   Each community member refers to and uses the list.
 -   If needed, an external auditor might be necessary.
 
-## []{#anchor-23}3.10 Gap Analysis: Missing Standards and Verifiable Credentials
+## 3.10 Gap Analysis: Missing Standards and Verifiable Credentials
 
 The discussed prior art shows that, although there exist quite a few
 implementations of Verifiable-Issuers Lists, and fewer
@@ -847,9 +844,9 @@ The time/efficiency, offline and privacy issues with the API approach
 can be resolved by including a standardisable serialization based on
 Verifiable Credentials and/or anonymous credentials (anoncreds).
 
-[]{#anchor-24}4. Requirements
+# 4. Requirements
 
-## []{#anchor-25}4.1 Conceptual Model
+## 4.1 Conceptual Model
 
 An Assurance Community is what governs a list of Verifiable Issuers
 and/or Verifiers. The community can consist of a single person, a group
@@ -875,9 +872,7 @@ private channel.
 height="1.9256in"}Figure 6: Conceptual model of sharing Lists of
 Verifiable Issuers and Verifiers.
 
-## 
-
-## []{#anchor-26}4.2 Requirements
+## 4.2 Requirements
 
 The following requirements have been specified by the authors. It
 includes both requirements on a Verifiable-Issuers/Verifiers List ("a
@@ -886,57 +881,42 @@ requirements may be updated in the future.
 
 -   A list may be created and governed by any individual, group of
     individuals, organization, group of organizations, or other.
-
 -   A list and/or its entries shall be made available to subscribers.
-
 -   A list and/or its individual entries shall be serializable in one or
     more formats such as a Verifiable Credential.
-
 -   Entries may be made available via a Wallet, a Website, a URI, a QR
     code, a DNS Resource Records, DNSSEC, on-chain Ethereum
     transactions, or other methods.
-
 -   A list and its entries shall be cryptographically verifiable.
-
     -   A list shall accommodate Different cryptographic mechanisms
         (X.509, JWK etc.).
     -   There shall be an ability to authenticate the list or an
         individual entry.
-
 -   A list and its entries shall have associated Governance Metadata
     Format, including:
-
     -   Policies; and
     -   Qualifier details.
-
 -   A list and its entries shall be publicly resolvable.
-
 -   A list and its entries shall be privately transmittable/retrievable.
-
 -   A list may have metadata associated with it, e.g., metadata that is
     applicable to all of its entries.
-
 -   A list may have different levels of privacy/confidentiality, ranging
     from fully public to for-authorized-yes-only.
-
 -   Entries shall be able to be created, read, and deleted.
-
 -   Entries may be updated, suspended and/or revoked.
-
 -   Entries may have an individual level of assurance associated with
     it.
-
 -   Entries may have an associated level of assurance.
 
-[]{#anchor-27}5. Implementations
+# 5. Implementations
 
-## []{#anchor-28}5.1 General
+## 5.1 General
 
 The following subsections provide a data model for entries to the
 Verifiable-Issuers/Verifiers List and their serialization and a view on
 its governance model.
 
-## []{#anchor-29}5.2. Data Model(s)
+## 5.2. Data Model(s)
 
 The data model described in this section has been built using input from
 a variety of the prior art evaluated for this paper including input from
@@ -960,30 +940,23 @@ Each list entry, representing a party, might contain the following
 optional information:
 
 -   A legal name
-
 -   An associated website
-
 -   An email address
-
 -   A set of identifiers that specify a human readable name for the
     property and its corresponding value
-
 -   A set of operational schemes, such as a trust scheme, under which it
     operates, stored as tuples of a URL to the operational scheme and a
     human-readable name.
-
 -   A set of accreditations that are identified by URL
-
 -   A set of credentials that the party is authorized to issue, verify,
     or otherwise process where each credential description MUST contain:
-
     -   A type
     -   A credential schema that can be used to match against a
         Verifiable Credential
 
-## []{#anchor-30}5.3 Serialization(s)
+## 5.3 Serialization(s)
 
-### []{#anchor-31}5.3.1 Serialization for Smart Contract-enabled environments
+### 5.3.1 Serialization for Smart Contract-enabled environments
 
 The example here is one of many possible ways of maintaining a list on
 DLTs. This implementation was done for Ethereum blockchain and smart
@@ -1159,7 +1132,7 @@ EXAMPLE: Rich response from List Access Point
 | \]                                                                   |
 +----------------------------------------------------------------------+
 
-### []{#anchor-32}5.3.2 Verifiable List and Consortium
+### 5.3.2 Verifiable List and Consortium
 
 In this section, as an example of a method for sharing a Verifiable
 List, we show how DNS/DNSSEC can be combined to publish members of a
@@ -1213,9 +1186,9 @@ delegating zones to Member Labels and managing the zones by each
 Consortium Member. These serializations are equivalent from a governance
 perspective and differ only in the serialization method.
 
-### []{#anchor-33}5.3.3 Serialization with DNS using TRAIN
+### 5.3.3 Serialization with DNS using TRAIN
 
-### X.509 Certificates
+### _X.509 Certificates_
 
 In this approach qualified Domain Name will be used as Identifier of the
 entity and this will be included in the *SubjectAltName* attribute of
@@ -1238,7 +1211,7 @@ Swagger API can be found in the following
 | }                                                                    |
 +----------------------------------------------------------------------+
 
-### Verifiable Credentials
+### _Verifiable Credentials_
 
 In Verifiable Credentials the qualified Domain Name can be used to
 specify the trust scheme the provider trusts. For example: If the
@@ -1266,7 +1239,7 @@ that the Verifier trusts. The Source Code for TRAIN Verifier is
 available in open source as Apache 2.0 License under the following
 [*gitlab*](https://gitlab.grnet.gr/essif-lab/infrastructure/fraunhofer/train-source-code).
 
-### []{#anchor-34}5.3.4 Serialization with DNSSEC and Web
+### 5.3.4 Serialization with DNSSEC and Web
 
 In this section, we describe how to serialize the list into a DNS zone
 with a DNSSEC.
@@ -1340,7 +1313,7 @@ records is inefficient, a better method may need to be explored.
 | issuer.consortium.example. IN KEY 512 3 8 AwEAAQ\[\...\]f2zRew== |
 +------------------------------------------------------------------+
 
-### []{#anchor-35}5.3.5 Verifiable Credentials Serialization
+### 5.3.5 Verifiable Credentials Serialization
 
 The data model described in this section can be expressed as a
 Verifiable Credential as outlined in the example below:
@@ -1432,7 +1405,7 @@ Verifiable Credential as outlined in the example below:
 | }                                                                    |
 +----------------------------------------------------------------------+
 
-[]{#anchor-36}6. Conclusions and Future Work
+# 6. Conclusions and Future Work
 
 This paper identified previous work, use cases, and requirements for the
 management of Verifiable-Issuer/Verifier Lists. It establishes
@@ -1465,7 +1438,7 @@ be started with digital wallet, Issuer, and Verifier communities, such
 as within the Education sector, that already utilize paper-based
 processes and are currently transitioning to digital processes.
 
-[]{#anchor-37}Appendix A: References
+# Appendix A: References
 
 This section contains complete references to citations made throughout
 the paper:
@@ -1553,7 +1526,7 @@ für Informatik e.V.. (S. 167-178)., p. 12.
 
 ## Additional Credits
 
-[]{#additional-credits}**Lead Author:** Konstantin Tsabolov (Spherity)
+**Lead Author:** Konstantin Tsabolov (Spherity)
 
 **Authors:** Manu Sporny (Digital Bazaar), Oskar van Deventer (TNO),
 Isaac Henderson Johnson Jeyakumar (University of Stuttgart, Fraunhofer
@@ -1570,9 +1543,9 @@ Rebooting the Web of Trust XI. Retrieved from
 This paper is licensed under
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 
-## ![](../../../../../../Dropbox/RPG%20PDFs/rwot-logo.png){width="1.5in" height="1.6098in"}About Rebooting the Web of Trust
+## About Rebooting the Web of Trust
 
-[]{#about-rebooting-the-web-of-trust}*This paper was produced as part of
+*This paper was produced as part of
 the Rebooting the Web of Trust XI design workshop. On September 26th to
 30th, 2022, over 60 tech visionaries came together in The Hague, The
 Netherlands to talk about the future of decentralized trust on the
@@ -1602,7 +1575,7 @@ Thanks to all our attendees and other contributors!
 
 ## What's Next?
 
-[]{#whats-next}The design workshop and this paper are just starting
+The design workshop and this paper are just starting
 points for Rebooting the Web of Trust. If you have any comments,
 thoughts, or expansions on this paper, please post them to our GitHub
 issues page:
