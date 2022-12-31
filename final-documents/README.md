@@ -1,6 +1,6 @@
 # Rebooting the Web of Trust XI (Fall 2022) Final Papers
 
-_This is a listing for the RWOT9 papers to date. [Several more](../draft-documents/README.md) are in process._
+_This is a listing for the RWOT11 papers to date. [Several more](../draft-documents/README.md) are in process._
 
 ## [*Linking Credentials with Data Exchange Agreements through Secured Inclusive Interfaces*](data-exchange-agreements-with-oca.pdf) [(Text)](data-exchange-agreements-with-oca.md)
 
