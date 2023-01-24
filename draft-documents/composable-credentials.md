@@ -4,9 +4,7 @@
 # **Composing Credentials via LinkedClaims and Cryptographic Binding**
 
 
-## 
-**Co-Authors**
-
+## **Co-Authors**
 
 
 * Phillip D. Long - T3 Innovation Network, Georgetown University & ASU
@@ -14,9 +12,7 @@
 * Golda Velez - Cooperation.org 
 * Oliver Klingefjord - @Klingefjord
 
-## 
-**Abstract**
-
+## **Abstract**
 
 The Verifiable Credential ecosystem has encountered several use cases that require a third-party assertion, or a linked claim to an existing object (another VC, a PDF, a web page, etc). Whether it is product reviews, linked claims of self-created credentials, provenance of academic paper reviews, or some other general purpose third party assertion, these use cases have several requirements in common. Each use case may also require a domain-specific set of fields.
 
@@ -27,8 +23,7 @@ Further, we propose to demonstrate the ability to compose several Verifiable Cre
 This approach will enable rich shared datasets to inform trust decisions, while satisfying the requirements of domain-specific end users. One of the intentions of LinkedClaims Verifiable Credentials is to give individuals the agency to make such claims about themselves and others on their own terms. 
 
 
-## 
-**Introduction**
+## **Introduction**
 
 As the Verifiable Credential community gathers implementation experience based on the VC Data Model v1.0, and as it starts working on the next version of the spec, we see the VC landscape adopt two different (but interoperable) architectures.
 
@@ -43,8 +38,7 @@ Micro-credentials allow for easier data minimization, editing and reissuance of 
 In addition to introducing and illustrating the `digestMultibase` mechanism, this paper proposes a new VC type `LinkedClaim`, used to import third party claims from possibly untrusted sources, with a `confidence` property to indicate the level to which the issuer wishes to express confidence in the imported claim. 
 
 
-### 
-**A Brief Primer on Verifiable Presentations**
+### **A Brief Primer on Verifiable Presentations**
 
 VPs are a general purpose wrapper/envelope for one or more VCs. When an Issuer sends VCs to a wallet, it sends them wrapped inside a VP envelope. When a wallet holder presents VCs to a requesting party, the wallet also wraps them inside a VP envelope.
 
@@ -56,8 +50,7 @@ Aside from serving as a lightweight container for one or more VCs, VPs allow the
 * Also, by (optionally) signing a VP, you’re adding a tamper-proof binding on the bundle itself (in addition to the fact that any given VC inside a VP is already tamper-proof by itself).
 * A commonly mis-understood fact: the VCs inside a presentation don’t have to be about the presenter. The holder may have in their possession credentials issued by third parties. For example, when applying to a job, an individual can obtain (and pass along) their school’s accreditation credential. They can also obtain and pass along a VC of the job description they’re applying for. Neither of those VCs (the school accreditation, and the job description) mention the person at all (the job applicant is not the subject of either of those). As part of the application process, the job applicant submits a bundle of credentials (the Verifiable Presentation), some of which may be about the applicant (such as their awards and achievements), and others that are not directly related, but that provide contextual value to the recipient (such as the job description VC).
 
-## 
-**Requirements for Linked Claims**
+## **Requirements for Linked Claims**
 
 1. They must use the W3C Verifiable Credentials (v2) envelope data model.
 2. They must be able to refer to (make a statement about) an external object, such as:
@@ -79,8 +72,7 @@ Nice to haves include:
 2. Ability to compose one or more minimal LinkedClaim VCs into a composite for a specific use case
 3. A claim may provide a "respondAt" URI with a convenience interface to sign a linkedClaim attesting to the validity of the claim or any of its elements.
 
-## 
-Cryptographic Binding via digestMultibase
+## Cryptographic Binding via digestMultibase
 
 
 This paper introduces the optional property **<code>digestMultibase</code></strong>, used to include a verifiable hash of the corresponding<code> <strong>id</strong></code> element. This enables safely linking to an external non-VC object in the <strong><code>id</code></strong> field, while still being able to verify that its content has not changed since making the assertion.
@@ -88,14 +80,12 @@ This paper introduces the optional property **<code>digestMultibase</code></stro
 Note: a _hashlink_ is a general term for a combination of a URI and a digest hash.
 
 
-#### 
-**digestMultibase**
+#### **digestMultibase**
 
 A **<code>digestMultibase</code></strong> property provides a way to lock down a link using a hash of its content, by specifying the hash algorithm, and (optionally) the canonicalization mechanism to perform before hashing. It is intended to apply to the <strong><code>id</code></strong> link at the same level. For more details on this proposed property, see [issue #952](https://github.com/w3c/vc-data-model/issues/952) on the VC Data Model. 
 
 
-### 
-**Verifying Linked VCs**
+### **Verifying Linked VCs**
 
 The presence of a **<code>digestMultibase</code></strong> property in a Verifiable Credential adds additional steps that must be performed during verification:
 
@@ -111,8 +101,7 @@ For example, if the <code>id</code> property contains an HTTP URI, the verifier 
 5. The verifier must compare the fetched resource's digest hash to the hash value specified by the **<code>digestMultibase </code></strong>property. If the values do not match, it must throw an error.
 
 
-### 
-**Hashlink Prior Art**
+### **Hashlink Prior Art**
 
 A hashlink (typically containing a URI and a digest hash) cryptographically binds a VC to another VC or object, by including a digest hash of the linked object itself. 
 
@@ -123,26 +112,22 @@ The IETF [Cryptographic Hyperlinks IETF Draft](https://datatracker.ietf.org/doc/
 The IETF [ACDC - Authentic Chained Data Containers Draft](https://www.ietf.org/archive/id/draft-ssmith-acdc-02.html) uses a mechanism similar to digestMultibase (a combination of identifiers and digest hashes).
 
 
-## 
-**Data Model**
+## **Data Model**
 
 A context containing the proposed properties, as well as a suggested minimal generic claim for including third party sources and a convenience field for responding to a published claim, is available at [http://cooperation.org/credentials/v1/](http://cooperation.org/credentials/v1/) \
  \
 For examples corresponding to the use cases in this paper, see.  see [composable claims examples and reference application](https://codeberg.org/cooperation/LinkedClaims/)
 
 
-## 
-**Mental Model**
+## **Mental Model**
 
-<img align="left" src="resources/composeable-credentials/mental-model.png"/>A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.   Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
-
-
-## 
-**Use Cases**
+<img align="left" src="resources/composable-credentials/mental-model.png"/>A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.   Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
 
 
-### 
-**Linked Claims with self-asserted skill credentials**
+## **Use Cases**
+
+
+### **Linked Claims with self-asserted skill credentials**
 
 
 #### 
@@ -167,8 +152,7 @@ Both Bob and Juanita construct a linked-claims Verifiable Credential recommendin
 Juanita and Bob send their self-asserted skill LinkedClaims to Alice after binding their attributions to those skills and competencies based on their knowledge of Alice’s capabilities. Alice selects these credentials for inclusion in the set she prepares as a verifiable presentation to submit to the job application site.
 
 
-### 
-**A recommendation of an institution/business/gov issued credential to an individual by a third party.**
+### **A recommendation of an institution/business/gov issued credential to an individual by a third party.**
 
 
 #### 
@@ -192,8 +176,7 @@ She describes the work she has seen done by Claudio and her view of the level of
 Laura signs her verifiable LinkedClaim VC and sends it as a VP to Claidios credential wallet. He accepts the presentation which puts the LinkedClaim VC in his wallet and generates a VP including his CTAP certificate VC, the LinkedClaim VC and several others that document related skills pertinent to the job requirements. This VP is then sent to the cybersecurity sourcing company as part of his Verifiable Resume™.
 
 
-### 
-**A review of a paper submitted to an academic conference \
+### **A review of a paper submitted to an academic conference \
  \
 <span style="text-decoration:underline;">User Story</span>**: Layla is asked to write a review of a preprint submitted to a professional conference. She publishes her review as a document and creates a haslink to it in a VC that attests to her authorship of it and a hashlink to the original manuscript reviewed.  \
 <span style="text-decoration:underline;">Goal:</span> Establish proofed authorship of a professional review of a submitted manuscript. \
@@ -212,8 +195,7 @@ With that information Layla creates a self-assertion credential of type equals �
 Layla emails her LinkedClaim VC to the conference organizers for their records and keeps hers in her credential wallet to include later in her promotion and tenure folder.
 
 
-### 
-**Worker taking ownership of reputation reviews (5-star type)**
+### **Worker taking ownership of reputation reviews (5-star type)**
 
 
 ### 
@@ -232,8 +214,7 @@ Any independent verifier can combine these credentials and estimate Joe's credib
 
 
 
-### 
-**Assertion that an image/video was taken by a camera crew has not been altered from the time the images were captured. \
+### **Assertion that an image/video was taken by a camera crew has not been altered from the time the images were captured. \
  \
 <span style="text-decoration:underline;">User Story</span>**: Ansel Adams found his photographs edited by others to assert claims about which were not conveyed or implied in the original images. He alters his workflow to require 3rd parties to use his images and hashlink from their stories, or state they are the image source but derived from his originals, with a link to his originals to confirm the differences. \
 <span style="text-decoration:underline;">Goal:</span> Protect Ansel from spurious claims of libel for images edited without his knowledge but still attributing the image source to him.<span style="text-decoration:underline;"> \
@@ -248,8 +229,7 @@ Ansel Abrams is a professional photographer who publishes his images in magazine
 Ansel has now introduced into his workflow a requirement that any publication of any image he creates must be cryptographically hashlinked and signed by him. This makes it simple for him to prove tampering has occurred to one of his photos. It also imposes a requirement that any purchaser of his work of who has a legitimate reason to edit his image contact him for permission to do so and either provide him the edited version that he can cryptographically add this derivative work to his repository or request the publisher to state their provenance for the derivative image, with attribution to Ansel as the original photographer and a link to Ansel's original image.
 
 
-### 
-**Verification of Disaster Recovery Funds Distribution and Outcomes**
+### **Verification of Disaster Recovery Funds Distribution and Outcomes**
 
 
 ### 
@@ -279,8 +259,7 @@ In addition to the validation of use of funds, relief organizations can leverage
 For example, if trained in the logistics of running a food service (to aid the emergency workers providing disaster relief), when this is all over they could use that credential they were granted when they apply for a job in some other similar food service position in the 'after times' of this event.  
 
 
-### 
-**A person was harmed by an entity**
+### **A person was harmed by an entity**
 
 
 ### 
@@ -303,8 +282,7 @@ According to [current data at Justice for Myanmar](https://data.justiceformyanma
 By publishing linked claims relating the specific harms to the money flows in a standardized format, an independent application can be developed helping investment managers avoid the risk of investing in companies that contribute money to current human rights abusers.  A news aggregator might choose to provide a "take action" link under a news item that enables the reader to adjust their buying or investing behavior accordingly.
 
 
-### 
-**A claim that attests to the provenance of an article posted in a published news service \
+### **A claim that attests to the provenance of an article posted in a published news service \
  \
 <span style="text-decoration:underline;">User Story</span>**: Island News (IN) investigative journalism reports are often attacked as false by those described in their stories. Island News established a repository for data collected by investigative reporting teams to catalog reporter’s notes, pictures, recordings and related data, hashlinked to the credential of record for each investigation, signed by paper, with each digital object collected signed by the reporter’s who gathered them. The ICIJ periodically reviews reports and issues a LinkedClaim recommendation as toIsland News investigative reporting practices.  \
 <span style="text-decoration:underline;">Goal:</span> Protect journalists from false accusations of fraud, lying and reporting of false news. \
@@ -323,12 +301,10 @@ Island News decided to hashlink future investigative reporting and associate the
 Future investigative journalism reports contain the links to these credentials, publicly accessible, and verifiable for all who wish to see them.
 
 
-## 
-**Examples of Linked and Composed Credentials**
+## **Examples of Linked and Composed Credentials**
 
 
-### 
-**Example: Firsthand Observation**
+### **Example: Firsthand Observation**
 
 
 ```
@@ -363,8 +339,7 @@ Source: Firsthand, when and where observed
 
 
 
-### 
-**Example: Secondhand Observation**
+### **Example: Secondhand Observation**
 
 
 ```
@@ -397,8 +372,7 @@ Source: Charles, secondhand
 
 
 
-### 
-**Standalone Claim - Review**
+### **Standalone Claim - Review**
 
 Example of a linked claim representing a product review, that was scraped from a site.
 
@@ -454,8 +428,7 @@ Example of a linked claim representing a product review, that was scraped from a
 
 
 
-### 
-**Example - A Verifiable LinkedClaim**
+### **Example - A Verifiable LinkedClaim**
 
 This example is composed of two components – an initial standalone VC, and then an _LinkedClaim _ of that VC, with a one-way cryptographic binding to it.
 
@@ -586,8 +559,7 @@ This example is composed of two components – an initial standalone VC, and the
 
 
 
-### 
-**Verifiable LinkedClaims - De-constructed Into Linked Standalone VCs**
+### **Verifiable LinkedClaims - De-constructed Into Linked Standalone VCs**
 
 This example is functionally identical to the previous (an initial standalone self-issued VC combined with an LinkedClaim of that VC), except that it decomposes the parts of the LinkedClaim into separate standalone VCs (that are still linked, cryptographically). These would typically be presented as a bundle, in a Verifiable Presentation:
 
@@ -794,15 +766,13 @@ This example is functionally identical to the previous (an initial standalone se
 
 
 
-## 
-**References**
+## **References**
 
 <sup>1</sup>Proofmode: https://proofmode.org/ secure, signed visual evidence \
 
 
 
-### 
-**Relates to Advanced Readings**
+### **Relates to Advanced Readings**
 
 [https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/verfiable-credentials-holder-binding.md](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/endorsements.md)
 
@@ -811,8 +781,7 @@ This example is functionally identical to the previous (an initial standalone se
 [https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/Multi-dimensional reputation systems using webs-of-trust.md](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/Multi-dimensional%20reputation%20systems%20using%20webs-of-trust.md)
 
 
-### 
-**Standards**
+### **Standards**
 
 [https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials](https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials)
 
