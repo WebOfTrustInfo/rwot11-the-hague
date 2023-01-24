@@ -6,7 +6,7 @@
             "CanContainLinkedClaim": {
                 "@id":"http://cooperation.org/credentials/LinkedClaimCapability/v1",
                 "@context": {
-                    "linkedClaim": {"@id":"http://cooperation.org/credentials/LinkedClaimCapability/v1#linkedClaim"}
+                    "linkedClaim": {"@id":"http://cooperation.org/credentials/v1#linkedClaim"}
                 }
             },
            "LinkedClaim": {
@@ -15,7 +15,9 @@
                 "lc":"http://cooperation.org/credentials/LinkedClaim/v1",
                 "aspect": {"@id": "lc:aspect"},
                 "source_type":{"@id": "lc:source_type"},
-                "source": {"@id": "lc:source"}
+                "source": {"@id": "lc:source"},
+                "object": {"@id": "lc:object"},
+                "statement": {"@id": "lc:statement"}
              }
           }
     }

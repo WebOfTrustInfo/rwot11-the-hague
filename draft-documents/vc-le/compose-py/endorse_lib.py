@@ -40,13 +40,10 @@ achieve_template = {
   "issuanceDate": "2022-05-01T00:00:00Z",
   "credentialSubject": {
     "type": "AchievementSubject",
-    // Note that the subject of the VC is the issuer, hence self-issued
     "id": "",
     "achievement": {
       "id": "urn:uuid:",
       "type": "Achievement",
-      "name": "",
-      "description": "",
       "criteria": {
          "type": "Criteria",
          "narrative": ""
@@ -62,7 +59,7 @@ endorse_template = {
               ],
               "type": [ "VerifiableCredential", "VerifiableEndorsement" ],
               "issuer": "",
-              "issuanceDate": ""
+              "issuanceDate": "",
               "effectiveDate": '',
               "credentialSubject": {
                 "id": '',
