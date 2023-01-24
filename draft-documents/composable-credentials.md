@@ -115,7 +115,7 @@ The IETF [ACDC - Authentic Chained Data Containers Draft](https://www.ietf.org/a
 
 ## Data Model
 
-A context containing the proposed properties, as well as a suggested minimal generic claim for including third party sources and a convenience field for responding to a published claim, is available at **[http://cooperation.org/credentials/v1/](http://cooperation.org/credentials/v1/)** 
+A context containing the proposed properties, as well as a suggested minimal generic claim for including third party sources and a convenience field for responding to a published claim, is available at **[https://cooperation.org/credentials/v1/](https://cooperation.org/credentials/v1/)** 
  
 For examples corresponding to the use cases in this paper, see.  see [composable claims examples and reference application](https://codeberg.org/cooperation/LinkedClaims/)
 
