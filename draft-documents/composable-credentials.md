@@ -115,15 +115,18 @@ The IETF [ACDC - Authentic Chained Data Containers Draft](https://www.ietf.org/a
 
 ## Data Model
 
-A context containing the proposed properties, as well as a suggested minimal generic claim for including third party sources and a convenience field for responding to a published claim, is available at [http://cooperation.org/credentials/v1/](http://cooperation.org/credentials/v1/) \
- \
+A context containing the proposed properties, as well as a suggested minimal generic claim for including third party sources and a convenience field for responding to a published claim, is available at **[http://cooperation.org/credentials/v1/](http://cooperation.org/credentials/v1/)** 
+ 
 For examples corresponding to the use cases in this paper, see.  see [composable claims examples and reference application](https://codeberg.org/cooperation/LinkedClaims/)
 
+<img align="right" src="resources/composable-credentials/mental-model.png"/>
 
 ## Mental Model
 
-<img align="left" src="resources/composable-credentials/mental-model.png"/>A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.   Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
+A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.   
 
+Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
+<br/>
 
 ## Use Cases
 
