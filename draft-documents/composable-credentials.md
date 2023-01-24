@@ -286,7 +286,7 @@ For example, if trained in the logistics of running a food service (to aid the e
 ### 
 _note: unlike the other examples, in this case the subject is possibly hostile to the claim_
 
-
+<img align="right" src="resources/composable-credentials/junta-network.png"/>
 ### 
 <span style="text-decoration:underline;">User Story</span>: A protester in Myanmar is believed to be kidnapped by the military Junta.  A related claim notes that POSCO International continues to do business with the junta.  \
 <span style="text-decoration:underline;">Goal:</span> Gather evidence to hold harmful actors accountable.  \
