@@ -40,7 +40,7 @@ To prevent that misuse of correlation, in the context of the self-sovereign iden
 
 In most systems, people have little control about what information they provide. Much of the information that will allow them to be correlated lies outside of their consent. In a self-sovereign system, people have more opportunities to manage what data will be correlated.
 
-## Corellatable Data
+## Correlatable Data
 
 We define correlatable data as any data than can be used to identify a subject across contexts. A context may be siloed, as when data is shared with two different verifiers. Or it may be temporal, as when data is shared with the same verifier over time.
 
