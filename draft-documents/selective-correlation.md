@@ -72,7 +72,7 @@ In general, Data Minimization is enacted by making policy decisions to limit in 
 * Temporal minimization, which involves retaining data only for the minimum amount of time necessary to execute the task
 * Scope minimization, which involves using data only for the specific purpose of the active task.
 
-In the digitgal credentials ecosystem, data minimization is primarily implemented through policy decisions made by stakeholders. Credential issuers ensure that credentials can be presented in a way that enables data minimization, and credential inspectors establish policies in advance regarding the minimum data necessary to accomplish a task, the minimum time data can be stored, and the processes that ensure data is only applied to the task at hand.
+In the digital credentials ecosystem, data minimization is primarily implemented through policy decisions made by stakeholders. Credential issuers ensure that credentials can be presented in a way that enables data minimization, and credential inspectors establish policies in advance regarding the minimum data necessary to accomplish a task, the minimum time data can be stored, and the processes that ensure data is only applied to the task at hand.
 
 Subjects may desire data minimization for various reasons, such as reducing the risk of undesired correlation or providing information gradually (Progressive Trust). Verifiers may also desire data minimization for various reasons, such as avoiding appearing threatening, protecting from "I told you so" situations, avoiding potential collection of "toxic" GDPR data, and reducing the cost of storing information.
 
