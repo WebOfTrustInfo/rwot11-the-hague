@@ -161,7 +161,7 @@ To enable progressive disclosure capabilities, stakeholders in the credentials e
 * Issuers format the credential(s) in such a way as to enable progressive disclosure. This requires issuing credentials that can be selectively disclosed multiple times. Each presentation will share attributes that have not been shared before. 
 * Inspectors ensure that requests are framed in such a way as to enable progressive trust. This requires presentation protocols that can link together some previously made presentations, forming a progressive trust instance.
 
-## Technology Characteristics and Choices
+## Technology Characteristics
 
 In this section, we can develop a list of technical characteristics with regard to (anti-)correlation, and try to map how different technology choices can fulfill them.
 
@@ -208,12 +208,16 @@ Mapping of Characteristics and Technologies
 |BBS2020-LD       | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
 |BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ? |
 |ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ? |
-|SD-JWT           | ? | ? | ? | ? | ? | ? | ? | ? | ? |
-|JWP              | ? | ? | ? | ? | ? | ? | ? | ? | ? |
+|SD-JWT           | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
+|JWP *            | ✓ | ✓ | ✓ | (✓) | (✓) | (✓) | ✓ | (✓) | ? |
 |REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
 |MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|COCONUT          | ? | ? | ? | ? | ? | ? | ? | ? | ? |
-|GORDIAN          | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? |
+|COCONUT          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✓ | ? |
+|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | ? | ? | ? |
+
+\* C4, C5, C6, C8 depend on the underlying JSON Proof Algorithm (JPA)
+
+\** C5 can be done by issuers, but not holders
 
 # Use Cases
 [//]: # (We'd like to have a progressive set of use case to demonstration desireable and undesirable correlation, but also avoid government focused scenarios -- in particular the overused over-21 mobile driver's license example )
