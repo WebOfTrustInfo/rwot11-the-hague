@@ -48,7 +48,7 @@ We define an observer as an entity who collects correlatable data about a subjec
 
 ## Data Minimization
 
-We define Data Minimization is the practice of limiting the amount of shared data to the minimum necessary — only sufficient for parties to successfully transact, accomplish a task, or otherwise meet a goal with each other while minimizing risks to all parties. In particular, Minimimal Disclosure is essential practice for digital identity and privacy or people, and thus requires that personal information should only be collected and shared when absolutely necessary.
+We define Data Minimization as the practice of limiting the amount of shared data to the minimum necessary — only sufficient for parties to successfully transact, accomplish a task, or otherwise meet a goal with each other while minimizing risks to all parties. In particular, Minimimal Disclosure is essential practice for digital identity and privacy or people, and thus requires that personal information should only be collected and shared when absolutely necessary.
 
 The best practices of Data Minimization guide the design and implementation of data protection regulations, such as the General Data Protection Regulation (GDPR) in the European Union:
 
