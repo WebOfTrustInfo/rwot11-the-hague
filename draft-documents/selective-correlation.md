@@ -24,7 +24,7 @@ Selective Correlation
 * Elena Chachkarova - @elenachachkarova (GitHub), [Nymlab](https://www.nymlab.it/#/)
 * Fabio Tagliaferro - @fabtagliaferro (GitHub), [University of Verona](https://www.di.univr.it/?ent=persona&id=39578&lang=en), [Commercio.Network](https://commercio.network/)
 
-# Selective Correllation
+# Selective Correlation
 
 ## Introduction
 
