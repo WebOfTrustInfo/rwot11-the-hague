@@ -36,7 +36,7 @@ Correlation lies at the heart of identity. The concept of identity cannot exist 
 
 Correlation in and of itself isn't evil, or bad — it is a required function of any identity system. However, corellation historically also has been misused by adversaries to threaten or harm people.
 
-To prevent that misuse of corellation, in the context of the self-sovereign identity principles[?], when corellation is used to identify people, the power to correlate must also be self-sovereign. That is, the power to correlate must be, as much as possible, in the hands of the person being correlated, as the relative risks to the individual is greater.[?]
+To prevent that misuse of correlation, in the context of the self-sovereign identity principles[?], when correlation is used to identify people, the power to correlate must also be self-sovereign. That is, the power to correlate must be, as much as possible, in the hands of the person being correlated, as the relative risks to the individual is greater.[?]
 
 In most systems, people have little control about what information they provide. Much of the information that will allow them to be correlated lies outside of their consent. In a self-sovereign system, people have more opportunities to manage what data will be correlated.
 
