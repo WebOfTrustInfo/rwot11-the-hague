@@ -93,7 +93,7 @@ Data minimization can be challenging to implement due to a number of factors, su
 
 ## Selective Disclosure
 
-"Selective Disclosure" is one of a number of privacy-enhancing techniques that goes beyond Data Minimization to protect against corellation. Selective Disclosure allows individuals or organizations to share only specific pieces of information, rather than sharing all of them, and prevents using corellation inappropriately to merge information from different contexts without consent. Selective Disclosure offers approaches to balance the need to share information for legitimate purposes to minimize risks, against the need to protect the privacy and security of people.    
+"Selective Disclosure" is one of a number of privacy-enhancing techniques that goes beyond Data Minimization to protect against correlation. Selective Disclosure allows individuals or organizations to share only specific pieces of information, rather than sharing all of them, and prevents using correlation inappropriately to merge information from different contexts without consent. Selective Disclosure offers approaches to balance the need to share information for legitimate purposes to minimize risks, against the need to protect the privacy and security of people.    
 
 GDPR does not mandate the use of selective disclosure, but the GDPR does gives individuals the right to control their personal information, the right to access, correct, and delete their personal information, and the right to object to certain processing activities. The California Consumer Privacy Act (CCPA) also allows individuals to know what personal information is being collected and shared, and to opt out of the sale of their personal information.
 
