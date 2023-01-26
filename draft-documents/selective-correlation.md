@@ -180,8 +180,6 @@ Characteristics:
 * **[C6]** When disclosing data to the same Verifier in multiple different interactions, the Verifier cannot correlate the subject via any single, unique identifier.
 * **[C7]** The Verifier can verify that the Holder who is disclosing the data is the same entity that has received the data from an Issuer. *<-- Note: Maybe reference the work of the other RWoT11 group that's working on "holder binding"*
 * **[C8]** The Holder can selectively disclose data that is derived (using predicates) from the original data they have received from an Issuer.
-* Type(s) of crypthography used.
-* ...
 
 Choices:
 * **[PLAINSIG]** Plain signatures: Ed25519Signature2020, RSA signatures, etc.
@@ -200,20 +198,20 @@ Choices:
 
 Mapping of Characteristics and Technologies
 
-| Technology      | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 |
-| ---             | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-|PLAINSIG         | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✓ | ✕ | ? |
-|SUBCREDS         | ✓ | ✓ | ✓ | ✕ | ✕ | ✕ | ✓ | ✕ | ? |
-|SINGLEUSECREDS   | ✓ | ✕ | ✕ | ✕ | ✓ | ✓ | ✕ | ✕ | ? |
-|BBS2020-LD       | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ? |
-|ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ? |
-|SD-JWT           | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|JWP *            | ✓ | ✓ | ✓ | (✓) | (✓) | (✓) | ✓ | (✓) | ? |
-|REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|COCONUT          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✓ | ? |
-|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | (✓) | ? | ? |
+| Technology      | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 |
+| ---             | -- | -- | -- | -- | -- | -- | -- | -- |
+|PLAINSIG         | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✓ | ✕ |
+|SUBCREDS         | ✓ | ✓ | ✓ | ✕ | ✕ | ✕ | ✓ | ✕ |
+|SINGLEUSECREDS   | ✓ | ✕ | ✕ | ✕ | ✓ | ✓ | ✕ | ✕ |
+|BBS2020-LD       | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ |
+|ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+|SD-JWT           | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|JWP *            | ✓ | ✓ | ✓ | (✓) | (✓) | (✓) | ✓ | (✓) |
+|REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|COCONUT          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✓ |
+|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | (✓) | ? |
 
 \* C4, C5, C6, C8 depend on the underlying JSON Proof Algorithm (JPA).
 
