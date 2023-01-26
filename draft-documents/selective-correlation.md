@@ -213,11 +213,11 @@ Mapping of Characteristics and Technologies
 |REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
 |MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
 |COCONUT          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✓ | ? |
-|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | ? | ? | ? |
+|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | (✓) | ? | ? |
 
-\* C4, C5, C6, C8 depend on the underlying JSON Proof Algorithm (JPA)
+\* C4, C5, C6, C8 depend on the underlying JSON Proof Algorithm (JPA).
 
-\** C5 can be done by issuers, but not holders
+\** C5 can be done by issuers, but not holders. C7 can be achieved via encryption techniques.
 
 # Use Cases
 [//]: # (We'd like to have a progressive set of use case to demonstration desireable and undesirable correlation, but also avoid government focused scenarios -- in particular the overused over-21 mobile driver's license example )
