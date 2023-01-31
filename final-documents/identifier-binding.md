@@ -174,9 +174,9 @@ that it uses to create a VP.
 
 Any of the following activities:
 
-1.  sending a request for obtaining a **credential** (to **issuer
-    > components** of other **parties**), extracting the **credential
-    > **out of the response, and sending/storing it in (one of) the
+1.  sending a request for obtaining a **credential** (to **issuer components**
+    > of other **parties**), extracting the **credential**
+    > out of the response, and sending/storing it in (one of) the
     > **wallet** of the **party** on whose behalf this action is
     > executed;
 
@@ -292,9 +292,9 @@ also: **verifiable presentation (VP)**.
 
 Presentation Request
 
-a (signed) digital message that a
-[**verifier**](https://essif-lab.github.io/framework/docs/terms/verifier)**
-component** sends to a **wallet** asking for specific data from one or
+A (signed) digital message that a
+[**verifier**](https://essif-lab.github.io/framework/docs/terms/verifier)
+**component** sends to a **wallet** asking for specific data from one or
 more **VCs** that may be **issued** by different **parties**, and where
 this data must satisfy specific constraints and/or come with specific
 proofs or evidence.
@@ -371,8 +371,8 @@ A **credential** that is tamper-evident and contains a proof about the
 Verifiable Presentation (VP)
 
 A **presentation** that is tamper-evident and contains a proof about its
-author that can be cryptographically verified. Certain types of **VP
-**might contain data that is synthesized from, but do not contain, the
+author that can be cryptographically verified. Certain types of **VP**
+might contain data that is synthesized from, but do not contain, the
 **VCs** from which the data was synthesized (for example, zero-knowledge
 proofs).
 
@@ -389,8 +389,8 @@ or remote) storage provided they are an **agent** of the same **party**.
 
 ## 1 Introduction
 
-All SSI[^8] technologies exist for the purpose of supporting **parties
-**(individuals and organizations) that want to perform some kind of
+All SSI[^8] technologies exist for the purpose of supporting **parties**
+(individuals and organizations) that want to perform some kind of
 (business) transaction, for which both need to decide whether or not to
 commit to that transaction. We will see an example of this where Bob
 (who provides courses) and Alice (who wants to take a course) interact.
@@ -444,16 +444,16 @@ this statement actually means out of scope.
 
 The actual support that these SSI technologies provide for **parties**
 that need or want to exchange information, comes in the form of
-(digital) **components **that act on their behalf. Within SSI, we are
+(digital) **components** that act on their behalf. Within SSI, we are
 familiar with functionalities that are known as '**issuing**',
 '**holding**' and '**verifying**'. **Parties** that are said to do this
 (and thereby assume the roles of '**issuer**', '**holder**' and
 '**verifier**' as appropriate), will typically employ (and control)
-**components **to execute such actions on their behalf.
+**components** to execute such actions on their behalf.
 
 The following figure shows a number of **parties** (most of which will
 also appear in the use case) and for each of them some (functional)
-**components[^10] that can execute SSI functionalities on its behalf
+**components**[^10] that can execute SSI functionalities on its behalf
 e.g. for **issuing**, **holding** (**wallets**), or **verifying**, as
 well as for e.g. securely storing **VCs**.
 
@@ -530,7 +530,7 @@ way will illustrate what 'holder binding' could (or should) be.
 In the subsequent sections, we will use the phrase '**issuing** (or:
 **verifying**) a/the **claim**' as a shorthand for '**issuing** a **VC**
 that contains a/the **claim**'. Similarly, we use the phrase
-'**verifying **(or **presenting**) a/the **claim**' as shorthand for
+'**verifying** (or **presenting**) a/the **claim**' as shorthand for
 '**verifying** (or **presenting**) a/the **VP** or **VC** that contains
 a/the **claim**'. The reason for this is that the purpose of **VCs** and
 **VPs** is to provide guarantees regarding the integrity and authorship
@@ -543,7 +543,7 @@ The conceptual use case is one in which Bob offers the course called
 \"Making Logic Arguments Stick\". As a prerequisite for the course,
 students must have mastered [Second Order
 Logic](https://en.wikipedia.org/wiki/Second-order_logic), which they can
-prove by presenting a **VC** that is **issued **by Ivan (the teacher or
+prove by presenting a **VC** that is **issued** by Ivan (the teacher or
 organizer of that course) which contains a **claim** asserting this. The
 operational use case is where Alice gets enrolled in the course, and
 gets access to its lessons.
@@ -598,9 +598,9 @@ follow it. To allow the request, the teachers must make sure every of
 the following conditions is fulfilled:
 
 -   a **claim** of the form (*pi*,\"isEnrolledFor\",*cvi*) exists (which
-    asserts that the person **identified **by *pi* is eligible to follow
-    the course variant **identified **by *cvi*);
--   this **claim **is **issued** by a **party** that Bob can rely on to
+    asserts that the person **identified** by *pi* is eligible to follow
+    the course variant **identified** by *cvi*);
+-   this **claim** is **issued** by a **party** that Bob can rely on to
     have ensured that all conditions that he has set for entering the
     course are fulfilled. For this use case, we only consider Bob to be
     such a 'trusted **issuer**';
@@ -625,12 +625,12 @@ The enrollment application only accepts a request if
     the course variant. This can be done by the application presenting
     the list of course variants (each of which is associated with a
     particular *cvi*) for which enrollment is (still) possible, having
-    the **user **select one, and using the associated *cvi*.
+    the **user** select one, and using the associated *cvi*.
 -   all conditions are met that Bob requires to be fulfilled for
     enrollment. In this use case, we limit that to the condition that
     the student to be enrolled has mastered second order logic, and can
     prove that by presenting a **claim** of the form
-    (*si*,\"passed\",\"SOL\") that is **issued **by Ivan.[^17]
+    (*si*,\"passed\",\"SOL\") that is **issued** by Ivan.[^17]
 -   an **identifier** *pi* has been made available that represents the
     student. This **identifier** can be conveniently copied from the
     aforementioned **claim**, i.e.: *pi=si*).
@@ -638,9 +638,9 @@ The enrollment application only accepts a request if
 After Bob's enrollment application has accepted the request for
 enrollment, it starts by creating the **claim**
 (*si*,\"isEnrolledFor\",*cvi*), where *si* is obtained from the
-**claim** that was **issued **by Ivan and presented by the **user **of
+**claim** that was **issued** by Ivan and presented by the **user** of
 the enrollment application, and was inferred by the enrollment
-application after the **user **selected an element from the list of
+application after the **user** selected an element from the list of
 presented course variants. Then, it constructs a **VC** containing the
 claim, stores it and sends it to the **user**.
 
@@ -648,8 +648,8 @@ claim, stores it and sends it to the **user**.
 
 Alice wants to get herself enrolled for Bob's course \"Making Logic
 Arguments Stick\", and sees on the website that this requires her to be
-able to present a **claim **of the form (*si*,\"passed\",\"SOL\") that
-is **issued **by Ivan.
+able to present a **claim** of the form (*si*,\"passed\",\"SOL\") that
+is **issued** by Ivan.
 
 Here, we assume that
 
@@ -688,8 +688,8 @@ specific variety is identified with MLAS-3). Bob's enrollment
 application (that includes a **verifier component**) connects to the
 **wallet** she has chosen to use, and sends it a **presentation
 request** that asks for a **claim** of the form (si,\"passed\",\"SOL\")
-that has been **issued **by Ivan. Alice's **wallet **finds the **VC**
-**issued **by Ivan that contains (\"somevaliduri\",\"passed\",\"SOL\"),
+that has been **issued** by Ivan. Alice's **wallet **finds the **VC**
+**issued** by Ivan that contains (\"somevaliduri\",\"passed\",\"SOL\"),
 sends that **VC** to the **wallet** which in turn constructs a **VP**
 that includes the **claim** and the proof that Ivan has **issued** it,
 and sends the **VP** to (the **verifier component** in) Bob's enrollment
@@ -754,7 +754,7 @@ open, but that would not harm Bob (initially) and it would make the
 'attack' more costly.
 
 Another option is that Bob implements the enrollment application such
-that it asks its **user **to provide a **VC** that can be used to
+that it asks its **user** to provide a **VC** that can be used to
 **identify** and **authenticate** the **user**, enabling Bob to find and
 sue those that have exhibited misbehavior. The enrollment application
 should make sure that this **identification** and **authentication VC
@@ -774,12 +774,12 @@ they like. That is to say: anyone using the MOOC service would need a
 **user component**, e.g. a web browser, that would access the MOOC
 service on its behalf. That **user component** will request access to
 the course provided by the MOOC service. The MOOC server must request a
-**presentation** that includes a **claim **of the
+**presentation** that includes a **claim** of the
 form(*si*,\"isEnrolledFor\",\"MOOC\") which a **wallet component **(that
 could be part of the **user component**) would provide. The MOOC server
 then needs to verify that
 
-A.  the **claim** has the requested format, and is **issued **by Bob,
+A.  the **claim** has the requested format, and is **issued** by Bob,
     and that
 B.  the **wallet **operates on behalf of the **entity** to which *si*
     refers (the **subject** of that **claim**).
@@ -808,7 +808,7 @@ the MOOC server request **claims** for which the **subject** is the
 -   has the same integrity that it had immediately after it was
     installed (e.g. by having the **component** obtain an ephemeral
     **VC** (from a remote integrity attestation service) that contains a
-    **claim **that states this), and
+    **claim** that states this), and
 -   has very recently created a **VC** containing a **claim** that says
     on whose behalf it is currently operating, i.e. that its **user**
     has logged into the **component** with a particular mechanism, or
@@ -855,7 +855,7 @@ the (human) teacher would need to check that all **users** are properly
 registered students for the online video course. (S)he can do that in
 the same way as with people that try to access a physical location where
 the course is held, and the same mechanism applies (which we shall not
-repeat here). The difference is that a **user **may be kicked out of the
+repeat here). The difference is that a **user** may be kicked out of the
 conference call rather than off the premises.
 
 ### 2.4 Identifier Binding
@@ -950,7 +950,7 @@ useful meaning, we should be able to pinpoint that.
 The above elaboration of the use case shows that it is not relevant who
 the **holder** actually is. In many situations, it is perfectly
 acceptable that someone other than the **party** that needs to be
-**identified **and **authenticated** would **present** the **claims**
+**identified** and **authenticated** would **present** the **claims**
 (in **VCs**) to a **verifier**, and hence is --- by definition --- the
 **holder** of these **claims** (**VCs**). Whether or not this is the
 case is to be determined by the **verifier**. So to prevent
@@ -1157,7 +1157,7 @@ element is missing, it is to be considered a 'bearer claim'[^19], so a
 decision about this needs to be taken.
 
 In the example above, the \`binding\` property is contained in the
-**claim **itself. This construct can be used to create **VCs** that
+**claim** itself. This construct can be used to create **VCs** that
 people can use as pure **identification** and **authentication**
 credentials. They can also be used to construct **VCs** that contain
 **claims**, e.g. about things (containers, pets, etc. - where privacy
@@ -1227,7 +1227,7 @@ with some minor modifications, as follows:
 
 In this example, the \"evidence\" property contains 1 or more elements,
 each of which enables verifiers to **identify/authenticate** the
-**entity** that is **identified **by a particular **identifier in the
+**entity** that is **identified** by a particular **identifier in the
 credentialSubject**. As the VCDM description of evidence property is
 very vague and allows lots of use cases, we propose to include
 \"binding\" in the array of types to distinguish from other forms of
@@ -1323,7 +1323,7 @@ or further explanations. When the **verifier **requests multiple
 establish such relationships. For relationships such as one **subject**
 being a parent (child, delegate, friend) of the other, this may seem
 obvious. However, the **verifier** must also be able to establish that
-the **subject** of one **claim **is identical to (the same as) that of
+the **subject** of one **claim** is identical to (the same as) that of
 the other **claim**. After all, the **entity** that one **party** refers
 to with **identifier** X may be referred to with **identifier** Y by
 another **party**.
@@ -2096,7 +2096,7 @@ the event, email: <Leadership@WebOfTrust.info>
     refers to any subject (e.g., a person, organization, thing, data
     model, abstract entity, etc.) as determined by the controller of the
     [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)\").
-    When Ivan **issues **a VC that contains this **claim **under the
+    When Ivan **issues **a VC that contains this **claim** under the
     assumption that the **subject identifier **refers e.g., to Alice,
     and Alice changes it to refer to Chuck, then the **VC **contains a
     **claim**, signed by Ivan, saying that Chuck has earned the degree.
