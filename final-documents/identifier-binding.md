@@ -150,7 +150,7 @@ include **issuer components**, **verifier components**, or **wallets**.
 Credential
 
 A set of one or more **claims** made by an **issuer**. The **claims** in
-a **credential **can be about different **subjects** (and because of
+a **credential** can be about different **subjects** (and because of
 this, there is no such thing as *the ***subject** of a **credential**).
 See also: **verifiable credential (VC)**.
 
@@ -163,7 +163,7 @@ there is at least one **party** that knows of its existence.
 
 Holder
 
-A role that a **party**[^5]** **can perform as it (a) requests and
+A role that a **party**[^5] can perform as it (a) requests and
 obtains a **VC** from an **issuer**, (b) manages **VCs** within a
 **wallet**, or (c) creates **VPs** from one or more **VCs** and sends
 them to the **verifier** that requested it. A **holder** is usually, but
@@ -174,17 +174,17 @@ that it uses to create a VP.
 
 Any of the following activities:
 
-1.  sending a request for obtaining a **credential **(to **issuer
+1.  sending a request for obtaining a **credential** (to **issuer
     > components** of other **parties**), extracting the **credential
     > **out of the response, and sending/storing it in (one of) the
     > **wallet** of the **party** on whose behalf this action is
     > executed;
 
 2.  \(1\) receiving a **presentation request**, (2) deciding whether to
-    > accept or reject the request, and if accepted, (3) obtaining **VCs
-    > **with which to construct the requested **presentation **from the
+    > accept or reject the request, and if accepted, (3) obtaining **VCs**
+    > with which to construct the requested **presentation** from the
     > **wallet** of the **party** on whose behalf this action is
-    > executed, (4) constructing the **presentation **as specified in
+    > executed, (4) constructing the **presentation** as specified in
     > the **presentation request**, adding meta-data, and
     > cryptographically sign it, and (5) sending the result to the
     > requester as a response to the presentation request.
@@ -209,15 +209,15 @@ username) a (set of) characteristics, or relations with other
 Identifier
 
 Data that is used for the purpose of recognizing a (real world)
-**entity**, typically to distinguish it from other **entities **in some
+**entity**, typically to distinguish it from other **entities** in some
 set. The data is typically in the form of characters (or attribute
 sets), but could also take the form of audio (speech), pictures
 (portrait), etc., or a combination of those.
 
 **Identifier Binding**
 
-The situation in which there is an **identifier **that a particular
-**party** has bound to some **entity **that it knows to exist, and has
+The situation in which there is an **identifier** that a particular
+**party** has bound to some **entity** that it knows to exist, and has
 specified one or more means that other **parties** can use to
 **identify** and/or **authenticate** that **entity**. Such means are
 typically specified as part of a **VC**.
@@ -264,7 +264,7 @@ d](https://essif-lab.github.io/framework/docs/terms/semantics)ecision
 rules, as well as the capability to manage/maintain these in an
 autonomous (self-sovereign) fashion. Colloquially, it is an **entity**
 that can be said to have 'a mind of its own'. Their 'minds' (subjective
-knowledge) are what distinguishes **parties **from each other (every
+knowledge) are what distinguishes **parties** from each other (every
 **party** is 1-1 related to its knowledge/mind). Typical examples are
 individual people and
 [*organizations*](https://essif-lab.github.io/framework/docs/terms/organization)
@@ -280,7 +280,7 @@ Policy
 A (set of) rules, working instructions and/or other guidance for the
 execution of one or more kinds of actions that **agents** of the
 **party** that governs the policy have access to and can interpret such
-that this results in these **actions **being executed as intended by
+that this results in these **actions** being executed as intended by
 that **party**.
 
 Presentation
@@ -303,14 +303,14 @@ Subject
 
 The **entity** to which a given set of coherent **attributes**
 relates/pertains. In a **VC**, every **claim** has a subject (**VCs**
-themselves do not). In an AnonCred (a different **credential **flavor),
+themselves do not). In an AnonCred (a different **credential** flavor),
 there is a single **subject** (i.e. all **attributes** in an AnonCred
 pertain to the same **entity**).
 
 **Subject Identifier**
 
 An **identifier**, typically in the form of a character string, that is
-being used for the **identification **of a **subject**. The **party
+being used for the **identification** of a **subject**. The **party
 **that has authored the **subject identifier** is the authority for
 dereferencing it (i.e. for determining the **subject** that it
 **identifies**). For** subject identifiers** that are used in **claims**
@@ -362,8 +362,8 @@ that **party's** verifier-**policy**.
 
 Verifiable Credential (VC)
 
-A **credential **that is tamper-evident and contains a proof about the
-**issuer **that can be cryptographically verified. Typically, this proof
+A **credential** that is tamper-evident and contains a proof about the
+**issuer** that can be cryptographically verified. Typically, this proof
 **identifies** the **issuer**, but it could also be a proof that the
 **issuer** has been certified by another (possibly **identifiable**)
 **party**. **VCs** can be used to build **VPs**.
@@ -504,11 +504,11 @@ its own **subject identifier semantics**[^15]. Responsible
 **issuers** would also insist on this actually being the case, because
 if some other **party** could change that semantics, it could also
 change the meaning of the **claim** that the **issuer** has signed and
-issued as a **VC** some time after the **issuer **has signed it, without
+issued as a **VC** some time after the **issuer** has signed it, without
 needing to inform the **issuer** (who doesn't then have reason to revoke
 it), and without leaving any trace that would signal a **verifier** that
 the statements that he thinks the **issuer** has made differ from the
-statements that the **issuer **has actually made.[^16]
+statements that the **issuer** has actually made.[^16]
 
 The remainder of this paper is organized as follows. Chapter 2 describes
 a simple use-case using various scenarios, where we develop the needs of
@@ -692,7 +692,7 @@ that has been **issued **by Ivan. Alice's **wallet **finds the **VC**
 **issued **by Ivan that contains (\"somevaliduri\",\"passed\",\"SOL\"),
 sends that **VC** to the **wallet** which in turn constructs a **VP**
 that includes the **claim** and the proof that Ivan has **issued** it,
-and sends the **VP **to (the **verifier component** in) Bob's enrollment
+and sends the **VP** to (the **verifier component** in) Bob's enrollment
 application.
 
 As the verification checks out, Bob's enrollment accepts the
@@ -757,7 +757,7 @@ Another option is that Bob implements the enrollment application such
 that it asks its **user **to provide a **VC** that can be used to
 **identify** and **authenticate** the **user**, enabling Bob to find and
 sue those that have exhibited misbehavior. The enrollment application
-should make sure that this **identification **and **authentication VC
+should make sure that this **identification** and **authentication VC
 **is valid for that purpose, e.g. by having the **user authenticate
 **using the **claims** in that **VC**.
 
@@ -784,7 +784,7 @@ A.  the **claim** has the requested format, and is **issued **by Bob,
 B.  the **wallet **operates on behalf of the **entity** to which *si*
     refers (the **subject** of that **claim**).
 
-It doesn't matter whether the **user** **component **provides such a
+It doesn't matter whether the **user** **component** provides such a
 **claim** (as long as the MOOC server can verify it comes from a **VC**
 that Bob has **issued**), or that the MOOC server checks the registry
 (database, backend storage facility) in which Bob has stored the **VCs**
@@ -861,7 +861,7 @@ conference call rather than off the premises.
 ### 2.4 Identifier Binding
 
 A situation that occurs regularly is one in which a **party** has bound
-an **identifier **to some **entity**, and/or there is a **party** that
+an **identifier** to some **entity**, and/or there is a **party** that
 wants to learn which **entity**, if any, that **identifier** has been
 bound to. Observing how this works in the actual world helps to properly
 understand and come to grips with the mechanics involved.
@@ -881,7 +881,7 @@ the mapping that this **party** maintains between the **identifiers**
 that it uses and the **entities** that it knows to exist. We observe
 that **parties** autonomously decide what this mapping actually is. This
 implies that what is an **identifier** for one **party** may not
-**identify** some **entity **in the view of another **party**. Also, if
+**identify** some **entity** in the view of another **party**. Also, if
 two **parties** both use some **identifier**, they may have it refer to
 different **entities** (example: "daddy", or "the best president we ever
 had").
@@ -906,7 +906,7 @@ this is enabled by the **party** that determines the associated
 
 In our use case, Ivan has used \`somevaliduri\` as an **identifier**.
 That means that Ivan should control the associated **identifier
-semantics**, i.e. determine which **entity **it refers to. As a
+semantics**, i.e. determine which **entity** it refers to. As a
 consequence, Ivan is the single **party** that can provide other
 **parties** with means for learning which that **entity** is.
 
@@ -919,8 +919,8 @@ no other option than to make assumptions, which can be made to work in
 specific cases, but are not generally applicable.
 
 We propose to use the phrase '**identifier binding**' to refer to a
-situation in which there is an **identifier **that a particular
-**party** has bound to some **entity **that it knows to exist, and for
+situation in which there is an **identifier** that a particular
+**party** has bound to some **entity** that it knows to exist, and for
 which it has specified one or more means that other **parties** can use
 to **identify** and/or **authenticate** that **entity**. Such means
 would typically be specified as part of a **VC**. Be aware that
@@ -1008,7 +1008,7 @@ learn which **entity** is actually being referred to.
 
 We propose to specify a new property, provisionally called \`binding\`,
 the purpose of which is to enable **parties** (specifically those in the
-role of **verifier**), to determine which **entity **a particular
+role of **verifier**), to determine which **entity** a particular
 **identifier** refers to when it is used in a **VC **or **VP**. We start
 with elaborating on our proposal, and proceed to give examples of how it
 can be used.
@@ -1092,7 +1092,7 @@ contexts: the (suggested) \`didAuthenticationKey\`-type is useful for
 remote, electronic **identification**, and the \`passport\` and
 \`portrait\` can be used for local and/or deferred physical
 **identification**. This setup is easily extended with other means that
-enable **verifiers** to **identify/authenticate** the **entities **that
+enable **verifiers** to **identify/authenticate** the **entities** that
 serve as the subject of some **claim**. Of course, it would be useful to
 standardize, or recommend, a set of simple and common binding-types.
 That, however, is outside the scope of our proposal.
@@ -1168,7 +1168,7 @@ binding\`.
 Thus, if a **VC/VP** were to contain properties such as \`holder\`,
 \`presenter\`, \`issuee\`, or others[^20], this construct could also
 be used to enable **verifiers** to **identify** and/or **authenticate
-**the **entity **that (the value of) this \`id\` field refers to.
+**the **entity** that (the value of) this \`id\` field refers to.
 
 #### 3.1.2 Using the \`evidence\` field
 
@@ -1227,7 +1227,7 @@ with some minor modifications, as follows:
 
 In this example, the \"evidence\" property contains 1 or more elements,
 each of which enables verifiers to **identify/authenticate** the
-**entity **that is **identified **by a particular **identifier in the
+**entity** that is **identified **by a particular **identifier in the
 credentialSubject**. As the VCDM description of evidence property is
 very vague and allows lots of use cases, we propose to include
 \"binding\" in the array of types to distinguish from other forms of
@@ -1297,9 +1297,9 @@ the 'evidence' property would be used for other use cases or concepts
 
 As described in the introduction, the **verifier **requires means to
 
--   **identify** the **entity **that is the **subject** of a given
+-   **identify** the **entity** that is the **subject** of a given
     **claim**
--   **authenticate** the **entity **that is the **subject** of a given
+-   **authenticate** the **entity** that is the **subject** of a given
     **claim**
 -   establish whether multiple subjects refer to the same **entity**, or
     not.
@@ -1325,12 +1325,12 @@ being a parent (child, delegate, friend) of the other, this may seem
 obvious. However, the **verifier** must also be able to establish that
 the **subject** of one **claim **is identical to (the same as) that of
 the other **claim**. After all, the **entity** that one **party** refers
-to with **identifier** X may be referred to with **identifier **Y by
+to with **identifier** X may be referred to with **identifier** Y by
 another **party**.
 
 Here are some examples:
 
--   Two **claims** are issued by the same **issuer **and they have the
+-   Two **claims** are issued by the same **issuer** and they have the
     same \`credentialSubject.id\`. In this case, since the **identifier
     semantics** is that of a single **party** (the **issuer**), it is
     reasonable to infer that the **subject** of both **claims** is the
@@ -1908,7 +1908,7 @@ need for a capability to:
 Currently, **verifiers** do not have such capabilities. The result in
 practice is that they revert to means such as (tacit) assumptions that
 have no basis in specifications. For example, to **authenticate** the
-**entity **that is **identified** by a DID that shows up as a **subject
+**entity** that is **identified** by a DID that shows up as a **subject
 identifier** (i.e. as the value of the \`id\` field in one of the
 \`credentialSubject\` elements of a **VC)**, which is not compliant with
 what the DID spec says. Examples such as these, and the fact that such
@@ -1942,7 +1942,7 @@ interaction on their behalf. **Users** would typically employ a mobile
 phone or tablet, which in practice may be shared with others. A
 **verifier **whose business rules state he MUST know who the **party**
 is that operates a **component** that has sent a **VC**/**VP**, may need
-to establish the relation between that IT **component **and this
+to establish the relation between that IT **component** and this
 **party** on whose behalf it operates, which is a topic that we consider
 future work.[^23][]{#anchor-37}
 
@@ -2082,7 +2082,7 @@ the event, email: <Leadership@WebOfTrust.info>
     [URI](https://www.w3.org/TR/vc-data-model/#dfn-uri) in the id be one
     which, if dereferenced, results in a document containing
     machine-readable information about the id.\" is a statement about
-    the id, not about the **entity **to which that id refers.
+    the id, not about the **entity** to which that id refers.
 
 [^15]: It could even be useful for an issuer to use a primary index of
     his private database as an identifier for the credential subject.
@@ -2116,7 +2116,7 @@ the event, email: <Leadership@WebOfTrust.info>
     **claims**, but the intention is the same.
 
 [^20]: The discussion of whether or not to add such fields to a **VC**
-    or **VP **is a good idea are outside the scope of this document.
+    or **VP** is a good idea are outside the scope of this document.
 
 [^21]: This use case can also easily be done by Trevor.
 
