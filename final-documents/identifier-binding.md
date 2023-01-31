@@ -429,14 +429,13 @@ aware of what **entity** the **claim** makes a statement about (the
 means. For the purpose of this paper, we consider the awareness of what
 this statement actually means out of scope.
 
-+----------------------------------------------------------------------+
-| Concerning the **subject** of the **claim**, we think that a         |
-| **verifier** would have three requirements that it would like to see |
-| fulfilled, which are:                                                |
-|                                                                      |
-| Providing means to fulfill at least some of these requirements is    |
-| the topic of this paper.                                             |
-+----------------------------------------------------------------------+
+> Concerning the **subject** of the **claim**, we think that a        
+> **verifier** would have three requirements that it would like to see
+> fulfilled, which are:                                               
+>
+> Providing means to fulfill at least some of these requirements is   
+> the topic of this paper.                                            
+
 
 The actual support that these SSI technologies provide for **parties**
 that need or want to exchange information, comes in the form of
