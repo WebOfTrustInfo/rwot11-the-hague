@@ -97,7 +97,7 @@ take it to be[^3]. But that's life: authors need to make a real effort
 to write texts that others can understand, and readers have to make a
 real effort to interpret these words with the intended meanings.
 
-Actor
+#### Actor
 
 An **entity** that can act (do things/execute
 [*actions*](https://essif-lab.github.io/framework/docs/terms/action)).
