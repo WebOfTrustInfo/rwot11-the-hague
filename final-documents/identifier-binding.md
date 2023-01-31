@@ -35,7 +35,7 @@ This work was partly funded by the eSSIF-Lab project under EU H2020
 Research and Innovation Programme - Grant Agreement Nº 871932.
 
 This work was partly funded by the IDunion project supported by the
-Federal Ministry for Economic Affairs and Climate Action ( BMWK ) on the
+Federal Ministry for Economic Affairs and Climate Action (BMWK) on the
 basis of a decision by the German Bundestag - Grant Agreement
 01MN21002L.
 
