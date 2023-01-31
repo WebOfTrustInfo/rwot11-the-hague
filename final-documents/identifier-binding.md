@@ -4,7 +4,7 @@
 
 The [*W3C Verifiable Credentials Data Model
 (VCDM)*](https://www.w3.org/TR/vc-data-model/) specifies **Verifiable
-Credentials (VCs)**^**[^1]**^ as a collection of **claims **that are
+Credentials (VCs)**[^1] as a collection of **claims **that are
 **issued** by a single **party**, and **Verifiable Presentations (VPs)**
 as a collection of **claims **that a **holder **can construct from
 different **VCs **issued by different **parties**. Over the last
@@ -29,7 +29,7 @@ syntax and semantics of a new property that can be used in (different
 parts of) **VCs**/**VPs**, that will provide **verifiers **with such
 capabilities.
 
-[]{#anchor}Acknowledgements
+## Acknowledgements
 
 This work was partly funded by the eSSIF-Lab project under EU H2020
 Research and Innovation Programme - Grant Agreement Nº 871932.
@@ -49,7 +49,7 @@ the Dutch Blockchain Coalition, Digital Contract Design, (Contributing
 Sponsors) Spherity, Jolocom, and (Collaborating Sponsors) Blockchain
 Commons and Legendary Requirements.
 
-[]{#anchor-1}Terminology
+## Terminology
 
 In [VCDM issue #902](https://github.com/w3c/vc-data-model/issues/902),
 Orie Steele sighed \"My guess is that 'holder binding' would be far less
@@ -81,7 +81,7 @@ identity document), and the holder would be the entity that possesses it
 and can present it, which could be, but is not necessarily, its subject.
 
 In an attempt to prevent any kind of misunderstanding, this section
-defines the key terminology that we use throughout this paper.^[^2]^
+defines the key terminology that we use throughout this paper.[^2]
 Each term starts with a sentence that states the criterion that you can
 evaluate to determine whether or not something is an instance (example)
 of that term. Subsequent sentences provide additional information, e.g.
@@ -93,7 +93,7 @@ using these terms as we defined them, and (c) requesting you to
 interpret them in the way that we defined them, is that this prevents
 most misunderstandings. The consequence, however, is that we may use
 terms in a meaning that is different from what you or others typically
-take it to be^[^3]^. But that's life: authors need to make a real effort
+take it to be[^3]. But that's life: authors need to make a real effort
 to write texts that others can understand, and readers have to make a
 real effort to interpret these words with the intended meanings.
 
@@ -125,7 +125,7 @@ Authenticate, Authentication
 
 The process or action executed by a **party **to convince itself that a
 particular **identifier** actually (truely, genuinely) **identifies **a
-specific (real world) **entity**.^[^4]^ Note that proving control of an
+specific (real world) **entity**.[^4] Note that proving control of an
 **identifier** (particularly for DIDs) in itself does not constitute
 **authentication**.
 
@@ -163,7 +163,7 @@ there is at least one **party** that knows of its existence.
 
 Holder
 
-A role that a **party**^**[^5]**^** **can perform as it (a) requests and
+A role that a **party**[^5]** **can perform as it (a) requests and
 obtains a **VC** from an **issuer**, (b) manages **VCs** within a
 **wallet**, or (c) creates **VPs** from one or more **VCs** and sends
 them to the **verifier** that requested it. A **holder** is usually, but
@@ -200,7 +200,7 @@ Any of the following activities:
 Identify, Identification
 
 The action or process of asserting that a (real-world) **entity** is
-known by a specific **party**.^[^6]^ Such an assertion can be done by
+known by a specific **party**.[^6] Such an assertion can be done by
 anyone (including that **party**), and can take many forms, e.g.
 saying/presenting a name, an **identifier** (e.g. an email address, or a
 username) a (set of) characteristics, or relations with other
@@ -247,7 +247,7 @@ A **component** that is capable of executing the actions on behalf of a
 
 An activity that consists of (1) receiving a request for issuing a
 **VC** of a certain type, (2) deciding whether to accept or reject that
-request, and if accepted^[^7]^, (3) constructing the **claims**, adding
+request, and if accepted[^7], (3) constructing the **claims**, adding
 metadata, cryptographically signing it, and (4) sending the result to
 the requester as a response to its request.
 
@@ -387,9 +387,9 @@ for the **VCs** they obtain, and for getting **VCs** from which they
 construct **presentations**. Multiple wallets may access the same (local
 or remote) storage provided they are an **agent** of the same **party**.
 
-[]{#anchor-2}1 Introduction
+## 1 Introduction
 
-All SSI^[^8]^ technologies exist for the purpose of supporting **parties
+All SSI[^8] technologies exist for the purpose of supporting **parties
 **(individuals and organizations) that want to perform some kind of
 (business) transaction, for which both need to decide whether or not to
 commit to that transaction. We will see an example of this where Bob
@@ -406,7 +406,7 @@ that data is to be obtained from an external source, it makes sense to
 require that both the integrity and the authorship of such data is
 verifiable, and that's where **VCs** and **VPs** come in.
 
-However, a **party** also needs to ensure that this data is valid^[^9]^
+However, a **party** also needs to ensure that this data is valid[^9]
 for the evaluation of these rules, because using invalid data may lead
 to wrong decisions that can cause real harm. What is or is not valid
 data for a particular rule is a subjective judgment of the **party**
@@ -453,7 +453,7 @@ familiar with functionalities that are known as '**issuing**',
 
 The following figure shows a number of **parties** (most of which will
 also appear in the use case) and for each of them some (functional)
-**components**^[^10]^ that can execute SSI functionalities on its behalf
+**components[^10] that can execute SSI functionalities on its behalf
 e.g. for **issuing**, **holding** (**wallets**), or **verifying**, as
 well as for e.g. securely storing **VCs**.
 
@@ -465,7 +465,7 @@ behalf..
 
 The colors of the rectangles and messages represent the **party** that
 controls its contents. Thus, Alice controls a **wallet** and the
-contents of the **VP** (response) message.^[^11]^
+contents of the **VP** (response) message.[^11]
 
 In this paper, we constrain ourselves to what is specified, or assumed,
 by the [W3C Verifiable Credentials Data Model
@@ -474,7 +474,7 @@ to its value by further enabling **Verifiable Credentials** (**VCs**) to
 be used. Specifically, we want to focus on how **verifiers** can use
 **claims** to actually evaluate their business rules as they set up and
 conduct business transactions, by providing means for their requirements
-Req1, Req2 and Req3^[^12]^.
+Req1, Req2 and Req3[^12].
 
 A **verifier** that wants to use **VCs** and **VPs** is provided with
 guidance, e.g. when it comes to the **semantics** of properties used in
@@ -486,9 +486,9 @@ the **subject** of a given **claim** (i.e. to which **entity** the
 The VCDM says that every **claim** (in the credentialSubject property)
 can have an id field that is \"intended to unambiguously refer to an
 object, such as a person, product, or organization\", suggesting that
-this would then be the **subject** of that **claim**.^[^13]^ However, it
+this would then be the **subject** of that **claim**.[^13] However, it
 does not provide any actual guidance about how a **verifier** can learn
-which **entity** is being referred to.^[^14]^ Still, the 'holder binding
+which **entity** is being referred to.[^14] Still, the 'holder binding
 problem' often seems to be a request for providing guidance on this
 matter. So how does this work in the real world? What can we learn from
 what happens there?
@@ -500,7 +500,7 @@ must particularly be the case if such an **identifier** appears as part
 of a **claim** that this **party** subsequently signs.
 
 From this, it follows naturally that every **issuer** gets to determine
-its own **subject identifier semantics**^**[^15]**^. Responsible
+its own **subject identifier semantics**[^15]. Responsible
 **issuers** would also insist on this actually being the case, because
 if some other **party** could change that semantics, it could also
 change the meaning of the **claim** that the **issuer** has signed and
@@ -508,7 +508,7 @@ issued as a **VC** some time after the **issuer **has signed it, without
 needing to inform the **issuer** (who doesn't then have reason to revoke
 it), and without leaving any trace that would signal a **verifier** that
 the statements that he thinks the **issuer** has made differ from the
-statements that the **issuer **has actually made.^[^16]^
+statements that the **issuer **has actually made.[^16]
 
 The remainder of this paper is organized as follows. Chapter 2 describes
 a simple use-case using various scenarios, where we develop the needs of
@@ -518,11 +518,7 @@ lists various implementation-, privacy- and other kinds of
 considerations. Chapter 4 describes how we see it work in practice. We
 wrap up with conclusions and future work.
 
-[]{#anchor-3}
-
-[]{#anchor-4}
-
-[]{#anchor-5}2 Use Case: Course Enrollment
+## 2 Use Case: Course Enrollment
 
 We assume that for the general audience of this paper, the term 'holder
 binding' is quite contentious. Rather than joining the disputes of what
@@ -557,14 +553,14 @@ to Alice being enrolled and her getting access to the lessons (rather
 than someone else). But first, we provide the background that each of
 these scenarios builds upon.
 
-## []{#anchor-6}2.1 Background
+### 2.1 Background
 
 Before Alice can be enrolled, Bob must first put the course's enrollment
 process in place, and Alice must collect the things she needs for that
 enrollment. This section describes the prerequisites from the
 perspectives of Ivan, Bob and Alice, respectively.
 
-### []{#anchor-7}2.1.1 Ivan
+#### 2.1.1 Ivan
 
 Ivan **issues VCs** that contain **claims** of the form
 (*si*,\"passed\",\<exam\>), where *si* is the **subject identifier**,
@@ -583,7 +579,7 @@ states the **claim** type, its meaning, the endpoint(s) where
 conditions under which such **VC**s will be **issued**, and any other
 information that **parties** such as Bob may need.
 
-### []{#anchor-8}2.1.2 Bob
+#### 2.1.2 Bob
 
 Bob has decided to offer several 'course variants', i.e. options for
 following the course:
@@ -634,7 +630,7 @@ The enrollment application only accepts a request if
     enrollment. In this use case, we limit that to the condition that
     the student to be enrolled has mastered second order logic, and can
     prove that by presenting a **claim** of the form
-    (*si*,\"passed\",\"SOL\") that is **issued **by Ivan.^[^17]^
+    (*si*,\"passed\",\"SOL\") that is **issued **by Ivan.[^17]
 -   an **identifier** *pi* has been made available that represents the
     student. This **identifier** can be conveniently copied from the
     aforementioned **claim**, i.e.: *pi=si*).
@@ -648,7 +644,7 @@ application after the **user **selected an element from the list of
 presented course variants. Then, it constructs a **VC** containing the
 claim, stores it and sends it to the **user**.
 
-### []{#anchor-9}2.1.3 Alice
+#### 2.1.3 Alice
 
 Alice wants to get herself enrolled for Bob's course \"Making Logic
 Arguments Stick\", and sees on the website that this requires her to be
@@ -678,13 +674,13 @@ such a **VC** and devise a way to get it into her own wallet; but there
 are many others. We will see that in the scenarios we present, the above
 assumptions are sufficient to get the use case done.
 
-## []{#anchor-10}2.2 Registration Scenarios
+### 2.2 Registration Scenarios
 
 This section describes different ways in which Alice can be accepted as
 a student of the course \"Making Logic Arguments Stick\" that Bob has on
 offer.
 
-### []{#anchor-11}2.2.1 Alice registers herself
+#### 2.2.1 Alice registers herself
 
 She does so by pointing her browser to Bob's enrollment application,
 where she chooses the course \"Making Logic Arguments Stick\" (the
@@ -705,7 +701,7 @@ application, creates the **claim**
 **VC** containing the claim, stores it, and **issues** it to the
 **wallet** of Alice.
 
-### []{#anchor-12}2.2.2 Trevor registers Alice
+#### 2.2.2 Trevor registers Alice
 
 For various reasons, Alice may want (or need) someone else to enroll her
 for the course. She would do well to only ask someone she can entrust
@@ -765,13 +761,13 @@ should make sure that this **identification **and **authentication VC
 **is valid for that purpose, e.g. by having the **user authenticate
 **using the **claims** in that **VC**.
 
-## []{#anchor-14}2.3 Access Scenarios
+### 2.3 Access Scenarios
 
 Every course variant provides a particular context within which the
 teacher (physical person or IT component) is required to check whether
 or not a person that requests access should be permitted access.
 
-### []{#anchor-15}2.3.1 Electronic access to the MOOC server
+#### 2.3.1 Electronic access to the MOOC server
 
 Bob's MOOC server is online 24/7, and students can use it where and when
 they like. That is to say: anyone using the MOOC service would need a
@@ -823,7 +819,7 @@ As establishing this is a matter that appears in all access scenarios,
 we have dedicated a [separate section](#_dw5ekdnp4kyd) to this, 2.4
 Identifier Binding.
 
-### []{#anchor-16}2.3.2 Physical access to a physical location
+#### 2.3.2 Physical access to a physical location
 
 The summer school setup consists of a series of physical sessions (run
 by a real teacher) at a designated location. If the teacher of that
@@ -843,7 +839,7 @@ Note that it is not necessary that a student presents the **claim
 such that the group leader would be able to present such **claims** for
 all group members.
 
-### []{#anchor-17}2.3.3 Access to an online video course run by a real person
+#### 2.3.3 Access to an online video course run by a real person
 
 Access to the online video course can be checked by the video server
 that runs on Bob's behalf, but also by the teacher of the course that
@@ -862,7 +858,7 @@ the course is held, and the same mechanism applies (which we shall not
 repeat here). The difference is that a **user **may be kicked out of the
 conference call rather than off the premises.
 
-## []{#anchor-18}2.4 Identifier Binding
+### 2.4 Identifier Binding
 
 A situation that occurs regularly is one in which a **party** has bound
 an **identifier **to some **entity**, and/or there is a **party **that
@@ -899,7 +895,7 @@ that same **entity**.
 It is a common misconception to assume that this is naturally the case.
 People that design and implement IT (as well as others) would do well to
 avoid assuming this. Readers are encouraged to read more about this
-topic on the site of the eSSIF-Lab framework.^[^18]^
+topic on the site of the eSSIF-Lab framework.[^18]
 
 From the above, it follows naturally that whenever a **party** wants to
 learn which **entity** an **identifier** refers to, it can only do so if
@@ -942,7 +938,7 @@ means to Bob's teachers, which in turn will be enabled to then verify
 that it is Alice that has the right to access the particular course
 variant.
 
-## []{#anchor-19}2.5 Discussion
+### 2.5 Discussion
 
 The description of this use case was devised to include a minimum amount
 of assumptions. In particular, we do not want to assume that 'holder
@@ -971,7 +967,7 @@ propose to use the term **identifier binding** instead, as it better
 suggests the actual problems we are trying to solve, for which the next
 chapter will propose some solutions.
 
-[]{#anchor-20}3 Proposal
+## 3 Proposal
 
 An important part of making the [W3C Verifiable Credentials Data Model
 (VCDM)](https://www.w3.org/TR/vc-data-model/) work is to ensure that the
@@ -1008,7 +1004,7 @@ contrary to what many people think. But regardless of that, the DID
 spec, too, does not provide any guidance about how a **verifier** can
 learn which **entity** is actually being referred to.
 
-## []{#anchor-21}3.1 The \`binding\` property
+### 3.1 The \`binding\` property
 
 We propose to specify a new property, provisionally called \`binding\`,
 the purpose of which is to enable **parties** (specifically those in the
@@ -1117,7 +1113,7 @@ That, however, is outside the scope of our proposal.
 In the following sections, we offer solutions on how to integrate the
 \`binding\` property into the current VCDM.
 
-### []{#anchor-22}3.1.1 Add a \`binding\` property to a \`credentialSubject\` element
+#### 3.1.1 Add a \`binding\` property to a \`credentialSubject\` element
 
 Our first proposal suggests adding the \`binding\` property to the
 contents of the \`credentialSubject\` element of the **VC **that has
@@ -1157,7 +1153,7 @@ to the subject and no \`id\` fields are required, not only in the
 \`credentialSubject\` element, but also not in the \`binding\` array.
 However, this interpretation is inconsistent with the current VCDM,
 which says that whenever the \`id\` field in a \`credentialSubject\`
-element is missing, it is to be considered a 'bearer claim'^[^19]^, so a
+element is missing, it is to be considered a 'bearer claim'[^19], so a
 decision about this needs to be taken.
 
 In the example above, the \`binding\` property is contained in the
@@ -1170,11 +1166,11 @@ issues do not play a large role). So when this mechanism is used in a
 binding\`.
 
 Thus, if a **VC/VP** were to contain properties such as \`holder\`,
-\`presenter\`, \`issuee\`, or others^[^20]^, this construct could also
+\`presenter\`, \`issuee\`, or others[^20], this construct could also
 be used to enable **verifiers **to **identify **and/or **authenticate
 **the **entity **that (the value of) this \`id\` field refers to.
 
-### []{#anchor-23}3.1.2 Using the \`evidence\` field
+#### 3.1.2 Using the \`evidence\` field
 
 Our second proposal suggests placing the \`binding\` property in the
 \`evidence\` field (as being discussed e.g. in [*VCDM issue
@@ -1237,7 +1233,7 @@ very vague and allows lots of use cases, we propose to include
 \"binding\" in the array of types to distinguish from other forms of
 evidence.
 
-### []{#anchor-24}3.1.3 Adding the \`binding\` property to the VCDM top level
+#### 3.1.3 Adding the \`binding\` property to the VCDM top level
 
 Our third proposal suggests adding a new top-level \`binding\` property
 disjunct from the \`evidence\` field that comprises the array of
@@ -1297,9 +1293,7 @@ the 'evidence' property would be used for other use cases or concepts
 
 }
 
-[]{#anchor-25}\...
-
-## 3.2 Using identifier binding across multiple VCs
+### 3.2 Using identifier binding across multiple VCs
 
 As described in the introduction, the **verifier **requires means to
 
@@ -1359,7 +1353,7 @@ legislation or governance frameworks that the **issuers** are subjected
 (or committed) to, or on experience, best practices, or a risk
 assessment.
 
-[]{#anchor-26}4 How \`binding\` Types Work
+## 4 How \`binding\` Types Work
 
 This chapter describes various situations in which **identifier
 binding** should work, and shows that one or more of the solutions we
@@ -1370,7 +1364,7 @@ are "the best" way to implement a specific scenario. In fact, there will
 be many ways to ensure a \`binding\` and we want to show the different
 ways all using our proposed properties for the W3C VCDM.
 
-## []{#anchor-27}4.1 DIDAuthentication
+### 4.1 DIDAuthentication
 
 In this section we are showing a concrete example for the registration
 scenario "Alice registers herself" and the access scenario "Electronic
@@ -1439,16 +1433,16 @@ with the DID \"did:jwk:456\". The login service verifies the
 checking for the claim \"isEnrolledFor\": \"MLAS-3\" and forwards Alice
 to the course material.
 
-## []{#anchor-28}4.2 Out-of-band Binding / On-Site Portrait Holder Authentication
+### 4.2 Out-of-band Binding / On-Site Portrait Holder Authentication
 
 In this section we show a concrete example for the registration scenario
 "Alice registers herself" and the access scenario "Physical access to a
 physical location", used with the **identifier binding **types
 "passport" and "portrait".
 
-### []{#anchor-29}4.2.1 Example 1
+#### 4.2.1 Example 1
 
-In this example Alice^[^21]^ got a VC from Ivan for her participation
+In this example Alice[^21] got a VC from Ivan for her participation
 and successful exam on the course 'SOL' :
 
 \...
@@ -1493,7 +1487,7 @@ the physical course starts at the university the teacher (on behalf of
 Bob) will bring a list of Passport numbers and/or portrait pictures and
 compare those to the people entering the course room.
 
-### []{#anchor-30}4.2.2 Example 2
+#### 4.2.2 Example 2
 
 In this example Alice got a VC from Ivan for her participation and
 successful exam on the course 'SOL' :
@@ -1580,7 +1574,7 @@ from the enrollment VC containing the claim \"isEnrolledFor\":
 \"MLAS-3\". In the case of 'On-Site Portrait Holder Authentication' the
 teacher compares Alice\'s face with the image from the VC.
 
-### []{#anchor-31}4.2.3 Example 3
+#### 4.2.3 Example 3
 
 In this example Alice has two VCs in her wallet.
 
@@ -1679,7 +1673,7 @@ genuinely identify the correct linked **identifier binding**, such that
 the issuer of such VC is also securely linked, e.g. by identifiers of
 issuer and credential.
 
-## []{#anchor-32}4.3 Remote Holder Authentication for Mobile Secure Wallet (DIF)
+### 4.3 Remote Holder Authentication for Mobile Secure Wallet (DIF)
 
 In this section we are showing a concrete example for the registration
 scenario "Alice registers herself" and the access scenario "Access to an
@@ -1786,19 +1780,19 @@ wallet according to the binding mechanism. Bob's verifier component then
 checks the validity of both VCs, checks the linkage and lets Alice enter
 the video conference.
 
-[]{#anchor-33}5. Considerations
+## 5. Considerations
 
 This section contains a first set of topics that implementers and others
 need to consider. It is not intended to be complete; it simply points
 out some concerns that need to be (better) addressed.
 
-## []{#anchor-34}5.1 Implementer Considerations
+### 5.1 Implementer Considerations
 
 The **issuer** (author of identifiers) MUST control the **identifier
 semantics** of all **identifiers** that it uses in **claims** within
 every **VC** that it issues. This implies that an **issuer** that
 chooses to use DIDs for such **identifiers**, MUST control these
-DIDs.^[^22]^
+DIDs.[^22]
 
 Attributes that are used for specific binding-types may be PII, so this
 will typically require selective disclosure in order to maintain
@@ -1829,7 +1823,7 @@ less code to implement this very common business requirement by just
 registering the identifier binding methods that are also less prone to
 errors and increases interoperability across the entire SSI ecosystem.
 
-## []{#anchor-35}5.2 Privacy (and Other) Considerations
+### 5.2 Privacy (and Other) Considerations
 
 Concerns have been raised saying that \"holder-binding may have
 unanticipated privacy & correlation issues\" and also that
@@ -1867,7 +1861,7 @@ found and addressed. However, as this paper is intended to contribute to
 the holder-binding discussion rather than to provide the final solution,
 we will leave this topic as future work.
 
-[]{#anchor-36}6. Conclusion and Future Work
+## 6. Conclusion and Future Work
 
 [VCDM issue #902](https://github.com/w3c/vc-data-model/issues/902) shows
 that 'holder binding' is not only quite contentious, but also that many
@@ -1950,11 +1944,11 @@ phone or tablet, which in practice may be shared with others. A
 is that operates a **component** that has sent a **VC**/**VP**, may need
 to establish the relation between that IT **component **and this
 **party** on whose behalf it operates, which is a topic that we consider
-future work.^[^23]^[]{#anchor-37}
+future work.[^23][]{#anchor-37}
 
 ## Additional Credits
 
-[]{#additional-credits}**Lead Author:** Oliver Terbu
+**Lead Author:** Oliver Terbu
 
 **Authors:** Paul Bastian, Rieks Joosten, Zaïda Rivai, Oliver Terbu,
 Snorre Lothar von Gohren Edwin, Antonio Antonino, Nikos Fotiou, Stephen
@@ -1971,9 +1965,7 @@ Retrieved from
 This paper is licensed under
 [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 
-## ![](../../../../../../Dropbox/RPG%20PDFs/rwot-logo.png){width="1.5in" height="1.6098in"}About Rebooting the Web of Trust
-
-[]{#about-rebooting-the-web-of-trust}*This paper was produced as part of
+This paper was produced as part of
 the Rebooting the Web of Trust XI design workshop. On September 26th to
 30th, 2022, over 60 tech visionaries came together in The Hague, The
 Netherlands to talk about the future of decentralized trust on the
@@ -2003,7 +1995,7 @@ Thanks to all our attendees and other contributors!
 
 ## What's Next?
 
-[]{#whats-next}The design workshop and this paper are just starting
+The design workshop and this paper are just starting
 points for Rebooting the Web of Trust. If you have any comments,
 thoughts, or expansions on this paper, please post them to our GitHub
 issues page:
@@ -2013,6 +2005,7 @@ issues page:
 The twelfth Rebooting the Web of Trust design workshop is scheduled for
 late 2022. If you'd like to be involved or would like to help sponsor
 the event, email: <Leadership@WebOfTrust.info>
+
 
 [^1]: **Bolded texts are terms, the meaning of which is specified in the
     section "Terminology". We have based this terminology on that of the
