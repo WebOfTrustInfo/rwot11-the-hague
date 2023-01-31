@@ -725,7 +725,7 @@ could still request the **VC** from Bob as Bob has registered the fact
 that Alice was enrolled, similar to how Ivan issues **VCs** that contain
 claims about people that have passed exams.
 
-### []{#anchor-13}2.2.3 Mallory registers Alice
+#### 2.2.3 Mallory registers Alice
 
 We should also consider the possibility that Mallory (a malevolent
 **actor**) registers Alice for the course while Alice has no intention
@@ -1015,41 +1015,26 @@ can be used.
 
 Here is an example of how this property can be used:
 
-\...
-
-\"binding\": \[ {
-
-\"id\": \[ \"somevaliduri\" \],
-
-\"type\": \"didAuthenticationKey\",
-
-\"keyId\": \"did:example:deadbeefcafe#keys-3\"
-
+```
+...
+"binding\": \[ {
+    "id\": \[ \"somevaliduri\" \],
+    "type\": \"didAuthenticationKey\",
+    "keyId\": \"did:example:deadbeefcafe#keys-3\"
 }, {
-
-\"id\": \[ \"somevaliduri\", \"anothervaliduri\" \],
-
-\"type\": \"passport\",
-
-\"nationality\": \"NL\",
-
-\"passportNr\": 012345678,
-
-\"contentHash\": \"3338be69 \... 2398f392\"
-
+    "id\": \[ \"somevaliduri\", \"anothervaliduri\" \],
+    "type\": \"passport\",
+    "nationality\": \"NL\",
+    "passportNr\": 012345678,
+    "contentHash\": \"3338be69 \... 2398f392\"
 }, {
-
-\"id\": \[ \"somevaliduri\" \],
-
-\"type\": \"portrait\",
-
-\"format\" : \"png\",
-
-\"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-
+    \"id\": \[ \"somevaliduri\" \],
+    \"type\": \"portrait\",
+    \"format\" : \"png\",
+    \"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
 } \],
-
-\...
+...
+```
 
 In the above example, the \`binding\` property is an array that contains
 three elements, each of which can help **verifiers** to **identify** and
@@ -1749,7 +1734,7 @@ Alice wants to register at Bob's web application for the course 'MLAS'
 and presents the VC received from Ivan. Bob will check the validity of
 the VC and check the signature of Ivan. As the VC contains the claim
 \"hasPassedExam\": \"SOL\" Bob will enroll Alice for the course and
-issue her an enrollment VC, copying the linked** identifier binding**:
+issue her an enrollment VC, copying the linked **identifier binding**:
 
 \...
 
@@ -1944,7 +1929,7 @@ phone or tablet, which in practice may be shared with others. A
 is that operates a **component** that has sent a **VC**/**VP**, may need
 to establish the relation between that IT **component** and this
 **party** on whose behalf it operates, which is a topic that we consider
-future work.[^23][]{#anchor-37}
+future work.[^23]
 
 ## Additional Credits
 
