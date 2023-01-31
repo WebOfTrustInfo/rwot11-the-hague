@@ -52,8 +52,8 @@ Commons and Legendary Requirements.
 ## Terminology
 
 In [VCDM issue #902](https://github.com/w3c/vc-data-model/issues/902),
-Orie Steele sighed \"My guess is that 'holder binding' would be far less
-contentious if we could define what a holder is first.\" While the term
+Orie Steele sighed "My guess is that 'holder binding' would be far less
+contentious if we could define what a holder is first." While the term
 'holder binding' is indeed quite contentious, it is not that the term
 isn't defined. Rather, [its
 definition](https://www.w3.org/TR/vc-data-model/#dfn-holders) is not
@@ -74,8 +74,8 @@ meaning of terms is typically limited to a specific scope/context. For
 example, in the context of the Dutch government, the holder (of an
 identity document) is
 [defined](http://wetten.overheid.nl/jci1.3:c:BWBR0005212&hoofdstuk=I&paragraaf=1&artikel=1)
-as \"the person in whose name the travel document is issued and for whom
-it has been issued\". In the context of VCDM (and using its
+as "the person in whose name the travel document is issued and for whom
+it has been issued". In the context of VCDM (and using its
 definitions), that person would be referred to as the subject (of the
 identity document), and the holder would be the entity that possesses it
 and can present it, which could be, but is not necessarily, its subject.
@@ -180,7 +180,7 @@ Any of the following activities:
     > **wallet** of the **party** on whose behalf this action is
     > executed;
 
-2.  \(1\) receiving a **presentation request**, (2) deciding whether to
+2.  (1) receiving a **presentation request**, (2) deciding whether to
     > accept or reject the request, and if accepted, (3) obtaining **VCs**
     > with which to construct the requested **presentation** from the
     > **wallet** of the **party** on whose behalf this action is
@@ -484,8 +484,8 @@ the **subject** of a given **claim** (i.e. to which **entity** the
 **subject identifier** of that claim refers).
 
 The VCDM says that every **claim** (in the credentialSubject property)
-can have an id field that is \"intended to unambiguously refer to an
-object, such as a person, product, or organization\", suggesting that
+can have an id field that is "intended to unambiguously refer to an
+object, such as a person, product, or organization", suggesting that
 this would then be the **subject** of that **claim**.[^13] However, it
 does not provide any actual guidance about how a **verifier** can learn
 which **entity** is being referred to.[^14] Still, the 'holder binding
@@ -540,7 +540,7 @@ Introducing these shorthand phrases helps to keep the texts more
 readable while maintaining their intended meaning.
 
 The conceptual use case is one in which Bob offers the course called
-\"Making Logic Arguments Stick\". As a prerequisite for the course,
+"Making Logic Arguments Stick". As a prerequisite for the course,
 students must have mastered [Second Order
 Logic](https://en.wikipedia.org/wiki/Second-order_logic), which they can
 prove by presenting a **VC** that is **issued** by Ivan (the teacher or
@@ -563,12 +563,12 @@ perspectives of Ivan, Bob and Alice, respectively.
 #### 2.1.1 Ivan
 
 Ivan **issues VCs** that contain **claims** of the form
-(*si*,\"passed\",\<exam\>), where *si* is the **subject identifier**,
-\<exam\> is the name of an exam, and \"passed\" asserts that the
+(*si*,"passed",<exam>), where *si* is the **subject identifier**,
+<exam> is the name of an exam, and "passed" asserts that the
 **entity** that is **identified** by *si* (the **subject** of the
-**claim**) has passed the exam that has the name \<exam\>.
+**claim**) has passed the exam that has the name <exam>.
 
-Ivan uses \"SOL\" as the name of the exam that shows mastery of Second
+Ivan uses "SOL" as the name of the exam that shows mastery of Second
 Order Logic.
 
 In order to allow potential **verifiers** (such as Bob) to learn that
@@ -597,7 +597,7 @@ variant (we will call them the 'requester') is actually entitled to
 follow it. To allow the request, the teachers must make sure every of
 the following conditions is fulfilled:
 
--   a **claim** of the form (*pi*,\"isEnrolledFor\",*cvi*) exists (which
+-   a **claim** of the form (*pi*,"isEnrolledFor",*cvi*) exists (which
     asserts that the person **identified** by *pi* is eligible to follow
     the course variant **identified** by *cvi*);
 -   this **claim** is **issued** by a **party** that Bob can rely on to
@@ -617,7 +617,7 @@ In his issuing process, Bob's enrollment application first needs to
 decide whether or not to accept a request for some person to be enrolled
 in a particular course variant. After having accepted such a request,
 the application can continue to construct a **claim** of the
-form(*pi*,\"isEnrolledFor\",*cvi*) and issue this **claim**.
+form(*pi*,"isEnrolledFor",*cvi*) and issue this **claim**.
 
 The enrollment application only accepts a request if
 
@@ -630,14 +630,14 @@ The enrollment application only accepts a request if
     enrollment. In this use case, we limit that to the condition that
     the student to be enrolled has mastered second order logic, and can
     prove that by presenting a **claim** of the form
-    (*si*,\"passed\",\"SOL\") that is **issued** by Ivan.[^17]
+    (*si*,"passed","SOL") that is **issued** by Ivan.[^17]
 -   an **identifier** *pi* has been made available that represents the
     student. This **identifier** can be conveniently copied from the
     aforementioned **claim**, i.e.: *pi=si*).
 
 After Bob's enrollment application has accepted the request for
 enrollment, it starts by creating the **claim**
-(*si*,\"isEnrolledFor\",*cvi*), where *si* is obtained from the
+(*si*,"isEnrolledFor",*cvi*), where *si* is obtained from the
 **claim** that was **issued** by Ivan and presented by the **user** of
 the enrollment application, and was inferred by the enrollment
 application after the **user** selected an element from the list of
@@ -646,15 +646,15 @@ claim, stores it and sends it to the **user**.
 
 #### 2.1.3 Alice
 
-Alice wants to get herself enrolled for Bob's course \"Making Logic
-Arguments Stick\", and sees on the website that this requires her to be
-able to present a **claim** of the form (*si*,\"passed\",\"SOL\") that
+Alice wants to get herself enrolled for Bob's course "Making Logic
+Arguments Stick", and sees on the website that this requires her to be
+able to present a **claim** of the form (*si*,"passed","SOL") that
 is **issued** by Ivan.
 
 Here, we assume that
 
 -   Alice has successfully obtained a **VC** (**issued** by Ivan) that
-    contains the **claim** (\"somevaliduri\",\"passed\",\"SOL\"),
+    contains the **claim** ("somevaliduri","passed","SOL"),
 -   at the time of **issuing**, Alice was the **subject** of that
     **claim**, and
 -   this **VC** is stored in a wallet and
@@ -677,19 +677,19 @@ assumptions are sufficient to get the use case done.
 ### 2.2 Registration Scenarios
 
 This section describes different ways in which Alice can be accepted as
-a student of the course \"Making Logic Arguments Stick\" that Bob has on
+a student of the course "Making Logic Arguments Stick" that Bob has on
 offer.
 
 #### 2.2.1 Alice registers herself
 
 She does so by pointing her browser to Bob's enrollment application,
-where she chooses the course \"Making Logic Arguments Stick\" (the
+where she chooses the course "Making Logic Arguments Stick" (the
 specific variety is identified with MLAS-3). Bob's enrollment
 application (that includes a **verifier component**) connects to the
 **wallet** she has chosen to use, and sends it a **presentation
-request** that asks for a **claim** of the form (si,\"passed\",\"SOL\")
+request** that asks for a **claim** of the form (si,"passed","SOL")
 that has been **issued** by Ivan. Alice's **wallet** finds the **VC**
-**issued** by Ivan that contains (\"somevaliduri\",\"passed\",\"SOL\"),
+**issued** by Ivan that contains ("somevaliduri","passed","SOL"),
 sends that **VC** to the **wallet** which in turn constructs a **VP**
 that includes the **claim** and the proof that Ivan has **issued** it,
 and sends the **VP** to (the **verifier component** in) Bob's enrollment
@@ -697,7 +697,7 @@ application.
 
 As the verification checks out, Bob's enrollment accepts the
 application, creates the **claim**
-(\"somevaliduri\",\"isEnrolledFor\",\"MLAS-3\"), saves it, constructs a
+("somevaliduri","isEnrolledFor","MLAS-3"), saves it, constructs a
 **VC** containing the claim, stores it, and **issues** it to the
 **wallet** of Alice.
 
@@ -709,7 +709,7 @@ with this task. She decides to ask Trevor.
 
 Trevor proceeds in exactly the same way as Alice did in the previous
 scenario. He only needs the ability to find the **VC** that was **issued**
-by Ivan and that contains (\"somevaliduri\",\"passed\",\"SOL\").
+by Ivan and that contains ("somevaliduri","passed","SOL").
 
 There are several ways this can be arranged: Alice can send the **VC**
 to him, she could provide the **wallet** he will be using (for reading
@@ -775,7 +775,7 @@ they like. That is to say: anyone using the MOOC service would need a
 service on its behalf. That **user component** will request access to
 the course provided by the MOOC service. The MOOC server must request a
 **presentation** that includes a **claim** of the
-form(*si*,\"isEnrolledFor\",\"MOOC\") which a **wallet component** (that
+form(*si*,"isEnrolledFor","MOOC") which a **wallet component** (that
 could be part of the **user component**) would provide. The MOOC server
 then needs to verify that
 
@@ -825,7 +825,7 @@ The summer school setup consists of a series of physical sessions (run
 by a real teacher) at a designated location. If the teacher of that
 course wants to ensure that only people that have properly registered
 for that particular course will attend, (s)he can request a **VP** that
-contain **claims** of the form (*si*,\"isEnrolledFor\",*cvi*)where *cvi*
+contain **claims** of the form (*si*,"isEnrolledFor",*cvi*)where *cvi*
 identifies the course variant that the teacher tutors, and the
 **claims** come from a **VC** issued by Bob. (S)he will need one such
 **claim** for every student, and finally, (s)he will need to learn which
@@ -834,7 +834,7 @@ of the students is referred to by the various **subject identifiers**
 section](#_dw5ekdnp4kyd), 2.4 Identifier Binding, about this.
 
 Note that it is not necessary that a student presents the **claim**
-(*si*,\"isEnrolledFor\",*cvi*) for which that student is the
+(*si*,"isEnrolledFor",*cvi*) for which that student is the
 **subject**. For example, a group of students might have organized it
 such that the group leader would be able to present such **claims** for
 all group members.
@@ -904,7 +904,7 @@ this is enabled by the **party** that determines the associated
 (e.g. as a **subject identifier** in a **claim**), that should be the
 **issuer** of that **VC**.
 
-In our use case, Ivan has used \`somevaliduri\` as an **identifier**.
+In our use case, Ivan has used `somevaliduri` as an **identifier**.
 That means that Ivan should control the associated **identifier
 semantics**, i.e. determine which **entity** it refers to. As a
 consequence, Ivan is the single **party** that can provide other
@@ -986,15 +986,15 @@ has little, if any, guidance when it comes to learning which **entity**
 is the **subject** of a given **claim** (i.e. to which **entity** the
 **subject identifier** of that claim refers).
 
-The guidance provided by the VCDM is that DIDs are \"most often\" used
+The guidance provided by the VCDM is that DIDs are "most often" used
 in a **VC** as **subject identifier** but specifies that, if it is
 provided, it must be a URI. For URIs, there is no further guidance, and
 for DIDs the [DID spec](https://www.w3.org/TR/did-core/#abstract) says
-that \"a
+that "a
 [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)
 refers to any subject (e.g., a person, organization, thing, data model,
 abstract entity, etc.) as determined by the controller of the
-[DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)\",
+[DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)",
 so a **party** should find out who controls that DID. As we mentioned
 earlier, it is the **issuer** of a **VC** that should control the
 **identifier** **semantics**, so what the DID spec text thus implies is
@@ -1004,9 +1004,9 @@ contrary to what many people think. But regardless of that, the DID
 spec, too, does not provide any guidance about how a **verifier** can
 learn which **entity** is actually being referred to.
 
-### 3.1 The \`binding\` property
+### 3.1 The `binding` property
 
-We propose to specify a new property, provisionally called \`binding\`,
+We propose to specify a new property, provisionally called `binding`,
 the purpose of which is to enable **parties** (specifically those in the
 role of **verifier**), to determine which **entity** a particular
 **identifier** refers to when it is used in a **VC** or **VP**. We start
@@ -1017,45 +1017,45 @@ Here is an example of how this property can be used:
 
 ```
 ...
-"binding\": \[ {
-    "id\": \[ \"somevaliduri\" \],
-    "type\": \"didAuthenticationKey\",
-    "keyId\": \"did:example:deadbeefcafe#keys-3\"
+"binding": [ {
+    "id": [ "somevaliduri" ],
+    "type": "didAuthenticationKey",
+    "keyId": "did:example:deadbeefcafe#keys-3"
 }, {
-    "id\": \[ \"somevaliduri\", \"anothervaliduri\" \],
-    "type\": \"passport\",
-    "nationality\": \"NL\",
-    "passportNr\": 012345678,
-    "contentHash\": \"3338be69 \... 2398f392\"
+    "id": [ "somevaliduri", "anothervaliduri" ],
+    "type": "passport",
+    "nationality": "NL",
+    "passportNr": 012345678,
+    "contentHash": "3338be69 ... 2398f392"
 }, {
-    \"id\": \[ \"somevaliduri\" \],
-    \"type\": \"portrait\",
-    \"format\" : \"png\",
-    \"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-} \],
+    "id": [ "somevaliduri" ],
+    "type": "portrait",
+    "format" : "png",
+    "portrait": "iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl..."
+} ],
 ...
 ```
 
-In the above example, the \`binding\` property is an array that contains
+In the above example, the `binding` property is an array that contains
 three elements, each of which can help **verifiers** to **identify** and
 **authenticate** the **entity** that the author of this property refers
-to using the **identifier** \"somevaliduri\". Let's assume that would be
+to using the **identifier** "somevaliduri". Let's assume that would be
 Alice.
 
-The first \`binding\`-element (of type \"didAuthenticationKey\", says
-that the **entity** that is identified with \"somevaliduri\" has the
+The first `binding`-element (of type "didAuthenticationKey", says
+that the **entity** that is identified with "somevaliduri" has the
 private key material associated with
-\"did:example:deadbeefcafe#keys-3\". Thus, a **verifier** can ask a
-**user** that purports to be identifiable with \"somevaliduri\" to prove
+"did:example:deadbeefcafe#keys-3". Thus, a **verifier** can ask a
+**user** that purports to be identifiable with "somevaliduri" to prove
 she has that private key material. Note that this does not need (and
 actually also should not be) the private key material that authenticates
 the DID controller, as explained before. This is an example where the
-\`binding\` property can be used for online **identification** and
+`binding` property can be used for online **identification** and
 **authentication**.
 
-The second \`binding\`-element (of type \"passport\"), says that the
-**entity** that is identified with either \"somevaliduri\" or
-\"anothervaliduri\" is the holder of a passport issued by the Dutch
+The second `binding`-element (of type "passport"), says that the
+**entity** that is identified with either "somevaliduri" or
+"anothervaliduri" is the holder of a passport issued by the Dutch
 government, with passport serial number 012345678. Thus, a **verifier**
 can ask a **user** that purports to be identifiable with either
 identifier to show a passport, verify that it has been issued by the
@@ -1063,220 +1063,169 @@ Dutch government and has serial number 012345678, and from there see if
 the person matches the photograph and everything else that is customary
 when **authenticating** someone by her passport.
 
-The third \`binding\`-element (of type \"portrait\"), specifies a
-portrait (an image of the front of the head of a person) in \`png\`
+The third `binding`-element (of type "portrait"), specifies a
+portrait (an image of the front of the head of a person) in `png`
 format that, when rendered on a graphics device, enables humans to
 determine whether or not some arbitrary person is the one in the image.
 Thus, a **verifier** can ask a **user** that purports to be identifiable
-with \"somevaliduri\" to show her face, compare that with the picture,
+with "somevaliduri" to show her face, compare that with the picture,
 and decide whether or not they match, i.e. the person is the one
-represented by the picture (and therefore, also by \"somevaliduri\").
+represented by the picture (and therefore, also by "somevaliduri").
 
 The example shows that binding-types can be devised for different
-contexts: the (suggested) \`didAuthenticationKey\`-type is useful for
-remote, electronic **identification**, and the \`passport\` and
-\`portrait\` can be used for local and/or deferred physical
+contexts: the (suggested) `didAuthenticationKey`-type is useful for
+remote, electronic **identification**, and the `passport` and
+`portrait` can be used for local and/or deferred physical
 **identification**. This setup is easily extended with other means that
 enable **verifiers** to **identify/authenticate** the **entities** that
 serve as the subject of some **claim**. Of course, it would be useful to
 standardize, or recommend, a set of simple and common binding-types.
 That, however, is outside the scope of our proposal.
 
-+----------------------------------------------------------------------+
-| We propose the \`binding\` property to be specified as an array of   |
-| elements that enable the **identification** and **authentication**   |
-| of some **entity**, where each element consists of:                  |
-|                                                                      |
-| The semantics of the \`binding\` property is that if a party         |
-| executes the method (or uses the mechanism) as specified by the      |
-| \`type\` field, using the provided set of key-value pairs, then that |
-| **identifies** and/or **authenticates** a specific **entity**. If    |
-| one more **identifier(s)** is specified in the \`id\` field, then    |
-| each of these **identifiers** represents that specific **entity**.   |
-+----------------------------------------------------------------------+
+> We propose the `binding` property to be specified as an array of
+> elements that enable the **identification** and **authentication**
+> of some **entity**, where each element consists of:               
+>                                                                   
+> The semantics of the `binding` property is that if a party        
+> executes the method (or uses the mechanism) as specified by the   
+> `type` field, using the provided set of key-value pairs, then that
+> **identifies** and/or **authenticates** a specific **entity**. If 
+> one more **identifier(s)** is specified in the `id` field, then   
+> each of these **identifiers** represents that specific **entity**.
 
 In the following sections, we offer solutions on how to integrate the
-\`binding\` property into the current VCDM.
+`binding` property into the current VCDM.
 
-#### 3.1.1 Add a \`binding\` property to a \`credentialSubject\` element
+#### 3.1.1 Add a `binding` property to a `credentialSubject` element
 
-Our first proposal suggests adding the \`binding\` property to the
-contents of the \`credentialSubject\` element of the **VC** that has
+Our first proposal suggests adding the `binding` property to the
+contents of the `credentialSubject` element of the **VC** that has
 been issued by Ivan to attest that Alice has passed the exam for SOL
 (**VC** metadata and signature are omitted):
 
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"somevaliduri\", //optional
-
-\"binding\": \[ \<array of binding-elements\> \],
-
-\"hasPassedExam\": \"SOL\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "somevaliduri", //optional
+    "binding": [ <array of binding-elements> ],
+    "hasPassedExam": "SOL"
 }
+],
+...
+```
 
-\],
-
-\...
-
-The \<array of binding-elements\> is the same as in the previous section
+The <array of binding-elements> is the same as in the previous section
 (and left out for conciseness). Whenever a **verifier **needs to**
 identify/authenticate** a person as Alice, any of these elements
 provides a specific way determined by the **issuer** by which the
-**verifier** can do so, as long as he makes sure that the \`id\` field
-of the \`credentialSubject\` element matches one of the \`id\` field
-elements of the \`binding\`-element that it chooses to use for
+**verifier** can do so, as long as he makes sure that the `id` field
+of the `credentialSubject` element matches one of the `id` field
+elements of the `binding`-element that it chooses to use for
 **identification** and **authentication** of Alice.
 
-Note that if the \`id\` field were omitted, then the \`binding\`
+Note that if the `id` field were omitted, then the `binding`
 property could still be interpreted as a way to bind (**identify**
 and/or **authenticate**) the **claim**'s **subject**. The advantage of
-doing this is that the \`binding\` is more concise as it directly refers
-to the subject and no \`id\` fields are required, not only in the
-\`credentialSubject\` element, but also not in the \`binding\` array.
+doing this is that the `binding` is more concise as it directly refers
+to the subject and no `id` fields are required, not only in the
+`credentialSubject` element, but also not in the `binding` array.
 However, this interpretation is inconsistent with the current VCDM,
-which says that whenever the \`id\` field in a \`credentialSubject\`
+which says that whenever the `id` field in a `credentialSubject`
 element is missing, it is to be considered a 'bearer claim'[^19], so a
 decision about this needs to be taken.
 
-In the example above, the \`binding\` property is contained in the
+In the example above, the `binding` property is contained in the
 **claim** itself. This construct can be used to create **VCs** that
 people can use as pure **identification** and **authentication**
 credentials. They can also be used to construct **VCs** that contain
 **claims**, e.g. about things (containers, pets, etc. - where privacy
 issues do not play a large role). So when this mechanism is used in a
-\`credentialSubject\` element, it could be referred to as \`subject
-binding\`.
+`credentialSubject` element, it could be referred to as `subject
+binding`.
 
-Thus, if a **VC/VP** were to contain properties such as \`holder\`,
-\`presenter\`, \`issuee\`, or others[^20], this construct could also
+Thus, if a **VC/VP** were to contain properties such as `holder`,
+`presenter`, `issuee`, or others[^20], this construct could also
 be used to enable **verifiers** to **identify** and/or **authenticate**
-the **entity** that (the value of) this \`id\` field refers to.
+the **entity** that (the value of) this `id` field refers to.
 
-#### 3.1.2 Using the \`evidence\` field
+#### 3.1.2 Using the `evidence` field
 
-Our second proposal suggests placing the \`binding\` property in the
-\`evidence\` field (as being discussed e.g. in [*VCDM issue
+Our second proposal suggests placing the `binding` property in the
+`evidence` field (as being discussed e.g. in [*VCDM issue
 #902*](https://github.com/w3c/vc-data-model/issues/902#issuecomment-1332838780))
 with some minor modifications, as follows:
 
-\...
-
-\"credentialSubject\": \[
-
-{ \"id\": \"somevaliduri\", //mandatory
-
-\"hasPassedExam\": \"SOL\"
-
-}
-
-\],
-
-\"evidence\": \[ {
-
-\"id\": \"somevaliduri\", //mandatory
-
-\"type\": \[ \"Binding\" , \"didAuthenticationKey\" \] ,
-
-\"keyId\": \"did:example:deadbeefcafe#keys-3\"
-
+```
+...
+"credentialSubject": [
+    { "id": "somevaliduri", //mandatory
+        "hasPassedExam": "SOL"
+    }
+],
+"evidence": [ {
+    "id": "somevaliduri", //mandatory
+    "type": [ "Binding" , "didAuthenticationKey" ] ,
+    "keyId": "did:example:deadbeefcafe#keys-3"
 }, {
-
-\"id\": \"somevaliduri\",
-
-\"type\": \[ \"Binding\" , \"passport\" \] ,
-
-\"nationality\": \"NL\",
-
-\"passportNr\": 012345678,
-
-\"contentHash\": \"3338be69 \... 2398f392\"
-
+    "id": "somevaliduri",
+    "type": [ "Binding" , "passport" ] ,
+    "nationality": "NL",
+    "passportNr": 012345678,
+    "contentHash": "3338be69 ... 2398f392"
 }, {
-
-\"id\": \"somevaliduri\",
-
-\"type\": \[ \"Binding\" , \"portrait\" \] ,
-
-\"format\" : \"png\",
-
-\"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-
-}\]
-
+    "id": "somevaliduri",
+    "type": [ "Binding" , "portrait" ] ,
+    "format" : "png",
+    "portrait": "iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl..."
+}]
 }
+...
+```
 
-\...
-
-In this example, the \"evidence\" property contains 1 or more elements,
+In this example, the "evidence" property contains 1 or more elements,
 each of which enables verifiers to **identify/authenticate** the
 **entity** that is **identified** by a particular **identifier in the
 credentialSubject**. As the VCDM description of evidence property is
 very vague and allows lots of use cases, we propose to include
-\"binding\" in the array of types to distinguish from other forms of
+"binding" in the array of types to distinguish from other forms of
 evidence.
 
-#### 3.1.3 Adding the \`binding\` property to the VCDM top level
+#### 3.1.3 Adding the `binding` property to the VCDM top level
 
-Our third proposal suggests adding a new top-level \`binding\` property
-disjunct from the \`evidence\` field that comprises the array of
-\`binding\` elements. Therefore the contents for the proposed identifier
-\`binding\` would be the only content of the \`binding\` property and
+Our third proposal suggests adding a new top-level `binding` property
+disjunct from the `evidence` field that comprises the array of
+`binding` elements. Therefore the contents for the proposed identifier
+`binding` would be the only content of the `binding` property and
 the 'evidence' property would be used for other use cases or concepts
 
-\...
-
-\"credentialSubject\": \[
-
-{ \"id\": \"somevaliduri\",
-
-\"hasPassedExam\": \"SOL\"
-
-}
-
-\],
-
-\"binding\": \[ {
-
-\"id\": \"somevaliduri\",
-
-\"type\": \"didAuthenticationKey\",
-
-\"keyId\": \"did:example:deadbeefcafe#keys-3\"
-
+```
+...
+"credentialSubject": [
+    { "id": "somevaliduri",
+        "hasPassedExam": "SOL"
+    }
+],
+"binding": [ {
+    "id": "somevaliduri",
+    "type": "didAuthenticationKey",
+    "keyId": "did:example:deadbeefcafe#keys-3"
 }, {
-
-\"id\": \"somevaliduri\",
-
-\"type\": \"passport\",
-
-\"nationality\": \"NL\",
-
-\"passportNr\": 012345678,
-
-\"contentHash\": \"3338be69 \... 2398f392\"
-
+    "id": "somevaliduri",
+    "type": "passport",
+    "nationality": "NL",
+    "passportNr": 012345678,
+    "contentHash": "3338be69 ... 2398f392"
 }, {
-
-\"id\": \"somevaliduri\",
-
-\"type\": \"portrait\",
-
-\"format\" : \"png\",
-
-\"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-
-}\]
-
+    "id": "somevaliduri",
+    "type": "portrait",
+    "format" : "png",
+    "portrait": "iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl..."
+}]
 },
-
-\"evidence\": {
-
-//whatever
-
+"evidence": {
+    //whatever
 }
+```
 
 ### 3.2 Using identifier binding across multiple VCs
 
@@ -1292,16 +1241,16 @@ As described in the introduction, the **verifier** requires means to
 The first and second requirements need not be fulfilled by a single
 **claim** --- nor even within a single **VC**. Under the (reasonable)
 assumption that an **issuer** will only use unambiguous **identifiers**,
-the value of \`credentialSubject.id\` (as used by a single **issuer**)
+the value of `credentialSubject.id` (as used by a single **issuer**)
 will always refer to the same **entity**. Hence, such identifiers can be
 used in multiple **claims**, not only as a **subject identifier**, but
 also as an 'object identifier'; it may also appear in a
-\`binding\`-property, which can be part of e.g., a **VC** that is
+`binding`-property, which can be part of e.g., a **VC** that is
 specifically intended to provide **verifiers** with the ability to
 **identify** and/or **authenticate** the **subject**.
 
 While the first and second requirements are enabled through the
-\`binding\` property, the third requirement might need additional work
+`binding` property, the third requirement might need additional work
 or further explanations. When the **verifier** requests multiple
 **claims** of potentially multiple VCs, he will need to know how the
 **subjects** of these claims are related, and to ensure that he can
@@ -1316,12 +1265,12 @@ another **party**.
 Here are some examples:
 
 -   Two **claims** are issued by the same **issuer** and they have the
-    same \`credentialSubject.id\`. In this case, since the **identifier
+    same `credentialSubject.id`. In this case, since the **identifier
     semantics** is that of a single **party** (the **issuer**), it is
     reasonable to infer that the **subject** of both **claims** is the
     same **entity**.
 -   Two **claims** (from two **VCs**) come from different **issuers**
-    and the value of \`credentialSubject.id\` is the same for both
+    and the value of `credentialSubject.id` is the same for both
     **claims**. Since there are two **identifier semantics** involved
     (one for each of the **issuers**), the **verifier** needs additional
     information to establish that both **claims** have the same
@@ -1338,15 +1287,15 @@ legislation or governance frameworks that the **issuers** are subjected
 (or committed) to, or on experience, best practices, or a risk
 assessment.
 
-## 4 How \`binding\` Types Work
+## 4 How `binding` Types Work
 
 This chapter describes various situations in which **identifier
 binding** should work, and shows that one or more of the solutions we
 propose actually work. We are demonstrating various options for Bob to
 realize his service offering using the concepts from previous chapters.
-None of these examples imply that certain \`binding\` types or decisions
+None of these examples imply that certain `binding` types or decisions
 are "the best" way to implement a specific scenario. In fact, there will
-be many ways to ensure a \`binding\` and we want to show the different
+be many ways to ensure a `binding` and we want to show the different
 ways all using our proposed properties for the W3C VCDM.
 
 ### 4.1 DIDAuthentication
@@ -1358,64 +1307,46 @@ access to the MOOC server", used with the **identifier binding** type
 
 In this example Alice got a VC from Ivan for her participation and
 successful exam on the course 'SOL' :
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityoflogic.com/id/492754832663\",
-
-\"binding\": \[ {
-
-\"type\": \"DIDAuthenticationKey\",
-
-\"didAuth\": \"did:jwk:123\"
-
-} \],
-
-\"hasPassedExam\": \"SOL\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityoflogic.com/id/492754832663",
+    "binding": [ {
+        "type": "DIDAuthenticationKey",
+        "didAuth": "did:jwk:123"
+    } ],
+    "hasPassedExam": "SOL"
 }
-
-\],
-
-\...
+],
+...
+```
 
 Alice wants to register at Bob's web application for the course 'MLAS'
 and creates a **verifiable presentation** of the VC received from Ivan
-by authenticating with the DID \"did:jwk:123\". Bob will check the
+by authenticating with the DID "did:jwk:123". Bob will check the
 validity of the VP and check the signature of Ivan. As the VC contains
-the claim \"hasPassedExam\": \"SOL\" Bob will enroll Alice for the
-course and issue her an enrollment VC **binding** it to \"did:jwk:456\",
+the claim "hasPassedExam": "SOL" Bob will enroll Alice for the
+course and issue her an enrollment VC **binding** it to "did:jwk:456",
 which Alice presented to Bob :
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityofbob.com/id/399912\",
-
-\"binding\": \[ {
-
-\"type\": \"DIDAuthenticataionKey\",
-
-\"didAuth\": \"did:jwk:456\"
-
-} \],
-
-\"isEnrolledFor\": \"MLAS-3\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityofbob.com/id/399912",
+    "binding": [ {
+        "type": "DIDAuthenticataionKey",
+        "didAuth": "did:jwk:456"
+    } ],
+    "isEnrolledFor": "MLAS-3"
 }
-
-\],
-
-\...
+],
+...
+```
 
 When Alice wants to start or continue the MOOC, she presents the
 enrollment VC to the login services (on behalf of Bob) and authenticates
-with the DID \"did:jwk:456\". The login service verifies the
-**presentation**, including the \"DIDAuthenticationKey\" \`binding\`,
-checking for the claim \"isEnrolledFor\": \"MLAS-3\" and forwards Alice
+with the DID "did:jwk:456". The login service verifies the
+**presentation**, including the "DIDAuthenticationKey" `binding`,
+checking for the claim "isEnrolledFor": "MLAS-3" and forwards Alice
 to the course material.
 
 ### 4.2 Out-of-band Binding / On-Site Portrait Holder Authentication
@@ -1429,45 +1360,30 @@ physical location", used with the **identifier binding** types
 
 In this example Alice[^21] got a VC from Ivan for her participation
 and successful exam on the course 'SOL' :
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityoflogic.com/id/492754832663\", //optional
-
-\"binding\": \[ {
-
-\"type\": \"passport\",
-
-\"nationality\": \"NL\",
-
-\"passportNr\": 012345678,
-
-\"contentHash\": \"3338be69 \... 2398f392\"
-
-}, {
-
-\"type\": \"portrait\",
-
-\"format\" : \"png\",
-
-\"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-
-} \],
-
-\"hasPassedExam\": \"SOL\"
-
-}
-
-\],
-
-\...
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityoflogic.com/id/492754832663", //optional
+    "binding": [ {
+        "type": "passport",
+        "nationality": "NL",
+        "passportNr": 012345678,
+        "contentHash": "3338be69 ... 2398f392"
+    }, {
+        "type": "portrait",
+        "format" : "png",
+        "portrait": "iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl..."
+    } ],
+        "hasPassedExam": "SOL"
+    }
+],
+...
+```
 
 Alice wants to register at Bob's web application for the course 'MLAS'
 and presents the VC received from Ivan. Bob will check the validity of
 the VC and check the signature of Ivan. As the VC contains the claim
-\"hasPassedExam\": \"SOL\" Bob will enroll Alice for the course. When
+"hasPassedExam": "SOL" Bob will enroll Alice for the course. When
 the physical course starts at the university the teacher (on behalf of
 Bob) will bring a list of Passport numbers and/or portrait pictures and
 compare those to the people entering the course room.
@@ -1476,88 +1392,58 @@ compare those to the people entering the course room.
 
 In this example Alice got a VC from Ivan for her participation and
 successful exam on the course 'SOL' :
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityoflogic.com/id/492754832663\", //optional
-
-\"binding\": \[ {
-
-\"type\": \"passport\",
-
-\"nationality\": \"NL\",
-
-\"passportNr\": 012345678,
-
-\"contentHash\": \"3338be69 \... 2398f392\"
-
-}, {
-
-\"type\": \"portrait\",
-
-\"format\" : \"png\",
-
-\"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-
-} \],
-
-\"hasPassedExam\": \"SOL\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityoflogic.com/id/492754832663", //optional
+    "binding": [ {
+        "type": "passport",
+        "nationality": "NL",
+        "passportNr": 012345678,
+        "contentHash": "3338be69 ... 2398f392"
+    }, {
+        "type": "portrait",
+        "format" : "png",
+        "portrait": "iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl..."
+    } ],
+    "hasPassedExam": "SOL"
 }
-
-\],
-
-\...
+],
+...
+```
 
 Alice wants to register at Bob's web application for the course 'MLAS'
 and presents the VC received from Ivan. Bob will check the validity of
 the VC and check the signature of Ivan. As the VC contains the claim
-\"hasPassedExam\": \"SOL\" Bob will enroll Alice for the course and
+"hasPassedExam": "SOL" Bob will enroll Alice for the course and
 issue her an enrollment VC:
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityofbob.com/id/399912\", //optional
-
-\"binding\": \[ {
-
-\"type\": \"passport\",
-
-\"nationality\": \"NL\",
-
-\"passportNr\": 012345678,
-
-\"contentHash\": \"3338be69 \... 2398f392\"
-
-}, {
-
-\"type\": \"portrait\",
-
-\"format\" : \"png\",
-
-\"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-
-} \],
-
-\"isEnrolledFor\": \"MLAS-3\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityofbob.com/id/399912", //optional
+    "binding": [ {
+        "type": "passport",
+        "nationality": "NL",
+        "passportNr": 012345678,
+        "contentHash": "3338be69 ... 2398f392"
+    }, {
+        "type": "portrait",
+        "format" : "png",
+        "portrait": "iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl..."
+    } ],
+    "isEnrolledFor": "MLAS-3"
 }
-
-\],
-
-\...
+],
+...
+```
 
 When the physical course starts at the university, Alice brings her
 enrollment VC and presents those to the teacher (on behalf of Bob). In
-the case of the Out-Of-Band \`binding\` Alice presents her physical
+the case of the Out-Of-Band `binding` Alice presents her physical
 passport and the teacher matches the physical passport with the data
-from the enrollment VC containing the claim \"isEnrolledFor\":
-\"MLAS-3\". In the case of 'On-Site Portrait Holder Authentication' the
-teacher compares Alice\'s face with the image from the VC.
+from the enrollment VC containing the claim "isEnrolledFor":
+"MLAS-3". In the case of 'On-Site Portrait Holder Authentication' the
+teacher compares Alice's face with the image from the VC.
 
 #### 4.2.3 Example 3
 
@@ -1566,93 +1452,64 @@ In this example Alice has two VCs in her wallet.
 The first is a national ID card VC from a government issuer, stating
 typical personal identification information and an **identifier
 binding** type for On-Site portrait holder authentication:
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://stateissuer.nl/id/9021678534\", //mandatory
-
-\"binding\": \[ {
-
-\"type\": \"portrait\",
-
-\"format\" : \"png\",
-
-\"portrait\": \"iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl\...\"
-
-} \],
-
-\"firstName\": \"Alice\",
-
-\"familyName\": \"from Wonderland\",
-
-\...
-
+```
+"credentialSubject": [ {
+    "id": "https://stateissuer.nl/id/9021678534", //mandatory
+    "binding": [ {
+    "type": "portrait",
+    "format" : "png",
+    "portrait": "iVBORw0KGgoAAAANSUhEUgAAA8sAAAJl..."
+} ],
+"firstName": "Alice",
+"familyName": "from Wonderland",
+...
 }
-
-\],
-
-\...
+],
+...
+```
 
 The second is a course participation VC from Ivan on her successful exam
 on the course 'SOL'. This credential does not have an **identifier
-binding** of itself, but links to the \`binding\` of the first VC (this
+binding** of itself, but links to the `binding` of the first VC (this
 also illustrates the req3).
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityoflogic.com/id/492754832663\",
-
-\"binding\": \[ {
-
-\"type\": \"linkedBinding\",
-
-\"link\": \"https://stateissuer.nl/id/9021678534\"
-
-} \],
-
-\"hasPassedExam\": \"SOL\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityoflogic.com/id/492754832663",
+    "binding": [ {
+        "type": "linkedBinding",
+        "link": "https://stateissuer.nl/id/9021678534"
+    } ],
+    "hasPassedExam": "SOL"
 }
-
-\],
-
-\...
+],
+...
+```
 
 Alice wants to register in Bob's web application for the course 'MLAS'
 and presents the VC received from Ivan. Bob will check the validity of
 the VC and check the signature of Ivan. As the VC contains the claim
-\"hasPassedExam\": \"SOL\" Bob will enroll Alice for the course and
+"hasPassedExam": "SOL" Bob will enroll Alice for the course and
 issue her an enrollment VC, copying the linked **identifier binding**:
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityofbob.com/id/399912\",
-
-\"binding\": \[ {
-
-\"type\": \"linkedCredential\",
-
-\"link\": \"https://stateissuer.nl/id/9021678534\"
-
-} \],
-
-\"isEnrolledFor\": \"MLAS-3\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityofbob.com/id/399912",
+    "binding": [ {
+        "type": "linkedCredential",
+        "link": "https://stateissuer.nl/id/9021678534"
+    } ],
+    "isEnrolledFor": "MLAS-3"
 }
-
-\],
-
-\...
+],
+...
+```
 
 When the physical course starts at the university, Alice presents both
 the national ID card and enrollment VC to the teacher (on behalf of
 Bob). In this example the teacher checks the linkage of both VCs, uses
 the 'On-Site Portrait Holder Authentication' from the first VC and
-compares Alice\'s face with the image from the \`binding\` mechanism.
+compares Alice's face with the image from the `binding` mechanism.
 Note that this is a simplified example and precautions must be made to
 genuinely identify the correct linked **identifier binding**, such that
 the issuer of such VC is also securely linked, e.g. by identifiers of
@@ -1671,92 +1528,60 @@ identification information and an **identifier binding** type for remote
 holder authentication. During issuance the holder's wallet was
 authenticated and the VC bound to a hardware-backed key with provided
 holder authentication:
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://stateissuer.nl/id/9021678535\", //mandatory
-
-\"binding\": \[ {
-
-\"type\": \"secureWalletRemoteBindingDIF\",
-
-\"walletName\": \"Example Wallet\", //optional
-
-\"walletVersion\": \"1.3.0\", //optional
-
-\"hardwarePublicKey\": \"did:jwk:123\", //links and other formats
-possible
-
-\"holderAuthentication\": \[\"FaceID\", \"PIN\"\]
-
-} \],
-
-\"firstName\": \"Alice\",
-
-\"familyName\": \"from Wonderland\",
-
-\...
-
+```
+"credentialSubject": [ {
+    "id": "https://stateissuer.nl/id/9021678535", //mandatory
+    "binding": [ {
+        "type": "secureWalletRemoteBindingDIF",
+        "walletName": "Example Wallet", //optional
+        "walletVersion": "1.3.0", //optional
+        "hardwarePublicKey": "did:jwk:123", //links and other formats possible
+        "holderAuthentication": ["FaceID", "PIN"]
+    } ],
+    "firstName": "Alice",
+"familyName": "from Wonderland",
+...
 }
-
-\],
-
-\...
+],
+...
+```
 
 The second is a course participation VC from Ivan on her successful exam
 on the course 'SOL'. This credential does not have an **identifier
-binding** of itself, but links to the \`binding\` of the first VC (this
+binding** of itself, but links to the `binding` of the first VC (this
 also illustrates the req3):
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityoflogic.com/id/492754832663\",
-
-\"binding\": \[ {
-
-\"type\": \"linkedBinding\",
-
-\"link\": \"https://stateissuer.nl/id/9021678535\"
-
-} \],
-
-\"hasPassedExam\": \"SOL\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityoflogic.com/id/492754832663",
+    "binding": [ {
+        "type": "linkedBinding",
+        "link": "https://stateissuer.nl/id/9021678535"
+    } ],
+    "hasPassedExam": "SOL"
 }
-
-\],
-
-\...
+],
+...
+```
 
 Alice wants to register at Bob's web application for the course 'MLAS'
 and presents the VC received from Ivan. Bob will check the validity of
 the VC and check the signature of Ivan. As the VC contains the claim
-\"hasPassedExam\": \"SOL\" Bob will enroll Alice for the course and
+"hasPassedExam": "SOL" Bob will enroll Alice for the course and
 issue her an enrollment VC, copying the linked **identifier binding**:
-
-\...
-
-\"credentialSubject\": \[ {
-
-\"id\": \"https://universityofbob.com/id/399912\",
-
-\"binding\": \[ {
-
-\"type\": \"linkedCredential\",
-
-\"link\": \"https://stateissuer.nl/id/9021678535\"
-
-} \],
-
-\"isEnrolledFor\": \"MLAS-3\"
-
+```
+...
+"credentialSubject": [ {
+    "id": "https://universityofbob.com/id/399912",
+    "binding": [ {
+        "type": "linkedCredential",
+        "link": "https://stateissuer.nl/id/9021678535"
+     } ],
+     "isEnrolledFor": "MLAS-3"
 }
-
-\],
-
-\...
+],
+...
+```
 
 When the course starts in the video conference of Bob's university
 platform, Alice presents both the national ID card and enrollment VC to
@@ -1810,24 +1635,24 @@ errors and increases interoperability across the entire SSI ecosystem.
 
 ### 5.2 Privacy (and Other) Considerations
 
-Concerns have been raised saying that \"holder-binding may have
-unanticipated privacy & correlation issues\" and also that
-\"holder-binding may be an entree for parties to create centralization
-or lock-in, or worse, create human-rights issues\" ([*VCDM issue
+Concerns have been raised saying that "holder-binding may have
+unanticipated privacy & correlation issues" and also that
+"holder-binding may be an entree for parties to create centralization
+or lock-in, or worse, create human-rights issues" ([*VCDM issue
 #988*](https://github.com/w3c/vc-data-model/issues/988)).
 
 The guidance that the VCDM already provides in its sections on [*privacy
 considerations*](https://www.w3.org/TR/vc-data-model/#privacy-considerations),
 [*security
 considerations*](https://www.w3.org/TR/vc-data-model/#security-considerations),
-etc. are equally applicable to the contents of the \`binding\`
+etc. are equally applicable to the contents of the `binding`
 properties. There is nothing very special about them, except perhaps
 that it may be more important that holders are able to selectively
 disclose them.
 
 What might be a topic to consider is that, when a VC is transferred from
 one **party** to another, there would be a way to obscure some of the
-\`binding\` elements so that the **party** to which the VC is
+`binding` elements so that the **party** to which the VC is
 transferred does not learn all the means by which the enclosed
 **identifiers** can be dereferenced. One mechanism could be to use the
 third option of our proposal, i.e. **issuing** the binding properties as
@@ -1881,11 +1706,7 @@ need for a capability to:
     (typically binding between the **subject** and the **claim**), and
 -   establish whether the **subject** of two **claims** (authored by the
     same or different **parties**)
-
-```{=html}
-<!-- -->
-```
--   -   are in fact the same **entity**,
+    -   are in fact the same **entity**,
     -   are different **entities**, or
     -   are **entities** for which it cannot be determined that they are
         the same or different.
@@ -1894,22 +1715,22 @@ Currently, **verifiers** do not have such capabilities. The result in
 practice is that they revert to means such as (tacit) assumptions that
 have no basis in specifications. For example, to **authenticate** the
 **entity** that is **identified** by a DID that shows up as a **subject
-identifier** (i.e. as the value of the \`id\` field in one of the
-\`credentialSubject\` elements of a **VC)**, which is not compliant with
+identifier** (i.e. as the value of the `id` field in one of the
+`credentialSubject` elements of a **VC)**, which is not compliant with
 what the DID spec says. Examples such as these, and the fact that such
 practices are defended, clearly demonstrate the need for properly
 discussing and standardizing means that contribute to providing such
 **verifier** capabilities.
 
 Our paper proposes a generically useful property that we call
-\`binding\`, which aims to make such contributions. We specify an
+`binding`, which aims to make such contributions. We specify an
 extendable syntax and have drafted a specification for its semantics.
-This \`binding\` property is not only useful to 'bind' an **entity** to
+This `binding` property is not only useful to 'bind' an **entity** to
 a **claim** as its **subject**, but can also be used to 'bind' an
 **entity** that is related to the **subject** of the **claim** by means
-of a predicate (one might call this \`object binding\`). Also, if ever
-the properties of \`holder\` or \`issuee\` were to be standardized
-(which is totally unnecessary once the \`binding\` property is used),
+of a predicate (one might call this `object binding`). Also, if ever
+the properties of `holder` or `issuee` were to be standardized
+(which is totally unnecessary once the `binding` property is used),
 then the **entities** fulfilling such roles could be 'bound' by the
 binding property.
 
@@ -2063,10 +1884,10 @@ the event, email: <Leadership@WebOfTrust.info>
     meaning that whoever presents the **claim** must be considered its
     **subject**.
 
-[^14]: The statement that \"It is *RECOMMENDED* that the
+[^14]: The statement that "It is *RECOMMENDED* that the
     [URI](https://www.w3.org/TR/vc-data-model/#dfn-uri) in the id be one
     which, if dereferenced, results in a document containing
-    machine-readable information about the id.\" is a statement about
+    machine-readable information about the id." is a statement about
     the id, not about the **entity** to which that id refers.
 
 [^15]: It could even be useful for an issuer to use a primary index of
@@ -2076,11 +1897,11 @@ the event, email: <Leadership@WebOfTrust.info>
     identifier** that Ivan used in a **claim** that supposedly states
     that Alice has earned some degree. This would happen if Ivan uses a
     DID that Alice controls (because the [DID
-    spec](https://www.w3.org/TR/did-core/#abstract) says that \"a
+    spec](https://www.w3.org/TR/did-core/#abstract) says that "a
     [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)
     refers to any subject (e.g., a person, organization, thing, data
     model, abstract entity, etc.) as determined by the controller of the
-    [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)\").
+    [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)").
     When Ivan **issues** a VC that contains this **claim** under the
     assumption that the **subject identifier** refers e.g., to Alice,
     and Alice changes it to refer to Chuck, then the **VC** contains a
