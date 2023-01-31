@@ -1086,12 +1086,7 @@ That, however, is outside the scope of our proposal.
 > * a (required) `type` field, i.e. an **identifier** that specifies the method/mechanism for **identifying** and **authenticating** the **entity** from a registry of types, where a registry[^reg] specifies which key-value pairs it expects (optionally, or required), and how they are to be used to **identify** and/or *8authenticate** the **entity** that is bound to (any of) (the **identifiers** in the `id` field of) the binding-element.
 > * a set of key-value pairs, where the keys are particular to the specified `binding`type and the values will be used as the method specified in the `type` field, so as to **identify** and/or **authenticate** the **entity**, as intended by the author of the  `binding` property.
 >
-> The semantics of the `binding` property is that if a party        
-> executes the method (or uses the mechanism) as specified by the   
-> `type` field, using the provided set of key-value pairs, then that
-> **identifies** and/or **authenticates** a specific **entity**. If 
-> one more **identifier(s)** is specified in the `id` field, then   
-> each of these **identifiers** represents that specific **entity**.
+> The semantics of the `binding` property is that if a party executes the method (or uses the mechanism) as specified by the `type` field, using the provided set of key-value pairs, then that **identifies** and/or **authenticates** a specific **entity**. If one more **identifier(s)** is specified in the `id` field, then each of these **identifiers** represents that specific **entity**.
 
 In the following sections, we offer solutions on how to integrate the
 `binding` property into the current VCDM.
