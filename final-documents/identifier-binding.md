@@ -1,5 +1,7 @@
 # Identifier Binding: defining the Core of Holder Binding
 
+#### by Paul Bastian, Rieks Joosten, Zaïda Rivai, Oliver Terbu, Snorre Lothar von Gohren Edwin, Antonio Antonino, Nikos Fotiou, Stephen Curran, and Ahamed Azeem
+
 ## Abstract
 
 The [*W3C Verifiable Credentials Data Model
