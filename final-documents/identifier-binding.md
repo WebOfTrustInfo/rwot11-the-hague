@@ -1079,10 +1079,12 @@ serve as the subject of some **claim**. Of course, it would be useful to
 standardize, or recommend, a set of simple and common binding-types.
 That, however, is outside the scope of our proposal.
 
-> We propose the `binding` property to be specified as an array of
-> elements that enable the **identification** and **authentication**
-> of some **entity**, where each element consists of:               
->                                                                   
+> We propose the `binding` property to be specified as an array of elements that enable the **identification** and **authentication** of some **entity**, where each element consists of:               
+>
+> * an (optional) `id` field, i.e. a (possibly empty) list of the **identifiers** that all refer to the **entity** that can be **identified** and **authenticated** by the contents of this `binding`-element. If the `id` property is not specified, then the binding-element can be used to **identify** and **authenticate** the entity to which the sibling-properties of  `binding` are attributed.
+> * a (required) `type` field, i.e. an **identifier** that specifies the method/mechanism for **identifying** and **authenticating** the **entity** from a registry of types, where a registry[^reg] specifies which key-value pairs it expects (optionally, or required), and how they are to be used to **identify** and/or *8authenticate** the **entity** that is bound to (any of) (the **identifiers** in the `id` field of) the binding-element.
+> * a set of key-value pairs, where the keys are particular to the specified `binding`type and the values will be used as the method specified in the `type` field, so as to **identify** and/or **authenticate** the **entity**, as intended by the author of the  `binding` property.
+>
 > The semantics of the `binding` property is that if a party        
 > executes the method (or uses the mechanism) as specified by the   
 > `type` field, using the provided set of key-value pairs, then that
@@ -1914,6 +1916,8 @@ the event, email: <Leadership@WebOfTrust.info>
     [***identify***](https://essif-lab.github.io/framework/docs/terms/identify),
     and a mental model on
     [*identification*](https://essif-lab.github.io/framework/docs/terms/pattern-identification).
+
+[^reg]: The registry itself, where it is located, etc., is outside the scope of this paper.
 
 [^19]: The VCDM text expresses this in terms of **VCs** rather than
     **claims**, but the intention is the same.
