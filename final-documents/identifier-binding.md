@@ -1335,7 +1335,7 @@ Here are some examples:
     semantics** is that of a single **party** (the **issuer**), it is
     reasonable to infer that the **subject** of both **claims** is the
     same **entity**.
--   Two **claims** (from two** VCs**) come from different **issuers**
+-   Two **claims** (from two **VCs**) come from different **issuers**
     and the value of \`credentialSubject.id\` is the same for both
     **claims**. Since there are two **identifier semantics** involved
     (one for each of the **issuers**), the **verifier** needs additional
@@ -1437,7 +1437,7 @@ to the course material.
 
 In this section we show a concrete example for the registration scenario
 "Alice registers herself" and the access scenario "Physical access to a
-physical location", used with the **identifier binding **types
+physical location", used with the **identifier binding** types
 "passport" and "portrait".
 
 #### 4.2.1 Example 1
@@ -1639,7 +1639,7 @@ Alice wants to register in Bob's web application for the course 'MLAS'
 and presents the VC received from Ivan. Bob will check the validity of
 the VC and check the signature of Ivan. As the VC contains the claim
 \"hasPassedExam\": \"SOL\" Bob will enroll Alice for the course and
-issue her an enrollment VC, copying the linked** identifier binding**:
+issue her an enrollment VC, copying the linked **identifier binding**:
 
 \...
 
@@ -1889,11 +1889,11 @@ first **party**'s behalf.
 The main requirements that **verifiers** have in such cases are their
 need for a capability to:
 
--   **identify** the **entity** that is the **subject** of a **claim
-    **(typically the binding between **subject** and **subject
+-   **identify** the **entity** that is the **subject** of a **claim**
+    (typically the binding between **subject** and **subject
     identifier**),
--   **authenticate** the **entity** that is the **subject** of a **claim
-    **(typically binding between the **subject** and the **claim**), and
+-   **authenticate** the **entity** that is the **subject** of a **claim**
+    (typically binding between the **subject** and the **claim**), and
 -   establish whether the **subject** of two **claims** (authored by the
     same or different **parties**)
 
@@ -2096,8 +2096,8 @@ the event, email: <Leadership@WebOfTrust.info>
     refers to any subject (e.g., a person, organization, thing, data
     model, abstract entity, etc.) as determined by the controller of the
     [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)\").
-    When Ivan **issues **a VC that contains this **claim** under the
-    assumption that the **subject identifier **refers e.g., to Alice,
+    When Ivan **issues** a VC that contains this **claim** under the
+    assumption that the **subject identifier** refers e.g., to Alice,
     and Alice changes it to refer to Chuck, then the **VC** contains a
     **claim**, signed by Ivan, saying that Chuck has earned the degree.
 
