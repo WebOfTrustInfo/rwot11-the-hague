@@ -455,10 +455,9 @@ also appear in the use case) and for each of them some (functional)
 e.g. for **issuing**, **holding** (**wallets**), or **verifying**, as
 well as for e.g. securely storing **VCs**.
 
-![](Pictures/1000020100000771000002BDFE4B6147.png){width="7in"
-height="2.5701in"}
+![](images/identifier-binding.png)
 
-Figure 1: Parties and some (functional) components that work on their
+> Figure 1: Parties and some (functional) components that work on their
 behalf..
 
 The colors of the rectangles and messages represent the **party** that
