@@ -108,20 +108,20 @@ We can say that a **party** acts, but that should be interpreted to mean
 that an **actor** exists that performs this action on behalf of that
 **party**.
 
-Agent (of a party)
+#### Agent (of a party)
 
 An **actor** that is in the process of executing an action on behalf of
 that **party** (at runtime). An **actor** that is doing this fulfills
 the role of **agent** for that **party**. After the action terminates,
 the actor no longer fulfills the role of agent.
 
-Attribute
+#### Attribute
 
 A digital representation of a feature, characteristic, or quality that a
 **party** has ascribed to a specific **entity**. This data typically
 comes as a 'key-value' or 'predicate-object' pair.
 
-Authenticate, Authentication
+#### Authenticate, Authentication
 
 The process or action executed by a **party** to convince itself that a
 particular **identifier** actually (truely, genuinely) **identifies** a
@@ -129,7 +129,7 @@ specific (real world) **entity**.[^4] Note that proving control of an
 **identifier** (particularly for DIDs) in itself does not constitute
 **authentication**.
 
-Claim
+#### Claim
 
 A digital representation of a statement that a **party** (called the
 author of the **claim**) has made about an **entity** (called the
@@ -139,7 +139,7 @@ may have a **subject identifier**, with the author being the authority
 for its dereferencing. A **claim** may also consist of one or more
 **attributes** that its author has ascribed to the same **entity**.
 
-Component
+#### Component
 
 An **actor**, consisting of hardware and/or software, that operates in
 the digital realm. Typically **components** act on behalf of a specific
@@ -147,21 +147,21 @@ the digital realm. Typically **components** act on behalf of a specific
 of components will do things that are specific for their kind. Examples
 include **issuer components**, **verifier components**, or **wallets**.
 
-Credential
+#### Credential
 
 A set of one or more **claims** made by an **issuer**. The **claims** in
 a **credential** can be about different **subjects** (and because of
 this, there is no such thing as *the ***subject** of a **credential**).
 See also: **verifiable credential (VC)**.
 
-Entity
+#### Entity
 
 Someone or something that is known to exist. This is really
 anyone/anything, e.g. another person, yourself, some computer, an
 extinct animal, a thought, an idea, a JSON-object, .... , as long as
 there is at least one **party** that knows of its existence.
 
-Holder
+#### Holder
 
 A role that a **party**[^5] can perform as it (a) requests and
 obtains a **VC** from an **issuer**, (b) manages **VCs** within a
@@ -170,34 +170,30 @@ them to the **verifier** that requested it. A **holder** is usually, but
 not always, the **subject** of a **claim** in one or more of the **VCs**
 that it uses to create a VP.
 
-**Holding**
+#### Holding
 
 Any of the following activities:
 
-1.  sending a request for obtaining a **credential** (to **issuer components**
-    > of other **parties**), extracting the **credential**
-    > out of the response, and sending/storing it in (one of) the
-    > **wallet** of the **party** on whose behalf this action is
-    > executed;
-
+1.  sending a request for obtaining a **credential** (to **issuer
+components** of other **parties**), extracting the **credential** out
+of the response, and sending/storing it in (one of) the **wallet** of
+the **party** on whose behalf this action is executed;
 2.  (1) receiving a **presentation request**, (2) deciding whether to
-    > accept or reject the request, and if accepted, (3) obtaining **VCs**
-    > with which to construct the requested **presentation** from the
-    > **wallet** of the **party** on whose behalf this action is
-    > executed, (4) constructing the **presentation** as specified in
-    > the **presentation request**, adding meta-data, and
-    > cryptographically sign it, and (5) sending the result to the
-    > requester as a response to the presentation request.
-
-3.  securely storing and protecting (possibly sensitive) data, e.g.
-    > **VCs** that have been received, on behalf of the **party** on
-    > whose behalf this action is executed
-
+accept or reject the request, and if accepted, (3) obtaining **VCs**
+with which to construct the requested **presentation** from the
+**wallet** of the **party** on whose behalf this action is executed,
+(4) constructing the **presentation** as specified in the
+**presentation request**, adding meta-data, and cryptographically sign
+it, and (5) sending the result to the requester as a response to the
+presentation request.
+3.  securely storing and protecting (possibly sensitive) data,
+e.g. **VCs** that have been received, on behalf of the **party** on
+whose behalf this action is executed
 4.  controlling the (create/read/update/delete) access of the securely
-    > stored/protected data on behalf of the **party** on whose behalf
-    > this action is executed
+stored/protected data on behalf of the **party** on whose behalf this
+action is executed
 
-Identify, Identification
+#### Identify, Identification
 
 The action or process of asserting that a (real-world) **entity** is
 known by a specific **party**.[^6] Such an assertion can be done by
@@ -206,7 +202,7 @@ saying/presenting a name, an **identifier** (e.g. an email address, or a
 username) a (set of) characteristics, or relations with other
 **entities** (e.g. as in a passport), etc.
 
-Identifier
+#### Identifier
 
 Data that is used for the purpose of recognizing a (real world)
 **entity**, typically to distinguish it from other **entities** in some
@@ -214,7 +210,7 @@ set. The data is typically in the form of characters (or attribute
 sets), but could also take the form of audio (speech), pictures
 (portrait), etc., or a combination of those.
 
-**Identifier Binding**
+#### Identifier Binding
 
 The situation in which there is an **identifier** that a particular
 **party** has bound to some **entity** that it knows to exist, and has
@@ -222,7 +218,7 @@ specified one or more means that other **parties** can use to
 **identify** and/or **authenticate** that **entity**. Such means are
 typically specified as part of a **VC**.
 
-Identifier Semantics (of a Party)
+#### Identifier Semantics (of a Party)
 
 The mapping that a particular **party** uses between the **identifiers**
 that it uses and the **entities** that it knows to exist. Every
@@ -231,19 +227,19 @@ mapping, every **identifier** refers to (represents) a single
 **entity**, whereas an **entity** can be referred to (be represented by)
 multiple **identifiers**.
 
-**Issuer**
+#### Issuer
 
 A role that a **party** can perform as it authors **claims** about one
 or more **entities**, and creates a **VC** from these **claims**, and
 transmits the **VC** to a **holder**.
 
-Issuer component
+#### Issuer component
 
 A **component** that is capable of executing the actions on behalf of a
 **party** in its role of **issuer**. It does so in compliance with that
 **party's** issuer-**policy.**
 
-**Issuing**
+#### Issuing
 
 An activity that consists of (1) receiving a request for issuing a
 **VC** of a certain type, (2) deciding whether to accept or reject that
@@ -251,7 +247,7 @@ request, and if accepted[^7], (3) constructing the **claims**, adding
 metadata, cryptographically signing it, and (4) sending the result to
 the requester as a response to its request.
 
-Party
+#### Party
 
 An **entity** that has its own objectives,
 [*knowledge*](https://essif-lab.github.io/framework/docs/terms/knowledge),
@@ -275,7 +271,7 @@ this action on behalf of that **party**. Further explanations can be
 found in
 [*eSSIF-Lab*](https://essif-lab.github.io/framework/docs/terms/party).
 
-Policy
+#### Policy
 
 A (set of) rules, working instructions and/or other guidance for the
 execution of one or more kinds of actions that **agents** of the
@@ -283,14 +279,14 @@ execution of one or more kinds of actions that **agents** of the
 that this results in these **actions** being executed as intended by
 that **party**.
 
-Presentation
+#### Presentation
 
 Data that a **holder** sends to a **verifier** as a response to a
 **presentation request**, and that contains data that has been derived
 from one or more **VCs** **issued** by one or more **issuers**. See
 also: **verifiable presentation (VP)**.
 
-Presentation Request
+#### Presentation Request
 
 A (signed) digital message that a
 [**verifier**](https://essif-lab.github.io/framework/docs/terms/verifier)
@@ -299,7 +295,7 @@ more **VCs** that may be **issued** by different **parties**, and where
 this data must satisfy specific constraints and/or come with specific
 proofs or evidence.
 
-Subject
+#### Subject
 
 The **entity** to which a given set of coherent **attributes**
 relates/pertains. In a **VC**, every **claim** has a subject (**VCs**
@@ -307,7 +303,7 @@ themselves do not). In an AnonCred (a different **credential** flavor),
 there is a single **subject** (i.e. all **attributes** in an AnonCred
 pertain to the same **entity**).
 
-**Subject Identifier**
+#### Subject Identifier
 
 An **identifier**, typically in the form of a character string, that is
 being used for the **identification** of a **subject**. The **party
@@ -318,14 +314,14 @@ dereferencing it (i.e. for determining the **subject** that it
 (which in most cases is also the **issuer** of the **VC** that contains
 the **claim**).
 
-Subject Identifier Semantics (of a Party)
+#### Subject Identifier Semantics (of a Party)
 
 The mapping that a particular **party** uses between the **subject
 identifiers** that it uses in the **claims** that it **issues**, and the
 respective **entities** to which they refer (the **subjects** of these
 **claims**).
 
-User
+#### User
 
 A role that a **party** can perform as it uses a **component** (as an
 **agent**) to establish and maintain a connection with another
@@ -334,7 +330,7 @@ request and/or use and/or obtain such a service, which they do through a
 user-interface of their **agent**. Wikipedia calls this the
 [*end-user*](https://en.wikipedia.org/wiki/User_(computing)#End_user).
 
-User component
+#### User component
 
 A **component** that is capable of executing the actions on behalf of a
 **party** in its role of **user**. Typical examples include internet
@@ -346,7 +342,7 @@ given in terms of settings/preferences or as instructions that the the
 person that operates the **component** provides, e.g., through a user
 interface.
 
-**Verifier**
+#### Verifier
 
 A role that a **party** can perform by (a) requesting one or more
 **VCs** (by sending a **presentation request** to a **holder**)
@@ -354,13 +350,13 @@ optionally as a **VP**, that are intended to be used for a specific
 purpose, and (b) receiving a response, of which it verifies the
 structure and proofs.
 
-Verifier component
+#### Verifier component
 
 A **component** that is capable of executing the actions on behalf of a
 **party** in its role of **verifier**. It does so in compliance with
 that **party's** verifier-**policy**.
 
-Verifiable Credential (VC)
+#### Verifiable Credential (VC)
 
 A **credential** that is tamper-evident and contains a proof about the
 **issuer** that can be cryptographically verified. Typically, this proof
@@ -368,7 +364,7 @@ A **credential** that is tamper-evident and contains a proof about the
 **issuer** has been certified by another (possibly **identifiable**)
 **party**. **VCs** can be used to build **VPs**.
 
-Verifiable Presentation (VP)
+#### Verifiable Presentation (VP)
 
 A **presentation** that is tamper-evident and contains a proof about its
 author that can be cryptographically verified. Certain types of **VP**
@@ -376,7 +372,7 @@ might contain data that is synthesized from, but do not contain, the
 **VCs** from which the data was synthesized (for example, zero-knowledge
 proofs).
 
-Wallet
+#### Wallet
 
 A **component** that is capable of executing the **actions** on behalf
 of a **party** in its role of **holder**. It does so in compliance with
