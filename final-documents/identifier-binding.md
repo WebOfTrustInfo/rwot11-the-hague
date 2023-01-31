@@ -4,10 +4,10 @@
 
 The [*W3C Verifiable Credentials Data Model
 (VCDM)*](https://www.w3.org/TR/vc-data-model/) specifies **Verifiable
-Credentials (VCs)**[^1] as a collection of **claims **that are
+Credentials (VCs)**[^1] as a collection of **claims** that are
 **issued** by a single **party**, and **Verifiable Presentations (VPs)**
-as a collection of **claims **that a **holder **can construct from
-different **VCs **issued by different **parties**. Over the last
+as a collection of **claims** that a **holder** can construct from
+different **VCs** issued by different **parties**. Over the last
 year(s), various issues have been raised that revolve around what has
 been called 'holder binding'. The term 'holder binding' itself isn't
 clearly defined, and is in fact quite contentious. This paper seeks to
@@ -26,7 +26,7 @@ Also, they may need assurances regarding the **party** on whose behalf
 the **component** that has electronically presented the claims, has been
 using those capabilities. Our third contribution is a proposal for the
 syntax and semantics of a new property that can be used in (different
-parts of) **VCs**/**VPs**, that will provide **verifiers **with such
+parts of) **VCs**/**VPs**, that will provide **verifiers** with such
 capabilities.
 
 ## Acknowledgements
@@ -104,7 +104,7 @@ An **entity** that can act (do things/execute
 This includes e.g., people (human actors), machines (non-human actors),
 and (running) apps (digital actors). It does NOT include
 [*organizations*](https://essif-lab.github.io/framework/docs/terms/organization).
-We can say that a **party **acts, but that should be interpreted to mean
+We can say that a **party** acts, but that should be interpreted to mean
 that an **actor** exists that performs this action on behalf of that
 **party**.
 
@@ -123,8 +123,8 @@ comes as a 'key-value' or 'predicate-object' pair.
 
 Authenticate, Authentication
 
-The process or action executed by a **party **to convince itself that a
-particular **identifier** actually (truely, genuinely) **identifies **a
+The process or action executed by a **party** to convince itself that a
+particular **identifier** actually (truely, genuinely) **identifies** a
 specific (real world) **entity**.[^4] Note that proving control of an
 **identifier** (particularly for DIDs) in itself does not constitute
 **authentication**.
@@ -133,8 +133,8 @@ Claim
 
 A digital representation of a statement that a **party** (called the
 author of the **claim**) has made about an **entity** (called the
-**subject **of the **claim**). The statement may or may not be true. The
-**subject **of the **claim** may or may not be identifiable. A **claim**
+**subject** of the **claim**). The statement may or may not be true. The
+**subject** of the **claim** may or may not be identifiable. A **claim**
 may have a **subject identifier**, with the author being the authority
 for its dereferencing. A **claim** may also consist of one or more
 **attributes** that its author has ascribed to the same **entity**.
@@ -149,9 +149,9 @@ include **issuer components**, **verifier components**, or **wallets**.
 
 Credential
 
-A set of one or more **claims **made by an **issuer**. The **claims **in
+A set of one or more **claims** made by an **issuer**. The **claims** in
 a **credential **can be about different **subjects** (and because of
-this, there is no such thing as *the ***subject **of a **credential**).
+this, there is no such thing as *the ***subject** of a **credential**).
 See also: **verifiable credential (VC)**.
 
 Entity
@@ -167,7 +167,7 @@ A role that a **party**[^5]** **can perform as it (a) requests and
 obtains a **VC** from an **issuer**, (b) manages **VCs** within a
 **wallet**, or (c) creates **VPs** from one or more **VCs** and sends
 them to the **verifier** that requested it. A **holder** is usually, but
-not always, the **subject **of a **claim** in one or more of the **VCs**
+not always, the **subject** of a **claim** in one or more of the **VCs**
 that it uses to create a VP.
 
 **Holding**
@@ -194,7 +194,7 @@ Any of the following activities:
     > whose behalf this action is executed
 
 4.  controlling the (create/read/update/delete) access of the securely
-    > stored/protected data on behalf of the **party **on whose behalf
+    > stored/protected data on behalf of the **party** on whose behalf
     > this action is executed
 
 Identify, Identification
@@ -233,7 +233,7 @@ multiple **identifiers**.
 
 **Issuer**
 
-A role that a **party **can perform as it authors **claims **about one
+A role that a **party** can perform as it authors **claims** about one
 or more **entities**, and creates a **VC** from these **claims**, and
 transmits the **VC** to a **holder**.
 
@@ -265,12 +265,12 @@ rules, as well as the capability to manage/maintain these in an
 autonomous (self-sovereign) fashion. Colloquially, it is an **entity**
 that can be said to have 'a mind of its own'. Their 'minds' (subjective
 knowledge) are what distinguishes **parties **from each other (every
-**party **is 1-1 related to its knowledge/mind). Typical examples are
+**party** is 1-1 related to its knowledge/mind). Typical examples are
 individual people and
 [*organizations*](https://essif-lab.github.io/framework/docs/terms/organization)
 (but also parts of organizations, such as departments). Note that not
 all **parties** are capable of acting (e.g.: organizations). When we say
-that a **party **acts, this means that an **actor** exists that performs
+that a **party** acts, this means that an **actor** exists that performs
 this action on behalf of that **party**. Further explanations can be
 found in
 [*eSSIF-Lab*](https://essif-lab.github.io/framework/docs/terms/party).
@@ -295,7 +295,7 @@ Presentation Request
 a (signed) digital message that a
 [**verifier**](https://essif-lab.github.io/framework/docs/terms/verifier)**
 component** sends to a **wallet** asking for specific data from one or
-more **VCs **that may be **issued** by different **parties**, and where
+more **VCs** that may be **issued** by different **parties**, and where
 this data must satisfy specific constraints and/or come with specific
 proofs or evidence.
 
@@ -304,7 +304,7 @@ Subject
 The **entity** to which a given set of coherent **attributes**
 relates/pertains. In a **VC**, every **claim** has a subject (**VCs**
 themselves do not). In an AnonCred (a different **credential **flavor),
-there is a single **subject **(i.e. all **attributes** in an AnonCred
+there is a single **subject** (i.e. all **attributes** in an AnonCred
 pertain to the same **entity**).
 
 **Subject Identifier**
@@ -312,7 +312,7 @@ pertain to the same **entity**).
 An **identifier**, typically in the form of a character string, that is
 being used for the **identification **of a **subject**. The **party
 **that has authored the **subject identifier** is the authority for
-dereferencing it (i.e. for determining the **subject **that it
+dereferencing it (i.e. for determining the **subject** that it
 **identifies**). For** subject identifiers** that are used in **claims**
 (in a **VC**), this would typically be the author of the **claim**
 (which in most cases is also the **issuer** of the **VC** that contains
@@ -327,7 +327,7 @@ respective **entities** to which they refer (the **subjects** of these
 
 User
 
-A role that a **party **can perform as it uses a **component** (as an
+A role that a **party** can perform as it uses a **component** (as an
 **agent**) to establish and maintain a connection with another
 **component** of which it seeks to obtain a service. Users are said to
 request and/or use and/or obtain such a service, which they do through a
@@ -366,7 +366,7 @@ A **credential **that is tamper-evident and contains a proof about the
 **issuer **that can be cryptographically verified. Typically, this proof
 **identifies** the **issuer**, but it could also be a proof that the
 **issuer** has been certified by another (possibly **identifiable**)
-**party**. **VCs **can be used to build **VPs**.
+**party**. **VCs** can be used to build **VPs**.
 
 Verifiable Presentation (VP)
 
@@ -417,7 +417,7 @@ only because of what the **claim** means, but also because of who the
 **issuer** is, the kinds of processes that it (claims to have) used that
 result in it making these **claims**, etc.
 
-While a **party **needs to know who the **issuer** (of a
+While a **party** needs to know who the **issuer** (of a
 **claim**/**VC**) is as it is gathering data for making
 transaction-related decisions, it typically has no need to know who
 actually presents a **claim**/**VP** (the **holder**), or to whom a
@@ -600,13 +600,13 @@ the following conditions is fulfilled:
 -   a **claim** of the form (*pi*,\"isEnrolledFor\",*cvi*) exists (which
     asserts that the person **identified **by *pi* is eligible to follow
     the course variant **identified **by *cvi*);
--   this **claim **is **issued** by a **party **that Bob can rely on to
+-   this **claim **is **issued** by a **party** that Bob can rely on to
     have ensured that all conditions that he has set for entering the
     course are fulfilled. For this use case, we only consider Bob to be
     such a 'trusted **issuer**';
 -   *cvi* **identifies** a course variant that is being taught by the
     teacher;
--   *pi* **identifies **the requester (i.e. the requester is the
+-   *pi* **identifies** the requester (i.e. the requester is the
     **subject** of the claim).
 
 Bob first designs a process for **issuing** such **claims** and then
@@ -861,7 +861,7 @@ conference call rather than off the premises.
 ### 2.4 Identifier Binding
 
 A situation that occurs regularly is one in which a **party** has bound
-an **identifier **to some **entity**, and/or there is a **party **that
+an **identifier **to some **entity**, and/or there is a **party** that
 wants to learn which **entity**, if any, that **identifier** has been
 bound to. Observing how this works in the actual world helps to properly
 understand and come to grips with the mechanics involved.
@@ -933,7 +933,7 @@ means.
 
 If such means were to exist, that would conclude the various access
 scenarios we described above, because then Ivan can add such means to
-the **VCs **that it **issues** and Alice can (selectively) disclose such
+the **VCs** that it **issues** and Alice can (selectively) disclose such
 means to Bob's teachers, which in turn will be enabled to then verify
 that it is Alice that has the right to access the particular course
 variant.
@@ -995,7 +995,7 @@ that \"a
 refers to any subject (e.g., a person, organization, thing, data model,
 abstract entity, etc.) as determined by the controller of the
 [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)\",
-so a **party **should find out who controls that DID. As we mentioned
+so a **party** should find out who controls that DID. As we mentioned
 earlier, it is the **issuer** of a **VC** that should control the
 **identifier** **semantics**, so what the DID spec text thus implies is
 that the **issuer** should be the controller of every DID that it uses
@@ -1052,7 +1052,7 @@ Here is an example of how this property can be used:
 \...
 
 In the above example, the \`binding\` property is an array that contains
-three elements, each of which can help **verifiers** to **identify **and
+three elements, each of which can help **verifiers** to **identify** and
 **authenticate** the **entity** that the author of this property refers
 to using the **identifier** \"somevaliduri\". Let's assume that would be
 Alice.
@@ -1092,7 +1092,7 @@ contexts: the (suggested) \`didAuthenticationKey\`-type is useful for
 remote, electronic **identification**, and the \`passport\` and
 \`portrait\` can be used for local and/or deferred physical
 **identification**. This setup is easily extended with other means that
-enable **verifiers **to **identify/authenticate** the **entities **that
+enable **verifiers** to **identify/authenticate** the **entities **that
 serve as the subject of some **claim**. Of course, it would be useful to
 standardize, or recommend, a set of simple and common binding-types.
 That, however, is outside the scope of our proposal.
@@ -1167,7 +1167,7 @@ binding\`.
 
 Thus, if a **VC/VP** were to contain properties such as \`holder\`,
 \`presenter\`, \`issuee\`, or others[^20], this construct could also
-be used to enable **verifiers **to **identify **and/or **authenticate
+be used to enable **verifiers** to **identify** and/or **authenticate
 **the **entity **that (the value of) this \`id\` field refers to.
 
 #### 3.1.2 Using the \`evidence\` field
@@ -1297,9 +1297,9 @@ the 'evidence' property would be used for other use cases or concepts
 
 As described in the introduction, the **verifier **requires means to
 
--   **identify **the **entity **that is the **subject **of a given
+-   **identify** the **entity **that is the **subject** of a given
     **claim**
--   **authenticate** the **entity **that is the **subject **of a given
+-   **authenticate** the **entity **that is the **subject** of a given
     **claim**
 -   establish whether multiple subjects refer to the same **entity**, or
     not.
@@ -1312,18 +1312,18 @@ will always refer to the same **entity**. Hence, such identifiers can be
 used in multiple **claims**, not only as a **subject identifier**, but
 also as an 'object identifier'; it may also appear in a
 \`binding\`-property, which can be part of e.g., a **VC** that is
-specifically intended to provide **verifiers **with the ability to
+specifically intended to provide **verifiers** with the ability to
 **identify** and/or **authenticate** the **subject**.
 
 While the first and second requirements are enabled through the
 \`binding\` property, the third requirement might need additional work
 or further explanations. When the **verifier **requests multiple
-**claims **of potentially multiple VCs, he will need to know how the
+**claims** of potentially multiple VCs, he will need to know how the
 **subjects** of these claims are related, and to ensure that he can
 establish such relationships. For relationships such as one **subject**
 being a parent (child, delegate, friend) of the other, this may seem
 obvious. However, the **verifier** must also be able to establish that
-the **subject **of one **claim **is identical to (the same as) that of
+the **subject** of one **claim **is identical to (the same as) that of
 the other **claim**. After all, the **entity** that one **party** refers
 to with **identifier** X may be referred to with **identifier **Y by
 another **party**.
@@ -1335,7 +1335,7 @@ Here are some examples:
     semantics** is that of a single **party** (the **issuer**), it is
     reasonable to infer that the **subject** of both **claims** is the
     same **entity**.
--   Two **claims **(from two** VCs**) come from different **issuers**
+-   Two **claims** (from two** VCs**) come from different **issuers**
     and the value of \`credentialSubject.id\` is the same for both
     **claims**. Since there are two **identifier semantics** involved
     (one for each of the **issuers**), the **verifier** needs additional
@@ -1348,7 +1348,7 @@ Here are some examples:
 The assessment of whether two or more **claims** that originate from
 different **issuers** have the same **subject**, is a difficult matter
 that cannot be resolved in the context of the VCDM. Rather, it requires
-**verifiers **to make assumptions that they can ground, e.g., on
+**verifiers** to make assumptions that they can ground, e.g., on
 legislation or governance frameworks that the **issuers** are subjected
 (or committed) to, or on experience, best practices, or a risk
 assessment.
@@ -1802,7 +1802,7 @@ places where it should not come (how to prevent that?). Also, there may
 be nice identification attributes, e.g. a nationality + passport number.
 
 There are a number of SSI frameworks or libraries that provide functions
-for verifying **VCs **and **VPs**. Examples include but are not limited
+for verifying **VCs** and **VPs**. Examples include but are not limited
 to DIDKit, vc.js, and Veramo. Those implementations typically have a
 plugin mechanism to wire up additional proof types and other extension
 points of the VCDM to add support for these mechanisms.
@@ -1817,7 +1817,7 @@ verifying identifier binding in a similar way to verifying verifiable
 presentations. Each specific binding method could be defined as a plugin
 and **verifiers** may use the ones that are fit for their specific
 purpose. Also, since a binding can be part of an individual **VC**,
-**verifiers** can ask for **VCs **that include bindings of the type they
+**verifiers** can ask for **VCs** that include bindings of the type they
 need. The result is that the SSI application developers have to provide
 less code to implement this very common business requirement by just
 registering the identifier binding methods that are also less prone to
@@ -1889,12 +1889,12 @@ first **party**'s behalf.
 The main requirements that **verifiers** have in such cases are their
 need for a capability to:
 
--   **identify **the **entity** that is the **subject** of a **claim
+-   **identify** the **entity** that is the **subject** of a **claim
     **(typically the binding between **subject** and **subject
     identifier**),
 -   **authenticate** the **entity** that is the **subject** of a **claim
-    **(typically binding between the **subject **and the **claim**), and
--   establish whether the **subject** of two **claims **(authored by the
+    **(typically binding between the **subject** and the **claim**), and
+-   establish whether the **subject** of two **claims** (authored by the
     same or different **parties**)
 
 ```{=html}
@@ -2122,10 +2122,10 @@ the event, email: <Leadership@WebOfTrust.info>
 
 [^22]: This contradicts the SSI principle that holders should control
     their identities. However, it is inevitable as the DID spec says
-    that a **party **that controls a DID gets to determine its
+    that a **party** that controls a DID gets to determine its
     **identifier semantics** (i.e.: the DID subject).
 
 [^23]: We might look at what it takes for such **components** to issue
-    **claims** that state who the **party **is on whose behalf it
+    **claims** that state who the **party** is on whose behalf it
     operates, and how a **verifier** can trust that **component** to
     make such claims.
