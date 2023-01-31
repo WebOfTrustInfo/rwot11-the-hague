@@ -659,11 +659,11 @@ Here, we assume that
     **claim**, and
 -   this **VC** is stored in a wallet and
 -   the **wallet** that will be used in the enrollment process, has
-    access to that** VC**
+    access to that **VC**
 
 There are many ways in which these assumptions might be realized, the
 most obvious of which is that a **wallet** belonging to Alice
-electronically requests such a **VC** from the **issuer component **of
+electronically requests such a **VC** from the **issuer component** of
 Ivan, which then decides whether or not to issue a **VC** to Alice, and
 if so, what **claim(s)** to include in it (and which **subject
 identifiers** to use), and then send it to Alice's **wallet** which then
@@ -688,7 +688,7 @@ specific variety is identified with MLAS-3). Bob's enrollment
 application (that includes a **verifier component**) connects to the
 **wallet** she has chosen to use, and sends it a **presentation
 request** that asks for a **claim** of the form (si,\"passed\",\"SOL\")
-that has been **issued** by Ivan. Alice's **wallet **finds the **VC**
+that has been **issued** by Ivan. Alice's **wallet** finds the **VC**
 **issued** by Ivan that contains (\"somevaliduri\",\"passed\",\"SOL\"),
 sends that **VC** to the **wallet** which in turn constructs a **VP**
 that includes the **claim** and the proof that Ivan has **issued** it,
@@ -708,17 +708,17 @@ for the course. She would do well to only ask someone she can entrust
 with this task. She decides to ask Trevor.
 
 Trevor proceeds in exactly the same way as Alice did in the previous
-scenario. He only needs the ability to find the **VC** that was **issued
-**by Ivan and that contains (\"somevaliduri\",\"passed\",\"SOL\").
+scenario. He only needs the ability to find the **VC** that was **issued**
+by Ivan and that contains (\"somevaliduri\",\"passed\",\"SOL\").
 
-There are several ways this can be arranged: Alice can send the **VC
-**to him, she could provide the **wallet** he will be using (for reading
+There are several ways this can be arranged: Alice can send the **VC**
+to him, she could provide the **wallet** he will be using (for reading
 the particular **VC**), or she could provide him with the means that
 enable him to successfully obtain a **VC** from Ivan that includes that
 **claim**. The details of this are outside the scope of this particular
 use case.
 
-Also, Trevor should make sure that the **VC **that was **issued** to his
+Also, Trevor should make sure that the **VC** that was **issued** to his
 **wallet** by (the enrollment application of) Bob gets forwarded to
 Alice. This is not a necessity though: if Trevor doesn't do that, Alice
 could still request the **VC** from Bob as Bob has registered the fact
@@ -757,9 +757,9 @@ Another option is that Bob implements the enrollment application such
 that it asks its **user** to provide a **VC** that can be used to
 **identify** and **authenticate** the **user**, enabling Bob to find and
 sue those that have exhibited misbehavior. The enrollment application
-should make sure that this **identification** and **authentication VC
-**is valid for that purpose, e.g. by having the **user authenticate
-**using the **claims** in that **VC**.
+should make sure that this **identification** and **authentication VC**
+is valid for that purpose, e.g. by having the **user authenticate**
+using the **claims** in that **VC**.
 
 ### 2.3 Access Scenarios
 
@@ -775,13 +775,13 @@ they like. That is to say: anyone using the MOOC service would need a
 service on its behalf. That **user component** will request access to
 the course provided by the MOOC service. The MOOC server must request a
 **presentation** that includes a **claim** of the
-form(*si*,\"isEnrolledFor\",\"MOOC\") which a **wallet component **(that
+form(*si*,\"isEnrolledFor\",\"MOOC\") which a **wallet component** (that
 could be part of the **user component**) would provide. The MOOC server
 then needs to verify that
 
 A.  the **claim** has the requested format, and is **issued** by Bob,
     and that
-B.  the **wallet **operates on behalf of the **entity** to which *si*
+B.  the **wallet** operates on behalf of the **entity** to which *si*
     refers (the **subject** of that **claim**).
 
 It doesn't matter whether the **user** **component** provides such a
@@ -833,8 +833,8 @@ of the students is referred to by the various **subject identifiers**
 *si*. We refer the reader again to the [separate
 section](#_dw5ekdnp4kyd), 2.4 Identifier Binding, about this.
 
-Note that it is not necessary that a student presents the **claim
-**(*si*,\"isEnrolledFor\",*cvi*) for which that student is the
+Note that it is not necessary that a student presents the **claim**
+(*si*,\"isEnrolledFor\",*cvi*) for which that student is the
 **subject**. For example, a group of students might have organized it
 such that the group leader would be able to present such **claims** for
 all group members.
@@ -889,7 +889,7 @@ had").
 Many **parties** will make some effort to make their **identifier
 semantics** 'interoperable' with that of other **parties** i.e. that a
 subset of the **identifiers** that it uses have the property that these
-**identifiers **(data) are also used by other **parties** to refer to
+**identifiers** (data) are also used by other **parties** to refer to
 that same **entity**.
 
 It is a common misconception to assume that this is naturally the case.
@@ -1009,7 +1009,7 @@ learn which **entity** is actually being referred to.
 We propose to specify a new property, provisionally called \`binding\`,
 the purpose of which is to enable **parties** (specifically those in the
 role of **verifier**), to determine which **entity** a particular
-**identifier** refers to when it is used in a **VC **or **VP**. We start
+**identifier** refers to when it is used in a **VC** or **VP**. We start
 with elaborating on our proposal, and proceed to give examples of how it
 can be used.
 
@@ -1116,7 +1116,7 @@ In the following sections, we offer solutions on how to integrate the
 #### 3.1.1 Add a \`binding\` property to a \`credentialSubject\` element
 
 Our first proposal suggests adding the \`binding\` property to the
-contents of the \`credentialSubject\` element of the **VC **that has
+contents of the \`credentialSubject\` element of the **VC** that has
 been issued by Ivan to attest that Alice has passed the exam for SOL
 (**VC** metadata and signature are omitted):
 
@@ -1844,7 +1844,7 @@ What might be a topic to consider is that, when a VC is transferred from
 one **party** to another, there would be a way to obscure some of the
 \`binding\` elements so that the **party** to which the VC is
 transferred does not learn all the means by which the enclosed
-**identifiers **can be dereferenced. One mechanism could be to use the
+**identifiers** can be dereferenced. One mechanism could be to use the
 third option of our proposal, i.e. **issuing** the binding properties as
 stand-alone **VCs**, and RECOMMEND that **issuers** would only **issue**
 these **VC**s to a **wallet** that is an **agent** of the **party** that
@@ -2098,7 +2098,7 @@ the event, email: <Leadership@WebOfTrust.info>
     [DID](https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)\").
     When Ivan **issues **a VC that contains this **claim** under the
     assumption that the **subject identifier **refers e.g., to Alice,
-    and Alice changes it to refer to Chuck, then the **VC **contains a
+    and Alice changes it to refer to Chuck, then the **VC** contains a
     **claim**, signed by Ivan, saying that Chuck has earned the degree.
 
 [^17]: This is because Bob has searched for such **claims**, found the
