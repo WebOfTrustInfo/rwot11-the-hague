@@ -436,6 +436,7 @@ this statement actually means out of scope.
 >    * are in fact the same **entity**, 
 >    * are different **entities**, or 
 >    * are **entities** of which it cannot be determined that they are the same or different.
+>
 > Providing means to fulfill at least some of these requirements is the topic of this paper.                                            
 
 
