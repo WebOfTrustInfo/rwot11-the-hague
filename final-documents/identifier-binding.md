@@ -956,8 +956,8 @@ acceptable that someone other than the **party** that needs to be
 case is to be determined by the **verifier**. So to prevent
 misunderstandings, we distinguish between the roles **holder** (that
 **hold** various **claims** (**VCs**)) and **user** (that interacts with
-(IT) services of other **parties**, and for which **identification
-**and/or **authentication** may be required).
+(IT) services of other **parties**, and for which **identification**
+and/or **authentication** may be required).
 
 All this suggests that the phrase 'holder binding' is not only
 contentious, but also misleading, as it leads people to focus on
@@ -1076,7 +1076,7 @@ can ask a **user** that purports to be identifiable with either
 identifier to show a passport, verify that it has been issued by the
 Dutch government and has serial number 012345678, and from there see if
 the person matches the photograph and everything else that is customary
-when **authenticating **someone by her passport.
+when **authenticating** someone by her passport.
 
 The third \`binding\`-element (of type \"portrait\"), specifies a
 portrait (an image of the front of the head of a person) in \`png\`
@@ -1140,7 +1140,7 @@ The \<array of binding-elements\> is the same as in the previous section
 (and left out for conciseness). Whenever a **verifier **needs to**
 identify/authenticate** a person as Alice, any of these elements
 provides a specific way determined by the **issuer** by which the
-**verifier **can do so, as long as he makes sure that the \`id\` field
+**verifier** can do so, as long as he makes sure that the \`id\` field
 of the \`credentialSubject\` element matches one of the \`id\` field
 elements of the \`binding\`-element that it chooses to use for
 **identification** and **authentication** of Alice.
@@ -1167,8 +1167,8 @@ binding\`.
 
 Thus, if a **VC/VP** were to contain properties such as \`holder\`,
 \`presenter\`, \`issuee\`, or others[^20], this construct could also
-be used to enable **verifiers** to **identify** and/or **authenticate
-**the **entity** that (the value of) this \`id\` field refers to.
+be used to enable **verifiers** to **identify** and/or **authenticate**
+the **entity** that (the value of) this \`id\` field refers to.
 
 #### 3.1.2 Using the \`evidence\` field
 
@@ -1295,7 +1295,7 @@ the 'evidence' property would be used for other use cases or concepts
 
 ### 3.2 Using identifier binding across multiple VCs
 
-As described in the introduction, the **verifier **requires means to
+As described in the introduction, the **verifier** requires means to
 
 -   **identify** the **entity** that is the **subject** of a given
     **claim**
@@ -1317,7 +1317,7 @@ specifically intended to provide **verifiers** with the ability to
 
 While the first and second requirements are enabled through the
 \`binding\` property, the third requirement might need additional work
-or further explanations. When the **verifier **requests multiple
+or further explanations. When the **verifier** requests multiple
 **claims** of potentially multiple VCs, he will need to know how the
 **subjects** of these claims are related, and to ensure that he can
 establish such relationships. For relationships such as one **subject**
@@ -1940,7 +1940,7 @@ typically not **parties** that interact with each other, but that each
 of them also uses some (often IT) **components** to contribute to that
 interaction on their behalf. **Users** would typically employ a mobile
 phone or tablet, which in practice may be shared with others. A
-**verifier **whose business rules state he MUST know who the **party**
+**verifier** whose business rules state he MUST know who the **party**
 is that operates a **component** that has sent a **VC**/**VP**, may need
 to establish the relation between that IT **component** and this
 **party** on whose behalf it operates, which is a topic that we consider
