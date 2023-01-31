@@ -2,6 +2,12 @@
 
 _This is a listing for the RWOT9 papers to date. [Several more](../draft-documents/README.md) are in process._
 
+## [*Identifier Binding: defining the Core of Holder Binding*](identifier-binding.pdf) [(Text)](identifier-binding.md)
+
+#### by Paul Bastian, Rieks Joosten, Zaïda Rivai, Oliver Terbu, Snorre Lothar von Gohren Edwin, Antonio Antonino, Nikos Fotiou, Stephen Curran, and Ahamed Azeem
+
+> The [*W3C Verifiable Credentials Data Model(VCDM)*](https://www.w3.org/TR/vc-data-model/) specifies **Verifiable Credentials (VCs)**[^1] as a collection of **claims** that are **issued** by a single **party**, and **Verifiable Presentations (VPs)** as a collection of **claims** that a **holder** can construct from different **VCs** issued by different **parties**. Over the last year(s), various issues have been raised that revolve around what has been called 'holder binding'. The term 'holder binding' itself isn't clearly defined, and is in fact quite contentious. This paper seeks to come to grips with this discussion. Our first contribution is the specification of a terminology, which is intended to help readers understand what we mean to say without requiring them to make assumptions about such meanings (as is often the case in discussions about 'holder binding'). Our second contribution is an analysis of a (fictitious) use-case that suggests that **verifiers** typically do not need to know who the **holder** is (i.e. who has presented the **claims** to be **verified**). This analysis shows that **verifiers** need capabilities to (a) learn which **entity** is the **subject** of a particular **claim**, and (b) to know whether or not two **subject identifiers** refer to the same **entity** or to different **entities**. Also, they may need assurances regarding the **party** on whose behalf the **component** that has electronically presented the claims, has been using those capabilities. Our third contribution is a proposal for the syntax and semantics of a new property that can be used in (different parts of) **VCs**/**VPs**, that will provide **verifiers** with such capabilities.
+
 ## [*Linking Credentials with Data Exchange Agreements through Secured Inclusive Interfaces*](data-exchange-agreements-with-oca.pdf) [(Text)](data-exchange-agreements-with-oca.md)
 
 #### by  Lal Chandran, Lotta Lundin, Fredrik Lindén,  Philippe Page,  Paul Knowles,  Víctor Martínez Jurado,  Andrew Slack
