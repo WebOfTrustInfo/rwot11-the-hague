@@ -251,7 +251,7 @@ To enable progressive disclosure capabilities, stakeholders in the credentials e
 * Issuers format the credential(s) in such a way as to enable progressive disclosure. This requires issuing credentials that can be selectively disclosed multiple times. Each presentation will share attributes that have not been shared before. 
 * Inspectors ensure that requests are framed in such a way as to enable progressive trust. This requires presentation protocols that can link together some previously made presentations, forming a progressive trust instance.
 
-## Technology Characteristics and Choices
+## Technology Characteristics
 
 In this section, we can develop a list of technical characteristics with regard to (anti-)correlation, and try to map how different technology choices can fulfill them.
 
@@ -270,8 +270,6 @@ Characteristics:
 * **[C6]** When disclosing data to the same Verifier in multiple different interactions, the Verifier cannot correlate the subject via any single, unique identifier.
 * **[C7]** The Verifier can verify that the Holder who is disclosing the data is the same entity that has received the data from an Issuer. *<-- Note: Maybe reference the work of the other RWoT11 group that's working on "holder binding"*
 * **[C8]** The Holder can selectively disclose data that is derived (using predicates) from the original data they have received from an Issuer.
-* Type(s) of crypthography used.
-* ...
 
 Choices:
 * **[PLAINSIG]** Plain signatures: Ed25519Signature2020, RSA signatures, etc.
@@ -290,20 +288,24 @@ Choices:
 
 Mapping of Characteristics and Technologies
 
-| Technology      | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 |
-| ---             | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-|PLAINSIG         | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✓ | ✕ | ? |
-|SUBCREDS         | ✓ | ✓ | ✓ | ✕ | ✕ | ✕ | ✓ | ✕ | ? |
-|SINGLEUSECREDS   | ✓ | ✕ | ✕ | ✕ | ✓ | ✓ | ✕ | ✕ | ? |
-|BBS2020-LD       | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ? |
-|ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ? |
-|SD-JWT           | ? | ? | ? | ? | ? | ? | ? | ? | ? |
-|JWP              | ? | ? | ? | ? | ? | ? | ? | ? | ? |
-|REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ | ? |
-|COCONUT          | ? | ? | ? | ? | ? | ? | ? | ? | ? |
-|GORDIAN          | ✓ | ✓ | ✓ | ✓ | ? | ? | ? | ? | ? |
+| Technology      | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 |
+| ---             | -- | -- | -- | -- | -- | -- | -- | -- |
+|PLAINSIG         | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✓ | ✕ |
+|SUBCREDS         | ✓ | ✓ | ✓ | ✕ | ✕ | ✕ | ✓ | ✕ |
+|SINGLEUSECREDS   | ✓ | ✕ | ✕ | ✕ | ✓ | ✓ | ✕ | ✕ |
+|BBS2020-LD       | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ |
+|ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+|SD-JWT           | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|JWP *            | ✓ | ✓ | ✓ | (✓) | (✓) | (✓) | ✓ | (✓) |
+|REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|COCONUT          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✓ |
+|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | (✓) | ? |
+
+\* C4, C5, C6, C8 depend on the underlying JSON Proof Algorithm (JPA).
+
+\** C5 can be done by issuers, but not holders. C7 can be achieved via encryption techniques.
 
 # Use Cases
 [//]: # (We'd like to have a progressive set of use case to demonstration desireable and undesirable correlation, but also avoid government focused scenarios -- in particular the overused over-21 mobile driver's license example )
