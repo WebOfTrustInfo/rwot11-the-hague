@@ -48,74 +48,76 @@ We define an observer as an entity who collects correlatable data about a subjec
 
 ## Data Minimization
 
-We define Data Minimization as the practice of limiting the amount of shared data to the minimum necessary — only sufficient for parties to successfully transact, accomplish a task, or otherwise meet a goal with each other while minimizing risks to all parties. In particular, Minimimal Disclosure is essential practice for digital identity and privacy or people, and thus requires that personal information should only be collected and shared when absolutely necessary.
+Data Minimization is the practice of limiting the amount of shared data to the minimum necessary: just enough for parties to successfully transact, accomplish a task, or otherwise meet a goal with each other, while minimizing risks to all parties by omitting unnecessary content. 
 
-The best practices of Data Minimization guide the design and implementation of data protection regulations, such as the General Data Protection Regulation (GDPR) in the European Union:
+Though essential as part of security best practices (along with [Least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege), a topic for a future musing), Minimimal Disclosure is, in particular, is mandated practice for maintaining the privacy of people using digital identities and thus requires special attention  when collecting and sharing, to curtail personal information to only that which is absolutely necessary.
 
-* Only collect the minimum amount of personal information necessary to perform a specific task or service.
-* Only share personal information with third parties when it is necessary to perform that task or service.
-* Limit the length of time personal information is retained, and delete it when it is no longer needed.
+The best practices of Data Minimization guide the design and implementation of personal data protection regulations, such as the General Data Protection Regulation (GDPR) in the European Union. They include:
 
-The GDPR supports these best practices by requiring companies to have a legal basis for collecting and processing personal information, and by giving individuals the right to access, correct, and delete their personal information. The GDPR also requires companies to implement appropriate security measures to protect personal information, and to notify individuals and authorities in case of a data breach.
+* Service providers must only collect the minimum amount of personal information necessary to perform a specific task or service.
+* Service providers must imit the length of time personal information is retained and must delete it when it is no longer needed.
+* Individuals should only share personal information with third parties when it is necessary to perform a task or service.
+
+The GDPR supports these best practices by requiring companies to have a legal basis for collecting and processing personal information and by giving individuals the right to access, correct, and delete their personal information. The GDPR also requires companies to implement appropriate security measures to protect personal information and to notify individuals and authorities in case of a data breach.
 
 Other regulations that require some form of Data Minimization include:
 
-* The California Consumer Privacy Act (CCPA) in the United States, requires businesses to disclose the categories of personal information that they collect, use, disclose, and sell and also to obtain consumer consent for the sale of personal information.
-* The Payment Card Industry Data Security Standard (PCI DSS) which is a set of security standards for organizations that handle credit card information, requires merchants to limit the amount of cardholder data that is stored, processed, or transmitted.
+* The California Consumer Privacy Act (CCPA) in the United States, which requires businesses to disclose the categories of personal information that they collect, use, disclose, and sell and also to obtain consumer consent for the sale of personal information.
+* The Payment Card Industry Data Security Standard (PCI DSS), which is a set of security standards for organizations that handle credit card information and which requires merchants to limit the amount of cardholder data that is stored, processed, or transmitted.
 * The Personal Information Protection and Electronic Documents Act (PIPEDA) in Canada, which requires organizations to collect only the personal information that is necessary for the identified purpose.
 * The Health Insurance Portability and Accountability Act (HIPAA) in the United States, which requires healthcare organizations to protect the privacy of patient health information and to collect only the minimum necessary information to provide care.
-* The Cybersecurity Information Sharing Act (CISA) in the United States, which encourages organizations to share information about cybersecurity threats, but also requires companies to protect personal information and limit the collection of data to that which is necessary to address the threat.
+* The Cybersecurity Information Sharing Act (CISA) in the United States, which encourages organizations to share information about cybersecurity threats, but also requires companies to protect personal information and to limit the collection of data to that which is necessary to address the threat.
 
-In general, Data Minimization is enacted by making policy decisions to limit in three ways: the amount, duration, and scope of data collection and use.
+In general, Data Minimization is enacted by policy decisions that limit the amount, duration, and scope of data collection and use.
 
-* Content minimization, which involves collecting only the minimum amount of data necessary
-* Temporal minimization, which involves retaining data only for the minimum amount of time necessary to execute the task
-* Scope minimization, which involves using data only for the specific purpose of the active task.
+* **Content minimization (amount)** involves collecting only the minimum amount of data necessary.
+* **Temporal minimization (duration)** involves retaining data only for the minimum amount of time necessary to execute the task.
+* **Scope minimization (scope)** involves using data only for the specific purpose of the active task.
 
-In the digital credentials ecosystem, data minimization is primarily implemented through policy decisions made by stakeholders. Credential issuers ensure that credentials can be presented in a way that enables data minimization, and credential inspectors establish policies in advance regarding the minimum data necessary to accomplish a task, the minimum time data can be stored, and the processes that ensure data is only applied to the task at hand.
+In the digital credentials ecosystem, data minimization is primarily implemented through policy decisions made by stakeholders: credential issuers ensure that credentials can be presented in a way that enables data minimization, and credential inspectors establish policies in advance regarding the minimum data necessary to accomplish a task, the minimum time data can be stored, and the processes that ensure data is only applied to the task at hand.
 
-Subjects may desire data minimization for various reasons, such as reducing the risk of undesired correlation or providing information gradually (Progressive Trust). Verifiers may also desire data minimization for various reasons, such as avoiding appearing threatening, protecting from "I told you so" situations, avoiding potential collection of "toxic" GDPR data, and reducing the cost of storing information.
+Subjects may desire data minimization for various reasons, such as reducing the risk of undesired correlation or providing information gradually ([Progressive Trust](https://www.blockchaincommons.com/musings/musings-progressive-trust/)). Verifiers may also desire data minimization for other reasons, such as avoiding appearing threatening, protecting from "I told you so" situations, avoiding potential collection of "toxic" GDPR data, and reducing the cost of storing information.
 
 ISO (International Organization for Standardization) has several standards related to data protection and privacy that include principles of data minimization. Some examples include:
 
-* ISO/IEC 27001:2013 - Information security management systems (ISMS) - This standard provides a framework for managing sensitive information and includes a requirement for organizations to minimize the amount of sensitive information that is collected, used, and retained.
-* ISO/IEC 29100:2011 - Privacy framework - This standard provides a framework for protecting personal information and includes a requirement for organizations to only collect personal information that is necessary for the specific purpose for which it is being collected.
-* ISO/IEC 27701:2019 - Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management - This standard provides a framework for managing personal information and includes a requirement for organizations to minimize the amount of personal information that is collected, used, and retained.
-* ISO/IEC 29151:2012 - Information technology - Security techniques - Data-at-rest protection - This standard provides guidance for protecting data when it is stored and includes a requirement for organizations to minimize the amount of sensitive information that is stored.
-* ISO/IEC 27040:2015 - Storage security - This standard provides guidance for protecting data when it is stored and includes a requirement for organizations to minimize the amount of sensitive information that is stored.
+* **ISO/IEC 27001:2013 - Information security management systems (ISMS)** provides a framework for managing sensitive information and includes a requirement for organizations to minimize the amount of sensitive information that is collected, used, and retained.
+* **ISO/IEC 29100:2011 - Privacy framework** provides a framework for protecting personal information and includes a requirement for organizations to only collect personal information that is necessary for the specific purpose for which it is being collected.
+* **ISO/IEC 27701:2019 - Extension to ISO/IEC 27001 and ISO/IEC 27002 for privacy information management** provides a framework for managing personal information and includes a requirement for organizations to minimize the amount of personal information that is collected, used, and retained.
+* **ISO/IEC 29151:2012 - Information technology - Security techniques - Data-at-rest protection** provides guidance for protecting data when it is stored and includes a requirement for organizations to minimize the amount of sensitive information that is stored.
+* **ISO/IEC 27040:2015 - Storage security** provides guidance for protecting data when it is stored and includes a requirement for organizations to minimize the amount of sensitive information that is stored.
 
 Data minimization can be challenging to implement due to a number of factors, such as:
 
-* Difficulty in determining the minimum necessary data: It can be difficult to determine exactly how much data is necessary to accomplish a specific task or goal, especially when dealing with complex systems and processes.
-* Balancing data minimization with other goals: Organizations may be torn between the need to collect and retain data for legitimate business purposes and the need to minimize data to protect privacy and security.
-* Data silos: Data may be collected and stored across multiple systems and departments, making it difficult to identify and remove unnecessary data.
-* Lack of user consent: Data minimization may not be possible if users are not willing to share their personal information, which can make it difficult to implement privacy-enhancing technologies like selective disclosure.
+* **Difficulty in determining the minimum necessary data:** It can be difficult to determine exactly how much data is necessary to accomplish a specific task or goal, especially when dealing with complex systems and processes.
+* **Balance of data minimization with other goals:** Organizations may be torn between the need to collect and retain data for legitimate business purposes and the need to minimize data to protect privacy and security.
+* **Usage of data silos:** Data may be collected and stored across multiple systems and departments, making it difficult to identify and remove unnecessary data.
+* **Lack of user consent:** Data minimization may not be possible if users are not willing to share their personal information, which can make it difficult to implement privacy-enhancing technologies such as selective disclosure.
 
 ## Selective Disclosure
 
-"Selective Disclosure" is one of a number of privacy-enhancing techniques that goes beyond Data Minimization to protect against correlation. Selective Disclosure allows individuals or organizations to share only specific pieces of information, rather than sharing all of them, and prevents using correlation inappropriately to merge information from different contexts without consent. Selective Disclosure offers approaches to balance the need to share information for legitimate purposes to minimize risks, against the need to protect the privacy and security of people.    
+"Selective Disclosure" is one of a number of privacy-enhancing techniques that go beyond Data Minimization to also protect against correlation. Selective Disclosure allows individuals or organizations to share only specific pieces of information, rather than sharing all of them, and prevents using correlation inappropriately to merge information from different contexts without consent. Selective Disclosure offers approaches that balance the need to share information for legitimate purposes against the need to protect the privacy and security of people and to minimize risks. 
 
-GDPR does not mandate the use of selective disclosure, but the GDPR does gives individuals the right to control their personal information, the right to access, correct, and delete their personal information, and the right to object to certain processing activities. The California Consumer Privacy Act (CCPA) also allows individuals to know what personal information is being collected and shared, and to opt out of the sale of their personal information.
+GDPR does not mandate the use of Selective Disclosure, but the GDPR does gives individuals the right to control their personal information, the right to access, correct, and delete their personal information, and the right to object to certain processing activities. The California Consumer Privacy Act (CCPA) also allows individuals to know what personal information is being collected and shared and to opt out of the sale of their personal information.
 
-In addition, some organizations have developed their own standards for selective disclosure, such as the Platform for Privacy Preferences (P3P) which provides a mechanism for websites to disclose their data collection and sharing practices, and for individuals to set their privacy preferences.
+In addition, some organizations have developed their own standards for Selective Disclosure, such as the Platform for Privacy Preferences (P3P) which provides a mechanism for websites to disclose their data collection and sharing practices and for individuals to set their privacy preferences.
 
-Some principles of selective disclosure include:
+Some requirements for Selective Disclosure include:
 
-* Granularity: Allows individual or organizations to share only specific pieces of information, rather than sharing all of their personal information. This enables users to share only the information that is necessary to accomplish a specific task or goal.
-* Control: Give users more control over their personal information by allowing them to decide what information they want to share, and with whom they want to share it.
-* Transparency: Allow users to see what information is being shared and with whom, which enhances trust and transparency in the sharing process.
-* Security: Uses cryptographic techniques to secure the information shared, ensuring that only authorized individuals or organizations can access the information.
-* Privacy: Help  protect privacy by minimizing the amount of personal information that is shared, reducing the risk of data breaches or unauthorized access to personal information.
-* Compliance: Help organizations to comply with data protection regulations, such as GDPR, by minimizing the amount of personal data collected, used and retained.
-* Auditability: Allow organizations to track and audit information sharing activities, providing transparency on how the data is being used.
-* Flexibility: Allow organizations to adapt the sharing process to different scenarios and use cases, providing the necessary flexibility.
+* **Granularity:** Allow individual or organizations to share only specific pieces of information, rather than sharing all of their personal information. This enables users to share only the information that is necessary to accomplish a specific task or goal.
+* **Control:** Give users more control over their personal information by allowing them to decide what information they want to share, and with whom they want to share it.
+* **Transparency:** Allow users to see what information is being shared and with whom, which enhances trust and transparency in the sharing process.
+* **Security:** Use cryptographic techniques to secure the information shared, ensuring that only authorized individuals or organizations can access the information.
+* **Privacy:** Minimize the amount of personal information that is shared, reducing the risk of data breaches or unauthorized access to personal information.
+* **Compliance:** Help organizations to comply with data protection regulations, such as GDPR, by minimizing the amount of personal data collected, used and retained.
+* **Auditability:** Allow organizations to track and audit information-sharing activities, providing transparency on how the data is being used.
+* **Flexibility:** Allow organizations to adapt the sharing process to different scenarios and use cases, providing necessary flexibility.
 
 More specifically, Selective Disclosure can help address some of the challenges of Data Minimization mentioned above:
 
-*  Difficulty in determining the minimum necessary data: By allowing users to share only the specific information needed to accomplish a task or goal,  selective discllosur can limit the data collection to only of necessary information, without collecting additional sensitive information that is not needed.
-* Balancing data minimization with other goals: XXXXX 
-* Data silos: Selective Disclosure can help with data silos by allowing users to share information from different systems and departments while ensuring that only authorized individuals or organizations can access the information and it is not shared or stored for longer than necessary. This can also help organizations to comply with data protection regulations, such as GDPR, by minimizing the amount of personal data collected, used, and retained.
-* Lack of user consent: By giving users more control over their personal information, selective disclosure allows organizations to obtain user consent for sharing their information in a more effective way. Users can choose what information they want to share and with whom, giving them the ability to have control over the information that the organization has access to. This can also increase trust and transparency between the organization and its users.
+*  **Difficulty in determining the minimum necessary data:** By allowing users to share only the specific information needed to accomplish a task or goal, Selective Disclosure can limit the data collection to only necessary information, avoiding additional information that is sensitive and potentially toxic.
+* **Balance of data minimization with other goals:** By requiring granulatity in Selective Disclosure, the different goals of different groups can be evaluated and addressed.
+* **Usage of data silos:** Selective Disclosure can help with data silos by allowing users to share information from different systems and departments while ensuring that only authorized individuals or organizations can access the information and that it is not shared or stored for longer than necessary. This can also help organizations to comply with data protection regulations such as GDPR.
+* **Lack of user consent:** By giving users more control over their personal information, Selective Disclosure allows organizations to obtain user consent for information sharing in a more effective way. Users can choose what information they want to share and with whom, giving them control over what information an organization has access to. This can also increase trust and transparency between the organization and its users.
 
 ## Cryptographic Techniques for Selective Disclosure
 
