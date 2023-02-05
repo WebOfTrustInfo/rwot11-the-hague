@@ -37,13 +37,18 @@ Micro-credentials allow for easier data minimization, editing and reissuance of 
 
 In addition to introducing and illustrating the `digestMultibase` mechanism, this paper proposes a new VC type `LinkedClaim`, used to import third party claims from possibly untrusted sources, with a `confidence` property to indicate the level to which the issuer wishes to express confidence in the imported claim. 
 
+## Mental Model
+
+A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.   
+
+Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
+<br/>
 
 ### A Brief Primer on Verifiable Presentations
 
 VPs are a general purpose wrapper/envelope for one or more VCs. When an Issuer sends VCs to a wallet, it sends them wrapped inside a VP envelope. When a wallet holder presents VCs to a requesting party, the wallet also wraps them inside a VP envelope.
 
 Aside from serving as a lightweight container for one or more VCs, VPs allow the optional authentication of the presenting party (which is useful in many use cases).
-
 
 
 * VPs don’t have to be signed. Performing DID-Authentication is optional. It’s reserved for use cases where it’s important for the receiver to know who the presentation is coming from.
@@ -64,16 +69,7 @@ Aside from serving as a lightweight container for one or more VCs, VPs allow the
     * human-readable description of the assertion
     * an optional rating (such as for ecommerce product reviews)
 
-Nice to haves include:
-
-
-
-1. Ability to create “local names” from the perspective of the issuer to generate URIs for things that do not have authoritative URIs
-2. Ability to compose one or more minimal LinkedClaim VCs into a composite for a specific use case
-3. A claim may provide a "respondAt" URI with a convenience interface to sign a linkedClaim attesting to the validity of the claim or any of its elements.
-
 ## Cryptographic Binding via digestMultibase
-
 
 This paper introduces the optional property <strong><code>digestMultibase</code></strong>, used to include a verifiable hash of the corresponding<code> <strong>id</strong></code> element. This enables safely linking to an external non-VC object in the <strong><code>id</code></strong> field, while still being able to verify that its content has not changed since making the assertion.
 
@@ -111,22 +107,6 @@ The <strong><code>digestMultibase</code></strong> mechanism referenced in this p
 The IETF [Cryptographic Hyperlinks IETF Draft](https://datatracker.ietf.org/doc/html/draft-sporny-hashlink-07) by Manu Sporny is an earlier iteration of <strong><code>digestMultibase</code></strong>, and combines a URI and a digest value in a single string.
 
 The IETF [ACDC - Authentic Chained Data Containers Draft](https://www.ietf.org/archive/id/draft-ssmith-acdc-02.html) uses a mechanism similar to digestMultibase (a combination of identifiers and digest hashes).
-
-
-## Data Model
-
-A context containing the proposed properties, as well as a suggested minimal generic claim for including third party sources and a convenience field for responding to a published claim, is available at **[https://cooperation.org/credentials/v1/](https://cooperation.org/credentials/v1/)** 
- 
-For examples corresponding to the use cases in this paper, see.  see [composable claims examples and reference application](https://codeberg.org/cooperation/LinkedClaims/)
-
-<img align="right" src="resources/composable-credentials/mental-model.png"/>
-
-## Mental Model
-
-A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.   
-
-Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
-<br/>
 
 ## Use Cases
 
@@ -374,6 +354,11 @@ Source: Charles, secondhand
 }
 ```
 
+A context containing the proposed properties, as well as a suggested minimal generic claim for including third party sources and a convenience field for responding to a published claim, is available at **[https://cooperation.org/credentials/v1/](https://cooperation.org/credentials/v1/)** 
+ 
+For examples corresponding to the use cases in this paper, see.  see [composable claims examples and reference application](https://codeberg.org/cooperation/LinkedClaims/)
+
+<img align="right" src="resources/composable-credentials/mental-model.png"/>
 
 
 ### Standalone Claim - Review
