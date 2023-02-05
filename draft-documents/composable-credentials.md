@@ -39,11 +39,12 @@ In addition to introducing and illustrating the `digestMultibase` mechanism, thi
 
 ## Mental Model
 
-A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.   
+A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.  
+
+<img align="right" src="resources/composable-credentials/mental-model.png"/>
 
 Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
 <br/>
-<img align="right" src="resources/composable-credentials/mental-model.png"/>
 
 
 ### A Brief Primer on Verifiable Presentations
