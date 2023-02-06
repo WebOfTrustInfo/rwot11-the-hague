@@ -10,7 +10,6 @@
 * Phillip D. Long - T3 Innovation Network, Georgetown University & ASU
 * Dmitri Zagidulin - MIT Digital Credentials Consortium
 * Golda Velez - Cooperation.org 
-* Oliver Klingefjord - @Klingefjord
 
 ## Abstract
 
