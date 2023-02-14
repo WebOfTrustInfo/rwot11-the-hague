@@ -173,41 +173,42 @@ Pre-Conditions:</span> Layla has: a DID; credential wallet supporting self-autho
 Layla Soliman registered to attend her disciplinary conference in molecular genetics. The conference organizers asked her to review a paper submitted for presentation at the meeting to which she agreed. The organizers send Layla a link to the paper in a Google docs directory.
 
 Layla follows the link to the paper, reads the reviewer guidelines, and sets out reading and taking notes to prepare for writing her review. On completion of reading the submitted manuscript she prepares her final comments and writes her review of it. She sends her review to the conference organizers, and they in turn send her the URI of her review’s location.
-With that information Layla creates a self-assertion credential of type equals “review author” to claim her authorship which is cryptographically signed and contains two hashlinks, one for the Google doc location of her review of the submitted manuscript, and one to the submitted manuscript itself.
+
+With that information, Layla creates a self-assertion credential of type equals “review author” to claim her authorship, which is cryptographically signed and contains two hashlinks, one for the Google doc location of her review of the submitted manuscript, and one to the submitted manuscript itself.
 
 Layla emails her LinkedClaim VC to the conference organizers for their records and keeps hers in her credential wallet to include later in her promotion and tenure folder.
 
 
-### Worker taking ownership of reputation reviews (5-star type)
+### Worker Taking Ownership of Reputation Reviews (5-star type)
 
 
 ### 
 <span style="text-decoration:underline;">User Story</span>: Joe Atento has been working on Upwork and Fiverr and winning 5-star reviews from customers, but he is tired of paying the cut.  He'd like to get work independently.  \
 <span style="text-decoration:underline;">Goal:</span> Enable a trusted third party to attest that Joe (identified by DID) has 5-star ratings. \
 <span style="text-decoration:underline;">Actors:</span> Joe, TrustRanker site<span style="text-decoration:underline;"> \
-Pre-Conditions:</span> Joe - has a DID, credential wallet supporting self-authoring/signing, and supports multibase hashlinks, and has logins to centralized gig sites with reviews. \
-<span style="text-decoration:underline;">Post-Conditions:</span> Joe has signed credentials in his wallet attesting to his reviews, that he can publish verifiably on his independent site. \
+Pre-Conditions:</span> Joe has: a DID'; credential wallet supporting self-authoring/signing and multibase hashlinks; and has logins to centralized gig sites with reviews. \
+<span style="text-decoration:underline;">Post-Conditions:</span> Joe has signed credentials in his wallet attesting to his reviews, which he can publish verifiably on his independent site. \
 <span style="text-decoration:underline;">Flow Narrative:</span>
 
 Joe Atento has created an independent website advertising his virtual assistant services, but he has not gotten any takers.  He wants to demonstrate his credibility by establishing that he is the same person who has 5-star reviews on several gig sites.
 
-Joe logs into 3rd party site TrustRanker using his wallet.  Because the gig sites do not allow OAuth, he verifies his ownership of the profiles there by inserting a given public key or "magic link" into his profile.  The TrustRanker site signs a credential that Joe's DID has 5-star ratings on Upwork and Fiverr.  Joe puts a visible badge with a link to the signed verifiable credential signed by TrustRanker on his site JoeTheHelper.com, along with a verifiable credential signed by his own DID attesting to his ownership of the site.  \
- \
-Any independent verifier can combine these credentials and estimate Joe's credibility, and if they decide to hire him no one takes a cut of his pay. \
-
-
-
-### Assertion that an image/video was taken by a camera crew has not been altered from the time the images were captured. 
+Joe logs into third party site TrustRanker using his wallet.  Because the gig sites do not allow OAuth, he verifies his ownership of the profiles there by inserting a given public key or "magic link" into his profile.  The TrustRanker site signs acredential that Joe's DID has 5-star ratings on Upwork and Fiverr.  Joe puts a visible badge with a link to the Verifiable Credential signed by TrustRanker on his site JoeTheHelper.com, along with a Verifiable Credential signed by his own DID attesting to his ownership of the site.
  
-**<span style="text-decoration:underline;">User Story</span>**: Ansel Adams found his photographs edited by others to assert claims about which were not conveyed or implied in the original images. He alters his workflow to require 3rd parties to use his images and hashlink from their stories, or state they are the image source but derived from his originals, with a link to his originals to confirm the differences. \
-<span style="text-decoration:underline;">Goal:</span> Protect Ansel from spurious claims of libel for images edited without his knowledge but still attributing the image source to him.<span style="text-decoration:underline;"> \
+Any independent verifier can combine these credentials and estimate Joe's credibility, and if they decide to hire him no one takes a cut of his pay.
+
+
+
+### Assertion that an Image/Video Taken by a Camera Crew Has Not been Altered from the Time the Images Were Captured. 
+ 
+**<span style="text-decoration:underline;">User Story</span>**: Ansel Adams found his photographs edited by others to assert claims that were not conveyed or implied in the original images. He alters his workflow to require third parties to use his images and hashlink from their stories, or state they are the image source but derived from his originals, with a link to his originals to confirm the differences. \
+<span style="text-decoration:underline;">Goal:</span> Protect Ansel from spurious claims of libel for images edited without his knowledge but still attribute the image source to him.<span style="text-decoration:underline;"> \
 Actors:</span> Ansel Adams, third-party publishers of Ansel’s work \
 <span style="text-decoration:underline;">Pre-Conditions:</span> Ansel Adams has a publicly accessible gallery of cryptographically signed images asserting he was the photographer. <span style="text-decoration:underline;"> \
 Post-Conditions:</span> Ansel’s has diminished his liability to claims made about pictures altered by others<span style="text-decoration:underline;">. \
 Trigger: </span>Claim made about Ansel’s pictures by a third party, or legal representative of a person asserting harm from them. \
 <span style="text-decoration:underline;">Flow Narrative:</span>
 
-Ansel Abrams is a professional photographer who publishes his images in magazines, newpapers/services and on his own photo gallery on the web. Recently he has been embroiled in several controversies over the authenticity of what were purported to be ‘his’ images but which were in fact subtly edited representations of his work. One of these resulted in expensive legal costs in defending his claims of image manipulation without his consent.
+Ansel Abrams is a professional photographer who publishes his images in magazines, newpapers/services and on his own photo gallery on the web. Recently he has been embroiled in several controversies over the authenticity of what were purported to be ‘his’ images but which were in fact subtly edited representations of his work. One of these resulted in expensive legal costs to defind his claims of image manipulation without his consent.
 
 Ansel has now introduced into his workflow a requirement that any publication of any image he creates must be cryptographically hashlinked and signed by him. This makes it simple for him to prove tampering has occurred to one of his photos. It also imposes a requirement that any purchaser of his work of who has a legitimate reason to edit his image contact him for permission to do so and either provide him the edited version that he can cryptographically add this derivative work to his repository or request the publisher to state their provenance for the derivative image, with attribution to Ansel as the original photographer and a link to Ansel's original image.
 
@@ -218,7 +219,7 @@ Ansel has now introduced into his workflow a requirement that any publication of
 ### 
 <span style="text-decoration:underline;">User Story</span>: A hurricane hits the coast.  One relief agency helps, one takes the money and runs.  Local workers learn new skills while helping with disaster recovery efforts.  \
 <span style="text-decoration:underline;">Goal:</span> Accountability for use of funds, credentialing of workers who learn new skills. \
-<span style="text-decoration:underline;">Actors:</span> Relief agencies, BEMA and RATS, various aid recipients and workers.<span style="text-decoration:underline;"> \
+<span style="text-decoration:underline;">Actors:</span> Relief agencies BEMA and RATS, various aid recipients and workers.<span style="text-decoration:underline;"> \
 Pre-Conditions:</span> Simple phone app to enter attestations of aid.   \
 <span style="text-decoration:underline;">Post-Conditions:</span> Multiple linked claims with photos and public links submitted by recipients of the legitimate aid agency; no credible attestations for the fraudster that are linked to publicly verified persons in the area.  Workers receive signed credentials that help them advance in their careers. \
 <span style="text-decoration:underline;">Flow Narrative:</span>
@@ -229,20 +230,18 @@ BEMA offers direct assistance to victims to rebuild their homes.  In turn, recip
 
 Attestations can be gathered by BEMA on its own website, or on a third party LER/VC Notary.  Individuals may sign in with OAuth using an existing account, such as LinkedIn, and may import any social or work credentials as an indicator of their credibility. Bona fides such as degrees and skills that have been recorded as LERs may be cryptographically attached as Linked Claims.
 
-Not all users may have public credentials.  BEMA may also create accounts for recipients using their government issued identifications, which would be protected from most viewers.  Neighbors or friends with public credentials may also attest to the needs or use of funds for another user.
+Not all users may have public credentials.  BEMA may also create accounts for recipients using their government-issued identifications, which would be protected from most viewers.  Neighbors or friends with public credentials may also attest to the needs or use of funds for another user.
 
-Attestations may include photos of repairs/cleanup/services with embedded dates and geolocations. \
- \
-This enables important new opportunities to independently validate use of funds.
+Attestations may include photos of repairs/cleanup/services with embedded dates and geolocations. This enables important new opportunities to independently validate use of funds.
 
 Another "aid organization", RATS, has friends in high places and receives a large chunk of relief funds.  However, no individuals with independently verified ties to the disaster area wind up attesting to receiving any help.  This data can be taken into account during the next allocation, or perhaps by investigative reporters.
 
-In addition to the validation of use of funds, relief organizations can leverage LinkedClaims to provide a long term benefit to local trainees. Local relief workers who jump in and learn new skills in responding to a crisis, may benefit from attestations from BEMA about the training they have received and the responsibilities they took on during the crisis. 
+In addition to the validation of use of funds, relief organizations can leverage LinkedClaims to provide a long-term benefit to local trainees. Local relief workers who jump in and learn new skills while responding to a crisis may benefit from attestations from BEMA about the training they have received and the responsibilities they took on during the crisis. 
 
-For example, if trained in the logistics of running a food service (to aid the emergency workers providing disaster relief), when this is all over they could use that credential they were granted when they apply for a job in some other similar food service position in the 'after times' of this event.  
+For example, if a worker is trained in the logistics of running a food service (to aid the emergency workers providing disaster relief), when this is all over they could use that credential they were granted when they apply for a job in some other similar food service position, in the 'after times' of this event.  
 
 
-### **A person was harmed by an entity**
+### **A Person was Harmed by an Entity**
 
 
 _note: unlike the other examples, in this case the subject is possibly hostile to the claim_
@@ -250,36 +249,34 @@ _note: unlike the other examples, in this case the subject is possibly hostile t
 <img align="right" width="357" alt="image" src="https://user-images.githubusercontent.com/798887/216838897-10f540c6-aea0-4267-9e68-c9cca708f50e.png">
 
 ### 
-<span style="text-decoration:underline;">User Story</span>: A protester in Myanmar is believed to be kidnapped by the military Junta.  A related claim notes that POSCO International continues to do business with the junta.  \
+<span style="text-decoration:underline;">User Story</span>: A protester in Myanmar is believed to be kidnapped by the military junta.  A related claim notes that POSCO International continues to do business with the junta.  \
 <span style="text-decoration:underline;">Goal:</span> Gather evidence to hold harmful actors accountable.  \
 <span style="text-decoration:underline;">Actors:</span> Disappeared protestor, (possibly anonymous) friend, reporter, website documenting oil-money flows<span style="text-decoration:underline;"> \
-Pre-Conditions:</span> Reporter has a DID, credential wallet supporting self-authoring/signing, and supports multibase hashlinks. Family member speaks anonymously over signal.  Credible website exists documenting the business relationship between Chevron and the military.  \
+Pre-Conditions:</span> Reporter has: a DID; credential wallet supporting self-authoring/signing and supporting multibase hashlinks. Family member speaks anonymously over signal.  Credible website exists documenting the business relationship between Chevron and the military.  \
 <span style="text-decoration:underline;">Post-Conditions:</span>  A claim is published about the enforced disappearance, with an estimate of uncertainty.  A related claim is published about the flow of funds.   The structured claims may link to a long-form traditional article.  Later, investors may use the structured claims to automatically disinvest in human rights-abusing companies. \
 <span style="text-decoration:underline;">Trigger:</span> A student protestor is disappeared and a friend contacts a reporter. \
 <span style="text-decoration:underline;">Flow Narrative:</span>
 
 Khant Zin Win [disappeared on Apr 21, 2022](https://myanmar-now.org/en/news/missing-dagon-university-students-believed-to-be-in-junta-custody) immediately after a military truck was seen entering their street. An article documenting the disappearance was written in Myanmar-now.org, in this case with a named source.  In other cases for safety reasons, the source's name must be protected. \
  \
-According to [current data at Justice for Myanmar](https://data.justiceformyanmar.org/), POSCO International funnels significant funds to the Myanmar military Junta.  Pension funds such as Första AP-fonden (AP1) of Sweden, continue to invest in POSCO.  \
- \
-By publishing linked claims relating the specific harms to the money flows in a standardized format, an independent application can be developed helping investment managers avoid the risk of investing in companies that contribute money to current human rights abusers.  A news aggregator might choose to provide a "take action" link under a news item that enables the reader to adjust their buying or investing behavior accordingly.
+According to [current data at Justice for Myanmar](https://data.justiceformyanmar.org/), POSCO International funnels significant funds to the Myanmar military junta.  Pension funds such as Första AP-fonden (AP1) of Sweden, continue to invest in POSCO. By publishing linked claims relating the specific harms to the money flows in a standardized format, an independent application can be developed helping investment managers avoid the risk of investing in companies that contribute money to current human rights abusers.  A news aggregator might choose to provide a "take action" link under a news item that enables the reader to adjust their buying or investing behavior accordingly.
 
 
-### A claim that attests to the provenance of an article posted in a published news service 
+### A Claim that Attests to the Provenance of an Article Posted in a Published News Service 
  
-**<span style="text-decoration:underline;">User Story</span>**: Island News (IN) investigative journalism reports are often attacked as false by those described in their stories. Island News established a repository for data collected by investigative reporting teams to catalog reporter’s notes, pictures, recordings and related data, hashlinked to the credential of record for each investigation, signed by paper, with each digital object collected signed by the reporter’s who gathered them. The ICIJ periodically reviews reports and issues a LinkedClaim recommendation as toIsland News investigative reporting practices.  \
-<span style="text-decoration:underline;">Goal:</span> Protect journalists from false accusations of fraud, lying and reporting of false news. \
-<span style="text-decoration:underline;">Actors:</span> Island News, reporters affiliated with IN investigative teams,the ICIJ <span style="text-decoration:underline;"> \
-Pre-Conditions: IN has Trust Repository of reporting artifacts, a transparent governance structure vetting artifacts to be included in it, ICIJ has VC issuing service for LinkedClaim VCs \
+**<span style="text-decoration:underline;">User Story</span>**: Island News (IN) investigative journalism reports are often attacked as false by those described in their stories. Island News established a repository for data collected by investigative reporting teams to catalog reporter’s notes, pictures, recordings, and related data, hashlinked to the credential of record for each investigation, signed by the paper, with each digital object collected also signed by the reporters who gathered them. The ICIJ periodically reviews reports and issues a LinkedClaim recommendation as to Island News investigative reporting practices.  \
+<span style="text-decoration:underline;">Goal:</span> Protect journalists from false accusations of fraud, lying, and reporting of false news. \
+<span style="text-decoration:underline;">Actors:</span> Island News, reporters affiliated with IN investigative teams, the ICIJ <span style="text-decoration:underline;"> \
+Pre-Conditions: IN has: Trust Repository of reporting artifacts; a transparent governance structure vetting artifacts to be included in it. ICIJ has: VC issuing service for LinkedClaim VCs \
 Post-Conditions: </span>Investigative journalism reports by IN has a robust data management practice to guard against allegations of generating mis-information.<span style="text-decoration:underline;"> \
 Trigger: </span>Accusations of fake news by targets of IN’s investigative reports<span style="text-decoration:underline;"> \
 Flow Narrative:</span>
 
-Island News, the daily morning paper for the Signal Islands, has a reputation for in depth investigative reporting. Recently, controversies have emerged when a report on inappropriate use of provincial revenue collected from bond financing was published stating that government ministers involved in the oversight of the fund accounts associated with a new economic development, anchored by Wind Casinos, redirected substantial amounts of Bitcoin to private ministerial accounts.
+Island News, the daily morning paper for the Signal Islands, has a reputation for in-depth investigative reporting. Recently, controversies emerged when a report on inappropriate use of provincial revenue collected from bond financing was published stating that government ministers involved in the oversight of the fund accounts associated with a new economic development, anchored by Wind Casinos, redirected substantial amounts of Bitcoin to private ministerial accounts.
 
-Representatives of these ministers countered that these accusations were fabricated and published purported notes from the reporting journalists corroborating their claims.The journalists contested these representations of their work, with the back and forth of accusations and countering claims devolving into a confusing and ultimately unresolvable incident that diverted public attention to the serious concerns initially raised.
+Representatives of these ministers countered that these accusations were fabricated and published purported notes from the reporting journalists corroborating their claims. The journalists contested these representations of their work, with the back and forth of accusations and counter-claims devolving into a confusing and ultimately unresolvable incident that diverted public attention to the serious concerns initially raised.
 
-Island News decided to hashlink future investigative reporting and associate them with a verifiable credential signed by the reporters involved. This was further substantiated by a verifiable LinkedClaim credential issued by The International Consortium of Investigative Journalism (the ICIJ), corroborating by a respected third party the claims of authenticity derived by the review of the investigative journalism process and specific transcripts of notes, photographic evidence and recordings the Island News submitted to them and they independently analyzed.
+Island News decided to hashlink future investigative reporting and associate them with a Verifiable Credential signed by the reporters involved. This was further substantiated by a Verifiable LinkedClaim Credential issued by The International Consortium of Investigative Journalism (the ICIJ), corroborating by a respected third party the claims of authenticity derived by the review of the investigative journalism process and specific transcripts of notes, photographic evidence and recordings the Island News submitted to them and they independently analyzed.
 
 Future investigative journalism reports contain the links to these credentials, publicly accessible, and verifiable for all who wish to see them.
 
@@ -357,9 +354,9 @@ A context containing the proposed properties, as well as a suggested minimal gen
  
 For examples corresponding to the use cases in this paper, see [composable claims examples and reference application](https://codeberg.org/cooperation/LinkedClaims/)
 
-### Standalone Claim - Review
+### Example: Standalone Claim - Review
 
-Example of a linked claim representing a product review, that was scraped from a site.
+Example of a linked claim representing a product review that was scraped from a site.
 
 
 
@@ -413,9 +410,9 @@ Example of a linked claim representing a product review, that was scraped from a
 
 
 
-### Example - A Verifiable LinkedClaim
+### Example: A Verifiable LinkedClaim
 
-This example is composed of two components – an initial standalone VC, and then an _LinkedClaim_ of that VC, with a one-way cryptographic binding to it.
+This example is composed of two components – an initial standalone VC and then an _LinkedClaim_ of that VC, with a one-way cryptographic binding to it.
 
 **Initial (Self-issued) VC:**
 
@@ -544,7 +541,7 @@ This example is composed of two components – an initial standalone VC, and the
 
 
 
-### Verifiable LinkedClaims - De-constructed Into Linked Standalone VCs
+### Example: Verifiable LinkedClaims - De-constructed into Linked Standalone VCs
 
 This example is functionally identical to the previous (an initial standalone self-issued VC combined with an LinkedClaim of that VC), except that it decomposes the parts of the LinkedClaim into separate standalone VCs (that are still linked, cryptographically). These would typically be presented as a bundle, in a Verifiable Presentation:
 
