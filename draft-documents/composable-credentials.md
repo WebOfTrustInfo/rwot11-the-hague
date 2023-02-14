@@ -13,47 +13,47 @@
 
 ## Abstract
 
-The Verifiable Credential ecosystem has encountered several use cases that require a third-party assertion, or a linked claim to an existing object (another VC, a PDF, a web page, etc). Whether it is product reviews, linked claims of self-created credentials, provenance of academic paper reviews, or some other general purpose third party assertion, these use cases have several requirements in common. Each use case may also require a domain-specific set of fields.
+The Verifiable Credential (VC) ecosystem has encountered several use cases that require a third-party assertion, or a linked claim to an existing object (another VC, a PDF, a web page, etc). Whether it is product reviews, linked claims of self-created credentials, provenance of academic paper reviews, or some other general purpose third-party assertion, these use cases have several requirements in common. Each use case may also require a domain-specific set of fields.
 
-We propose a minimal format for connecting (and optionally cryptographically binding) credentials that will allow each use of 3rd party assertions to be represented as a set of LinkedClaims. Such a data set will enable verifiers to evaluate the credibility of claims, including those sourced from outside the Verifiable Credential ecosystem. 
+We propose a minimal format for connecting (and optionally cryptographically binding) credentials that will allow each use of third-party assertions to be represented as a set of LinkedClaims. Such a data set will enable verifiers to evaluate the credibility of claims, including those sourced from outside the Verifiable Credential ecosystem.  
 
 Further, we propose to demonstrate the ability to compose several Verifiable Credentials into a single domain-specific credential using the LinkedClaim vocabulary that will satisfy the domain requirements of the likely users.
 
-This approach will enable rich shared datasets to inform trust decisions, while satisfying the requirements of domain-specific end users. One of the intentions of LinkedClaims Verifiable Credentials is to give individuals the agency to make such claims about themselves and others on their own terms. 
+This approach will enable rich shared datasets to inform trust decisions while satisfying the requirements of domain-specific end users. One of the intentions of LinkedClaims Verifiable Credentials is to give individuals the agency to make such claims about themselves and others on their own terms.  
 
 
 ## Introduction
 
 As the Verifiable Credential community gathers implementation experience based on the VC Data Model v1.0, and as it starts working on the next version of the spec, we see the VC landscape adopt two different (but interoperable) architectures.
 
-The first approach favors large **compound credentials** that contain many claims, signed by the issuer as a set. In the education space, the CLRv2 (Comprehensive Learner Record v2) spec is one such canonical example, and is intended to be, well, comprehensive, containing a person’s entire educational history associated with enrollment overseen by a single issuer, the institution awarding the degree. Another example, both in the physical world of plastic cards, as well as in the world of digital credentials, is the Drivers License, a collection of unrelated claims (name, address, age, picture, driving ability), grouped together, for historical reasons of convenience.
+The first approach favors large **compound credentials** that contain many claims, signed by the issuer as a set. In the education space, the CLRv2 (Comprehensive Learner Record v2) spec is one such canonical example, and is intended to be, well, comprehensive, containing a person’s entire educational history associated with enrollment overseen by a single issuer — the institution awarding the degree. Another example, both in the physical world of plastic cards as well as in the world of digital credentials, is the Driver's License, which is a collection of unrelated claims (name, address, age, picture, driving ability), grouped together for historical reasons of convenience.
 
 The second approach, which is isomorphic/functionally equivalent to the first, uses linked micro-credentials with cryptographic binding.
 
-The compound credential provides the recipient with a rich set of claims of potentially multiple types, along with alignments and other metadata needed to semantically express complex relationships among them. This is useful, but can lead to large payloads and introduce complexities on the part of systems consuming them. It also means that any change to any part of the complex payload that needs updating, requires the revocation of the compound VC, and thus of all the components within it. After corrections are made, those edited parts need re-signing/reissuing as a part of a new compound payload package.
+The compound credential provides the recipient with a rich set of claims of potentially multiple types, along with alignments and other metadata needed to semantically express complex relationships among them. This is useful, but can lead to large payloads and introduce complexities on the part of systems consuming them. It also means that any change to any part of the complex payload that needs updating requires the revocation of the compound VC, and thus of all the components within it. After corrections are made, those edited parts need re-signing/reissuing as a part of a new compound payload package.
 
-Micro-credentials allow for easier data minimization, editing and reissuance of only those microcredentials whose data elements need updating, facilitates partial disclosure, and allows for secure re-composition down the line.
+Micro-credentials allow for easier data minimization, support editing and reissuance of only those microcredentials whose data elements need updating, facilitate partial disclosure, and allow for secure re-composition down the line.
 
-In addition to introducing and illustrating the `digestMultibase` mechanism, this paper proposes a new VC type `LinkedClaim`, used to import third party claims from possibly untrusted sources, with a `confidence` property to indicate the level to which the issuer wishes to express confidence in the imported claim. 
+In addition to introducing and illustrating the `digestMultibase` mechanism, which allows the linking of non-VC objects, this paper proposes a new VC type `LinkedClaim`, used to import third party claims from possibly untrusted sources, with a `confidence` property to indicate the level to which the issuer wishes to express confidence in the imported claim. 
 
 ## Mental Model
 <img align="right" src="resources/composable-credentials/mental-model.png"/>
-A verifiable credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.  
+A Verifiable Credential allows one entity to make a signed attestation. For someone to trust this attestation - even with evidence - they will want to know what others think about the claim and the issuer.  
 
-Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
+Much data on the web and in the world is unsigned.  To know whether to trust it, we need a way for long-lived entities to point to it, to indicate a level of confidence, and to know if the external data has changed since it was pointed to.
 <br/>
 
 
 ### A Brief Primer on Verifiable Presentations
 
-VPs are a general purpose wrapper/envelope for one or more VCs. When an Issuer sends VCs to a wallet, it sends them wrapped inside a VP envelope. When a wallet holder presents VCs to a requesting party, the wallet also wraps them inside a VP envelope.
+Verifiable Presentations (VPs) are a general purpose wrapper/envelope for one or more VCs. When an Issuer sends VCs to a wallet, it sends them wrapped inside a VP envelope. When a wallet holder presents VCs to a requesting party, the wallet also wraps them inside a VP envelope.
 
 Aside from serving as a lightweight container for one or more VCs, VPs allow the optional authentication of the presenting party (which is useful in many use cases).
 
 
 * VPs don’t have to be signed. Performing DID-Authentication is optional. It’s reserved for use cases where it’s important for the receiver to know who the presentation is coming from.
 * Also, by (optionally) signing a VP, you’re adding a tamper-proof binding on the bundle itself (in addition to the fact that any given VC inside a VP is already tamper-proof by itself).
-* A commonly mis-understood fact: the VCs inside a presentation don’t have to be about the presenter. The holder may have in their possession credentials issued by third parties. For example, when applying to a job, an individual can obtain (and pass along) their school’s accreditation credential. They can also obtain and pass along a VC of the job description they’re applying for. Neither of those VCs (the school accreditation, and the job description) mention the person at all (the job applicant is not the subject of either of those). As part of the application process, the job applicant submits a bundle of credentials (the Verifiable Presentation), some of which may be about the applicant (such as their awards and achievements), and others that are not directly related, but that provide contextual value to the recipient (such as the job description VC).
+* A commonly mis-understood fact: the VCs inside a presentation don’t have to be about the presenter. The holder may have in their possession credentials issued by third parties. For example, when applying to a job, an individual can obtain (and pass along) their school’s accreditation credential. They can also obtain and pass along a VC of the job description they’re applying for. Neither of those VCs (the school accreditation and the job description) mention the person at all (the job applicant is not the subject of either of those). As part of the application process, the job applicant submits a bundle of credentials (the Verifiable Presentation), some of which may be about the applicant (such as their awards and achievements), and others of which are not directly related, but that provide contextual value to the recipient (such as the job description VC).
 
 ## Requirements for Linked Claims
 
@@ -61,10 +61,10 @@ Aside from serving as a lightweight container for one or more VCs, VPs allow the
 2. They must be able to refer to (make a statement about) an external object, such as:
     * Another VC
     * A URL (web page, PDF, image, etc)
-    * A _subsection_ of another VC (for example, an individual achievement or course in a transcript VC that contains multiple courses, or a one among a set of competences in VC).
+    * A _subsection_ of another VC (for example, an individual achievement or course in a transcript VC that contains multiple courses, or one among is a set of competences in VC).
 3. They must provide an (optional) mechanism for cryptographic binding between VCs or between a VC and another URL. (This is the Hashlink / "digestMultibase" mechanism.)
-4. They should define properties that describe the claim or assertion:
-    * rich issuer metadata properties, describing who is making the claim, what their expertise/bona fides are,  their relationship to the subject, etc.
+4. They should define properties that describe the claim or assertion, including:
+    * rich issuer metadata properties, describing who is making the claim, what their expertise/bona fides are what heir relationship is to the subject, etc.
     * a property containing evidence of the assertion (images, URLs, published papers, Github repos, etc.)
     * human-readable description of the assertion
     * an optional rating (such as for ecommerce product reviews)
@@ -73,12 +73,12 @@ Aside from serving as a lightweight container for one or more VCs, VPs allow the
 
 This paper introduces the optional property <strong><code>digestMultibase</code></strong>, used to include a verifiable hash of the corresponding<code> <strong>id</strong></code> element. This enables safely linking to an external non-VC object in the <strong><code>id</code></strong> field, while still being able to verify that its content has not changed since making the assertion.
 
-Note: a _hashlink_ is a general term for a combination of a URI and a digest hash.
+Note: a _hashlink_ is a general term for a combination of a URL and a digest.
 
 
 #### **digestMultibase**
 
-A <strong><code>digestMultibase</code></strong> property provides a way to lock down a link using a hash of its content, by specifying the hash algorithm, and (optionally) the canonicalization mechanism to perform before hashing. It is intended to apply to the <strong><code>id</code></strong> link at the same level. For more details on this proposed property, see [issue #952](https://github.com/w3c/vc-data-model/issues/952) on the VC Data Model. 
+A <strong><code>digestMultibase</code></strong> property provides a way to lock down a link using a hash of its content by specifying the hash algorithm and (optionally) the canonicalization mechanism to perform before hashing. It is intended to apply to the <strong><code>id</code></strong> link at the same level. For more details on this proposed property, see [issue #952](https://github.com/w3c/vc-data-model/issues/952) on the VC Data Model. 
 
 
 ### Verifying Linked VCs
@@ -89,91 +89,90 @@ The presence of a <strong><code>digestMultibase</code></strong> property in a Ve
 
 2. Once the digest's corresponding `id` property has been located, the verifier must _dereference_ the URI specified in the `id`. That is, the verifier must fetch the `id` resource, so that it can compare its digest hash to the one specified in <strong><code>digestMultibase</code></strong>.
  
-For example, if the <code>id</code> property contains an HTTP URI, the verifier must fetch it via that protocol. If the <code>id</code> property contains a URN, it means that the verifier must already have access to that object out of band (URNs are typically used to link VCs <em>within </em>a given Verifiable Presentation).
+For example, if the <code>id</code> property contains an HTTP URI, the verifier must fetch it via that protocol. If the <code>id</code> property contains a URN, it means that the verifier must already have access to that object out of band (URNs are typically used to link VCs <em>within</em> a given Verifiable Presentation).
 
 3. If the verifier is unable to dereference (fetch) the resource referred to by the id, it must throw an error.
 
 4. The verifier must create a digest hash of the fetched resource, using the algorithm and parameters specified by the <strong><code>digestMultibase</code></strong> property.
 
-5. The verifier must compare the fetched resource's digest hash to the hash value specified by the <strong><code>digestMultibase </code></strong>property. If the values do not match, it must throw an error.
+5. The verifier must compare the fetched resource's digest hash to the hash value specified by the <strong><code>digestMultibase</code></strong> property. If the values do not match, it must throw an error.
 
 
 ### Hashlink Prior Art
 
-A hashlink (typically containing a URI and a digest hash) cryptographically binds a VC to another VC or object, by including a digest hash of the linked object itself. 
+A hashlink (typically containing a URI and a digest hash) cryptographically binds a VC to another VC or object by including a digest hash of the linked object itself. 
 
 The <strong><code>digestMultibase</code></strong> mechanism referenced in this paper is not the only way to hashlink or cryptographically bind by reference.
 
-The IETF [Cryptographic Hyperlinks IETF Draft](https://datatracker.ietf.org/doc/html/draft-sporny-hashlink-07) by Manu Sporny is an earlier iteration of <strong><code>digestMultibase</code></strong>, and combines a URI and a digest value in a single string.
+The IETF [Cryptographic Hyperlinks IETF Draft](https://datatracker.ietf.org/doc/html/draft-sporny-hashlink-07) by Manu Sporny is an earlier iteration of <strong><code>digestMultibase</code></strong> and combines a URI and a digest value in a single string.
 
 The IETF [ACDC - Authentic Chained Data Containers Draft](https://www.ietf.org/archive/id/draft-ssmith-acdc-02.html) uses a mechanism similar to digestMultibase (a combination of identifiers and digest hashes).
 
 ## Use Cases
 
 
-### Linked Claims with self-asserted skill credentials
+### Linked Claims with Self-asserted Skill Credentials
 
 
 #### 
 <span style="text-decoration:underline;">User Story</span>: Alice seeks recommendation from Bob & Juanita for self-asserted skills she claims  \
 <span style="text-decoration:underline;">Goal:</span> Alice wants recommendations about her skills from credible professionals \
 <span style="text-decoration:underline;">Actors:</span> Alice, Bob, Juanita \
-<span style="text-decoration:underline;">Pre-Conditions:</span> Alice/Bob/Juanita have;  a decentralized identifier (DID); a credential wallet compliant with the W3C VC Data Model; the wallet has a simple, well designed UI to support self-issuing/signing of credentials \
-<span style="text-decoration:underline;">Post-Conditions:</span> Alice gets Bob and Juanita to issue supporting credentials attesting to her claimed skills bound to her self-asserted \
+<span style="text-decoration:underline;">Pre-Conditions:</span> Alice/Bob/Juanita have: a decentralized identifier (DID); a credential wallet compliant with the W3C VC Data Model. The wallet has a simple, well designed UI to support self-issuing/signing of credentials \
+<span style="text-decoration:underline;">Post-Conditions:</span> Alice gets Bob and Juanita to issue supporting credentials attesting to her claimed skills, bound to her self-asserted claim \
 <span style="text-decoration:underline;">Trigger:</span> Alice sends an email to Bob and Juanita which includes the claims she’s making seeking their corroboration. She includes the ID and specific assertions for them to write their recommendation and bind them to her credential. \
 <span style="text-decoration:underline;">Flow Narrative:</span>
 
-Alice has worked in warehouse distribution centers since she dropped out of high school to earn money to support her mother, and siblings, after her mother was forced to recuperate from injuries incurred in a vehicle accident.
+Alice has worked in warehouse distribution centers since she dropped out of high school to earn money to support her mother and siblings, after her mother was forced to recuperate from injuries incurred in a vehicle accident.
 
-Alice started as a custodian but over time and through observation and conversation with her co-workers she learned she could get trained to drive a warehouse forklift and significantly increase her earning potential. She enrolled in class 4 OSHA certified forklift driver training course while continuing her night custodian job. After receiving her certification she applied for a forklift driver opening at the company where she was employed but sought corroboration of her skills from her instructor at ISETA (Bootcamp 1.0) for the forklift specialization course, along with a LinkedClaim from her current supervisor attesting to her reliability, teamwork, and attention to detail she has expressed in her current job.
+Alice started as a custodian but over time and through observation and conversation with her co-workers she learned she could get trained to drive a warehouse forklift and significantly increase her earning potential. She enrolled in class 4 OSHA certified forklift driver training course while continuing her night custodian job. After receiving her certification she applied for a forklift driver opening at the company where she was employed but sought corroboration of her skills from her instructor at ISETA (Bootcamp 1.0) for the forklift specialization course, along with a LinkedClaim from her current supervisor attesting to her reliability, teamwork, and the attention to detail she has expressed in her current job.
 
-Alice sends the self-asserted credential describing her skills relevant to the forklift driver position to Bob, her instructor ay ISETA of the OSHA forklift training course by email and points out the attributes she thinks he can attest to amongst her skill claims.
+Alice sends the self-asserted credential describing her skills relevant to the forklift driver position by email to Bob, her instructor at ISETA of the OSHA forklift training course and points out the attributes she thinks he can attest to amongst her skill claims.
 
-Alice does the same thing sending her self-assertion credential to Juanita, her current supervisor, pointing out those attributes she suggests Juanita has direct knowledge about her performance.
+Alice does the same thing by sending her self-assertion credential to Juanita, her current supervisor, pointing out those attributes where she suggests that Juanita has direct knowledge about her performance.
 
-Both Bob and Juanita construct a linked-claims Verifiable Credential recommending Alice for those attributes they have expertise in and can address with professional credibility based on their own bona fides included in their relevance arrestations describing their own training and background.
+Both Bob and Juanita construct a linked-claims Verifiable Credential recommending Alice for those attributes they have expertise in and can address with professional credibility based on their own bona fides; included in their responses are relevance attestations, describing their own training and background.
 
-Juanita and Bob send their self-asserted skill LinkedClaims to Alice after binding their attributions to those skills and competencies based on their knowledge of Alice’s capabilities. Alice selects these credentials for inclusion in the set she prepares as a verifiable presentation to submit to the job application site.
+Juanita and Bob send their self-asserted skill LinkedClaims to Alice after binding their attributions to those skills and competencies based on their knowledge of Alice’s capabilities. Alice selects these credentials for inclusion in the set she prepares as a Verifiable Presentation to submit to the job application site.
 
 
-### A recommendation of an institution/business/gov issued credential to an individual by a third party.
+### A Recommendation of an Institution/Business/Gov Issued Credential to an Individual by a Third Party.
 
 
 #### 
-<span style="text-decoration:underline;">User Story</span>: Claudio graduates with a certificate in cybersecurity and seeks a recommendation from one of his instructors,Laura for a job he’s applying to \
+<span style="text-decoration:underline;">User Story</span>: Claudio graduates with a certificate in cybersecurity and seeks a recommendation from one of his instructors,Laura, for a job he’s applying to \
 <span style="text-decoration:underline;">Goal:</span> Stand out from the pool of applicants based on his credential & recommendation to get the job offer<span style="text-decoration:underline;"> \
 Actors:</span> Claudio and Laura<span style="text-decoration:underline;"> \
-Pre-Conditions:</span> Claudio - has a DID, a VC compliant credential wallet; Institution issues a VC recognizing his completion of the cybersecurity program, and issues it to Claudio; Laura has a DID, VC credential wallet that supports self issuing. <span style="text-decoration:underline;"> \
+Pre-Conditions:</span> Claudio has: a DID; a VC compliant credential wallet. Institution issues a VC to Claudio recognizing his completion of the cybersecurity program. Laura has a DID; VC credential wallet. The wallet supports self issuing. <span style="text-decoration:underline;"> \
 Post-Conditions:</span> Claudio gets the job! \
 <span style="text-decoration:underline;">Trigger:</span> Claudio emails his instructure, Laura, asking for a recommendation & includes a copy of this certificate and VC recognizing it.  \
 <span style="text-decoration:underline;">Flow Narrative: \
 </span>
 
-Claudio recently completed a certificate program in cybersecurity. The technical college issued the certificate in both paper and VC formats. Through conversations with some of his instructors he’s become aware of an opening in a local cybersecurity sourcing company who provides short, 1 to 6 month consulting project contracts, and medium term placements for contract employees. Claudio asks one of his instructors, Laura,for a reference. Laura agrees to serve as a reference and suggests that she provide a verifiable LinkedClaim credential to his cybersecurity certificate.
+Claudio recently completed a certificate program in cybersecurity. The technical college issued the certificate in both paper and VC formats. Through conversations with some of his instructors he’s become aware of an opening in a local cybersecurity sourcing company who provides short, 1 to 6 month consulting project contracts, and medium-term placements for contract employees. Claudio asks one of his instructors, Laura, for a reference. Laura agrees to serve as a reference and suggests that she provide a verifiable LinkedClaim credential to his cybersecurity certificate.
 
-Laura asks Claudio for (a copy of) his VC conferring his cybersecurity certificate awarded to him for successfully completing his course of study that awarded him a Certificate in Cyber Threat Analytics and Prevention (CTAP).  \
- \
-Laura composes a self asserted verifiable linked claim that establishes her credentials or bona fides as a credible judge of Claudios knowledge, skills and abilities in this domain. She provides verifiable documentation of her work in the field through links to papers she has published, reports to which she contributed on cyberthreat assessment, and grants she has received for her work in this domain.
-
-She describes the work she has seen done by Claudio and her view of the level of performance he demonstrated. Laura also offereds additional evidence of Claudio’s knowledge in this discipline from the help he provided as a contracted worker under a cyber assessment contract she oversaw for a local regional bank. These included statistical analyses of penetration tests, attack simulations and summary reports all in his Github account, all hashlinked into the evidence section of her LinkedClaim VC for Claudio.
-
-Laura signs her verifiable LinkedClaim VC and sends it as a VP to Claidios credential wallet. He accepts the presentation which puts the LinkedClaim VC in his wallet and generates a VP including his CTAP certificate VC, the LinkedClaim VC and several others that document related skills pertinent to the job requirements. This VP is then sent to the cybersecurity sourcing company as part of his Verifiable Resume™.
-
-
-### A review of a paper submitted to an academic conference 
+Laura asks Claudio for (a copy of) his VC conferring his Certificate in Cyber Threat Analytics and Prevention (CTAP) which was awarded to him for successfully completing his course of study.
  
-**<span style="text-decoration:underline;">User Story</span>**: Layla is asked to write a review of a preprint submitted to a professional conference. She publishes her review as a document and creates a haslink to it in a VC that attests to her authorship of it and a hashlink to the original manuscript reviewed.  \
+Laura composes a self asserted verifiable LinkedClaim that establishes her credentials or bona fides as a credible judge of Claudio's knowledge, skills and abilities in this domain. She provides verifiable documentation of her work in the field through links to papers she has published, reports to which she contributed on cyberthreat assessment, and grants she has received for her work in this domain.
+
+She describes the work she has seen done by Claudio and her view of the level of performance he demonstrated. Laura also offered additional evidence of Claudio’s knowledge in this discipline from the help he provided as a contracted worker under a cyber assessment contract she oversaw for a local regional bank. These included statistical analyses of penetration tests, attack simulations and summary reports all in his Github account, all hashlinked into the evidence section of her LinkedClaim VC for Claudio.
+
+Laura signs her verifiable LinkedClaim VC and sends it as a VP to Claidio's credential wallet. He accepts the Presentation which puts the LinkedClaim VC in his wallet and generates a VP including his CTAP certificate VC, the LinkedClaim VC and several others that document related skills pertinent to the job requirements. This VP is then sent to the cybersecurity sourcing company as part of his Verifiable Resume™.
+
+
+### A Review of a Paper Submitted to an Academic Conference 
+ 
+**<span style="text-decoration:underline;">User Story</span>**: Layla is asked to write a review of a preprint submitted to a professional conference. She publishes her review as a document and creates a hashlink to it in a VC that attests to her authorship of it and contains a hashlink to the original manuscript reviewed.  \
 <span style="text-decoration:underline;">Goal:</span> Establish proofed authorship of a professional review of a submitted manuscript. \
 <span style="text-decoration:underline;">Actors:</span> Layla, conference publication service<span style="text-decoration:underline;"> \
-Pre-Conditions:</span> Layla - has a DID, credential wallet supporting self-authoring/signing, and supports multibase hashlinks. Conference has a stable URI for reviews submitted and their pre-print manuscripts both openly accessible from the web.  \
+Pre-Conditions:</span> Layla has: a DID; credential wallet supporting self-authoring/signing and multibase hashlinks. Conference has: a stable URI for reviews submitted and their pre-print manuscripts, both openly accessible from the web.  \
 <span style="text-decoration:underline;">Post-Conditions:</span> The conference paper archive has a review with proof of authorship by Layla, as does Layla should she wish to make such a claim to another third-party such as include it in her promotion and tenure review folder. \
 <span style="text-decoration:underline;">Trigger:</span> the conference organizers email Layla asking her to review a submitted paper with provable attribution of her authorship. \
 <span style="text-decoration:underline;">Flow Narrative:</span>
 
 Layla Soliman registered to attend her disciplinary conference in molecular genetics. The conference organizers asked her to review a paper submitted for presentation at the meeting to which she agreed. The organizers send Layla a link to the paper in a Google docs directory.
 
-Layla follows the link to the paper, reads the reviewer guidelines and sets out reading and taking notes to prepare for writing her review. On completion of reading the submitted manuscript she prepares her final comments and writes her review of it. She sends her review to the conference organizers, and they in turn send her the URI of her review’s location. \
- \
+Layla follows the link to the paper, reads the reviewer guidelines, and sets out reading and taking notes to prepare for writing her review. On completion of reading the submitted manuscript she prepares her final comments and writes her review of it. She sends her review to the conference organizers, and they in turn send her the URI of her review’s location.
 With that information Layla creates a self-assertion credential of type equals “review author” to claim her authorship which is cryptographically signed and contains two hashlinks, one for the Google doc location of her review of the submitted manuscript, and one to the submitted manuscript itself.
 
 Layla emails her LinkedClaim VC to the conference organizers for their records and keeps hers in her credential wallet to include later in her promotion and tenure folder.
