@@ -750,11 +750,8 @@ This example is functionally identical to the previous (an initial standalone se
 
 ## References
 
-<sup>1</sup>Proofmode: https://proofmode.org/ secure, signed visual evidence \
 
-
-
-### Relates to Advanced Readings
+### Related to Rebooting the Web of Trust Advanced Readings
 
 [https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/verfiable-credentials-holder-binding.md](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/endorsements.md)
 
@@ -767,5 +764,7 @@ This example is functionally identical to the previous (an initial standalone se
 
 [https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials](https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credentials)
 
+[https://datatracker.ietf.org/doc/html/draft-multiformats-multibase-00](https://datatracker.ietf.org/doc/html/draft-multiformats-multibase-00)
 
+[https://github.com/w3c/vc-data-model/issues/952](https://github.com/w3c/vc-data-model/issues/952)
 
