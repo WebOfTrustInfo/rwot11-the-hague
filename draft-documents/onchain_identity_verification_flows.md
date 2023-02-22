@@ -353,6 +353,9 @@ Best for single-jurisdiction/single-criterion minting contexts and E2E single-ve
 - API DDoS/AuthN model discussions, based on [CACAO][] or otherwise
 - Considerations of consent - mention Violet.co badge contract 
 - “Non-consensual Airdrop” - many of today’s asset blockchains allow assets to be “dropped” into wallets without meaningful and/or verifiable consent. How non-consensual or non-verifiably consensual asset ownership or badging can be applied to these technologies should be considered
+- Account Abstraction variants of each architecture - VCs issued to a "secret address" controlled by same party as payment address
+    - auditing requirement
+    - variations on account abstraction - protocol-level versus smart contract (adds a de facto intermediary), transferability/non-transferability of addresses into/between abstractions, layering of abstractions, etc
 
 ## References: 
 
