@@ -10,6 +10,7 @@
 - Robert Mao ([ArcBlock.io](https://ArcBlock.io))
 - Fabrice Rochette ([2060.io](https://2060.io))
 - Andrea Scorza ([LTOnetwork.com](https://LTOnetwork.com))
+- Raphael Roullet ([Violet.co](https://violet.co/))
 
 ## Abstract
 
@@ -17,7 +18,7 @@ In recent months, a problem space has been roughly delineated and widely
 discussed under the rubric of "on-chain web3 identity." Marketing imperatives
 and the lack of familiarity with compliance and liability issues particular to
 identity have largely muddied the waters in the solution space, however,
-resulting in a reductive three-way rivaly between "soul-bound tokens",
+resulting in a reductive three-way rivalry between "soul-bound tokens",
 verifiable credentials, and a loosely-defined "zero knowledge" solutions.
 Working at a high level, we tried to identify a taxonomy that would be more
 useful for mapping this solution space according to high-level patterns and
@@ -37,7 +38,7 @@ evaluations, i.e. the "strengths and weaknesses" of each.
 
 On August 8th, 2022, the US Department of Treasury applied sanctions law as
 directly as it could against a decentralized application (dApp), by bringing the
-liability for interactions with OFAC-sanctioned entities to ALL ethereum wallets
+liability for interactions with OFAC-sanctioned entities to all ethereum wallets
 that interacted with the Tornando Cash on chain mixer. This precedent rightly
 inflamed concerns about the scope of national compliance, governmental
 overreach, and protocol neutrality. 
@@ -48,12 +49,11 @@ adoption of decentralized applications (including decentralized finance) with
 sophisticated compliance and reporting/auditing strategies. The impetus for this
 paper was largely to analyze different ways of verifying and consuming identity
 credentials on-chain as part of a process for validating, gating, or accepting
-transactions involving digital assets (i.e. “DeFi transactions”).  
+transactions involving digital assets (i.e. “DeFi transactions”).
 
-That said, we re-scoped the paper a bit to include other use-cases where a
-fundamentally pseudonymous, decentralized PKI system could be used to prove and
-verify realworld claims without necessarily deanonymizing the user in the
-transaction or outside of it.
+To make an architectural reference comparison that would be more useful to a broader audience, however, we abstracted this focus a bit. This enabled us to re-scoped the subject of inquiry to a comparison of architecutres where a
+fundamentally pseudonymous, decentralized PKI system (i.e., a "blockchain wallet"-driven architecture) could be used to prove and
+verify real-world claims about the end-users controlling agents (i.e., wallets) in that system without necessarily deanonymizing those end-users in the immutable records left by a transaction.
 
 ### Methodology
 
@@ -65,7 +65,7 @@ validation of Proofs derived from correlation-resistant verifiable credentials
 This paper strives to be informative as high-level overview and introduction for the following audiences:
 - Originators of on-chain assets, i.e. minters and issuers
 - Resellers of on-chain assets or operators of marketplaces and exchanges
-- DAOs and other on-chain communities tryin
+- DAOs and other on-chain communities
 - Policy-makers and regulators surveying technical possibilities for compliance frameworks for on-chain assets
 - Developers of "decentralized apps" (dapps) and other on-chain applications
 
@@ -83,17 +83,12 @@ within the scope of the analysis. This summarizes our aligned usage:
 #### Credential Issuer
 
 - AKA: Issuer (context sensitive)
-- Def: Party that issues credentials to a holder (in these use-cases, the holder can be assumed to be the data subject)
+- Def: Party that issues real-world information about a holder in a verifiable form, whether that form be on- or off-chain (i.e. badges or verifiable credentials, respectively); it issues these directly into the control of the holder (in these use-cases, the holder can be assumed to be the data subject; badges not burnable by the holder are deprecated and out-of-scope)
 
 #### Asset Issuer
 
 - AKA: Token Issuer / Minter
-- Def: Entity governing or otherwise responsible for an on-chain asset, i.e. an ERC-20 token
-
-#### Trusted Credential Issuer
-
-- AKA: Trusted Issuer
-- Def: A credential issuer that is within the scope of trust defined for the protocol by a configurable element (out of scope) which the verifier uses to filter credentials.  I.e., a Credential Issuer trusted by a given consumer of credentials.
+- Def: Entity governing or otherwise responsible for an on-chain asset, e.g. an ERC-20 token
 
 #### Decentralized Application
 
@@ -120,20 +115,20 @@ within the scope of the analysis. This summarizes our aligned usage:
 - AKA: Token, Fungible Token, Non Fungible Token, Composite Token
 - Def: On-chain building block that governs ownership and transfers of an on-chain asset such as a stablecoin, an NFT, etc. These often predate dApp smart contracts and are controlled separately.
 
+#### Gatekeeper
+
+- AKA: Gatekeeper (Identity.com) Verifier (Verite), White-lister (Aave Arc), Identity Oracle, Validator Node (ArcBlock), Proofi (LTONetwork)
+- Def: The enforcer of a “checkpoint” for actors in a system, in this case accounts in a pseudonymous asset system like a blockchain (whether UTXO-based, account-based, or some other). This entity re-issues or bridges (possibly trustlessly) verifiable information into a closed trusted ecosystem like a blockchain.
+
 #### On-chain Badge
 
-- AKA: On-Chain Flag, Permissioned Token (Identity.com), Human-Bound Token (violet.co), Opaque Identity Token (KYCDAO), Passport NFT(ArcBlock), or Badge Token (Swirlds Labs)
-- Def: A verifiable onchain badge that makes verifiable one or more claims made by an authoritative/known issuer minting/publishing those badges. Note that this has no relation to OpenBadges qua specified technical system.
+- AKA: Gateway Pass or Gateway Token (Identity.com), Human-Bound Token (violet.co), Opaque Identity Token (KYCDAO), Passport NFT(ArcBlock), or Badge Token (Swirlds Labs)
+- Def: A verifiable on-chain badge includes one or more claims made by an authoritative/known issuer minting/publishing those badges. Note that this has no relation to OpenBadges qua specified technical system. Badges can be minted by Credential Issuers, or by Gatekeepers that are also Credential Issuers, or by Gatekeepers "bridging" claims issued off-chain by Credential Issuers.
 
 #### On-chain Relationship Token
 
 - AKA: Sismo token, ENS NFT, etc.
 - Def: An opaque on-chain artefact identifying an account as having a relationship with an authoritative issuer, data custodian, etc. Unlike a badge token, these do not convey any claim about the bearer other than a relationship relative to the token's issuer, which has to be queried separately (via API, on-chain, or otherwise) for claims about the subject.
-
-#### Gatekeeper
-
-- AKA: Gatekeeper (Identity.com) Verifier (Verite), White-lister (Aave Arc), Identity Oracle, Validator Node (ArcBlock), Proofi (LTONetwork)
-- Def: The enforcer of a “checkpoint” for actors in a system, in this case accounts in a pseudonymous asset system like a blockchain (whether UTXO-based, account-based, or some other)
  
 #### Data Custodian 
 
@@ -182,7 +177,7 @@ combination with on-chain records. In some sense, the trust model and security
 model is the “worst of two worlds” of the two data sources.  For example,
 
 1. An API must allow “historical queries,” i.e. the API call needs to be replayable and verifiable after the underlying state changes (which changes the trust model for some use-cases). One way of strengthening this replay on a technical level is to include current `block_height` or other ledger-time information in query and response. Historical query could also be protected or authorized per-wallet by an off-chain signature from the wallet, i.e. a CACAO session receipt.
-1. Oracles must similarly maintain and verify historical state in the case of future replay.
+1. Oracles must similarly maintain and verify historical state in the case of future replay. (Most oracles log events to on-chain records by default)
 1. Dependencies on additional smart contracts increase code-auditing surface and trust threshold.
 1. If the second data source passes information to the smart contract validating or generating the gated transaction in the form of an off-chain transaction (a message that could be written to the chain by the first smart contract but is not intended to be executed), at least one of the two actors (data source and/or smart contract) needs to  store and access this non-executed transaction for the entire flow to be replayable, and both may need to store some kind of record identifier to insure end-to-end completeness of the records.
 
@@ -224,7 +219,7 @@ the underlying asset contract; this is typical of many regulated assets.
 The full pseudonymity of the proof presented to a verifier requires the verifier
 to trust the ZK proof generation and the [potentially unknown] issuer of the
 underlying credentials (depending on schema and proofing mechanism used). Since
-minimizing logic onchain is often a constraint or design goal of these systems,
+minimizing logic on-chain is often a constraint or design goal of these systems,
 "trust establishment" (deciding which issuers are adequate at time of proofing
 and/or at time of verification) may introduce an additional intermediary and/or
 record-keeping obligation. Replaying the entire flow requires the proofing
@@ -259,8 +254,7 @@ interactions and proofs.
 
 ### Diagram 
 
-![diagram of architecture D from https://swimlanes.io/d/84YZKRttH?e](https://hackmd.io/_uploads/HJUHzPfaj.png)
-
+![diagram of architecture D from https://swimlanes.io/d/84YZKRttH?e](https://hackmd.io/_uploads/rkSHvd8Ci.png)
 
 
 ## Use cases 
@@ -271,7 +265,7 @@ predetermined wallet-controller criterion relevant to its regulators
     - Example criteria: Only wallets whose controllers have been KYC-onboarded
     by a trusted KYC custodian
    - Real-world examples: Verite.id ecosystem issuers like Circle and Violet;
-   KYCDAO; aka “KYC-gated DeFi”
+   KYCDAO; aka “KYC-gated DeFi”; Identity.com's Gateway Protocol
     - Auditing requirement: some smart-contract interactions require all parties
     trusting/relying on a custodian to be able to query custodian for underlying
     PII in case of subpoena, etc
@@ -281,8 +275,7 @@ offline VC, checked before by front-end at time of mint transaction
     “account not flagged as suspicious by X, Y or Z machine-learning algorithm
     trusted by regulators”
     - Real-world examples: see [guest Blog Post by Justin Hunter
-    (Pinata)](https://verite.id/blog/NFT-allowlists-with-verifiable-credentials-
-    and-verite)
+    (Pinata)](https://verite.id/blog/NFT-allowlists-with-verifiable-credentials-and-verite)
 
 3. Tokenized security would like contract-level enforcement of wallet-holder
 requirements to guarantee ledger-wide compliance
@@ -300,14 +293,6 @@ requirements to guarantee ledger-wide compliance
 ## High-Level Analysis & Conclusions
 
 We grouped architectures into four high-level categories and analyzed them.  Here is a high-level summary of relative use-case fits and challenges.
-
-### Use Cases Chart
-
-|Use Case|Arch A|Arch B|Arch C|Arch D|
-|:---:|:---|:---|:---|:---|
-|1||||
-|2||||
-|3||||
 
 ### Properties Chart
 
@@ -333,8 +318,7 @@ We grouped architectures into four high-level categories and analyzed them.  Her
 
 |Use Case|Arch A: Badge Token|Arch B: Identity Token + Intermediary|Arch C: On-Chain Verification|Arch D: P2P Verification|
 |:---:|:---|:---|:---|:---|
-|1|Fastest to implement|Most reasonable for compliance in today's EVM|Verification-capable VMs and business models emerging|
-Best for single-jurisdiction/single-criterion minting contexts and E2E single-vendor use-cases|Somewhat unrealistic short-term|
+|1|Fastest to implement|Most reasonable for compliance in today's EVM|Verification-capable VMs and business models emerging|Best for single-jurisdiction/single-criterion minting contexts and E2E single-vendor use-cases|Somewhat unrealistic short-term|
 |2|1:N relationship of badge token to verifiers difficult unless verifiers harmonize requirements/logic, which is currently very unrealistic|May be too complex for today's use cases, e.g. NFT market|May be too technically demanding for today's NFT industry and usecases|Depends on business & regulatory model of NFT mint context|
 |3|Moving beyond API-based architecture may require as-yet theoretical tooling (i.e. Oracle connection to verifier/intermediary)|Good building block of a compliance-built-in stack/VM/etc|Possibly a good fit for FATF-conformant reporting, esp. for self-custody wallets, if FATF protocols enable P2P/self-custody solutions|
 
@@ -348,6 +332,7 @@ Best for single-jurisdiction/single-criterion minting contexts and E2E single-ve
 |D: P2P Verification|Somewhat unrealistic short-term|Depends on business & regulatory model of NFT mint context|Possibly a good fit for FATF-conformant reporting, esp. for self-custody wallets, if FATF protocols enable P2P/self-custody solutions|
 
 
+<!-- TODO Martin: Change to paragraphs. -->
 ## Further Research Directions
 - Composable verification systems: Egidio & Nym are working on an architecture where general-purpose verification smart contracts can check credentials and/or proofs against passed configuration variables
 - API DDoS/AuthN model discussions, based on [CACAO][] or otherwise
