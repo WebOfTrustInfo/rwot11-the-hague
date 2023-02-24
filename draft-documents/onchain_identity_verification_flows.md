@@ -6,7 +6,7 @@
 ## Editors: 
 - Juan Caballero ([Centre.io](https://Centre.io))
 - Martin Riedel ([identity.com](https://identity.com)) 
-- Egidio Casati ([NymLab.it](https://NymLab.it))
+- Egidio Casati ([NymLab.it](https://www.nymlab.it/))
 - Robert Mao ([ArcBlock.io](https://ArcBlock.io))
 - Fabrice Rochette ([2060.io](https://2060.io))
 - Andrea Scorza ([LTOnetwork.com](https://LTOnetwork.com))
