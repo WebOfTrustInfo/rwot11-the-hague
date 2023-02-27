@@ -6,6 +6,18 @@ The goal of the workshop is to generate five technical white papers and/or propo
 
 ## Final Papers
 
+## [*Composing Credentials via LinkedClaims and Cryptographic Binding*](final-documents/composable-credentials.pdf) [(Text)](final-documents/composable-credentials.md)
+
+#### by Phillip D. Long, Dmitri Zagidulin, and Golda Velez
+
+> The Verifiable Credential (VC) ecosystem has encountered several use cases that require a third-party assertion, or a linked claim to an existing object (another VC, a PDF, a web page, etc). Whether it is product reviews, linked claims of self-created credentials, provenance of academic paper reviews, or some other general purpose third-party assertion, these use cases have several requirements in common. Each use case may also require a domain-specific set of fields.
+
+> We propose a minimal format for connecting (and optionally cryptographically binding) credentials that will allow each use of third-party assertions to be represented as a set of LinkedClaims. Such a data set will enable verifiers to evaluate the credibility of claims, including those sourced from outside the Verifiable Credential ecosystem.
+
+> Further, we propose to demonstrate the ability to compose several Verifiable Credentials into a single domain-specific credential using the LinkedClaim vocabulary that will satisfy the domain requirements of the likely users.
+
+> This approach will enable rich shared datasets to inform trust decisions while satisfying the requirements of domain-specific end users. One of the intentions of LinkedClaims Verifiable Credentials is to give individuals the agency to make such claims about themselves and others on their own terms.
+
 ## [*Identifier Binding: defining the Core of Holder Binding*](final-documents/identifier-binding.pdf) [(Text)](final-documents/identifier-binding.md)
 
 #### by Paul Bastian, Rieks Joosten, Zaïda Rivai, Oliver Terbu, Snorre Lothar von Gohren Edwin, Antonio Antonino, Nikos Fotiou, Stephen Curran, and Ahamed Azeem
