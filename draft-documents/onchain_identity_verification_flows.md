@@ -19,14 +19,14 @@ discussed under the rubric of "on-chain web3 identity." Marketing imperatives
 and the lack of familiarity with compliance and liability issues particular to
 identity have largely muddied the waters in the solution space, however,
 resulting in a reductive three-way rivalry between "soul-bound tokens",
-verifiable credentials, and a loosely-defined "zero knowledge" solutions.
+verifiable credentials, and loosely-defined "zero knowledge" solutions.
 Working at a high level, we tried to identify a taxonomy that would be more
 useful for mapping this solution space according to high-level patterns and
 tradeoffs. 
 
 We defined the problem space at the highest level thusly: various architectures
 deploy on-chain artefacts to aid in the verification of claims about a wallet's
-controller. From there, we tried to bucket these into patterns before
+controller. From there, we tried to bucket these existing solutions into patterns before
 identitying strengths and weaknesses of each against a short, exemplary list of
 use-cases. The goal was not so much *evaluating* these exhaustively, as any
 evaluation should be more squarely grounded in more detailed use-cases and non-
@@ -38,20 +38,20 @@ evaluations, i.e. the "strengths and weaknesses" of each.
 
 On August 8th, 2022, the US Department of Treasury applied sanctions law as
 directly as it could against a decentralized application (dApp), by bringing the
-liability for interactions with OFAC-sanctioned entities to all ethereum wallets
-that interacted with the Tornando Cash on chain mixer. This precedent rightly
+liability for interactions with OFAC-sanctioned entities to all Ethereum wallets
+that interacted with the Tornado Cash on-chain mixer. This precedent rightly
 inflamed concerns about the scope of national compliance, governmental
 overreach, and protocol neutrality. 
 
-This precedent presents a once-in-a-lifetime opportunity to leverage on-chain
-digital identity as a way to anticipate the regulation trajectory and unlock
+This precedent also presents a once-in-a-lifetime opportunity to leverage on-chain
+digital identity as a way to anticipate the regulation trajectory and to unlock
 adoption of decentralized applications (including decentralized finance) with
 sophisticated compliance and reporting/auditing strategies. The impetus for this
 paper was largely to analyze different ways of verifying and consuming identity
 credentials on-chain as part of a process for validating, gating, or accepting
 transactions involving digital assets (i.e. “DeFi transactions”).
 
-To make an architectural reference comparison that would be more useful to a broader audience, however, we abstracted this focus a bit. This enabled us to re-scoped the subject of inquiry to a comparison of architecutres where a
+To make an architectural reference comparison that would be more useful to a broader audience, however, we abstracted this focus a bit. This enabled us to re-scope the subject of inquiry to a comparison of architecutres where a
 fundamentally pseudonymous, decentralized PKI system (i.e., a "blockchain wallet"-driven architecture) could be used to prove and
 verify real-world claims about the end-users controlling agents (i.e., wallets) in that system without necessarily deanonymizing those end-users in the immutable records left by a transaction.
 
@@ -62,7 +62,7 @@ ranging from on-chain tokenized identities (i.e. “Soulbound Tokens”) to on-c
 validation of Proofs derived from correlation-resistant verifiable credentials
 (based on the `anonCreds` system of zero-knowledge presentation).
 
-This paper strives to be informative as high-level overview and introduction for the following audiences:
+This paper strives to be informative as a high-level overview and introduction for the following audiences:
 - Originators of on-chain assets, i.e. minters and issuers
 - Resellers of on-chain assets or operators of marketplaces and exchanges
 - DAOs and other on-chain communities
@@ -93,17 +93,17 @@ within the scope of the analysis. This summarizes our aligned usage:
 #### Decentralized Application
 
 - AKA: dApp
-- Def: 1 or more front-end and 1 or more decentralized protocols such as on-chain smart contracts, IPFS, or P2P protocols, interact with deployed contracts and/or chain state
+- Def: One or more front-end and one or more decentralized protocols such as on-chain smart contracts, IPFS or P2P protocols, interacting with deployed contracts and/or chain state
 
 #### Gated Access
 
 - AKA: Token-gating
-- Def: Restrict access and/or provide exclusive content, right or membership to some kind of service. In the dapp/DeFi context, this can refer to "front-end gating" (access control in the browser to a web resource regardless of origin) or "back-end gating" (wallet checks done by smart-contracts on originating/signing accounts)
+- Def: Restricting access and/or providing exclusive content, right or membership to some kind of service. In the dapp/DeFi context, this can refer to "front-end gating" (access control in the browser to a web resource regardless of origin) or "back-end gating" (wallet checks done by smart-contracts on originating/signing accounts)
 
 #### dApp front-end 
 
 - AKA: Decentralized front-end, DeFi front-end
-- Def: A user interface that communicates with 1 or more decentralized protocols such as on-chain smart contracts, IPFS, or other P2P protocols
+- Def: A user interface that communicates with one or more decentralized protocols such as on-chain smart contracts, IPFS, or other P2P protocols
 
 #### dApp Smart Contract
 
@@ -133,7 +133,7 @@ within the scope of the analysis. This summarizes our aligned usage:
 #### Data Custodian 
 
 - AKA: Data Controller (GDPR), Identity Provider (OIDC), KYC Custodian
-- Def: Storer and controller of data needed to verify identity of an actor (can be internal or outsourced). Some wallets interact directly with a semi- or self-custodial per-user data store (encrypted data vault, decentralized web node, personal data store, locker, etc) which can also be considered custodial in a technical sense, although more mapping to a more regulated custodial actor via complex authorization system(s) may be needed for some regulated use cases that specify legally the definition and obligations of a custodial role for data per se.
+- Def: Storer and controller of data needed to verify identity of an actor (can be internal or outsourced). Some wallets interact directly with a semi- or self-custodial per-user data store (encrypted data vault, decentralized web node, personal data store, locker, etc.), which can also be considered custodial in a technical sense, although more mapping to a more regulated custodial actor via complex authorization system(s) may be needed for some regulated use cases that specify legally the definition and obligations of a custodial role for data per se.
 
 
 ## Architecture A: Public Badge Token directly represent real-world claims (`badge-only`)
@@ -146,7 +146,7 @@ instruction on a specific smart contract. No additional calls to other data
 sources (elsewhere on-chain or off-chain) are required to accept or reject a
 transaction or make authentication decisions.
 
-While multiple ERC draft standards are being used, these are generally referred to in the market and in blockchain discussions as "access/gating based on [Soul-bound Tokens (SBTs)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) or Account-bound Tokens, i.e. an ERC721 without a transfer function interpreted as a badge representing a claim.
+While multiple ERC draft standards are being used, these are generally referred to in the market and in blockchain discussions as "access/gating based on [Soul-bound Tokens (SBTs)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763) or Account-bound Tokens", i.e. an ERC721 without a transfer function interpreted as a badge representing a claim.
 
 ### Replayability 
 
@@ -161,9 +161,9 @@ Since all data is on-chain and fully public, all logic can be replayed or audite
 ## Architecture B: Opaque Relationship Token triggers query to intermediary (`trusted intermediary`)
 
 In order to minimize identifying information in relation to the public approach, one solution is to minimize the exposed information to a well-defined minimum. In this sense the access decisions are still made by a smart contract combining badge metadata with additional data fetched just before and submitted at time of decision, whether that additional data comes from: 
-1. an API call from a dApp front-end to issuer or other intermediary, 
-1. an oracle call, 
-1. another smart contract, or 
+1. an API call from a dApp front-end to issuer or other intermediary; 
+1. an oracle call; 
+1. another smart contract; or 
 1. A valid transaction signed by the issuer or other trusted intermediary and delivered via the wallet. 
 
 In this approach, the later/just-in-time call (which might be “expensive” computationally or in gas/transaction fee terms) is validated along with the first; any claims implied by the relationship token (status at time of issuance) are not considered valid until confirmed or updated (status at time of last-minute query). 
@@ -179,7 +179,7 @@ model is the “worst of two worlds” of the two data sources.  For example,
 1. An API must allow “historical queries,” i.e. the API call needs to be replayable and verifiable after the underlying state changes (which changes the trust model for some use-cases). One way of strengthening this replay on a technical level is to include current `block_height` or other ledger-time information in query and response. Historical query could also be protected or authorized per-wallet by an off-chain signature from the wallet, i.e. a CACAO session receipt.
 1. Oracles must similarly maintain and verify historical state in the case of future replay. (Most oracles log events to on-chain records by default)
 1. Dependencies on additional smart contracts increase code-auditing surface and trust threshold.
-1. If the second data source passes information to the smart contract validating or generating the gated transaction in the form of an off-chain transaction (a message that could be written to the chain by the first smart contract but is not intended to be executed), at least one of the two actors (data source and/or smart contract) needs to  store and access this non-executed transaction for the entire flow to be replayable, and both may need to store some kind of record identifier to insure end-to-end completeness of the records.
+1. If the second data source passes information to the smart contract validating or generating the gated transaction in the form of an off-chain transaction (a message that could be written to the chain by the first smart contract but is not intended to be executed), at least one of the two actors (data source and/or smart contract) needs to  store and access this non-executed transaction for the entire flow to be replayable, and both may need to store some kind of record identifier to ensure end-to-end completeness of the records.
 
 ### Diagram 
 
@@ -195,7 +195,7 @@ credential. The proof is generated by the credential holder within the bounds of
 the ZK framework, proofing one or more predicates and/or attributes about the
 credential against a static credential schema. (Note: not all verifiable
 credentials are capable of and useful to these kinds of proofs; the VCWG has yet
-to specified standardized data models for these credential schemata and
+to specify standardized data models for these credential schemata and
 requisite credential proofing mechanisms such as per-property signatures, etc.;
 for ongoing incubation work on protocols, see the [Applied Cryptography working
 group at DIF](https://identity.foundation/working-groups/crypto.html),
@@ -209,7 +209,7 @@ referred to as an “Anonymous Credential” (because it relies on a correlation
 resistant credential rather than one authenticated by direct reference to a
 static public identifier). The authors note that it would be more precise in
 this use-case to refer to it as a “Fully pseudonymous proof” because it links an
-anonymous credential to a pseudonymous identifier (i.e. a blockchain account).
+anonymous credential to a pseudonymous identifier (i.e., a blockchain account).
 Note the division of labor between application-specific verification (against
 application-specific compliance requirements) in a distinct smart contract from
 the underlying asset contract; this is typical of many regulated assets.
@@ -246,8 +246,8 @@ legal organization or jurisdiction.
 
 ### Replayability
 
-As in FATF use cases, fully P2P use-cases can be the hardest from which to
-produce and guarantee adequate record-keeping. The authors remark that perhaps
+As in FATF use cases, fully P2P use-cases can be the hardest for
+producing and guaranteeing adequate record-keeping. The authors remark that perhaps
 per-user data stores or custodial services could conceivably emerge in the
 coming years that process, store, and make queryable records of such off-chain
 interactions and proofs.
@@ -276,7 +276,6 @@ offline VC, checked before by front-end at time of mint transaction
     trusted by regulators”
     - Real-world examples: see [guest Blog Post by Justin Hunter
     (Pinata)](https://verite.id/blog/NFT-allowlists-with-verifiable-credentials-and-verite)
-
 3. Tokenized security would like contract-level enforcement of wallet-holder
 requirements to guarantee ledger-wide compliance
     - Example requirements: wallet controller must be KYC’d or KYB’d with known
@@ -301,13 +300,13 @@ We grouped architectures into four high-level categories and analyzed them.  Her
 |A|On-chain receipts + Issuer records|None|High|Low|Low|
 |B|All parties (issuer+verifier) must be subpoenad/cooperate|Verifier must be trusted by relying party and wallet controller|Low|High|High|
 |C|Issuer & Wallet Controller need to cooperate to reconstruct (poss. also circuit-building middleware)|Whoever combines ZK inputs into a "circuit" needs to be trust by all|Medium|Medium (depends on SDKs & middleware used)|Medium|
-|D|Issuer & 2 Wallet Controllers need to cooperate to reconstruct|Routing/Messaging infra, possibly also proofing/dereferencing support for complex VCs|High|High (until DIDComm is more mature?) |High|
+|D|Issuer & two Wallet Controllers need to cooperate to reconstruct|Routing/Messaging infra, possibly also proofing/dereferencing support for complex VCs|High|High (until DIDComm is more mature?) |High|
 
 (Same info axis-flipped:)
 
 |Properties|Arch A|Arch B|Arch C|Arch D|
 |:---:|:---|:---|:---|:---|
-|Audit Trail|On-chain receipts + Issuer records|All parties (issuer+verifier) must be subpoenad/cooperate|Issuer & Wallet Controller need to cooperate to reconstruct (poss. also circuit-building middleware)|Issuer & 2 Wallet Controllers need to cooperate to reconstruct|None|Verifier must be trusted by relying party and wallet controller|
+|Audit Trail|On-chain receipts + Issuer records|All parties (issuer+verifier) must be subpoenad/cooperate|Issuer & Wallet Controller need to cooperate to reconstruct (poss. also circuit-building middleware)|Issuer & two Wallet Controllers need to cooperate to reconstruct|None|Verifier must be trusted by relying party and wallet controller|
 |Trusted Intermediaries|Whoever combines ZK inputs into a "circuit" needs to be trust by all|Routing/Messaging infra, possibly also proofing/dereferencing support for complex VCs|
 |Simplicity|High|Low|Medium|High|
 |Implementation complexity|Low|High|Medium (depends on SDKs & middleware used)|High (until DIDComm is more mature?)|
@@ -319,7 +318,7 @@ We grouped architectures into four high-level categories and analyzed them.  Her
 |Use Case|Arch A: Badge Token|Arch B: Identity Token + Intermediary|Arch C: On-Chain Verification|Arch D: P2P Verification|
 |:---:|:---|:---|:---|:---|
 |1|Fastest to implement|Most reasonable for compliance in today's EVM|Verification-capable VMs and business models emerging|Best for single-jurisdiction/single-criterion minting contexts and E2E single-vendor use-cases|Somewhat unrealistic short-term|
-|2|1:N relationship of badge token to verifiers difficult unless verifiers harmonize requirements/logic, which is currently very unrealistic|May be too complex for today's use cases, e.g. NFT market|May be too technically demanding for today's NFT industry and usecases|Depends on business & regulatory model of NFT mint context|
+|2|1:N relationship of badge token to verifiers difficult unless verifiers harmonize requirements/logic, which is currently very unrealistic|May be too complex for today's use cases, e.g. NFT market|May be too technically demanding for today's NFT industry and use cases|Depends on business & regulatory model of NFT mint context|
 |3|Moving beyond API-based architecture may require as-yet theoretical tooling (i.e. Oracle connection to verifier/intermediary)|Good building block of a compliance-built-in stack/VM/etc|Possibly a good fit for FATF-conformant reporting, esp. for self-custody wallets, if FATF protocols enable P2P/self-custody solutions|
 
 (Same info axis-flipped:)
@@ -328,7 +327,7 @@ We grouped architectures into four high-level categories and analyzed them.  Her
 |:---:|:---|:---|:---|
 |A: Badge Token|Fastest to implement|Best for single-jurisdiction/single-criterion minting contexts and E2E single-vendor use-cases|1:N relationship of badge token to verifiers difficult unless verifiers harmonize requirements/logic, which is currently very unrealistic|
 |B: Identity Token + Intermediary|Most reasonable for compliance in today's EVM|May be too complex for today's use cases, e.g. NFT market|Moving beyond API-based architecture may require as-yet theoretical tooling (i.e. Oracle connection to verifier/intermediary)|
-|C: On-Chain Verification|Verification-capable VMs and business models emerging|May be too technically demanding for today's NFT industry and usecases|Good building block of a compliance-built-in stack/VM/etc|
+|C: On-Chain Verification|Verification-capable VMs and business models emerging|May be too technically demanding for today's NFT industry and use cases|Good building block of a compliance-built-in stack/VM/etc|
 |D: P2P Verification|Somewhat unrealistic short-term|Depends on business & regulatory model of NFT mint context|Possibly a good fit for FATF-conformant reporting, esp. for self-custody wallets, if FATF protocols enable P2P/self-custody solutions|
 
 
