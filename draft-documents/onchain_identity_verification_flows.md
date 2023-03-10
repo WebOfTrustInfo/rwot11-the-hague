@@ -387,13 +387,23 @@ however, blockchains vary greatly on their support for multi-address wallets and
 accounts, with varying degrees of "Account Abstraction" implemented at the
 protocol layer to allow end-users to selectively disclose co-control of multiple
 addresses. These capabilities were central to
-[identity.org](https://identity.org)'s design for did:sol (the Solana on-chain
+[Identity.com](https://identity.com)'s design for did:sol (the Solana on-chain
 DID method), which enables Solana wallets to use a secret, unfunded address as a
 credentialSubject for VCs without linking them to other addresses the same user
-publicly uses on-chain. When Account Abstraction patterns become more dominant,
-particularly if it were to be enabled on the protocol level by Ethereum and EVM-
-compatible chains in the coming years, we can expect this complication to cross-
-cut the above patterns and lead to a more complex architectural landscape.
+publicly uses on-chain. 
+
+As Account Abstraction patterns become more dominant, particularly as it gets
+enabled on the protocol level by Ethereum and EVM-compatible chains in the
+coming months, we can expect this complication to cross-cut the above patterns
+and lead to a more complex architectural landscape. For example, cross-chain
+capabilities enabled across multiple account-abstraction-enabled chains will
+complicate and advance cross-chain engineering substantially. Today,
+[Identity.com](https://identity.com) provides an on-chain permissioned Token
+implemenation based on their Gateway Protocol design with implementations on
+both Solana and EVM. In this way, did:sol allows its holders to link keys from
+both environments (`ed25519` and `secp256k1`); as such patterns become more
+common, the authors expect the privacy landscape could change as much as the
+economic landscape will.
 
 One factor elided from our analysis above was consent-- crucial to the product
 design of [Violet.co](https://violet.co)'s Humanbound token is the consent of
