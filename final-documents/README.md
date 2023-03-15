@@ -1,6 +1,6 @@
 # Rebooting the Web of Trust XI (Fall 2022) Final Papers
 
-_This is a listing for the RWOT9 papers to date. [Several more](../draft-documents/README.md) are in process._
+_This is a listing for the RWOT11 papers to date. [Several more](../draft-documents/README.md) are in process._
 
 ## [*Composing Credentials via LinkedClaims and Cryptographic Binding*](composable-credentials.pdf) [(Text)](composable-credentials.md)
 
