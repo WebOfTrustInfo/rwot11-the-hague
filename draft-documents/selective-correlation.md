@@ -2,20 +2,6 @@ Selective Correlation
 ==================================
 ***Data Minimization, Selective Disclosure, and Progressive Trust***
 
-# To Do
-
-* [ ] Enumerate and describe "capabilities" of various technologies, with regard to correlation
-  * [ ] ASSIGNED @peacekeeper 
-* [ ] Progressive trust
-    * [ ] @Brent @ChristopherA 
-* [ ] Use Cases
-    * [ ] Educational @ChristopherA 
-    * [ ] Healthcare @elenachachkarova
-* [ ] Definitions
-    * [ ] @fabtagliaferro
-* [ ] @ChristopherA would like to see if we can explore WHY parties (in particular holders≠subject) are motivated to elide and otherwise protect personal data they hold, other than because regulators or a contract requires it. Such as to avoid legal costs (discovery, subpoenas, etc.), avoid competitive risks (employee poaching, front-loading transactions), etc. With this we might be able address positive incentives.
-    * [ ] The is related to the concept of "non-designated holders" of verified credentials that received a VC, verified it, but also keeps it and could send it to yet another party. I currently am recieving spam mail offers for Holland events since clearly my airline has sold that I've arrived here.
-
 # Authors
 
 * Brent Zundel (lead author) - @brentzundel (GitHub), brent.zundel@gendigital.com, [Gen Digital](https://www.gendigital.com/)
@@ -24,9 +10,7 @@ Selective Correlation
 * Elena Chachkarova - @elenachachkarova (GitHub), [Nymlab](https://www.nymlab.it/#/)
 * Fabio Tagliaferro - @fabtagliaferro (GitHub), [University of Verona](https://www.di.univr.it/?ent=persona&id=39578&lang=en), [Commercio.Network](https://commercio.network/)
 
-# Selective Correlation
-
-## Introduction
+# Introduction
 
 The goal of this paper is to enable decision makers, particularly non-technical
 ones, to gain a nuanced grasp of correlation. We will explore the concept of
@@ -37,63 +21,62 @@ of this paper to better understand correlation best practices, to adopt correct
 approaches for their use cases, and to assess techniques that enable these best
 practices.
 
-## Corellation and Identity
+# Key Concepts
+
+## Correlation and Identity
 
 Correlation lies at the heart of identity. The concept of identity cannot exist
-without some obverver who identifies by correlating different data points about
-the subject being identified, whether the subject is a person, group, or thing.
-Thus Identity is correlation across contexts: the subject being identified is
-recognized as the same subject from a different context. Therefore, control of
-correlation is directly tied to control of identity, or rather, tied to control
-of how identifiable the subject is.[?]
+without some observer who identifies by correlating different data points about
+the subject being identified, whether that subject is a person, group, or thing.
+Identification is correlation across contexts: the subject being identified is
+recognized as the same subject from a different context. Control over
+correlation is therefore directly tied to control of identity, or in other
+words, tied to control of how identifiable the subject is. [^1]
 
-Correlation in and of itself isn't evil, or bad — it is a required function
-of any identity system. However, corellation historically also has been misused
-by adversaries to threaten or harm people.
-
-To prevent that misuse of correlation, in the context of the self-sovereign
-identity principles[?], when correlation is used to identify people, the power
-to correlate must also be self-sovereign. That is, the power to correlate must
-be, as much as possible, in the hands of the person being correlated, as the
-relative risks to the individual is greater.[?]
+Correlation is a required function of any identity system. However, correlation
+historically also has been misused by adversaries to threaten or harm people.
+To prevent the misuse of correlation in the context of self-sovereign
+identity[^2], the power to correlate must also be self-sovereign. For
+individuals this means that the power to correlate must be, as much as possible,
+in the hands of the person being correlated.
 
 In most systems, people have little control about what information they provide.
-Much of the information that will allow them to be correlated lies outside of
-their consent. In a self-sovereign system, people have more opportunities to
-manage what data will be correlated.
+Much of the data that allows them to be correlated lies outside their control.
+In a self-sovereign system, people have more opportunities to manage
+correlatable data.
 
 ## Correlatable Data
 
 We define correlatable data as any data than can be used to identify a subject
 across contexts. A context may be siloed, as when data is shared with two
-different verifiers. Or it may be temporal, as when data is shared with the same
-verifier over time.
+different observers. Or it may be temporal, as when data is shared with the same
+observer over time.
 
 We define an observer as an entity who collects correlatable data about a
 subject. An observer may collect data directly from subjects, from the process
-used to collect data about subjects, or from other observers. The more
-correlatable data that is available, the easier it will be for an observer to
-identify subjects without their consent. Therefore, a reduction in the set of
-available correlatable data is necessary. To accomplish this we recommend in
-general the practice of data minimization.
+used to collect data about subjects, or from other observers. In the context of
+digital credentials, an observer may aso be called a verifier.
+
+The more correlatable data that is available, the easier it will be for an
+observer to identify subjects without their direct consent. Therefore, a
+reduction in the quantity of available correlatable data is desirable. One means
+of accomplishing this is to follow the practice of data minimization.
 
 ## Data Minimization
 
-Data Minimization is the practice of limiting the amount of shared data to the
-minimum necessary: just enough for parties to successfully transact, accomplish
-a task, or otherwise meet a goal with each other, while minimizing risks to all
-parties by omitting unnecessary content. 
+Data minimization is the practice of limiting the shared data to the minimum
+amount necessary. What this means concretely depends upon context, but in
+general it means only sharing enough data for parties to successfully transact,
+while minimizing all unnecessary data. 
 
-Though essential as part of security best practices (along with
-[Least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege), a
-topic for a future musing), Minimimal Disclosure is, in particular, is mandated
-practice for maintaining the privacy of people using digital identities and thus
-requires special attention  when collecting and sharing, to curtail personal
-information to only that which is absolutely necessary.
+Though essential as part of security best practices, minimal disclosure of data
+is vital for maintaining the privacy of people using digital identities. Special
+attention must be paid when collecting and sharing data, to limit that sharing
+to only that which is absolutely necessary.
 
-The best practices of Data Minimization guide the design and implementation of
+The concept of data minimization guides the design and implementation of
 personal data protection regulations, such as the General Data Protection
-Regulation (GDPR) in the European Union. They include:
+Regulation (GDPR) in the European Union. For example:
 
 * Service providers must only collect the minimum amount of personal information
   necessary to perform a specific task or service.
@@ -102,37 +85,16 @@ Regulation (GDPR) in the European Union. They include:
 * Individuals should only share personal information with third parties when it
   is necessary to perform a task or service.
 
-The GDPR supports these best practices by requiring companies to have a legal
-basis for collecting and processing personal information and by giving
-individuals the right to access, correct, and delete their personal information.
-The GDPR also requires companies to implement appropriate security measures to
-protect personal information and to notify individuals and authorities in case
-of a data breach.
+Other regulations that require some form of data minimization are listed in
+[references](#regulations-that-require-some-form-of-data-minimization).
 
-Other regulations that require some form of Data Minimization include:
+ISO (International Organization for Standardization) has several standards
+related to data protection and privacy that include principles of data
+minimization. We list some in
+[references](#iso-standards-related-to-data-protection-and-privacy).
 
-* The California Consumer Privacy Act (CCPA) in the United States, which
-  requires businesses to disclose the categories of personal information that
-  they collect, use, disclose, and sell and also to obtain consumer consent for
-  the sale of personal information.
-* The Payment Card Industry Data Security Standard (PCI DSS), which is a set of
-  security standards for organizations that handle credit card information and
-  which requires merchants to limit the amount of cardholder data that is
-  stored, processed, or transmitted.
-* The Personal Information Protection and Electronic Documents Act (PIPEDA) in
-  Canada, which requires organizations to collect only the personal information
-  that is necessary for the identified purpose.
-* The Health Insurance Portability and Accountability Act (HIPAA) in the United
-  States, which requires healthcare organizations to protect the privacy of
-  patient health information and to collect only the minimum necessary
-  information to provide care.
-* The Cybersecurity Information Sharing Act (CISA) in the United States, which
-  encourages organizations to share information about cybersecurity threats, but
-  also requires companies to protect personal information and to limit the
-  collection of data to that which is necessary to address the threat.
-
-In general, Data Minimization is enacted by policy decisions that limit the
-amount, duration, and scope of data collection and use.
+In general, data minimization is enacted by policy decisions that limit the
+amount, duration, and scope of data collection and use:
 
 * **Content minimization (amount)** involves collecting only the minimum amount
   of data necessary.
@@ -141,60 +103,139 @@ amount, duration, and scope of data collection and use.
 * **Scope minimization (scope)** involves using data only for the specific
   purpose of the active task.
 
-In the digital credentials ecosystem, data minimization is primarily implemented
-through policy decisions made by stakeholders: credential issuers ensure that
+For digital credentials, data minimization is primarily implemented through
+policy decisions made by stakeholders: credential issuers ensure that
 credentials can be presented in a way that enables data minimization, and
-credential inspectors establish policies in advance regarding the minimum data
+credential verifiers establish policies in advance regarding the minimum data
 necessary to accomplish a task, the minimum time data can be stored, and the
 processes that ensure data is only applied to the task at hand.
 
-Subjects may desire data minimization for various reasons, such as reducing the
-risk of undesired correlation or providing information gradually
-([Progressive Trust](https://www.blockchaincommons.com/musings/musings-progressive-trust/)).
-Verifiers may also desire data minimization for other reasons, such as avoiding
-appearing threatening, protecting from "I told you so" situations, avoiding
-potential collection of "toxic" GDPR data, and reducing the cost of storing
+In addition to the use of data minimization to protect the privacy of data
+subjects, verifiers also benefit from data minimization. These benefits include
+avoiding collection of "toxic" personal data and reducing the cost of storing
 information.
 
-ISO (International Organization for Standardization) has several standards
-related to data protection and privacy that include principles of data
-minimization. Some examples include:
+The implementation of data minimization can be challenging:
 
-* **ISO/IEC 27001:2013 - Information security management systems (ISMS)**
-  provides a framework for managing sensitive information and includes a
-  requirement for organizations to minimize the amount of sensitive information
-  that is collected, used, and retained.
-* **ISO/IEC 29100:2011 - Privacy framework** provides a framework for protecting
-  personal information and includes a requirement for organizations to only
-  collect personal information that is necessary for the specific purpose for
-  which it is being collected.
-* **ISO/IEC 27701:2019 - Extension to ISO/IEC 27001 and ISO/IEC 27002 for
-  privacy information management** provides a framework for managing personal
-  information and includes a requirement for organizations to minimize the
-  amount of personal information that is collected, used, and retained.
-* **ISO/IEC 29151:2012 - Information technology - Security techniques -
-  Data-at-rest protection** provides guidance for protecting data when it is
-  stored and includes a requirement for organizations to minimize the amount of
-  sensitive information that is stored.
-* **ISO/IEC 27040:2015 - Storage security** provides guidance for protecting
-  data when it is stored and includes a requirement for organizations to
-  minimize the amount of sensitive information that is stored.
-
-Data minimization can be challenging to implement due to a number of factors,
-such as:
-
-* **Difficulty in determining the minimum necessary data:** It can be difficult
-  to determine exactly how much data is necessary to accomplish a specific task
-  or goal, especially when dealing with complex systems and processes.
-* **Balance of data minimization with other goals:** Organizations may be torn
+* **Determining the minimum necessary data:** It can be difficult to determine
+  exactly how much data is necessary, especially when dealing with complex
+  systems and processes.
+* **Balancing data minimization with other goals:** Organizations may be torn
   between the need to collect and retain data for legitimate business purposes
   and the need to minimize data to protect privacy and security.
-* **Usage of data silos:** Data may be collected and stored across multiple
-  systems and departments, making it difficult to identify and remove
-  unnecessary data.
-* **Lack of user consent:** Data minimization may not be possible if users are
-  not willing to share their personal information, which can make it difficult
-  to implement privacy-enhancing technologies such as selective disclosure.
+* **Siloed data:** Data may be collected and stored across multiple systems and
+  departments, making it difficult to identify and remove unnecessary data.
+* **User consent:** People are not willing to share their personal information.
+
+## Terminology
+
+**Correlatable**: Data is said to be correlatable if by examining it that
+there is a way to determine whether it is associated with sets of other data
+stored elsewhere. This also includes lossy projections of the sets of data such
+as deterministic hashes that demonstrate that assocation.
+
+**Decorrelation**: A general term for any process that is used to reduce
+correlation within data, or cross-correlation with other sets of data, while
+preserving other useful aspects of the data. 
+
+**Differential Privacy**: A decorrelation process for sharing information about
+sets of data by describing the patterns of groups within the dataset while
+withholding information about individuals in the dataset. The idea behind
+differential privacy is that if the effect of making an arbitrary single
+substitution in the database is small enough, the query result cannot be used to
+infer much about any single individual, and therefore provides privacy. For
+instance, adding a random number (say 4) from one part of the set and
+subtracting 4 from another part of the set when the business purpose of the
+data is total or average.
+
+**Elide/Elision**: The term elide means "to leave out", and elision is the act
+or instance of ommitting something. (Redaction is a related term
+
+**Herd Privacy**: The decorrelation choices made by one set vs other data sets
+may result in correlation. Herd privacy process ensures that this doesn't happen
+by making them indistiguishable from other data sets.
+
+**Non-correlatable**: If there is no practical way to learn whether a set of
+data is a projection of a other data, they are said to be noncorrelatable.
+
+**Nonce**: aka "Number Used Once". This is an arbitrary number that is used just
+once in a cryptographic function such as signatures or encryption, to prevent
+correlation. Note that this is not necessarly a random number, simply a number
+that is never used again, and in some cases it can be quite valuable for a nonce
+to be generated deterministically.
+
+**Quasi-correlatable**: Between projections that are definitely correlatable and
+definitely noncorrelatable, there are projections that may leak a little
+information about their data. In particular (in no particular order), size,
+order, use of particular formatting, date/time, location, algorithm usage, and
+other identifiable patterns.
+
+**Salt**: This is random data (values and length) that are used as an additional
+input to a cryptographic function such as a hash of data, encryption, signature,
+to prevent correlation.
+
+# Techniques
+
+### Elision
+Elision is the ability of an individual to derive from a credential another
+credential with some attributes removed. Stakeholders in the credentials
+ecosystem enable elision capabilities in the following ways:
+* Credential issuers negotiate with the holder to enable elision, by issuing
+  credentials with a subset of attributes already included in another
+  credential. 
+* Credential inspectors ensure that the elided credentials can be verified with
+  the usual procedure, but they won't be able to know if any kind of elision has
+  been performed if they cannot correlate them with the starting credentials. 
+
+### Selective disclosure
+Selective disclosure is the ability of an individual to granularly decide what
+information to share. Stakeholders in the credentials ecosystem enable selective
+disclosure capabilities in the following ways:
+* Credential issuers format the credential and its attributes in such a way as
+  to enable selective disclosure. As with the strategy of data minimization,
+  they may issue multiple, related, granular sub-credentials. Each attribute and
+  the overall credential may be formatted to support cryptography, a capability
+  described in more detail below. 
+* Credential inspectors ensure the request is framed in such a way as to enable
+  selective disclosure, using the cryptographic tools required. 
+
+Once data minimization policies and selective disclosure are in place, the third
+and last enhancement can be applied. 
+
+### Progressive Trust
+Progressive trust is the process usable by an individual to gradually increase
+the amount of relevant data revealed as trust is built or value generated. 
+
+To enable progressive trust capabilities, stakeholders in the credentials
+ecosystem act in the following ways:
+* Issuers format the credential(s) in such a way as to enable progressive trust.
+  This may require issuing multiple, related, atomic sub-credentials. It also
+  may require formatting the credential to support mathematical queries and
+  cryptographic proofs. Finally, the issuer's data model may express how the
+  various sub-credentials are related in a scenario involving progressive trust. 
+* Inspectors ensure that requests are framed in such a way as to enable
+  progressive trust. They structure the communication in order to to gradually
+  escalate credential requests in order to enable a subject to progressively
+  trust the inspector more and more, revealing the minimum data necessary to
+  accomplish each step of the task or goal and revealing more and more as the
+  mutual communication progresses. 
+
+### Progressive Disclosure
+Progressive disclusure is one of the possible ways for an individual to let the
+progressive trust with another party proceed. The individual starts anonymously
+and continues to provide information, recognizing that the more data is
+revealed, the more risk that the other would be able to correlate. But with the
+gained trust, the risk will be considered a benefit, instead.
+
+To enable progressive disclosure capabilities, stakeholders in the credentials
+ecosystem act in the following ways:
+* Issuers format the credential(s) in such a way as to enable progressive
+  disclosure. This requires issuing credentials that can be selectively
+  disclosed multiple times. Each presentation will share attributes that have
+  not been shared before. 
+* Inspectors ensure that requests are framed in such a way as to enable
+  progressive trust. This requires presentation protocols that can link together
+  some previously made presentations, forming a progressive trust instance.
 
 ## Selective Disclosure
 
@@ -336,313 +377,7 @@ disclosure, but these are not as broadly being investigated today.
   However, these techniques are extremely computationally expensive (by multiple
   orders of magnitude).
 
-====
-
-## A Classification System for Correlatable Data
-Using the context of a verifiable credential ecosystem, we classify data
-according to its relationship to the subject. For this classification we imagine
-the following system:
-
-1. There are credentials, which contain **claim data** about a subject, e.g.,
-  the claims contained in the `credentialSubject` property of a Verifiable
-  Credential[^2]. Claim data may include things like a subject's name,
-  identifier, or date of birth.
-2. The credentials are created by an issuer. **Credential data** is data about
-  the credential, e.g., the data in the `issuer` and `id` properties of a
-  verifiable credential. Credential data may include metadata about the claims
-  themselves, e.g., the value of the `evidence` property in a verifiable
-  credential or some of the claims in the `credentialSubject` property.
-  Credential data may be an identifier for the issuer, or the name of the doctor
-  who delivered the child named in the birth certificate credential.
-3. The credentials are exchanged by some protocol from the issuer to a holder,
-  and from the holder to a verifier. **Protocol data** is data related to the
-  protocols used to exchange credentials or make a presentation of them, e.g.,
-  the `authorization_details` in OIDC4VC[^3] or `created_time` in DIDComm[^4].
-4. The protocol operates upon some existing internet insfrastructure.
-  **Infrastructure Data** is data related to this infrastructure, e.g., the IP
-  address of the client device which receives the issued credential.
-
-The classification uses examples from existing components to help illustrate and
-clarify, but the intent for the classification to be generally applicable.
-
-## Correlation
-
-There are seven types of correlation:
-* Desirable Correlation — the association between the party's datasets is
-  necessary for the process, either for identification, authentication,
-  authorization, or provenance.
-* Risky Correlation - the association between the parties' datasets could be
-  used against the benefit of the parties.
-* Temporary Correlation - the correlation can be repudiated in the future
-  easily.
-* Transient Correlation - the correlation can be observed for a limited amount
-  of time and thus is not permanent.
-* Transitive Correlation - the observer correlates the subject indirectly, that
-  is, without the subject being involved in the collection of data for example
-  by passing a credential.
-* Correlation Using Neither Identifiers Nor Consent -
-* Quasi Correlation - correlation that is not certain, usually based on
-  experience of the observer about particular characteristics of the data
-* Spontaneous Correlation - 
-* Unwanted or Ambient Correlation - the correlation can be observed from the
-  environment where the subject is included, usually observing the (digital)
-  footprint -> example:
-  [Am I Unique - Learn how identifiable you are on the Internet](https://amiunique.org/)
-
-TODO
-* can it even be avoided?
-* herd privacy: (see below) https://w3c.github.io/did-core/#herd-privacy &
-  https://github.com/w3c/did-core/issues/539
-* differential privacy (see below, but can we even do it\)
-  https://privacytools.seas.harvard.edu/differential-privacy
-
-# Data Minimization
-Data minimization is the act of limiting the amount of shared data strictly to
-the minimum necessary in order to successfully accomplish a task or goal while
-minimizing risk.
-
-[//]: # (@ChristopherA: Data Minimization is a privacy-preserving practice that
-only reveals what is necessary and sufficient for parties to trust each other
-and transact together to minimize risk.)
-
-There are three types of minimization:
-
-* Content minimization – the amount of data should be strictly the minimum
-  necessary.
-* Temporal minimization – the data should be stored by the receiver strictly for
-  the minimum amount of time necessary to execute the task.
-* Scope minimization – the data should only be used for the strict purpose of
-  the active task. 
-
-[//]: # (@ChristopherA: should we explain why for each these? herd privacy?
-avoid potential collection of "toxic" GDPR data; ??)
-[//]: # (@fabtagliaferro: GDPR added to verifier desires for data minimization
-below, herd privacy explained in short definition below)
-
-Data minimization is enacted primarily by policy decisions made by stakeholders
-in the credentials ecosystem:
-* Credential issuers ensure that credentials may be presented in such a way as
-  to enable data minimization. This may require issuing multiple, related,
-  granular sub-credentials. 
-* Credential inspectors establish in advance policies regarding the data they
-  will examine: 
-	* what is the minimum data necessary to accomplish the task or goal?
-	* what is the minimum time the data can be stored to execute the task?
-	* what processes ensure that the data is applied only to the task at hand
-      and does not, by a process of scope creep, become applied to other tasks
-      or goals?
-
-[//]: # (@ChristopherA: I'd love to see reasons that subjects desire data
-minimization, and even better, when holders/verifiers ≠ subject desire data
-minimization.)
-
-A subject desires data minimization for various reasons:
-* Subjects can wait to share some information and provide them gradually
-  (Progressive Trust)
-* Reduce the risk of undesired correlation 
-
-A verifier desires data minimization for various reasons:
-* Not appearing threatening (requesting unrelevant information will confuse the
-  user and let him consider refusing to share any information at all)
-* Protection from "I told you so" situations
-* Avoid potential collection of "toxic" GDPR data
-* Reduce the cost of storing information
-
-
-Data minimization policies impact selective disclosure, the next privacy
-enhancement.
-
-## Definitions / Terminology
-
-**Correlatable**: Data is said to be correlatable if by examining it that
-there is a way to determine whether it is associated with sets of other data
-stored elsewhere. This also includes lossy projections of the sets of data such
-as deterministic hashes that demonstrate that assocation.
-
-**Decorrelation**: A general term for any process that is used to reduce
-correlation within data, or cross-correlation with other sets of data, while
-preserving other useful aspects of the data. 
-
-**Differential Privacy**: A decorrelation process for sharing information about
-sets of data by describing the patterns of groups within the dataset while
-withholding information about individuals in the dataset. The idea behind
-differential privacy is that if the effect of making an arbitrary single
-substitution in the database is small enough, the query result cannot be used to
-infer much about any single individual, and therefore provides privacy. For
-instance, adding a random number (say 4) from one part of the set and
-subtracting 4 from another part of the set when the business purpose of the
-data is total or average.
-
-**Elide/Elision**: The term elide means "to leave out", and elision is the act
-or instance of ommitting something. (Redaction is a related term
-
-**Herd Privacy**: The decorrelation choices made by one set vs other data sets
-may result in correlation. Herd privacy process ensures that this doesn't happen
-by making them indistiguishable from other data sets.
-
-**Non-correlatable**: If there is no practical way to learn whether a set of
-data is a projection of a other data, they are said to be noncorrelatable.
-
-**Nonce**: aka "Number Used Once". This is an arbitrary number that is used just
-once in a cryptographic function such as signatures or encryption, to prevent
-correlation. Note that this is not necessarly a random number, simply a number
-that is never used again, and in some cases it can be quite valuable for a nonce
-to be generated deterministically.
-
-**Quasi-correlatable**: Between projections that are definitely correlatable and
-definitely noncorrelatable, there are projections that may leak a little
-information about their data. In particular (in no particular order), size,
-order, use of particular formatting, date/time, location, algorithm usage, and
-other identifiable patterns.
-
-**Salt**: This is random data (values and length) that are used as an additional
-input to a cryptographic function such as a hash of data, encryption, signature,
-to prevent correlation.
-
-## Capabilities and Techniques
-
-### Elision
-Elision is the ability of an individual to derive from a credential another
-credential with some attributes removed. Stakeholders in the credentials
-ecosystem enable elision capabilities in the following ways:
-* Credential issuers negotiate with the holder to enable elision, by issuing
-  credentials with a subset of attributes already included in another
-  credential. 
-* Credential inspectors ensure that the elided credentials can be verified with
-  the usual procedure, but they won't be able to know if any kind of elision has
-  been performed if they cannot correlate them with the starting credentials. 
-
-### Selective disclosure
-Selective disclosure is the ability of an individual to granularly decide what
-information to share. Stakeholders in the credentials ecosystem enable selective
-disclosure capabilities in the following ways:
-* Credential issuers format the credential and its attributes in such a way as
-  to enable selective disclosure. As with the strategy of data minimization,
-  they may issue multiple, related, granular sub-credentials. Each attribute and
-  the overall credential may be formatted to support cryptography, a capability
-  described in more detail below. 
-* Credential inspectors ensure the request is framed in such a way as to enable
-  selective disclosure, using the cryptographic tools required. 
-
-Once data minimization policies and selective disclosure are in place, the third
-and last enhancement can be applied. 
-
-### Progressive Trust
-Progressive trust is the process usable by an individual to gradually increase
-the amount of relevant data revealed as trust is built or value generated. 
-
-To enable progressive trust capabilities, stakeholders in the credentials
-ecosystem act in the following ways:
-* Issuers format the credential(s) in such a way as to enable progressive trust.
-  This may require issuing multiple, related, atomic sub-credentials. It also
-  may require formatting the credential to support mathematical queries and
-  cryptographic proofs. Finally, the issuer's data model may express how the
-  various sub-credentials are related in a scenario involving progressive trust. 
-* Inspectors ensure that requests are framed in such a way as to enable
-  progressive trust. They structure the communication in order to to gradually
-  escalate credential requests in order to enable a subject to progressively
-  trust the inspector more and more, revealing the minimum data necessary to
-  accomplish each step of the task or goal and revealing more and more as the
-  mutual communication progresses. 
-
-### Progressive Disclosure
-Progressive disclusure is one of the possible ways for an individual to let the
-progressive trust with another party proceed. The individual starts anonymously
-and continues to provide information, recognizing that the more data is
-revealed, the more risk that the other would be able to correlate. But with the
-gained trust, the risk will be considered a benefit, instead.
-
-To enable progressive disclosure capabilities, stakeholders in the credentials
-ecosystem act in the following ways:
-* Issuers format the credential(s) in such a way as to enable progressive
-  disclosure. This requires issuing credentials that can be selectively
-  disclosed multiple times. Each presentation will share attributes that have
-  not been shared before. 
-* Inspectors ensure that requests are framed in such a way as to enable
-  progressive trust. This requires presentation protocols that can link together
-  some previously made presentations, forming a progressive trust instance.
-
-## Technology Characteristics
-
-In this section, we can develop a list of technical characteristics with regard
-to (anti-)correlation, and try to map how different technology choices can
-fulfill them.
-
-TODO:
-- Maybe better differentiate between disclosure of data on various levels:
-  credential, identifier, protocol, environment ("ambient correlation"?). On
-  which layer does the (anti-)correlation happen, e.g. does it happen in the
-  cryptographic signature, or on the identifier (DID) layer, etc.?
-- How does salting fit in? Who does the salting?
-- How do "sub-holders" fit in?
-
-Characteristics:
-* **[C1]** The Holder can selectively disclose data with a Verifier.
-* **[C2]** The Holder can selectively disclose data with a Verifier, without
-  requiring interaction with the Issuer during the disclosure process.
-* **[C3]** The Holder can selectively disclose data with different Verifiers,
-  without requiring interaction with the Issuer during the disclosure process.
-* **[C4]** The Holder can arbitrarily choose which subset of data to selectively
-  disclose with Verifiers, without requiring interaction with the Issuer during
-  the disclosure process.
-* **[C5]** When disclosing data to multiple different Verifiers, the Verifiers
-  cannot correlate the subject via any single, unique identifier.
-
-[//]: # (@ChristopherA: With Gordian, issuers can do to this, but not holders)
-
-* **[C6]** When disclosing data to the same Verifier in multiple different
-  interactions, the Verifier cannot correlate the subject via any single, unique
-  identifier.
-* **[C7]** The Verifier can verify that the Holder who is disclosing the data is
-  the same entity that has received the data from an Issuer. *<-- Note: Maybe
-  reference the work of the other RWoT11 group that's working on "holder
-  binding"*
-* **[C8]** The Holder can selectively disclose data that is derived (using
-  predicates) from the original data they have received from an Issuer.
-
-Choices:
-* **[PLAINSIG]** Plain signatures: Ed25519Signature2020, RSA signatures, etc.
-* **[SUBCREDS]** Issuing multiple, granular "sub-" credentials separately, which
-  the Holder can then use as appropriate for interactions with Verifiers.
-* **[SINGLEUSECREDS]** Issuing single-use "bearer" credentials intended to be
-  used for a single interaction between a Holder and a Verifier.
-* **[BBS2020-LD]** BBS+ Signatures 2020: https://w3c-ccg.github.io/ldp-bbs2020/
-* **[BBS-SIG]** BBS Signature Scheme: https://identity.foundation/bbs-signature/draft-looker-cfrg-bbs-signatures.html
-* **[ANONCREDS]** AnonCreds: https://anoncreds-wg.github.io/anoncreds-spec/
-* **[SD-JWT]** SD-JWT: https://github.com/oauthstuff/draft-selective-disclosure-jwt
-* **[JWP]** JWP: https://www.ietf.org/archive/id/draft-jmiller-jose-json-web-proof-00.html
-* **[REDACTION2016-LD]** Redaction Signature Suite 2016: https://w3c-ccg.github.io/lds-redaction2016/
-* **[MERKLE2021-LD]** Merkle Disclosure Proof 2021: https://w3c-ccg.github.io/Merkle-Disclosure-2021/
-* **[COCONUT]** Coconut: https://arxiv.org/abs/1802.07344
-* **[GORDIAN]** Gordian Envelopes: https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Envelope-Tech-Intro.md
-* **[GORDIAN-IETF]** IETF I-D (draft will be submitted December): https://blockchaincommons.github.io/WIPs-IETF-draft-envelope/draft-mcnally-envelope.html
-
-Mapping of Characteristics and Technologies
-
-| Technology      | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 |
-| ---             | -- | -- | -- | -- | -- | -- | -- | -- |
-|PLAINSIG         | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✓ | ✕ |
-|SUBCREDS         | ✓ | ✓ | ✓ | ✕ | ✕ | ✕ | ✓ | ✕ |
-|SINGLEUSECREDS   | ✓ | ✕ | ✕ | ✕ | ✓ | ✓ | ✕ | ✕ |
-|BBS2020-LD       | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
-|BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ |
-|ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-|SD-JWT           | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
-|JWP *            | ✓ | ✓ | ✓ | (✓) | (✓) | (✓) | ✓ | (✓) |
-|REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
-|MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
-|COCONUT          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✓ |
-|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | (✓) | ? |
-
-\* C4, C5, C6, C8 depend on the underlying JSON Proof Algorithm (JPA).
-
-\** C5 can be done by issuers, but not holders. C7 can be achieved via
-encryption techniques.
-
 # Use Cases
-[//]: # (We'd like to have a progressive set of use case to demonstration
-desireable and undesirable correlation, but also avoid government focused
-scenarios -- in particular the overused over-21 mobile driver's license example)
 
 These use cases focus at their core a single credential, presented by various
 parties to others, with desirable correlation as well as threats if undesirable
@@ -849,69 +584,87 @@ Healthcare Use Case:
     * DESIRABLE CORRELATION: Healthcare provider correlates clients to be
       employees of Company A.
     * ELISION BY HOLDER: Healthcare provider eludes the names of the clients.
-    
-## Correlation Adversary from Smart Custody
-
-![](https://github.com/BlockchainCommons/SmartCustodyBook/raw/master/manuscript/resources/image3.png)
-
-***Motivation.** “I want information. I watch cryptocurrency transactions with
-an eagle eye, ready to swoop in on any mistake. If you keep making the same
-payments or receiving the same payments or using the same addresses, I’ll figure
-it out. I want to connect the dots to determine who is spending cryptocurrency
-for what, and I can figure that puzzle out if you give me enough pieces.”*
-
-***Key Words:** Active, Technological.*
-
-Cryptocurrency use is pseudo-anonymous and somewhat private. However, it’s not
-totally so: it’s possible to build up correlation. Through statistical analysis
-and through the discovery of accidental revelations, a third-party could tie
-together an asset holder’s usage of various funds to paint a larger picture of
-their finances and contacts.
-
-***Abstract Case Study: Correlating over Coffee.*** Alice is sloppy with her
-bitcoins and tends to use one address for everything. She goes out to buy a
-coffee with bitcoins; while she sips away at the café, working at her laptop,
-the barista notes the huge number of bitcoins going into the address. She
-follows Alice home, planning larceny.
-
-***Abstract Case Study: Correlating Identities.*** Carol uses the same online
-identity on bitcointalk and on twitter. Eastern European hackers monitor
-twitter, see her talking about bitcoins, track that back to bitcointalk, and
-find wallet addresses mentioned there that reveal her bitcoin wealth. They then
-set their scripts lose, hoping to break into her computer and steal her keys.
-
-{pagebreak}
-
-***Risks:***
-
-1. **Funds Revelation.** An asset holder’s ownership of various funds can be
-  revealed. This can make it possible to track what they spent funds on and who
-  they’re associated with. It also puts them in greater danger from any number
-  of other adversaries.
-2. **Cascade: Censorship.** If they know who you are, they can block you.
-3. **Cascade: Coercion.** If they know who you are, they can threaten you.
-4. **Cascade: Legal Forfeiture.** If they know who you are, you can become a
-  target for a nation-state or for a civil action.
-5. **Cascade: Loss of Fungibility.** If funds have been correlated, they may
-  lose fungibility.
-6. **Cascade: Sophisticated Theft.** If they know who you are, you can become a
-  target for thieves.
-
-***Process Solutions:***
-
-1. **Practice Anonymity.** Do not let people know you have bitcoins; ensure
-  that you in no way ever link your key to your real persona.
-2. **Practice Anonymizing Your Funds.** Occasionally use methods like CoinJoin,
-  SendShared, or Zerocoin to anonymize your transactions. On Blockstream’s
-  Liquid, always make use of Confidential Transactions.
-3. **Practice Key Hygiene.** Follow the best practices of using different
-  addresses for every transaction that you conduct. Each time you make a
-  transaction with the same address, you are leaking information to your
-  counterparty, which could be used to identify and either censor or correlate
-  future transactions.
 
 
-# Conclusion/Summary
+# Technology
+
+In this section, we can develop a list of technical characteristics with regard
+to (anti-)correlation, and try to map how different technology choices can
+fulfill them.
+
+TODO:
+- Maybe better differentiate between disclosure of data on various levels:
+  credential, identifier, protocol, environment ("ambient correlation"?). On
+  which layer does the (anti-)correlation happen, e.g. does it happen in the
+  cryptographic signature, or on the identifier (DID) layer, etc.?
+- How does salting fit in? Who does the salting?
+- How do "sub-holders" fit in?
+
+Characteristics:
+* **[C1]** The Holder can selectively disclose data with a Verifier.
+* **[C2]** The Holder can selectively disclose data with a Verifier, without
+  requiring interaction with the Issuer during the disclosure process.
+* **[C3]** The Holder can selectively disclose data with different Verifiers,
+  without requiring interaction with the Issuer during the disclosure process.
+* **[C4]** The Holder can arbitrarily choose which subset of data to selectively
+  disclose with Verifiers, without requiring interaction with the Issuer during
+  the disclosure process.
+* **[C5]** When disclosing data to multiple different Verifiers, the Verifiers
+  cannot correlate the subject via any single, unique identifier.
+
+[//]: # (@ChristopherA: With Gordian, issuers can do to this, but not holders)
+
+* **[C6]** When disclosing data to the same Verifier in multiple different
+  interactions, the Verifier cannot correlate the subject via any single, unique
+  identifier.
+* **[C7]** The Verifier can verify that the Holder who is disclosing the data is
+  the same entity that has received the data from an Issuer. *<-- Note: Maybe
+  reference the work of the other RWoT11 group that's working on "holder
+  binding"*
+* **[C8]** The Holder can selectively disclose data that is derived (using
+  predicates) from the original data they have received from an Issuer.
+
+Choices:
+* **[PLAINSIG]** Plain signatures: Ed25519Signature2020, RSA signatures, etc.
+* **[SUBCREDS]** Issuing multiple, granular "sub-" credentials separately, which
+  the Holder can then use as appropriate for interactions with Verifiers.
+* **[SINGLEUSECREDS]** Issuing single-use "bearer" credentials intended to be
+  used for a single interaction between a Holder and a Verifier.
+* **[BBS2020-LD]** BBS+ Signatures 2020: https://w3c-ccg.github.io/ldp-bbs2020/
+* **[BBS-SIG]** BBS Signature Scheme: https://identity.foundation/bbs-signature/draft-looker-cfrg-bbs-signatures.html
+* **[ANONCREDS]** AnonCreds: https://anoncreds-wg.github.io/anoncreds-spec/
+* **[SD-JWT]** SD-JWT: https://github.com/oauthstuff/draft-selective-disclosure-jwt
+* **[JWP]** JWP: https://www.ietf.org/archive/id/draft-jmiller-jose-json-web-proof-00.html
+* **[REDACTION2016-LD]** Redaction Signature Suite 2016: https://w3c-ccg.github.io/lds-redaction2016/
+* **[MERKLE2021-LD]** Merkle Disclosure Proof 2021: https://w3c-ccg.github.io/Merkle-Disclosure-2021/
+* **[COCONUT]** Coconut: https://arxiv.org/abs/1802.07344
+* **[GORDIAN]** Gordian Envelopes: https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Envelope-Tech-Intro.md
+* **[GORDIAN-IETF]** IETF I-D (draft will be submitted December): https://blockchaincommons.github.io/WIPs-IETF-draft-envelope/draft-mcnally-envelope.html
+
+Mapping of Characteristics and Technologies
+
+| Technology      | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 |
+| ---             | -- | -- | -- | -- | -- | -- | -- | -- |
+|PLAINSIG         | ✕ | ✕ | ✕ | ✕ | ✕ | ✕ | ✓ | ✕ |
+|SUBCREDS         | ✓ | ✓ | ✓ | ✕ | ✕ | ✕ | ✓ | ✕ |
+|SINGLEUSECREDS   | ✓ | ✕ | ✕ | ✕ | ✓ | ✓ | ✕ | ✕ |
+|BBS2020-LD       | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|BBS-SIG          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ |
+|ANONCREDS        | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+|SD-JWT           | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|JWP *            | ✓ | ✓ | ✓ | (✓) | (✓) | (✓) | ✓ | (✓) |
+|REDACTION2016-LD | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|MERKLE2021-LD    | ✓ | ✓ | ✓ | ✓ | ✕ | ✕ | ✓ | ✕ |
+|COCONUT          | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✕ | ✓ |
+|GORDIAN **       | ✓ | ✓ | ✓ | ✓ | (✓) | ? | (✓) | ? |
+
+\* C4, C5, C6, C8 depend on the underlying JSON Proof Algorithm (JPA).
+
+\** C5 can be done by issuers, but not holders. C7 can be achieved via
+encryption techniques.
+
+
+# Conclusion
 TODO
 
 [//]: # (We encourage policy makers to be awesome and do good, not evil.)
@@ -934,6 +687,48 @@ We also acknowledge the contributors to
 * Christohper Allen, Blockchain Commons
 
 # References
+
+## Regulations that require some form of Data Minimization
+* The California Consumer Privacy Act (CCPA) in the United States, which
+  requires businesses to disclose the categories of personal information that
+  they collect, use, disclose, and sell and also to obtain consumer consent for
+  the sale of personal information.
+* The Payment Card Industry Data Security Standard (PCI DSS), which is a set of
+  security standards for organizations that handle credit card information and
+  which requires merchants to limit the amount of cardholder data that is
+  stored, processed, or transmitted.
+* The Personal Information Protection and Electronic Documents Act (PIPEDA) in
+  Canada, which requires organizations to collect only the personal information
+  that is necessary for the identified purpose.
+* The Health Insurance Portability and Accountability Act (HIPAA) in the United
+  States, which requires healthcare organizations to protect the privacy of
+  patient health information and to collect only the minimum necessary
+  information to provide care.
+* The Cybersecurity Information Sharing Act (CISA) in the United States, which
+  encourages organizations to share information about cybersecurity threats, but
+  also requires companies to protect personal information and to limit the
+  collection of data to that which is necessary to address the threat.
+
+## ISO standards related to data protection and privacy
+* **ISO/IEC 27001:2013 - Information security management systems (ISMS)**
+  provides a framework for managing sensitive information and includes a
+  requirement for organizations to minimize the amount of sensitive information
+  that is collected, used, and retained.
+* **ISO/IEC 29100:2011 - Privacy framework** provides a framework for protecting
+  personal information and includes a requirement for organizations to only
+  collect personal information that is necessary for the specific purpose for
+  which it is being collected.
+* **ISO/IEC 27701:2019 - Extension to ISO/IEC 27001 and ISO/IEC 27002 for
+  privacy information management** provides a framework for managing personal
+  information and includes a requirement for organizations to minimize the
+  amount of personal information that is collected, used, and retained.
+* **ISO/IEC 29151:2012 - Information technology - Security techniques -
+  Data-at-rest protection** provides guidance for protecting data when it is
+  stored and includes a requirement for organizations to minimize the amount of
+  sensitive information that is stored.
+* **ISO/IEC 27040:2015 - Storage security** provides guidance for protecting
+  data when it is stored and includes a requirement for organizations to
+  minimize the amount of sensitive information that is stored.
 
 ## Related RWOT Advance Readings & Topics
 * [Elision, Redaction, and Noncorrelation in Smart Documents](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/advance-readings/elision-redaction-correlation-smart-documents.md)
@@ -958,6 +753,8 @@ We also acknowledge the contributors to
 
 ## Citations
 [^1]: [Identity Crisis: Clearer Identity Through Correlation](https://github.com/WebOfTrustInfo/ID2020DesignWorkshop/blob/master/final-documents/identity-crisis.pdf)
-[^2]: [Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model/)
-[^3]: [OpenID for Verifiable Credential Issuance](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
-[^4]: [DIDComm Messaging Specification](https://identity.foundation/didcomm-messaging/spec/)
+[^2]: TBD self soveriegn identity principles
+[^3]: [Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model/)
+[^4]: [OpenID for Verifiable Credential Issuance](https://openid.net/specs/openid-4-verifiable-credential-issuance-1_0.html)
+[^5]: [DIDComm Messaging Specification](https://identity.foundation/didcomm-messaging/spec/)
+
