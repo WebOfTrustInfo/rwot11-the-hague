@@ -34,6 +34,14 @@ The goal of the workshop is to generate five technical white papers and/or propo
 
 > We aim to highlight selected technical challenges and outline how the DEXA and OCA protocols contribute to scalable solutions.
 
+
+## [*On-chain Identity Proof Verification Design Patterns: An Evaluation of Different Strategies to Inject Digital Identity into Decentralized Applications*](final-documents/onchain_identity_verification_flows.pdf) [(Text)](final-documents/onchain_identity_verification_flows.md)
+
+> In recent months, a problem space has been roughly delineated and widely discussed under the rubric of "on-chain web3 identity." Marketing imperatives and the lack of familiarity with compliance and liability issues particular to identity have largely muddied the waters in the solution space, however, resulting in a reductive three-way rivalry between "soul-bound tokens", verifiable credentials, and loosely-defined "zero knowledge" solutions. Working at a high level, we tried to identify a taxonomy that would be more useful for mapping this solution space according to high-level patterns and tradeoffs. 
+
+> We defined the problem space at the highest level thusly: various architectures deploy on-chain artefacts to aid in the verification of claims about a wallet's controller. From there, we tried to bucket these into patterns before identifying strengths and weaknesses of each against a short, exemplary list of use-cases. The goal was not so much *evaluating* these exhaustively, as any evaluation should be more squarely grounded in more detailed use-cases and non-technical requirements. Instead, we strove to identify traits inherent to each high-level pattern that could lead to high-level fitness-for-purpose evaluations, i.e. the "strengths and weaknesses" of each.
+
+
 ## [*Taking out the CRUD: Five Fabulous DID Attacks*](final-documents/taking-out-the-crud-five-fabulous-did-attacks.pdf) [(Text)](final-documents/taking-out-the-crud-five-fabulous-did-attacks.md)
 #### by Shannon Appelcline, Cihan Saglam, Kate Sills, Carsten Stöcker
 
