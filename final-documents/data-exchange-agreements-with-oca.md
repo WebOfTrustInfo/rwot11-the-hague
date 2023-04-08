@@ -1,5 +1,4 @@
-# Linking Credentials with Data Exchange Agreements through Secured
-Inclusive Interfaces
+# Linking Credentials with Data Exchange Agreements through Secured Inclusive Interfaces
 
 **On the need to link verifiable credentials with the right to use data in a secure, inclusive user interaction**
 
