@@ -2,6 +2,8 @@
 
 _This is a listing for the RWOT11 papers to date. [Several more](../draft-documents/README.md) are in process._
 
+_Please also see our [Publication Day video](https://www.youtube.com/watch?v=qEsRHF6TH6Y) for our celebration of the first seven papers and slideshow presentations of their contents._
+
 ## [*Composing Credentials via LinkedClaims and Cryptographic Binding*](composable-credentials.pdf) [(Text)](composable-credentials.md)
 
 #### by Phillip D. Long, Dmitri Zagidulin, and Golda Velez
