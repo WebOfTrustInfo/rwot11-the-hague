@@ -89,14 +89,14 @@ The Wallet Rendering spec draft [https://identity.foundation/wallet-rendering/]
 
 This paper proposes a new property that can be associated with a Verifiable Credential called \``` render` ``. A rendering hint is a suggestion to a program that processes Verifiable Credentials that a rendering of some sort can be performed by combining the data in the Verifiable Credential with the rendering hint. An example of its usage is shown below:
 
-\`\`\`js  
+```js  
 {
-  "@context": \[
+  "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://www.w3.org/2018/credentials/examples/v1"
-  \],
+  ],
   "id": "http://example.edu/credentials/3732",
-  "type": \["VerifiableCredential", "UniversityDegreeCredential"\],
+  "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/565049",
   "issuanceDate": "2010-01-01T00:00:00Z",
   "credentialSubject": {
@@ -109,7 +109,7 @@ This paper proposes a new property that can be associated with a Verifiable Cred
     }
   },
   // The rendering hint
-  "render": \[{
+  "render": [{
     // An SVG file that can be used to render the credential
     "id": "https://svg.example/degree.svg",
     // The type of rendering hint
@@ -117,10 +117,10 @@ This paper proposes a new property that can be associated with a Verifiable Cred
     "mediaType": "image/svg+xml",
     // A multibase-encoded multi-hash of the SVG file
     "digestMultibase": "zQmAPdhyxzznFCwYxAp2dRerWC85Wg6wFl9G270iEu5h6JqW"
-  }\]
+  }]
   "proof": { ... }
 }  
-\`\`\`
+```
 
 ### Visual Rendering
 
@@ -159,9 +159,9 @@ TODO: Add an example (from Open Badges v3) of a "baked" static image representat
 
 Given the following example instantiation of the format:
 
-\`\`\`js  
+```js  
   // The rendering hint
-  "render": \[{
+  "render": [{
     // An SVG file that can be used to render the credential
     "id": "https://svg.example/degree.svg",
     // The type of rendering hint
@@ -169,14 +169,14 @@ Given the following example instantiation of the format:
     "mediaType": "image/svg+xml",
     // A multibase-encoded multi-hash of the SVG file
     "digestMultibase": "zQmAPdhyxzznFCwYxAp2dRerWC85Wg6wFl9G270iEu5h6JqW"
-  }\]  
-\`\`\`  
+  }]  
+``` 
 
 A subset of the [Handlebars](https://handlebarsjs.com/guide/) format is suggested for use in the associated SVG file, due to its simplicity.  
 
 Use of that format in an SVG file is provided as an example below:  
 
-\`\`\`svg  
+```svg  
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
   <rect width="300" height="100"
     style="fill:rgb(255,255,255);stroke-width:4;stroke:rgb(0,0,0)" />
@@ -190,7 +190,7 @@ Use of that format in an SVG file is provided as an example below:
     by {{credentialSubject.degree.institution}}.
   </text>
 </svg>  
-\`\`\`  
+``` 
 
 When rendered, the following visual representation will be generated:  
 
@@ -212,6 +212,7 @@ Items for further consideration at RWoT 11 include:
 
 ### Visual Rendering - HTML Example  
 
+```
 <div style="width:300px; height:100px; border: 2px solid black; text-align:center">
   <div>
     This {{credentialSubject.degree.name}} is conferred to
@@ -223,20 +224,21 @@ Items for further consideration at RWoT 11 include:
     by {{credentialSubject.degree.institution}}.
   </div>
 </div>
+```
 
 ### Audio Rendering
 
 Visual rendering might not always be suitable for all people or scenarios. At times, it might be useful to provide audio-based rendering. Consider the following rendering instruction:
 
-\`\`\`js  
-  "render": \[{
+```js  
+  "render": [{
     // An rendering hint
     "type": "AudioRenderingHint",   
     "mediaType": "<TODO: what should this be?>",
     "description": "This Bachelor of Science and Arts degree is
                     conferred to Jane Smith by Example University."
-  }\]  
-\`\`\`  
+  }]  
+``` 
 
 Items for further consideration at RWoT 11 include:
 
@@ -247,14 +249,14 @@ Items for further consideration at RWoT 11 include:
 
 There are times when both visual and audio rendering are not possible. For these scenarios, a braille-based rendering might be appropriate. Consider the following rendering instruction:
 
-\`\`\`js  
-  "render": \[{
+```js  
+  "render": [{
     // An rendering hint
     "type": "BrailleRenderingHint",  
     "mediaType": "application/braille",
     "description": ",? ,ba\*elor ( ,sci;e & ,>ts degree is 3f}r$ 6,jane ,smi? 0,example ,univ}s;y4"
-  }\]  
-\`\`\`  
+  }]  
+``` 
 
 ### Visual Rendering - DIF Wallet Rendering  
 
@@ -262,6 +264,7 @@ There are times when both visual and audio rendering are not possible. For these
 
 In DIF Wallet Rendering and Credential Manifest, [Entity Style Descriptors](https://identity.foundation/wallet-rendering/#entity-styles) define image and color properties for styling entities; these styles are applied to credential issuers in [Credential Manifest](https://identity.foundation/credential-manifest/#general-composition) issuer styles property, and in [Output Descriptor Object](http://identity.foundation/credential-manifest/#output-descriptor-object) styles property. [Data Display Descriptors](https://identity.foundation/wallet-rendering/#data-display) ([Output Descriptor Object](https://identity.foundation/credential-manifest/#output-descriptor-object) / [Output Descriptor Display Object](https://identity.foundation/credential-manifest/#term:output-descriptor-display-object)) are used to extract text properties from credentials for displaying. A render object could include Entity Style Descriptors and Output Descriptors such as would be found in a Credential Manifest. Consider the following example:
 
+```js
 {  
   "type": "DIFWalletRenderingHint",  
   "mediaType": "application/json",  
@@ -301,6 +304,7 @@ In DIF Wallet Rendering and Credential Manifest, [Entity Style Descriptors](http
     \]  
   }  
 }  
+```
 
 ## Algorithms  
 
