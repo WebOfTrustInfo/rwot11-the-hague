@@ -16,7 +16,7 @@ _Please also see our [Publication Day video](https://www.youtube.com/watch?v=qEs
 
 > This approach will enable rich shared datasets to inform trust decisions while satisfying the requirements of domain-specific end users. One of the intentions of LinkedClaims Verifiable Credentials is to give individuals the agency to make such claims about themselves and others on their own terms.
 
-## [*A Credential Profile Comparison Matrix to Facilitate Technical and Non-technical Decision Making*](redential-profile-comparison.pdf) [(Text)](credential-profile-comparison.md)
+## [*A Credential Profile Comparison Matrix to Facilitate Technical and Non-technical Decision Making*](credential-profile-comparison.pdf) [(Text)](credential-profile-comparison.md)
 
 #### by Andre Kudra*, Torsten Lodderstedt, Paul Bastian, Mirko Mollik, Maaike van Leuken, and Caspar Roelofs
 
