@@ -16,6 +16,14 @@ _Please also see our [Publication Day video](https://www.youtube.com/watch?v=qEs
 
 > This approach will enable rich shared datasets to inform trust decisions while satisfying the requirements of domain-specific end users. One of the intentions of LinkedClaims Verifiable Credentials is to give individuals the agency to make such claims about themselves and others on their own terms.
 
+## [*A Credential Profile Comparison Matrix to Facilitate Technical and Non-technical Decision Making*](redential-profile-comparison.pdf) [(Text)](credential-profile-comparison.md)
+
+#### by Andre Kudra*, Torsten Lodderstedt, Paul Bastian, Mirko Mollik, Maaike van Leuken, and Caspar Roelofs
+
+> This paper introduces a comparison matrix for the wide variety of credential formats — such as W3C Verifiable Credentials, AnonCreds, and ISO-standard Mobile Driving License (mDL) — and the various related signing algorithms, revocation mechanisms, and key-management systems (collectively referred to as credential profiles). The credential profile comparison matrix is a living document that serves as an accessible resource for an in-depth evaluation of the technical requirements and their technical and non-technical implications for different use-cases and objectives. This paper also explains the rationale behind this matrix, describes the various properties that are included in the matrix and their definitions, and serves as an application guide on how to use the matrix for more informed technical and non-technical discussions and decision making.
+
+> This work is the outcome of a collaborative writing session during RWOT11 in September 2022 and continues the work kicked off in an IIW XXIV session in April 2022 and worked on offline afterwards. The work should be considered an iterative process, with the matrix being a living document that will require continuous updating while facilitating discussion among technical and non-technical experts.
+
 ## [*Identifier Binding: defining the Core of Holder Binding*](identifier-binding.pdf) [(Text)](identifier-binding.md)
 
 #### by Paul Bastian, Rieks Joosten, Zaïda Rivai, Oliver Terbu, Snorre Lothar von Gohren Edwin, Antonio Antonino, Nikos Fotiou, Stephen Curran, and Ahamed Azeem
