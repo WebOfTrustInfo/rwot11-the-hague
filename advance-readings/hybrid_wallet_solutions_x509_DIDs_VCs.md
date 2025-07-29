@@ -1,6 +1,6 @@
 # Analysis of hybrid wallet solutions - Implementation options for combining x509 certificates with DIDs and VCs 
 
-**Authors:** Carsten Stöcker (Spherity) and Christiane Wirrig (Spherity) with support of Paul Bastian (Bundesdruckerei) and Steffen Schwalm (msg Group) in the IDunion Project
+**Authors:** Carsten Stöcker (Spherity), Christiane Wirrig (Spherity), Paul Bastian (Bundesdruckerei, IDunion) and Steffen Schwalm (msg Group, IDunion)
 
 **Abstract:** The EU Commission&#39;s proposal for review of the eIDAS Regulation from 2021 has opened strong expectations for a deep change in traditional identity models. The user-centric identity model proposed starts with the creation of European Digital Identity Wallets that will enable citizens&#39; (and legal entities&#39;) control over their data in identification and authentication processes without control by entities providing the identification services. Likewise digital identities and digital signatures are in place and interoperability between existing hybrid solutions mainly based on x509 certificates and decentralized PKI using DID/VC are foreseeable. This RWOT draft topic paper provides various options to address different implementation alternatives in combining x509 and DID/VC approaches.
 
